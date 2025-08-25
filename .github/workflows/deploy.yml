@@ -1,19 +1,23 @@
-name: Build and Deploy Zola Site
+name: Deploy Zola site to GitHub Pages
 
 on:
   push:
-    branches: [ master ]
+    branches-ignore: [ master, main ]  # Build on feature branches for testing
   pull_request:
-    branches: [ master ]
+    branches: [ master, main ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-    
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -28,10 +32,20 @@ jobs:
         cd zola-site
         zola build
         
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/master'
+    - name: Upload Pages artifact
+      if: github.event_name == 'pull_request' && github.base_ref == 'master'
+      uses: actions/upload-pages-artifact@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./zola-site/public
-        cname: masters3d.github.io
+        path: ./zola-site/public
+        
+  deploy:
+    if: github.event_name == 'pull_request' && github.base_ref == 'master'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
