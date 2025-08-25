@@ -80,6 +80,30 @@ node_modules/        # If added later
 - **Deployment**: Automatic on PR merge to master
 - **Build time**: ~2-3 minutes
 
+## 🔧 **GitHub Actions Workflow Fix**
+
+**Issue Fixed:** Deploy job was failing on Pull Requests.
+
+**Root Cause:** The workflow was configured backwards - trying to deploy during PR testing instead of deployment.
+
+**Solution Applied:** 
+- ✅ **PRs now only build and test** (no deployment attempts)
+- ✅ **Deployment only happens** when pushing/merging to master
+- ✅ **Proper conditional logic** prevents deployment failures
+
+**Before:** `if: github.event_name == 'pull_request'` ❌  
+**After:** `if: github.event_name == 'push' && github.ref == 'refs/heads/master'` ✅
+
+## 🧹 **Repository Cleanup Summary**
+
+**Removed obsolete files (44KB savings):**
+- ❌ Old `index.html` - GitHub Pages homepage (now using Zola)
+- ❌ Old `stylesheets/` directory - CSS files (duplicated in Zola)  
+- ❌ Old `javascripts/main.js` - Minimal JS file
+- ❌ Old `params.json` - GitHub auto-generator metadata
+
+**Total cleanup:** 6 files removed, 1,285 lines of duplicate code eliminated ✨
+
 ---
 
 **Ready to merge!** 🎉
