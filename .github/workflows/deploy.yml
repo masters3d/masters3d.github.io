@@ -1,0 +1,37 @@
+name: Build and Deploy Zola Site
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Zola
+      uses: taiki-e/install-action@v2
+      with:
+        tool: zola@0.19.1
+        
+    - name: Build site
+      run: |
+        cd zola-site
+        zola build
+        
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/master'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./zola-site/public
+        cname: masters3d.github.io
