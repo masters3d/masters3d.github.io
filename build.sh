@@ -28,6 +28,28 @@ cp zola-site/public/media/index.html media.html 2>/dev/null || echo "⚠️  Med
 cp -r zola-site/public/css . 2>/dev/null || true
 cp -r zola-site/public/images . 2>/dev/null || true
 
+# Fix URLs for static hosting (convert Zola URLs to .html URLs)
+echo "🔧 Converting URLs for static hosting..."
+if [ -f index.html ]; then
+    sed -i '' 's|href="/tech/"|href="tech.html"|g' index.html
+    sed -i '' 's|href="/media/"|href="media.html"|g' index.html
+    sed -i '' 's|href="/"|href="index.html"|g' index.html
+fi
+
+if [ -f tech.html ]; then
+    sed -i '' 's|href="/tech/"|href="tech.html"|g' tech.html
+    sed -i '' 's|href="/media/"|href="media.html"|g' tech.html
+    sed -i '' 's|href="/"|href="index.html"|g' tech.html
+    sed -i '' 's|href="../css/|href="css/|g' tech.html
+fi
+
+if [ -f media.html ]; then
+    sed -i '' 's|href="/tech/"|href="tech.html"|g' media.html
+    sed -i '' 's|href="/media/"|href="media.html"|g' media.html
+    sed -i '' 's|href="/"|href="index.html"|g' media.html
+    sed -i '' 's|href="../css/|href="css/|g' media.html
+fi
+
 echo "✅ All pages updated from markdown source!"
 echo ""
 echo "📝 Content sources:"
@@ -41,6 +63,16 @@ echo "  - Tech template: zola-site/templates/tech.html"
 echo "  - Media template: zola-site/templates/media.html"
 echo ""
 echo "⚙️  Config source: zola-site/config.toml"
+echo ""
+echo "🌐 Development URLs (zola serve):"
+echo "  - Main page: http://127.0.0.1:8084/"
+echo "  - Tech page: http://127.0.0.1:8084/tech/"
+echo "  - Media page: http://127.0.0.1:8084/media/"
+echo ""
+echo "🌐 Production URLs (static files):"
+echo "  - Main page: index.html"
+echo "  - Tech page: tech.html"
+echo "  - Media page: media.html"
 echo ""
 echo "Next steps:"
 echo "  git add ."
