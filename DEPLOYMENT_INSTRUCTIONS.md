@@ -44,6 +44,15 @@ git push origin master
 
 ## 🔄 Future Updates
 
+### 🧹 **Repository Cleanup Completed**
+Legacy GitHub Pages files have been removed:
+- ❌ `index.html`, `params.json`, `stylesheets/`, `javascripts/`  
+- ✅ All content preserved in `zola-site/` structure
+- ✅ Repository size reduced by ~44KB
+- ✅ No duplicate assets or obsolete files
+
+### ✏️ **Content Updates**
+
 ```bash
 # Edit content
 vim zola-site/content/_index.md
