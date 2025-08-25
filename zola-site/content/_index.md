@@ -10,9 +10,9 @@ title = "Masters3d"
 
 ## About
 
-**Throughout my career in web development, digital production, photography, cinematography, 3D artistry, and project management, I consistently turned to programming to solve unique challenges. Whether automating workflows, creating custom tools, or building specialized applications, I discovered that my most satisfying work happened when I was writing code.**
+Throughout my career in web development, digital production, photography, cinematography, 3D artistry, and project management, I consistently turned to programming to solve unique challenges. Whether automating workflows, creating custom tools, or building specialized applications, I discovered that my most satisfying work happened when I was writing code.**
 
-**This realization led me to transition into full-time software engineering, where I can fully leverage both my technical skills and multidisciplinary perspective.**
+This realization led me to transition into full-time software engineering, where I can fully leverage both my technical skills and multidisciplinary perspective.**
 
 ## Featured Work
 
