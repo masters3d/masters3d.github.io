@@ -1,5 +1,6 @@
 # Zola build artifacts
 zola-site/public/
+zola-site/public/*
 
 # OS artifacts
 .DS_Store
