@@ -2,55 +2,40 @@
 title = "Masters3d"
 +++
 
+<nav style="margin-bottom: 20px; padding: 10px; background: #f0f0f0; border-radius: 5px;">
+  <a href="index.html"><strong>🏠 Home</strong></a> | 
+  <a href="media.html">🎬 Media</a> | 
+  <a href="tech.html">💻 Tech Projects</a>
+</nav>
+
 ## About
 
-Designer, Developer, Product Owner.
+Throughout my career in web development, digital production, photography, cinematography, 3D artistry, and project management, I consistently turned to programming to solve unique challenges. Whether automating workflows, creating custom tools, or building specialized applications, I discovered that my most satisfying work happened when I was writing code.**
 
-## 3D Projects
+This realization led me to transition into full-time software engineering, where I can fully leverage both my technical skills and multidisciplinary perspective.**
 
-[3D Sketches](http://community.thefoundry.co.uk/community/profile.aspx?name=cheyo84) *(Legacy - may be discontinued)*
+## Featured Work
 
-## Video Projects
+### 💻 Software Development
 
-- [Honduras 2015 Highlights - Upon this Rock Ministries](https://www.youtube.com/watch?v=waXta2PAjfc)
-- [Guatemala 2014 Upon This Rock Ministries](https://www.youtube.com/watch?v=VMkDSfq1ghg)
-- [Team returns one year after Yolanda](https://www.youtube.com/watch?v=hMHgUtxMiG8)
-- [Thank you video](https://www.youtube.com/watch?v=64kGSkgOUjU)
-- [Change Giving to Going | Hotes Foundation](https://www.youtube.com/watch?v=8qETFdq6UN8)
-- [#‎NEPALEARTHQUAKE](https://www.youtube.com/watch?v=16NcsqhRhzE)
-- [THE HAITIAN PRINCE TURNS 1](https://www.youtube.com/watch?v=fd5OF4I45ak)
-- [Vimeo Page One Video Projects](https://vimeo.com/masters3d/videos/page:1/sort:date)
-- [Vimeo Page Two Video Projects](https://vimeo.com/masters3d/videos/page:2/sort:date)
-- [WP Storage Structure](https://www.youtube.com/watch?v=wRj1z21ITDI)
-- [WP School Canopies](https://www.youtube.com/watch?v=vOb_Xu74ras)
-- [AKS Disaster Response Camp](https://www.youtube.com/watch?v=1q_1wL522yA)
-- [AKS Quonset Buildings](https://www.youtube.com/watch?v=3Qz_OsdHruY)
+Extensive software development portfolio covering mobile applications, web development, system tools, and emerging technologies. Projects demonstrate proficiency across multiple programming languages and platforms.
 
-## Github Projects
+**[→ View Complete Tech Portfolio](tech.html)**
 
-[All Github Projects](https://github.com/masters3d?tab=repositories)
+- **Mobile Development:** iOS apps using Swift, SpriteKit, Core Data
+- **Web Development:** Full-stack applications, APIs, and interactive projects  
+- **System Tools:** Automation utilities, keyboard mappers, Docker solutions
+- **Multi-Language:** Swift, JavaScript/TypeScript, Python, Java, C#, Go
+- **Portfolio Scale:** 70+ GitHub repositories
 
-### iOS Swift Projects
+### 🎬 Media Production & Digital Content
 
-- [BlogClient](https://github.com/masters3d/BlogClient/) *(See Backend API below)*
-- [VirtualTourist](https://github.com/masters3d/VirtualTourist)
-- [OntheMap](https://github.com/masters3d/OnTheMap)
-- [BreakoutGame](https://github.com/masters3d/breakoutGame)
-- [MemeCreator](https://github.com/masters3d/memeCreatorApp)
-- [VoiceRecorder](https://github.com/masters3d/recordVoiceApp)
+Professional video production and digital media portfolio spanning documentary work, commercial content, and creative projects across multiple industries and international humanitarian efforts.
 
-### Python Projects
+**[→ View Complete Media Portfolio](media.html)**
 
-- [App Engine Source Code](https://github.com/masters3d/Appengine-Udacity-Blog-Project)
-- Custom WIKI Web Server *(App Engine service discontinued)*
-- Blog Backend API with User Authentication *(App Engine service discontinued)* *(See iOS client above)*
-
-### Java Projects
-
-- [JavaGUIProject](https://github.com/masters3d/JavaGUIProject)
-- [TextBasedJavaGame](https://github.com/masters3d/TextBasedJavaGame)
-- [JavaGUITravelApp](https://github.com/masters3d/JavaGUITravelApp)
-
-## Plans
-
-Coming soon...
+- **Documentary Production:** International humanitarian projects, multi-country filming
+- **Commercial Content:** Product demonstrations, marketing campaigns, promotional videos
+- **Drone Cinematography:** Aerial footage and specialized camera work
+- **Motion Graphics:** Visual effects, title sequences, and animated content
+- **Portfolio Scale:** 13+ completed video productions
