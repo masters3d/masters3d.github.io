@@ -1,4 +1,4 @@
-# Zola build artifacts
+# Zola source build output (static files are now in root for GitHub Pages)
 zola-site/public/
 zola-site/public/*
 
