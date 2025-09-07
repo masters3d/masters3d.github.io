@@ -3,9 +3,9 @@ title = "Masters3d"
 +++
 
 <nav style="margin-bottom: 20px; padding: 10px; background: #f0f0f0; border-radius: 5px;">
-  <a href="index.html"><strong>🏠 Home</strong></a> | 
-  <a href="media.html">🎬 Media</a> | 
-  <a href="tech.html">💻 Tech Projects</a>
+  <a href="/"><strong>🏠 Home</strong></a> | 
+  <a href="/media/">🎬 Media</a> | 
+  <a href="/tech/">💻 Tech Projects</a>
 </nav>
 
 ## About
@@ -20,7 +20,7 @@ This realization led me to transition into full-time software engineering, where
 
 Extensive software development portfolio covering mobile applications, web development, system tools, and emerging technologies. Projects demonstrate proficiency across multiple programming languages and platforms.
 
-**[→ View Complete Tech Portfolio](tech.html)**
+**[→ View Complete Tech Portfolio](/tech/)**
 
 - **Mobile Development:** iOS apps using Swift, SpriteKit, Core Data
 - **Web Development:** Full-stack applications, APIs, and interactive projects  
@@ -32,7 +32,7 @@ Extensive software development portfolio covering mobile applications, web devel
 
 Professional video production and digital media portfolio spanning documentary work, commercial content, and creative projects across multiple industries and international humanitarian efforts.
 
-**[→ View Complete Media Portfolio](media.html)**
+**[→ View Complete Media Portfolio](/media/)**
 
 - **Documentary Production:** International humanitarian projects, multi-country filming
 - **Commercial Content:** Product demonstrations, marketing campaigns, promotional videos
