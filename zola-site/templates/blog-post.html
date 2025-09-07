@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/stylesheet.css') }}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/pygment_trac.css') }}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/print.css') }}" media="print">
+    <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/blog.css') }}" media="screen">
+    <link rel="alternate" type="application/atom+xml" title="{{ config.title }} - Blog" href="{{ get_url(path='atom.xml') }}">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>{{ page.title }} - {{ config.title }}</title>
+    <meta name="description" content="{{ page.description | default(value=page.summary) | default(value=config.description) }}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.description | default(value=page.summary) | default(value=config.description) }}">
+    <meta property="og:url" content="{{ page.permalink }}">
+    <meta property="og:site_name" content="{{ config.title }}">
+    <meta property="article:published_time" content="{{ page.date }}">
+    {% if page.updated %}
+    <meta property="article:modified_time" content="{{ page.updated }}">
+    {% endif %}
+    {% if page.taxonomies.categories %}
+    {% for category in page.taxonomies.categories %}
+    <meta property="article:section" content="{{ category }}">
+    {% endfor %}
+    {% endif %}
+    {% if page.taxonomies.tags %}
+    {% for tag in page.taxonomies.tags %}
+    <meta property="article:tag" content="{{ tag }}">
+    {% endfor %}
+    {% endif %}
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.description | default(value=page.summary) | default(value=config.description) }}">
+    <meta name="twitter:url" content="{{ page.permalink }}">
+    {% if config.extra.twitter_username %}
+    <meta name="twitter:creator" content="@{{ config.extra.twitter_username }}">
+    {% endif %}
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>{{ config.title }}</h1>
+        <h2>{{ config.extra.tagline }}</h2>
+        <nav style="margin-top: 10px;">
+          <a href="/">Home</a> | 
+          <a href="/blog/">Blog</a> | 
+          <a href="/media/">Media</a> | 
+          <a href="/tech/">Tech</a>
+        </nav>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <!-- Breadcrumbs -->
+          <nav class="breadcrumbs" style="margin-bottom: 20px; font-size: 0.9em; color: #666;">
+            <a href="/">Home</a> → <a href="/blog/">Blog</a> → <span>{{ page.title }}</span>
+          </nav>
+
+          <article class="blog-post">
+            <header class="post-header">
+              <h1>{{ page.title }}</h1>
+              <div class="post-meta" style="color: #666; margin-bottom: 2em; padding: 1em; background: #f9f9f9; border-radius: 5px;">
+                <time datetime="{{ page.date }}">📅 {{ page.date | date(format='%B %d, %Y') }}</time>
+                {% if page.updated %}
+                <span style="margin-left: 1em;">🔄 Updated: {{ page.updated | date(format='%B %d, %Y') }}</span>
+                {% endif %}
+                {% if config.extra.show_reading_time and page.reading_time %}
+                <span style="margin-left: 1em;">⏱️ {{ page.reading_time }} min read</span>
+                {% endif %}
+                {% if page.word_count %}
+                <span style="margin-left: 1em;">📝 {{ page.word_count }} words</span>
+                {% endif %}
+                
+                {% if page.taxonomies.categories %}
+                <div style="margin-top: 0.5em;">
+                  📂 Categories: 
+                  {% for category in page.taxonomies.categories %}
+                    <a href="{{ get_taxonomy_url(kind='categories', name=category) }}" style="background: #e1f5fe; padding: 2px 8px; border-radius: 3px; text-decoration: none; font-size: 0.9em;">{{ category }}</a>
+                    {% if not loop.last %} {% endif %}
+                  {% endfor %}
+                </div>
+                {% endif %}
+                
+                {% if page.taxonomies.tags %}
+                <div style="margin-top: 0.5em;">
+                  🏷️ Tags: 
+                  {% for tag in page.taxonomies.tags %}
+                    <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" style="background: #f3e5f5; padding: 2px 8px; border-radius: 3px; text-decoration: none; font-size: 0.9em;">{{ tag }}</a>
+                  {% endfor %}
+                </div>
+                {% endif %}
+              </div>
+            </header>
+
+            {% if page.description %}
+            <div class="post-description" style="font-style: italic; color: #555; margin-bottom: 2em; padding: 1em; border-left: 4px solid #2879d0; background: #f8f9fa;">
+              {{ page.description }}
+            </div>
+            {% endif %}
+
+            <div class="post-content">
+              {{ page.content | safe }}
+            </div>
+
+            <footer class="post-footer" style="margin-top: 3em; padding-top: 2em; border-top: 1px solid #eee;">
+              <!-- Social Sharing -->
+              <div class="social-sharing" style="margin-bottom: 2em;">
+                <h4>Share this post:</h4>
+                <a href="https://twitter.com/intent/tweet?text={{ page.title | urlencode }}&url={{ page.permalink | urlencode }}" target="_blank" style="margin-right: 1em; padding: 0.5em 1em; background: #1da1f2; color: white; text-decoration: none; border-radius: 3px;">Twitter</a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.permalink | urlencode }}" target="_blank" style="margin-right: 1em; padding: 0.5em 1em; background: #0077b5; color: white; text-decoration: none; border-radius: 3px;">LinkedIn</a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.permalink | urlencode }}" target="_blank" style="margin-right: 1em; padding: 0.5em 1em; background: #4267b2; color: white; text-decoration: none; border-radius: 3px;">Facebook</a>
+                <a href="mailto:?subject={{ page.title | urlencode }}&body=Check out this post: {{ page.permalink | urlencode }}" style="padding: 0.5em 1em; background: #666; color: white; text-decoration: none; border-radius: 3px;">Email</a>
+              </div>
+
+              <!-- Author Info -->
+              <div class="author-info" style="padding: 1.5em; background: #f8f9fa; border-radius: 8px; margin-bottom: 2em;">
+                <h4 style="margin-top: 0;">About the Author</h4>
+                <p style="margin-bottom: 0;">{{ config.description }} 
+                {% if config.extra.github_username %}
+                <a href="https://github.com/{{ config.extra.github_username }}" style="margin-left: 1em;">GitHub</a>
+                {% endif %}
+                </p>
+              </div>
+
+              <!-- Navigation to Other Posts -->
+              <nav class="post-navigation">
+                <h4>More Posts</h4>
+                
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <div style="text-align: left; flex: 1;">
+                    <!-- Previous/Next navigation would require more complex logic -->
+                  </div>
+                  
+                  <div style="text-align: center; padding: 0 1em;">
+                    <a href="/blog/" style="padding: 0.5em 1em; background: #2879d0; color: white; text-decoration: none; border-radius: 3px;">All Posts</a>
+                  </div>
+                  
+                  <div style="flex: 1;"></div>
+                </div>
+              </nav>
+            </footer>
+          </article>
+        </section>
+
+        <aside id="sidebar">
+          <h3>Navigation</h3>
+          <p><a href="/blog/">📝 Blog</a><br>
+          Latest thoughts and insights</p>
+          
+          <p><a href="/media/">🎬 Media Portfolio</a><br>
+          Video production, motion graphics, and creative projects</p>
+          
+          <p><a href="/tech/">💻 Tech Projects</a><br>
+          Software development and programming portfolio</p>
+          
+          <p><a href="/">🏠 Main Portfolio</a><br>
+          Overview and featured work</p>
+          
+          <hr>
+          
+          <h3>Subscribe</h3>
+          <p><a href="{{ get_url(path='atom.xml') }}">📡 RSS Feed</a><br>
+          Get updates on new posts</p>
+
+          <p>This page was generated by <a href="https://www.getzola.org">Zola</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+    {% if config.extra.google_analytics %}
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("{{ config.extra.google_analytics }}");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+    {% endif %}
+  </body>
+</html>

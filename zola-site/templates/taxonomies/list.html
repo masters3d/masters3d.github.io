@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/stylesheet.css') }}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/pygment_trac.css') }}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/print.css') }}" media="print">
+    <link rel="alternate" type="application/atom+xml" title="{{ config.title }} - Blog" href="{{ get_url(path='atom.xml') }}">
+
+    <title>{% if taxonomy.name == "categories" %}Categories{% else %}Tags{% endif %} - {{ config.title }}</title>
+    <meta name="description" content="Browse posts by {% if taxonomy.name == 'categories' %}category{% else %}tag{% endif %}">
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>{{ config.title }}</h1>
+        <h2>{{ config.extra.tagline }}</h2>
+        <nav style="margin-top: 10px;">
+          <a href="/">Home</a> | 
+          <a href="/blog/">Blog</a> | 
+          <a href="/media/">Media</a> | 
+          <a href="/tech/">Tech</a>
+        </nav>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <!-- Breadcrumbs -->
+          <nav class="breadcrumbs" style="margin-bottom: 20px; font-size: 0.9em; color: #666;">
+            <a href="/">Home</a> → <a href="/blog/">Blog</a> → <span>{% if taxonomy.name == "categories" %}Categories{% else %}Tags{% endif %}</span>
+          </nav>
+
+          <h1>{% if taxonomy.name == "categories" %}📂 Categories{% else %}🏷️ Tags{% endif %}</h1>
+          <p style="color: #666; margin-bottom: 2em;">Browse posts by {% if taxonomy.name == "categories" %}category{% else %}tag{% endif %}</p>
+
+          <div class="taxonomy-cloud" style="margin-bottom: 3em;">
+            {% for term in taxonomy.items %}
+            <a href="{{ term.permalink }}" 
+               style="display: inline-block; margin: 0.25em; padding: 0.5em 1em; 
+                      background: {% if taxonomy.name == 'categories' %}#e1f5fe{% else %}#f3e5f5{% endif %}; 
+                      border-radius: 20px; text-decoration: none; 
+                      font-size: 1em;">
+              {{ term.name }} ({{ term.pages | length }})
+            </a>
+            {% endfor %}
+          </div>
+
+          <div class="taxonomy-list">
+            <h2>All {% if taxonomy.name == "categories" %}Categories{% else %}Tags{% endif %}</h2>
+            {% for term in taxonomy.items | sort(attribute="name") %}
+            <div style="margin-bottom: 1.5em; padding: 1em; background: #f9f9f9; border-radius: 8px;">
+              <h3 style="margin: 0 0 0.5em 0;">
+                <a href="{{ term.permalink }}" style="text-decoration: none; color: #2879d0;">
+                  {% if taxonomy.name == "categories" %}📂{% else %}🏷️{% endif %} {{ term.name }}
+                </a>
+                <span style="color: #666; font-size: 0.8em; font-weight: normal;">({{ term.pages | length }} post{% if term.pages | length != 1 %}s{% endif %})</span>
+              </h3>
+              <ul style="margin: 0; padding-left: 1.5em;">
+                {% for page in term.pages | slice(end=5) %}
+                <li style="margin-bottom: 0.25em;">
+                  <a href="{{ page.permalink }}">{{ page.title }}</a>
+                  <small style="color: #666;">- {{ page.date | date(format="%b %d, %Y") }}</small>
+                </li>
+                {% endfor %}
+                {% if term.pages | length > 5 %}
+                <li style="margin-top: 0.5em;"><a href="{{ term.permalink }}">View all {{ term.pages | length }} posts →</a></li>
+                {% endif %}
+              </ul>
+            </div>
+            {% endfor %}
+          </div>
+        </section>
+
+        <aside id="sidebar">
+          <h3>Navigation</h3>
+          <p><a href="/blog/">📝 Blog</a><br>
+          Latest thoughts and insights</p>
+          
+          <p><a href="/media/">🎬 Media Portfolio</a><br>
+          Video production, motion graphics, and creative projects</p>
+          
+          <p><a href="/tech/">💻 Tech Projects</a><br>
+          Software development and programming portfolio</p>
+          
+          <p><a href="/">🏠 Main Portfolio</a><br>
+          Overview and featured work</p>
+          
+          <hr>
+          
+          {% if taxonomy.name == "categories" %}
+          <h3>Browse by Tags</h3>
+          <p><a href="/tags/">🏷️ View All Tags</a></p>
+          {% else %}
+          <h3>Browse by Categories</h3>
+          <p><a href="/categories/">📂 View All Categories</a></p>
+          {% endif %}
+          
+          <h3>Subscribe</h3>
+          <p><a href="{{ get_url(path='atom.xml') }}">📡 RSS Feed</a><br>
+          Get updates on new posts</p>
+
+          <p>This page was generated by <a href="https://www.getzola.org">Zola</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+    {% if config.extra.google_analytics %}
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("{{ config.extra.google_analytics }}");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+    {% endif %}
+  </body>
+</html>
