@@ -114,6 +114,8 @@ masters3d.github.io/
   - Taxonomy system (categories/tags)
   - SEO optimization with meta tags
   - Markdown-first content creation workflow
+  - **Created using coding agents** - demonstrates AI-assisted development
+  - **Repository-based context** - agent instructions stored in codebase
 - **Future versions**: Update when major decisions change
 
 ## Blog System Implementation (Added v1.1)
@@ -163,3 +165,5 @@ masters3d.github.io/
 - **RSS consistency**: All posts auto-include in feed
 - **Markdown source**: Always prioritize `.md` files as source of truth
 - **Template consistency**: Use `blog-post.html` for all posts
+- **Model agnostic**: System works with various coding AI models (GPT-4, Claude, Gemini, etc.)
+- **Context preservation**: Agent instructions are part of the repository for consistency

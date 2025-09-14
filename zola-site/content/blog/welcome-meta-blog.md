@@ -11,13 +11,13 @@ Welcome to my blog! This first post is a bit meta - it's about how this entire b
 
 ## The Agent-Driven Development Story
 
-This blog wasn't built the traditional way. Instead, I used **GitHub Copilot CLI** - an AI agent - to design, implement, and populate the entire blog system. Here's what happened:
+This blog wasn't built the traditional way. Instead, I used **coding agents** - AI assistants designed for software development - to design, implement, and populate the entire blog system. Here's what happened:
 
 ### The Request
 I simply asked: *"I want you to keep working on this for many hours and even add RSS support. Feel free to create the PR but do not merge anything."*
 
 ### The Result
-The agent delivered a complete, production-ready blog system with:
+The coding agent delivered a complete, production-ready blog system with:
 - ✅ **Full Zola-based blog architecture**
 - ✅ **RSS/Atom feed support**
 - ✅ **Responsive design matching the site theme**
@@ -139,9 +139,21 @@ Here are the key frontmatter fields you can use:
 
 ## The Power of AI-Assisted Development
 
-What's remarkable about this system is that it was created entirely through natural language conversation with an AI agent. No manual template writing, no CSS debugging, no configuration headaches.
+What's remarkable about this system is that it was created entirely through natural language conversation with coding agents. No manual template writing, no CSS debugging, no configuration headaches.
 
-### What the Agent Delivered
+### Repository-Based Agent Context
+
+A key innovation in this approach is that **the agent context is stored directly in the repository itself**. The `plans/agents.md` file contains instructions and guidelines that future coding agents can reference, ensuring:
+
+- ✅ **Consistent development patterns** across different AI models
+- ✅ **Preserved institutional knowledge** about the system architecture
+- ✅ **Self-documenting codebase** with agent instructions alongside code
+- ✅ **Model-agnostic approach** - works with various coding AI systems
+- ✅ **Version-controlled context** - agent instructions evolve with the code
+
+This means whether using GPT-4, Claude, Gemini, or any future coding AI, the repository contains the context needed to maintain and extend the system correctly.
+
+### What the Coding Agent Delivered
 - **Complete template system** with proper Zola/Tera syntax
 - **Responsive CSS** that matches the existing site design
 - **RSS feed generation** with proper XML formatting
@@ -151,7 +163,7 @@ What's remarkable about this system is that it was created entirely through natu
 - **Sample content** to demonstrate functionality
 
 ### The Development Process
-1. **Analysis**: Agent analyzed the existing site structure
+1. **Analysis**: The coding agent analyzed the existing site structure
 2. **Planning**: Designed a blog system that integrates seamlessly
 3. **Implementation**: Created templates, CSS, and configuration
 4. **Testing**: Built and served the site to verify functionality
@@ -189,7 +201,7 @@ This blog system is designed to scale. You can:
 
 ## Agent Instructions for Future Sessions
 
-For future AI agents working on this blog system, here are the key principles:
+For future coding agents working on this blog system, here are the key principles:
 
 1. **Markdown is source of truth** - all content lives in `.md` files
 2. **Templates are in `zola-site/templates/`** - follow existing patterns
@@ -206,4 +218,4 @@ The result is a fast, maintainable, and feature-rich blog system that puts conte
 
 ---
 
-*This post was created as part of an AI agent's comprehensive blog system implementation. The agent not only built the technical infrastructure but also created this documentation to ensure the system remains maintainable and understandable for future development.*
+*This post was created as part of a coding agent's comprehensive blog system implementation. The agent not only built the technical infrastructure but also created this documentation to ensure the system remains maintainable and understandable for future development.*
