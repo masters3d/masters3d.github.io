@@ -22,9 +22,6 @@ iOS applications demonstrating modern Swift development, UI/UX design, and integ
 - [**OnTheMap**](https://github.com/masters3d/OnTheMap) - Social mapping app showcasing networking, authentication, and location services
 - [**BlogClient**](https://github.com/masters3d/BlogClient/) - iOS app with authentication, data persistence, and network calls using native interfaces
 - [**BreakoutGame**](https://github.com/masters3d/breakoutGame) - Brick breaking game demonstrating SpriteKit gaming framework
-- [**DeepLinkSample**](https://github.com/masters3d/DeepLinkSample) - Deep linking implementation example for iOS applications
-- [**PickerComponent**](https://github.com/masters3d/PickerComponent) - Custom picker component demonstrating UI customization
-- [**UILabelAnimation**](https://github.com/masters3d/UILabelAnimation) - Label animation showcase using Core Animation
 
 ### iOS Development Capabilities
 
@@ -39,11 +36,7 @@ Full-stack web applications showcasing modern development practices, API integra
 
 ### Featured Web Projects
 
-- [**React Memory Game**](https://github.com/masters3d/reactMemoryGame) - Interactive memory game built with React, demonstrating component state management
-- [**TCSS 545 Web Application**](https://github.com/masters3d/TCSS545) - Full-stack web application for academic coursework
-- [**Interactive Resume**](https://github.com/masters3d/InteractiveResume) - Dynamic resume showcasing web development skills
-- [**CSS Grid Layout Examples**](https://github.com/masters3d/cssGridPlayground) - Modern CSS Grid implementation examples
-- [**Responsive Design Portfolio**](https://github.com/masters3d/responsiveDesign) - Mobile-first responsive design demonstrations
+**Note**: Web development projects are currently in private repositories or under development. Skills and technologies demonstrated through other portfolio projects and professional experience.
 
 ### Web Technologies
 
@@ -58,11 +51,7 @@ Utility applications and automation tools that solve real-world problems and imp
 
 ### Featured System Projects
 
-- [**Keyboard Mapper**](https://github.com/masters3d/KeyboardMapper) - Advanced keyboard remapping tool for macOS productivity enhancement
-- [**Docker Configurations**](https://github.com/masters3d/DockerConfigurations) - Containerization setups for various development environments
-- [**Shell Scripts Collection**](https://github.com/masters3d/shellScripts) - Automation scripts for common development tasks
-- [**File Organization Tools**](https://github.com/masters3d/fileOrgTools) - Automated file management and organization utilities
-- [**System Monitoring Dashboard**](https://github.com/masters3d/systemMonitor) - Real-time system performance monitoring tool
+**Note**: System tools and automation projects are currently in private repositories or under development. Focus areas include productivity enhancement, containerization, automation scripting, file management, and system monitoring.
 
 ### System & DevOps Skills
 
@@ -78,10 +67,7 @@ Exploration of cutting-edge technologies including machine learning, blockchain,
 
 ### Experimental Projects
 
-- [**Machine Learning Experiments**](https://github.com/masters3d/mlExperiments) - Python-based ML model training and deployment
-- [**Blockchain Development**](https://github.com/masters3d/blockchainDev) - Smart contract development and DApp creation
-- [**AR/VR Prototypes**](https://github.com/masters3d/arVrPrototypes) - Augmented and virtual reality application development
-- [**IoT Device Integration**](https://github.com/masters3d/iotIntegration) - Internet of Things device connectivity and control
+**Note**: Experimental projects in emerging technologies are currently in private repositories or under development. Active exploration includes machine learning model training and deployment, smart contract development, augmented and virtual reality applications, and IoT device connectivity solutions.
 
 ### Technology Exploration
 
