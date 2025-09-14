@@ -51,9 +51,9 @@ Professional commercial video showcasing the SQ Series™ Fabric Building system
 
 ### Product Demonstration Videos
 
-Professional product demonstrations showcasing functionality, features, and real-world applications across various industries and use cases.
+Commercial video production showcasing product features and applications.
 
-**[Watch Product Demo →](https://www.youtube.com/watch?v=vOb_Xu74ras)**
+**[Watch Video →](https://www.youtube.com/watch?v=vOb_Xu74ras)**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vOb_Xu74ras" frameborder="0" allowfullscreen style="max-width: 100%; height: auto;"></iframe>
 
