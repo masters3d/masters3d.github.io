@@ -197,14 +197,24 @@ User wanted to move media and tech projects from separate pages into the blog se
 - Fixed text-indent and letter-spacing issues
 - Improved blog preview titles styling
 
-#### Latest Fix - Blog Header Background ✅ (23:35 PST)
-**Problem**: Blog post titles had blue header background making them hard to read
-**Root Cause**: Main site header CSS (`header { background: #2e7bcf url(../images/header-bg.jpg)... }`) applied to all `<header>` elements including `<header class="post-header">`
-**Solution**: Added specific CSS overrides for `.post-header`:
-- `background: none !important` - Remove blue background
-- `padding-top: 0 !important` - Fix spacing  
-- `font-family: inherit !important` - Proper font inheritance
-**Result**: ✅ Blog post titles now have clean white background and perfect readability
+#### Latest Cleanup - Remove Old Portfolio Links ✅ (23:45 PST)
+**Request**: Remove old 🎬 Media Portfolio and 💻 Tech Projects links in favor of blog versions
+**Changes Made**: Updated all template files to use blog-based portfolio links:
+- **media.html**: Navigation and sidebar updated to point to blog
+- **tech.html**: Navigation and sidebar updated to point to blog  
+- **blog.html**: Sidebar already updated (previous session)
+- **blog-post.html**: Sidebar already updated (previous session)
+- **taxonomies/single.html**: Sidebar updated to use blog portfolio links
+- **taxonomies/list.html**: Sidebar updated to use blog portfolio links
+
+**All Old Links Removed**:
+- ❌ `/media/` links removed from all templates
+- ❌ `/tech/` links removed from all templates  
+- ✅ `/blog/media-projects-portfolio/` links added
+- ✅ `/blog/technical-projects-portfolio/` links added
+- ✅ `/blog/` emphasized as central portfolio hub
+
+**Result**: ✅ Complete template consistency - all portfolio content now accessed through blog
 
 #### Final Testing Results ✅ - All Issues Resolved
 - **✅ Media Portfolio**: http://127.0.0.1:1031/blog/media-projects-portfolio/ - Working, clean header
