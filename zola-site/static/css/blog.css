@@ -123,6 +123,11 @@
   margin-bottom: 2em;
   padding-bottom: 1em;
   border-bottom: 2px solid #f0f0f0;
+  /* Override main header styling */
+  background: none !important;
+  padding-top: 0 !important;
+  border-bottom: 2px solid #f0f0f0 !important;
+  font-family: inherit !important;
 }
 
 /* Blog post title - override main theme styles */
