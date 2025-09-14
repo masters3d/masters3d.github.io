@@ -1,6 +1,6 @@
 +++
 title = "Building This Blog: A Meta Journey with AI Agents"
-date = 2024-09-07
+date = 2025-09-13
 description = "How this entire blog system was created using AI agents, including the technical implementation, content creation, and instructions for adding new posts."
 template = "blog-post.html"
 categories = ["meta", "ai", "development"]
@@ -70,7 +70,7 @@ Every post needs TOML frontmatter at the top:
 ```markdown
 +++
 title = "Your Post Title"
-date = 2024-09-07
+date = 2025-09-13
 description = "SEO-friendly description of your post"
 template = "blog-post.html"
 categories = ["web-development", "tutorial"]
@@ -130,7 +130,7 @@ Here are the key frontmatter fields you can use:
 | Field | Required | Description | Example |
 |-------|----------|-------------|---------|
 | `title` | ✅ | Post title | `"My Amazing Post"` |
-| `date` | ✅ | Publication date | `2024-09-07` |
+| `date` | ✅ | Publication date | `2025-09-13` |
 | `description` | ✅ | SEO description | `"Learn how to..."` |
 | `template` | ✅ | Template to use | `"blog-post.html"` |
 | `categories` | ⭕ | Broad topics | `["web-development"]` |

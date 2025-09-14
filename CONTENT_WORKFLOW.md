@@ -1,19 +1,19 @@
 # Content Management Workflow
 
-This portfolio uses **markdown as the source of truth** for all content. Pages are generated from markdown files using Zola static site generator, providing a professional content management workflow.
+This portfolio uses **markdown as the source of truth** for all content. Pages are generated from markdown files using Zola static site generator with automatic deployment via GitHub Actions.
 
 ## 🎯 Quick Start
 
 **To edit content:**
 1. Edit markdown files in `zola-site/content/`
-2. Run `./build.sh` to regenerate HTML
-3. Commit and push changes
+2. Commit and push changes
+3. GitHub Actions automatically builds and deploys the site
 
 **To preview during editing:**
 ```bash
 cd zola-site
-zola serve --port 8084
-# Visit http://127.0.0.1:8084/
+zola serve
+# Visit http://127.0.0.1:1111/
 ```
 
 ## 📁 File Structure
@@ -24,42 +24,33 @@ zola serve --port 8084
 - `zola-site/content/_index.md` - Main portfolio page content
 - `zola-site/content/tech/_index.md` - Technical projects portfolio
 - `zola-site/content/media/_index.md` - Media portfolio
+- `zola-site/content/blog/` - Blog posts (markdown files)
 
 **Template Sources:**
 - `zola-site/templates/index.html` - Main page layout
 - `zola-site/templates/tech.html` - Tech page layout
 - `zola-site/templates/media.html` - Media page layout
+- `zola-site/templates/blog.html` - Blog listing layout
+- `zola-site/templates/blog-post.html` - Individual blog post layout
 
 **Configuration:**
-- `zola-site/config.toml` - Site configuration
+- `zola-site/config.toml` - Site configuration (URL, title, analytics)
 
 ### 🚫 Don't Edit These (Generated Files)
 
-**Generated HTML files that will be overwritten:**
-- `index.html` - Generated from `_index.md`
-- `tech.html` - Generated from `tech/_index.md`
-- `media.html` - Generated from `media/_index.md`
+**Generated Output:**
+- `zola-site/public/` - Complete built website (auto-generated)
+- All files in `public/` are rebuilt on every Zola build
 
-## 🔄 Build Process
+## 🔄 Deployment Process
 
-The `./build.sh` script handles the complete build process:
+**Automatic via GitHub Actions:**
+1. Push changes to `master` branch
+2. GitHub Actions triggers workflow
+3. Zola builds the site from markdown
+4. Site deploys automatically to https://masters3d.com
 
-1. **Copies assets** - CSS and images to Zola static folder
-2. **Builds with Zola** - Generates HTML from markdown
-3. **Copies output** - Moves generated files to root
-4. **Converts URLs** - Transforms Zola URLs to static HTML URLs
-
-### 🌐 URL Structure
-
-**Development (Zola serve):**
-- Main page: `http://127.0.0.1:8084/`
-- Tech page: `http://127.0.0.1:8084/tech/`
-- Media page: `http://127.0.0.1:8084/media/`
-
-**Production (Static files):**
-- Main page: `index.html`
-- Tech page: `tech.html`
-- Media page: `media.html`
+**No manual build steps required!**
 
 ## 💻 Development Commands
 
@@ -67,104 +58,95 @@ The `./build.sh` script handles the complete build process:
 ```bash
 # Start Zola development server with live reload
 cd zola-site
-zola serve --port 8084
+zola serve
 
-# Visit http://127.0.0.1:8084/
-# Navigate to http://127.0.0.1:8084/tech/ and http://127.0.0.1:8084/media/
+# Visit http://127.0.0.1:1111/
+# All pages accessible: /, /tech/, /media/, /blog/
 ```
 
-**Build and Test Production:**
+**Manual Build (for testing):**
 ```bash
-# Generate all HTML files from markdown
-./build.sh
-
-# Test production files
-python3 -m http.server 8083
-# Visit http://127.0.0.1:8083/
+cd zola-site
+zola build
+# Output in public/ directory
 ```
 
-**Content Update Workflow:**
+## ✍️ Creating Content
+
+### 📝 Adding a Blog Post
+
+1. Create new file: `zola-site/content/blog/your-post-name.md`
+2. Add frontmatter:
+```toml
++++
+title = "Your Post Title"
+date = 2024-09-14
+description = "SEO description"
+template = "blog-post.html"
+categories = ["category"]
+tags = ["tag1", "tag2"]
++++
+```
+3. Write content in markdown below the frontmatter
+4. Commit and push
+
+### 📄 Editing Existing Pages
+
+1. Edit the appropriate markdown file:
+   - Homepage: `zola-site/content/_index.md`
+   - Tech page: `zola-site/content/tech/_index.md`
+   - Media page: `zola-site/content/media/_index.md`
+2. Commit and push changes
+
+## 🌐 URL Structure
+
+**All environments use clean URLs:**
+- Homepage: `/`
+- Tech portfolio: `/tech/`
+- Media portfolio: `/media/`
+- Blog listing: `/blog/`
+- Blog posts: `/blog/post-name/`
+- RSS feed: `/atom.xml`
+
+## 🔍 Troubleshooting
+
+**Local server not starting?**
 ```bash
-# Edit content
-nano zola-site/content/_index.md
-nano zola-site/content/tech/_index.md
-nano zola-site/content/media/_index.md
-
-# Regenerate HTML
-./build.sh
-
-# Commit changes
-git add .
-git commit -m "Update content from markdown source"
-git push origin master
+# Make sure you're in the right directory
+cd zola-site
+zola serve
 ```
 
-## 📝 Content Structure Examples
+**Changes not showing?**
+- Check file is saved
+- Zola auto-reloads on file changes
+- Check browser console for errors
 
-### Main Page Content (`_index.md`)
+**Deployment failed?**
+- Check GitHub Actions tab for error messages
+- Verify markdown syntax is correct
+- Ensure all required frontmatter is present
+
+## 📚 Markdown Reference
+
+**Basic formatting:**
 ```markdown
-+++
-title = "Masters3d Portfolio"
-description = "Software Engineer & Digital Creator"
-+++
-
-# About Me
-Your bio and introduction content here...
-
-## Featured Work
-Portfolio highlights...
+# Heading 1
+## Heading 2
+**bold text**
+*italic text*
+[link text](URL)
+![image alt](image-path)
 ```
 
-### Section Pages (`tech/_index.md`, `media/_index.md`)
-```markdown
+**Blog post frontmatter:**
+```toml
 +++
-title = "Technical Projects & Development"
-description = "Software development portfolio"
-template = "tech.html"
+title = "Required: Post title"
+date = 2024-09-14
+description = "Required: SEO description"
+template = "blog-post.html"
+categories = ["optional"]
+tags = ["optional", "multiple"]
 +++
-
-# Technical Projects Portfolio
-Your technical content here...
 ```
-
-## 🎨 Template Customization
-
-Templates use Zola's templating syntax. Key variables:
-- `{{ section.title }}` - Page title from frontmatter
-- `{{ section.content | safe }}` - Rendered markdown content
-- `{{ config.title }}` - Site title from config.toml
-
-## ⚠️ Important Notes
-
-1. **Never edit generated HTML files directly** - they will be overwritten
-2. **Use correct URLs for development vs production** - build script handles conversion
-3. **Test both environments** - Zola serve for development, static files for production
-4. **Run build script after every content change** - ensures HTML is up to date
-5. **Commit source files, not just generated files** - maintain markdown as source of truth
-
-## 🚀 Benefits of This Workflow
-
-- **Content-focused editing** - Write in markdown, not HTML
-- **Version control friendly** - Clear diffs of content changes
-- **Error prevention** - Automated generation reduces manual mistakes
-- **Consistent output** - Templates ensure uniform styling
-- **Professional workflow** - Industry-standard static site generation
-- **Future-proof** - Easy to migrate or extend
-
-## 🔧 Troubleshooting
-
-**Page not found in development?**
-- Use `/tech/` not `/tech.html` with Zola serve
-- Check that content file exists with correct frontmatter
-
-**URLs broken after build?**
-- Run `./build.sh` to ensure URL conversion completed
-- Check that sed commands in build script completed successfully
-
-**Styling broken?**
-- Ensure CSS files are copied: `cp -r css zola-site/static/`
-- Check that build script copies assets properly
-
-**Content not updating?**
-- Run `./build.sh` after every content change
-- Check that you're editing source files, not generated files

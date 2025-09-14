@@ -116,6 +116,11 @@ masters3d.github.io/
   - Markdown-first content creation workflow
   - **Created using coding agents** - demonstrates AI-assisted development
   - **Repository-based context** - agent instructions stored in codebase
+- **v1.2** (2024-09-14): Clean-up and validation session
+  - Branch: `clean-up-and-validations`
+  - Focus: Deployment fixes, code cleanup, issue resolution
+  - Major issue identified: Blog system not deploying (404 on /blog/)
+  - Repository cleanup and optimization
 - **Future versions**: Update when major decisions change
 
 ## Blog System Implementation (Added v1.1)
