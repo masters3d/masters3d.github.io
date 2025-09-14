@@ -197,24 +197,27 @@ User wanted to move media and tech projects from separate pages into the blog se
 - Fixed text-indent and letter-spacing issues
 - Improved blog preview titles styling
 
-#### Latest Cleanup - Remove Old Portfolio Links ✅ (23:45 PST)
-**Request**: Remove old 🎬 Media Portfolio and 💻 Tech Projects links in favor of blog versions
-**Changes Made**: Updated all template files to use blog-based portfolio links:
-- **media.html**: Navigation and sidebar updated to point to blog
-- **tech.html**: Navigation and sidebar updated to point to blog  
-- **blog.html**: Sidebar already updated (previous session)
-- **blog-post.html**: Sidebar already updated (previous session)
-- **taxonomies/single.html**: Sidebar updated to use blog portfolio links
-- **taxonomies/list.html**: Sidebar updated to use blog portfolio links
+#### Latest Fix - YouTube Video Links ✅ (23:55 PST)
+**Problem**: Some YouTube videos in media portfolio were broken/unavailable
+**Investigation**: Used YouTube oEmbed API to test video availability:
+- ✅ **Working**: waXta2PAjfc (Honduras 2015) - Channel: @cheyojimenez333  
+- ❌ **Broken**: SY3qGtSdp0Q (Honduras 2014) - Returns "Not Found"
+- ❌ **Broken**: zfDHNLdNOzU (Real Estate) - Returns "Not Found"  
+- ❌ **Broken**: f1E3qG5wKKo (Product Demo) - Returns "Not Found"
 
-**All Old Links Removed**:
-- ❌ `/media/` links removed from all templates
-- ❌ `/tech/` links removed from all templates  
-- ✅ `/blog/media-projects-portfolio/` links added
-- ✅ `/blog/technical-projects-portfolio/` links added
-- ✅ `/blog/` emphasized as central portfolio hub
+**Solution Applied**: 
+- Kept working video with proper embed
+- Replaced broken videos with "Video Currently Unavailable" notices
+- Preserved original video IDs in HTML comments for future reference
+- Maintained portfolio structure while acknowledging unavailability
 
-**Result**: ✅ Complete template consistency - all portfolio content now accessed through blog
+**YouTube Video Recovery Options** (for user):
+1. **Check @cheyojimenez333 channel** - working video suggests other videos might be there
+2. **Search by title** - "Honduras 2014 Mission Trip", "Real Estate Property Tour", etc.
+3. **Check if videos moved to different channel** or were made private
+4. **Re-upload if original files available**
+
+**Result**: ✅ Media portfolio now displays cleanly without broken embeds
 
 #### Final Testing Results ✅ - All Issues Resolved
 - **✅ Media Portfolio**: http://127.0.0.1:1031/blog/media-projects-portfolio/ - Working, clean header
