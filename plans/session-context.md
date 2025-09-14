@@ -217,7 +217,23 @@ User wanted to move media and tech projects from separate pages into the blog se
 3. **Check if videos moved to different channel** or were made private
 4. **Re-upload if original files available**
 
-**Result**: ✅ Media portfolio now displays cleanly without broken embeds
+#### Video Replacement Success ✅ (00:05 PST)
+**User Provided**: Replacement video for broken 2014 mission trip
+**New Video**: VMkDSfq1ghg - "Guatemala 2014 Upon This Rock Ministries"
+**Channel**: @utrministries (Official Upon This Rock Ministries channel)
+**Action Taken**: 
+- Replaced broken SY3qGtSdp0Q with working VMkDSfq1ghg
+- Updated title from "Honduras 2014" to "Guatemala 2014" to match actual content
+- Updated description to reflect Guatemala location and construction projects
+- Verified video accessibility via oEmbed API
+
+**Updated Video Status**:
+- ✅ **Honduras 2015** (waXta2PAjfc) - Working on @cheyojimenez333
+- ✅ **Guatemala 2014** (VMkDSfq1ghg) - Working on @utrministries (RESTORED)
+- ❌ **Real Estate** (zfDHNLdNOzU) - Still unavailable  
+- ❌ **Product Demo** (f1E3qG5wKKo) - Still unavailable
+
+**Result**: ✅ 2 of 4 videos now working, media portfolio significantly improved
 
 #### Final Testing Results ✅ - All Issues Resolved
 - **✅ Media Portfolio**: http://127.0.0.1:1031/blog/media-projects-portfolio/ - Working, clean header
