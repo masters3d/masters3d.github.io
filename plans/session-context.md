@@ -197,15 +197,19 @@ User wanted to move media and tech projects from separate pages into the blog se
 - Fixed text-indent and letter-spacing issues
 - Improved blog preview titles styling
 
-#### Latest Fix - Portfolio Pages Working ✅ (23:30 PST)
-**Problem**: Portfolio URLs returning "template not found" error
-**Root Cause**: Missing `template = "blog-post.html"` in portfolio frontmatter
-**Solution**: Added template specification to both portfolio posts
-**Result**: ✅ Both portfolio pages now render correctly with full blog styling
+#### Latest Fix - Blog Header Background ✅ (23:35 PST)
+**Problem**: Blog post titles had blue header background making them hard to read
+**Root Cause**: Main site header CSS (`header { background: #2e7bcf url(../images/header-bg.jpg)... }`) applied to all `<header>` elements including `<header class="post-header">`
+**Solution**: Added specific CSS overrides for `.post-header`:
+- `background: none !important` - Remove blue background
+- `padding-top: 0 !important` - Fix spacing  
+- `font-family: inherit !important` - Proper font inheritance
+**Result**: ✅ Blog post titles now have clean white background and perfect readability
 
-#### Final Testing Results ✅
-- **✅ Media Portfolio**: http://127.0.0.1:1031/blog/media-projects-portfolio/ - Working
-- **✅ Tech Portfolio**: http://127.0.0.1:1031/blog/technical-projects-portfolio/ - Working  
+#### Final Testing Results ✅ - All Issues Resolved
+- **✅ Media Portfolio**: http://127.0.0.1:1031/blog/media-projects-portfolio/ - Working, clean header
+- **✅ Tech Portfolio**: http://127.0.0.1:1031/blog/technical-projects-portfolio/ - Working, clean header  
 - **✅ Blog Listing**: http://127.0.0.1:1031/blog/ - Working
-- **✅ Individual Post**: http://127.0.0.1:1031/blog/welcome-meta-blog/ - Working
-- **✅ Title Readability**: All blog titles clearly readable with proper contrast
+- **✅ Individual Post**: http://127.0.0.1:1031/blog/welcome-meta-blog/ - Working, clean header
+- **✅ Title Readability**: Perfect contrast and clean white background on all blog titles
+- **✅ Header Background**: No more blue background interference on blog post titles
