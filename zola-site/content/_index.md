@@ -4,6 +4,7 @@ title = "Masters3d"
 
 <nav style="margin-bottom: 20px; padding: 10px; background: #f0f0f0; border-radius: 5px;">
   <a href="/"><strong>🏠 Home</strong></a> | 
+  <a href="/blog/">📝 Blog</a> | 
   <a href="/media/">🎬 Media</a> | 
   <a href="/tech/">💻 Tech Projects</a>
 </nav>

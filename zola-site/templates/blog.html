@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/stylesheet.css') }}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/pygment_trac.css') }}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/print.css') }}" media="print">
+    <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/blog.css') }}" media="screen">
+    <link rel="alternate" type="application/atom+xml" title="{{ config.title }} - Blog" href="{{ get_url(path='blog/atom.xml') }}">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>{{ section.title }} - {{ config.title }}</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>{{ config.title }}</h1>
+        <h2>{{ section.title }}</h2>
+        <a href="/" class="button"><small>Back to</small> Home</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <nav style="margin-bottom: 20px; padding: 10px; background: #f0f0f0; border-radius: 5px;">
+            <a href="/">🏠 Home</a> | 
+            <a href="/media/">🎬 Media</a> | 
+            <a href="/tech/">💻 Tech Projects</a> | 
+            <a href="/blog/"><strong>📝 Blog</strong></a>
+          </nav>
+
+          {{ section.content | safe }}
+
+          {% if section.pages %}
+          <div class="blog-posts">
+            {% for page in section.pages %}
+            <article class="blog-post-preview" style="margin-bottom: 2em; padding: 1em; border-left: 3px solid #2879d0;">
+              <h2 style="margin-top: 0;"><a href="{{ page.permalink }}" style="text-decoration: none; color: #2879d0;">{{ page.title }}</a></h2>
+              <div class="post-meta" style="color: #666; font-size: 0.9em; margin-bottom: 1em;">
+                📅 {{ page.date | date(format="%B %d, %Y") }}
+                {% if page.extra.tags %}
+                <span style="margin-left: 1em;">🏷️ 
+                {% for tag in page.extra.tags %}
+                  <span style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.8em;">{{ tag }}</span>
+                  {% if not loop.last %} {% endif %}
+                {% endfor %}
+                </span>
+                {% endif %}
+              </div>
+              {% if page.description %}
+              <p style="color: #666; font-style: italic; margin-bottom: 1em;">{{ page.description }}</p>
+              {% endif %}
+              {% if page.summary %}
+              <div class="post-summary">
+                {{ page.summary | safe }}
+              </div>
+              {% endif %}
+              <p><a href="{{ page.permalink }}" style="color: #2879d0;">Read more →</a></p>
+            </article>
+            {% endfor %}
+          </div>
+          {% else %}
+          <p style="color: #666; font-style: italic;">No blog posts yet. Check back soon!</p>
+          {% endif %}
+
+          {% if paginator %}
+          <nav class="pagination" style="margin-top: 2em; text-align: center;">
+            {% if paginator.previous %}
+            <a href="{{ paginator.previous }}" style="margin-right: 1em;">← Previous</a>
+            {% endif %}
+            
+            <span>Page {{ paginator.current_index }} of {{ paginator.number_pagers }}</span>
+            
+            {% if paginator.next %}
+            <a href="{{ paginator.next }}" style="margin-left: 1em;">Next →</a>
+            {% endif %}
+          </nav>
+          {% endif %}
+        </section>
+
+        <aside id="sidebar">
+          <h3>Portfolio Sections</h3>
+          <p><a href="/">🏠 Main Portfolio</a><br>
+          Overview and featured work</p>
+          
+          <p><a href="/media/">🎬 Media Portfolio</a><br>
+          Video production, motion graphics, and creative projects</p>
+          
+          <p><a href="/tech/">💻 Tech Projects</a><br>
+          Software development and programming portfolio</p>
+
+          <p><strong>📝 Blog</strong><br>
+          Latest thoughts, tutorials, and insights</p>
+
+          <hr>
+
+          <h3>Subscribe</h3>
+          <p><a href="{{ get_url(path='blog/atom.xml') }}">📡 RSS Feed</a><br>
+          Stay updated with new posts</p>
+
+          <h3>Latest Posts</h3>
+          {% if section.pages %}
+          <ul style="list-style: none; padding-left: 0;">
+            {% for page in section.pages | slice(end=5) %}
+            <li style="margin-bottom: 0.5em;">
+              <a href="{{ page.permalink }}" style="font-size: 0.9em;">{{ page.title }}</a>
+              <br><small style="color: #666;">{{ page.date | date(format="%b %d, %Y") }}</small>
+            </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+
+          <p>This page was generated by <a href="https://www.getzola.org">Zola</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+    {% if config.extra.google_analytics %}
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("{{ config.extra.google_analytics }}");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+    {% endif %}
+  </body>
+</html>
