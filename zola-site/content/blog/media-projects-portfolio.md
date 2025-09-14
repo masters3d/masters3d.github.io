@@ -109,7 +109,6 @@ Elevated perspectives providing comprehensive coverage of real estate properties
 
 ### Drone Operation Skills
 
-- **FAA Part 107 Certified**: Licensed commercial drone pilot
 - **Flight Planning**: Route optimization, safety assessment, weather evaluation
 - **Cinematic Techniques**: Smooth movements, reveal shots, establishing shots
 - **Technical Proficiency**: Multiple drone platforms, camera stabilization, remote piloting
