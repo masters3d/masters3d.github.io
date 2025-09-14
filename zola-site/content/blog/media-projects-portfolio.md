@@ -22,14 +22,13 @@ Video about the construction project of a church in Guatemala. I did the shootin
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/waXta2PAjfc" frameborder="0" allowfullscreen style="max-width: 100%; height: auto;"></iframe>
 
-### Honduras 2014 Mission Trip - Upon this Rock Ministries  
+### Guatemala 2014 Mission Trip - Upon this Rock Ministries  
 
-Documentation of humanitarian work in Honduras, showcasing community impact and volunteer efforts.
+Documentation of humanitarian work in Guatemala 2014, showcasing community impact, construction projects, and volunteer efforts.
 
-**[Video Currently Unavailable]** *(Original video may have been moved or made private)*
+**[Watch on YouTube →](https://www.youtube.com/watch?v=VMkDSfq1ghg)**
 
-<!-- Original link: https://www.youtube.com/watch?v=SY3qGtSdp0Q -->
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/SY3qGtSdp0Q" frameborder="0" allowfullscreen style="max-width: 100%; height: auto;"></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VMkDSfq1ghg" frameborder="0" allowfullscreen style="max-width: 100%; height: auto;"></iframe>
 
 ### Ministry Capabilities
 
