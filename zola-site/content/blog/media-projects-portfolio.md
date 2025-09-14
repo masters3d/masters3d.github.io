@@ -41,11 +41,11 @@ Documentation of humanitarian work in Guatemala 2014, showcasing community impac
 
 Professional commercial content showcasing products, services, and brand messaging.
 
-### Commercial Product Marketing - Alaska Structures
+### Commercial Marketing Videos
 
-Professional commercial video showcasing the SQ Series™ Fabric Building system, demonstrating product features, benefits, and applications for commercial and industrial use.
+Commercial video production for marketing and promotional content.
 
-**[Watch Commercial Video →](https://www.youtube.com/watch?v=3Qz_OsdHruY)**
+**[Watch Video →](https://www.youtube.com/watch?v=3Qz_OsdHruY)**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3Qz_OsdHruY" frameborder="0" allowfullscreen style="max-width: 100%; height: auto;"></iframe>
 
