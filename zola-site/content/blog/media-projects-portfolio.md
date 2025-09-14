@@ -93,6 +93,14 @@ Screen-recorded content showcasing code implementation, architecture decisions, 
 
 Unique perspectives captured through drone technology for enhanced visual storytelling.
 
+### Humanitarian Drone Documentation - Typhoon Yolanda Recovery
+
+Aerial documentation of humanitarian efforts and recovery work one year after Typhoon Yolanda, showcasing the power of drone cinematography for disaster relief documentation and progress tracking.
+
+**[Watch Drone Documentation →](https://www.youtube.com/watch?v=hMHgUtxMiG8)**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hMHgUtxMiG8" frameborder="0" allowfullscreen style="max-width: 100%; height: auto;"></iframe>
+
 ### Aerial Landscape Documentation
 
 Sweeping shots capturing environmental context and geographical features for enhanced narrative depth.
