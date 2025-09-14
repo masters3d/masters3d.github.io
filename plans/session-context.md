@@ -244,14 +244,25 @@ User wanted to move media and tech projects from separate pages into the blog se
 - Emphasizes drone work for disaster documentation and recovery tracking
 - Verified video accessibility via oEmbed API
 
-**Final Video Status (3/5 Working)**:
+#### WeatherPort Product Video Addition ✅ (Current Session)
+**User Provided**: WeatherPort product demonstration video for commercial section
+**New Video**: vOb_Xu74ras - "Shelton High School's Track & Field WeatherPort Canopy"
+**Channel**: @WeatherPort (Official WeatherPort channel)
+**Content**: Professional product demonstration showcasing athletic facility canopy installation
+**Action Taken**:
+- Replaced broken product demo video (f1E3qG5wKKo) with working WeatherPort showcase
+- Updated "Product Demonstration Videos" section with professional commercial content
+- Added detailed description highlighting product features and real-world applications
+- Verified video accessibility via oEmbed API
+
+**Final Video Status (4/5 Working)** ✅:
 - ✅ **Honduras 2015** (waXta2PAjfc) - Working on @cheyojimenez333
 - ✅ **Guatemala 2014** (VMkDSfq1ghg) - Working on @utrministries  
-- ✅ **Drone/Yolanda Recovery** (hMHgUtxMiG8) - Working on @HotesFoundationOrg (NEW!)
-- ❌ **Real Estate** (zfDHNLdNOzU) - Still unavailable
-- ❌ **Product Demo** (f1E3qG5wKKo) - Still unavailable
+- ✅ **Drone/Yolanda Recovery** (hMHgUtxMiG8) - Working on @HotesFoundationOrg
+- ✅ **WeatherPort Product Demo** (vOb_Xu74ras) - Working on @WeatherPort (NEW!)
+- ❌ **Real Estate** (zfDHNLdNOzU) - Still unavailable (only 1 remaining broken link)
 
-**Result**: ✅ Media portfolio now showcases 3 working videos covering humanitarian work, mission trips, and drone cinematography - excellent diversity of video production skills!
+**Result**: ✅ Media portfolio now showcases 4/5 working videos covering humanitarian work, mission trips, drone cinematography, and commercial product demonstrations - excellent diversity showcasing complete video production capabilities!
 
 #### Final Testing Results ✅ - All Issues Resolved
 - **✅ Media Portfolio**: http://127.0.0.1:1031/blog/media-projects-portfolio/ - Working, clean header

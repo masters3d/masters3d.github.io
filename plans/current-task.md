@@ -135,15 +135,16 @@ curl -s -o /dev/null -w "%{http_code}" http://127.0.0.1:1031/blog/technical-proj
 ## 🚨 POTENTIAL ISSUES
 
 ### Known Issues (Non-blocking)
-1. **17 broken GitHub repository links** in tech portfolio
+1. **1 broken GitHub repository link remaining** in media portfolio  
+   - Only 1 unavailable video remaining (Real Estate: zfDHNLdNOzU)
+   - 4/5 videos now working (improved from 3/5)
+   - Portfolio showcases complete range: humanitarian, commercial, drone work
+   - User can provide replacement for remaining video if available
+
+2. **17 broken GitHub repository links** in tech portfolio
    - Not critical for deployment
    - User can update later
    - Links are clearly marked in content
-
-2. **Old portfolio page references** on main page
-   - Need to update navigation
-   - Remove redundant links
-   - Emphasize blog as central hub
 
 ### No Critical Blockers ✅
 - All core functionality working
