@@ -26,9 +26,10 @@ Video about the construction project of a church in Guatemala. I did the shootin
 
 Documentation of humanitarian work in Honduras, showcasing community impact and volunteer efforts.
 
-**[Watch on YouTube →](https://www.youtube.com/watch?v=SY3qGtSdp0Q)**
+**[Video Currently Unavailable]** *(Original video may have been moved or made private)*
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SY3qGtSdp0Q" frameborder="0" allowfullscreen style="max-width: 100%; height: auto;"></iframe>
+<!-- Original link: https://www.youtube.com/watch?v=SY3qGtSdp0Q -->
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/SY3qGtSdp0Q" frameborder="0" allowfullscreen style="max-width: 100%; height: auto;"></iframe> -->
 
 ### Ministry Capabilities
 
@@ -45,17 +46,19 @@ Professional commercial content showcasing products, services, and brand messagi
 
 High-quality property showcase videos emphasizing architectural features and lifestyle appeal.
 
-**[Watch Property Tour →](https://www.youtube.com/watch?v=zfDHNLdNOzU)**
+**[Video Currently Unavailable]** *(Original video may have been moved or made private)*
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zfDHNLdNOzU" frameborder="0" allowfullscreen style="max-width: 100%; height: auto;"></iframe>
+<!-- Original link: https://www.youtube.com/watch?v=zfDHNLdNOzU -->
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/zfDHNLdNOzU" frameborder="0" allowfullscreen style="max-width: 100%; height: auto;"></iframe> -->
 
 ### Product Demonstration Videos
 
 Technical product showcases demonstrating functionality and user experience.
 
-**[Watch Product Demo →](https://www.youtube.com/watch?v=f1E3qG5wKKo)**
+**[Video Currently Unavailable]** *(Original video may have been moved or made private)*
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/f1E3qG5wKKo" frameborder="0" allowfullscreen style="max-width: 100%; height: auto;"></iframe>
+<!-- Original link: https://www.youtube.com/watch?v=f1E3qG5wKKo -->
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/f1E3qG5wKKo" frameborder="0" allowfullscreen style="max-width: 100%; height: auto;"></iframe> -->
 
 ### Commercial Production Skills
 
