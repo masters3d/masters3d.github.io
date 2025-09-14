@@ -41,23 +41,21 @@ Documentation of humanitarian work in Guatemala 2014, showcasing community impac
 
 Professional commercial content showcasing products, services, and brand messaging.
 
-### Real Estate & Property Marketing
+### Commercial Product Marketing - Alaska Structures
 
-High-quality property showcase videos emphasizing architectural features and lifestyle appeal.
+Professional commercial video showcasing the SQ Series™ Fabric Building system, demonstrating product features, benefits, and applications for commercial and industrial use.
 
-**[Video Currently Unavailable]** *(Original video may have been moved or made private)*
+**[Watch Commercial Video →](https://www.youtube.com/watch?v=3Qz_OsdHruY)**
 
-<!-- Original link: https://www.youtube.com/watch?v=zfDHNLdNOzU -->
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/zfDHNLdNOzU" frameborder="0" allowfullscreen style="max-width: 100%; height: auto;"></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3Qz_OsdHruY" frameborder="0" allowfullscreen style="max-width: 100%; height: auto;"></iframe>
 
-### Product Demonstration Videos
+### WeatherPort Track & Field Canopy - Product Showcase
 
-Technical product showcases demonstrating functionality and user experience.
+Professional product demonstration showcasing Shelton High School's Track & Field WeatherPort Canopy installation, highlighting product features, durability, and real-world applications for athletic facilities.
 
-**[Video Currently Unavailable]** *(Original video may have been moved or made private)*
+**[Watch Product Demo →](https://www.youtube.com/watch?v=vOb_Xu74ras)**
 
-<!-- Original link: https://www.youtube.com/watch?v=f1E3qG5wKKo -->
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/f1E3qG5wKKo" frameborder="0" allowfullscreen style="max-width: 100%; height: auto;"></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vOb_Xu74ras" frameborder="0" allowfullscreen style="max-width: 100%; height: auto;"></iframe>
 
 ### Commercial Production Skills
 
