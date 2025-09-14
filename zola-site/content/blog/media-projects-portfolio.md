@@ -49,9 +49,9 @@ Professional commercial video showcasing the SQ Series™ Fabric Building system
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3Qz_OsdHruY" frameborder="0" allowfullscreen style="max-width: 100%; height: auto;"></iframe>
 
-### WeatherPort Track & Field Canopy - Product Showcase
+### Product Demonstration Videos
 
-Professional product demonstration showcasing Shelton High School's Track & Field WeatherPort Canopy installation, highlighting product features, durability, and real-world applications for athletic facilities.
+Professional product demonstrations showcasing functionality, features, and real-world applications across various industries and use cases.
 
 **[Watch Product Demo →](https://www.youtube.com/watch?v=vOb_Xu74ras)**
 
