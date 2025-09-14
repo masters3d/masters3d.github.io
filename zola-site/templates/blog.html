@@ -39,7 +39,35 @@
 
           {{ section.content | safe }}
 
-          {% if section.pages %}
+          {% if paginator and paginator.pages %}
+          <div class="blog-posts">
+            {% for page in paginator.pages %}
+            <article class="blog-post-preview" style="margin-bottom: 2em; padding: 1em; border-left: 3px solid #2879d0;">
+              <h2 style="margin-top: 0;"><a href="{{ page.permalink }}" style="text-decoration: none; color: #2879d0;">{{ page.title }}</a></h2>
+              <div class="post-meta" style="color: #666; font-size: 0.9em; margin-bottom: 1em;">
+                📅 {{ page.date | date(format="%B %d, %Y") }}
+                {% if page.extra.tags %}
+                <span style="margin-left: 1em;">🏷️ 
+                {% for tag in page.extra.tags %}
+                  <span style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.8em;">{{ tag }}</span>
+                  {% if not loop.last %} {% endif %}
+                {% endfor %}
+                </span>
+                {% endif %}
+              </div>
+              {% if page.description %}
+              <p style="color: #666; font-style: italic; margin-bottom: 1em;">{{ page.description }}</p>
+              {% endif %}
+              {% if page.summary %}
+              <div class="post-summary">
+                {{ page.summary | safe }}
+              </div>
+              {% endif %}
+              <p><a href="{{ page.permalink }}" style="color: #2879d0;">Read more →</a></p>
+            </article>
+            {% endfor %}
+          </div>
+          {% elif section.pages %}
           <div class="blog-posts">
             {% for page in section.pages %}
             <article class="blog-post-preview" style="margin-bottom: 2em; padding: 1em; border-left: 3px solid #2879d0;">
