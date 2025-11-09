@@ -33,13 +33,43 @@
 ### When Starting New Sessions
 1. **Always check** `plans/progress-tracking.md` first
 2. **Review** previous decisions in this file
-3. **Update** progress tracking with new session info
-4. **Continue** from last recorded progress point
+3. **Read** `plans/session-context.md` for immediate context
+4. **Check** `plans/current-task.md` for active work
+5. **Update** progress tracking with new session info
+6. **Continue** from last recorded progress point
+
+### When Copilot/Agent Restarts or Has Issues
+1. **CRITICAL**: Read `plans/session-context.md` FIRST - contains immediate context
+2. **Check branch status**: `git branch` and `git status` 
+3. **Review recent commits**: `git log --oneline -5`
+4. **Read current task**: `plans/current-task.md` for active objectives
+5. **Check enhancement roadmap**: `plans/enhancement-roadmap.md` for comprehensive plan
+6. **Verify local environment**: Check if Zola server running, test site accessibility
+7. **Update session info**: Add new session entry to `plans/session-context.md`
+
+### Session Context Preservation Protocol
+**MANDATORY**: Every session must maintain detailed context in `plans/session-context.md`
+
+#### Required Context Elements:
+- **Current branch and status**
+- **Last completed actions**
+- **Active tasks and next steps**
+- **Local development state** (server running, port, URLs)
+- **Known issues and blockers**
+- **Recent discoveries or important notes**
+- **Handoff instructions for next session**
+
+#### Context Update Frequency:
+- **Start of session**: Read and update with new session info
+- **Major milestone**: Document progress and state changes
+- **End of session**: Complete handoff notes and next steps
+- **Before any extended break**: Ensure context is current and detailed
 
 ### Decision Making
 - **Never contradict** previously documented decisions without user input
 - **Always document** new decisions in this file
 - **Reference** this file when user asks "what did we decide before?"
+- **Check session-context.md** for recent context and state
 
 ### Code Changes
 - **Minimal modifications** - change as few lines as possible
@@ -51,13 +81,15 @@
 
 ```
 masters3d.github.io/
-├── plans/                 # All planning docs (NEW)
+├── plans/                 # All planning docs (CRITICAL FOR CONTEXT)
 │   ├── README.md
-│   ├── migration-strategy.md
-│   ├── progress-tracking.md
-│   └── agents.md         # This file
-├── legacy/               # Original files (backup)
-├── zola-site/           # New Zola structure
+│   ├── session-context.md # READ FIRST - Current session state
+│   ├── current-task.md    # Active task details
+│   ├── enhancement-roadmap.md # Comprehensive improvement plan
+│   ├── progress-tracking.md   # Overall project progress
+│   └── agents.md         # This file - Agent guidelines
+├── legacy/               # Original files (backup) 
+├── zola-site/           # New Zola structure (MAIN WORKING DIRECTORY)
 ├── CNAME                # Preserve custom domain
 └── [original files]     # Keep until migration complete
 ```
@@ -102,6 +134,18 @@ masters3d.github.io/
 **Q**: "What about the custom domain?"  
 **A**: Preserving masters3d.com via CNAME file
 
+**Q**: "What's the current project status?"  
+**A**: Portfolio migration COMPLETED and DEPLOYED. Now in Enhancement & Optimization phase.
+
+**Q**: "What branch should I be on?"  
+**A**: `enhancements-and-optimizations` for current work (check session-context.md)
+
+**Q**: "Where is the live site?"  
+**A**: https://masters3d.com (deployed) and https://masters3d.github.io (GitHub Pages)
+
+**Q**: "How do I get current context if copilot restarts?"  
+**A**: Read `plans/session-context.md` FIRST, then current-task.md and enhancement-roadmap.md
+
 **Q**: "Can we change the technology choice?"  
 **A**: Only if user explicitly requests reconsideration; document reasoning
 
@@ -121,6 +165,13 @@ masters3d.github.io/
   - Focus: Deployment fixes, code cleanup, issue resolution
   - Major issue identified: Blog system not deploying (404 on /blog/)
   - Repository cleanup and optimization
+- **v1.3** (2024-01-06): Enhancement & Optimization Phase Launch
+  - Branch: `enhancements-and-optimizations`
+  - **DEPLOYED**: Portfolio migration successfully completed (PR #9 merged)
+  - **NEW PHASE**: Performance, SEO, content expansion, UX improvements
+  - **Context System Enhanced**: Robust session preservation for agent continuity
+  - **Live Site**: https://masters3d.com - Fully functional blog-centric portfolio
+  - **Agent Restart Protocol**: Enhanced guidelines for seamless context restoration
 - **Future versions**: Update when major decisions change
 
 ## Blog System Implementation (Added v1.1)
@@ -172,3 +223,35 @@ masters3d.github.io/
 - **Template consistency**: Use `blog-post.html` for all posts
 - **Model agnostic**: System works with various coding AI models (GPT-4, Claude, Gemini, etc.)
 - **Context preservation**: Agent instructions are part of the repository for consistency
+
+## Enhancement Phase Guidelines (Added v1.3)
+
+### Current Phase: Enhancement & Optimization
+**Status**: ACTIVE - Portfolio migration completed, now optimizing
+**Branch**: `enhancements-and-optimizations`
+**Live Site**: https://masters3d.com
+
+### Enhancement Priorities
+1. **Performance optimization** - Speed, loading, asset optimization
+2. **SEO enhancement** - Search visibility and ranking
+3. **Content expansion** - Blog posts and portfolio updates
+4. **User experience** - Mobile, accessibility, navigation
+5. **Technical excellence** - Code quality, maintainability
+
+### Agent Restart Recovery Process
+When copilot restarts or has issues:
+
+1. **IMMEDIATE**: Read `plans/session-context.md` 
+2. **Check branch**: `git branch` (should be `enhancements-and-optimizations`)
+3. **Check status**: `git status` and `git log --oneline -5`
+4. **Read tasks**: `plans/current-task.md` for active work
+5. **Review roadmap**: `plans/enhancement-roadmap.md` for comprehensive plan
+6. **Test environment**: Verify local development setup
+7. **Update context**: Add new session entry to session-context.md
+
+### Context Maintenance Requirements
+- **Update session-context.md** at start, milestones, and end of session
+- **Document all discoveries** and important decisions
+- **Maintain handoff notes** for seamless transitions
+- **Preserve technical details** about local development state
+- **Record next steps** clearly for continuation
