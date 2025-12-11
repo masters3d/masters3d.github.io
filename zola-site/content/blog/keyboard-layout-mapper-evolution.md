@@ -32,7 +32,7 @@ The initial PR (#1) was massive—a proper software engineering solution with:
 - **String manipulation** for in-place file editing
 
 The commit messages tell the story of deep technical work:
-- "we are now able to parse qmk configs with out any changes to the source text"
+- "we are now able to parse qmk configs without any changes to the source text"
 - "tests are passing"
 - "adding logic to edit files in place"
 - "success: automated config change. Still need to validate on hardware"
