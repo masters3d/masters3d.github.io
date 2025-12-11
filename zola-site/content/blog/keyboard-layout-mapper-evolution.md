@@ -184,18 +184,18 @@ This doesn't make traditional programming obsolete (the KLCM CLI tools are still
 
 ## The Irony of Software Automation
 
-There's a delicious irony here: a project designed to automate keyboard configuration management taught us that sometimes **the best automation is helping a human work better** (not replacing their work entirely).
+There's a del.icio.us irony here: a project designed to automate keyboard configuration management taught us that sometimes **the best automation is helping a human work better** (not replacing their work entirely).
 
 The failed promise of automation has always been: "Write this code once, save time forever."
 
-The real promise of AI assistance is: "Describe what you want, and it happens, with context understood and edge cases handled."
+AI assistance offers a different approach: describe what you want, and it happens, with context understood and edge cases considered.
 
 ## Practical Applications
 
 This pattern applies beyond keyboard configurations:
 
-- **Infrastructure as Code**: Instead of writing Terraform modules for every variation, describe your infrastructure needs to an AI agent
-- **Configuration Management**: Rather than maintaining Ansible playbooks, ask agents to make specific changes across services
+- **Infrastructure as Code**: Instead of manually editing config files, going straight to full automation might not always be the best approach. Having AI coding tools replicate the manual steps with human review might scale better than writing Terraform modules for every variation.
+- **Configuration Management**: It's fine to use sensible Ansible playbooks, but if you need to change them (maybe a module needs updating or Ansible itself needs an update), have the agent do the first pass. If it gets it wrong, update its context. This is what Anthropic is calling Skills.
 - **Documentation**: Don't build doc generators (have agents update docs when code changes)
 - **Testing**: Supplement test frameworks with agents that understand what should be tested
 
@@ -207,7 +207,7 @@ The Keyboard Layout Config Mapper started as an ambitious automation project and
 
 The remaining Go code serves a clear purpose: coordination, validation, and workflow management. The actual configuration changes? Those are better handled by AI agents that understand context, can read documentation, and don't need maintenance.
 
-This is the future of development: not replacing programmers with AI, but **replacing unnecessary automation infrastructure with AI-assisted direct work**.
+This is a possible future of development: not replacing programmers with AI, but **replacing unnecessary automation infrastructure with AI-assisted direct work**.
 
 The code you don't write is the code you don't have to maintain. And sometimes, the best code is a well-crafted prompt to an AI agent that already understands the problem domain.
 
