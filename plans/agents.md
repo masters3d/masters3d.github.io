@@ -77,6 +77,12 @@
 - **Test incrementally** - build and test after each major change
 - **Document changes** - update progress tracking
 
+### Writing Style Preferences
+- **Parentheses over em-dashes** - Use parentheses () instead of em-dashes (—) for parenthetical expressions
+  - Example: "text (clarification)" instead of "text—clarification"
+  - Maintains readability and follows user's preferred style
+- **Bullet lists** - Use hyphens (-) for bullet lists (standard markdown format)
+
 ## Project Structure Standards
 
 ```
