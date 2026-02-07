@@ -5,7 +5,6 @@ description = "A deep dive into how a keyboard configuration project evolved fro
 template = "blog-post.html"
 categories = ["development", "ai", "meta"]
 tags = ["agents", "automation", "keyboards", "golang", "copilot", "productivity"]
-draft = true
 +++
 
 Sometimes the best way to understand the future of software development is to watch a project evolve through different paradigms. The [Keyboard Layout Config Mapper (KLCM)](https://github.com/masters3d/keyboard_layout_config_mapper) project is a perfect case study in how AI-assisted development is fundamentally changing our approach to automation.
