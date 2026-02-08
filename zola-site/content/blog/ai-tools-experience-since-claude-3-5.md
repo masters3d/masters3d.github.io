@@ -118,7 +118,7 @@ I believe we're in the middle of a fundamental shift in how software gets writte
 
 ## Looking Forward
 
-The timeline has been remarkably tight (all of this transformation has happened in just about three months since Opus 4.5's release in late November 2025). The rapid pace of improvement is striking: we've gone from needing extensive steering to mostly hands-off development, with the harness doing less work and the models doing more.
+The timeline has been remarkably tight (all of this transformation has happened in just about three months since Opus 4.5's release in late November 2025). The improvement is more subtle than it might appear: while there was extensive steering to get to the first version before, now we typically get one-shot results. The total steering effort hasn't necessarily decreased, but it's shifted to things that matter like taste and preferences rather than getting basic functionality working.
 
 I'm having a lot of fun exploring this new landscape. The combination of powerful AI tools and languages with strong ecosystems (like Rust) creates a development experience that would have seemed like science fiction just a few years ago.
 
