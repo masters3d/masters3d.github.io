@@ -5,7 +5,6 @@ description = "Reflecting on my experience using AI coding tools since Claude Op
 template = "blog-post.html"
 categories = ["ai", "development", "rust", "scripting"]
 tags = ["claude", "copilot", "agents", "rust", "powershell", "bash", "ai-development"]
-draft = true
 +++
 
 My journey with AI coding tools has been transformative, particularly since the release of Claude Opus 4.5 on November 24, 2025. This post reflects on how AI tooling has evolved and what that means for language choices in CLI development, using my experience with Rust and scripting languages as a case study.
@@ -52,7 +51,7 @@ This feature became available in GitHub Copilot as of January 2026, though it's 
 
 For example, you can use a prompt like: "Increase the unit test coverage percentage to 80. Spin up a fleet of parallel Opus sub-agents." The agent will then coordinate multiple parallel agents, each working on different parts of the codebase to achieve the goal.
 
-The biggest recent development has been Opus 4.6 Fast mode (I like to call it "Ludicrous mode"), which came out on February 7, 2026. It's like having Opus 4.5's thinking power at Haiku's speed. My less than 24 hours of experience with it has been great so far. I can iterate much faster, which could be especially helpful when running multiple sessions across different repos. The model is 3X the cost of regular Opus, so I'm still evaluating whether the financials make sense for my workflows, but the speed boost is undeniable.
+The biggest recent development has been Opus 4.6 Fast mode (I like to call it "Ludicrous mode"), which came out on February 7, 2026. It's like having Opus 4.5's thinking power at Haiku's speed. My less than 24 hours of experience with it has been great so far. I can iterate much faster, which could be especially helpful when running multiple sessions across different repos. The model is 3X the cost of regular Opus, so I'm still doing cost evaluation in the face of long running sessions which are driven by a plan. Something I need to take a look at is maybe using fast mode for the planning phase before switching to the regular model for actual implementation. The speed boost is undeniable though.
 
 ## The Human Element
 
