@@ -10,21 +10,31 @@ draft = true
 
 ## Introduction
 
-My journey with AI coding tools has been transformative, particularly since the release of Claude Opus 4.5 on November 24, 2025. The vast majority of my development work has been through GitHub Copilot CLI, and the experience has been nothing short of eye-opening. This post reflects on my experience contrasting two very different paradigms (Rust and scripting languages like PowerShell or Bash) and how AI agents handle each.
+My journey with AI coding tools has been transformative, particularly since the release of Claude Opus 4.5 on November 24, 2025. This post reflects on how AI tooling has evolved and what that means for language choices in CLI development, using my experience with Rust and scripting languages as a case study.
+
+## My Journey with GitHub Copilot CLI
+
+The vast majority of my development work has been through GitHub Copilot CLI, and the experience has been nothing short of eye-opening. I've been using it consistently since Sonnet 4.5 came out around September 2025, and it's been a gradual evolution in how I approach coding.
 
 ## The Game Changer: Claude Opus 4.5
 
-Claude Opus 4.5, released on November 24, 2025, was an absolute game-changer for AI-assisted development. This wasn't just another incremental update (it represented a fundamental leap in capability that transformed how I approach coding).
+Claude Opus 4.5, released on November 24, 2025, was an absolute game-changer. This wasn't just another incremental update (it represented a fundamental leap in capability that transformed how I approach coding).
 
 Before Opus 4.5, getting value from agents required significantly more steering. The harness you used had to do more of the heavy lifting, which could be annoying if you were working with a less sophisticated setup. With Opus 4.5, the amount of steering needed dropped dramatically. When I do need to steer now, it's typically because there are multiple valid approaches and I need to apply personal preferences or taste that are difficult to codify.
 
-The model brought significant improvements in coding, agentic systems, and overall accuracy. Tasks that would have required multiple iterations became reliable one-shot completions. The vast majority of my Rust journey has been since Opus 4.5, and it's been a revelation (especially within the Rust ecosystem where the model excels).
+The model brought significant improvements in coding, agentic systems, and overall accuracy. Tasks that would have required multiple iterations became reliable one-shot completions.
 
-## The Tale of Two Paradigms: Rust vs Scripting Languages
+## A Shift in What's Possible: From Shell Scripts to Rust
 
-My recent development has been split between two completely opposite ends of the language spectrum: Rust (a compiled, notoriously hard-to-learn systems language) and scripting languages like PowerShell or Bash (interpreted, dynamic languages). The contrast has been illuminating.
+Here's where things get interesting. Before Opus 4.5, I only wrote shell scripts for my CLI tooling. Rust seemed too complex, too error-prone to attempt with AI assistance. But when Opus 4.5 came out, writing Rust became doable. The vast majority of my Rust journey has been since Opus 4.5, and it's been a revelation (especially within the Rust ecosystem where the model excels).
 
-### Rust: The Compiled Advantage
+This shift from scripting languages to compiled languages like Rust showcases the progression in AI tooling capability. It's not just about the language choice, it's about what becomes feasible when the AI assistance reaches a certain threshold of reliability.
+
+## Why This Matters: Rust vs Scripting Languages for CLI Tools
+
+The choice between Rust and scripting languages for CLI tooling isn't just about language preference. It's about understanding how AI agents interact with different validation paradigms, and what that means for investing in long-term tooling solutions.
+
+### The Rust Advantage with AI Agents
 
 Rust development with AI agents has been surprisingly smooth. Here's why:
 
@@ -44,7 +54,7 @@ Rust development with AI agents has been surprisingly smooth. Here's why:
 
 **One-Shot Success Rate**: For Rust, I find that prompts typically result in working code on the first try. The combination of strong types, inline tests, and excellent tooling means less back-and-forth.
 
-### Scripting Languages: The Trade-Off
+### Scripting Languages with AI Agents
 
 Scripting languages like PowerShell or Bash present different challenges with AI agents:
 
@@ -56,32 +66,34 @@ Scripting languages like PowerShell or Bash present different challenges with AI
 
 **Quick Automation**: Scripting languages excel at quick automation tasks, but they can become unwieldy when they grow to thousands of lines.
 
-### When Does Each Language Make Sense?
+### Choosing Your Investment for CLI Tooling
 
-**Choose Rust when**:
+The progression I experienced (shell scripts before Opus 4.5, Rust after) highlights an important consideration:
+
+**Choose Rust for CLI tools when**:
 - The project will grow beyond a few hundred lines
 - You need strong reliability guarantees
 - Performance matters
 - You're building CLIs or TUIs that need to feel polished
 - You want comprehensive compile-time checking
+- AI agents are capable enough to make it feasible (post-Opus 4.5)
 
-**Choose scripting languages when**:
+**Choose scripting languages for CLI tools when**:
 - You need quick automation
 - Distribution ease is paramount
 - The script will stay relatively small
 - Setup/installation burden needs to be minimal
+- You're working with less capable AI models
 
-**The crossover point**: Once a script reaches thousands of lines, it might be time to consider porting to a compiled language that offers better long-term maintainability.
+**The crossover point**: With capable AI models like Opus 4.5, Rust becomes viable even for smaller CLI tools where you might have previously defaulted to scripts. Once a script reaches thousands of lines, the case for Rust becomes even stronger.
 
 ## Calling External Tools from Rust
 
 One surprising discovery: calling external CLIs from Rust is extremely smooth. There are excellent crate packages that let you call tools like the GitHub CLI (`gh`) from Rust almost as if you were writing a shell script. This bridges the gap between "I need the robustness of a compiled language" and "I need to integrate with existing command-line tools."
 
-## The Bigger Context Window
+## Multi-Agent Workflows
 
-One of the most significant improvements with the Claude 4.x series is the larger context window. When working on large codebases, even the new Rust projects I've written, having more context available makes a huge difference.
-
-**Multi-Agent Workflows**: One trick I've picked up is spinning up multiple agents to work on different parts of the codebase in parallel. Instead of having one agent refactor an entire large codebase, I'll have a "fleet" of agents each handle individual files. This approach has been much more effective overall.
+One trick I've picked up is spinning up multiple agents to work on different parts of the codebase in parallel. Instead of having one agent refactor an entire large codebase, I'll have a "fleet" of agents each handle individual files. This approach has been much more effective overall, especially when working with the larger codebases that Rust projects tend to become.
 
 ## Continuing Evolution: Opus 4.6 and 4.6 Fast
 
