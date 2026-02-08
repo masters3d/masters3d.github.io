@@ -1,7 +1,7 @@
 +++
-title = "My AI Tools Journey Since Claude 3.5: Rust, PowerShell, and the Evolution of Agent-Driven Development"
+title = "My AI Tools Journey Since Claude Opus 4.5: Rust, PowerShell, and the Evolution of Agent-Driven Development"
 date = 2026-02-07
-description = "Reflecting on my experience using AI coding tools since Claude 3.5, contrasting Rust and PowerShell development, and insights on multi-agent workflows."
+description = "Reflecting on my experience using AI coding tools since Claude Opus 4.5, contrasting Rust and PowerShell development, and insights on multi-agent workflows."
 template = "blog-post.html"
 categories = ["ai", "development", "rust", "powershell"]
 tags = ["claude", "copilot", "agents", "rust", "powershell", "ai-development"]
@@ -10,17 +10,13 @@ draft = true
 
 ## Introduction
 
-My journey with AI coding tools has been transformative, particularly since the release of Claude 3.5 Sonnet. The vast majority of my development work has been through GitHub Copilot CLI, and the experience has been nothing short of eye-opening. This post reflects on my experience contrasting two very different languages—Rust and PowerShell—and how AI agents handle each.
+My journey with AI coding tools has been transformative, particularly since the release of Claude Opus 4.5 on November 24, 2025. The vast majority of my development work has been through GitHub Copilot CLI, and the experience has been nothing short of eye-opening. This post reflects on my experience contrasting two very different languages—Rust and PowerShell—and how AI agents handle each.
 
-## The Claude Timeline: A Rapid Evolution
+## The Game Changer: Claude Opus 4.5
 
-The pace of AI model releases has been remarkable. Here's the timeline that has shaped my development experience:
+Claude Opus 4.5, released on November 24, 2025, was an absolute game-changer for AI-assisted development. This wasn't just another incremental update—it represented a fundamental leap in capability that transformed how I approach coding.
 
-- **Claude 3 Family (Opus, Sonnet, Haiku)**: March 2024 - The flagship Opus model set new benchmarks
-- **Claude 3.5 Sonnet**: June 20, 2024 - A game-changer that actually outperformed the previous flagship Opus
-- **Claude 4.x series**: 2025-2026 - Including the recent Opus 4.6 release in February 2026
-
-The jump from pre-3.5 models to Claude 3.5 Sonnet was particularly significant. Tasks that would have challenged earlier models became one-shot completions. The recent Opus 4.6 brings an even bigger context window and what I've noticed is a subtle but important improvement in correctness across various tasks.
+The model brought significant improvements in coding, agentic systems, and overall accuracy. Tasks that would have required multiple iterations with earlier models became reliable one-shot completions. The vast majority of my Rust journey has been since Opus 4.5, and it's been a revelation. Things that Sonnet 3.5 would struggle with, Opus 4.5 just breezes through, especially within the Rust ecosystem.
 
 ## The Tale of Two Languages: Rust vs PowerShell
 
@@ -80,15 +76,15 @@ PowerShell development with AI agents presents different challenges:
 
 One surprising discovery: calling external CLIs from Rust is extremely smooth. There are excellent crate packages that let you call tools like the GitHub CLI (`gh`) from Rust almost as if you were writing a shell script. This bridges the gap between "I need the robustness of a compiled language" and "I need to integrate with existing command-line tools."
 
-## The Bigger Context Window: A Game Changer
+## The Bigger Context Window
 
-One of the most significant improvements with Opus 4.6 is the larger context window. When working on large codebases, even the new Rust projects I've written, having more context available makes a huge difference.
+One of the most significant improvements with the Claude 4.x series is the larger context window. When working on large codebases, even the new Rust projects I've written, having more context available makes a huge difference.
 
 **Multi-Agent Workflows**: One trick I've picked up is spinning up multiple agents to work on different parts of the codebase in parallel. Instead of having one agent refactor an entire large codebase, I'll have a "fleet" of agents each handle individual files. This approach has been much more effective overall.
 
-## Opus 3.5 vs 4.6: Subtle But Important Improvements
+## Continuing Evolution: Opus 4.6
 
-I've been using Opus 4.6 for a couple of days now. While I'm not seeing night-and-day differences from 3.5 Sonnet, there's a noticeable improvement in correctness. The model seems to make fewer subtle errors, and responses feel more thought-through. It's the kind of improvement you might not notice in a single interaction but becomes clear over the course of a day's work.
+I've been using Opus 4.6 since its release a couple of days ago. While the jump from 4.5 to 4.6 isn't as dramatic as the leap to 4.5 itself, there's a noticeable improvement in correctness. The model seems to make fewer subtle errors, and responses feel more thought-through. It's the kind of improvement you might not notice in a single interaction but becomes clear over the course of a day's work.
 
 ## The Human Element Remains Critical
 
