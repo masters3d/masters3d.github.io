@@ -1,43 +1,21 @@
-/* Simple Theme with Dark Mode as Default */
+/* Dark Mode Only Theme */
 
-/* Dark Mode Colors (Default) - Elegant and Classy */
 :root {
   color-scheme: dark;
-  --bg-primary: #0d1117;
-  --bg-secondary: #161b22;
-  --bg-accent: #21262d;
-  --text-primary: #c9d1d9;
-  --text-secondary: #8b949e;
-  --text-tertiary: #6e7681;
-  --accent-color: #58a6ff;
-  --accent-hover: #79c0ff;
-  --border-color: #30363d;
-  --code-bg: #161b22;
-  --header-bg: #0d1117;
-  --header-text: #c9d1d9;
-  --link-color: #58a6ff;
-  --link-hover: #79c0ff;
-}
-
-/* Light Mode Colors (Optional Override) */
-@media (prefers-color-scheme: light) {
-  :root {
-    color-scheme: light;
-    --bg-primary: #ffffff;
-    --bg-secondary: #f6f8fa;
-    --bg-accent: #f0f0f0;
-    --text-primary: #24292f;
-    --text-secondary: #57606a;
-    --text-tertiary: #6e7781;
-    --accent-color: #0969da;
-    --accent-hover: #0550ae;
-    --border-color: #d0d7de;
-    --code-bg: #f6f8fa;
-    --header-bg: #24292f;
-    --header-text: #f6f8fa;
-    --link-color: #0969da;
-    --link-hover: #0550ae;
-  }
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2a2a2a;
+  --bg-accent: #333333;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --text-tertiary: #808080;
+  --accent-color: #4da6ff;
+  --accent-hover: #66b3ff;
+  --border-color: #404040;
+  --code-bg: #2a2a2a;
+  --header-bg: #0d47a1;
+  --header-text: #ffffff;
+  --link-color: #4da6ff;
+  --link-hover: #66b3ff;
 }
 
 /* Reset and Base Styles */
