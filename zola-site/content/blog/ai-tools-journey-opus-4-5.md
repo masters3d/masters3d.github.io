@@ -8,11 +8,7 @@ tags = ["claude", "copilot", "agents", "rust", "powershell", "bash", "ai-develop
 draft = true
 +++
 
-## Introduction
-
 My journey with AI coding tools has been transformative, particularly since the release of Claude Opus 4.5 on November 24, 2025. This post reflects on how AI tooling has evolved and what that means for language choices in CLI development, using my experience with Rust and scripting languages as a case study.
-
-## My Journey with GitHub Copilot CLI
 
 The vast majority of my development work has been through GitHub Copilot CLI, and the experience has been nothing short of eye-opening. I've been using it consistently since Sonnet 4.5 came out around September 2025, and it's been a gradual evolution in how I approach coding.
 
@@ -24,13 +20,11 @@ Before Opus 4.5, getting value from agents required significantly more steering.
 
 The model brought significant improvements in coding, agentic systems, and overall accuracy. Tasks that would have required multiple iterations became reliable one-shot completions.
 
-## A Shift in What's Possible: From Shell Scripts to Rust
-
 Here's where things get interesting. Before Opus 4.5, I only wrote shell scripts for my CLI tooling. Rust seemed too complex, too error-prone to attempt with AI assistance. But when Opus 4.5 came out, writing Rust became doable. The vast majority of my Rust journey has been since Opus 4.5, and it's been a revelation (especially within the Rust ecosystem where the model excels).
 
 This shift from scripting languages to compiled languages like Rust showcases the progression in AI tooling capability. It's not just about the language choice, it's about what becomes feasible when the AI assistance reaches a certain threshold of reliability.
 
-## Why This Matters: Rust vs Scripting Languages for CLI Tools
+## Rust vs Scripting Languages for CLI Tools
 
 The choice between Rust and scripting languages for CLI tooling isn't just about language preference. It's about understanding how AI agents interact with different validation paradigms, and what that means for investing in long-term tooling solutions.
 
@@ -50,11 +44,7 @@ The progression I experienced (shell scripts before Opus 4.5, Rust after) highli
 
 With capable AI models like Opus 4.5, Rust becomes viable even for smaller CLI tools where you might have previously defaulted to scripts. Once a script reaches thousands of lines, the case for Rust becomes even stronger.
 
-## Calling External Tools from Rust
-
 One surprising discovery: calling external CLIs from Rust is extremely smooth. There are excellent crate packages that let you call tools like the GitHub CLI (`gh`) from Rust almost as if you were writing a shell script. This bridges the gap between "I need the robustness of a compiled language" and "I need to integrate with existing command-line tools."
-
-## Multi-Agent Workflows
 
 One trick I've picked up is spinning up multiple agents to work on different parts of the codebase in parallel. Instead of having one agent refactor an entire large codebase, I'll have a "fleet" of agents each handle individual files. This approach has been much more effective overall, especially when working with the larger codebases that Rust projects tend to become.
 
@@ -62,28 +52,15 @@ This feature became available in GitHub Copilot as of January 2026, though it's 
 
 For example, you can use a prompt like: "Increase the unit test coverage percentage to 80. Spin up a fleet of parallel Opus sub-agents." The agent will then coordinate multiple parallel agents, each working on different parts of the codebase to achieve the goal.
 
-## Continuing Evolution: Opus 4.6 and 4.6 Fast
+I've been using Opus 4.6 since its release a couple of days ago. While the jump from 4.5 to 4.6 isn't as dramatic as the leap to 4.5 itself, there's a noticeable improvement in correctness. The model seems to make fewer subtle errors, and responses feel more thought-through. More recently, the 4.6 Fast model has tightened up the feedback loop even further, providing another boost in productivity. The faster response times mean I can iterate more quickly, which is particularly valuable when working through multiple small refinements.
 
-I've been using Opus 4.6 since its release a couple of days ago. While the jump from 4.5 to 4.6 isn't as dramatic as the leap to 4.5 itself, there's a noticeable improvement in correctness. The model seems to make fewer subtle errors, and responses feel more thought-through.
+## The Human Element
 
-More recently, the 4.6 Fast model has tightened up the feedback loop even further, providing another boost in productivity. The faster response times mean I can iterate more quickly, which is particularly valuable when working through multiple small refinements.
-
-## The Human Element Remains Critical
-
-Despite all these advances, the fundamentals haven't changed:
-
-- **What to build** is still the hardest decision
-- **What NOT to build** might be even more important
-- **Taste** and product sense can't be delegated
-- **Judgment** about trade-offs remains deeply human
+Despite all these advances, the fundamentals haven't changed. What to build is still the hardest decision. What NOT to build might be even more important. Taste and product sense can't be delegated. Judgment about trade-offs remains deeply human.
 
 Agents are incredible tools for implementation, but the human aspects (vision, taste, prioritization) are more critical than ever. When I need to steer agents now, it's less about correcting errors and more about expressing preferences and taste that are inherently subjective.
 
-## The Industry Is Changing
-
 I believe we're in the middle of a fundamental shift in how software gets written. More and more coding will happen through agents. But this doesn't mean coding is "solved" (it means the problems we focus on are shifting from implementation details to architectural decisions, product vision, and user experience).
-
-## Looking Forward
 
 The timeline has been remarkably tight (all of this transformation has happened in just about three months since Opus 4.5's release in late November 2025). The improvement is more subtle than it might appear: while there was extensive steering to get to the first version before, now we typically get one-shot results. The total steering effort hasn't necessarily decreased, but it's shifted to things that matter like taste and preferences rather than getting basic functionality working.
 
