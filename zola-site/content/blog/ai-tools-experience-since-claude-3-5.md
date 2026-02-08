@@ -58,6 +58,10 @@ One surprising discovery: calling external CLIs from Rust is extremely smooth. T
 
 One trick I've picked up is spinning up multiple agents to work on different parts of the codebase in parallel. Instead of having one agent refactor an entire large codebase, I'll have a "fleet" of agents each handle individual files. This approach has been much more effective overall, especially when working with the larger codebases that Rust projects tend to become.
 
+This feature became available in GitHub Copilot as of January 2026, though it's not particularly visually obvious. You can explicitly tell the agent to spin up sub-agents and even specify which model each agent should use (Opus, GPT, Gemini, etc.). This is incredibly helpful for tasks like inline code reviews where you can have different models review your code to get different perspectives.
+
+For example, you can use a prompt like: "Increase the unit test coverage percentage to 80. Spin up a fleet of parallel Opus sub-agents." The agent will then coordinate multiple parallel agents, each working on different parts of the codebase to achieve the goal.
+
 ## Continuing Evolution: Opus 4.6 and 4.6 Fast
 
 I've been using Opus 4.6 since its release a couple of days ago. While the jump from 4.5 to 4.6 isn't as dramatic as the leap to 4.5 itself, there's a noticeable improvement in correctness. The model seems to make fewer subtle errors, and responses feel more thought-through.
