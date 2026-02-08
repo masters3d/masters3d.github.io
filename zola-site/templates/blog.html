@@ -26,7 +26,7 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <nav style="margin-bottom: 20px; padding: 10px; background: #f0f0f0; border-radius: 5px;">
+          <nav style="margin-bottom: 20px; padding: 10px; background: var(--bg-secondary); border-radius: 5px;">
             <a href="/">🏠 Home</a> | 
             <a href="/blog/"><strong>📝 Portfolio & Blog</strong></a>
           </nav>
@@ -36,61 +36,61 @@
           {% if paginator and paginator.pages %}
           <div class="blog-posts">
             {% for page in paginator.pages %}
-            <article class="blog-post-preview" style="margin-bottom: 2em; padding: 1em; border-left: 3px solid #2879d0;">
-              <h2 style="margin-top: 0;"><a href="{{ page.permalink }}" style="text-decoration: none; color: #2879d0;">{{ page.title }}</a></h2>
-              <div class="post-meta" style="color: #666; font-size: 0.9em; margin-bottom: 1em;">
+            <article class="blog-post-preview" style="margin-bottom: 2em; padding: 1em; border-left: 3px solid var(--accent-color);">
+              <h2 style="margin-top: 0;"><a href="{{ page.permalink }}" style="text-decoration: none; color: var(--accent-color);">{{ page.title }}</a></h2>
+              <div class="post-meta" style="color: var(--text-secondary); font-size: 0.9em; margin-bottom: 1em;">
                 📅 {{ page.date | date(format="%B %d, %Y") }}
                 {% if page.extra.tags %}
                 <span style="margin-left: 1em;">🏷️ 
                 {% for tag in page.extra.tags %}
-                  <span style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.8em;">{{ tag }}</span>
+                  <span style="background: var(--bg-accent); padding: 2px 6px; border-radius: 3px; font-size: 0.8em;">{{ tag }}</span>
                   {% if not loop.last %} {% endif %}
                 {% endfor %}
                 </span>
                 {% endif %}
               </div>
               {% if page.description %}
-              <p style="color: #666; font-style: italic; margin-bottom: 1em;">{{ page.description }}</p>
+              <p style="color: var(--text-secondary); font-style: italic; margin-bottom: 1em;">{{ page.description }}</p>
               {% endif %}
               {% if page.summary %}
               <div class="post-summary">
                 {{ page.summary | safe }}
               </div>
               {% endif %}
-              <p><a href="{{ page.permalink }}" style="color: #2879d0;">Read more →</a></p>
+              <p><a href="{{ page.permalink }}" style="color: var(--accent-color);">Read more →</a></p>
             </article>
             {% endfor %}
           </div>
           {% elif section.pages %}
           <div class="blog-posts">
             {% for page in section.pages %}
-            <article class="blog-post-preview" style="margin-bottom: 2em; padding: 1em; border-left: 3px solid #2879d0;">
-              <h2 style="margin-top: 0;"><a href="{{ page.permalink }}" style="text-decoration: none; color: #2879d0;">{{ page.title }}</a></h2>
-              <div class="post-meta" style="color: #666; font-size: 0.9em; margin-bottom: 1em;">
+            <article class="blog-post-preview" style="margin-bottom: 2em; padding: 1em; border-left: 3px solid var(--accent-color);">
+              <h2 style="margin-top: 0;"><a href="{{ page.permalink }}" style="text-decoration: none; color: var(--accent-color);">{{ page.title }}</a></h2>
+              <div class="post-meta" style="color: var(--text-secondary); font-size: 0.9em; margin-bottom: 1em;">
                 📅 {{ page.date | date(format="%B %d, %Y") }}
                 {% if page.extra.tags %}
                 <span style="margin-left: 1em;">🏷️ 
                 {% for tag in page.extra.tags %}
-                  <span style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.8em;">{{ tag }}</span>
+                  <span style="background: var(--bg-accent); padding: 2px 6px; border-radius: 3px; font-size: 0.8em;">{{ tag }}</span>
                   {% if not loop.last %} {% endif %}
                 {% endfor %}
                 </span>
                 {% endif %}
               </div>
               {% if page.description %}
-              <p style="color: #666; font-style: italic; margin-bottom: 1em;">{{ page.description }}</p>
+              <p style="color: var(--text-secondary); font-style: italic; margin-bottom: 1em;">{{ page.description }}</p>
               {% endif %}
               {% if page.summary %}
               <div class="post-summary">
                 {{ page.summary | safe }}
               </div>
               {% endif %}
-              <p><a href="{{ page.permalink }}" style="color: #2879d0;">Read more →</a></p>
+              <p><a href="{{ page.permalink }}" style="color: var(--accent-color);">Read more →</a></p>
             </article>
             {% endfor %}
           </div>
           {% else %}
-          <p style="color: #666; font-style: italic;">No blog posts yet. Check back soon!</p>
+          <p style="color: var(--text-secondary); font-style: italic;">No blog posts yet. Check back soon!</p>
           {% endif %}
 
           {% if paginator %}
@@ -134,7 +134,7 @@
             {% for page in section.pages | slice(end=5) %}
             <li style="margin-bottom: 0.5em;">
               <a href="{{ page.permalink }}" style="font-size: 0.9em;">{{ page.title }}</a>
-              <br><small style="color: #666;">{{ page.date | date(format="%b %d, %Y") }}</small>
+              <br><small style="color: var(--text-secondary);">{{ page.date | date(format="%b %d, %Y") }}</small>
             </li>
             {% endfor %}
           </ul>
