@@ -52,7 +52,7 @@ This feature became available in GitHub Copilot as of January 2026, though it's 
 
 For example, you can use a prompt like: "Increase the unit test coverage percentage to 80. Spin up a fleet of parallel Opus sub-agents." The agent will then coordinate multiple parallel agents, each working on different parts of the codebase to achieve the goal.
 
-I've been using Opus 4.6 since its release a couple of days ago. While the jump from 4.5 to 4.6 isn't as dramatic as the leap to 4.5 itself, there's a noticeable improvement in correctness. The model seems to make fewer subtle errors, and responses feel more thought-through. More recently, the 4.6 Fast model has tightened up the feedback loop even further, providing another boost in productivity. The faster response times mean I can iterate more quickly, which is particularly valuable when working through multiple small refinements.
+The biggest recent development has been Opus 4.6 Fast mode (I like to call it "Ludicrous mode"), which came out on February 7, 2026. It's like having Opus 4.5's thinking power at Haiku's speed. My less than 24 hours of experience with it has been great so far. I can iterate much faster, which could be especially helpful when running multiple sessions across different repos. The model is 3X the cost of regular Opus, so I'm still evaluating whether the financials make sense for my workflows, but the speed boost is undeniable.
 
 ## The Human Element
 
