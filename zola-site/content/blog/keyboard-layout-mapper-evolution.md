@@ -1,6 +1,6 @@
 +++
 title = "The Evolution of Keyboard Layout Config Mapper: When Agents Are Better Than Automation"
-date = 2025-12-11
+date = "2025-12-11"
 description = "A deep dive into how a keyboard configuration project evolved from manual Go programming to agent-assisted development, and the surprising realization that having agents make direct changes is simpler than writing code to automate everything."
 template = "blog-post.html"
 categories = ["development", "ai", "meta"]
