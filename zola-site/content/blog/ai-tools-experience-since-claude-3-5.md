@@ -10,15 +10,15 @@ draft = true
 
 ## Introduction
 
-My journey with AI coding tools has been transformative, particularly since the release of Claude Opus 4.5 on November 24, 2025. The vast majority of my development work has been through GitHub Copilot CLI, and the experience has been nothing short of eye-opening. This post reflects on my experience contrasting two very different paradigms—Rust and scripting languages like PowerShell or Bash—and how AI agents handle each.
+My journey with AI coding tools has been transformative, particularly since the release of Claude Opus 4.5 on November 24, 2025. The vast majority of my development work has been through GitHub Copilot CLI, and the experience has been nothing short of eye-opening. This post reflects on my experience contrasting two very different paradigms (Rust and scripting languages like PowerShell or Bash) and how AI agents handle each.
 
 ## The Game Changer: Claude Opus 4.5
 
-Claude Opus 4.5, released on November 24, 2025, was an absolute game-changer for AI-assisted development. This wasn't just another incremental update—it represented a fundamental leap in capability that transformed how I approach coding.
+Claude Opus 4.5, released on November 24, 2025, was an absolute game-changer for AI-assisted development. This wasn't just another incremental update (it represented a fundamental leap in capability that transformed how I approach coding).
 
 Before Opus 4.5, getting value from agents required significantly more steering. The harness you used had to do more of the heavy lifting, which could be annoying if you were working with a less sophisticated setup. With Opus 4.5, the amount of steering needed dropped dramatically. When I do need to steer now, it's typically because there are multiple valid approaches and I need to apply personal preferences or taste that are difficult to codify.
 
-The model brought significant improvements in coding, agentic systems, and overall accuracy. Tasks that would have required multiple iterations became reliable one-shot completions. The vast majority of my Rust journey has been since Opus 4.5, and it's been a revelation—especially within the Rust ecosystem where the model excels.
+The model brought significant improvements in coding, agentic systems, and overall accuracy. Tasks that would have required multiple iterations became reliable one-shot completions. The vast majority of my Rust journey has been since Opus 4.5, and it's been a revelation (especially within the Rust ecosystem where the model excels).
 
 ## The Tale of Two Paradigms: Rust vs Scripting Languages
 
@@ -36,7 +36,7 @@ Rust development with AI agents has been surprisingly smooth. Here's why:
 - Compilation errors
 - Integration with tools like `cargo`
 
-These guardrails catch issues immediately. The agent can write code, I can run `cargo test`, and I'll know right away if something's wrong—before runtime.
+**Compilation-Guided Development**: This is where the real magic happens with compiled languages. The agent can write code, run the compiler, and get immediate feedback without executing anything. The compiler acts as a validation step that guides the agent to make fixes and edits on its own. In scripting languages, the only way to validate is to actually run the code, but with compiled languages like Rust, the agent can validate by compiling. This creates a tight feedback loop where the agent iterates and fixes issues independently, without requiring me to run the code myself. I prefer to validate the final result myself, but the compilation step means the agent can get much further on its own.
 
 **Type System as Documentation**: Rust's strict type system acts as inline documentation. The compiler catches a vast majority of issues, which means the agent's code is validated thoroughly before it ever runs. Even CLI tools and TUIs (Terminal User Interfaces) benefit from this.
 
@@ -98,15 +98,15 @@ Despite all these advances, the fundamentals haven't changed:
 - **Taste** and product sense can't be delegated
 - **Judgment** about trade-offs remains deeply human
 
-Agents are incredible tools for implementation, but the human aspects—vision, taste, prioritization—are more critical than ever. When I need to steer agents now, it's less about correcting errors and more about expressing preferences and taste that are inherently subjective.
+Agents are incredible tools for implementation, but the human aspects (vision, taste, prioritization) are more critical than ever. When I need to steer agents now, it's less about correcting errors and more about expressing preferences and taste that are inherently subjective.
 
 ## The Industry Is Changing
 
-I believe we're in the middle of a fundamental shift in how software gets written. More and more coding will happen through agents. But this doesn't mean coding is "solved"—it means the problems we focus on are shifting from implementation details to architectural decisions, product vision, and user experience.
+I believe we're in the middle of a fundamental shift in how software gets written. More and more coding will happen through agents. But this doesn't mean coding is "solved" (it means the problems we focus on are shifting from implementation details to architectural decisions, product vision, and user experience).
 
 ## Looking Forward
 
-The timeline has been remarkably tight—all of this transformation has happened in just about three months since Opus 4.5's release in late November 2025. The rapid pace of improvement is striking: we've gone from needing extensive steering to mostly hands-off development, with the harness doing less work and the models doing more.
+The timeline has been remarkably tight (all of this transformation has happened in just about three months since Opus 4.5's release in late November 2025). The rapid pace of improvement is striking: we've gone from needing extensive steering to mostly hands-off development, with the harness doing less work and the models doing more.
 
 I'm having a lot of fun exploring this new landscape. The combination of powerful AI tools and languages with strong ecosystems (like Rust) creates a development experience that would have seemed like science fiction just a few years ago.
 
