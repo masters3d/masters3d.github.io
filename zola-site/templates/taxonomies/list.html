@@ -29,18 +29,18 @@
       <div class="inner clearfix">
         <section id="main-content">
           <!-- Breadcrumbs -->
-          <nav class="breadcrumbs" style="margin-bottom: 20px; font-size: 0.9em; color: #666;">
+          <nav class="breadcrumbs" style="margin-bottom: 20px; font-size: 0.9em; color: var(--text-secondary);">
             <a href="/">Home</a> → <a href="/blog/">Blog</a> → <span>{% if taxonomy.name == "categories" %}Categories{% else %}Tags{% endif %}</span>
           </nav>
 
           <h1>{% if taxonomy.name == "categories" %}📂 Categories{% else %}🏷️ Tags{% endif %}</h1>
-          <p style="color: #666; margin-bottom: 2em;">Browse posts by {% if taxonomy.name == "categories" %}category{% else %}tag{% endif %}</p>
+          <p style="color: var(--text-secondary); margin-bottom: 2em;">Browse posts by {% if taxonomy.name == "categories" %}category{% else %}tag{% endif %}</p>
 
           <div class="taxonomy-cloud" style="margin-bottom: 3em;">
             {% for term in taxonomy.items %}
             <a href="{{ term.permalink }}" 
                style="display: inline-block; margin: 0.25em; padding: 0.5em 1em; 
-                      background: {% if taxonomy.name == 'categories' %}#e1f5fe{% else %}#f3e5f5{% endif %}; 
+                      background: var(--bg-accent); 
                       border-radius: 20px; text-decoration: none; 
                       font-size: 1em;">
               {{ term.name }} ({{ term.pages | length }})
@@ -51,18 +51,18 @@
           <div class="taxonomy-list">
             <h2>All {% if taxonomy.name == "categories" %}Categories{% else %}Tags{% endif %}</h2>
             {% for term in taxonomy.items | sort(attribute="name") %}
-            <div style="margin-bottom: 1.5em; padding: 1em; background: #f9f9f9; border-radius: 8px;">
+            <div style="margin-bottom: 1.5em; padding: 1em; background: var(--bg-secondary); border-radius: 8px;">
               <h3 style="margin: 0 0 0.5em 0;">
-                <a href="{{ term.permalink }}" style="text-decoration: none; color: #2879d0;">
+                <a href="{{ term.permalink }}" style="text-decoration: none; color: var(--accent-color);">
                   {% if taxonomy.name == "categories" %}📂{% else %}🏷️{% endif %} {{ term.name }}
                 </a>
-                <span style="color: #666; font-size: 0.8em; font-weight: normal;">({{ term.pages | length }} post{% if term.pages | length != 1 %}s{% endif %})</span>
+                <span style="color: var(--text-secondary); font-size: 0.8em; font-weight: normal;">({{ term.pages | length }} post{% if term.pages | length != 1 %}s{% endif %})</span>
               </h3>
               <ul style="margin: 0; padding-left: 1.5em;">
                 {% for page in term.pages | slice(end=5) %}
                 <li style="margin-bottom: 0.25em;">
                   <a href="{{ page.permalink }}">{{ page.title }}</a>
-                  <small style="color: #666;">- {{ page.date | date(format="%b %d, %Y") }}</small>
+                  <small style="color: var(--text-secondary);">- {{ page.date | date(format="%b %d, %Y") }}</small>
                 </li>
                 {% endfor %}
                 {% if term.pages | length > 5 %}
