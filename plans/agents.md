@@ -82,6 +82,11 @@
   - Example: "text (clarification)" instead of "text—clarification"
   - Maintains readability and follows user's preferred style
 - **Bullet lists** - Use hyphens (-) for bullet lists (standard markdown format)
+- **Minimize subsections for flow** - Avoid excessive subsection headings (###) that break narrative flow
+  - Write blog posts as cohesive stories rather than overly segmented documentation
+  - Use section headings (##) sparingly and only when they genuinely help structure
+  - Let content flow naturally without artificial breaks
+  - Goal: Improve readability and maintain storytelling quality
 
 ## Project Structure Standards
 

@@ -34,58 +34,21 @@ This shift from scripting languages to compiled languages like Rust showcases th
 
 The choice between Rust and scripting languages for CLI tooling isn't just about language preference. It's about understanding how AI agents interact with different validation paradigms, and what that means for investing in long-term tooling solutions.
 
-### The Rust Advantage with AI Agents
+Rust development with AI agents has been surprisingly smooth. In Rust, tests live right alongside the code in the same file. This means when an agent is writing or modifying Rust code, it has immediate context about how the code should behave. This contextual awareness leads to significantly better one-shot solutions.
 
-Rust development with AI agents has been surprisingly smooth. Here's why:
+My Rust projects have comprehensive CI steps that check code coverage, linting, compilation errors, and integration with tools like `cargo`. But here's where the real magic happens with compiled languages: The agent can write code, run the compiler, and get immediate feedback without executing anything. The compiler acts as a validation step that guides the agent to make fixes and edits on its own. In scripting languages, the only way to validate is to actually run the code, but with compiled languages like Rust, the agent can validate by compiling. This creates a tight feedback loop where the agent iterates and fixes issues independently, without requiring me to run the code myself. I prefer to validate the final result myself, but the compilation step means the agent can get much further on its own.
 
-**Testing in Context**: In Rust, tests live right alongside the code in the same file. This means when an agent is writing or modifying Rust code, it has immediate context about how the code should behave. This contextual awareness leads to significantly better one-shot solutions.
+Rust's strict type system acts as inline documentation. The compiler catches a vast majority of issues, which means the agent's code is validated thoroughly before it ever runs. Even CLI tools and TUIs (Terminal User Interfaces) benefit from this. I've been using Ratatui (a Rust TUI library), and it's been fantastic. Creating a nice command-line interface in Rust with Ratatui is actually easier than doing the same in scripting languages like PowerShell or Bash. The type safety and library ecosystem make complex UIs surprisingly manageable.
 
-**Strong CI/CD Integration**: My Rust projects have comprehensive CI steps that check:
-- Code coverage
-- Linting
-- Compilation errors
-- Integration with tools like `cargo`
+For Rust, I find that prompts typically result in working code on the first try. The combination of strong types, inline tests, and excellent tooling means less back-and-forth.
 
-**Compilation-Guided Development**: This is where the real magic happens with compiled languages. The agent can write code, run the compiler, and get immediate feedback without executing anything. The compiler acts as a validation step that guides the agent to make fixes and edits on its own. In scripting languages, the only way to validate is to actually run the code, but with compiled languages like Rust, the agent can validate by compiling. This creates a tight feedback loop where the agent iterates and fixes issues independently, without requiring me to run the code myself. I prefer to validate the final result myself, but the compilation step means the agent can get much further on its own.
+Scripting languages like PowerShell or Bash present different challenges with AI agents. With scripting languages, you often don't know if something will work until you actually run it. Linters exist, but they're nowhere near as powerful as a compiler. Testing frameworks exist (like Pester for PowerShell), but the testing infrastructure is not as seamlessly integrated as in Rust. Tests are typically in separate files, and the overall testing culture isn't as ingrained.
 
-**Type System as Documentation**: Rust's strict type system acts as inline documentation. The compiler catches a vast majority of issues, which means the agent's code is validated thoroughly before it ever runs. Even CLI tools and TUIs (Terminal User Interfaces) benefit from this.
+The major upside? Distribution is incredibly easy. Scripts just run on most systems. No compilation, no binary signing (in most cases), no cross-platform build matrices. For internal tools, this low barrier to entry is invaluable. Scripting languages excel at quick automation tasks, but they can become unwieldy when they grow to thousands of lines.
 
-**TUI Development**: I've been using Ratatui (a Rust TUI library), and it's been fantastic. Creating a nice command-line interface in Rust with Ratatui is actually easier than doing the same in scripting languages like PowerShell or Bash. The type safety and library ecosystem make complex UIs surprisingly manageable.
+The progression I experienced (shell scripts before Opus 4.5, Rust after) highlights important considerations for investing in CLI tooling. Choose Rust for CLI tools when the project will grow beyond a few hundred lines, you need strong reliability guarantees, performance matters, you're building CLIs or TUIs that need to feel polished, you want comprehensive compile-time checking, and AI agents are capable enough to make it feasible (post-Opus 4.5). Choose scripting languages when you need quick automation, distribution ease is paramount, the script will stay relatively small, setup burden needs to be minimal, or you're working with less capable AI models.
 
-**One-Shot Success Rate**: For Rust, I find that prompts typically result in working code on the first try. The combination of strong types, inline tests, and excellent tooling means less back-and-forth.
-
-### Scripting Languages with AI Agents
-
-Scripting languages like PowerShell or Bash present different challenges with AI agents:
-
-**Delayed Validation**: With scripting languages, you often don't know if something will work until you actually run it. Linters exist, but they're nowhere near as powerful as a compiler.
-
-**Testing Infrastructure**: Testing frameworks exist (like Pester for PowerShell), but the testing infrastructure is not as seamlessly integrated as in Rust. Tests are typically in separate files, and the overall testing culture isn't as ingrained.
-
-**Distribution Advantage**: The major upside? Distribution is incredibly easy. Scripts just run on most systems. No compilation, no binary signing (in most cases), no cross-platform build matrices. For internal tools, this low barrier to entry is invaluable.
-
-**Quick Automation**: Scripting languages excel at quick automation tasks, but they can become unwieldy when they grow to thousands of lines.
-
-### Choosing Your Investment for CLI Tooling
-
-The progression I experienced (shell scripts before Opus 4.5, Rust after) highlights an important consideration:
-
-**Choose Rust for CLI tools when**:
-- The project will grow beyond a few hundred lines
-- You need strong reliability guarantees
-- Performance matters
-- You're building CLIs or TUIs that need to feel polished
-- You want comprehensive compile-time checking
-- AI agents are capable enough to make it feasible (post-Opus 4.5)
-
-**Choose scripting languages for CLI tools when**:
-- You need quick automation
-- Distribution ease is paramount
-- The script will stay relatively small
-- Setup/installation burden needs to be minimal
-- You're working with less capable AI models
-
-**The crossover point**: With capable AI models like Opus 4.5, Rust becomes viable even for smaller CLI tools where you might have previously defaulted to scripts. Once a script reaches thousands of lines, the case for Rust becomes even stronger.
+With capable AI models like Opus 4.5, Rust becomes viable even for smaller CLI tools where you might have previously defaulted to scripts. Once a script reaches thousands of lines, the case for Rust becomes even stronger.
 
 ## Calling External Tools from Rust
 
