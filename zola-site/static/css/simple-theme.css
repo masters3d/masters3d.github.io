@@ -90,7 +90,7 @@ header nav a:hover {
 
 header a.button {
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--bg-accent);
   color: var(--header-text);
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -99,7 +99,7 @@ header a.button {
 }
 
 header a.button:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--border-color);
 }
 
 /* Main Content Layout */
