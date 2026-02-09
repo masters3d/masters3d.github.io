@@ -59,14 +59,15 @@
                 <span style="color: var(--text-secondary); font-size: 0.8em; font-weight: normal;">({{ term.pages | length }} post{% if term.pages | length != 1 %}s{% endif %})</span>
               </h3>
               <ul style="margin: 0; padding-left: 1.5em;">
-                {% for page in term.pages | slice(end=5) %}
+                {% for page in term.pages | filter(attribute="date", value=now(), method="lte") | slice(end=5) %}
                 <li style="margin-bottom: 0.25em;">
                   <a href="{{ page.permalink }}">{{ page.title }}</a>
                   <small style="color: var(--text-secondary);">- {{ page.date | date(format="%b %d, %Y") }}</small>
                 </li>
                 {% endfor %}
-                {% if term.pages | length > 5 %}
-                <li style="margin-top: 0.5em;"><a href="{{ term.permalink }}">View all {{ term.pages | length }} posts →</a></li>
+                {% set total_published = term.pages | filter(attribute="date", value=now(), method="lte") | length %}
+                {% if total_published > 5 %}
+                <li style="margin-top: 0.5em;"><a href="{{ term.permalink }}">View all {{ total_published }} posts →</a></li>
                 {% endif %}
               </ul>
             </div>

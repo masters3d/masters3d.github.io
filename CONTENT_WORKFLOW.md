@@ -45,8 +45,8 @@ zola serve
 ## 🔄 Deployment Process
 
 **Automatic via GitHub Actions:**
-1. Push changes to `master` branch
-2. GitHub Actions triggers workflow
+1. **On push to master:** Builds and deploys immediately
+2. **Daily scheduled build:** Runs at 00:00 UTC to publish future-dated posts
 3. Zola builds the site from markdown
 4. Site deploys automatically to https://masters3d.com
 
@@ -80,7 +80,7 @@ zola build
 ```toml
 +++
 title = "Your Post Title"
-date = 2024-09-14
+date = "2024-09-14"
 description = "SEO description"
 template = "blog-post.html"
 categories = ["category"]
@@ -89,6 +89,16 @@ tags = ["tag1", "tag2"]
 ```
 3. Write content in markdown below the frontmatter
 4. Commit and push
+
+**Scheduling Future Posts:**
+To schedule a post for future publication:
+1. Set the `date` to a future date in the frontmatter (e.g., `date = "2025-12-31"`)
+2. Commit and push the post to the repository
+3. The post will automatically appear on the site after midnight UTC on the scheduled date
+4. A daily automated build runs at 00:00 UTC to publish scheduled posts
+5. Future-dated posts are filtered from the blog listing, RSS feed, and category/tag pages until their scheduled date
+
+**Note:** The automated build runs once daily, so posts scheduled for specific times will become visible after the next daily build completes.
 
 ### 📄 Editing Existing Pages
 
@@ -143,7 +153,7 @@ zola serve
 ```toml
 +++
 title = "Required: Post title"
-date = 2024-09-14
+date = "2024-09-14"  # Use quotes for dates; future dates schedule publication
 description = "Required: SEO description"
 template = "blog-post.html"
 categories = ["optional"]

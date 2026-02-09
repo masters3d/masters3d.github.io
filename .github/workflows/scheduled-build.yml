@@ -1,0 +1,82 @@
+# Scheduled build to publish future-dated posts
+name: Scheduled Site Build
+
+on:
+  # Runs daily at 00:00 UTC to publish future-dated posts
+  schedule:
+    - cron: '0 0 * * *'
+  
+  # Allows manual trigger from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Build and deploy Zola site
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Zola
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.19.2
+      
+      - name: Validate site before build
+        run: |
+          cd zola-site
+          echo "Running Zola check to validate templates and content..."
+          zola check
+          
+      - name: Build Zola site
+        run: |
+          cd zola-site
+          zola build
+      
+      - name: Validate RSS feeds were generated
+        run: |
+          cd zola-site
+          echo "Verifying RSS feed generation..."
+          
+          # Check if blog feed exists
+          if [ ! -f "public/blog/atom.xml" ]; then
+            echo "ERROR: Blog RSS feed not generated at public/blog/atom.xml"
+            exit 1
+          fi
+          
+          # Validate blog feed contains entries
+          ENTRY_COUNT=$(grep -c "<entry" public/blog/atom.xml || echo "0")
+          if [ "$ENTRY_COUNT" -eq "0" ]; then
+            echo "ERROR: Blog RSS feed is empty (no entries found)"
+            exit 1
+          fi
+          
+          echo "✓ RSS feeds validated successfully ($ENTRY_COUNT blog posts in feed)"
+          
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload the built Zola site
+          path: 'zola-site/public'
+          
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

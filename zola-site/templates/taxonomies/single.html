@@ -34,10 +34,11 @@
           </nav>
 
           <h1>📂 Category: {{ term.name }}</h1>
-          <p style="color: var(--text-secondary); margin-bottom: 2em;">{{ term.pages | length }} post{% if term.pages | length != 1 %}s{% endif %} in this category</p>
+          {% set published_pages = term.pages | filter(attribute="date", value=now(), method="lte") %}
+          <p style="color: var(--text-secondary); margin-bottom: 2em;">{{ published_pages | length }} post{% if published_pages | length != 1 %}s{% endif %} in this category</p>
 
           <div class="blog-posts">
-            {% for page in term.pages %}
+            {% for page in published_pages %}
             <article class="blog-post-preview" style="margin-bottom: 2em; padding: 1.5em; border-left: 3px solid var(--accent-color); background: var(--bg-secondary);">
               <h2 style="margin-top: 0;"><a href="{{ page.permalink }}" style="text-decoration: none; color: var(--accent-color);">{{ page.title }}</a></h2>
               <div class="post-meta" style="color: var(--text-secondary); font-size: 0.9em; margin-bottom: 1em;">
