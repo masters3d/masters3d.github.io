@@ -36,11 +36,37 @@ jobs:
         uses: taiki-e/install-action@v2
         with:
           tool: zola@0.19.2
+      
+      - name: Validate site before build
+        run: |
+          cd zola-site
+          echo "Running Zola check to validate templates and content..."
+          zola check
           
       - name: Build Zola site
         run: |
           cd zola-site
           zola build
+      
+      - name: Validate RSS feeds were generated
+        run: |
+          cd zola-site
+          echo "Verifying RSS feed generation..."
+          
+          # Check if blog feed exists
+          if [ ! -f "public/blog/atom.xml" ]; then
+            echo "ERROR: Blog RSS feed not generated at public/blog/atom.xml"
+            exit 1
+          fi
+          
+          # Validate blog feed contains entries
+          ENTRY_COUNT=$(grep -c "<entry" public/blog/atom.xml || echo "0")
+          if [ "$ENTRY_COUNT" -eq "0" ]; then
+            echo "ERROR: Blog RSS feed is empty (no entries found)"
+            exit 1
+          fi
+          
+          echo "✓ RSS feeds validated successfully ($ENTRY_COUNT blog posts in feed)"
           
       - name: Setup Pages
         uses: actions/configure-pages@v5
