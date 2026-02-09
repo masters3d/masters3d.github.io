@@ -7,6 +7,10 @@ on:
   # Allow manual trigger for testing
   workflow_dispatch:
 
+# Limit permissions for security
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -86,10 +90,10 @@ jobs:
           echo "Checking blog post date formats..."
           
           # Check for quoted and unquoted dates (with flexible spacing)
-          # Matches: date = "...", date="...", date  =  "..."
-          QUOTED_DATES=$(grep -rE '^date[[:space:]]*=[[:space:]]*"' . | wc -l || echo "0")
-          # Matches: date = 2024-01-01, date=2024-01-01, date  =  2024-01-01
-          UNQUOTED_DATES=$(grep -rE '^date[[:space:]]*=[[:space:]]*[0-9]' . | wc -l || echo "0")
+          # Matches only: date = "...", date="...", date  =  "..." (not update_date, etc.)
+          QUOTED_DATES=$(grep -rE '^date[[:space:]]*=[[:space:]]*"[0-9]{4}-' . | wc -l || echo "0")
+          # Matches only: date = 2024-01-01, date=2024-01-01, date  =  2024-01-01
+          UNQUOTED_DATES=$(grep -rE '^date[[:space:]]*=[[:space:]]*[0-9]{4}-' . | wc -l || echo "0")
           
           echo "Found $QUOTED_DATES blog posts with quoted dates"
           echo "Found $UNQUOTED_DATES blog posts with unquoted dates"
