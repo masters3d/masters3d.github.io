@@ -2,7 +2,7 @@
 title = "Masters3d"
 +++
 
-<nav style="margin-bottom: 20px; padding: 10px; background: #f0f0f0; border-radius: 5px;">
+<nav style="margin-bottom: 20px; padding: 10px; background: var(--bg-secondary); border-radius: 5px;">
   <a href="/"><strong>🏠 Home</strong></a> | 
   <a href="/blog/"><strong>📝 Portfolio & Blog</strong></a>
 </nav>
