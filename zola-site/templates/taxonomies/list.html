@@ -52,22 +52,22 @@
             <h2>All {% if taxonomy.name == "categories" %}Categories{% else %}Tags{% endif %}</h2>
             {% for term in taxonomy.items | sort(attribute="name") %}
             <div style="margin-bottom: 1.5em; padding: 1em; background: var(--bg-secondary); border-radius: 8px;">
+              {% set published_pages = term.pages | filter(attribute="date", value=now(), method="lte") %}
               <h3 style="margin: 0 0 0.5em 0;">
                 <a href="{{ term.permalink }}" style="text-decoration: none; color: var(--accent-color);">
                   {% if taxonomy.name == "categories" %}📂{% else %}🏷️{% endif %} {{ term.name }}
                 </a>
-                <span style="color: var(--text-secondary); font-size: 0.8em; font-weight: normal;">({{ term.pages | length }} post{% if term.pages | length != 1 %}s{% endif %})</span>
+                <span style="color: var(--text-secondary); font-size: 0.8em; font-weight: normal;">({{ published_pages | length }} post{% if published_pages | length != 1 %}s{% endif %})</span>
               </h3>
               <ul style="margin: 0; padding-left: 1.5em;">
-                {% for page in term.pages | filter(attribute="date", value=now(), method="lte") | slice(end=5) %}
+                {% for page in published_pages | slice(end=5) %}
                 <li style="margin-bottom: 0.25em;">
                   <a href="{{ page.permalink }}">{{ page.title }}</a>
                   <small style="color: var(--text-secondary);">- {{ page.date | date(format="%b %d, %Y") }}</small>
                 </li>
                 {% endfor %}
-                {% set total_published = term.pages | filter(attribute="date", value=now(), method="lte") | length %}
-                {% if total_published > 5 %}
-                <li style="margin-top: 0.5em;"><a href="{{ term.permalink }}">View all {{ total_published }} posts →</a></li>
+                {% if published_pages | length > 5 %}
+                <li style="margin-top: 0.5em;"><a href="{{ term.permalink }}">View all {{ published_pages | length }} posts →</a></li>
                 {% endif %}
               </ul>
             </div>
