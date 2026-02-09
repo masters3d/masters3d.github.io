@@ -59,14 +59,13 @@ jobs:
             exit 1
           fi
           
-          # Validate blog feed contains entries
+          # Count blog feed entries (may be 0 if all posts are scheduled for future)
           ENTRY_COUNT=$(grep -c "<entry" public/blog/atom.xml || echo "0")
           if [ "$ENTRY_COUNT" -eq "0" ]; then
-            echo "ERROR: Blog RSS feed is empty (no entries found)"
-            exit 1
+            echo "⚠️ WARNING: Blog RSS feed is empty (no published posts found - all may be scheduled for future)"
+          else
+            echo "✓ RSS feed validated successfully ($ENTRY_COUNT blog posts in feed)"
           fi
-          
-          echo "✓ RSS feeds validated successfully ($ENTRY_COUNT blog posts in feed)"
           
       - name: Setup Pages
         uses: actions/configure-pages@v5
