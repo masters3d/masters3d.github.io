@@ -29,18 +29,18 @@
       <div class="inner clearfix">
         <section id="main-content">
           <!-- Breadcrumbs -->
-          <nav class="breadcrumbs" style="margin-bottom: 20px; font-size: 0.9em; color: #666;">
+          <nav class="breadcrumbs" style="margin-bottom: 20px; font-size: 0.9em; color: var(--text-secondary);">
             <a href="/">Home</a> → <a href="/blog/">Blog</a> → <a href="/categories/">Categories</a> → <span>{{ term.name }}</span>
           </nav>
 
           <h1>📂 Category: {{ term.name }}</h1>
-          <p style="color: #666; margin-bottom: 2em;">{{ term.pages | length }} post{% if term.pages | length != 1 %}s{% endif %} in this category</p>
+          <p style="color: var(--text-secondary); margin-bottom: 2em;">{{ term.pages | length }} post{% if term.pages | length != 1 %}s{% endif %} in this category</p>
 
           <div class="blog-posts">
             {% for page in term.pages %}
-            <article class="blog-post-preview" style="margin-bottom: 2em; padding: 1.5em; border-left: 3px solid #2879d0; background: #fafafa;">
-              <h2 style="margin-top: 0;"><a href="{{ page.permalink }}" style="text-decoration: none; color: #2879d0;">{{ page.title }}</a></h2>
-              <div class="post-meta" style="color: #666; font-size: 0.9em; margin-bottom: 1em;">
+            <article class="blog-post-preview" style="margin-bottom: 2em; padding: 1.5em; border-left: 3px solid var(--accent-color); background: var(--bg-secondary);">
+              <h2 style="margin-top: 0;"><a href="{{ page.permalink }}" style="text-decoration: none; color: var(--accent-color);">{{ page.title }}</a></h2>
+              <div class="post-meta" style="color: var(--text-secondary); font-size: 0.9em; margin-bottom: 1em;">
                 📅 {{ page.date | date(format="%B %d, %Y") }}
                 {% if config.extra.show_reading_time and page.reading_time %}
                 • ⏱️ {{ page.reading_time }} min read
@@ -49,13 +49,13 @@
                 <div style="margin-top: 0.5em;">
                   🏷️ Tags: 
                   {% for tag in page.taxonomies.tags %}
-                    <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" style="background: #f3e5f5; padding: 2px 6px; border-radius: 3px; text-decoration: none; font-size: 0.8em;">{{ tag }}</a>
+                    <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" style="background: var(--bg-accent); padding: 2px 6px; border-radius: 3px; text-decoration: none; font-size: 0.8em;">{{ tag }}</a>
                   {% endfor %}
                 </div>
                 {% endif %}
               </div>
               {% if page.description %}
-              <p style="color: #666; font-style: italic; margin-bottom: 1em;">{{ page.description }}</p>
+              <p style="color: var(--text-secondary); font-style: italic; margin-bottom: 1em;">{{ page.description }}</p>
               {% endif %}
               {% if page.summary %}
               <div class="post-summary">
@@ -66,7 +66,7 @@
                 {{ page.content | safe | truncate(length=300) }}
               </div>
               {% endif %}
-              <p><a href="{{ page.permalink }}" style="color: #2879d0;">Read more →</a></p>
+              <p><a href="{{ page.permalink }}" style="color: var(--accent-color);">Read more →</a></p>
             </article>
             {% endfor %}
           </div>

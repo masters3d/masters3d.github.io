@@ -63,14 +63,14 @@
       <div class="inner clearfix">
         <section id="main-content">
           <!-- Breadcrumbs -->
-          <nav class="breadcrumbs" style="margin-bottom: 20px; font-size: 0.9em; color: #666;">
+          <nav class="breadcrumbs" style="margin-bottom: 20px; font-size: 0.9em; color: var(--text-secondary);">
             <a href="/">Home</a> → <a href="/blog/">Blog</a> → <span>{{ page.title }}</span>
           </nav>
 
           <article class="blog-post">
             <header class="post-header">
               <h1>{{ page.title }}</h1>
-              <div class="post-meta" style="color: #666; margin-bottom: 2em; padding: 1em; background: #f9f9f9; border-radius: 5px;">
+              <div class="post-meta" style="color: var(--text-secondary); margin-bottom: 2em; padding: 1em; background: var(--bg-secondary); border-radius: 5px;">
                 <time datetime="{{ page.date }}">📅 {{ page.date | date(format='%B %d, %Y') }}</time>
                 {% if page.updated %}
                 <span style="margin-left: 1em;">🔄 Updated: {{ page.updated | date(format='%B %d, %Y') }}</span>
@@ -86,7 +86,7 @@
                 <div style="margin-top: 0.5em;">
                   📂 Categories: 
                   {% for category in page.taxonomies.categories %}
-                    <a href="{{ get_taxonomy_url(kind='categories', name=category) }}" style="background: #e1f5fe; padding: 2px 8px; border-radius: 3px; text-decoration: none; font-size: 0.9em;">{{ category }}</a>
+                    <a href="{{ get_taxonomy_url(kind='categories', name=category) }}" style="background: var(--bg-accent); padding: 2px 8px; border-radius: 3px; text-decoration: none; font-size: 0.9em;">{{ category }}</a>
                     {% if not loop.last %} {% endif %}
                   {% endfor %}
                 </div>
@@ -96,7 +96,7 @@
                 <div style="margin-top: 0.5em;">
                   🏷️ Tags: 
                   {% for tag in page.taxonomies.tags %}
-                    <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" style="background: #f3e5f5; padding: 2px 8px; border-radius: 3px; text-decoration: none; font-size: 0.9em;">{{ tag }}</a>
+                    <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" style="background: var(--bg-accent); padding: 2px 8px; border-radius: 3px; text-decoration: none; font-size: 0.9em;">{{ tag }}</a>
                   {% endfor %}
                 </div>
                 {% endif %}
@@ -104,7 +104,7 @@
             </header>
 
             {% if page.description %}
-            <div class="post-description" style="font-style: italic; color: #555; margin-bottom: 2em; padding: 1em; border-left: 4px solid #2879d0; background: #f8f9fa;">
+            <div class="post-description" style="font-style: italic; color: var(--text-secondary); margin-bottom: 2em; padding: 1em; border-left: 4px solid var(--accent-color); background: var(--bg-secondary);">
               {{ page.description }}
             </div>
             {% endif %}
@@ -113,7 +113,7 @@
               {{ page.content | safe }}
             </div>
 
-            <footer class="post-footer" style="margin-top: 3em; padding-top: 2em; border-top: 1px solid #eee;">
+            <footer class="post-footer" style="margin-top: 3em; padding-top: 2em; border-top: 1px solid var(--border-color);">
               <!-- Social Sharing -->
               <div class="social-sharing" style="margin-bottom: 2em;">
                 <h4>Share this post:</h4>
@@ -124,7 +124,7 @@
               </div>
 
               <!-- Author Info -->
-              <div class="author-info" style="padding: 1.5em; background: #f8f9fa; border-radius: 8px; margin-bottom: 2em;">
+              <div class="author-info" style="padding: 1.5em; background: var(--bg-secondary); border-radius: 8px; margin-bottom: 2em;">
                 <h4 style="margin-top: 0;">About the Author</h4>
                 <p style="margin-bottom: 0;">{{ config.description }} 
                 {% if config.extra.github_username %}
@@ -143,7 +143,7 @@
                   </div>
                   
                   <div style="text-align: center; padding: 0 1em;">
-                    <a href="/blog/" style="padding: 0.5em 1em; background: #2879d0; color: white; text-decoration: none; border-radius: 3px;">All Posts</a>
+                    <a href="/blog/" style="padding: 0.5em 1em; background: var(--accent-color); color: white; text-decoration: none; border-radius: 3px;">All Posts</a>
                   </div>
                   
                   <div style="flex: 1;"></div>
