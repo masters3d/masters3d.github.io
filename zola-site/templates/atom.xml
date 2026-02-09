@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <id>{{ get_url(path="atom.xml") }}</id>
+    <id>{% if section %}{{ get_url(path=section.path ~ "atom.xml") }}{% else %}{{ get_url(path="atom.xml") }}{% endif %}</id>
     <title>{{ config.title }}{% if section %} - {{ section.title }}{% endif %}</title>
     {% if config.description %}
     <subtitle>{{ config.description }}</subtitle>
     {% endif %}
     <updated>{{ now() | date(format="%+") }}</updated>
     <link rel="alternate" type="text/html" href="{{ config.base_url }}{% if section %}{{ section.path }}{% endif %}"/>
-    <link rel="self" type="application/atom+xml" href="{{ get_url(path="atom.xml") }}"/>
+    <link rel="self" type="application/atom+xml" href="{% if section %}{{ get_url(path=section.path ~ "atom.xml") }}{% else %}{{ get_url(path="atom.xml") }}{% endif %}"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     {% if config.extra.github_username %}
     <author>

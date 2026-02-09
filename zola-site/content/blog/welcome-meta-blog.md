@@ -1,6 +1,6 @@
 +++
 title = "Building This Blog: A Meta Journey with AI Agents"
-date = 2025-09-13
+date = "2025-09-13"
 description = "How this entire blog system was created using AI agents, including the technical implementation, content creation, and instructions for adding new posts."
 template = "blog-post.html"
 categories = ["meta", "ai", "development"]
@@ -70,7 +70,7 @@ Every post needs TOML frontmatter at the top:
 ```markdown
 +++
 title = "Your Post Title"
-date = 2025-09-13
+date = "2025-09-13"
 description = "SEO-friendly description of your post"
 template = "blog-post.html"
 categories = ["web-development", "tutorial"]

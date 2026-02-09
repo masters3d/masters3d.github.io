@@ -1,0 +1,123 @@
+# PR validation workflow to check site builds correctly and RSS feeds are generated
+name: PR Validation
+
+on:
+  pull_request:
+    branches: ["master"]
+  # Allow manual trigger for testing
+  workflow_dispatch:
+
+# Limit permissions for security
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Zola
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.19.2
+      
+      - name: Check site for errors
+        run: |
+          cd zola-site
+          echo "Running Zola check to validate templates and content..."
+          zola check
+          
+      - name: Build site
+        run: |
+          cd zola-site
+          echo "Building site..."
+          zola build
+          
+      - name: Validate RSS feeds are generated
+        run: |
+          cd zola-site
+          echo "Checking for RSS feed files..."
+          
+          # Check if blog feed exists
+          if [ ! -f "public/blog/atom.xml" ]; then
+            echo "ERROR: Blog RSS feed not generated at public/blog/atom.xml"
+            exit 1
+          fi
+          echo "✓ Blog RSS feed exists at public/blog/atom.xml"
+          
+          # Validate blog feed is not empty and contains entries
+          ENTRY_COUNT=$(grep -c "<entry" public/blog/atom.xml || echo "0")
+          if [ "$ENTRY_COUNT" -eq "0" ]; then
+            echo "ERROR: Blog RSS feed is empty (no entries found)"
+            exit 1
+          fi
+          echo "✓ Blog RSS feed contains $ENTRY_COUNT entries"
+          
+          # Check if root feed exists
+          if [ ! -f "public/atom.xml" ]; then
+            echo "ERROR: Root RSS feed not generated at public/atom.xml"
+            exit 1
+          fi
+          echo "✓ Root RSS feed exists at public/atom.xml"
+          
+          # Validate feed is valid XML (install xmllint if needed)
+          if command -v xmllint >/dev/null 2>&1; then
+            if ! xmllint --noout public/blog/atom.xml 2>/dev/null; then
+              echo "ERROR: Blog RSS feed is not valid XML"
+              exit 1
+            fi
+            echo "✓ Blog RSS feed is valid XML"
+          else
+            # Fallback: basic XML validation by checking for required tags
+            if ! grep -q "<?xml version" public/blog/atom.xml || ! grep -q "</feed>" public/blog/atom.xml; then
+              echo "ERROR: Blog RSS feed appears malformed (missing XML declaration or closing tag)"
+              exit 1
+            fi
+            echo "✓ Blog RSS feed has basic XML structure"
+          fi
+          
+          echo ""
+          echo "=== RSS Feed Validation Summary ==="
+          echo "✓ All RSS feeds generated successfully"
+          echo "✓ Blog feed contains $ENTRY_COUNT posts"
+          echo "✓ Feed structure validated"
+          
+      - name: Validate date formats in blog posts
+        run: |
+          cd zola-site/content/blog
+          echo "Checking blog post date formats..."
+          
+          # Check for quoted and unquoted dates (with flexible spacing)
+          # Matches only: date = "...", date="...", date  =  "..." (not update_date, etc.)
+          QUOTED_DATES=$(grep -rE '^date[[:space:]]*=[[:space:]]*"[0-9]{4}-' . | wc -l || echo "0")
+          # Matches only: date = 2024-01-01, date=2024-01-01, date  =  2024-01-01
+          UNQUOTED_DATES=$(grep -rE '^date[[:space:]]*=[[:space:]]*[0-9]{4}-' . | wc -l || echo "0")
+          
+          echo "Found $QUOTED_DATES blog posts with quoted dates"
+          echo "Found $UNQUOTED_DATES blog posts with unquoted dates"
+          
+          # Check if dates are mixed (inconsistent)
+          if [ "$QUOTED_DATES" -gt "0" ] && [ "$UNQUOTED_DATES" -gt "0" ]; then
+            echo "WARNING: Mixed date formats detected. Consider using consistent format."
+            echo "Both quoted and unquoted dates work in Zola 0.19.2+, but consistency is recommended."
+          fi
+          
+          # Verify all posts have dates (matches any date line with flexible spacing)
+          POSTS_WITHOUT_DATES=$(find . -name "*.md" -not -name "_index.md" -type f -exec grep -L '^date[[:space:]]*=' {} \; | wc -l)
+          if [ "$POSTS_WITHOUT_DATES" -gt "0" ]; then
+            echo "ERROR: Found $POSTS_WITHOUT_DATES blog posts without dates"
+            find . -name "*.md" -not -name "_index.md" -type f -exec grep -L '^date[[:space:]]*=' {} \;
+            exit 1
+          fi
+          
+          echo "✓ All blog posts have date fields"
+          
+      - name: Upload build artifacts for inspection
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: built-site
+          path: zola-site/public
+          retention-days: 7

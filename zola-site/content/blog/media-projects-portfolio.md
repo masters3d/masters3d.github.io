@@ -1,6 +1,6 @@
 +++
 title = "Media Projects & Digital Production Portfolio"
-date = 2015-06-15
+date = "2015-06-15"
 description = "Video production work spanning documentary, commercial, and technical content. From humanitarian missions to commercial products."
 template = "blog-post.html"
 [extra]
