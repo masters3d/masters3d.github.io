@@ -1,7 +1,7 @@
 +++
 title = "Why I Switched to Worklogs (and You Should Too)"
 date = "2026-03-28"
-description = "How worklogs transformed my workflow with AI coding agents — capturing context across sessions, using GitHub Issues as a backend, and turning structured logs into an agentic work queue."
+description = "How worklogs transformed my workflow with AI coding agents (capturing context across sessions, using GitHub Issues as a backend, and turning structured logs into an agentic work queue)."
 template = "blog-post.html"
 categories = ["ai", "development", "productivity"]
 tags = ["worklogs", "agents", "copilot", "github", "workflow", "ai-development"]
@@ -9,17 +9,15 @@ tags = ["worklogs", "agents", "copilot", "github", "workflow", "ai-development"]
 
 I wanted to share something that's been a game-changer for how I organize my work with AI coding agents: **worklogs**.
 
-## What is a worklog?
+## What worklogs are (and what they're not)
 
 At its core, a worklog is about **capturing context so it doesn't vanish when your session ends**.
 
-Think of it like a **scientist's lab notebook**. You're running experiments, writing down your thoughts, documenting failures, documenting things that worked. Back in the day you would have used a Notepad file, or a Word doc, or maybe sticky notes. Now you have a super lightweight way to let an agentic loop hold this context for you, so you can reference it and search it easily, without it disappearing.
+Think of it like a **scientist's lab notebook** 📓. You're running experiments, writing down your thoughts, documenting failures, documenting things that worked. Back in the day you would have used a Notepad file, or a Word doc, or maybe sticky notes. Now you have a super lightweight way to let an agentic loop hold this context for you, so you can reference it and search it easily, without it disappearing.
 
 A worklog captures: what you're working on, the status, blockers, notes, links to PRs, and outcomes. It's a living log that both you and your AI agent can read and update.
 
-## Agent plans are great. Worklogs are different.
-
-To be clear: I'm talking about **agent plans** here — the `plan.md` files that AI coding agents create at the start of a task. Some people check these into their repo, others don't. Either way, they're ephemeral: they help the agent think through a problem within a single session.
+To be clear: worklogs are not **agent plans** (the `plan.md` files that AI coding agents create at the start of a task). Some people check these into their repo, others don't. Either way, they're ephemeral: they help the agent think through a problem within a single session.
 
 **This is NOT about design documents or vision documents.** Those still exist and are still important. Worklogs don't replace them. In fact, you can use a worklog to *track the creation* of a design doc as a deliverable.
 
@@ -38,8 +36,6 @@ Agent plans are great for the session they live in. But when you close the sessi
 | **Lifetime**   | Session ends       | Until work completes  | Permanent record   |
 | **Analogy**    | Whiteboard sketch  | Lab notebook          | Published paper    |
 
-## Multiple sessions, one clear picture
-
 Right now I have **seven sessions running in parallel**, each working on a different area. Each session has its own worklog. These worklogs give me clarity on:
 
 - What am I working on across all sessions?
@@ -49,7 +45,7 @@ Right now I have **seven sessions running in parallel**, each working on a diffe
 
 Without worklogs, that context lives in scattered session histories. With worklogs, it's all in one place, searchable, and any new session can pick up right where I left off.
 
-## Our implementation: GitHub Issues
+## How we built it
 
 **GitHub Issues is just the backend we chose.** You don't have to implement it this way. You could use Azure DevOps work items, a storage account, or roll out your own endpoint and API. The concept is what matters.
 
@@ -62,11 +58,7 @@ A worklog backend needs to be:
 
 We went with GitHub because the API is incredibly simple. Authentication is straightforward, the `gh` CLI just works, and saving context requires zero ceremony. You could build this on Azure DevOps too, but we found the GitHub API to be so effortless that it just removes all friction. If something better comes along, we swap the backend and the workflow stays the same.
 
-## What's at the heart of the skill?
-
-The whole thing is just a **markdown file**. That's it.
-
-A skill file is a set of instructions that teaches the AI agent a workflow. It defines conventions (how to name things, what labels to use, what template to follow), the CLI commands to run (`gh issue create`, `gh issue edit`, etc.), and the decision logic (check for duplicates before creating, ask for a size estimate, link related items).
+The whole thing is powered by a **skill file** (just a markdown file). That's it. A skill file is a set of instructions that teaches the AI agent a workflow. It defines conventions (how to name things, what labels to use, what template to follow), the CLI commands to run (`gh issue create`, `gh issue edit`, etc.), and the decision logic (check for duplicates before creating, ask for a size estimate, link related items).
 
 When you say *"open a worklog"*, the agent loads this skill file and follows the instructions. It knows:
 
@@ -90,15 +82,13 @@ Because it's just a markdown file, **anyone can write one**. You don't need a fr
 
 The skill is the **recipe**. GitHub Issues is the **storage**. The `gh` CLI is the **interface**. And the AI agent is the one following the recipe. You just talk to it in plain English.
 
-### How it works
-
 ```
 YOU                 COPILOT CLI           YOU CODE             DONE
 "open a worklog  →  creates issue,     →  do your work,    →  "mark worklog
  for this task"     adds labels + size     update as you go     as done"
 ```
 
-All from your terminal. The agent handles GitHub issue creation, sizing, labels, and status updates.
+All from your terminal. The agent handles GitHub issue creation, sizing, labels, and status updates. 🚀
 
 **The key insight:** If you're already using Copilot CLI, worklogs add *zero* extra work. You just tell the agent:
 
@@ -118,13 +108,11 @@ You stay focused on your actual work. The agent does the rest.
 - **Built-in history**: when you close a worklog, the agent links the PR and summarizes what was done
 - **No merge friction**: it's just GitHub Issues, no PRs or file conflicts
 
-## Worklogs ≠ Azure DevOps. They serve different purposes.
-
 We still use Azure DevOps to track effort. That hasn't changed. The distinction is what makes this work:
 
 |                    | Azure DevOps                          | Worklogs                                |
 |--------------------|---------------------------------------|-----------------------------------------|
-| **Purpose**        | Effort tracking — where is the time going? | Work documentation — what am I doing right now? |
+| **Purpose**        | Effort tracking (where is the time going?) | Work documentation (what am I doing right now?) |
 | **Granularity**    | One block of effort (may cover multiple tasks) | Individual task (notes, context, outcomes) |
 | **Updated by**     | You (manually)                        | You + your AI agent                     |
 | **Analogy**        | Timesheet                             | Lab notebook                            |
@@ -132,17 +120,15 @@ We still use Azure DevOps to track effort. That hasn't changed. The distinction 
 
 This **separation of concerns** is what makes it powerful. A single Azure DevOps work item might have multiple worklogs under it, each capturing a different piece of the work. You can link them: the agent tags worklogs with the work item ID and you can tell it *"sync worklogs from Azure DevOps"* to import items. But the worklog is yours: your notes, your pace, your documentation of what actually happened.
 
-## How it's built (high level)
+The architecture boils down to three layers:
 
-The architecture is three layers:
-
-1. **You in Terminal** — *"open a worklog for auth refactor"* | *"update worklog, found the root cause"* | *"close it, PR merged"*
-2. **Copilot CLI + Worklog Skill** — The agent understands your intent and invokes the skill, which contains templates, labels, sizing, dedup, and sync logic
-3. **GitHub Issues (storage)** — Worklogs, notes, context, outcomes. Labels for status, size, category. Searchable, persistent, no merge friction. Optionally linked to **Azure DevOps** for effort/sprint tracking.
+1. **You in Terminal** (*"open a worklog for auth refactor"* | *"update worklog, found the root cause"* | *"close it, PR merged"*)
+2. **Copilot CLI + Worklog Skill** (the agent understands your intent and invokes the skill, which contains templates, labels, sizing, dedup, and sync logic)
+3. **GitHub Issues (storage)** (worklogs, notes, context, outcomes; labels for status, size, category; searchable, persistent, no merge friction; optionally linked to **Azure DevOps** for effort/sprint tracking)
 
 ## Worklogs as an agentic work queue
 
-Here's where it gets really interesting. Because worklogs are structured (title, context, deliverables, dependencies, size), they become a **queue of work that an agent can pick up and execute**.
+Here's where it gets really interesting 🔄. Because worklogs are structured (title, context, deliverables, dependencies, size), they become a **queue of work that an agent can pick up and execute**.
 
 The flow looks like this:
 
@@ -156,11 +142,11 @@ The speed gain is in the **enqueue step**. Capturing work traditionally means st
 
 My recommendation: **start using worklogs as you go**. Don't batch them up or plan a big migration. Just next time you start a task, tell the agent to open a worklog. Update it when you hit a milestone. Close it when you're done. That's it.
 
-## A note on where this is heading
+## Where this is heading
 
 All of this is in flux. I'm aware of sprints. I'm aware of Agile. I'm aware of all the different methodologies for organizing work. Worklogs are not trying to replace any of that.
 
-The main difference is that a worklog is **personal**. Think of a scientist's notebook: you keep your notes in there, you document every experiment, what you tried, what the results were. And then you file it away in a shared space so others can go look at your notes if they need to understand an experiment, or how a result came about. That's exactly what this is.
+The main difference is that a worklog is **personal**. Think of a scientist's notebook 🧪: you keep your notes in there, you document every experiment, what you tried, what the results were. And then you file it away in a shared space so others can go look at your notes if they need to understand an experiment, or how a result came about. That's exactly what this is.
 
 It brings **rigor to the engineering process**. It moves us closer to how scientific discovery and progress actually work: you hypothesize, you experiment, you document, you share. When a teammate sees a PR and wants to understand how it came about, they can go look at the worklog and find the full story. But it's not a status report for management. It's not a sprint board. It's a **lab notebook for software engineering**.
 
