@@ -1,207 +1,171 @@
 +++
 title = "Quest Engine: A Framework for Agent-Human Collaboration"
 date = "2026-04-08"
-description = "Quest Engine is a methodology for working with AI coding agents built on three pillars: Contextual Awareness (preserving what we learn), Intrinsic Motivation (what drives the work), and Clear Strategy (actionable direction). Together they create an agentic loop that makes both humans and agents more effective."
+description = "Quest Engine is a methodology built on three recursive action steps: KNOWING (understand before acting), ACTING (execute based on what you know), and IMPROVING (make the next cycle better). Together they create a compounding loop that works for both humans and AI agents."
 template = "blog-post.html"
 categories = ["ai", "productivity", "workflow"]
-tags = ["quest-engine", "agents", "worklogs", "collaboration", "context", "strategy"]
+tags = ["quest-engine", "agents", "worklogs", "collaboration", "context", "strategy", "improvement"]
 draft = true
 +++
 
-Working with AI coding agents has fundamentally changed how we build software. But it's also revealed something important: the principles that help us work effectively as engineers apply equally to how agents operate. The [Quest Engine framework](https://github.com/masters3d/ingenio/tree/main/presentation) makes this explicit through three interconnected pillars that work for both humans and agents.
+Working with AI coding agents has revealed something fundamental: the principles that make engineers effective apply equally to how agents operate. The [Quest Engine framework](https://github.com/masters3d/ingenio/tree/main/presentation) makes this explicit through three recursive action steps that work for both humans and agents.
 
-## The Three Pillars
+## The Problem
 
-Quest Engine rests on three principles, each with three sub-components:
+Engineering teams don't fail because they lack smart people. They fail because smart people work hard in isolation, without a shared system. Knowledge isn't built together. Decisions aren't grounded in shared context. Improvements don't compound. The result is chaos that looks like velocity: code that ships but breaks, systems that grow but can't be understood, engineers who are busy but not growing.
 
-**Contextual Awareness**: Preserving what happened, why it happened, and what we learned—creating a time machine to your future self. Context doesn't vanish when sessions end or memory fades.
+What's missing isn't more process. What's missing is a coherent operating system—one that makes teams smarter over time, not just busier. That's what the Quest Engine provides.
 
-**Intrinsic Motivation**: Understanding what drives human work. This is uniquely human—agents don't have Intrinsic Motivation, they have objectives you specify. Humans need motivation to sustain effort over time.
+## Three Moves
 
-**Clear Strategy**: Having actionable direction with coherent action toward goals. Clear Strategy means knowing what you're building toward while adapting as you learn.
+The Quest Engine has three action steps, and you repeat them continuously. Each cycle leaves you better than the last.
 
-These aren't abstract concepts. They're practical tools for getting work done, whether you're a human engineer or an AI agent executing tasks.
+**KNOWING** (Contextual Awareness): Understand the environment before acting. What's true right now? What dependencies exist? What will change? What do you know that others don't? What do you not know that you should?
 
-## The Agentic Loop
+**ACTING** (Clear Strategy): Execute based on what you know. Set a clear goal. Match the challenge to your capability. Act with tight feedback. Don't overthink—move, and use the results to correct course.
 
-The three pillars amplify each other in what I call the **agentic loop**:
+**IMPROVING** (Systematic Improvement): Examine what happened against what you expected. Find the root pattern, not just the symptom. Make the improvement permanent. Spread it to everyone with the same problem.
 
-**Contextual Awareness → Clear Strategy**: When you preserve context about what worked and what didn't, you make better strategic decisions. You don't repeat failed approaches. You build on successful patterns.
+Here's the key: the three moves are not equal. **KNOWING** shapes **ACTING**—you can't execute well on a context you don't understand. **ACTING** creates data for **IMPROVING**—you need real outcomes to improve from. And **IMPROVING** feeds directly into the next **KNOWING**—the improved system creates a richer context for the next cycle.
 
-**Clear Strategy → Intrinsic Motivation**: When you have clear direction, you know what's worth pursuing. You're not randomly experimenting—you're directing effort toward goals that matter.
+This is a compounding loop, not a checklist.
 
-**Intrinsic Motivation → Contextual Awareness**: When you're motivated, you do better work, and better work produces better artifacts. Motivated engineers write clearer design docs, maintain better worklogs, build systems that others can understand.
+## KNOWING: Contextual Awareness
 
-This loop accelerates over time. The more context you build, the clearer your strategy becomes. Clearer strategy focuses your motivation more effectively. Focused motivation produces higher-quality context. Each cycle makes the next one more effective.
+**Understand the environment before you act.**
 
-For AI agents, the loop works similarly but manifests differently. Agents don't have Intrinsic Motivation, but they benefit enormously from Contextual Awareness and Clear Strategy. When agents have good context and clear constraints, they produce better code with fewer iterations. **Agents are the lever that gives us leverage on Contextual Awareness**—they can consume and act on preserved context instantly, making the "sweet spot" of effective collaboration easier to hit.
+Every engineering decision is context-relative. The right answer depends on system load, team maturity, technical debt, business priorities, organizational culture. Contextual Awareness is the structured process of understanding those dependencies.
 
-## Contextual Awareness: Time Machine to Your Future Self
+KNOWING has three sub-components:
 
-From the [Quest Engine presentation on Contextual Awareness](https://github.com/masters3d/ingenio/blob/main/presentation/eng_contextual_awareness.md):
+**Proactive Curiosity**: Systematically find and organize information. Crawl your domain (code, docs, people, systems), index it for retrieval, fuse signals from multiple sources, and continuously refresh. Think: search engine crawling applied to your engineering environment. Don't wait to need information—build the index before the fire.
 
-> "What is context? Past events recorded to be passed down to the future."
+**Cohesive Narrative**: Create accurate mental models and continuously update them. Raw data isn't useful—you need a synthesized picture of how the system works, who it serves, and where it's headed. Not just raw sensor data, but a coherent map updated as you move through the environment.
 
-Every software engineering decision is an experiment. Contextual Awareness captures the results: what worked, what didn't, and why. This creates a **time machine to your future self**—documentation that lets you (or an agent, or a teammate) understand past decisions without re-running the same experiments.
+**Shared Understanding**: The active, ongoing alignment of mental models across the team. Writing a document is the beginning, not the end. A document creates a signal; Shared Understanding is the culture and the system that ensures the signal is received, understood, and kept current. When something changes, does the whole team's understanding update—or does it silently fragment into private versions?
 
-Contextual Awareness has three sub-components that determine how effectively context scales:
+### Concrete Example
 
-**Async vs Sync**: The presentation distinguishes between synchronous context (meetings, live chat, in-person conversation) that is "single use, need to repeat for every new person or group of folks, doesn't scale but they are useful" and asynchronous context (documentation, design docs, worklogs) that you write once and reference forever. **The bridge from meeting to context saving is critical**—after every important meeting, save the decisions and reasoning in living docs that your team (and agents) can reference. This turns synchronous context into asynchronous context that scales.
+An engineer onboarding to a new team spends the first two weeks practicing all three. They read the codebase and trace service interactions (Proactive Curiosity). They synthesize that into a mental model of how the system fits together and what problems it was designed to solve (Cohesive Narrative). Then they write up what they found and share it with senior engineers to verify their mental model matches reality (Shared Understanding). Two weeks of investment, years of compounded return.
 
-**ReadWrite vs ReadOnly**: Some context mediums allow updates (wikis, design docs, PR collaboration) while others are read-only (recorded presentations, tutorial websites). ReadWrite context stays fresh because teams can update it as understanding evolves. ReadOnly context goes stale.
+### KNOWING for Agents
 
-**Short Term vs Long Term**: Context serves different time horizons. Short-term context (fixing a bug, implementing a feature) needs immediate detail. Long-term context (system architecture, design principles) needs durability and accessibility for new team members months or years later.
+Agents need context just like humans do. When an agent picks up a [worklog](/blog/why-i-love-worklogs/), it's practicing Proactive Curiosity—gathering information about what you're working on, what you've tried, what blockers exist. The agent synthesizes this into a Cohesive Narrative about the current state of work. And when multiple agents (or agents and humans) read the same design docs, they build Shared Understanding of system architecture and goals.
 
-### Worklogs: Persistent Memory That Scales
+Agents are actually better at Proactive Curiosity than humans—they can consume and index documentation instantly without the gradual decay humans experience. But agents struggle with Cohesive Narrative (synthesizing patterns across disconnected information) and Shared Understanding (verifying their model matches what humans intended). This is why design docs and vision docs are critical: they make the human's Cohesive Narrative explicit so agents can align to it.
 
-This is where [worklogs](/blog/why-i-love-worklogs/) become critical. A worklog is persistent memory for both humans and agents:
+## ACTING: Clear Strategy
 
-- **What you're working on**: The current task
-- **What you've tried**: Approaches tested
-- **What worked/didn't work**: Results
-- **What's next**: Selected approach based on learnings
+**Execute in the environment based on what you know.**
 
-When an agent picks up a worklog, it has context instantly. The agent doesn't re-explore failed approaches. It continues execution based on preserved context. **This is agents as leverage for Contextual Awareness**—agents consume context efficiently and act on it without the gradual decay humans experience.
+Clear Strategy is how understanding becomes execution. Its foundation is Flow Theory—the psychological state of complete absorption and peak performance. Most frameworks wait for Flow to happen. The Quest Engine engineers it deliberately.
 
-From my [worklogs post](/blog/why-i-love-worklogs/):
+ACTING has three sub-components:
 
-> "A worklog captures: what you're working on, the status, blockers, notes, links to PRs, and outcomes. It's a living log that both you and your AI agent can read and update."
+**Challenge Matching**: Balance challenge against skill. Too hard → anxiety and paralysis. Too easy → boredom and disengagement. Right-sized → Flow. This is active, not passive. Volunteer for harder problems before you're ready. Simplify or pair when you're over your head. Continuously calibrate.
 
-### Context as Forcing Function
+**Directed Intentionality**: Set clear, singular goals. Clear goals eliminate mental noise—the ambiguity and competing priorities that fragment attention. When you know exactly what success looks like right now, all available attention flows toward achieving it. Vague goals create anxiety; precise goals create focus.
 
-Context acts as a forcing function for better decisions. When you document why you chose approach X over approach Y, future decisions reference that reasoning: "Should we use approach Y for the new feature?" Check the design doc. We already evaluated that. Here's why we chose X.
+**Adaptive Control**: Act with immediate feedback. Every action is a data point, not a judgment. The difference between expert performance and novice performance is the speed of the feedback loop and the precision of the adjustment. These loops can be built deliberately.
 
-Without this forcing function, teams repeat failed approaches, engineers re-solve problems that were already solved, agents optimize locally without understanding global constraints, and knowledge lives in people's heads and vanishes when they leave.
+### Concrete Example
 
-With Contextual Awareness active, failed approaches are documented with reasoning preserved, successful patterns are captured and replicable, new engineers and agents inherit institutional knowledge, and decisions build on accumulated learning.
+Before each sprint begins, a team writes down exactly what "done" looks like for every story (Directed Intentionality). They assign work based on current skill levels with explicit stretch targets (Challenge Matching). They run daily demos with real deployment feedback instead of periodic status meetings (Adaptive Control). The result: higher velocity, fewer surprises, and engineers who actually grow.
 
-## Intrinsic Motivation: What Drives Human Work
+### ACTING for Agents
 
-From the [Quest Engine presentation on Intrinsic Motivation](https://github.com/masters3d/ingenio/blob/main/presentation/eng_intrinsic_drive.md), Marianne Bellotti observed:
+Agents execute within Clear Strategy you provide. Challenge Matching for agents means scoping the task appropriately—don't ask an agent to architect a system from scratch (too hard, no clear success criteria), but also don't waste agent capability on purely mechanical tasks humans could specify precisely (too easy, no value from agent intelligence). The sweet spot is well-defined problems with clear constraints where the agent can explore solutions.
 
-> "I tell my engineers that the biggest problems we have to solve are not technical problems, but people problems. Modernization projects take months, if not years of work. Keeping a team of engineers focused, inspired, and motivated from beginning to end is difficult."
+Directed Intentionality for agents means being explicit about objectives. "Make the code faster" is vague—the agent might inline everything and introduce coupling. "Make the code faster while maintaining readability and keeping the service architecture clean" is directed—the agent knows the trade-offs that matter.
 
-**This is the human-only pillar.** Agents don't have Intrinsic Motivation—they have objectives you specify. But humans need motivation to sustain effort over time. **You cannot force humans to have Intrinsic Motivation**, but you can create conditions that support it.
+Adaptive Control for agents means tight feedback loops. Review agent work quickly, provide specific corrections, let the agent adjust. Don't batch up 10 agent outputs and review them all at once—by then the agent has moved on and can't learn from the feedback.
 
-Intrinsic Motivation has three sub-components that determine whether work energizes or drains engineers:
+## IMPROVING: Systematic Improvement
 
-**Mastery**: The desire to get better at something. Engineers are drawn to problems that develop their skills. The presentation emphasizes this as central to engineer identity—we want to grow our capabilities, not stagnate. When work is too easy, we get bored. When it's too hard, we get frustrated. **The sweet spot is challenging but achievable**—and this sweet spot is easier to hit with agents, because agents can handle the tedious parts while you focus on the challenging, skill-building aspects.
+**Learn from what happened—make the next cycle better than this one.**
 
-Mastery drives engineers to try new technologies, tackle harder problems, build more sophisticated systems. It's what makes an engineer stay late debugging a complex issue not because they have to, but because they want to understand how it works.
+Systematic Improvement is the discipline that transforms raw results into permanent gains. Its core principle: "Never automate inefficiency." Question first, simplify, then accelerate, then automate.
 
-**Autonomy**: Having agency over how you work. The presentation lists this explicitly with "ownership" as a key component. Engineers want to shape solutions, not just implement specs. When you have ownership, you're invested in the outcome. When autonomy is removed (through micromanagement or rigid processes), motivation collapses even if the work involves mastery and purpose.
+IMPROVING has three sub-components:
 
-Autonomy means making technical decisions, choosing implementation approaches, designing architectures. It's the difference between "build feature X exactly as specified" (low autonomy) and "solve user problem Y however you think best" (high autonomy).
+**Continuous Integration**: Constantly test the state of the system against expected state. Run automated tests—but also human tests: postmortems, retrospectives, assumption checks. Ask "is this still true?" continuously. This is honest self-reflection—no blame, just the delta between expected and actual.
 
-**Purpose**: Connecting work to something meaningful, typically connected to the vision. It's not enough to build technically interesting systems. We want them to create value—user outcomes, team efficiency, business results. The presentation's reference to "alignment on directives" speaks to this: purpose comes from understanding how your work connects to larger goals.
+**Deliberate Practice**: For every process, behavior, or component: do less of / keep doing / do more of. This is practiced improvement applied to engineering. Don't fix this incident; fix the class of incidents. Distinguish signal from noise, recognize recurring archetypes, extract lessons general enough to be useful beyond the specific case.
 
-Engineers lose motivation when purpose is unclear. When you're building features but don't understand why users need them, or optimizing systems but don't know what business problem you're solving, motivation fades.
+**Update Propagation**: Improvements don't stay local. Eliminate waste permanently (don't defer, delete), mistake-proof the system (make regression structurally impossible), automate what's proven (keep human judgment in the loop), standardize before spreading (lock in the gain), and propagate horizontally (find every team with the same problem, apply the fix everywhere).
 
-### Why Extrinsic Motivation Doesn't Scale
+### Concrete Example
 
-The presentation contrasts Intrinsic Motivation with extrinsic motivation (carrot and stick). Extrinsic motivation might work for simple, short-term tasks, but it doesn't scale to complex, long-term engineering work. You can't sustainably motivate engineers through bonuses alone, and you certainly can't threaten them into building great software.
+After a production outage, the team runs a blameless postmortem to compare what they expected with what actually happened (Continuous Integration). They identify the root pattern: "we treat config as 'not code,' but config controls production behavior." They build a concrete do-less / keep / do-more plan (Deliberate Practice). Then they implement config-as-code, update the architecture decision record, and share the fix with three other teams who have the same exposure (Update Propagation). The outage becomes a system-wide improvement, not a one-team lesson.
 
-Extrinsic motivation is brittle. The moment the carrot or stick is removed, motivation vanishes. Intrinsic Motivation is durable. Engineers who are intrinsically motivated will persist through setbacks because the work itself is rewarding—they're developing mastery, exercising autonomy, serving a purpose they care about.
+### IMPROVING for Agents
 
-### Effort Tracking Reveals Motivation Patterns
+Agents improve through the same cycle. Continuous Integration for agents means comparing agent outputs against what you expected—does the code work? Does it meet the specifications? Does it align with architectural principles?
 
-This connects to [effort tracking](/blog/effort-tracking-vs-task-tracking/). When you track where your time goes, you reveal motivation patterns.
+Deliberate Practice for agents means extracting patterns from agent interactions. If the agent consistently misunderstands a certain type of request, don't just correct it each time—update your prompting strategy, add examples to design docs, refine how you specify objectives. Fix the class of problems, not individual instances.
 
-From my effort tracking post:
+Update Propagation for agents means capturing successful patterns in reusable artifacts. If you figure out an effective way to specify database migration tasks to an agent, document that pattern. Share it with the team. Add it to your design doc templates. Make the improvement permanent and spread it to everyone with the same need.
 
-> "My effort groups represent types of work:
-> - Live Site / Production Support
-> - Feature Development
-> - POC / Spike Work
-> - Technical Debt
-> - Security / Compliance
-> - Planning / Design"
+## The Recursive Nature: HOW Changes WHY
 
-If 60% of your time is reactive (live site support), you don't have capacity for work that develops mastery. The motivation engine is starved. If 40% is exploratory (POC work), you're sustaining healthy motivation through learning and experimentation.
+Here's what makes the Quest Engine a system and not a checklist: **the HOW feeds back to refine the WHY.**
 
-Effort tracking measures whether you have capacity for the work that keeps you motivated.
+Each cycle doesn't just produce better outputs—it recalibrates what "better" means.
 
-## Clear Strategy: Direction, Progress, Actionable Steps
+**KNOWING reshapes understanding of goals**: Deep context exposes where your goals have drifted from reality. When you understand the system better, you discover the thing you were optimizing for was a proxy for what you actually needed. The map updates; the goal updates with it.
 
-From the [Quest Engine presentation on Clear Strategy](https://github.com/masters3d/ingenio/blob/main/presentation/eng_clear_strategy.md), Clear Strategy has two distinct components that combine into actionable direction:
+**ACTING validates what success looks like**: Execution outcomes prove or disprove your assumptions about what "better" means. You discover that the success criteria you specified rewarded the wrong behavior. You update it.
 
-**Clear** means:
-- Clear Goals with milestones defined
-- Definition of Done with scope clear and time boxed
+**IMPROVING reveals what actually matters**: Pattern recognition across improvements shows which actions drive real value. The action space expands as trust is established—between humans, between humans and agents, between teams.
 
-**Strategy** means:
-- Coherent Action toward those goals
-- Behaviors and feedback loops established and maintained
-- Exit strategy with Definition of Done for the whole project
+This is why the system compounds. Each cycle of KNOWING → ACTING → IMPROVING produces richer context, more calibrated execution, and more precise learning. And each cycle also refines your objectives—so the next cycle is optimizing for something more accurate, not just executing better on the same goal.
 
-Together, Clear Strategy provides direction without rigid plans. It's knowing what you're building toward while adapting as you learn.
+The system that improves what it does AND improves what it's optimizing for—that system outlasts every other.
 
-Clear Strategy has three sub-components that determine whether work makes forward progress:
+## The Fractal Pattern
 
-**Direction**: The presentation outlines a hierarchy: **Vision Doc → Design Doc → Sprint Plan → Daily Plan**. Each level provides direction at a different scale. Vision Document is the high-level "why and what" for the project. Design Document is architectural approach and why this design over alternatives. Sprint Planning includes both future sprint goals and retrospective of previous sprint. Daily Plan is tactical tasks that move sprint goals forward. This hierarchy ensures everyone knows where they're heading at every time scale.
+One more property: **the structure is self-similar at every level.**
 
-**Forward Progress**: Clear Strategy emphasizes Definition of Done at every level. You're making forward progress when you can point to completed milestones, shipped features, closed sprints, finished projects. The presentation mentions "behaviors and feedback loops"—these are what keep you moving forward rather than spinning in place. Without Definition of Done, work never actually completes. Engineers need to feel forward progress to stay motivated.
+Each of the three moves has its own internal KNOWING / ACTING / IMPROVING:
 
-**Breaking Down into Smaller Actionable Steps**: The hierarchy Vision → Design → Sprint → Daily is fundamentally about breaking large goals into achievable steps. Vision is too big to execute directly. Design breaks it down into architectural components. Sprint breaks components into implementable features. Daily breaks features into concrete tasks. This breakdown is what makes ambitious visions achievable—you can't build everything at once, but you can build one piece today.
+**Contextual Awareness**: Proactive Curiosity (KNOWING—gather) → Cohesive Narrative (ACTING—synthesize) → Shared Understanding (IMPROVING—align and maintain)
 
-Humans need Clear Strategy before they can give it to agents. You must have vision, design, and sprint goals articulated before you can delegate daily tasks to an agent. The agent needs those constraints to make good trade-offs.
+**Clear Strategy**: Challenge Matching (KNOWING—assess) → Directed Intentionality (ACTING—focus) → Adaptive Control (IMPROVING—correct)
 
-### Strategy as Constraints for Agents
+**Systematic Improvement**: Continuous Integration (KNOWING—test state) → Deliberate Practice (ACTING—improve) → Update Propagation (IMPROVING—make permanent)
 
-Agents need Clear Strategy as explicit guardrails. Without it, agents optimize locally (make this function fast) without considering global constraints (the system needs to be maintainable).
+The framework scales because it's not a checklist—it's a shape. Apply it to a single task, a sprint, a career, an organization, a human-agent system. The structure is the same.
 
-**Example without Clear Strategy:**
-"Make the code faster" → Agent inlines everything, removes abstractions, introduces coupling → Code is faster but unmaintainable
+## Quest Engine in Practice
 
-**Example with Clear Strategy:**
-"Make the code faster while maintaining readability and keeping the service architecture clean" → Agent profiles, identifies bottlenecks, optimizes hot paths without breaking abstraction boundaries → Code is faster *and* maintainable
+Here's how KNOWING → ACTING → IMPROVING works when building authentication:
 
-Clear Strategy gives agents context for trade-offs. They can make decisions that align with project goals, not just immediate objectives.
+**KNOWING**: You review existing systems and find a design doc from Q2 evaluating auth options (Proactive Curiosity). You synthesize understanding: OAuth + JWT is stateless and scales; session tokens require server-side state (Cohesive Narrative). You verify this with the team and ensure everyone agrees on the approach (Shared Understanding).
 
-### Cohesive Direction as a Team
+**ACTING**: You write a vision doc with clear success criteria: "Secure, user-friendly authentication that scales to millions of users" (Directed Intentionality). You scope the work to match current team capability with a stretch goal (Challenge Matching). You implement OAuth integration with PKCE flow and run daily tests against real deployment environments (Adaptive Control).
 
-When a team shares Clear Strategy through vision docs and design docs, everyone moves in the same direction. This is especially important for agent collaboration—if five team members are using agents, and all those agents read the same design docs, they'll make consistent decisions aligned with the vision.
+**IMPROVING**: After deployment, you compare actual behavior against expectations—token refresh worked, but mobile PKCE implementation had edge cases (Continuous Integration). You identify the root pattern: "mobile auth flows need explicit testing on actual devices, not just emulators" (Deliberate Practice). You update the testing checklist, add mobile device tests to CI, and share the pattern with other teams doing mobile auth (Update Propagation).
 
-The bridge from meeting to Clear Strategy is similar to the bridge for Contextual Awareness: after strategic meetings, document decisions in vision docs and design docs. This turns ephemeral discussion into durable direction that guides daily work.
-
-## The Agentic Loop in Practice
-
-Here's how the three pillars work together when building authentication:
-
-You find a Q2 design doc that evaluated OAuth + JWT (stateless, scales) vs. session tokens (server-side state, doesn't scale). This Contextual Awareness saves weeks—you build on institutional knowledge instead of re-evaluating.
-
-You write a vision doc: "Secure, user-friendly authentication that scales." This Clear Strategy becomes your forcing function. Every decision is evaluated against it. You create a design doc specifying OAuth + JWT, PKCE for mobile, token refresh logic.
-
-You're interested in modern auth patterns (mastery), want to design better than legacy (autonomy), and users are frustrated with current login (purpose). This Intrinsic Motivation sustains you through complex implementation.
-
-You create a worklog tracking OAuth integration: what you're building, why this architecture, blockers, next steps. An agent picks up this worklog and continues execution based on preserved context without re-exploring failed approaches.
-
-**Contextual Awareness → Clear Strategy**: The design doc becomes reference for future auth decisions. **Clear Strategy → Intrinsic Motivation**: You know the vision (secure, user-friendly), which focuses your next work. **Intrinsic Motivation → Contextual Awareness**: You're energized, so you write detailed notes and document edge cases. The loop compounds.
+The next cycle starts with richer context (you know mobile auth quirks), better strategy (testing includes real devices), and proven improvements (the pattern is captured and spreading). The loop compounds.
 
 ## Where Humans and Agents Differ
 
-**Contextual Awareness**: Humans experience gradual context decay (forget details but remember patterns). Agents have binary context (either it's in the session or it isn't). Implication: You must deliberately preserve context for agents. Worklogs aren't optional—they're essential.
+**Contextual Awareness**: Agents excel at Proactive Curiosity (instant consumption and indexing). Humans excel at Cohesive Narrative (pattern synthesis) and Shared Understanding (social alignment). Implication: Humans set strategy and verify coherence; agents gather and organize information.
 
-**Intrinsic Motivation**: Humans are intrinsically motivated by mastery, autonomy, purpose. You can't force it, only support conditions for it. Agents have no Intrinsic Motivation—you fully control objectives through task specification. Implication: When agents produce suboptimal results, it's usually a specification problem. Be more precise about what you want.
+**Clear Strategy**: Humans handle Challenge Matching naturally (we feel boredom and anxiety). Agents need explicit scoping from humans. Both need Directed Intentionality (clear objectives), but humans can infer intent while agents need it specified. Both benefit from Adaptive Control (tight feedback).
 
-**Clear Strategy**: Humans adapt strategy implicitly based on new information. You pivot naturally when you discover a better approach. Agents require explicit strategy updates. Implication: Strategy changes must be communicated explicitly to agents. Don't assume agents will infer new direction from context alone.
+**Systematic Improvement**: Agents struggle with Deliberate Practice (extracting generalizable patterns from specific instances). Humans are good at this but inconsistent. Implication: Humans identify patterns, agents help propagate improvements once the pattern is clear.
 
 ## Applying Quest Engine to Your Workflow
 
-**Build Contextual Awareness**: Start with [worklogs](/blog/why-i-love-worklogs/) to capture what you're working on, what you've tried, what you've learned. Write design docs documenting architectural decisions with reasoning preserved. Do retrospectives after completing work to capture what worked and what didn't.
+**Build KNOWING**: Start with [worklogs](/blog/why-i-love-worklogs/) to practice Proactive Curiosity (capture what you're working on, what you've tried, what you've learned). Write design docs to create Cohesive Narrative (synthesize architectural decisions with reasoning). Do retrospectives to maintain Shared Understanding (align team mental models after completing work).
 
-**Sustain Intrinsic Motivation (Humans Only)**: Use [effort tracking](/blog/effort-tracking-vs-task-tracking/) to see where your time goes. If 80% is reactive, you don't have capacity for work that develops mastery. Protect exploration time—allocate dev days to POC work and learning. Notice what energizes you (mastery, autonomy, purpose) and seek projects that align.
+**Execute ACTING**: Use [effort tracking](/blog/effort-tracking-vs-task-tracking/) to practice Challenge Matching (see where your time goes, ensure you have capacity for skill-building work). Set clear sprint goals for Directed Intentionality (everyone knows what done looks like). Build tight feedback loops for Adaptive Control (daily demos, continuous deployment, immediate test results).
 
-**Establish Clear Strategy**: Set vision knowing what you're building toward. Document direction in vision docs and design docs. Update agents explicitly when strategy changes. Review decisions against strategy to ensure alignment with goals.
+**Compound IMPROVING**: Run blameless postmortems for Continuous Integration (compare expected vs actual). Extract patterns for Deliberate Practice (don't just fix this bug, fix the class of bugs). Share improvements for Update Propagation (when you solve a problem, help others solve it too).
 
-## Quest Engine as Methodology
-
-Quest Engine isn't a project management system. It's a way of thinking about work that applies across daily tasks (worklogs, effort tracking, dev day planning), projects (design docs, vision docs, sprint retrospectives), and careers (career retrospectives, skill development, long-term direction).
-
-The methodology works because it's grounded in how humans work (Contextual Awareness, Intrinsic Motivation, Clear Strategy) and how systems including AI agents operate (Contextual Awareness and Clear Strategy, with objectives specified by humans).
-
-If you're already using [worklogs](/blog/why-i-love-worklogs/) or [effort tracking](/blog/effort-tracking-vs-task-tracking/), you're already applying Quest Engine principles. This framework gives you language to understand why these practices work and how to make them more effective through the agentic loop.
+The three moves—KNOWING, ACTING, IMPROVING—work whether you're operating alone, with a team, or with AI agents. The structure is the same because the underlying dynamics are the same: understand before acting, execute based on understanding, learn from results, feed that learning back into better understanding.
 
 ---
 
-*The Quest Engine framework originates from [presentation materials on engineering and career development](https://github.com/masters3d/ingenio/tree/main/presentation). The name connects "quest" (Latin *quaere*, to seek) with "engine" (Latin *ingenium*, cleverness), representing systematic inquiry driven by motivated exploration. The agentic loop shows how Contextual Awareness, Intrinsic Motivation, and Clear Strategy reinforce each other—creating a self-amplifying system that makes both humans and agents more effective over time.*
+*The Quest Engine framework originates from [presentation materials on engineering and career development](https://github.com/masters3d/ingenio/tree/main/presentation). The name connects "quest" (Latin *quaere*, to seek) with "engine" (Latin *ingenium*, cleverness), representing systematic inquiry driven by continuous improvement. The framework's recursive nature—where each cycle refines both execution and objectives—makes it a compounding system for both humans and AI agents.*
