@@ -126,7 +126,7 @@ This is why the system compounds. Each cycle of Contextual Awareness → Clear S
 
 The system that improves what it does AND improves what it's optimizing for (that system outlasts every other).
 
-**Why the recursive structure scales**: Because each of the three main pillars has its own internal three-step structure (as shown in the table above), the framework applies identically whether you're solving a 5-minute problem or a 5-year problem. The pattern is the same. A single code review follows the same structure as an entire career: gather information (Proactive Curiosity or Challenge Matching or Continuous Integration), synthesize it into a decision (Cohesive Narrative or Directed Intentionality or Deliberate Practice), and make that decision stick (Shared Understanding or Adaptive Control or Update Propagation). The recursion means you never outgrow the framework. It grows with you.
+**Why the recursive structure scales**: Because each of the three main pillars has its own internal three-step structure (as shown in the table above), the framework applies identically whether you're solving a 5-minute problem or a 5-year problem. The pattern is the same. A single code review follows the same structure as an entire career: gather information (Proactive Curiosity or Challenge Matching or Iterative Integration), synthesize it into a decision (Cohesive Narrative or Directed Intentionality or Deliberate Practice), and make that decision stick (Shared Understanding or Adaptive Control or Update Propagation). The recursion means you never outgrow the framework. It grows with you.
 
 ## Quest Engine in Practice
 
