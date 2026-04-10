@@ -82,6 +82,10 @@
   - Example: "text (clarification)" instead of "text—clarification"
   - Maintains readability and follows user's preferred style
 - **Bullet lists** - Use hyphens (-) for bullet lists (standard markdown format)
+- **Avoid overloaded words** - Don't use "impact" (too overloaded). Use specific alternatives:
+  - Instead of "user impact" → "user value" or "user outcomes"
+  - Instead of "impact on the team" → "effect on the team" or "benefit to the team"
+  - Instead of "business impact" → "business value" or "business results"
 - **Minimize section breaks for narrative flow** - Avoid excessive section headings that break narrative flow
   - Write blog posts as cohesive stories rather than overly segmented documentation
   - Minimize h2 (##) section headings - use only for major inflection points (aim for 3-4 max in a blog post)
