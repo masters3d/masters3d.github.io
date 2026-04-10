@@ -29,6 +29,19 @@ Here's the key: the three moves are not equal. **Contextual Awareness** shapes *
 
 This is a compounding loop, not a checklist.
 
+## The Framework Structure
+
+Here's the complete structure showing how each pillar follows the same recursive pattern:
+
+| **Phase** | **Contextual Awareness** | **Clear Strategy** | **Systematic Improvement** |
+|-----------|-------------------------|-------------------|---------------------------|
+| **Main Action** | Understand before acting | Execute based on what you know | Make the next cycle better |
+| **Step 1: Gather** | Proactive Curiosity<br/>Systematically find and organize information | Challenge Matching<br/>Assess where your capability meets the challenge | Continuous Integration<br/>Measure results against expectations |
+| **Step 2: Synthesize** | Cohesive Narrative<br/>Build accurate mental models | Directed Intentionality<br/>Commit to one clear objective | Deliberate Practice<br/>Identify patterns to improve |
+| **Step 3: Maintain** | Shared Understanding<br/>Keep everyone aligned on what's true | Adaptive Control<br/>Adjust based on feedback | Update Propagation<br/>Make improvements permanent and spread them |
+
+Each column is a complete cycle. Each row represents the same type of action across all three pillars. The structure repeats at every scale.
+
 ## The Fractal Pattern
 
 One more property makes this framework powerful: **the structure is self-similar at every level.**
@@ -71,7 +84,7 @@ Clear Strategy has three sub-components:
 
 **Challenge Matching**: Balance challenge against skill. Too hard → anxiety and paralysis. Too easy → boredom and disengagement. Right-sized → Flow. This is active, not passive. Volunteer for harder problems before you're ready. Simplify or pair when you're over your head. Continuously calibrate.
 
-**Directed Intentionality**: Set clear, singular goals. Clear goals eliminate mental noise (the ambiguity and competing priorities that fragment attention). When you know exactly what success looks like right now, all available attention flows toward achieving it. Vague goals create anxiety; precise goals create focus.
+**Directed Intentionality**: Commit fully to one objective. Eliminate competing priorities and ambiguity that fragment attention. When you know exactly what success looks like right now, all available attention flows toward achieving it. This is synthesis (choosing what matters) not just goal-setting.
 
 **Adaptive Control**: Act with immediate feedback. Every action is a data point, not a judgment. The difference between expert performance and novice performance is the speed of the feedback loop and the precision of the adjustment. These loops can be built deliberately.
 
@@ -97,7 +110,7 @@ After a production outage, the team runs a blameless postmortem to compare what 
 
 When comparing outputs against what you expected (does the code work? does it meet the specifications? does it align with architectural principles?), you practice Continuous Integration. Extracting patterns from repeated interactions means fixing the class of problems, not individual instances. Capturing successful patterns in reusable artifacts (documenting effective approaches, sharing them with the team, adding them to templates) makes the improvement permanent and spreads it to everyone with the same need.
 
-## The Recursive Nature: HOW Changes WHY
+## The Recursive Nature: Why It Scales
 
 Here's what makes the Quest Engine a system and not a checklist: **the HOW feeds back to refine the WHY.**
 
@@ -112,6 +125,8 @@ Each cycle doesn't just produce better outputs (it recalibrates what "better" me
 This is why the system compounds. Each cycle of Contextual Awareness → Clear Strategy → Systematic Improvement produces richer context, more calibrated execution, and more precise learning. And each cycle also refines your objectives (so the next cycle is optimizing for something more accurate, not just executing better on the same goal).
 
 The system that improves what it does AND improves what it's optimizing for (that system outlasts every other).
+
+**Why the recursive structure scales**: Because each of the three main pillars has its own internal three-step structure (as shown in the table above), the framework applies identically whether you're solving a 5-minute problem or a 5-year problem. The pattern is the same. A single code review follows the same structure as an entire career: gather information (Proactive Curiosity or Challenge Matching or Continuous Integration), synthesize it into a decision (Cohesive Narrative or Directed Intentionality or Deliberate Practice), and make that decision stick (Shared Understanding or Adaptive Control or Update Propagation). The recursion means you never outgrow the framework. It grows with you.
 
 ## Quest Engine in Practice
 
@@ -136,6 +151,10 @@ The next cycle starts with richer context (you know mobile auth quirks), better 
 The three moves (Contextual Awareness, Clear Strategy, Systematic Improvement) work whether you're operating alone, with a team, or with AI agents. The structure is the same because the underlying dynamics are the same: understand before acting, execute based on understanding, learn from results, feed that learning back into better understanding.
 
 For AI coding agents specifically: when an agent consistently misunderstands a certain type of request, don't just correct it each time. Instead, develop a system within your agent to remember the lesson. As of 2026, this could be by updating the Agents.md file with patterns, examples, and guidelines. Fix the class of problems, not individual instances. All three action steps (Contextual Awareness, Clear Strategy, Systematic Improvement) apply to agents just as they apply to humans.
+
+## How This Article Came to Be
+
+This post itself demonstrates the Quest Engine in action. The initial draft started with one structure (three time-scale posts), then evolved through multiple iterations as feedback revealed what actually mattered. Each revision cycle followed the pattern: gather feedback and re-read source materials (Contextual Awareness), synthesize into a clearer structure (Clear Strategy), then refine the explanations and add the comparison table (Systematic Improvement). The framework refined itself while explaining itself. Seven commits later, the recursive nature became the main point (not something mentioned in passing), and the table emerged to make the pattern visible. The article improved what it explained by using what it explained.
 
 ---
 
