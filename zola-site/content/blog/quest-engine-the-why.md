@@ -7,7 +7,7 @@ categories = ["ai", "productivity", "workflow"]
 tags = ["quest-engine", "objective-function", "search-drive-renew", "alignment", "motivation"]
 +++
 
-The [Quest Engine framework](/blog/quest-engine-introduction/) describes three recursive action steps: Contextual Awareness (understand before acting), Clear Strategy (execute based on what you know), and Systematic Improvement (make the next cycle better). These three moves form a compounding loop. But there's a question that sits above this entire cycle: **Why?**
+The [Quest Engine framework](/blog/quest-engine-introduction/) describes three recursive moves: Search (understand before acting), Drive (execute based on what you know), and Renew (make the next cycle better). These three moves form a compounding loop. But there's a question that sits above this entire cycle: **Why?**
 
 Why are we acting? What does "better" even mean? Who decides? Search, Drive, and Renew are the answer to that question.
 
@@ -73,7 +73,7 @@ With AI coding agents, renewal happens when you can't articulate what you want. 
 
 ## The WHY Above the HOW
 
-Here's why the WHY matters most: people execute competently on the wrong goals all the time. They have the HOW figured out (Contextual Awareness, Clear Strategy, Systematic Improvement). But they're optimizing for yesterday's definition of success. The WHY sits above the operational cycle and asks: "Are we even optimizing for the right thing?"
+Here's why the WHY matters most: people execute competently on the wrong goals all the time. They have the HOW figured out (Search, Drive, Renew). But they're optimizing for yesterday's definition of success. The WHY sits above the operational cycle and asks: "Are we even optimizing for the right thing?"
 
 **The three forces work together:**
 
@@ -112,7 +112,7 @@ Most people aren't consciously aware of their intrinsic motivations. They know t
 
 **With AI coding agents, the meta-pattern emerges:** searching for how to use agents effectively is itself a skill. Being driven means controlling what you delegate versus what you own. Renewal means checking whether the problem you're solving with agents is still the right problem. The tools change, but searching, being driven, and renewing are constant.
 
-The [Quest Engine](/blog/quest-engine-introduction/) works because it makes the WHY explicit. Before you execute the HOW (Contextual Awareness, Clear Strategy, Systematic Improvement), you verify the WHY: what you're searching for is worth finding, what you're driven toward is worth owning, and what you're renewing is still worth pursuing. That's what separates systems that improve from systems that just execute faster toward the wrong destination.
+The [Quest Engine](/blog/quest-engine-introduction/) works because it makes the WHY explicit. Before you execute the HOW (Search, Drive, Renew), you verify the WHY: what you're searching for is worth finding, what you're driven toward is worth owning, and what you're renewing is still worth pursuing. That's what separates systems that improve from systems that just execute faster toward the wrong destination.
 
 ---
 
