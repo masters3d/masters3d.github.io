@@ -25,9 +25,7 @@ The Quest Engine has three action steps, and you repeat them continuously. Each 
 
 **Systematic Improvement (Renewing)**: Examine what happened against what you expected. This is how you renew your understanding and verify alignment. Find the root pattern, not just the symptom. Make the improvement permanent. Spread it to everyone with the same problem. You're renewing the definition of "better" based on what you've learned.
 
-Here's the key: the three moves are not equal. **Contextual Awareness (Searching)** shapes **Clear Strategy (Driven)** (you can't execute well on a context you haven't searched for). **Clear Strategy (Driven)** creates data for **Systematic Improvement (Renewing)** (you need real outcomes to renew your understanding). And **Systematic Improvement (Renewing)** feeds directly into the next **Contextual Awareness (Searching)** (the renewed system creates richer context for the next search).
-
-This is a compounding loop, not a checklist. Each cycle, you search more effectively, you're driven by clearer ownership, and you renew with better calibration.
+These three moves form a compounding loop, not a checklist. **Contextual Awareness (Searching)** shapes **Clear Strategy (Driven)** (you execute based on what you've searched for). **Clear Strategy (Driven)** creates data for **Systematic Improvement (Renewing)** (you need real outcomes to renew your understanding). **Systematic Improvement (Renewing)** feeds directly into the next **Contextual Awareness (Searching)** (the renewed system creates richer context for the next search). Each cycle, you search more effectively, you're driven by clearer ownership, and you renew with better calibration.
 
 ## The Framework Structure
 
@@ -36,25 +34,23 @@ Here's the complete structure showing how each pillar follows the same recursive
 | **Phase** | **Contextual Awareness (Searching)** | **Clear Strategy (Driven)** | **Systematic Improvement (Renewing)** |
 |-----------|-------------------------|-------------------|---------------------------|
 | **Main Action** | Search: Understand before acting | Drive: Execute based on what you know | Renew: Make the next cycle better |
-| **Step 1: Gather** | Proactive Curiosity<br/>Systematically find and organize information | Challenge Matching<br/>Assess where your capability meets the challenge | Iterative Integration<br/>Measure results against expectations |
-| **Step 2: Synthesize** | Cohesive Narrative<br/>Build accurate mental models | Directed Intentionality<br/>Commit to one clear objective | Deliberate Practice<br/>Identify patterns to improve |
-| **Step 3: Maintain** | Shared Understanding<br/>Keep everyone aligned on what's true | Adaptive Control<br/>Adjust based on feedback | Update Propagation<br/>Make improvements permanent and spread them |
+| **Step 1: Search** | Proactive Curiosity<br/>Systematically find and organize information | Challenge Matching<br/>Assess where your capability meets the challenge | Iterative Integration<br/>Measure results against expectations |
+| **Step 2: Driven** | Cohesive Narrative<br/>Build accurate mental models | Directed Intentionality<br/>Commit to one clear objective | Deliberate Practice<br/>Identify patterns to improve |
+| **Step 3: Renewal** | Shared Understanding<br/>Keep everyone aligned on what's true | Adaptive Control<br/>Adjust based on feedback | Update Propagation<br/>Make improvements permanent and spread them |
 
 Each column is a complete cycle. Each row represents the same type of action across all three pillars. The structure repeats at every scale.
 
 ## The Fractal Pattern
 
-One more property makes this framework powerful: **the structure is self-similar at every level.**
+The framework is self-similar at every level. Each pillar has its own internal Search → Driven → Renewal structure:
 
-Each of the three action steps has its own internal structure that mirrors the whole (Searching → Driven → Renewing):
+**Contextual Awareness (Searching)**: Proactive Curiosity (search) → Cohesive Narrative (drive synthesis) → Shared Understanding (renew alignment)
 
-**Contextual Awareness (Searching)**: Proactive Curiosity (search for information) → Cohesive Narrative (drive synthesis into understanding) → Shared Understanding (renew alignment and maintain)
+**Clear Strategy (Driven)**: Challenge Matching (search for right-sized challenge) → Directed Intentionality (drive focus) → Adaptive Control (renew based on feedback)
 
-**Clear Strategy (Driven)**: Challenge Matching (search for the right-sized challenge) → Directed Intentionality (drive commitment and focus) → Adaptive Control (renew based on feedback)
+**Systematic Improvement (Renewing)**: Iterative Integration (search by measuring) → Deliberate Practice (drive improvements) → Update Propagation (renew by spreading)
 
-**Systematic Improvement (Renewing)**: Iterative Integration (search by measuring results) → Deliberate Practice (drive targeted improvements) → Update Propagation (renew by making it stick and spreading)
-
-The framework scales because it's not a checklist (it's a shape). Apply it to a single task, a sprint, a career, an organization. The structure is the same. You're always searching for what matters, driven by what you can control, and renewing your understanding of whether you're optimizing for the right thing.
+The framework scales because it's a shape, not a checklist. A single code review follows the same pattern as an entire career: search for information, drive synthesis into a decision, renew to make that decision stick. You're always searching for what matters, driven by what you can control, and renewing your understanding of whether you're optimizing for the right thing.
 
 ## Contextual Awareness: The Practice of Searching
 
