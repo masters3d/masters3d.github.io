@@ -36,7 +36,7 @@ Here's the complete structure showing how each pillar follows the same recursive
 | **Phase** | **Contextual Awareness** | **Clear Strategy** | **Systematic Improvement** |
 |-----------|-------------------------|-------------------|---------------------------|
 | **Main Action** | Understand before acting | Execute based on what you know | Make the next cycle better |
-| **Step 1: Gather** | Proactive Curiosity<br/>Systematically find and organize information | Challenge Matching<br/>Assess where your capability meets the challenge | Continuous Integration<br/>Measure results against expectations |
+| **Step 1: Gather** | Proactive Curiosity<br/>Systematically find and organize information | Challenge Matching<br/>Assess where your capability meets the challenge | Iterative Integration<br/>Measure results against expectations |
 | **Step 2: Synthesize** | Cohesive Narrative<br/>Build accurate mental models | Directed Intentionality<br/>Commit to one clear objective | Deliberate Practice<br/>Identify patterns to improve |
 | **Step 3: Maintain** | Shared Understanding<br/>Keep everyone aligned on what's true | Adaptive Control<br/>Adjust based on feedback | Update Propagation<br/>Make improvements permanent and spread them |
 
@@ -52,7 +52,7 @@ Each of the three action steps has its own internal Contextual Awareness / Clear
 
 **Clear Strategy**: Challenge Matching (assess capability) → Directed Intentionality (commit and focus) → Adaptive Control (monitor and adjust)
 
-**Systematic Improvement**: Continuous Integration (measure results) → Deliberate Practice (target weak spots) → Update Propagation (make it stick)
+**Systematic Improvement**: Iterative Integration (measure results) → Deliberate Practice (target weak spots) → Update Propagation (make it stick)
 
 The framework scales because it's not a checklist (it's a shape). Apply it to a single task, a sprint, a career, an organization. The structure is the same.
 
@@ -100,15 +100,15 @@ Systematic Improvement is the discipline that transforms raw results into perman
 
 Systematic Improvement has three sub-components:
 
-**Continuous Integration**: Constantly integrate new data about the state of the system against expected state. Run automated tests (but also human tests: postmortems, retrospectives, assumption checks). Ask "is this still true?" continuously. This is honest self-reflection (no blame, just the delta between expected and actual). (Note: This is about integrating information and feedback, not CI/CD pipelines in DevOps.)
+**Iterative Integration**: Constantly integrate new data about the state of the system against expected state. Run automated tests (but also human tests: postmortems, retrospectives, assumption checks). Ask "is this still true?" continuously. This is honest self-reflection (no blame, just the delta between expected and actual). (Note: This is about integrating information and feedback, not CI/CD pipelines in DevOps.)
 
 **Deliberate Practice**: For every process, behavior, or component: do less of / keep doing / do more of. This is practiced improvement applied to engineering. Don't fix this incident; fix the class of incidents. Distinguish signal from noise, recognize recurring archetypes, extract lessons general enough to be useful beyond the specific case.
 
 **Update Propagation**: Improvements don't stay local. Eliminate waste permanently (don't defer, delete), mistake-proof the system (make regression structurally impossible), automate what's proven (keep human judgment in the loop), standardize before spreading (lock in the gain), and propagate horizontally (find every team with the same problem, apply the fix everywhere).
 
-After a production outage, the team runs a blameless postmortem to compare what they expected with what actually happened (Continuous Integration). They identify the root pattern: "we treat config as 'not code,' but config controls production behavior." They build a concrete do-less / keep / do-more plan (Deliberate Practice). Then they implement config-as-code, update the architecture decision record, and share the fix with three other teams who have the same exposure (Update Propagation). The outage becomes a system-wide improvement, not a one-team lesson.
+After a production outage, the team runs a blameless postmortem to compare what they expected with what actually happened (Iterative Integration). They identify the root pattern: "we treat config as 'not code,' but config controls production behavior." They build a concrete do-less / keep / do-more plan (Deliberate Practice). Then they implement config-as-code, update the architecture decision record, and share the fix with three other teams who have the same exposure (Update Propagation). The outage becomes a system-wide improvement, not a one-team lesson.
 
-When comparing outputs against what you expected (does the code work? does it meet the specifications? does it align with architectural principles?), you practice Continuous Integration. Extracting patterns from repeated interactions means fixing the class of problems, not individual instances. Capturing successful patterns in reusable artifacts (documenting effective approaches, sharing them with the team, adding them to templates) makes the improvement permanent and spreads it to everyone with the same need.
+When comparing outputs against what you expected (does the code work? does it meet the specifications? does it align with architectural principles?), you practice Iterative Integration. Extracting patterns from repeated interactions means fixing the class of problems, not individual instances. Capturing successful patterns in reusable artifacts (documenting effective approaches, sharing them with the team, adding them to templates) makes the improvement permanent and spreads it to everyone with the same need.
 
 ## The Recursive Nature: Why It Scales
 
@@ -126,7 +126,7 @@ This is why the system compounds. Each cycle of Contextual Awareness → Clear S
 
 The system that improves what it does AND improves what it's optimizing for (that system outlasts every other).
 
-**Why the recursive structure scales**: Because each of the three main pillars has its own internal three-step structure (as shown in the table above), the framework applies identically whether you're solving a 5-minute problem or a 5-year problem. The pattern is the same. A single code review follows the same structure as an entire career: gather information (Proactive Curiosity or Challenge Matching or Continuous Integration), synthesize it into a decision (Cohesive Narrative or Directed Intentionality or Deliberate Practice), and make that decision stick (Shared Understanding or Adaptive Control or Update Propagation). The recursion means you never outgrow the framework. It grows with you.
+**Why the recursive structure scales**: Because each of the three main pillars has its own internal three-step structure (as shown in the table above), the framework applies identically whether you're solving a 5-minute problem or a 5-year problem. The pattern is the same. A single code review follows the same structure as an entire career: gather information (Proactive Curiosity or Challenge Matching or Iterative Integration), synthesize it into a decision (Cohesive Narrative or Directed Intentionality or Deliberate Practice), and make that decision stick (Shared Understanding or Adaptive Control or Update Propagation). The recursion means you never outgrow the framework. It grows with you.
 
 ## Quest Engine in Practice
 
@@ -136,7 +136,7 @@ Here's how Contextual Awareness → Clear Strategy → Systematic Improvement wo
 
 **Clear Strategy**: You write a vision doc with clear success criteria: "Secure, user-friendly authentication that scales to millions of users" (Directed Intentionality). You scope the work to match current team capability with a stretch goal (Challenge Matching). You implement OAuth integration with PKCE flow and run daily tests against real deployment environments (Adaptive Control).
 
-**Systematic Improvement**: After deployment, you compare actual behavior against expectations (token refresh worked, but mobile PKCE implementation had edge cases). You identify the root pattern (Continuous Integration): "mobile auth flows need explicit testing on actual devices, not just emulators" (Deliberate Practice). You update the testing checklist, add mobile device tests to CI, and share the pattern with other teams doing mobile auth (Update Propagation).
+**Systematic Improvement**: After deployment, you compare actual behavior against expectations (token refresh worked, but mobile PKCE implementation had edge cases). You identify the root pattern (Iterative Integration): "mobile auth flows need explicit testing on actual devices, not just emulators" (Deliberate Practice). You update the testing checklist, add mobile device tests to CI, and share the pattern with other teams doing mobile auth (Update Propagation).
 
 The next cycle starts with richer context (you know mobile auth quirks), better strategy (testing includes real devices), and proven improvements (the pattern is captured and spreading). The loop compounds.
 
@@ -146,7 +146,7 @@ The next cycle starts with richer context (you know mobile auth quirks), better 
 
 **Execute Clear Strategy**: Use [effort tracking](/blog/effort-tracking-vs-task-tracking/) to practice Challenge Matching (see where your time goes, ensure you have capacity for skill-building work). Set clear sprint goals for Directed Intentionality (everyone knows what done looks like). Build tight feedback loops for Adaptive Control (daily demos, continuous deployment, immediate test results).
 
-**Compound Systematic Improvement**: Run blameless postmortems for Continuous Integration (compare expected vs actual). Extract patterns for Deliberate Practice (don't just fix this bug, fix the class of bugs). Share improvements for Update Propagation (when you solve a problem, help others solve it too).
+**Compound Systematic Improvement**: Run blameless postmortems for Iterative Integration (compare expected vs actual). Extract patterns for Deliberate Practice (don't just fix this bug, fix the class of bugs). Share improvements for Update Propagation (when you solve a problem, help others solve it too).
 
 The three moves (Contextual Awareness, Clear Strategy, Systematic Improvement) work whether you're operating alone, with a team, or with AI agents. The structure is the same because the underlying dynamics are the same: understand before acting, execute based on understanding, learn from results, feed that learning back into better understanding.
 
