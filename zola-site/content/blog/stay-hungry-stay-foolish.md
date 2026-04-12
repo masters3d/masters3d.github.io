@@ -35,7 +35,11 @@ Together — hungry, foolish, happy, curious — they describe a state of perman
 
 The trap most people fall into isn't laziness — it's expertise. You learn enough to be comfortable, and comfort becomes the ceiling. The *Whole Earth Catalog* existed to fight that trap. Its entire premise was: *here are tools you didn't know existed, for problems you haven't thought to solve yet.* It assumed its readers were hungry enough to reach for something they couldn't yet name, and foolish enough to try.
 
-Self-advancement isn't a ladder — it's a loop. And that's what "stay" really means. Not that you're always hungry, or always foolish, or always happy, or always curious. You won't be. You'll solve a problem and feel satisfied. You'll master something and feel competent. You'll hit friction and feel frustrated. You'll exhaust a direction and feel directionless. **"Stay" means you come back.** You notice when you've stopped being hungry and you choose to find the next gap. You notice when expertise has made you cautious and you choose to be foolish again. You notice when you're grinding instead of enjoying and you choose to find the joy in the process. You notice when curiosity has gone dormant and you choose to ask the next question.
+Self-advancement isn't a ladder — it's a loop. And that's what "stay" really means. Not that you're always hungry, or always foolish, or always happy, or always curious. You won't be. You'll solve a problem and feel satisfied. You'll master something and feel competent. You'll hit friction and feel frustrated. You'll exhaust a direction and feel directionless. **"Stay" means you come back. On aggregate.**
+
+This is about consistency, not perfection. You're not aiming to be hungry 100% of the time — that's exhausting and unsustainable. You're aiming to notice when you've drifted toward comfort and choose to come back to hunger. Maybe you hit 60% in your first month. Then 70%. Then you plateau at 80-90%, and that's excellent. That's the target. **Consistency on aggregate** means you're trending toward these states more often than not, building a force of habit rather than forcing yourself.
+
+You notice when you've stopped being hungry and you choose to find the next gap. You notice when expertise has made you cautious and you choose to be foolish again. You notice when you're grinding instead of enjoying and you choose to find the joy in the process. You notice when curiosity has gone dormant and you choose to ask the next question. Each time you come back, it gets a little easier. Not because you're perfect at it, but because the habit compounds.
 
 **Hungry** is noticing the gap between where you are and where you could be, and letting it pull you forward instead of ignoring it. Food tastes better when you're hungry. Growth feels better when you're hungry for it.
 
@@ -45,7 +49,7 @@ Self-advancement isn't a ladder — it's a loop. And that's what "stay" really m
 
 **Curious** is the engine. It's what gives foolishness direction. It's the pull toward the next question, the thing adjacent to what you already know, the door you haven't opened yet. Even after you've learned something and know everything about it, curiosity finds the next adjacent unknown.
 
-The people who keep growing aren't the ones who know the most. They're the ones who keep coming back to not-knowing.
+The people who keep growing aren't the ones who know the most. They're the ones who keep coming back to not-knowing. Not every day. Not perfectly. But on aggregate, consistently enough that it becomes a force of habit.
 
 ## The Quest Engine
 
@@ -59,7 +63,7 @@ Quest Engine is what happened when I tried to turn "stay hungry, stay foolish, s
 
 **Renewal** is staying happy as a practice. It's the ongoing process of checking whether the work still connects to what matters, whether you're grinding or questing, whether the problem you started solving six months ago is still the right problem. When you choose to see the path as the reward, renewal becomes the checkpoint that asks: "Am I still finding joy in this? Or have I drifted into just executing?"
 
-The *Whole Earth Catalog* ethos of "access to tools" is still there — Quest Engine isn't about what to do, it's a meta-tool for figuring out which tools matter. It's useful to me. If other people find it useful, great. If not, that's fine too. What makes it work isn't that it's universal, it's that it makes the loop explicit: notice when you've stopped being hungry or foolish or happy or curious, and choose to come back.
+The *Whole Earth Catalog* ethos of "access to tools" is still there — Quest Engine isn't about what to do, it's a meta-tool for figuring out which tools matter. It's useful to me. If other people find it useful, great. If not, that's fine too. What makes it work isn't that it's universal, it's that it makes the loop explicit: notice when you've stopped being hungry or foolish or happy or curious, and choose to come back. On aggregate, that consistency compounds. You're not trying to hit 100% — you're building toward 80-90% as a force of habit, and that's where growth lives.
 
 The quest itself is the engine of growth.
 
