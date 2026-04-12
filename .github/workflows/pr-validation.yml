@@ -1,4 +1,10 @@
-# PR validation workflow to check site builds correctly and RSS feeds are generated
+# PR validation workflow to check site builds correctly and RSS feeds are generated.
+# Runs on every PR targeting master — catches broken links, build errors, and content issues
+# BEFORE they reach the deployment workflow.
+#
+# To enforce this as a required check (block merging if it fails):
+#   Repository Settings → Branches → Branch protection rules → master →
+#   "Require status checks to pass before merging" → add "validate"
 name: PR Validation
 
 on:
