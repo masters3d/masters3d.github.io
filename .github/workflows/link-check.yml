@@ -1,0 +1,38 @@
+# Scheduled external link checker.
+# Catches links that break AFTER publication (third-party sites going down, URLs changing, etc.).
+# The PR validation catches broken links before merge; this catches post-publication link rot.
+#
+# Runs weekly on Monday at 06:00 UTC. Can also be triggered manually.
+# If it fails, open an issue and fix the broken link in a PR.
+name: Scheduled Link Check
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"  # Every Monday at 06:00 UTC
+  # Allow manual trigger from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Zola
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.19.2
+
+      - name: Check all external links
+        # zola check validates every external URL in content files.
+        # A non-zero exit code means at least one link is broken — fix it in a PR.
+        run: |
+          cd zola-site
+          echo "Running scheduled external link check..."
+          zola check
+          echo "✓ All external links are healthy"
