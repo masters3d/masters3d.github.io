@@ -15,7 +15,7 @@ In 1974, the final issue rolled off the press. On the back cover, below a photog
 
 A parting gift from Brand and his editors to their readers. No explanation. No attribution. Just a dare.
 
-Thirty-one years later, Steve Jobs borrowed those words to close his [2005 Stanford commencement address](https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says) (a speech about dropping out, getting fired from the company he built, and facing death). He told the graduates:
+Thirty-one years later, Steve Jobs borrowed those words to close his [2005 Stanford commencement address](https://stevejobsarchive.com/stories/stay-hungry-stay-foolish) (a speech about dropping out, getting fired from the company he built, and facing death). He told the graduates:
 
 > *"When I was young, there was an amazing publication called The Whole Earth Catalog… On the back cover of their final issue was a photograph of an early morning country road… and beneath it were the words: 'Stay Hungry. Stay Foolish.' It was their farewell message as they signed off. Stay Hungry. Stay Foolish. And I have always wished that for myself. And now, as you graduate to begin anew, I wish that for you."*
 
@@ -73,7 +73,7 @@ The quest itself is the engine of growth.
 
 | Source | Link |
 |---|---|
-| Steve Jobs' 2005 Stanford Commencement Address (transcript) | [Stanford Report](https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says) |
+| Steve Jobs' 2005 Stanford Commencement Address (video) | [YouTube](https://www.youtube.com/watch?v=UF8uR6Z6KLc) |
 | "Stay hungry, stay foolish" — Steve Jobs Archive | [stevejobsarchive.com](https://stevejobsarchive.com/stories/stay-hungry-stay-foolish) |
 | *Whole Earth Catalog* — Wikipedia | [Wikipedia](https://en.wikipedia.org/wiki/Whole_Earth_Catalog) |
 | *Whole Earth Catalog* — Full digital archive | [Whole Earth Index](https://wholeearth.info/) |

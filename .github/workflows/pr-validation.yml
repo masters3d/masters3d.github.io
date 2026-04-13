@@ -1,4 +1,10 @@
-# PR validation workflow to check site builds correctly and RSS feeds are generated
+# PR validation workflow to check site builds correctly and RSS feeds are generated.
+# Runs on every PR targeting master — catches broken links, build errors, and content issues
+# BEFORE they reach the deployment workflow.
+#
+# IMPORTANT — to enforce this as a required check (block merging if it fails):
+#   Repository Settings → Branches → Branch protection rules → master →
+#   "Require status checks to pass before merging" → add "validate"
 name: PR Validation
 
 on:
@@ -14,6 +20,7 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -23,11 +30,15 @@ jobs:
         with:
           tool: zola@0.19.2
       
-      - name: Check site for errors
+      - name: Validate external links and internal structure
+        # zola check crawls ALL external links and fails on any broken one (4xx/5xx).
+        # This is the same check that runs in the deploy workflow, so a PR that
+        # passes here will not cause a broken-link deploy failure on master.
         run: |
           cd zola-site
-          echo "Running Zola check to validate templates and content..."
+          echo "Running Zola check (validates templates, internal links, AND external links)..."
           zola check
+          echo "✓ All links valid — no broken external or internal links found"
           
       - name: Build site
         run: |
@@ -89,11 +100,10 @@ jobs:
           cd zola-site/content/blog
           echo "Checking blog post date formats..."
           
-          # Check for quoted and unquoted dates (with flexible spacing)
-          # Matches only: date = "...", date="...", date  =  "..." (not update_date, etc.)
+          # Check for quoted dates: date = "2024-01-01" (not update_date, etc.)
           QUOTED_DATES=$(grep -rE '^date[[:space:]]*=[[:space:]]*"[0-9]{4}-' . | wc -l || echo "0")
-          # Matches only: date = 2024-01-01, date=2024-01-01, date  =  2024-01-01
-          UNQUOTED_DATES=$(grep -rE '^date[[:space:]]*=[[:space:]]*[0-9]{4}-' . | wc -l || echo "0")
+          # Check for unquoted dates: date = 2024-01-01 (explicitly excludes quote after =)
+          UNQUOTED_DATES=$(grep -rE '^date[[:space:]]*=[[:space:]]*[0-9]{4}-' . | grep -v '"' | wc -l || echo "0")
           
           echo "Found $QUOTED_DATES blog posts with quoted dates"
           echo "Found $UNQUOTED_DATES blog posts with unquoted dates"
