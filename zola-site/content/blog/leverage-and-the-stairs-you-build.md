@@ -4,7 +4,7 @@ date = "2026-04-26"
 description = "Archimedes asked for a long enough lever to move the world. Engineering is the discipline of building those levers (correctly sized stairs, daily practice, scaffolded learning, and iterative cycles) so any wall becomes climbable."
 template = "blog-post.html"
 categories = ["engineering", "learning", "productivity"]
-tags = ["leverage", "scaffolding", "deliberate-practice", "iterative-development", "progressive-disclosure", "quest-engine", "tools", "flow", "habit-building"]
+tags = ["leverage", "scaffolding", "deliberate-practice", "iterative-development", "progressive-disclosure", "quest-engine", "tools", "flow", "habit-building", "forward-progress"]
 +++
 
 > "Give me a lever long enough and a fulcrum on which to place it, and I shall move the world." — Archimedes
@@ -58,13 +58,36 @@ The payoff for sizing steps correctly isn't just progress. It's **flow**. Csiksz
 
 Habit science adds another layer. A habit is a scaffold that eventually becomes invisible. When you first learn to drive, every action is deliberate — hands, mirrors, pedal, signal. After years, you drive while thinking about something else entirely. The scaffold was internalized; it became load-bearing structure. **The goal of daily practice is not to practice forever; it's to practice until the skill is structural** — until it runs without effort, freeing your attention for the next step up.
 
-## Progressive Disclosure: Stairs You Build With Other People
+## Progressive Disclosure: Only Show the Next Step
 
-Bereiter and Scardamalia called it [*progressive disclosure*](https://en.wikipedia.org/wiki/Knowledge_building): a conversation in which each contribution improves on the last, and the group's shared understanding ratchets forward. Nobody owns the answer. Everybody owns the next step.
+[Progressive disclosure](https://en.wikipedia.org/wiki/Progressive_disclosure) is a design principle: **reveal complexity only when the learner or user is ready for it.** Don't show every setting on the first screen. Don't introduce exceptions before the rule. Don't hand someone the full map before they know how to walk.
 
-This is what good engineering teams do in design docs, code review, and post-incident reviews. The artifact (the doc, the PR, the postmortem) is a step in a staircase that the next engineer will stand on. If you only ever solve today's problem, you've climbed the wall. If you write down *why* you solved it that way, you've added a stair.
+It is the stairs, applied to information design.
 
-The Quest Engine calls this **Shared Understanding** under Contextual Awareness. It is not optional infrastructure. It is the lever that lets the next person start where you finished.
+A well-designed tutorial starts with the simplest working example — just enough to get something running — and defers edge cases, advanced options, and error handling until the learner has internalized the foundation. A good CLI tool has sensible defaults that hide every option you don't need right now, with a `--help` flag that reveals more only when you ask. A good API has a simple interface for the common case and a more powerful (but more complex) surface that you opt into deliberately.
+
+Each of these is a correctly sized step. The complexity didn't disappear — it was **deferred to the stair where it belongs.**
+
+This is why good documentation starts with a Quick Start, moves to a Concepts guide, and only then dives into a full Reference. The Quick Start is not a summary of the Reference; it is the first stair. You are not ready for the Reference until you have stood on the Quick Start. Skipping the Quick Start doesn't save time — it removes the step and replaces it with a wall.
+
+Progressive disclosure also shapes how you write error messages and system feedback: **a useful error shows you the next action, not just the failure.** A system that says "something went wrong" is a wall. A system that says "the config file is missing — run `init` to create one" has built you a stair. Design for the step, not the stop.
+
+## Forward Progress: There Is Always a Next Move
+
+In any well-designed system, there is always at least one valid action available. This is the principle of **forward progress**: no matter how complicated the rules, no matter how many things are blocked or uncertain, the system — and the people operating it — should never be left with nowhere to go.
+
+This matters most in **asynchronous systems**, where work is not sequential and participants are not all present at the same time. A message queue guarantees forward progress by ensuring a producer can always deposit work and a consumer can always pick it up, even if they never run simultaneously. A retry policy guarantees forward progress by ensuring a failed step does not permanently halt the pipeline. The saga pattern guarantees forward progress by ensuring every step either succeeds or has a compensating action — you can always return to a consistent state.
+
+The same principle applies to teams and individuals. A blocked task is not a stopped task if you can take the next smallest available action:
+
+- Write down what you know so far.
+- Ask the specific question that unblocks you.
+- Break the problem into the part you *can* move on right now.
+- Document the blocker so the next person doesn't hit the same wall.
+
+The Quest Engine's **Searching** move is exactly this: when the direct path is blocked, find the adjacent step that isn't. The stair doesn't have to go straight up. It just has to go forward.
+
+Designing for forward progress is designing for resilience. A system — or a person — that can always find the next step does not get permanently stuck. It may slow down. It may zigzag. But it keeps moving. And a system that keeps moving eventually arrives.
 
 ## Iterative Development is the Same Idea, at Code Scale
 
@@ -74,7 +97,7 @@ The reason iterative development beats waterfall isn't ideology. It's leverage. 
 - gives you feedback before the step ossifies,
 - lets the next cycle start from real ground instead of imagined ground.
 
-This is identical to what daily practice does for a learner and what progressive disclosure does for a team. **The unit changes; the geometry doesn't.** Every loop should leave a stair behind it: a test that didn't exist before, a doc that wasn't written, a tool that didn't exist, a mental model that's now shared. This is the **Renewing** move (Iterative Integration → Deliberate Practice → Update Propagation) made physical.
+This is identical to what daily practice does for a learner and what progressive disclosure does for a system. **The unit changes; the geometry doesn't.** Every loop should leave a stair behind it: a test that didn't exist before, a doc that wasn't written, a tool that didn't exist, a mental model that's now shared. This is the **Renewing** move (Iterative Integration → Deliberate Practice → Update Propagation) made physical.
 
 If your iterations don't leave stairs behind, you're not iterating. You're climbing the same wall, faster.
 
@@ -96,7 +119,7 @@ Three metaphors, one idea:
 
 Engineering, learning, and collaboration are all the same job under different names: *find the wall, size the next stair, take the step, leave the stair behind for the next person (including future you).*
 
-That's why daily practice works. That's why progressive disclosure works. That's why iterative development works. That's why scaffolded learning works. That's why tools work. They're all the same lever, applied at different scales.
+That's why daily practice works. That's why progressive disclosure works. That's why forward progress matters. That's why iterative development works. That's why scaffolded learning works. That's why tools work. They're all the same lever, applied at different scales.
 
 Give yourself a long enough lever — and a daily habit of pulling on it — and you really can move the world. Or at least the next step of it.
 
