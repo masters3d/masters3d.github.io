@@ -19,7 +19,7 @@ But there's an order to how these develop. You need **craft** to inform **judgme
 
 These three aren't innate talents—they're skills you develop through practice. And they map directly to how the [Quest Engine framework](/blog/quest-engine-introduction/) works: craft connects to searching (mastery), judgment to being driven (autonomy), and taste to renewal (purpose).
 
-## Craft: Systematic Exploration
+## Craft: Mastery Through Searching
 
 **Craft is building expertise through deliberate practice.** An engineer with craft doesn't just know one authentication pattern. They've systematically explored OAuth, session tokens, JWTs, passwordless approaches. They understand trade-offs and when each applies.
 
@@ -31,7 +31,7 @@ This is searching in the Quest Engine: proactive curiosity about what's worth kn
 
 **Agents accelerate searching.** They help you explore alternatives faster, synthesize patterns from multiple sources, and compare approaches side-by-side. You decide what's worth searching for; agents help you search more thoroughly.
 
-## Judgment: Knowing What You Control
+## Judgment: Autonomy Through Being Driven
 
 **Judgment is understanding your scope of authority and exercising it consistently.** An engineer with judgment doesn't ask permission to refactor a function, but also doesn't unilaterally rewrite the architecture.
 
@@ -45,7 +45,7 @@ This is being driven in the Quest Engine: you're propelled by ownership over dec
 
 **Agents multiply your autonomy.** They handle mechanical work (boilerplate, routine refactoring), expanding bandwidth for decisions that matter. You focus on architectural choices and strategic direction, not buried by tasks that can be delegated.
 
-## Taste: Knowing What Matters
+## Taste: Purpose Through Renewal
 
 **Taste is pattern recognition about what's worth doing.** An engineer with taste doesn't just ask "can we build this?" They ask "should we?"
 
