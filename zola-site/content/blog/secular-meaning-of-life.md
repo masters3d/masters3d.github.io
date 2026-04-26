@@ -25,7 +25,7 @@ Most people stop discovering. They encounter the unfamiliar and either dismiss i
 
 **Here's what makes discovery secular:** it doesn't require anything beyond observable reality. You don't need to believe the universe has purpose to discover how galaxies form. You don't need metaphysical claims to discover how neural networks generate coherent text. The universe doesn't care whether you understand it, but the act of trying to understand generates the subjective experience of meaning. Discovery is self-justifying. The search is the point.
 
-When discovery stops, life becomes repetitive. You're executing on what you already know instead of exploring what you don't. The job becomes mechanical. The routine becomes predictable. Not because there's nothing left to learn, but because you've stopped looking. **Discovery is the force that keeps the world feeling infinite.**
+When discovery stops, life becomes repetitive. You're executing on what you already know instead of exploring what you don't. The job becomes mechanical. Not because there's nothing left to learn, but because you've stopped looking. **Discovery is the force that keeps the world feeling infinite.**
 
 ## Play: The Drive to Engage
 
@@ -43,7 +43,7 @@ When play stops, life becomes reactive. You're responding to what happens instea
 
 Joy is the active state of renewing connection to what matters. Not happiness (which is transient). Not pleasure (which is sensation). Joy is what happens when you pause, reflect, and verify that what you're doing still aligns with what you care about. It's the ongoing process of checking whether the path you're on is still the path worth walking.
 
-A scientist feels joy when an experiment reveals something unexpected. A teacher feels joy when a student finally understands. A builder feels joy when something they made continues to work years later. The trigger changes, but the structure is identical: there's a moment where you see that what you've been doing connects to something that matters, and that connection renews the sense that the effort was worth it. **Joy is the intrinsic motivation to continue.**
+A scientist feels joy when an experiment reveals something unexpected. A teacher feels joy when a student finally understands. A builder feels joy when something they made continues to work years later. The trigger changes, but the structure is identical: there's a moment where you see that what you've been doing connects to something that matters, and that connection renews the sense that the effort was worth it. **Joy is the intrinsic motivation to align with purpose.**
 
 Most people stop renewing. They keep executing on yesterday's goals while context shifts. The project that started with clear purpose erodes into vague obligation. The work that once felt meaningful becomes mechanical. They're still competent, still productive, still busy. But the connection between effort and meaning has severed. They've stopped renewing. And when you stop renewing, life becomes hollow. Not because there's nothing worth doing, but because you've lost track of why you're doing it.
 
