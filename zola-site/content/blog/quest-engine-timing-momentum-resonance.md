@@ -32,11 +32,7 @@ The triad spans the full locus-of-control axis:
 | **Drive** (Actuation / ACTING) | **Momentum** | Control |
 | **Renew** (Retrospective / IMPROVING) | **Resonance** | Influence |
 
-Timing maps to Search because you don't control when the window opens (when the market shifts, when your manager gets budget, when the team acknowledges the problem). What you control is whether you've done the searching to recognize the window when it arrives.
-
-Momentum maps to Drive because it's mass times velocity, and you control both. Mass is your accumulated capability. Velocity is your deployment frequency. Talent is the mass. Momentum is mass times velocity.
-
-Resonance maps to Renew because coupling is relational and requires continuous calibration. You influence resonance by tuning your frequency to match your audience, or by choosing a different audience. But you can't force it.
+Timing maps to Search because you don't control when the window opens (when the market shifts, when your manager gets budget, when the team acknowledges the problem). What you control is whether you've done the searching to recognize the window when it arrives. Momentum maps to Drive because it's mass times velocity, and you control both. Mass is your accumulated capability. Velocity is your deployment frequency. Talent is the mass. Momentum is mass times velocity. Resonance maps to Renew because coupling is relational and requires continuous calibration. You influence resonance by tuning your frequency to match your audience, or by choosing a different audience. But you can't force it.
 
 ## The Physics
 
@@ -46,39 +42,21 @@ Resonance maps to Renew because coupling is relational and requires continuous c
 
 **Resonance** is the coupling between your sustained force and the people who must receive it. You can have perfect timing and enormous momentum, but if you're pushing on a system tuned to a different frequency, the energy dissipates. The failure mode is **forced driving** (pushing harder when the system isn't tuned to receive it). The opposite failure is **resonance shopping** (only engaging with audiences already tuned to your frequency).
 
-## Observable Signals
+## How Resonance Works
 
-**Resonant coupling**: Your proposals get built on (not just approved, but extended by others). People seek you out when the topic comes up. The system amplifies your input because it's tuned to receive it.
+The interaction model is multiplicative: **Timing · Momentum · Resonance → Lasting Benefit**. If any term goes to zero, the product goes to zero. High resonance means small force, large outcome. Low resonance means large force, small outcome. Off-resonance means force creates resistance.
 
-**Off-resonance driving**: You're working harder but results are diminishing. You repeat the same points in different ways, but understanding doesn't improve. You feel like you're pushing against a wall.
+You can see this in the observable signals. When your proposals get built on (not just approved, but extended by others), when people seek you out when the topic comes up, when the system amplifies your input because it's tuned to receive it (that's resonant coupling). When you're working harder but results are diminishing, when you repeat the same points in different ways but understanding doesn't improve, when you feel like you're pushing against a wall (that's off-resonance driving). The difference isn't effort. The difference is coupling.
 
-**Damping**: Your input is acknowledged but not acted on. The team nods, says "good point," then continues as before. The system is absorbing your energy without changing state.
+Sometimes your input is acknowledged but not acted on. The team nods, says "good point," then continues as before. The system is absorbing your energy without changing state (that's damping). Sometimes you and your audience agree on the goal but you're out of sync on timing. Six months later, they come back asking for exactly what you proposed. The frequency was right. The phase was wrong (that's phase mismatch). The meta-pattern: **resonance is about energy transfer, not energy application**. You can apply enormous force, but if it doesn't couple, it doesn't matter.
 
-**Phase mismatch**: You and your audience agree on the goal but you're out of sync on timing. Six months later, they come back asking for exactly what you proposed. The frequency was right. The phase was wrong.
+This is why the [Quest Engine](/blog/quest-engine-building-high-agency-teams/) emphasizes [renewal](/blog/quest-engine-introduction/) so heavily. Renewal is where you verify the coupling. Did the effort produce the expected result? If not, which term was missing? Was it timing (the window wasn't actually open)? Was it momentum (you didn't have enough sustained force)? Or was it resonance (the system wasn't tuned to receive what you were broadcasting)? The diagnosis determines the fix.
 
-The meta-pattern: **resonance is about energy transfer, not energy application**. You can apply enormous force, but if it doesn't couple, it doesn't matter.
-
-## How It Works
-
-The interaction model is multiplicative: **Timing · Momentum · Resonance → Lasting Benefit**. If any term goes to zero, the product goes to zero.
-
-**High resonance** means small force, large outcome. **Low resonance** means large force, small outcome. **Off-resonance** means force creates resistance.
-
-This is why the [Quest Engine](/blog/quest-engine-building-high-agency-teams/) emphasizes [renewal](/blog/quest-engine-introduction/) so heavily. Renewal is where you verify the coupling. Did the effort produce the expected result? If not, which term was missing? The diagnosis determines the fix.
-
-**Timing** extends **Search**. You're searching not just for what's true, but for when the world will be ready to act on it.
-
-**Momentum** extends **Drive**. You're building mass through deliberate practice and increasing velocity through tight feedback loops.
-
-**Resonance** extends **Renew**. You're verifying the coupling between your force and the system's readiness to receive it.
-
-This isn't a replacement for the Quest Engine. It's an additive v4.1 extension (a dynamics layer that sits alongside the existing kinematics and control layers).
+Timing extends Search (you're searching not just for what's true, but for when the world will be ready to act on it). Momentum extends Drive (you're building mass through deliberate practice and increasing velocity through tight feedback loops). Resonance extends Renew (you're verifying the coupling between your force and the system's readiness to receive it). This isn't a replacement for the Quest Engine. It's an additive v4.1 extension (a dynamics layer that sits alongside the existing kinematics and control layers).
 
 ## The One-Line Summary
 
-Talent is the mass. Momentum is mass times velocity. Timing is when you apply the force. **Resonance is whether the system you're pushing on is tuned to receive it** (and without it, the other three don't matter).
-
-All three working together (that's how effort converts to lasting benefit).
+Talent is the mass. Momentum is mass times velocity. Timing is when you apply the force. **Resonance is whether the system you're pushing on is tuned to receive it** (and without it, the other three don't matter). All three working together (that's how effort converts to lasting benefit).
 
 ---
 
