@@ -4,7 +4,7 @@ date = "2026-05-05"
 description = "Two words in a self-assessment — 'consistent. Determined.' — capture something real but miss the piece that makes them work together. The gap explains why persistence advice so often falls flat."
 template = "blog-post.html"
 categories = ["philosophy", "mindset", "productivity"]
-tags = ["quest-engine", "grit", "motivation", "persistence", "search-drive-renew", "triads"]
+tags = ["quest-engine", "grit", "motivation", "persistence", "search-drive-renew", "triads", "scripture"]
 +++
 
 Most advice about persistence skips a step. Not because the advice is wrong — because the people giving it already did the step before they started talking. By the time someone is writing about grit or consistency or staying the course, they've already figured out what they're being consistent toward. The search happened before the story began.
