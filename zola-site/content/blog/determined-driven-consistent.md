@@ -1,7 +1,7 @@
 +++
 title = "Determined. Driven. Consistent."
 date = "2026-05-05"
-description = "Tom Brady's Hall of Fame answer was three words: consistent, determined, and willing to work for it. Most people drop the middle one. That missing piece is why you can be determined and consistent and still be moving in the wrong direction."
+description = "Tom Brady's Hall of Fame answer was three parts: consistent, determined, and willing to work for it. Most people drop the middle one. That missing piece is why you can be determined and consistent and still be moving in the wrong direction."
 template = "blog-post.html"
 categories = ["philosophy", "mindset", "productivity"]
 tags = ["quest-engine", "motivation", "persistence", "search-drive-renew", "triads"]
@@ -13,17 +13,17 @@ When Tom Brady was inducted into the Patriots Hall of Fame in 2024, someone aske
 
 Three things. Coming from the 199th pick in the NFL Draft (passed over 198 times), who went on to win seven Super Bowls, it's hard to argue with. The man lived it.
 
-But here's what gets lost every time someone repeats that quote: the middle word. Most people walk away with two. Consistent. Determined. The "willing to work for it" part gets dropped somewhere in transmission, as if the working-for-it is so obvious it doesn't need a name.
+But here's what gets lost every time someone repeats that quote: the middle part. Most people walk away with two. Consistent. Determined. The "willing to work for it" part gets dropped somewhere in transmission, as if the working-for-it is so obvious it doesn't need a name.
 
 It's not obvious. It's actually the piece that decides whether the other two compound or just spin.
 
 Here's why that matters: you can be determined and consistent while going in the wrong direction. Determined means you've decided something is worth pursuing. Consistent means you keep showing up. Neither one asks whether you're pointed the right way. You can be disciplined, reliable, and completely off-course. The energy doesn't tell you where to aim. Only the "willing to work for it" (the driven, owned forward effort) does that. It's the force that connects what you've decided to what you keep doing.
 
-Lay Brady's three words out in the right order and the structure becomes clear. **Determined** (in the sense of *having determined*) means you've done the searching: you've figured out what's actually worth pursuing, you've assessed and resolved which direction matters. That's the prospective move, clarity before effort. **Willing to work for it** is the driven piece: you've taken ownership of the goal and you're applying sustained effort without waiting for permission or perfect conditions. **Consistent** closes the loop: you keep returning, the practice builds, the results compound over time.
+Brady said the three parts in this order: *consistent, determined, willing to work for it.* The Quest Engine reads them in a different order (the order that shows how each part depends on the one before it). **Determined** (in the sense of *having determined*) is the starting move: you've done the searching, figured out what's actually worth pursuing, assessed which direction matters. That's the prospective force, clarity before effort. **Willing to work for it** is the driven piece: you've taken ownership of the goal and you're applying sustained effort without waiting for permission or perfect conditions. **Consistent** closes the loop: you keep returning, the practice builds, the results compound over time.
 
-The [Quest Engine](/blog/quest-engine-the-why/) names these three forces explicitly. **Searching** is the determined move (contextual awareness, figuring out which direction is yours). **Being Driven** is the willing-to-work-for-it move (agency, ownership, strategy directed at the right target). **Renewal** is the consistent move (systematic return, learning from what the practice produces). Together they form the cycle Brady lived without naming it that way.
+The [Quest Engine](/blog/quest-engine-the-why/) names these three forces explicitly. **Searching** is the determined move (contextual awareness, figuring out which direction is yours). **Being Driven** is the willing-to-work-for-it move (agency, ownership, strategy directed at the right target). **Renewal** is the consistent move (systematic return, learning from what the practice produces). Brady named all three; the Quest Engine puts them in sequence so the dependency is clear.
 
-Brady's quote in transmission loses "willing to work for it" and becomes *consistent. Determined.* (the start and end of the cycle with nothing connecting them). Add the middle back, in order, and it reads: **Determined. Driven. Consistent.** That's not just a rephrasing. It's the sequence that prevents determination and consistency from becoming very disciplined motion in the wrong direction.
+Brady's three-part phrase in transmission loses "willing to work for it" and becomes *consistent. Determined.* (the start and end of the cycle with nothing connecting them). Add the middle back, reordered to show the flow, and it reads: **Determined. Driven. Consistent.** That's not just a rephrasing. It's the sequence that prevents determination and consistency from becoming very disciplined motion in the wrong direction.
 
 ---
 
