@@ -1,7 +1,7 @@
 +++
 title = "A Decade of Mobile Computing: From PDAs to Pocket Internet (1999-2009)"
 date = "2009-05-01"
-description = "A chronological journey through the evolution of mobile devices from 1999 to 2009. From Nokia brick phones and Sony Ericsson chocolate bars to Palm PDAs, Java games, SMS-based Twitter, and finally the iPhone 3GS."
+description = "A chronological journey through the evolution of mobile devices from 1999 to 2009. From Nokia brick phones and Sony Ericsson chocolate bars to Palm PDAs, Java games, SMS-based Twitter, and finally the iPhone 3G."
 template = "blog-post.html"
 categories = ["technology", "personal", "retrospective"]
 tags = ["mobile", "retrospective", "palm", "sony", "iphone", "nokia", "sony-ericsson", "motorola-razr"]
@@ -15,9 +15,9 @@ In 1999, [Nokia](https://en.wikipedia.org/wiki/Nokia) was king of the mobile pho
 
 One of my first phones was a Sony Ericsson, part of the [Sony Ericsson](https://en.wikipedia.org/wiki/Sony_Ericsson) joint venture that launched in October 2001. These phones introduced me to Java games and applications. [Java ME (J2ME)](https://en.wikipedia.org/wiki/Java_Platform,_Micro_Edition) made it possible to run simple games and apps on these devices. The [Opera Mini](https://en.wikipedia.org/wiki/Opera_Mini) browser was starting to become popular for mobile web browsing, though it wasn't widely used yet.
 
-## Sony Obsession and the PDA Revolution (2000-2004)
+## Sony and the PDA Revolution (2000-2004)
 
-In 1999 I fell in love with Sony. I had Sony headphones, Sony monitor, Sony sound system... Sony Sony Sony!! It was an obsession.
+In 1999 I became a big Sony fan. I had Sony headphones, Sony monitor, Sony sound system... Sony Sony Sony!!
 
 In October 2000, Sony released the [Clié PEG-N700C](https://en.wikipedia.org/wiki/Sony_Clié), their first color PDA. I was in a trance and I worked all summer to get it. It was 500 dollars, the Clié PEG-760C (the improved model). I remember I thought it was the greatest thing I had ever held in my hand. It ran [Palm OS](https://en.wikipedia.org/wiki/Palm_OS), and I would install about 50 games on it. In fact, I used it as a very expensive Game Boy.
 
@@ -41,15 +41,15 @@ The way we dealt with navigation back then was with [MapQuest](https://en.wikipe
 
 ## The Smartphone Revolution Begins (2007-2008)
 
-In June 2007, Apple released the [original iPhone](https://en.wikipedia.org/wiki/IPhone_(1st_generation)). It changed everything, but I didn't get one. I watched from the sidelines as it redefined what a phone could be.
+In June 2007, Apple released the [original iPhone](https://en.wikipedia.org/wiki/IPhone_(1st_generation)). It changed everything, but I didn't get one. One of the reasons I held back was that it only had 2G (EDGE) connectivity, which was really slow for internet use. It was mostly suitable for MMS and basic data. I watched from the sidelines as it redefined what a phone could be.
 
-In October 2008, the [T-Mobile G1 (HTC Dream)](https://en.wikipedia.org/wiki/HTC_Dream) launched. It was the first Android phone. I loved Google and I had T-Mobile, so I got the G1. I liked it but it didn't live up to what I expected. The sliding keyboard was interesting, but the software felt unfinished.
+In October 2008, the [T-Mobile G1 (HTC Dream)](https://en.wikipedia.org/wiki/HTC_Dream) launched with 3G connectivity. It was the first Android phone. I had T-Mobile, so I got the G1. I liked it but it didn't live up to what I expected. The sliding keyboard was interesting, but the software felt unfinished.
 
 About the same time, my company gave me a BlackBerry. The [BlackBerry](https://en.wikipedia.org/wiki/BlackBerry) was the enterprise standard, and while it was a solid phone with excellent email and messaging, it was not what I was looking for in a personal device.
 
-## Finding My Phone: iPhone 3GS (2009)
+## Finding My Phone: iPhone 3G (2009)
 
-So I switched to the iPhone. Specifically, I got the [iPhone 3GS](https://en.wikipedia.org/wiki/IPhone_3GS) (launched June 19, 2009). The "S" stood for speed, and it delivered. This was the iPhone that finally got it right for me. It had a better camera, video recording, a compass, and was noticeably faster than the original.
+So I switched to the iPhone. Specifically, I got the [iPhone 3G](https://en.wikipedia.org/wiki/IPhone_3G) (launched July 11, 2008). The big improvement was 3G connectivity, which made mobile internet actually usable. This was the iPhone that finally got it right for me. It had GPS, the App Store, and most importantly, fast enough internet to make the whole experience worthwhile.
 
 I initially didn't understand why they made you get the internet with phones, but I actually like the fact that they do because the greatest thing about phones nowadays is the internet. Having the web in my pocket, having email anywhere, having maps that actually work (with GPS!), this is the revolution.
 
@@ -61,17 +61,6 @@ The next evolution in mobile computing. Faster processors, better screens, longe
 
 ---
 
-**[Edit from the future]**: Looking back at this post years later, it's fascinating to see what I was hoping for. What I was really seeking was phones with:
+**[Edit from the future]**: Looking back, what I was really seeking was phones with all-day battery life, waterproofing, better displays, advanced cameras, faster connectivity (4G/5G), biometric security, and AI assistants. All of these eventually arrived.
 
-- All-day battery life
-- Waterproofing (IP ratings)
-- High-resolution displays
-- Advanced cameras with computational photography
-- 4G and 5G connectivity
-- Biometric security (fingerprint, face recognition)
-- Wireless charging
-- AI assistants
-- Cloud integration
-- App ecosystems with millions of apps
-
-All of these features would eventually arrive. The iPhone 3GS was just the beginning of the smartphone era, but I couldn't see how far it would go. The transition from those Nokia brick phones and Palm PDAs to what we have today represents one of the most rapid technology transformations in history.
+Interestingly, Google didn't have their own phone in 2009. They built Android as an open standard, hoping it would become the universal mobile OS. While it didn't end up being fully open in practice, it did become the dominant mobile platform. The transition from those Nokia brick phones and Palm PDAs to what we have today represents one of the most rapid technology transformations in history.
