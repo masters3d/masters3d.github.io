@@ -21,15 +21,15 @@ But Nana's order (Guts, Stamina, Faith) is the order of urgency, not the order o
 
 Nana leads with Guts because Buster needs it in the next five minutes. That's the right call for the moment. But Guts without Faith is undirected energy. You can have enormous courage applied to the wrong thing and accumulate nothing but well-executed wrong turns.
 
-**Faith belongs first.** Not as a spiritual concept, but as the Searching move: knowing what you're fighting for before you fight. Faith is what makes Buster's guts coherent. He isn't just persistent (he's persistent about this specific show, these specific performers, this specific belief that they deserve the world-class stage). The faith came before the guts. The guts are only pointing somewhere because the faith pointed first.
+**Faith belongs first.** Not as a spiritual concept, but as the Searching move: knowing what you're fighting for before you fight. Faith is what makes Buster's courage coherent. He isn't just persistent (he's persistent about this specific show, these specific performers, this specific belief that they deserve the world-class stage). The faith came before the guts. The courage only has a direction because the faith established it first.
 
-**Guts comes second.** Once you know what matters, guts is the force that converts knowing into action. Ownership over the step that might fail. You've done the searching, you know what you believe in, now you fight for it. That's the Driven move: not recklessness, but the willingness to act from conviction without waiting for guaranteed outcomes.
+**Guts comes second.** Once you know what matters, guts (in the "it takes guts" sense, the courage to act despite uncertain outcomes) is the force that converts knowing into action. Ownership over the step that might fail. You've done the "searching", you know what you believe in, now you fight for it. That's the Driven move: not recklessness, but the willingness to act from conviction without waiting for guaranteed outcomes.
 
-**Stamina closes the loop.** Knowing and starting aren't enough. You have to keep returning. Stamina is the Renewal move: every return is a check. Is the faith still grounded? Are the guts still aimed right? Stamina understood this way isn't just toughness. It's the consistent return that makes the whole thing compound.
+**Stamina closes the loop.** Knowing and starting aren't enough. You have to keep "returning". Stamina is the Renewal move: every "return" is a check. Is the faith still grounded? Is the conviction still clear? Stamina understood this way isn't just toughness. It's the consistent "return" that makes the whole thing compound.
 
 ## The Reordering
 
-The [Quest Engine](/blog/quest-engine-the-why/) names these three forces: Searching, Driven, Renewal. Faith maps to Searching (knowing what direction is worth your guts). Guts maps to being Driven (the owned action that follows from conviction). Stamina maps to Renewal (the consistent return that makes each cycle build on the last).
+The [Quest Engine](/blog/quest-engine-the-why/) names these three forces: Searching, Driven, Renewal. Faith maps to Searching (knowing what direction is worth fighting for). Guts maps to being Driven (the courage to act on what you've found). Stamina maps to Renewal (the consistent "return" that makes each cycle build on the last).
 
 Nana asked Buster whether he believed he was good enough before she gave him the three words. That belief (the faith) was the precondition for everything that followed. The order she delivered them was a coach reading the room. The order they actually operate in is: **Faith. Guts. Stamina.**
 
