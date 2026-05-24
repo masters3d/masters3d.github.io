@@ -23,6 +23,8 @@ Brady said the three parts in this order: *consistent, determined, willing to wo
 
 The [Quest Engine](/blog/quest-engine-the-why/) names these three forces explicitly. **Searching** is the determined move (contextual awareness, figuring out which direction is yours). **Being Driven** is the willing-to-work-for-it move (agency, ownership, strategy directed at the right target). **Renewal** is the consistent move (systematic return, learning from what the practice produces). Brady named all three; the Quest Engine puts them in sequence so the dependency is clear.
 
+A useful parallel comes from Craig W. Reynolds' 1987 SIGGRAPH paper, [*Flocks, Herds, and Schools: A Distributed Behavioral Model*](https://www.red3d.com/cwr/papers/1987/boids.html). Reynolds describes three local rules for flocking: collision avoidance, velocity matching, and flock centering. Mapped to Quest Engine terms: collision avoidance starts with **Searching** (contextual awareness of nearby flockmates and conditions), velocity matching is **Being Driven** (action after reading position, speed, and environment), and flock centering aligns with **Renewal** (consistent returning toward coherence with the group).
+
 Brady's three-part phrase in transmission loses "willing to work for it" and becomes *consistent. Determined.* (the start and end of the cycle with nothing connecting them). Add the middle back, reordered to show the flow, and it reads: **Determined. Driven. Consistent.** That's not just a rephrasing. It's the sequence that prevents determination and consistency from becoming very disciplined motion in the wrong direction.
 
 ---
