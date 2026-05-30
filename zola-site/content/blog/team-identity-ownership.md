@@ -1,11 +1,13 @@
 +++
-title = "Team Identity Is Local"
+title = "Team Identity Ownership"
 date = "2026-05-30"
-description = "In open source, the thing that holds people together comes for free: a shared interest, a shared language, a name you picked yourselves. Inside a company you get assigned to a team and have to build that identity on purpose. The two-pizza rule applies, and the name matters more than people think."
+description = "Choosing a name is the first step in taking your team's destiny into your own hands. It is the first thing that creates a sense of belonging, and it is often ignored even though it is such a multiplier. Belonging cannot be dictated. It has to be adopted. It has to be organic."
 template = "blog-post.html"
 categories = ["leadership", "teams", "culture"]
-tags = ["team-identity", "open-source", "team-cohesion", "principles", "two-pizza-rule"]
+tags = ["team-identity", "ownership", "open-source", "team-cohesion", "principles", "two-pizza-rule"]
 +++
+
+Team identity is the first place a team takes ownership. Everything else about a team can be handed to it (the goals, the problem, the people, the place in the org chart), but the identity is the one thing the team can claim for itself. Choosing a name is the first step into taking your destiny into your own hands and starting to take care of your own. It is the first thing that creates a sense of belonging, and it is so often ignored even though it is such a multiplier. The thing to understand up front is that belonging cannot be dictated. A sense of being part of the team has to be adopted, not assigned. It has to be organic. The rest of this post is about how that ownership gets built, and why it has to stay local to work.
 
 I have been writing software for more than a decade, but I came to open source only recently. The first thing I noticed was that nobody there talks about a "team." They talk about a community. When I was deep in the Swift world, we even tried to give ourselves a name: Swifties. It never really stuck (people kept trying, and there were always jokes about how it borrowed from a certain pop star's fan base). But the attempt is the interesting part. We had a common language, a common set of rules, and a common way of communicating (the forums, the GitHub issues). The community *was* the team, and the glue showed up on its own. Everyone was already there because they liked the thing.
 
