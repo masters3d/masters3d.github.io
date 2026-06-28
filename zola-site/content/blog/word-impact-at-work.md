@@ -1,5 +1,5 @@
 +++
-title = "The Word \"Impact\" Is the Problem at Work"
+title = "The Word \"Impact\" Considered Harmful at Work"
 date = "2026-06-28"
 description = "A reflection on why the word impact is too overloaded for work conversations, and why accomplishments and outcomes are clearer alternatives."
 template = "blog-post.html"
@@ -49,4 +49,4 @@ These words tell me what actually happened.
 
 So when I describe work, I try to avoid "impact." Not because the word is always wrong, but because it is too vague for the kind of precision good teams need.
 
-The impact of using impact to both mean positive and negative movement of the needle is negative. Impactful.
+The impact of using impact to both mean positive and negative movement of the needle is negative (and that is exactly why the word feels unhelpful in the first place).
