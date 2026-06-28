@@ -1,5 +1,5 @@
 +++
-title = "Why the Word \"Impact\" Doesn't Work for Me at Work"
+title = "The Word \"Impact\" Is the Problem at Work"
 date = "2026-06-28"
 description = "A reflection on why the word impact is too overloaded for work conversations, and why accomplishments and outcomes are clearer alternatives."
 template = "blog-post.html"
@@ -31,6 +31,10 @@ Take learning as an example. Learning can look like zero immediate effect until 
 
 And consider Benjamin Franklin's long run of failed experiments before breakthrough discoveries. Were those failures "not impactful" because they did not produce immediate visible results? I would say they were essential steps in a larger arc of accomplishment.
 
+There is another ambiguity problem: prevention work. Teams often give more credit to the person who fixes a visible failure than to the person who prevented the failure in the first place. We praise the dramatic rescue, even if someone else quietly prevented ten similar incidents. In plain business terms, there should be no difference between making money and saving money. But "impact" language often favors visible events over prevention behaviors and prevention systems.
+
+The same issue appears in "moving the needle." Yes, you can strike a needle and make it move for a moment. But what system keeps positive movement stable, measured, and sustained? If there is no monitoring and no reinforcement, that movement will drift back. The system that preserves gains matters more than the momentary move.
+
 To me, "impact" feels bumpy (like square wheels). You still move, but every turn is noisy. I would rather use language that feels more like round wheels: steady, clear, and directional.
 
 I would rather say:
@@ -44,3 +48,5 @@ I would rather say:
 These words tell me what actually happened.
 
 So when I describe work, I try to avoid "impact." Not because the word is always wrong, but because it is too vague for the kind of precision good teams need.
+
+The impact of using impact to both mean positive and negative movement of the needle is negative. Impactful.
