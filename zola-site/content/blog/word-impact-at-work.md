@@ -15,6 +15,8 @@ That is the problem for me. The word is too overloaded.
 
 Two people can use "impact" in the same meeting and mean opposite things. One person means value created. Another means harm done. Everyone hears the same word, but not the same meaning.
 
+And it shows up everywhere. Product updates say "high-impact feature." Compliance memos say "impacted regions." Incident calls say "customer impact." Performance templates ask for "impact statements." We keep using one label for wins, losses, and side effects, then wonder why conversations drift.
+
 I think that confusion matters because language shapes focus.
 
 When teams review every six months, "impact" often becomes a short-term scoreboard. But what if your horizon is years? Many accomplishments compound slowly and only become obvious later. Early learning, foundational design, and system cleanup can look quiet for a long time before they create a hockey-stick curve.
@@ -47,6 +49,12 @@ I would rather say:
 
 These words tell me what actually happened.
 
-So when I describe work, I try to avoid "impact." Not because the word is always wrong, but because it is too vague for the kind of precision good teams need.
+If I had to keep the word, I would reserve it for narrow cases (for example, a formal semester performance review rubric where terms are predefined and everyone agrees on the same meaning). Outside of that, I think it hurts clarity more than it helps.
+
+This post title is also a small homage to Edsger Dijkstra's "Go To Statement Considered Harmful." Not because "impact" is syntactically illegal (the compiler still accepts it), but because in normal conversation it jumps control flow straight past precision.
 
 The impact of using impact to both mean positive and negative movement of the needle is negative (and that is exactly why the word feels unhelpful in the first place).
+
+---
+
+*Related reading: [Context Hunting vs Context Gathering](/blog/context-hunting-vs-context-gathering/), [Effort Tracking vs Task Tracking](/blog/effort-tracking-vs-task-tracking/), and [Why I Love Worklogs](/blog/why-i-love-worklogs/).*
