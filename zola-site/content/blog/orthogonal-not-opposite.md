@@ -32,3 +32,7 @@ People systems are full of these invented sliders, and they are expensive becaus
 That is the real turn. A healthy people system does not ask people to slide to a compromise between two good things. It engineers away the false tradeoff so the both-and corner becomes reachable for ordinary people on an ordinary day. Tooling, scaffolding, and good process are the kitchen techniques that let you turn up two dials at once without the dish falling apart.
 
 The compromise in the middle is what you settle for when you have accepted someone else's line. The corner is what you can reach the moment you refuse the false opposite and start asking, for every pair of qualities you were told to trade between, whether they were ever opposites at all, or just two different kinds of sweet.
+
+---
+
+*This is part of a running thread on names and dichotomies that don't survive a second look. [Context Hunting vs Context Gathering](/blog/context-hunting-vs-context-gathering/) and [Stop Conflating Effort Tracking with Work Tracking](/blog/effort-tracking-vs-task-tracking/) take two more pairs that get treated as opposites and pull them apart. The "engineer away the tradeoff" turn is the same systems-over-heroics idea in [Minimize Humans as Glue](/blog/minimize-humans-as-glue/) and [Leverage and the Stairs You Build](/blog/leverage-and-the-stairs-you-build/), and the both-and corner is the high-agency, coachable profile the [Quest Engine](/blog/quest-engine-introduction/) is built around.*
