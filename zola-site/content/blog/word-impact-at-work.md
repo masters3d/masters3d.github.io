@@ -49,7 +49,7 @@ I would rather say:
 
 These words tell me what actually happened.
 
-If I had to keep the word, I would reserve it for narrow cases (for example, a formal semester performance review rubric where terms are predefined and everyone agrees on the same meaning). Outside of that, I think it hurts clarity more than it helps.
+If I had to keep the word, I would reserve it for narrow cases (for example, a formal six-month performance review rubric where terms are predefined and everyone agrees on the same meaning). Outside of that, I think it hurts clarity more than it helps.
 
 This post title is also a small homage to Edsger Dijkstra's "Go To Statement Considered Harmful." Not because "impact" is syntactically illegal (the compiler still accepts it), but because in normal conversation it jumps control flow straight past precision.
 
