@@ -1,5 +1,5 @@
 +++
-title = "Bad Is a Blast Radius, Not a Verdict"
+title = "A Case Against 'Bad' in Engineering"
 date = "2026-07-02"
 description = "I used to say bad version, bad rollout, bad payload. I stopped, because a version isn't good or bad in the abstract. It's a distribution of outcomes across a population of users, configs, and use cases. The same payload can be flawless for 99% and broken for 0.5%, and calling it bad collapses that spectrum onto one label that quietly dictates how you triage, communicate, and remember the incident."
 template = "blog-post.html"
