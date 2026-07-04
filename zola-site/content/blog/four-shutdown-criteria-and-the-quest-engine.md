@@ -11,6 +11,17 @@ Mustafa Suleyman was asked a direct question: is there anything you could see an
 
 Because read that list again with a single substitution. Stop picturing a datacenter and picture a person. An individual who gets better at getting better, who chooses their own goals, who builds their own leverage, and who acts without waiting for permission is not a threat to be contained. That is the most capable colleague you have ever worked with. That is precisely the person the [Quest Engine](/blog/quest-engine-introduction/) is built to produce. The same four capabilities that are shutdown criteria in a machine are the growth criteria in a human. What we are terrified to see in silicon is exactly what we are trying to develop in ourselves.
 
+Here is the whole mapping in one place. One of Suleyman's four criteria is the WHY, and the other three are the HOW. Each row is the same capability read two ways: shutdown criterion in a machine, growth move in a human.
+
+| Suleyman's criterion | Quest Engine part | Layer | Human version |
+|---|---|---|---|
+| Setting its own goals | Objective Function | WHY (above the cycle) | Choosing an objective that is intrinsically yours |
+| Acquiring its own resources | Search (Contextual Awareness) | HOW (before you act) | Building capability and leverage |
+| Acting autonomously | Drive (Clear Strategy) | HOW (while you act) | Taking action without a permission loop |
+| Recursive self-improvement | Renew (Systematic Improvement) | HOW (after you act) | Improving how you improve |
+
+The rest of this post walks each row and then names the one thing the machine framing exposes that the framework leaves to you.
+
 ## The Same Four Capabilities, Two Opposite Verdicts
 
 The reason the verdict flips is not that the capabilities are different. It is that the alignment is different. When an AI acquires these four powers, we panic because its objective function is external to it: we imposed a goal from the outside and we have no guarantee the system will keep honoring it once it can rewrite itself. Suleyman's own words name the failure precisely (the alignment problem becomes unsolvable once the system is choosing what to be aligned with). The danger was never the capability. The danger was capability without a trustworthy why.
