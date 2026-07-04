@@ -101,10 +101,10 @@ print_list() {
 
 echo "Comparing all '${REMOTE}' branches against '${TARGET_REF}'"
 
-print_list "UNMERGED - clean (would merge into ${TARGET_BRANCH} without conflicts)" "${unmerged_clean[@]}"
-print_list "UNMERGED - conflicts (has content not in ${TARGET_BRANCH}, needs conflict resolution)" "${unmerged_conflict[@]}"
-print_list "UNMERGED - unrelated history (cannot auto-merge; e.g. gh-pages)" "${unmerged_unrelated[@]}"
-print_list "Already merged (content already in ${TARGET_BRANCH}; safe to delete)" "${merged[@]}"
+print_list "UNMERGED - clean (would merge into ${TARGET_BRANCH} without conflicts)" ${unmerged_clean[@]+"${unmerged_clean[@]}"}
+print_list "UNMERGED - conflicts (has content not in ${TARGET_BRANCH}, needs conflict resolution)" ${unmerged_conflict[@]+"${unmerged_conflict[@]}"}
+print_list "UNMERGED - unrelated history (cannot auto-merge; e.g. gh-pages)" ${unmerged_unrelated[@]+"${unmerged_unrelated[@]}"}
+print_list "Already merged (content already in ${TARGET_BRANCH}; safe to delete)" ${merged[@]+"${merged[@]}"}
 
 total_unmerged=$(( ${#unmerged_clean[@]} + ${#unmerged_conflict[@]} + ${#unmerged_unrelated[@]} ))
 printf '\nSummary: %d unmerged, %d already merged.\n' "${total_unmerged}" "${#merged[@]}"
