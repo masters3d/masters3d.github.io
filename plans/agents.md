@@ -28,6 +28,12 @@
 - **Preserve**: Original index.html, stylesheets, images
 - **Document**: All changes in plans/ folder
 
+### 5. Pull Request Target Branch
+**DECIDED**: Always open pull requests against `master`
+- **Rule**: Every PR must target the `master` branch as its base, unless the user explicitly asks for a different base
+- **Rationale**: `master` is the default branch and the single source of truth; PRs accidentally based on another working branch (e.g. another `copilot/*` branch) do not reach `master` when merged
+- **Before creating a PR**: verify the base branch is `master`; if a PR was opened against the wrong base, retarget it to `master`
+
 ## Session Consistency Rules
 
 ### When Starting New Sessions
@@ -156,7 +162,7 @@ masters3d.github.io/
 **A**: Portfolio migration COMPLETED and DEPLOYED. Now in Enhancement & Optimization phase.
 
 **Q**: "What branch should I be on?"  
-**A**: `enhancements-and-optimizations` for current work (check session-context.md)
+**A**: `enhancements-and-optimizations` for current work (check session-context.md). **Always open pull requests against `master`** (see Core Decision 5).
 
 **Q**: "Where is the live site?"  
 **A**: https://masters3d.com (deployed) and https://masters3d.github.io (GitHub Pages)
