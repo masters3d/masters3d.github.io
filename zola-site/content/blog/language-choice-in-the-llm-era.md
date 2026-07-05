@@ -77,4 +77,4 @@ We've seen this play out in real projects. The Ladybird browser initially attemp
 
 ---
 
-*For more on my experience with Rust development in the LLM era, see [My AI Tools Journey Since Claude Opus 4.5](/blog/ai-tools-journey-opus-4-5/).*
+*For more on my experience with Rust development in the LLM era, see [My AI Tools Journey Since Claude Opus 4.5](/blog/ai-tools-journey-opus-4-5/). For why my favorite language never made it into my professional work, see [My Swift Journey: Why I Love It but Can't Use It at Work](/blog/swift-journey-why-not-professional/).*
