@@ -39,7 +39,14 @@ show_reading_time = true
 [link_checker]
 # skip_prefixes: add URL prefixes here to skip specific domains (e.g. ["https://example.com/"])
 # xcancel.com is a flaky X/Twitter mirror that intermittently returns 503; skip it.
-skip_prefixes = ["https://xcancel.com/"]
+# YouTube rate-limits automated link checkers and returns 429 (Too Many Requests),
+# which causes false-positive broken-link failures in CI; skip both youtube.com and youtu.be.
+skip_prefixes = [
+    "https://xcancel.com/",
+    "https://www.youtube.com/",
+    "https://youtube.com/",
+    "https://youtu.be/",
+]
 # skip_anchor_prefixes: add URL prefixes here to skip anchor checking for specific domains
 # Note: zola check always validates external links — this is intentional.
 # To skip a known-flaky domain, add its prefix to skip_prefixes above.
