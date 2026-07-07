@@ -1,0 +1,44 @@
++++
+title = "World Cup 2026: Star Players, Team Strategy, and the Single Point of Failure"
+date = "2026-07-07"
+description = "Watching the World Cup 2026, the team conversations look completely different depending on the squad. A star player only matters when the strategy is built to give them chances and to survive without them. The same balance shows up in engineering: develop multiple star players, rotate the load, and raise the whole average instead of betting everything on one person."
+template = "blog-post.html"
+categories = ["leadership", "teams", "culture"]
+tags = ["world-cup", "soccer", "team-dynamics", "star-players", "single-point-of-failure", "quest-engine", "team-cohesion"]
++++
+
+I have been watching a lot of the World Cup 2026, not all of it (there are far too many games for that), but many of them when time allows. The thing that keeps pulling my attention is not the scoreline. It is that the *team conversation* looks completely different depending on which squad is on the pitch. Some teams talk like a collection of individuals who happen to wear the same shirt. Others talk like a single organism. Watching that difference play out, game after game, made me want to write down the pattern, because it is the same pattern I keep running into in engineering.
+
+Go back to Messi, or Maradona before him. Both make the same thing obvious: you can have a star team, but if you do not build a strategy around that team, cohesion is very hard to come by. And you can have a star player, but if you do not build a strategy around that star player, cohesion is just as hard. A star on its own is not a plan. It really comes down to whether the team gives its players chances that do not get wasted, and I think that is the actual difference between a regular player and a star.
+
+It is not a good idea to have everybody be a forward. It is not a good idea to have everyone standing there to be a shooter. If you tried to build a team that way, there would be no one to pass the ball to you, no one to defend, no one to push the play forward. So it is a balance, and it is a team effort. Even when you have a genuine star, the strategy still has to change around them, because at the end of the day it is about winning, not about the star. Having a star is good. Ideally you have more than one, so you can balance them and rotate them.
+
+## What Actually Makes a Star Player
+
+Here is my definition. A star player is someone who, when given the chance, has a high percentage of taking advantage of it. They convert. They do not waste opportunities, and the chances they create are higher quality than normal. That is it. It is not about flash. It is about recognizing a chance, executing on it, and doing it more reliably than the people around them.
+
+I have watched plenty of moments where a beautiful pass gets played through and no one is there to receive it. That is a miss, and it is a miss the whole team owns, not just the passer. I have also watched the rarer thing: a player who makes their own luck, who manufactures the chance out of almost nothing and then finishes it. That is uncommon, and it is exactly the quality worth prizing. It is recognizing the chance, going full [Quest Engine](/blog/quest-engine-introduction/) on it, and executing on the opportunity. It sounds like a cliché, but it really is about honoring the opportunity, respecting it, and acting accordingly. In the Quest Engine terms I keep coming back to, the star is the one whose searching (seeing the chance before anyone else) and being driven (committing to it without hesitation) are both sharp at the same instant.
+
+The same is true in engineering. A star engineer is not the person who talks the most or touches the most code. It is the person who, handed an ambiguous chance, recognizes it, sizes it correctly, and converts it at a higher rate than the people around them. And just like in soccer, a chance created with no one positioned to receive it is still a miss.
+
+## The Single Point of Failure
+
+Building your entire strategy around one person is not the best strategy, and the reason is boringly practical: that person is going to get sick. That person is going to need to step away. That person can leave. When you have built everything around a single hero, the moment they are gone the team is left with a structure where only one person was ever able to make progress.
+
+It gets worse when the roles pile up on the same individual. When your top scorer is also the captain, that can quietly become a problem. As a captain you often do not want to, or need to, take every shot yourself. You want the team to succeed. Being the top star should not automatically make you the captain, even though the two so often land on the same person. The management structure and the scoring structure are not a one-to-one mapping, and they should not be. Forcing them to line up just means you are trying to make one routine do two jobs, and neither gets done well.
+
+I do not want to pretend there is no value here. There is real value in having a single point of failure who is the person that scores the most goals, for a short and fairly certain stretch of time. Sometimes you do need that. But it is not a viable long-term solution. The person leaves, and the whole thing that was built around them collapses. So if you are going to lean on a star, the way to make it resilient is to build in a way to rotate that star role. The star idea has to be able to move between people, or it becomes the exact fragility you were trying to avoid.
+
+Engineering has all the same failure modes. The teammate who is the only one who understands the deployment pipeline, or the one service, or the one gnarly subsystem, is a single point of failure wearing a cape. It feels great right up until they take a vacation. And stacking captain-and-top-scorer onto one person (the tech lead who is also the highest-output individual contributor and also the only on-call escalation) is the same mistake soccer teams make when they pin everything on one number nine.
+
+## Many Star Players, Not One
+
+The solution, at least in the engineering world, is that you need multiple star players, and you need to be able to *develop* multiple star players who are actually happy being on the same team. There is no fighting over the ball, no fighting the bell curve. There is no reason to fight the bell curve at all. But the average of the curve needs to be higher. You use everyone's qualities to the max, in whatever way makes the whole team better, you balance people across positions, and then you rotate them in and out of the spots that are hard to sustain. Offense versus defense is the obvious one: those are different kinds of exhausting, and nobody holds up forever in either without a break.
+
+I want to be careful here, because I am advocating for star players and I would like to think I am one of them. The point is not to flatten everyone into interchangeable parts. The point is that you want multiple stars, across multiple areas, on multiple different components, with cross-team dynamics where people are mostly working *with* each other rather than against each other. Work is not the simple game with simple rules. The dynamics are much more complicated than eleven positions on a field, which is exactly why you can have many stars in many places instead of one hero and ten supporting cast members.
+
+So to reiterate the thing I keep landing on: having a single star player who scores all the goals is probably not the best thing for the team. You want that person rotated through different environments so the capability spreads. But I do genuinely see the value of star players, because that is what lets a team gel. A star, used well, brings structure to a team. The trick, in soccer and in engineering both, is to have enough of them (and to keep the star role moving) so that no single absence ever ends the season.
+
+---
+
+*This one started as a set of notes scribbled during World Cup 2026 games and turned into another way of looking at the [Quest Engine](/blog/quest-engine-introduction/): the star is the person whose searching and driving line up on the opportunity, and a resilient team is one that renews by developing and rotating that capability instead of hoarding it in one place. For more on how teams take ownership of their own identity, see [Team Identity Ownership](/blog/team-identity-ownership/).*
