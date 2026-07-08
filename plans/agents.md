@@ -101,6 +101,27 @@
   - Goal: Improve readability and maintain storytelling quality
   - Example: A blog post should have 3 major sections marking key turning points, not 10+ sections for every topic
 
+### Blog Post Meta-Structure: The Quest Arc (Exploration → Execution → Reflection)
+
+**DECIDED**: Every blog post should be built on a single Quest-Engine backbone so it reads like a quest, not a pile of notes. Before writing (or revising) a post, name the quest: what is the angle, what question is being chased, and what is the "why" the reader should leave with. Then carry that one thread from the first line to the last.
+
+The backbone has three phases, which map directly to the [Quest Engine](/blog/quest-engine-introduction/) cycle (Search/Mastery = before, Drive/Autonomy = during, Renew/Purpose = after):
+
+1. **Exploration (Searching, the "before")** — Open with a real, personal observation or a noticed pattern, and name the question it raises. This sets up the quest and pulls the reader into Searching mode. Do not lead with the thesis; lead with what you noticed.
+2. **Execution (Driven, the "during")** — Develop the idea across 3-4 h2 sections. Move from concrete example to abstracted principle to application. Each h2 develops one component of the thesis. This is where the mechanism or definition gets pinned down.
+3. **Reflection (Renew, the "after")** — Close by looking back and answering the "why." End with an italicized reflection paragraph that (a) points backward to the synthesis, (b) points outward to related posts (cross-links), and (c) points upward to why it matters. This is a near-universal convention across existing posts and should be preserved.
+
+**Why this matters**: A post without this backbone feels incoherent even when each paragraph is fine (the reader receives no single message). The point of the quest arc is coherence: one thread the reader can follow, ending in a takeaway that answers the "why."
+
+**Observed invariants across existing posts** (verified by analyzing the current blog corpus; use these as a checklist when writing or reviewing a post):
+- **Opening observation**: present in essentially every post ("I have been watching...", "The first time I really tasted...", "I've started replacing...").
+- **Italicized closing reflection**: present in nearly every post; it always cross-links to related posts and states the takeaway.
+- **3-4 h2 sections** organizing the execution phase (see the section-break guidance above).
+- **Quest Engine mapping**: implicit or explicit, but always present — each post is itself a small search → drive → renew loop.
+- **Concrete-before-abstract**: lead with the lived example, then generalize, then connect to the broader idea web.
+
+**For agent authors and reviewers**: When drafting or revising a post, check that all three phases are present and that a single "why" runs through them. If a draft is "a collection of individuals who happen to wear the same shirt" (paragraphs with no shared thread), the fix is to name the quest and re-cohere the post around it, not to add more sections.
+
 ## Project Structure Standards
 
 ```
@@ -196,6 +217,10 @@ masters3d.github.io/
   - **Context System Enhanced**: Robust session preservation for agent continuity
   - **Live Site**: https://masters3d.com - Fully functional blog-centric portfolio
   - **Agent Restart Protocol**: Enhanced guidelines for seamless context restoration
+- **v1.4** (2026-07-08): Blog post meta-structure formalized
+  - Documented the Quest Arc backbone for posts: Exploration → Execution → Reflection
+  - Derived from analyzing the full blog corpus for the exploration/execution/reflection pattern
+  - Purpose: keep every post coherent around a single "why" instead of a set of disconnected sections
 - **Future versions**: Update when major decisions change
 
 ## Blog System Implementation (Added v1.1)
