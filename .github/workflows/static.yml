@@ -38,10 +38,14 @@ jobs:
           tool: zola@0.19.2
       
       - name: Validate site before build
+        # Runs `zola check` via a wrapper that only fails the deploy on genuinely
+        # broken links (404, missing anchors, unparseable URLs) or template
+        # errors. Links that could not be reached (network errors, timeouts,
+        # rate-limiting, transient 5xx) are warned about but do not block the
+        # deployment. Set LINK_CHECK_STRICT=1 to fail on any issue.
         run: |
-          cd zola-site
           echo "Running Zola check to validate templates and content..."
-          zola check
+          ./scripts/check-links.sh
           
       - name: Build Zola site
         run: |

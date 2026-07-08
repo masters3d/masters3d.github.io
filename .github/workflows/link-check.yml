@@ -29,10 +29,11 @@ jobs:
           tool: zola@0.19.2
 
       - name: Check all external links
-        # zola check validates every external URL in content files.
-        # A non-zero exit code means at least one link is broken — fix it in a PR.
+        # Runs `zola check` via a wrapper that tolerates links we simply could
+        # not reach (network errors, timeouts, rate-limiting, transient 5xx)
+        # while still failing on genuinely broken links (404, missing anchors,
+        # unparseable URLs). This avoids false-positive failures from flaky
+        # third-party sites. Set LINK_CHECK_STRICT=1 to fail on any issue.
         run: |
-          cd zola-site
           echo "Running scheduled external link check..."
-          zola check
-          echo "✓ All external links are healthy"
+          ./scripts/check-links.sh
