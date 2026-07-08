@@ -92,6 +92,10 @@
   - Instead of "user impact" → "user value" or "user outcomes"
   - Instead of "impact on the team" → "effect on the team" or "benefit to the team"
   - Instead of "business impact" → "business value" or "business results"
+- **Words to avoid** - Do not use these words in blog posts; prefer more precise, respectful alternatives:
+  - "stupid" - avoid entirely (dismissive and imprecise). Use "misguided", "flawed", "ill-suited", "not optimal", or name the specific problem instead
+  - "impact" - see "Avoid overloaded words" above
+  - When adding new posts or editing existing ones, survey the text for these words and remove them where they are not needed
 - **Minimize section breaks for narrative flow** - Avoid excessive section headings that break narrative flow
   - Write blog posts as cohesive stories rather than overly segmented documentation
   - Minimize h2 (##) section headings - use only for major inflection points (aim for 3-4 max in a blog post)
