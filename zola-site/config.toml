@@ -41,15 +41,15 @@ show_reading_time = true
 # xcancel.com is a flaky X/Twitter mirror that intermittently returns 503; skip it.
 # YouTube rate-limits automated link checkers and returns 429 (Too Many Requests),
 # which causes false-positive broken-link failures in CI; skip both youtube.com and youtu.be.
+# history.army.mil (US Army) blocks automated link checkers, so it fails validation
+# even though the link is valid in a browser; skip it.
 skip_prefixes = [
     "https://xcancel.com/",
     "https://www.youtube.com/",
     "https://youtube.com/",
     "https://youtu.be/",
+    "https://history.army.mil/",
 ]
 # skip_anchor_prefixes: add URL prefixes here to skip anchor checking for specific domains
-# Note: `zola check` always validates external links. CI runs it through
-# scripts/check-links.sh, which tolerates links that merely could not be reached
-# (network errors, timeouts, rate-limiting, transient 5xx) but still fails on
-# genuinely broken links (404, missing anchors). To permanently skip a known-flaky
-# domain, add its prefix to skip_prefixes above.
+# Note: zola check always validates external links — this is intentional.
+# To skip a known-flaky domain, add its prefix to skip_prefixes above.

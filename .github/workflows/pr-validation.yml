@@ -31,15 +31,14 @@ jobs:
           tool: zola@0.19.2
       
       - name: Validate external links and internal structure
-        # Runs `zola check` (templates, internal links, AND external links) via a
-        # wrapper that only fails on genuinely broken links (404, missing anchors,
-        # unparseable URLs). Links that merely could not be reached — network
-        # errors, timeouts, rate-limiting, transient 5xx — are reported as
-        # warnings instead of failing the PR. Set LINK_CHECK_STRICT=1 to fail on
-        # any issue.
+        # zola check crawls ALL external links and fails on any broken one (4xx/5xx).
+        # This is the same check that runs in the deploy workflow, so a PR that
+        # passes here will not cause a broken-link deploy failure on master.
         run: |
+          cd zola-site
           echo "Running Zola check (validates templates, internal links, AND external links)..."
-          ./scripts/check-links.sh
+          zola check
+          echo "✓ All links valid — no broken external or internal links found"
           
       - name: Build site
         run: |
