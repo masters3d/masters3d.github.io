@@ -1,14 +1,13 @@
 +++
 title = "Burnout Is a Control Problem, Not an Hours Problem"
 date = "2026-07-13"
-draft = true
 description = "More than a decade ago I burned out badly, and the obvious story (too many hours) turned out to be wrong. Burnout wasn't the work I did; it was the control I lost over where my time went, and everything the work made impossible outside of it."
 template = "blog-post.html"
 categories = ["philosophy", "mindset", "productivity"]
 tags = ["burnout", "control", "autonomy", "time", "slow-productivity", "renewal", "quest-engine", "motivation"]
 +++
 
-More than a decade ago I burned out, and burned out badly. I remember watching my own productivity fall off a cliff and not understanding why, because on paper I was working harder than ever. It was long hours for months at a time. It was travel, weeks away at a stretch. It was not feeling financially free, and it was missing the three things that make work gel (mastery, autonomy, and a purpose I believed in). The obvious story is that I worked too many hours and my body gave out. I no longer think that is the real story. The quest here is to figure out what actually broke, because the hours turned out to be a symptom of something else.
+More than a decade ago I burned out, and burned out badly. I need to say something up front that I wish someone had made me believe earlier: burnout is real, it is terrible, and it is physical. I did not think it was a real thing until it happened to me. I assumed it was a figure of speech, a dramatic word for being tired, something you pushed through. It is not. It is a physical reaction that happens to you, and when it arrives it can become almost impossible to do anything at all. Plenty of people have written about this, and I suspect most descriptions still undersell how real it is. I would not recommend it to anybody. I remember watching my own productivity fall off a cliff and not understanding why, because on paper I was working harder than ever. It was long hours for months at a time. It was travel, weeks away at a stretch. It was not feeling financially free, and it was missing the three things that make work gel (mastery, autonomy, and a purpose I believed in). The obvious story is that I worked too many hours and my body gave out. I no longer think that is the whole story. The quest here is to figure out what actually broke, because the hours turned out to be a symptom of something else.
 
 ## It Was Never Just the Hours
 
