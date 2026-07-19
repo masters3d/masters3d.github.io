@@ -43,12 +43,16 @@ show_reading_time = true
 # which causes false-positive broken-link failures in CI; skip both youtube.com and youtu.be.
 # history.army.mil (US Army) blocks automated link checkers, so it fails validation
 # even though the link is valid in a browser; skip it.
+# developer.apple.com sits behind bot protection that returns 403 to automated
+# checkers (Apple Developer Forums / archived docs), so it fails validation even
+# though the links are valid in a browser; skip it.
 skip_prefixes = [
     "https://xcancel.com/",
     "https://www.youtube.com/",
     "https://youtube.com/",
     "https://youtu.be/",
     "https://history.army.mil/",
+    "https://developer.apple.com/",
 ]
 # skip_anchor_prefixes: add URL prefixes here to skip anchor checking for specific domains
 # Note: zola check always validates external links — this is intentional.
