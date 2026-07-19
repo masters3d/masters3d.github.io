@@ -43,12 +43,16 @@ show_reading_time = true
 # which causes false-positive broken-link failures in CI; skip both youtube.com and youtu.be.
 # history.army.mil (US Army) blocks automated link checkers, so it fails validation
 # even though the link is valid in a browser; skip it.
+# archive.org (Internet Archive) frequently times out for automated checkers
+# (it serves large scanned collections and rate-limits crawlers), causing
+# intermittent false-positive "operation timed out" failures in CI; skip it.
 skip_prefixes = [
     "https://xcancel.com/",
     "https://www.youtube.com/",
     "https://youtube.com/",
     "https://youtu.be/",
     "https://history.army.mil/",
+    "https://archive.org/",
 ]
 # skip_anchor_prefixes: add URL prefixes here to skip anchor checking for specific domains
 # Note: zola check always validates external links — this is intentional.
