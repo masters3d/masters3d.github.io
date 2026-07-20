@@ -42,6 +42,27 @@ zola serve
 - `zola-site/public/` - Complete built website (auto-generated)
 - All files in `public/` are rebuilt on every Zola build
 
+## 📏 Markdown Line Wrapping (Required)
+
+Blog Markdown is wrapped to a fixed line width (80 columns) so that edits show
+up as small, line-level diffs instead of whole-paragraph diffs.
+
+**This does not change the rendered page.** In Markdown a single newline inside
+a paragraph is a "soft break" that renders as a space, so wrapping only affects
+the `.md` source, never the generated HTML. A real line break still requires two
+trailing spaces (a hard break), and the tool preserves those exactly.
+
+**Before committing any blog Markdown change**, run the portable formatter:
+
+```bash
+python3 scripts/wrap_markdown.py          # wrap all blog posts
+python3 scripts/wrap_markdown.py --check   # verify only (used by CI)
+```
+
+The script is standard-library-only Python 3 (works on Linux, macOS and
+Windows) and is enforced by the PR Validation workflow — a PR whose blog
+Markdown is not wrapped will fail the `validate` check.
+
 ## 🔄 Deployment Process
 
 **Automatic via GitHub Actions:**
@@ -88,7 +109,8 @@ tags = ["tag1", "tag2"]
 +++
 ```
 3. Write content in markdown below the frontmatter
-4. Commit and push
+4. Wrap the Markdown lines: run `python3 scripts/wrap_markdown.py`
+5. Commit and push
 
 ### 📄 Editing Existing Pages
 

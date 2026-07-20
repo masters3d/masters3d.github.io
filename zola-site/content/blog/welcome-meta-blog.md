@@ -7,14 +7,19 @@ categories = ["meta", "ai", "development"]
 tags = ["agents", "blogging", "zola", "automation", "ai-development"]
 +++
 
-Welcome to my blog! This first post is a bit meta - it's about how this entire blog system was created using AI agents, and it serves as both a welcome message and a technical documentation of the process.
+Welcome to my blog! This first post is a bit meta - it's about how this entire
+blog system was created using AI agents, and it serves as both a welcome message
+and a technical documentation of the process.
 
 ## The Agent-Driven Development Story
 
-This blog wasn't built the traditional way. Instead, I used **coding agents** - AI assistants designed for software development - to design, implement, and populate the entire blog system. Here's what happened:
+This blog wasn't built the traditional way. Instead, I used **coding agents** -
+AI assistants designed for software development - to design, implement, and
+populate the entire blog system. Here's what happened:
 
 ### The Request
-I simply asked: *"I want you to keep working on this for many hours and even add RSS support. Feel free to create the PR but do not merge anything."*
+I simply asked: *"I want you to keep working on this for many hours and even add
+RSS support. Feel free to create the PR but do not merge anything."*
 
 ### The Result
 The coding agent delivered a complete, production-ready blog system with:
@@ -29,7 +34,8 @@ The coding agent delivered a complete, production-ready blog system with:
 
 ## Technical Architecture
 
-The blog system is built on [Zola](https://www.getzola.org/), a fast static site generator written in Rust. Here's the structure:
+The blog system is built on [Zola](https://www.getzola.org/), a fast static site
+generator written in Rust. Here's the structure:
 
 ```
 zola-site/
@@ -139,11 +145,15 @@ Here are the key frontmatter fields you can use:
 
 ## The Power of AI-Assisted Development
 
-What's remarkable about this system is that it was created entirely through natural language conversation with coding agents. No manual template writing, no CSS debugging, no configuration headaches.
+What's remarkable about this system is that it was created entirely through
+natural language conversation with coding agents. No manual template writing, no
+CSS debugging, no configuration headaches.
 
 ### Repository-Based Agent Context
 
-A key innovation in this approach is that **the agent context is stored directly in the repository itself**. The `plans/agents.md` file contains instructions and guidelines that future coding agents can reference, ensuring:
+A key innovation in this approach is that **the agent context is stored directly
+in the repository itself**. The `plans/agents.md` file contains instructions and
+guidelines that future coding agents can reference, ensuring:
 
 - ✅ **Consistent development patterns** across different AI models
 - ✅ **Preserved institutional knowledge** about the system architecture
@@ -151,7 +161,9 @@ A key innovation in this approach is that **the agent context is stored directly
 - ✅ **Model-agnostic approach** - works with various coding AI systems
 - ✅ **Version-controlled context** - agent instructions evolve with the code
 
-This means whether using GPT-4, Claude, Gemini, or any future coding AI, the repository contains the context needed to maintain and extend the system correctly.
+This means whether using GPT-4, Claude, Gemini, or any future coding AI, the
+repository contains the context needed to maintain and extend the system
+correctly.
 
 ### What the Coding Agent Delivered
 - **Complete template system** with proper Zola/Tera syntax
@@ -182,7 +194,8 @@ This blog system embraces the philosophy of **Markdown as source of truth**:
 
 ## RSS Feed and Syndication
 
-The blog automatically generates an RSS/Atom feed at `/blog/atom.xml`. This means:
+The blog automatically generates an RSS/Atom feed at `/blog/atom.xml`. This
+means:
 
 - Readers can subscribe to get automatic updates
 - Content can be syndicated to other platforms
@@ -201,21 +214,32 @@ This blog system is designed to scale. You can:
 
 ## Agent Instructions for Future Sessions
 
-For future coding agents working on this blog system, here are the key principles:
+For future coding agents working on this blog system, here are the key
+principles:
 
 1. **Markdown is source of truth** - all content lives in `.md` files
 2. **Templates are in `zola-site/templates/`** - follow existing patterns
 3. **CSS is modular** - blog styles are in `static/css/blog.css`
 4. **Configuration is in `config.toml`** - maintain RSS and taxonomy settings
 5. **Build with `zola build`** - always test changes locally first
-6. **Preserve the simple workflow** - adding posts should remain a simple file creation
+6. **Preserve the simple workflow** - adding posts should remain a simple file
+   creation
 
 ## Conclusion
 
-This blog represents a new paradigm in web development: **conversational coding with AI agents**. What traditionally would have taken hours of manual template writing, CSS debugging, and configuration was accomplished through natural language instruction.
+This blog represents a new paradigm in web development: **conversational coding
+with AI agents**. What traditionally would have taken hours of manual template
+writing, CSS debugging, and configuration was accomplished through natural
+language instruction.
 
-The result is a fast, maintainable, and feature-rich blog system that puts content creation first. Whether you're writing technical tutorials, sharing career insights, or documenting project learnings, this system gets out of your way and lets you focus on what matters: the content.
+The result is a fast, maintainable, and feature-rich blog system that puts
+content creation first. Whether you're writing technical tutorials, sharing
+career insights, or documenting project learnings, this system gets out of your
+way and lets you focus on what matters: the content.
 
 ---
 
-*This post was created as part of a coding agent's comprehensive blog system implementation. The agent not only built the technical infrastructure but also created this documentation to ensure the system remains maintainable and understandable for future development.*
+*This post was created as part of a coding agent's comprehensive blog system
+implementation. The agent not only built the technical infrastructure but also
+created this documentation to ensure the system remains maintainable and
+understandable for future development.*

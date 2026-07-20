@@ -34,6 +34,14 @@
 - **Rationale**: `master` is the default branch and the single source of truth; PRs accidentally based on another working branch (e.g. another `copilot/*` branch) do not reach `master` when merged
 - **Before creating a PR**: verify the base branch is `master`; if a PR was opened against the wrong base, retarget it to `master`
 
+### 6. Markdown Line Wrapping
+**DECIDED**: Blog Markdown is wrapped to a fixed line width (80 columns) using `scripts/wrap_markdown.py`
+- **Rationale**: One-line-per-paragraph posts produce whole-paragraph diffs; wrapping yields small, reviewable line-level diffs
+- **Guarantee**: Wrapping only inserts Markdown soft breaks (single newlines), which render as spaces, so the generated HTML is unchanged. Hard breaks (two trailing spaces) are preserved verbatim
+- **Rule for agents**: After creating or editing any blog post, run `python3 scripts/wrap_markdown.py` (standard-library Python 3, portable across Linux/macOS/Windows) before committing
+- **Enforced**: The PR Validation workflow runs `python3 scripts/wrap_markdown.py --check`; unwrapped Markdown fails CI
+- **Do NOT** hand-wrap or hand-reflow paragraphs; always let the script do it so the result is deterministic and idempotent
+
 ## Session Consistency Rules
 
 ### When Starting New Sessions
@@ -265,8 +273,9 @@ masters3d.github.io/
    +++
    ```
 3. **Write content**: Standard Markdown below frontmatter
-4. **Test locally**: `cd zola-site && zola serve`
-5. **Build**: `zola build` before committing
+4. **Wrap lines**: `python3 scripts/wrap_markdown.py` (required; keeps diffs small, does not change rendered output)
+5. **Test locally**: `cd zola-site && zola serve`
+6. **Build**: `zola build` before committing
 
 ### Blog Guidelines for Agents
 - **Preserve workflow**: Keep simple file-based posting

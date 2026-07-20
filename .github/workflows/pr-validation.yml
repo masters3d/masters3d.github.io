@@ -95,6 +95,17 @@ jobs:
           echo "✓ Blog feed contains $ENTRY_COUNT posts"
           echo "✓ Feed structure validated"
           
+      - name: Validate Markdown line length in blog posts
+        # Enforces a maximum line width on blog Markdown so edits produce small,
+        # readable diffs. The formatter only inserts Markdown "soft breaks"
+        # (single newlines), which render as spaces, so the rendered HTML is
+        # unchanged. If this fails, run `python3 scripts/wrap_markdown.py` locally
+        # and commit the result.
+        run: |
+          echo "Checking blog Markdown line length (portable Python, no deps)..."
+          python3 scripts/wrap_markdown.py --check
+          echo "✓ All blog posts are wrapped to the configured line width"
+
       - name: Validate date formats in blog posts
         run: |
           cd zola-site/content/blog

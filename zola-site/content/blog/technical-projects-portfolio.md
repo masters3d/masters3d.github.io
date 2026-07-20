@@ -8,20 +8,27 @@ categories = ["portfolio", "development", "technology"]
 tags = ["ios", "swift", "react", "web-development", "mobile", "automation", "devops"]
 +++
 
-A comprehensive collection of software development projects spanning mobile applications, web development, system tools, and emerging technologies.
+A comprehensive collection of software development projects spanning mobile
+applications, web development, system tools, and emerging technologies.
 
 [View All Projects on GitHub →](https://github.com/masters3d?tab=repositories)
 
 ## 📱 Mobile Development
 
-iOS applications demonstrating modern Swift development, UI/UX design, and integration with various APIs and frameworks.
+iOS applications demonstrating modern Swift development, UI/UX design, and
+integration with various APIs and frameworks.
 
 ### Featured iOS Projects
 
-- [**VirtualTourist**](https://github.com/masters3d/VirtualTourist) - Map application with photo tracking, demonstrating Core Data persistence and MapKit integration
-- [**OnTheMap**](https://github.com/masters3d/OnTheMap) - Social mapping app showcasing networking, authentication, and location services
-- [**BlogClient**](https://github.com/masters3d/BlogClient/) - iOS app with authentication, data persistence, and network calls using native interfaces
-- [**BreakoutGame**](https://github.com/masters3d/breakoutGame) - Brick breaking game demonstrating SpriteKit gaming framework
+- [**VirtualTourist**](https://github.com/masters3d/VirtualTourist) - Map
+  application with photo tracking, demonstrating Core Data persistence and
+  MapKit integration
+- [**OnTheMap**](https://github.com/masters3d/OnTheMap) - Social mapping app
+  showcasing networking, authentication, and location services
+- [**BlogClient**](https://github.com/masters3d/BlogClient/) - iOS app with
+  authentication, data persistence, and network calls using native interfaces
+- [**BreakoutGame**](https://github.com/masters3d/breakoutGame) - Brick breaking
+  game demonstrating SpriteKit gaming framework
 
 ### iOS Development Capabilities
 
@@ -32,11 +39,14 @@ iOS applications demonstrating modern Swift development, UI/UX design, and integ
 
 ## 🌐 Web Development
 
-Full-stack web applications showcasing modern development practices, API integration, and responsive design.
+Full-stack web applications showcasing modern development practices, API
+integration, and responsive design.
 
 ### Featured Web Projects
 
-**Note**: Web development projects are currently in private repositories or under development. Skills and technologies demonstrated through other portfolio projects and professional experience.
+**Note**: Web development projects are currently in private repositories or
+under development. Skills and technologies demonstrated through other portfolio
+projects and professional experience.
 
 ### Web Technologies
 
@@ -47,11 +57,14 @@ Full-stack web applications showcasing modern development practices, API integra
 
 ## 🔧 System Tools & Automation
 
-Utility applications and automation tools that solve real-world problems and improve workflow efficiency.
+Utility applications and automation tools that solve real-world problems and
+improve workflow efficiency.
 
 ### Featured System Projects
 
-**Note**: System tools and automation projects are currently in private repositories or under development. Focus areas include productivity enhancement, containerization, automation scripting, file management, and system monitoring.
+**Note**: System tools and automation projects are currently in private
+repositories or under development. Focus areas include productivity enhancement,
+containerization, automation scripting, file management, and system monitoring.
 
 ### System & DevOps Skills
 
@@ -63,11 +76,15 @@ Utility applications and automation tools that solve real-world problems and imp
 
 ## 🚀 Emerging Technologies
 
-Exploration of cutting-edge technologies including machine learning, blockchain, and modern frameworks.
+Exploration of cutting-edge technologies including machine learning, blockchain,
+and modern frameworks.
 
 ### Experimental Projects
 
-**Note**: Experimental projects in emerging technologies are currently in private repositories or under development. Active exploration includes machine learning model training and deployment, smart contract development, augmented and virtual reality applications, and IoT device connectivity solutions.
+**Note**: Experimental projects in emerging technologies are currently in
+private repositories or under development. Active exploration includes machine
+learning model training and deployment, smart contract development, augmented
+and virtual reality applications, and IoT device connectivity solutions.
 
 ### Technology Exploration
 
@@ -86,7 +103,8 @@ Exploration of cutting-edge technologies including machine learning, blockchain,
 
 ## 🎯 Development Philosophy
 
-- **Problem-Solving First**: Technology serves solutions, not the other way around
+- **Problem-Solving First**: Technology serves solutions, not the other way
+  around
 - **Clean Code Practices**: Readable, maintainable, and well-documented code
 - **User-Centered Design**: Focus on user experience and practical functionality
 - **Continuous Integration**: Automated testing, deployment, and monitoring
