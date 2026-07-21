@@ -3,6 +3,7 @@ title = "Quest Engine: The Why Behind the How"
 date = "2026-04-11"
 description = "The Objective Function sits above all operational cycles and defines what success means. Through Search, Drive, and Renew, it ensures humans and agents continuously align on what 'better' looks like, what each can control, and whether they're still optimizing for the right thing."
 template = "blog-post.html"
+[taxonomies]
 categories = ["Quest Engine"]
 tags = ["quest-engine", "objective-function", "search-drive-renew", "alignment", "motivation"]
 [extra]

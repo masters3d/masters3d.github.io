@@ -3,6 +3,7 @@ title = "Burnout Is a Control Problem, Not an Hours Problem"
 date = "2026-07-13"
 description = "More than a decade ago I burned out badly, and the obvious story (too many hours) turned out to be wrong. Burnout wasn't the work I did; it was the control I lost over where my time went, and everything the work made impossible outside of it."
 template = "blog-post.html"
+[taxonomies]
 categories = ["Field Notes"]
 tags = ["burnout", "control", "autonomy", "time", "slow-productivity", "renewal", "quest-engine", "motivation"]
 [extra]

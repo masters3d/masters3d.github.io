@@ -3,6 +3,7 @@ title = "Resourcefulness Is Its Own Quest Engine"
 date = "2026-07-05"
 description = "Acquiring your own resources is one move in the Quest Engine, but zoom into that single move and it turns out to be a whole engine of its own. Being resourceful means running the full loop on the problem of getting what you need: you search for the resource, you act to acquire it, and then you improve the system that acquires. Resourcefulness is not a trait you either have or lack. It is a cycle you can run on purpose."
 template = "blog-post.html"
+[taxonomies]
 categories = ["Quest Engine"]
 tags = ["quest-engine", "resourcefulness", "search-drive-renew", "mastery", "autonomy", "purpose", "agency", "leverage"]
 [extra]

@@ -3,6 +3,7 @@ title = "Quest Engine: A Framework for Agent-Human Collaboration"
 date = "2026-04-08"
 description = "Quest Engine is a methodology built on three recursive action steps that help you solve problems at any scale. Through Searching, Being Driven, and Renewing (you compound your capability continuously). AI coding agents amplify these natural processes as tools that multiply your leverage."
 template = "blog-post.html"
+[taxonomies]
 categories = ["Quest Engine"]
 tags = ["quest-engine", "agents", "worklogs", "collaboration", "search-drive-renew", "context", "strategy", "improvement"]
 [extra]

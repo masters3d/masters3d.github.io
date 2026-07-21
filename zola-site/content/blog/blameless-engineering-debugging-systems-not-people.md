@@ -3,6 +3,7 @@ title = "Blameless Engineering: No Heroes, Just Systems"
 date = "2026-07-03"
 description = "Blameless engineering, borrowed from Google's SRE culture, is usually filed under postmortems. But the postmortem is only the last place the culture shows up. Blamelessness shifts all the way left into how you design systems, and it lands on one uncomfortable rule: the team is the unit of work, and heroes are a symptom of a system that is not yet well crafted. In the age of agents, where there is no one to blame, that rule stops being a nicety and becomes the only way to debug at all."
 template = "blog-post.html"
+[taxonomies]
 categories = ["Engineering Systems"]
 tags = ["blameless", "sre", "postmortem", "systems-thinking", "quest-engine", "agents", "no-heroes"]
 [extra]

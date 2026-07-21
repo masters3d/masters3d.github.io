@@ -3,6 +3,7 @@ title = "25 Years of Operating Systems: Windows, macOS, and Back Again"
 date = "2026-07-04"
 description = "A personal retrospective spanning 25 years of operating systems, from Windows 98, 2000, and XP through a decade of macOS to a return to Windows 10 and 11, and a look at where a fully Linux development environment might fit next."
 template = "blog-post.html"
+[taxonomies]
 categories = ["Field Notes"]
 tags = ["windows", "macos", "linux", "retrospective", "wsl", "operating-systems"]
 [extra]

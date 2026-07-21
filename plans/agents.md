@@ -149,6 +149,38 @@ wording rather than rewriting them to match newer conventions.
 What did the author notice? What specific experience supports it? What principle
 did the author extract? Why does it matter now?
 
+### Editorial Tracks: Stable Voices by Post Type
+
+**DECIDED**: Every blog post belongs to exactly one editorial track. The common
+authorial voice remains the baseline, while the track determines the post's
+emphasis, evidence, pacing, and visual treatment. Tags connect related ideas
+across tracks; they do not replace the primary track.
+
+- **Quest Engine** (`quest-engine`) - Build one connected framework. Define terms
+  precisely, show how each idea changes or extends Search, Drive, and Renew, and
+  link backward to a prerequisite and forward to an application. Use conceptual
+  comparisons only after grounding the framework in a concrete observation.
+- **Engineering Systems** (`engineering-systems`) - Lead with a failure mode,
+  constraint, or working system. Explain mechanisms before recommendations,
+  name tradeoffs and boundaries, and include enough technical evidence that a
+  reader can evaluate the argument rather than accept it on authority.
+- **AI & Tools** (`ai-and-tools`) - Write as an experiment log, not a product
+  announcement. State what was tried, what changed in the work, what failed, and
+  which judgment remained human. Prefer measured capability claims over model
+  or vendor enthusiasm.
+- **Leadership & Teams** (`leadership-and-teams`) - Begin with observed team
+  behavior. Trace incentives, ownership, communication, and system boundaries
+  before giving advice. Avoid generic management language and keep claims tied
+  to specific operating conditions.
+- **Field Notes** (`field-notes`) - Preserve first-person detail, chronology,
+  artifacts, and uncertainty. Let the lesson emerge from the record. Portfolio
+  and reference entries may use lists and more headings, but their introductions
+  and conclusions retain the common voice.
+
+Front matter uses one human-readable `categories` value plus the matching
+`extra.editorial_track` slug. Posts that participate in the Quest Engine series
+also use `extra.series = "quest-engine"` and a unique `extra.series_order`.
+
 **Content-type exceptions**: Portfolio pages, reference guides, historical
 artifacts, source lists, and appendices may use more headings, tables, or lists
 than narrative posts. Do not force the Quest Arc onto reference material. Keep

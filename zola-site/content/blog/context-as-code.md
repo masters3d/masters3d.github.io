@@ -3,6 +3,7 @@ title = "Context as Code"
 date = "2026-05-30"
 description = "Configuration earned its place next to code: versioned, reviewed, owned. The corpus of context that aligns a team (design docs, contextual documents, the why behind the system) deserves the same standard. It's the operating system humans run on, and now the grounding agents read to understand how we work."
 template = "blog-post.html"
+[taxonomies]
 categories = ["Engineering Systems"]
 tags = ["context", "configuration", "alignment", "high-agency", "knowledge-management"]
 [extra]

@@ -1,3 +1,4 @@
+{% import "macros/post-cards.html" as post_cards %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,11 +8,11 @@
     <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/simple-theme.css') }}" media="screen">
     <link rel="alternate" type="application/atom+xml" title="{{ config.title }} - Blog" href="{{ get_url(path='blog/atom.xml') }}">
 
-    <title>Category: {{ term.name }} - {{ config.title }}</title>
-    <meta name="description" content="Posts in category: {{ term.name }}">
+    <title>{{ term.name }} - {{ config.title }}</title>
+    <meta name="description" content="Posts grouped under {{ term.name }}">
   </head>
 
-  <body>
+  <body class="track-{{ term.name | slugify }}">
     <header>
       <div class="inner">
         <h1>{{ config.title }}</h1>
@@ -30,46 +31,36 @@
         <section id="main-content">
           <!-- Breadcrumbs -->
           <nav class="breadcrumbs" style="margin-bottom: 20px; font-size: 0.9em; color: var(--text-secondary);">
-            <a href="/">Home</a> → <a href="/blog/">Blog</a> → <a href="/categories/">Categories</a> → <span>{{ term.name }}</span>
+            <a href="/">Home</a> → <a href="/blog/">Blog</a> →
+            <a href="/{{ taxonomy.name }}/">{% if taxonomy.name == "categories" %}Editorial Tracks{% else %}Tags{% endif %}</a> →
+            <span>{{ term.name }}</span>
           </nav>
 
-          <h1>📂 Category: {{ term.name }}</h1>
-          <p style="color: var(--text-secondary); margin-bottom: 2em;">{{ term.pages | length }} post{% if term.pages | length != 1 %}s{% endif %} in this category</p>
+          <h1>{% if taxonomy.name == "categories" %}{{ term.name }}{% else %}Tag: {{ term.name }}{% endif %}</h1>
+          {% if taxonomy.name == "categories" and term.name == "Quest Engine" %}
+          <p class="taxonomy-description">Connected framework essays. Start with the introduction, follow the model through its foundations, then branch into applications.</p>
+          {% elif taxonomy.name == "categories" and term.name == "Engineering Systems" %}
+          <p class="taxonomy-description">Mechanism-first technical writing about architecture, reliability, languages, and engineering judgment.</p>
+          {% elif taxonomy.name == "categories" and term.name == "AI & Tools" %}
+          <p class="taxonomy-description">Experiments with agents and software tools, centered on observed changes in real work.</p>
+          {% elif taxonomy.name == "categories" and term.name == "Leadership & Teams" %}
+          <p class="taxonomy-description">Concrete observations about ownership, autonomy, communication, and team design.</p>
+          {% elif taxonomy.name == "categories" and term.name == "Field Notes" %}
+          <p class="taxonomy-description">Personal records, retrospectives, and portfolios where specific experience comes before the lesson.</p>
+          {% elif taxonomy.name == "tags" and term.name == "quest-engine" %}
+          <p class="taxonomy-description">The complete Quest Engine reading path across all five editorial tracks. The sequence moves from the core model to motivation, systems, teams, and renewal.</p>
+          {% else %}
+          <p class="taxonomy-description">Posts connected by the {{ term.name }} tag.</p>
+          {% endif %}
+          <p class="taxonomy-count">{{ term.pages | length }} post{% if term.pages | length != 1 %}s{% endif %}</p>
 
-          <div class="blog-posts">
-            {% for page in term.pages %}
-            <article class="blog-post-preview" style="margin-bottom: 2em; padding: 1.5em; border-left: 3px solid var(--accent-color); background: var(--bg-secondary);">
-              <h2 style="margin-top: 0;"><a href="{{ page.permalink }}" style="text-decoration: none; color: var(--accent-color);">{{ page.title }}</a></h2>
-              <div class="post-meta" style="color: var(--text-secondary); font-size: 0.9em; margin-bottom: 1em;">
-                📅 {{ page.date | date(format="%B %d, %Y") }}
-                {% if config.extra.show_reading_time and page.reading_time %}
-                • ⏱️ {{ page.reading_time }} min read
-                {% endif %}
-                {% if page.taxonomies.tags %}
-                <div style="margin-top: 0.5em;">
-                  🏷️ Tags: 
-                  {% for tag in page.taxonomies.tags %}
-                    <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" style="background: var(--bg-accent); padding: 2px 6px; border-radius: 3px; text-decoration: none; font-size: 0.8em;">{{ tag }}</a>
-                  {% endfor %}
-                </div>
-                {% endif %}
-              </div>
-              {% if page.description %}
-              <p style="color: var(--text-secondary); font-style: italic; margin-bottom: 1em;">{{ page.description }}</p>
-              {% endif %}
-              {% if page.summary %}
-              <div class="post-summary">
-                {{ page.summary | safe }}
-              </div>
-              {% else %}
-              <div class="post-excerpt">
-                {{ page.content | safe | truncate(length=300) }}
-              </div>
-              {% endif %}
-              <p><a href="{{ page.permalink }}" style="color: var(--accent-color);">Read more →</a></p>
-            </article>
-            {% endfor %}
-          </div>
+          {% if taxonomy.name == "tags" and term.name == "quest-engine" %}
+            {{ post_cards::render(pages=term.pages | sort(attribute="extra.series_order"), show_series=true) }}
+          {% elif taxonomy.name == "categories" and term.name == "Quest Engine" %}
+            {{ post_cards::render(pages=term.pages | sort(attribute="extra.series_order")) }}
+          {% else %}
+            {{ post_cards::render(pages=term.pages) }}
+          {% endif %}
         </section>
 
         <aside id="sidebar">
@@ -88,14 +79,17 @@
           
           <hr>
           
-          <h3>All Categories</h3>
+          {% if taxonomy.name == "categories" %}
+          <h3>All Editorial Tracks</h3>
           {% set categories_terms = get_taxonomy(kind="categories") %}
-          {% if categories_terms %}
           <ul>
             {% for category_term in categories_terms.items %}
             <li><a href="{{ category_term.permalink }}">{{ category_term.name }}</a> ({{ category_term.pages | length }})</li>
             {% endfor %}
           </ul>
+          {% else %}
+          <h3>Editorial Tracks</h3>
+          <p><a href="/categories/">Browse all five tracks</a></p>
           {% endif %}
           
           <h3>Subscribe</h3>

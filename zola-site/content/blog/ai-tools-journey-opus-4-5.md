@@ -3,6 +3,7 @@ title = "My AI Tools Journey Since Claude Opus 4.5: Rust, Scripting Languages, a
 date = "2026-02-07"
 description = "Reflecting on my experience using AI coding tools since Claude Opus 4.5, contrasting Rust and scripting language development, and insights on multi-agent workflows."
 template = "blog-post.html"
+[taxonomies]
 categories = ["AI & Tools"]
 tags = ["claude", "copilot", "agents", "rust", "powershell", "bash", "ai-development"]
 [extra]

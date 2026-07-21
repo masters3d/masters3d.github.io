@@ -3,6 +3,7 @@ title = "A Decade of Mobile Computing: From PDAs to Pocket Internet (1999-2009)"
 date = "2009-05-01"
 description = "A chronological journey through the evolution of mobile devices from 1999 to 2009. From Nokia brick phones and Sony Ericsson chocolate bars to Palm PDAs, Java games, SMS-based Twitter, and finally the iPhone 3G."
 template = "blog-post.html"
+[taxonomies]
 categories = ["Field Notes"]
 tags = ["mobile", "retrospective", "palm", "sony", "iphone", "nokia", "sony-ericsson", "motorola-razr"]
 [extra]

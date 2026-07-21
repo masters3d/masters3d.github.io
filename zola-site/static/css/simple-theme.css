@@ -18,6 +18,42 @@
   --link-hover: #66b3ff;
 }
 
+/* Editorial tracks */
+.track-quest-engine {
+  --accent-color: #b985ff;
+  --accent-hover: #cda8ff;
+  --link-color: #b985ff;
+  --link-hover: #cda8ff;
+}
+
+.track-engineering-systems {
+  --accent-color: #4da6ff;
+  --accent-hover: #79bdff;
+  --link-color: #4da6ff;
+  --link-hover: #79bdff;
+}
+
+.track-ai-and-tools {
+  --accent-color: #2dd4bf;
+  --accent-hover: #5eead4;
+  --link-color: #2dd4bf;
+  --link-hover: #5eead4;
+}
+
+.track-leadership-and-teams {
+  --accent-color: #f0b44d;
+  --accent-hover: #f6c86f;
+  --link-color: #f0b44d;
+  --link-hover: #f6c86f;
+}
+
+.track-field-notes {
+  --accent-color: #f07f6a;
+  --accent-hover: #f49b8a;
+  --link-color: #f07f6a;
+  --link-hover: #f49b8a;
+}
+
 /* Reset and Base Styles */
 * {
   box-sizing: border-box;
@@ -310,6 +346,97 @@ aside#sidebar hr {
 .blog-post-preview h2 a:hover {
   color: var(--link-color);
   text-decoration: underline;
+}
+
+.editorial-tracks {
+  margin: 2.5rem 0;
+}
+
+.editorial-track-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.track-summary,
+.editorial-track-card,
+.related-posts {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-top: 4px solid var(--accent-color);
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.track-summary h3,
+.track-title {
+  color: var(--accent-color);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.track-summary p:last-child,
+.editorial-track-card p:last-child {
+  margin-bottom: 0;
+}
+
+.track-kicker {
+  color: var(--accent-color);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+.editorial-track-card {
+  margin: 0 0 2rem;
+}
+
+.track-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+}
+
+.related-posts {
+  margin-bottom: 2rem;
+}
+
+.related-posts h4 {
+  margin-top: 0;
+}
+
+.taxonomy-description {
+  border-left: 4px solid var(--accent-color);
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  padding-left: 1rem;
+}
+
+.taxonomy-count,
+.post-excerpt {
+  color: var(--text-secondary);
+}
+
+.track-field-notes .post-content {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.track-engineering-systems .post-content pre {
+  border-left: 4px solid var(--accent-color);
+}
+
+.track-quest-engine .post-content blockquote {
+  background: var(--bg-secondary);
+  border-radius: 0 8px 8px 0;
+  padding-bottom: 0.75rem;
+  padding-top: 0.75rem;
 }
 
 .post-meta {

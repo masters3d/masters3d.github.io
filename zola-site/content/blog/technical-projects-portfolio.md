@@ -3,6 +3,7 @@ title = "Technical Projects & Development Portfolio"
 date = "2015-03-20"
 description = "Software development projects spanning mobile applications, web development, system tools, and emerging technologies."
 template = "blog-post.html"
+[taxonomies]
 categories = ["Field Notes"]
 tags = ["ios", "swift", "react", "web-development", "mobile", "automation", "devops"]
 [extra]

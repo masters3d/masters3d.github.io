@@ -33,16 +33,25 @@
 
           {{ section.content | safe }}
 
+          {% include "partials/editorial-tracks.html" %}
+
           {% if paginator and paginator.pages %}
           <div class="blog-posts">
             {% for page in paginator.pages %}
-            <article class="blog-post-preview" style="margin-bottom: 2em; padding: 1em; border-left: 3px solid var(--accent-color);">
+            <article class="blog-post-preview track-{{ page.extra.editorial_track | default(value='field-notes') }}" style="margin-bottom: 2em; padding: 1em;">
               <h2 style="margin-top: 0;"><a href="{{ page.permalink }}" style="text-decoration: none; color: var(--accent-color);">{{ page.title }}</a></h2>
               <div class="post-meta" style="color: var(--text-secondary); font-size: 0.9em; margin-bottom: 1em;">
                 📅 {{ page.date | date(format="%B %d, %Y") }}
-                {% if page.extra.tags %}
+                {% if page.taxonomies.categories %}
+                <span style="margin-left: 1em;">📂
+                  {% for category in page.taxonomies.categories %}
+                  <a href="{{ get_taxonomy_url(kind='categories', name=category) }}">{{ category }}</a>
+                  {% endfor %}
+                </span>
+                {% endif %}
+                {% if page.taxonomies.tags %}
                 <span style="margin-left: 1em;">🏷️ 
-                {% for tag in page.extra.tags %}
+                {% for tag in page.taxonomies.tags %}
                   <span style="background: var(--bg-accent); padding: 2px 6px; border-radius: 3px; font-size: 0.8em;">{{ tag }}</span>
                   {% if not loop.last %} {% endif %}
                 {% endfor %}
@@ -64,13 +73,20 @@
           {% elif section.pages %}
           <div class="blog-posts">
             {% for page in section.pages %}
-            <article class="blog-post-preview" style="margin-bottom: 2em; padding: 1em; border-left: 3px solid var(--accent-color);">
+            <article class="blog-post-preview track-{{ page.extra.editorial_track | default(value='field-notes') }}" style="margin-bottom: 2em; padding: 1em;">
               <h2 style="margin-top: 0;"><a href="{{ page.permalink }}" style="text-decoration: none; color: var(--accent-color);">{{ page.title }}</a></h2>
               <div class="post-meta" style="color: var(--text-secondary); font-size: 0.9em; margin-bottom: 1em;">
                 📅 {{ page.date | date(format="%B %d, %Y") }}
-                {% if page.extra.tags %}
+                {% if page.taxonomies.categories %}
+                <span style="margin-left: 1em;">📂
+                  {% for category in page.taxonomies.categories %}
+                  <a href="{{ get_taxonomy_url(kind='categories', name=category) }}">{{ category }}</a>
+                  {% endfor %}
+                </span>
+                {% endif %}
+                {% if page.taxonomies.tags %}
                 <span style="margin-left: 1em;">🏷️ 
-                {% for tag in page.extra.tags %}
+                {% for tag in page.taxonomies.tags %}
                   <span style="background: var(--bg-accent); padding: 2px 6px; border-radius: 3px; font-size: 0.8em;">{{ tag }}</span>
                   {% if not loop.last %} {% endif %}
                 {% endfor %}

@@ -3,6 +3,7 @@ title = "Context Hunting vs Context Gathering"
 date = "2026-05-05"
 description = "Why the word 'hunting' matters: context doesn't just lie around waiting to be picked up. Real context requires active investigation, tracing code, chasing state transitions, and turning what you found into something the whole team can use."
 template = "blog-post.html"
+[taxonomies]
 categories = ["Engineering Systems"]
 tags = ["context", "knowledge-management", "high-agency", "documentation", "workflow"]
 [extra]

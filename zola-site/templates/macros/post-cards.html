@@ -1,0 +1,22 @@
+{% macro render(pages, show_series=false) %}
+<div class="blog-posts">
+  {% for page in pages %}
+  <article class="blog-post-preview track-{{ page.extra.editorial_track | default(value='field-notes') }}">
+    {% if show_series %}
+    <p class="track-kicker">Reading {{ page.extra.series_order }} of 25</p>
+    {% endif %}
+    <h2><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
+    <div class="post-meta">
+      <span>📅 {{ page.date | date(format="%B %d, %Y") }}</span>
+      {% if config.extra.show_reading_time and page.reading_time %}
+      <span>⏱️ {{ page.reading_time }} min read</span>
+      {% endif %}
+    </div>
+    {% if page.description %}
+    <p class="post-excerpt">{{ page.description }}</p>
+    {% endif %}
+    <p><a href="{{ page.permalink }}">Read more →</a></p>
+  </article>
+  {% endfor %}
+</div>
+{% endmacro %}

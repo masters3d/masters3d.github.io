@@ -3,6 +3,7 @@ title = "Fearless Engineering"
 date = "2026-07-02"
 description = "When I was starting out, hesitation held me back from trying things. Over time it faded, not because I got braver, but because I got a better handle on risk. Fearless engineering is not the absence of caution. It is a calculated read of what you know, what you do not, and how far a change can reach."
 template = "blog-post.html"
+[taxonomies]
 categories = ["Engineering Systems"]
 tags = ["quest-engine", "fearless", "risk-management", "bias-to-action", "systems-thinking"]
 [extra]

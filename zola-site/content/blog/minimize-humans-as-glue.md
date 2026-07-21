@@ -3,6 +3,7 @@ title = "Minimize Humans as Glue"
 date = "2026-05-30"
 description = "Tanya Reilly's 'Being Glue' names the invisible human work that holds a team together but never shows up on your own record. The deeper pattern is the same one behind every high-maintenance system: a person standing in for a fix that was never made. The goal is not to be better glue, it is to build systems that heal themselves so humans are needed as glue as rarely as possible."
 template = "blog-post.html"
+[taxonomies]
 categories = ["Engineering Systems"]
 tags = ["glue-work", "career-growth", "boundaries", "on-call", "saying-no", "systems-thinking", "self-healing", "promotion"]
 [extra]

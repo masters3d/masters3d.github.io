@@ -3,6 +3,7 @@ title = "Craftsmanship, Judgment, and Taste: What Humans Bring to Agent Collabor
 date = "2026-04-19"
 description = "When working with AI agents, craftsmanship, judgment, and taste are what humans contribute. Craftsmanship builds expertise through exploration, judgment determines what you control versus delegate, and taste guides what's worth building. These map to searching, being driven, and renewal in the Quest Engine."
 template = "blog-post.html"
+[taxonomies]
 categories = ["Quest Engine"]
 tags = ["agents", "craftsmanship", "judgment", "taste", "quest-engine", "collaboration"]
 [extra]
