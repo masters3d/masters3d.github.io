@@ -3,8 +3,11 @@ title = "One Core, Many Languages: Three Ways to Share Code on the Same Machine"
 date = "2026-07-19"
 description = "An exploration of same-node code sharing across languages through three boundaries (in-process gRPC over protobuf, WebAssembly modules, and FFI), why WebAssembly is the most versatile, and how platform and performance decide which one you use."
 template = "blog-post.html"
-categories = ["development", "architecture"]
+[taxonomies]
+categories = ["Engineering Systems"]
 tags = ["grpc", "webassembly", "wasm", "rust", "ffi", "protobuf", "zig", "ios", "android", "cross-platform"]
+[extra]
+editorial_track = "engineering-systems"
 aliases = ["/blog/sharing-code-grpc-sidecar-vs-in-process-ffi/"]
 +++
 

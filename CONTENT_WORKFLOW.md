@@ -113,13 +113,18 @@ title = "Your Post Title"
 date = 2024-09-14
 description = "SEO description"
 template = "blog-post.html"
-categories = ["category"]
+categories = ["Engineering Systems"]
 tags = ["tag1", "tag2"]
+[extra]
+editorial_track = "engineering-systems"
 +++
 ```
-3. Write content in markdown below the frontmatter
-4. Format the Markdown: run `python3 scripts/format_markdown.py`
-5. Commit and push
+3. Choose exactly one editorial track: `Quest Engine`, `Engineering Systems`,
+   `AI & Tools`, `Leadership & Teams`, or `Field Notes`
+4. Use tags for series and ideas that cross editorial tracks
+5. Write content in markdown below the frontmatter
+6. Format the Markdown: run `python3 scripts/format_markdown.py`
+7. Commit and push
 
 ### 📄 Editing Existing Pages
 
@@ -177,7 +182,9 @@ title = "Required: Post title"
 date = 2024-09-14
 description = "Required: SEO description"
 template = "blog-post.html"
-categories = ["optional"]
-tags = ["optional", "multiple"]
+categories = ["Required: one editorial track"]
+tags = ["optional", "cross-track", "topics"]
+[extra]
+editorial_track = "required-track-slug"
 +++
 ```

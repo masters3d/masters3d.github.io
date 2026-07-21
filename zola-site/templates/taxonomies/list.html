@@ -33,11 +33,11 @@
             <a href="/">Home</a> → <a href="/blog/">Blog</a> → <span>{% if taxonomy.name == "categories" %}Categories{% else %}Tags{% endif %}</span>
           </nav>
 
-          <h1>{% if taxonomy.name == "categories" %}📂 Categories{% else %}🏷️ Tags{% endif %}</h1>
-          <p style="color: var(--text-secondary); margin-bottom: 2em;">Browse posts by {% if taxonomy.name == "categories" %}category{% else %}tag{% endif %}</p>
+          <h1>{% if taxonomy.name == "categories" %}Editorial Tracks{% else %}🏷️ Tags{% endif %}</h1>
+          <p style="color: var(--text-secondary); margin-bottom: 2em;">{% if taxonomy.name == "categories" %}Five stable voices organize the complete blog. Tags provide the cross-track index.{% else %}Browse the ideas that connect posts across editorial tracks.{% endif %}</p>
 
           <div class="taxonomy-cloud" style="margin-bottom: 3em;">
-            {% for term in taxonomy.items %}
+            {% for term in terms %}
             <a href="{{ term.permalink }}" 
                style="display: inline-block; margin: 0.25em; padding: 0.5em 1em; 
                       background: var(--bg-accent); 
@@ -50,7 +50,7 @@
 
           <div class="taxonomy-list">
             <h2>All {% if taxonomy.name == "categories" %}Categories{% else %}Tags{% endif %}</h2>
-            {% for term in taxonomy.items | sort(attribute="name") %}
+            {% for term in terms | sort(attribute="name") %}
             <div style="margin-bottom: 1.5em; padding: 1em; background: var(--bg-secondary); border-radius: 8px;">
               <h3 style="margin: 0 0 0.5em 0;">
                 <a href="{{ term.permalink }}" style="text-decoration: none; color: var(--accent-color);">

@@ -45,7 +45,7 @@
     {% endif %}
   </head>
 
-  <body>
+  <body class="track-{{ page.extra.editorial_track | default(value='field-notes') }}">
     <header>
       <div class="inner">
         <h1>{{ config.title }}</h1>
@@ -109,11 +109,31 @@
             </div>
             {% endif %}
 
+            {% include "partials/editorial-track.html" %}
+
             <div class="post-content">
               {{ page.content | safe }}
             </div>
 
             <footer class="post-footer" style="margin-top: 3em; padding-top: 2em; border-top: 1px solid var(--border-color);">
+              {% if page.taxonomies.categories %}
+              {% set category_name = page.taxonomies.categories | first %}
+              {% set category = get_taxonomy_term(kind="categories", term=category_name) %}
+              <section class="related-posts" aria-labelledby="related-posts-title">
+                <h4 id="related-posts-title">Continue in {{ category_name }}</h4>
+                <ul>
+                  {% set_global related_count = 0 %}
+                  {% for related in category.pages %}
+                  {% if related.permalink != page.permalink and related_count < 3 %}
+                  <li><a href="{{ related.permalink }}">{{ related.title }}</a></li>
+                  {% set_global related_count = related_count + 1 %}
+                  {% endif %}
+                  {% endfor %}
+                </ul>
+                <p><a href="{{ category.permalink }}">View all {{ category.pages | length }} posts in this track →</a></p>
+              </section>
+              {% endif %}
+
               <!-- Social Sharing -->
               <div class="social-sharing" style="margin-bottom: 2em;">
                 <h4>Share this post:</h4>

@@ -3,8 +3,11 @@ title = "The Word \"Impact\" Considered Harmful at Work"
 date = "2026-06-28"
 description = "A reflection on why the word impact is too overloaded for work conversations, and why accomplishments and outcomes are clearer alternatives."
 template = "blog-post.html"
-categories = ["communication", "work", "leadership"]
+[taxonomies]
+categories = ["Leadership & Teams"]
 tags = ["language", "clarity", "outcomes", "accomplishments"]
+[extra]
+editorial_track = "leadership-and-teams"
 +++
 
 I do not like using the word "impact" in work settings.
@@ -17,6 +20,8 @@ impacted"), outages ("10,000 homes were impacted"), and literal collisions
 
 That is the problem for me. The word is too overloaded.
 
+## One Word, Opposite Meanings
+
 Two people can use "impact" in the same meeting and mean opposite things. One
 person means value created. Another means harm done. Everyone hears the same
 word, but not the same meaning.
@@ -27,6 +32,8 @@ Performance templates ask for "impact statements." We keep using one label for
 wins, losses, and side effects, then wonder why conversations drift.
 
 I think that confusion matters because language shapes focus.
+
+## Outcomes Matter More Than Force
 
 When teams review every six months, "impact" often becomes a short-term
 scoreboard. But what if your horizon is years? Many accomplishments compound
@@ -46,6 +53,8 @@ produce stronger results with less disruption.
 This is also why outage language sounds off to me. We say things like "we do not
 want to impact the team with an outage." But the real goal is reliability,
 trust, and recovery speed. "Impact" blurs the real engineering target.
+
+## Celebrate What Keeps Working
 
 I also think "impact" is the wrong word for celebrating accomplishments. We
 should celebrate behaviors and systems that repeatedly produce good outcomes,
@@ -79,6 +88,8 @@ momentary move.
 To me, "impact" feels bumpy (like square wheels). You still move, but every turn
 is noisy. I would rather use language that feels more like round wheels: steady,
 clear, and directional.
+
+## Use Words That Name the Result
 
 I would rather say:
 

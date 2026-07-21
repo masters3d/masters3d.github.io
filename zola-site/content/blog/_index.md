@@ -9,8 +9,8 @@ generate_feeds = true
 
 # Blog
 
-Welcome to my blog! Here you'll find my thoughts on software development,
-technology trends, and creative problem-solving approaches. I write about
-everything from technical deep-dives to strategic insights in the tech world.
+This is one body of work organized into five editorial tracks. Each track keeps
+a stable voice and reading rhythm, while tags connect related ideas across the
+whole collection.
 
 Subscribe to the [RSS feed](/blog/atom.xml) to stay updated with new posts.

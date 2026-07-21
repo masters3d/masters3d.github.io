@@ -3,8 +3,11 @@ title = "Building This Blog: A Meta Journey with AI Agents"
 date = "2025-09-13"
 description = "How this entire blog system was created using AI agents, including the technical implementation, content creation, and instructions for adding new posts."
 template = "blog-post.html"
-categories = ["meta", "ai", "development"]
+[taxonomies]
+categories = ["AI & Tools"]
 tags = ["agents", "blogging", "zola", "automation", "ai-development"]
+[extra]
+editorial_track = "ai-and-tools"
 +++
 
 Welcome to my blog! This first post is a bit meta - it's about how this entire
@@ -85,8 +88,10 @@ title = "Your Post Title"
 date = "2025-09-13"
 description = "SEO-friendly description of your post"
 template = "blog-post.html"
-categories = ["web-development", "tutorial"]
+categories = ["AI & Tools"]
 tags = ["javascript", "react", "frontend"]
+[extra]
+editorial_track = "ai-and-tools"
 +++
 
 Your content goes here...

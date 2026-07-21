@@ -3,8 +3,11 @@ title = "Swift's Actor Model vs Rust's Ownership: Why Rust Doesn't Need Actors"
 date = "2026-07-19"
 description = "A Swift admirer's deep dive into why the actor model feels like it stops short of full isolation, why Rust reaches data-race freedom without any actors at all, and why adding strict, safe concurrency to a mature language is a monumental engineering pursuit worth praising."
 template = "blog-post.html"
-categories = ["development", "languages"]
+[taxonomies]
+categories = ["Engineering Systems"]
 tags = ["swift", "rust", "concurrency", "actors", "memory-safety", "type-systems", "languages"]
+[extra]
+editorial_track = "engineering-systems"
 +++
 
 I keep coming back to Swift's
