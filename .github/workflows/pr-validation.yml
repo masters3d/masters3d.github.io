@@ -70,6 +70,26 @@ jobs:
             exit 1
           fi
           echo "✓ Blog RSS feed contains $ENTRY_COUNT entries"
+
+          # Validate the feed outputs EVERY blog post (no truncation / feed_limit
+          # silently dropping posts). The atom.xml template iterates the pages and
+          # caps them at config.extra.feed_limit when that is set to a positive
+          # value, so the expected entry count is min(post_count, feed_limit).
+          POST_COUNT=$(find content/blog -name "*.md" -not -name "_index.md" -type f | wc -l)
+          FEED_LIMIT=$(grep -E '^feed_limit[[:space:]]*=' config.toml | grep -oE '[0-9]+' | head -1)
+          FEED_LIMIT=${FEED_LIMIT:-0}
+          if [ "$FEED_LIMIT" -gt "0" ] && [ "$FEED_LIMIT" -lt "$POST_COUNT" ]; then
+            EXPECTED="$FEED_LIMIT"
+            echo "feed_limit=$FEED_LIMIT is active; feed is paginated to the newest $FEED_LIMIT of $POST_COUNT posts"
+          else
+            EXPECTED="$POST_COUNT"
+          fi
+          if [ "$ENTRY_COUNT" -ne "$EXPECTED" ]; then
+            echo "ERROR: Blog RSS feed has $ENTRY_COUNT entries but expected $EXPECTED"
+            echo "The feed must output all posts (or feed_limit of them when capped)."
+            exit 1
+          fi
+          echo "✓ Blog RSS feed outputs the expected $EXPECTED posts"
           
           # Check if root feed exists
           if [ ! -f "public/atom.xml" ]; then
@@ -141,7 +161,59 @@ jobs:
           fi
           
           echo "✓ All blog posts have date fields"
-          
+
+      - name: Validate blog post categories
+        # Every blog post must declare exactly one category from the five fixed
+        # editorial tracks. Fails if a post is missing a category or introduces a
+        # category outside the approved set, so unknown tracks never ship.
+        run: |
+          cd zola-site/content/blog
+          echo "Checking blog post categories against the five editorial tracks..."
+
+          # The only allowed categories (editorial tracks). Keep in sync with
+          # zola-site/config.toml taxonomies and templates/taxonomies/single.html.
+          ALLOWED="Quest Engine|Engineering Systems|AI & Tools|Leadership & Teams|Field Notes"
+
+          FAILED=0
+          for f in $(find . -name "*.md" -not -name "_index.md" -type f); do
+            # Only inspect the TOML front matter (between the first two +++ fences)
+            # so category examples inside the post body are never miscounted.
+            FRONT=$(awk 'NR==1 && $0=="+++"{infm=1; next} infm && $0=="+++"{exit} infm{print}' "$f")
+            LINE=$(echo "$FRONT" | grep -E '^categories[[:space:]]*=' || true)
+            if [ -z "$LINE" ]; then
+              echo "ERROR: $f is missing a 'categories' field"
+              FAILED=1
+              continue
+            fi
+
+            # Pull each quoted value out of the array and validate it.
+            VALUES=$(echo "$LINE" | grep -oE '"[^"]*"' | sed 's/"//g')
+            if [ -z "$VALUES" ]; then
+              echo "ERROR: $f has an empty 'categories' field"
+              FAILED=1
+              continue
+            fi
+
+            COUNT=$(echo "$VALUES" | wc -l)
+            if [ "$COUNT" -ne "1" ]; then
+              echo "ERROR: $f declares $COUNT categories; exactly one is required"
+              FAILED=1
+            fi
+
+            while IFS= read -r cat; do
+              if ! echo "$cat" | grep -qxE "$ALLOWED"; then
+                echo "ERROR: $f uses unknown category '$cat'"
+                echo "       Allowed: Quest Engine, Engineering Systems, AI & Tools, Leadership & Teams, Field Notes"
+                FAILED=1
+              fi
+            done <<< "$VALUES"
+          done
+
+          if [ "$FAILED" -ne "0" ]; then
+            echo "Category validation failed."
+            exit 1
+          fi
+          echo "✓ All blog posts use exactly one approved editorial track"          
       - name: Upload build artifacts for inspection
         uses: actions/upload-artifact@v4
         if: always()

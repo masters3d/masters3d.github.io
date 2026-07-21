@@ -55,9 +55,9 @@
           <p class="taxonomy-count">{{ term.pages | length }} post{% if term.pages | length != 1 %}s{% endif %}</p>
 
           {% if taxonomy.name == "tags" and term.name == "quest-engine" %}
-            {{ post_cards::render(pages=term.pages | sort(attribute="extra.series_order"), show_series=true) }}
+            {{ post_cards::render(pages=term.pages | sort(attribute="extra.series_order") | reverse, show_series=true) }}
           {% elif taxonomy.name == "categories" and term.name == "Quest Engine" %}
-            {{ post_cards::render(pages=term.pages | sort(attribute="extra.series_order")) }}
+            {{ post_cards::render(pages=term.pages | sort(attribute="extra.series_order") | reverse) }}
           {% else %}
             {{ post_cards::render(pages=term.pages) }}
           {% endif %}
