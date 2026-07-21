@@ -3,8 +3,13 @@ title = "The Learning Budget: Why Slowing Down Keeps You Fast"
 date = "2026-07-21"
 description = "You give work its forty to sixty hours, but the real question is what you do with the rest. For five to ten years I have been convinced that the payoff for slowing down (retrospective, diffuse thinking, a real budget for learning) is what lets you keep a high speed instead of running flat out until you break."
 template = "blog-post.html"
-categories = ["philosophy", "mindset", "productivity"]
+[taxonomies]
+categories = ["Field Notes"]
 tags = ["quest-engine", "renewal", "diffuse-mode", "slow-productivity", "self-improvement", "learning", "scaffolding", "ai-agents", "retrospective", "cadence"]
+[extra]
+editorial_track = "field-notes"
+series = "quest-engine"
+series_order = 26
 +++
 
 For five to ten years now I have been circling one idea, and it has been
