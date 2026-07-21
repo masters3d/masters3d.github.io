@@ -1,0 +1,3 @@
+# Generated / vendored output — never format these.
+zola-site/public/
+node_modules/

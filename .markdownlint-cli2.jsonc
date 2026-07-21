@@ -1,0 +1,36 @@
+// markdownlint-cli2 configuration.
+//
+// Prettier owns formatting (line wrapping, emphasis/strong markers, table
+// alignment, blank lines), so the rules Prettier is opinionated about are
+// disabled here to avoid the linter and the formatter fighting each other.
+// markdownlint is left to catch genuine structural problems in blog Markdown.
+{
+  "config": {
+    "default": true,
+
+    // Line length is enforced by Prettier's printWidth (proseWrap: always).
+    // Prettier intentionally leaves unbreakable tokens (long URLs, table rows)
+    // past the limit, so MD013 would produce false failures.
+    "MD013": false,
+
+    // Blog posts embed raw HTML on purpose (iframes for videos, <br> in a few
+    // places), which is valid Markdown content.
+    "MD033": false,
+
+    // Some illustrative fenced code blocks have no language tag.
+    "MD040": false,
+
+    // The post title lives in the TOML front matter; body H1s are allowed.
+    "MD025": false,
+    "MD041": false,
+
+    // Headings may end in punctuation (e.g. a question mark) as a stylistic
+    // choice.
+    "MD026": false,
+
+    // Emphasis / strong marker style is normalized by Prettier, which keeps
+    // asterisks where underscores would be ambiguous. Let Prettier decide.
+    "MD049": false,
+    "MD050": false
+  }
+}
