@@ -20,7 +20,7 @@ aligns a team should be held in the same regard as configuration and code.** Not
 below it. Not the thing you write up afterwards if there's time. At the same
 level.
 
-I'm deliberately saying *context* and not *documentation*. When people hear
+I'm deliberately saying _context_ and not _documentation_. When people hear
 "documentation" they think of a chore, the thing nobody wants to write, the
 stale wiki page nobody reads. And there are genuinely different tiers of it. The
 note you drop in an issue is short-lived context, useful in the moment and fine
@@ -40,7 +40,7 @@ only one, and insisting on it misses how the work actually happens now.
 Code is cheap. It's getting cheaper every month. So it's entirely reasonable to
 write the code first. You might have two or three demos going, different
 approaches you're trying to align on, and you only know which one is right
-*after* you've built them and watched them run. Then you extract the design from
+_after_ you've built them and watched them run. Then you extract the design from
 the one that worked. The context didn't precede the code there. It was distilled
 out of it. That's still context as code, and it's still first-class.
 
@@ -83,7 +83,7 @@ do, these are our guiding principles, this is the way we do things.
 
 Some of that grounding lives in configuration. Some of it lives in the code, in
 comments that never surface to a user but explain the local "what." But the
-hardest and most valuable part, the *why*, is exactly the part that resists
+hardest and most valuable part, the _why_, is exactly the part that resists
 living in config or code. Why the system is shaped this way. Why we made this
 tradeoff and not the obvious one. The single cohesive story that ties the pieces
 into one mental model of how the team works and how this thing came to be. That

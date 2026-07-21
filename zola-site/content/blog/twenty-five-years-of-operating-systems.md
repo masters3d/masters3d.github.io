@@ -15,27 +15,28 @@ release and more about picking the tool that got out of my way.
 
 ## The First Five Years: Windows 98, 2000, and XP
 
-My first operating system was [Windows
-98](https://en.wikipedia.org/wiki/Windows_98), and not because it was the
-current release. It was simply the easiest one to get so I could load it onto
-old computers. That was the appeal: I could take a machine apart, put it back
-together, reset it to Windows 98, and everything was good again. It was a
+My first operating system was
+[Windows 98](https://en.wikipedia.org/wiki/Windows_98), and not because it was
+the current release. It was simply the easiest one to get so I could load it
+onto old computers. That was the appeal: I could take a machine apart, put it
+back together, reset it to Windows 98, and everything was good again. It was a
 forgiving starting point for someone learning the hardware alongside the
 software.
 
 [Windows ME](https://en.wikipedia.org/wiki/Windows_Me) came next, but it was not
-stable. At the same time [Windows
-2000](https://en.wikipedia.org/wiki/Windows_2000) was becoming available,
-targeted mostly at businesses and schools because it was built on a different
-kernel (the [Windows NT](https://en.wikipedia.org/wiki/Windows_NT) line rather
-than the consumer DOS-based line). I remember explicitly that many of my friends
-skipped ME with me and went directly to Windows 2000. My last Windows release of
-this era was [Windows XP](https://en.wikipedia.org/wiki/Windows_XP), which was a
-great operating system. Around that time I switched fully to a Mac, so I am glad
-to say I never had to use [Windows
-Vista](https://en.wikipedia.org/wiki/Windows_Vista). I skipped every version
-until [Windows 10](https://en.wikipedia.org/wiki/Windows_10), jumping straight
-from XP to 10 when I came back to Windows for work.
+stable. At the same time
+[Windows 2000](https://en.wikipedia.org/wiki/Windows_2000) was becoming
+available, targeted mostly at businesses and schools because it was built on a
+different kernel (the [Windows NT](https://en.wikipedia.org/wiki/Windows_NT)
+line rather than the consumer DOS-based line). I remember explicitly that many
+of my friends skipped ME with me and went directly to Windows 2000. My last
+Windows release of this era was
+[Windows XP](https://en.wikipedia.org/wiki/Windows_XP), which was a great
+operating system. Around that time I switched fully to a Mac, so I am glad to
+say I never had to use
+[Windows Vista](https://en.wikipedia.org/wiki/Windows_Vista). I skipped every
+version until [Windows 10](https://en.wikipedia.org/wiki/Windows_10), jumping
+straight from XP to 10 when I came back to Windows for work.
 
 ## A Decade of macOS and Only macOS
 
@@ -50,15 +51,15 @@ was not a lot of difference. Certain apps did not work on PowerPC, but the
 transition was mostly flawless.
 
 Most of that decade I used a Mac for video editing (I was a video editor for
-about ten years). At the time we used [Final
-Cut](https://en.wikipedia.org/wiki/Final_Cut_Pro), also made by Apple, and yes
-there were other tools in the mix (Adobe products, and at some point a
-transition to [Avid Media
-Composer](https://en.wikipedia.org/wiki/Avid_Media_Composer)). For the most part
-macOS was solid. I had it as a laptop, as a desktop for work, and as a personal
-computer, and it ran great across all of them. Even my server at the time was
-macOS based: an [Xserve](https://en.wikipedia.org/wiki/Xserve) that held all the
-RAID storage. For a decade the Mac was simply everything.
+about ten years). At the time we used
+[Final Cut](https://en.wikipedia.org/wiki/Final_Cut_Pro), also made by Apple,
+and yes there were other tools in the mix (Adobe products, and at some point a
+transition to
+[Avid Media Composer](https://en.wikipedia.org/wiki/Avid_Media_Composer)). For
+the most part macOS was solid. I had it as a laptop, as a desktop for work, and
+as a personal computer, and it ran great across all of them. Even my server at
+the time was macOS based: an [Xserve](https://en.wikipedia.org/wiki/Xserve) that
+held all the RAID storage. For a decade the Mac was simply everything.
 
 ## The Server Evolution: From a Room Full of Machines to the Cloud
 
@@ -90,12 +91,12 @@ Windows Azure did support Windows.
 
 By contrast, I never deployed into a macOS server world in the same way. When we
 did have the option of macOS servers, it was mainly to serve files over the wire
-with something like [Final Cut
-Server](https://en.wikipedia.org/wiki/Final_Cut_Server). The internet also was
-not as fast as it is today. Now I can connect remotely to a machine that sits
-next to the data and get 1080p at a high frame rate on my screen, so I could
-technically edit video remotely, which was simply not feasible back then. The
-tooling and the server technology grew up together. These days, even when I
+with something like
+[Final Cut Server](https://en.wikipedia.org/wiki/Final_Cut_Server). The internet
+also was not as fast as it is today. Now I can connect remotely to a machine
+that sits next to the data and get 1080p at a high frame rate on my screen, so I
+could technically edit video remotely, which was simply not feasible back then.
+The tooling and the server technology grew up together. These days, even when I
 connect to a server I do not necessarily need a graphical interface. A command
 line is enough to change the settings, and dashboards are helpful for visibility
 into the full system, but they are really just another management entry point. I
@@ -106,10 +107,10 @@ Windows NT admin.
 
 When I switched to Windows 10, I was pleasantly surprised by how stable it was
 compared to Windows XP (which was itself a stable release). I got that same Mac
-feeling from Windows 10 and [Windows
-11](https://en.wikipedia.org/wiki/Windows_11), where there is no abrupt change
-from version to version. Most versions are largely compatible with each other,
-so I honestly do not have a lot of complaints.
+feeling from Windows 10 and
+[Windows 11](https://en.wikipedia.org/wiki/Windows_11), where there is no abrupt
+change from version to version. Most versions are largely compatible with each
+other, so I honestly do not have a lot of complaints.
 
 By now I have been back on Windows for about a decade. Even while using Windows
 development machines, most of my target machines have always been
@@ -133,7 +134,7 @@ Twenty-five years, three acts: the first five years on Windows 98, 2000, and XP;
 a decade of macOS and only macOS; and a return to Windows that is still going
 well. I am not sure what the next decade looks like, but there is a strong case
 for a fully Linux development environment, or at the very least a remote one.
-Whichever way it goes, it fits the same pattern I traced in [my history of
-mobile computing](/blog/palm-sony-android-iphone-blackberry/): the device and
-the operating system matter less over time than the work and the services they
-connect me to.
+Whichever way it goes, it fits the same pattern I traced in
+[my history of mobile computing](/blog/palm-sony-android-iphone-blackberry/):
+the device and the operating system matter less over time than the work and the
+services they connect me to.

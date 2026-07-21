@@ -11,9 +11,9 @@ When Tom Brady was inducted into the Patriots Hall of Fame in 2024, someone
 asked him (again) how he got to where he got. He'd been answering versions of
 that question for twenty years. His answer was simple:
 
-> *"To be successful at anything, the truth is you don't have to be special. You
+> _"To be successful at anything, the truth is you don't have to be special. You
 > just have to be what most people aren't: consistent, determined, and willing
-> to work for it. No shortcuts."*
+> to work for it. No shortcuts."_
 
 Three things. Coming from the 199th pick in the NFL Draft (passed over 198
 times), who went on to win seven Super Bowls, it's hard to argue with. The man
@@ -35,10 +35,10 @@ energy doesn't tell you where to aim. Only the "willing to work for it" (the
 driven, owned forward effort) does that. It's the force that connects what
 you've decided to what you keep doing.
 
-Brady said the three parts in this order: *consistent, determined, willing to
-work for it.* The Quest Engine reads them in a different order (the order that
+Brady said the three parts in this order: _consistent, determined, willing to
+work for it._ The Quest Engine reads them in a different order (the order that
 shows how each part depends on the one before it). **Determined** (in the sense
-of *having determined*) is the starting move: you've done the searching, figured
+of _having determined_) is the starting move: you've done the searching, figured
 out what's actually worth pursuing, assessed which direction matters. That's the
 prospective force, clarity before effort. **Willing to work for it** is the
 driven piece: you've taken ownership of the goal and you're applying sustained
@@ -54,18 +54,17 @@ the consistent move (systematic return, learning from what the practice
 produces). Brady named all three; the Quest Engine puts them in sequence so the
 dependency is clear.
 
-A useful parallel comes from Craig W. Reynolds' 1987 SIGGRAPH paper, [*Flocks,
-Herds, and Schools: A Distributed Behavioral
-Model*](https://www.red3d.com/cwr/papers/1987/boids.html). Reynolds describes
-three local rules for flocking: collision avoidance, velocity matching, and
-flock centering. Mapped to Quest Engine terms: collision avoidance starts with
-**Searching** (contextual awareness of nearby flockmates and conditions),
-velocity matching is **Being Driven** (action after reading position, speed, and
-environment), and flock centering aligns with **Renewal** (consistent returning
-toward coherence with the group).
+A useful parallel comes from Craig W. Reynolds' 1987 SIGGRAPH paper,
+[_Flocks, Herds, and Schools: A Distributed Behavioral Model_](https://www.red3d.com/cwr/papers/1987/boids.html).
+Reynolds describes three local rules for flocking: collision avoidance, velocity
+matching, and flock centering. Mapped to Quest Engine terms: collision avoidance
+starts with **Searching** (contextual awareness of nearby flockmates and
+conditions), velocity matching is **Being Driven** (action after reading
+position, speed, and environment), and flock centering aligns with **Renewal**
+(consistent returning toward coherence with the group).
 
 Brady's three-part phrase in transmission loses "willing to work for it" and
-becomes *consistent. Determined.* (the start and end of the cycle with nothing
+becomes _consistent. Determined._ (the start and end of the cycle with nothing
 connecting them). Add the middle back, reordered to show the flow, and it reads:
 **Determined. Driven. Consistent.** That's not just a rephrasing. It's the
 sequence that prevents determination and consistency from becoming very
@@ -73,14 +72,16 @@ disciplined motion in the wrong direction.
 
 ---
 
-*"Determined. Driven. Consistent." maps directly to Search, Drive, Renew in the
+_"Determined. Driven. Consistent." maps directly to Search, Drive, Renew in the
 [Quest Engine framework](/blog/quest-engine-the-why/). For the complete
-framework, see the [Quest Engine
-introduction](/blog/quest-engine-introduction/). The path version of the same
-triad is in [Knowing, Walking, Returning](/blog/knowing-walking-returning/). The
-mindset version is in [Stay Hungry. Stay
-Foolish.](/blog/stay-hungry-stay-foolish/) The mythic version is in [The Hero's
-Journey and the Quest Engine](/blog/heros-journey-and-quest-engine/). The
-existential version is in [Discovery, Play,
-Joy](/blog/secular-meaning-of-life/). The animated version is in [Faith. Guts.
-Stamina.](/blog/faith-guts-stamina/) One territory, several maps.*
+framework, see the
+[Quest Engine introduction](/blog/quest-engine-introduction/). The path version
+of the same triad is in
+[Knowing, Walking, Returning](/blog/knowing-walking-returning/). The mindset
+version is in [Stay Hungry. Stay Foolish.](/blog/stay-hungry-stay-foolish/) The
+mythic version is in
+[The Hero's Journey and the Quest Engine](/blog/heros-journey-and-quest-engine/).
+The existential version is in
+[Discovery, Play, Joy](/blog/secular-meaning-of-life/). The animated version is
+in [Faith. Guts. Stamina.](/blog/faith-guts-stamina/) One territory, several
+maps._

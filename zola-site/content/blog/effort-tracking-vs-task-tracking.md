@@ -223,6 +223,6 @@ didn't plan for and want to address in the next quarter or month.
 
 ---
 
-*This post builds on my earlier post about
+_This post builds on my earlier post about
 [worklogs](/blog/why-i-love-worklogs/). Worklogs and effort tracking serve
-different purposes and complement each other in my workflow.*
+different purposes and complement each other in my workflow._

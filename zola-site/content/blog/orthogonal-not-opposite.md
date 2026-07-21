@@ -27,7 +27,7 @@ from the other. You can crank both. That is what salted caramel is: a deliberate
 trip to the corner where two dials are high at once.
 
 So what is the opposite of sweet? Not salty. The opposite of sweet is
-*not-sweet*, the absence of sweetness. That sounds almost too obvious to say out
+_not-sweet_, the absence of sweetness. That sounds almost too obvious to say out
 loud, but it is the sentence that does all the work: **the opposite of X is the
 absence of X, never some other quality we happen to contrast it with.** The
 moment you pair X with a different quality and call them opposites, you have
@@ -37,12 +37,12 @@ invented. The tradeoff feels real because the line feels real. The line was
 never there.
 
 For the mathematically inclined, that is exactly what "opposite" and
-"orthogonal" mean once you draw the axes. Opposites live on the *same* axis:
+"orthogonal" mean once you draw the axes. Opposites live on the _same_ axis:
 sweet is positive X, and its true opposite (not-sweet) is just the negative
 direction of that same X. You can absolutely model two qualities on one line,
 and sometimes you should, but only when one really is the negation of the other.
 The mistake is putting sweet on positive X and salty on negative X, because that
-quietly declares salty to be the *absence* of sweet, which it is not. Salty
+quietly declares salty to be the _absence_ of sweet, which it is not. Salty
 deserves its own axis, perpendicular to the first (its own Y), and "orthogonal"
 is just the word for two axes meeting at ninety degrees so a move along one adds
 nothing to and subtracts nothing from the other. So one dimension handles sweet
@@ -93,7 +93,7 @@ told us to expect a tradeoff and so we stopped building people toward both.
 "High-agency versus coachable" is the same mistake wearing interview clothes. It
 shows up in hiring debriefs as "they're strong-willed, so they'll be hard to
 coach", as though conviction and openness drained from the same tank. They do
-not. The best teammates are high-agency *and* coachable, which is exactly the
+not. The best teammates are high-agency _and_ coachable, which is exactly the
 profile the [Quest Engine](/blog/quest-engine-introduction/) is built around:
 people who own the next step and keep returning to check whether the step was
 right.
@@ -106,13 +106,13 @@ rather than the tax you pay against it. The classic version is "good, fast,
 cheap: pick two", drawn as a triangle precisely so the three look mutually
 exclusive. But that is one more invented slider. With enough engineering up
 front (the tooling, tests, and continuous integration that let you move quickly
-without breaking things) you can be very good, very fast, *and* very cheap at
+without breaking things) you can be very good, very fast, _and_ very cheap at
 the same time. The trick is that it depends on quantity: the upfront cost is
 fixed, so the more you ship across it, the closer all three corners get to free.
-That is the same self-healing-systems idea from [Minimize Humans as
-Glue](/blog/minimize-humans-as-glue/): you do not ask a person to stand in the
-middle of the slider forever, you engineer the system so the middle stops being
-a place anyone has to stand.
+That is the same self-healing-systems idea from
+[Minimize Humans as Glue](/blog/minimize-humans-as-glue/): you do not ask a
+person to stand in the middle of the slider forever, you engineer the system so
+the middle stops being a place anyone has to stand.
 
 That is the real turn. A healthy people system does not ask people to slide to a
 compromise between two good things. It engineers away the false tradeoff so the
@@ -128,13 +128,14 @@ kinds of sweet.
 
 ---
 
-*This is part of a running thread on names and dichotomies that don't survive a
-second look. [Context Hunting vs Context
-Gathering](/blog/context-hunting-vs-context-gathering/) and [Stop Conflating
-Effort Tracking with Work Tracking](/blog/effort-tracking-vs-task-tracking/)
+_This is part of a running thread on names and dichotomies that don't survive a
+second look.
+[Context Hunting vs Context Gathering](/blog/context-hunting-vs-context-gathering/)
+and
+[Stop Conflating Effort Tracking with Work Tracking](/blog/effort-tracking-vs-task-tracking/)
 take two more pairs that get treated as opposites and pull them apart. The
 "engineer away the tradeoff" turn is the same systems-over-heroics idea in
-[Minimize Humans as Glue](/blog/minimize-humans-as-glue/) and [Leverage and the
-Stairs You Build](/blog/leverage-and-the-stairs-you-build/), and the both-and
-corner is the high-agency, coachable profile the [Quest
-Engine](/blog/quest-engine-introduction/) is built around.*
+[Minimize Humans as Glue](/blog/minimize-humans-as-glue/) and
+[Leverage and the Stairs You Build](/blog/leverage-and-the-stairs-you-build/),
+and the both-and corner is the high-agency, coachable profile the
+[Quest Engine](/blog/quest-engine-introduction/) is built around._

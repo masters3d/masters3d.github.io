@@ -9,9 +9,9 @@ tags = ["swift", "rust", "csharp", "go", "apple", "languages", "open-source"]
 
 Swift was the second language I ever learned, right after Python. Apple had just
 released it as the new language for their ecosystem, and it was beautiful. I
-wrote about that moment [back in
-2014](/blog/apple-swift-apps-everywhere-prediction/), when I predicted Swift
-would become the backbone of Apple's connected app frameworks. More than a
+wrote about that moment
+[back in 2014](/blog/apple-swift-apps-everywhere-prediction/), when I predicted
+Swift would become the backbone of Apple's connected app frameworks. More than a
 decade later, I still think Swift is one of the best-designed languages I have
 ever used. It strikes a very, very good balance between low-level and high-level
 features. It reads almost like a scripting language, but it compiles down to
@@ -45,14 +45,14 @@ This is the same wall C# ran into for years. C# is a genuinely good language,
 but it struggled to become popular outside the Windows ecosystem because for a
 long time it was seen as a Microsoft-only thing. (I still think that reputation
 lingers even now that ASP.NET Core runs happily on Linux and macOS, something I
-get into in [Language Choice in the LLM
-Era](/blog/language-choice-in-the-llm-era/).) What makes the contrast
-interesting is Go. Go was created inside Google, arguably just as much a
-"company language" as Swift or C#, and yet it is enormously popular outside of
-Google. The difference was never purely technical. Go was pitched from day one
-as a general-purpose language for servers and tooling that anyone could pick up,
-and it never asked you to buy into a single vendor's hardware to get value out
-of it.
+get into in
+[Language Choice in the LLM Era](/blog/language-choice-in-the-llm-era/).) What
+makes the contrast interesting is Go. Go was created inside Google, arguably
+just as much a "company language" as Swift or C#, and yet it is enormously
+popular outside of Google. The difference was never purely technical. Go was
+pitched from day one as a general-purpose language for servers and tooling that
+anyone could pick up, and it never asked you to buy into a single vendor's
+hardware to get value out of it.
 
 ## Adoption Needs Buy-In From the Top
 
@@ -80,8 +80,8 @@ None of that mattered, because the decision to adopt a language at work is
 rarely made on technical merit alone.
 
 The most telling example is the one time Swift did get top-level buy-in from
-outside Apple, and still lost. In 2018, Google launched [Swift for
-TensorFlow](https://github.com/tensorflow/swift/blob/main/docs/WhySwiftForTensorFlow.md),
+outside Apple, and still lost. In 2018, Google launched
+[Swift for TensorFlow](https://github.com/tensorflow/swift/blob/main/docs/WhySwiftForTensorFlow.md),
 an ambitious project to make Swift a first-class language for machine learning.
 Their reasoning was genuinely flattering to Swift: Python's dynamic nature made
 static graph program extraction impractical, so they evaluated a long list of
@@ -123,12 +123,12 @@ marquee project that picks Rust or Go over Swift makes the next team a little
 more likely to do the same.
 
 So here I am, a self-described language fanatic (or at least I used to be, as I
-confessed in [Language Choice in the LLM
-Era](/blog/language-choice-in-the-llm-era/)), holding onto a favorite language I
-have never been paid to write. Most of my professional career has been C#, Go,
-Python, C++, and Rust, and more recently I have leaned into [Rust for internal
-tooling](/blog/ai-tools-journey-opus-4-5/). Swift deserved to be on that list.
-It is not that Swift failed as a language. It is that being a great language was
-never the thing that mattered. What matters is ecosystem, community alignment,
-and someone with authority willing to bet on you. Swift had the design; it never
-got the bet.
+confessed in
+[Language Choice in the LLM Era](/blog/language-choice-in-the-llm-era/)),
+holding onto a favorite language I have never been paid to write. Most of my
+professional career has been C#, Go, Python, C++, and Rust, and more recently I
+have leaned into [Rust for internal tooling](/blog/ai-tools-journey-opus-4-5/).
+Swift deserved to be on that list. It is not that Swift failed as a language. It
+is that being a great language was never the thing that mattered. What matters
+is ecosystem, community alignment, and someone with authority willing to bet on
+you. Swift had the design; it never got the bet.

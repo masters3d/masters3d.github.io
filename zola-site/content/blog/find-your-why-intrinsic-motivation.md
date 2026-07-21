@@ -140,7 +140,7 @@ always that something is other people. Family, friends, a community, people in
 need, a team building something that genuinely means something to you. Being
 part of a group doing work that matters to you is not a path to purpose. It is
 purpose. The why, when you finally chase it down, usually turns out to be a
-*who*.
+_who_.
 
 That is also why purpose cannot be handed to you. It is deeply personal and
 unique to you, and nobody can prescribe it. Someone can assign you a task, but
@@ -228,11 +228,11 @@ the interest, not the other way around.
 
 ---
 
-*This post pulls the human-motivation layer out of [Quest Engine: The
-Why](/blog/quest-engine-the-why/) and frames it through Mastery, Autonomy, and
-Purpose. For the full framework, see the [Quest Engine
-introduction](/blog/quest-engine-introduction/) and the [Intrinsic
-Motivation](https://github.com/masters3d/ingenio/blob/main/pillars/intrinsic_motivation.md)
-and [Objective
-Function](https://github.com/masters3d/ingenio/blob/main/pillars/objective_function.md)
-pillars.*
+_This post pulls the human-motivation layer out of
+[Quest Engine: The Why](/blog/quest-engine-the-why/) and frames it through
+Mastery, Autonomy, and Purpose. For the full framework, see the
+[Quest Engine introduction](/blog/quest-engine-introduction/) and the
+[Intrinsic Motivation](https://github.com/masters3d/ingenio/blob/main/pillars/intrinsic_motivation.md)
+and
+[Objective Function](https://github.com/masters3d/ingenio/blob/main/pillars/objective_function.md)
+pillars._

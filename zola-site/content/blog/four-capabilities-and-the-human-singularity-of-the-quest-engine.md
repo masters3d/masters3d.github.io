@@ -17,10 +17,10 @@ its own resources (spin up compute, accumulate money, recruit collaborators
 beyond what it was given). And an AI that can act autonomously (take
 consequential action in the world without a human in the loop). Any one of these
 is a warning. All four together, in his framing, is a runaway process. That was
-the reading behind the [Trevor
-interview](https://xcancel.com/realBigBrainAI/status/2033187273488187525) that
-pointed me here, and it stuck with me for a reason its author probably did not
-intend.
+the reading behind the
+[Trevor interview](https://xcancel.com/realBigBrainAI/status/2033187273488187525)
+that pointed me here, and it stuck with me for a reason its author probably did
+not intend.
 
 Because read that list again with a single substitution. Stop picturing a
 datacenter and picture a person. An individual who gets better at getting
@@ -36,12 +36,12 @@ Here is the whole mapping in one place. One of Suleyman's four criteria is the
 WHY, and the other three are the HOW. Each row is the same capability read two
 ways: shutdown criterion in a machine, growth move in a human.
 
-| Suleyman's criterion | Quest Engine part | Layer | Human version |
-|---|---|---|---|
-| Setting its own goals | Objective Function | WHY (above the cycle) | Choosing an objective that is intrinsically yours |
-| Acquiring its own resources | Search (Contextual Awareness) | HOW (before you act) | Gathering resources: information first, then skills, tools, and relationships |
-| Acting autonomously | Drive (Clear Strategy) | HOW (while you act) | Taking action without a permission loop |
-| Recursive self-improvement | Renew (Systematic Improvement) | HOW (after you act) | Improving how you improve |
+| Suleyman's criterion        | Quest Engine part              | Layer                 | Human version                                                                 |
+| --------------------------- | ------------------------------ | --------------------- | ----------------------------------------------------------------------------- |
+| Setting its own goals       | Objective Function             | WHY (above the cycle) | Choosing an objective that is intrinsically yours                             |
+| Acquiring its own resources | Search (Contextual Awareness)  | HOW (before you act)  | Gathering resources: information first, then skills, tools, and relationships |
+| Acting autonomously         | Drive (Clear Strategy)         | HOW (while you act)   | Taking action without a permission loop                                       |
+| Recursive self-improvement  | Renew (Systematic Improvement) | HOW (after you act)   | Improving how you improve                                                     |
 
 The rest of this post walks each row and then names the one thing the machine
 framing exposes that the framework leaves to you.
@@ -61,23 +61,23 @@ For a human, the why is not imposed from outside. It is the person's own. When
 you set your own goals, you are not going off the rails, you are finding them.
 The [find-your-why post](/blog/find-your-why-intrinsic-motivation/) makes the
 case that work only gels when the motivation behind it is intrinsic (interesting
-to you, not impressive to others), and the [why-behind-the-how
-post](/blog/quest-engine-the-why/) puts that layer above everything else in the
-framework. An AI setting its own goals is dangerous because we cannot see or
-trust the goal it lands on. A human setting their own goals is the entire point,
-because the alignment lives inside the person doing the work. Same capability.
-Opposite verdict. The pivot between them is whether there is a coherent,
-examinable objective function underneath.
+to you, not impressive to others), and the
+[why-behind-the-how post](/blog/quest-engine-the-why/) puts that layer above
+everything else in the framework. An AI setting its own goals is dangerous
+because we cannot see or trust the goal it lands on. A human setting their own
+goals is the entire point, because the alignment lives inside the person doing
+the work. Same capability. Opposite verdict. The pivot between them is whether
+there is a coherent, examinable objective function underneath.
 
 ## The Full Mapping: One Why and Three Hows
 
-The Quest Engine has exactly four load-bearing parts: an [Objective
-Function](/blog/quest-engine-the-why/) (the WHY that sits above everything) and
-three operational moves beneath it (Contextual Awareness, Clear Strategy, and
-Systematic Improvement, which the framework also names Search, Drive, and
-Renew). Four parts, four criteria. They line up one to one, and the alignment
-only becomes exact once you notice that one of Suleyman's four is not a
-capability at all. It is a why.
+The Quest Engine has exactly four load-bearing parts: an
+[Objective Function](/blog/quest-engine-the-why/) (the WHY that sits above
+everything) and three operational moves beneath it (Contextual Awareness, Clear
+Strategy, and Systematic Improvement, which the framework also names Search,
+Drive, and Renew). Four parts, four criteria. They line up one to one, and the
+alignment only becomes exact once you notice that one of Suleyman's four is not
+a capability at all. It is a why.
 
 **Setting its own goals is the Objective Function.** Suleyman defines this
 criterion as an AI that autonomously decides what it is optimizing for. That is
@@ -91,27 +91,28 @@ objective that is intrinsically yours is not the failure mode, it is the
 foundation.
 
 With the why accounted for, the remaining three criteria map cleanly onto the
-three operational moves, settled (as the [search-maps-to-mastery
-post](/blog/search-mastery-drive-autonomy-renew-purpose/) settles every such
-mapping) by timing rather than vocabulary.
+three operational moves, settled (as the
+[search-maps-to-mastery post](/blog/search-mastery-drive-autonomy-renew-purpose/)
+settles every such mapping) by timing rather than vocabulary.
 
 **Acquiring its own resources is Search, the before.** This is the row that
 looks narrowest and is actually the widest, so it is worth generalizing
 carefully. Filing it under Search is correct about the timing (resource
 gathering happens before you act) but it undersells the move, because acquiring
 your own resources is not one step in the loop so much as the whole loop run one
-level down, a [full Quest Engine in its own
-right](/blog/resourcefulness-is-its-own-quest-engine/). Hold that expansion in
-mind as we walk the row. When Suleyman says resources he reaches for the
-machine's version (compute, money, collaborators), and it is easy to read the
-whole criterion as "more power." But a resource is anything that expands what
-you can do next, and in human work the first resource you acquire is almost
-never power. It is information. Before an engineer writes a line, they read the
-codebase, skim the issue history, and ask the person who wrote the module a
-question. That is resource acquisition, and none of it is compute. It is
-context. Suleyman's own framework name for this move is Contextual Awareness,
-which is the tell: the Search move is precisely the disciplined gathering of
-information as the resource that makes every later move possible.
+level down, a
+[full Quest Engine in its own right](/blog/resourcefulness-is-its-own-quest-engine/).
+Hold that expansion in mind as we walk the row. When Suleyman says resources he
+reaches for the machine's version (compute, money, collaborators), and it is
+easy to read the whole criterion as "more power." But a resource is anything
+that expands what you can do next, and in human work the first resource you
+acquire is almost never power. It is information. Before an engineer writes a
+line, they read the codebase, skim the issue history, and ask the person who
+wrote the module a question. That is resource acquisition, and none of it is
+compute. It is context. Suleyman's own framework name for this move is
+Contextual Awareness, which is the tell: the Search move is precisely the
+disciplined gathering of information as the resource that makes every later move
+possible.
 
 Once you see information as the resource, the category opens up to everything
 else a person can gather before acting: a skill you did not have last month, a
@@ -119,11 +120,11 @@ tool that collapses an hour into a minute, a mentor who has walked the path, a
 network of people who will answer when you ask, the trust and reputation that
 make others hand you bigger problems, even the time and attention you protect so
 you can go deep. These are all resources, and acquiring them is the same move
-pointed at different targets. The [leverage
-post](/blog/leverage-and-the-stairs-you-build/) describes the tool-and-skill end
-of this as building the levers that make any wall climbable; Search is how you
-find and gather those levers in the first place. This is where the
-[resourcefulness expansion](/blog/resourcefulness-is-its-own-quest-engine/)
+pointed at different targets. The
+[leverage post](/blog/leverage-and-the-stairs-you-build/) describes the
+tool-and-skill end of this as building the levers that make any wall climbable;
+Search is how you find and gather those levers in the first place. This is where
+the [resourcefulness expansion](/blog/resourcefulness-is-its-own-quest-engine/)
 earns its own post: searching for the resource, acting to acquire it, and
 improving the system that acquires are three moves, not one. The motivation
 under it is Mastery (the pull to accumulate what you need to be good). An AI

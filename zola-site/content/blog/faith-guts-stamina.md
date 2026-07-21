@@ -7,15 +7,15 @@ categories = ["philosophy", "mindset", "productivity"]
 tags = ["quest-engine", "motivation", "persistence", "search-drive-renew", "triads"]
 +++
 
-In *Sing 2* (2021), Buster Moon has just been told he's not good enough. He goes
+In _Sing 2_ (2021), Buster Moon has just been told he's not good enough. He goes
 back to the person who believed in him first. Nana Noodleman (an elderly sheep,
 his original mentor) doesn't offer comfort. She asks the one question that
-matters: *Do you think you're good enough?*
+matters: _Do you think you're good enough?_
 
 Buster says yes. She doesn't let him stop there:
 
-> *"Then you must fight for what you believe in! Guts, Stamina, Faith. Those are
-> the things you need now."*
+> _"Then you must fight for what you believe in! Guts, Stamina, Faith. Those are
+> the things you need now."_
 
 Three words. The phrase also exists outside the film. Chenmark, a private
 investment firm founded in 2015, has run their weekly newsletter under the same
@@ -68,17 +68,18 @@ they actually operate in is: **Faith. Guts. Stamina.**
 
 ---
 
-*Nana Noodleman (voiced by Jennifer Saunders) delivers this line to Buster Moon
+_Nana Noodleman (voiced by Jennifer Saunders) delivers this line to Buster Moon
 (voiced by Matthew McConaughey) in Sing 2 (2021, written and directed by Gareth
 Jennings). The same three words appear as company values at Chenmark, a private
 investment firm founded in 2015 by James Higgins, Trish Higgins, and Palmer
 Higgins, whose weekly newsletter has carried them since before the film. "Faith.
-Guts. Stamina." maps directly to Search, Drive, Renew in the [Quest Engine
-framework](/blog/quest-engine-the-why/). For the complete framework, see the
+Guts. Stamina." maps directly to Search, Drive, Renew in the
+[Quest Engine framework](/blog/quest-engine-the-why/). For the complete
+framework, see the
 [Quest Engine introduction](/blog/quest-engine-introduction/). The motivational
-triad version is in [Determined. Driven.
-Consistent.](/blog/determined-driven-consistent/) (Brady's Hall of Fame answer,
-reordered). The path version is in [Knowing, Walking,
-Returning](/blog/knowing-walking-returning/). The existential version is in
-[Discovery, Play, Joy](/blog/secular-meaning-of-life/). One territory, several
-maps.*
+triad version is in
+[Determined. Driven. Consistent.](/blog/determined-driven-consistent/) (Brady's
+Hall of Fame answer, reordered). The path version is in
+[Knowing, Walking, Returning](/blog/knowing-walking-returning/). The existential
+version is in [Discovery, Play, Joy](/blog/secular-meaning-of-life/). One
+territory, several maps._

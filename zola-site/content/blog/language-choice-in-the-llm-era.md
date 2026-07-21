@@ -49,10 +49,9 @@ Go as well. I have been through that mental model. I don't feel like I'm like
 that anymore. That phase has faded. I don't tend to say "let's write everything
 in X language." I've written plenty of domain-specific languages (DSLs) like
 PowerShell and Bash for scripting, SQL-like languages for data access, and even
-[XML-based configurations for calling C++
-modules](https://github.com/nasa/fprime). You can get a lot done with DSLs. I've
-also seen plenty of cases where languages are shoehorned into JSON for
-configuration (those are DSLs too).
+[XML-based configurations for calling C++ modules](https://github.com/nasa/fprime).
+You can get a lot done with DSLs. I've also seen plenty of cases where languages
+are shoehorned into JSON for configuration (those are DSLs too).
 
 ## The Decision Matrix
 
@@ -87,10 +86,10 @@ The rule of thumb: If the CLI will grow beyond a few hundred lines or needs
 distribution as a binary, use Go or Rust. For quick automation that stays small,
 Python works great. Python won on portability for CLI tools. Even when the core
 logic is written in a compiled language, deploying code is often better using
-the Python ecosystem. I covered this extensively in my [previous article about
-Rust and scripting languages](/blog/ai-tools-journey-opus-4-5/), where I
-discussed how Claude Opus 4.5 made writing Rust feasible for CLI tools in ways
-it wasn't before.
+the Python ecosystem. I covered this extensively in my
+[previous article about Rust and scripting languages](/blog/ai-tools-journey-opus-4-5/),
+where I discussed how Claude Opus 4.5 made writing Rust feasible for CLI tools
+in ways it wasn't before.
 
 **Server (Backend, APIs, services):**
 
@@ -138,9 +137,8 @@ choice:
   (performance-critical, cross-platform distribution)
 - **[Aider](https://aider.chat/):** Written in Python (rapid iteration,
   pip-based distribution)
-- **[Antigravity
-  CLI](https://agentpedia.codes/blog/antigravity-cli-deep-dive):** Written in Go
-  (server-like characteristics, cross-platform)
+- **[Antigravity CLI](https://agentpedia.codes/blog/antigravity-cli-deep-dive):**
+  Written in Go (server-like characteristics, cross-platform)
 - **[Claude Code](https://github.com/anthropics/claude-code):** Written in
   TypeScript (web ecosystem integration, npm-based distribution)
 
@@ -193,8 +191,7 @@ the problem you're solving.
 
 ---
 
-*For more on my experience with Rust development in the LLM era, see [My AI
-Tools Journey Since Claude Opus 4.5](/blog/ai-tools-journey-opus-4-5/). For why
-my favorite language never made it into my professional work, see [My Swift
-Journey: Why I Love It but Can't Use It at
-Work](/blog/swift-journey-why-not-professional/).*
+_For more on my experience with Rust development in the LLM era, see
+[My AI Tools Journey Since Claude Opus 4.5](/blog/ai-tools-journey-opus-4-5/).
+For why my favorite language never made it into my professional work, see
+[My Swift Journey: Why I Love It but Can't Use It at Work](/blog/swift-journey-why-not-professional/)._

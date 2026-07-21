@@ -18,11 +18,14 @@ AI assistants designed for software development - to design, implement, and
 populate the entire blog system. Here's what happened:
 
 ### The Request
-I simply asked: *"I want you to keep working on this for many hours and even add
-RSS support. Feel free to create the PR but do not merge anything."*
+
+I simply asked: _"I want you to keep working on this for many hours and even add
+RSS support. Feel free to create the PR but do not merge anything."_
 
 ### The Result
+
 The coding agent delivered a complete, production-ready blog system with:
+
 - ✅ **Full Zola-based blog architecture**
 - ✅ **RSS/Atom feed support**
 - ✅ **Responsive design matching the site theme**
@@ -52,6 +55,7 @@ zola-site/
 ```
 
 ### Key Features
+
 - **Markdown-first**: All content is written in Markdown with TOML frontmatter
 - **Automatic RSS**: Posts automatically appear in the `/blog/atom.xml` feed
 - **Taxonomies**: Organize posts with categories and tags
@@ -63,6 +67,7 @@ zola-site/
 Adding a new post is incredibly simple. Here's the step-by-step process:
 
 ### 1. Create a New Markdown File
+
 Navigate to `zola-site/content/blog/` and create a new `.md` file:
 
 ```bash
@@ -71,6 +76,7 @@ touch my-new-post.md
 ```
 
 ### 2. Add Frontmatter
+
 Every post needs TOML frontmatter at the top:
 
 ```markdown
@@ -87,9 +93,10 @@ Your content goes here...
 ```
 
 ### 3. Write Your Content
+
 Use standard Markdown syntax for your content:
 
-```markdown
+````markdown
 ## Section Headers
 
 Regular paragraphs with **bold** and *italic* text.
@@ -103,10 +110,11 @@ Regular paragraphs with **bold** and *italic* text.
 function hello() {
     console.log("Hello, world!");
 }
-```
+````
 
 [Links work normally](https://example.com)
-```
+
+````
 
 ### 4. Generate the Site
 Build and serve the site to see your changes:
@@ -118,9 +126,10 @@ zola build
 
 # Or serve locally for development
 zola serve
-```
+````
 
 ### 5. Deploy
+
 If you're satisfied with the post, commit and push:
 
 ```bash
@@ -133,15 +142,15 @@ git push
 
 Here are the key frontmatter fields you can use:
 
-| Field | Required | Description | Example |
-|-------|----------|-------------|---------|
-| `title` | ✅ | Post title | `"My Amazing Post"` |
-| `date` | ✅ | Publication date | `2025-09-13` |
-| `description` | ✅ | SEO description | `"Learn how to..."` |
-| `template` | ✅ | Template to use | `"blog-post.html"` |
-| `categories` | ⭕ | Broad topics | `["web-development"]` |
-| `tags` | ⭕ | Specific keywords | `["javascript", "tutorial"]` |
-| `draft` | ⭕ | Hide from production | `true` |
+| Field         | Required | Description          | Example                      |
+| ------------- | -------- | -------------------- | ---------------------------- |
+| `title`       | ✅       | Post title           | `"My Amazing Post"`          |
+| `date`        | ✅       | Publication date     | `2025-09-13`                 |
+| `description` | ✅       | SEO description      | `"Learn how to..."`          |
+| `template`    | ✅       | Template to use      | `"blog-post.html"`           |
+| `categories`  | ⭕       | Broad topics         | `["web-development"]`        |
+| `tags`        | ⭕       | Specific keywords    | `["javascript", "tutorial"]` |
+| `draft`       | ⭕       | Hide from production | `true`                       |
 
 ## The Power of AI-Assisted Development
 
@@ -166,6 +175,7 @@ repository contains the context needed to maintain and extend the system
 correctly.
 
 ### What the Coding Agent Delivered
+
 - **Complete template system** with proper Zola/Tera syntax
 - **Responsive CSS** that matches the existing site design
 - **RSS feed generation** with proper XML formatting
@@ -175,6 +185,7 @@ correctly.
 - **Sample content** to demonstrate functionality
 
 ### The Development Process
+
 1. **Analysis**: The coding agent analyzed the existing site structure
 2. **Planning**: Designed a blog system that integrates seamlessly
 3. **Implementation**: Created templates, CSS, and configuration
@@ -239,7 +250,7 @@ way and lets you focus on what matters: the content.
 
 ---
 
-*This post was created as part of a coding agent's comprehensive blog system
+_This post was created as part of a coding agent's comprehensive blog system
 implementation. The agent not only built the technical infrastructure but also
 created this documentation to ensure the system remains maintainable and
-understandable for future development.*
+understandable for future development._

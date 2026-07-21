@@ -42,26 +42,35 @@ zola serve
 - `zola-site/public/` - Complete built website (auto-generated)
 - All files in `public/` are rebuilt on every Zola build
 
-## 📏 Markdown Line Wrapping (Required)
+## 📏 Markdown Formatting (Required)
 
-Blog Markdown is wrapped to a fixed line width (80 columns) so that edits show
-up as small, line-level diffs instead of whole-paragraph diffs.
+Blog Markdown is formatted with **[Prettier](https://prettier.io/)** (the
+formatter) and checked with **[markdownlint](https://github.com/DavidAnson/markdownlint)**
+(the linter). Prettier wraps prose to 80 columns so edits show up as small,
+line-level diffs instead of whole-paragraph diffs.
 
-**This does not change the rendered page.** In Markdown a single newline inside
-a paragraph is a "soft break" that renders as a space, so wrapping only affects
-the `.md` source, never the generated HTML. A real line break still requires two
-trailing spaces (a hard break), and the tool preserves those exactly.
+**This does not change the rendered page.** Prettier is configured with
+`proseWrap: always` (a single newline inside a paragraph is a Markdown "soft
+break" that renders as a space) and `embeddedLanguageFormatting: off` (sample
+code shown inside fenced blocks is left untouched). The generated HTML is
+byte-identical before and after formatting; only the `.md` source line breaks
+change.
 
-**Before committing any blog Markdown change**, run the portable formatter:
+**Before committing any blog Markdown change**, install the tooling once, then
+run the formatter:
 
 ```bash
-python3 scripts/wrap_markdown.py          # wrap all blog posts
-python3 scripts/wrap_markdown.py --check   # verify only (used by CI)
+npm install                                # one-time: install Prettier + markdownlint
+python3 scripts/format_markdown.py         # format + lint-fix all blog posts
+python3 scripts/format_markdown.py --check  # verify only (used by CI)
 ```
 
-The script is standard-library-only Python 3 (works on Linux, macOS and
-Windows) and is enforced by the PR Validation workflow — a PR whose blog
-Markdown is not wrapped will fail the `validate` check.
+`scripts/format_markdown.py` is a thin, portable (Linux/macOS/Windows) wrapper
+that just calls Prettier and markdownlint; the tools are pinned in
+`package.json`. Configuration lives in `.prettierrc.json` and
+`.markdownlint-cli2.jsonc`. The PR Validation workflow runs the `--check` mode,
+so a PR whose blog Markdown is not correctly formatted (or fails lint) will fail
+the `validate` check.
 
 ## 🔄 Deployment Process
 
@@ -109,7 +118,7 @@ tags = ["tag1", "tag2"]
 +++
 ```
 3. Write content in markdown below the frontmatter
-4. Wrap the Markdown lines: run `python3 scripts/wrap_markdown.py`
+4. Format the Markdown: run `python3 scripts/format_markdown.py`
 5. Commit and push
 
 ### 📄 Editing Existing Pages

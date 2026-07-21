@@ -8,8 +8,8 @@ tags = ["agents", "automation", "keyboards", "golang", "copilot", "productivity"
 +++
 
 Sometimes the best way to understand the future of software development is to
-watch a project evolve through different paradigms. The [Keyboard Layout Config
-Mapper (KLCM)](https://github.com/masters3d/keyboard_layout_config_mapper)
+watch a project evolve through different paradigms. The
+[Keyboard Layout Config Mapper (KLCM)](https://github.com/masters3d/keyboard_layout_config_mapper)
 project is a perfect case study in how AI-assisted development is fundamentally
 changing our approach to automation.
 
@@ -41,6 +41,7 @@ The initial PR (#1) was massive (a proper software engineering solution) with:
 - **String manipulation** for in-place file editing
 
 The commit messages tell the story of deep technical work:
+
 - "we are now able to parse qmk configs without any changes to the source text"
 - "tests are passing"
 - "adding logic to edit files in place"
@@ -63,6 +64,7 @@ The code existed. It technically worked. But the maintenance burden was real.
 ## Phase 2: The Stalling Period (2023)
 
 After the initial burst of development, 2023 saw minimal activity:
+
 - A couple of config file updates
 - Some layout experiments
 - But no major development on the tooling itself
@@ -82,6 +84,7 @@ came back to life, but with a completely different approach.
 ### Building Better Tools with AI Assistance
 
 The V5 target release (PR #12) rebuilt the project with modern CLI tooling:
+
 - Complete CLI tool with Cobra framework
 - Git-style diff functionality
 - GitHub PR automation
@@ -89,7 +92,9 @@ The V5 target release (PR #12) rebuilt the project with modern CLI tooling:
 - **2000+ lines of old code removed**
 
 The commit message is revealing:
-> "🧹 Cleanup Completed: Removed old source/ directory (2000+ lines unused code)"
+
+> "🧹 Cleanup Completed: Removed old source/ directory (2000+ lines unused
+> code)"
 
 But here's the key insight: this wasn't about abandoning the parsing and
 automation. It was about using AI coding assistants to **build better tools
@@ -101,11 +106,13 @@ Then came the recent PRs in November-December 2025, and you can see the pattern
 shift:
 
 **PR #28**: "Add screenshot key to right pinky column on all ZMK keyboards"
+
 - Direct changes to `adv360.keymap`, `pillzmod_pro.keymap`, `glove80.keymap`
 - Simple, surgical modifications across three files
 - No parser infrastructure needed
 
 **PR #26**: "Streamline KLCM for ZMK-only keyboards + add pedal docs"
+
 - Focused on simplification
 - Documentation updates
 - Direct config changes
@@ -120,6 +127,7 @@ keyboards, just ask an AI agent to make the changes directly**.
 Here's the profound realization that emerged from this project's evolution:
 
 ### The Old Way: Write Code to Automate
+
 1. Identify a repetitive task (syncing keyboard configs)
 2. Write parsers to understand the config format
 3. Write transformers to modify configs
@@ -130,6 +138,7 @@ Here's the profound realization that emerged from this project's evolution:
 **Time investment**: Hours to write, ongoing maintenance burden
 
 ### The New Way: Use Agents Directly
+
 1. Identify a repetitive task
 2. Tell an AI agent: "Add this key to all three keyboards"
 3. Agent understands the context, makes the changes
@@ -143,6 +152,7 @@ The KLCM project reveals a crucial insight: **For many tasks, having an AI agent
 make direct changes is simpler than writing code to automate those changes**.
 
 This is especially true when:
+
 - Changes are needed infrequently (monthly keyboard layout tweaks, not hourly
   deployments)
 - The task requires contextual understanding (keyboard layouts have ergonomic
@@ -165,6 +175,7 @@ Today, KLCM has found its optimal form:
 4. **Human review** before merging changes
 
 The Go code that remains is focused on:
+
 - Downloading configs from multiple repositories
 - Validating syntax before committing
 - Creating PRs with proper branching
@@ -177,8 +188,9 @@ scaffolding around the changes, not the changes themselves).
 
 ### 1. Question Your Automation Assumptions
 
-Just because something *can* be automated doesn't mean it *should* be automated
+Just because something _can_ be automated doesn't mean it _should_ be automated
 with custom code. Sometimes the better solution is:
+
 - Better tools for manual work
 - AI assistance for contextual changes
 - Automation only for scaffolding and coordination
@@ -199,6 +211,7 @@ inconsistency gracefully).
 
 The best solution isn't "no automation" or "full automation" (it's **strategic
 automation**):
+
 - Automate the workflow (git operations, PR creation, validation)
 - Use AI for the transformations (actual config changes)
 - Keep humans in the loop for review and decisions
@@ -273,11 +286,11 @@ the problem domain.
 
 ---
 
-*This post is itself a meta-artifact of this paradigm: rather than building a
+_This post is itself a meta-artifact of this paradigm: rather than building a
 tool to generate blog posts about project histories, I simply asked an AI agent
 to research the repository and write this analysis. The agent read commit
 messages, analyzed the evolution, and synthesized insights (exactly the kind of
-contextual work that traditional automation struggles with).*
+contextual work that traditional automation struggles with)._
 
 ## Appendix: Timeline
 
@@ -289,6 +302,6 @@ automation
 code removed  
 **September 2025**: PR #13-15 - Agent-assisted integration of new keyboards  
 **November 2025**: PR #20-28 - Direct configuration changes across keyboards  
-**December 2025**: This reflection on the evolution  
+**December 2025**: This reflection on the evolution
 
 The pattern is clear: from ambitious automation to pragmatic agent assistance.

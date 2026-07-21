@@ -7,7 +7,7 @@ categories = ["technology", "languages", "prediction"]
 tags = ["swift", "apple", "prediction", "languages", "ios", "retrospective"]
 +++
 
-*This was originally published on 2014-06-08.*
+_This was originally published on 2014-06-08._
 
 Apple's Swift was released last week, and I can't help but think that this may
 be remembered as Apple's monopolization of "connected" app frameworks.
@@ -57,8 +57,8 @@ happening with Storyboards, Data Models, and Mapping Models.
 
 ---
 
-*Written in 2014, right after Swift was announced. For where I landed on Swift
-more than a decade later, see [My Swift Journey: Why I Love It but Can't Use It
-at Work](/blog/swift-journey-why-not-professional/). For how I think about
-picking languages today, see [Language Choice in the LLM
-Era](/blog/language-choice-in-the-llm-era/).*
+_Written in 2014, right after Swift was announced. For where I landed on Swift
+more than a decade later, see
+[My Swift Journey: Why I Love It but Can't Use It at Work](/blog/swift-journey-why-not-professional/).
+For how I think about picking languages today, see
+[Language Choice in the LLM Era](/blog/language-choice-in-the-llm-era/)._

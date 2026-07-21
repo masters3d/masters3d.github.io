@@ -33,7 +33,7 @@ through a problem within a single session.
 
 **This is NOT about design documents or vision documents.** Those still exist
 and are still important. Worklogs don't replace them. In fact, you can use a
-worklog to *track the creation* of a design doc as a deliverable.
+worklog to _track the creation_ of a design doc as a deliverable.
 
 The distinction is simple:
 
@@ -47,12 +47,12 @@ Agent plans are great for the session they live in. But when you close the
 session and come back tomorrow, you need something that remembers where you left
 off, what you tried, and what's next. That's the worklog.
 
-|                | Agent Plans        | Worklogs              | Design Docs        |
-|----------------|--------------------|-----------------------|--------------------|
-| **Scope**      | Single session     | Cross-session         | Cross-project      |
-| **Purpose**    | Execute a task     | Track work over time  | Define what and why|
-| **Lifetime**   | Session ends       | Until work completes  | Permanent record   |
-| **Analogy**    | Whiteboard sketch  | Lab notebook          | Published paper    |
+|              | Agent Plans       | Worklogs             | Design Docs         |
+| ------------ | ----------------- | -------------------- | ------------------- |
+| **Scope**    | Single session    | Cross-session        | Cross-project       |
+| **Purpose**  | Execute a task    | Track work over time | Define what and why |
+| **Lifetime** | Session ends      | Until work completes | Permanent record    |
+| **Analogy**  | Whiteboard sketch | Lab notebook         | Published paper     |
 
 Right now I have **seven sessions running in parallel**, each working on a
 different area. Each session has its own worklog. These worklogs give me clarity
@@ -93,7 +93,7 @@ follow), the CLI commands to run (`gh issue create`, `gh issue edit`, etc.), and
 the decision logic (check for duplicates before creating, ask for a size
 estimate, link related items).
 
-When you say *"open a worklog"*, the agent loads this skill file and follows the
+When you say _"open a worklog"_, the agent loads this skill file and follows the
 instructions. It knows:
 
 - **The template**: every worklog has four sections (Context, What to Build,
@@ -134,7 +134,7 @@ YOU                 COPILOT CLI           YOU CODE             DONE
 All from your terminal. The agent handles GitHub issue creation, sizing, labels,
 and status updates. 🚀
 
-**The key insight:** If you're already using Copilot CLI, worklogs add *zero*
+**The key insight:** If you're already using Copilot CLI, worklogs add _zero_
 extra work. You just tell the agent:
 
 ```
@@ -159,25 +159,25 @@ You stay focused on your actual work. The agent does the rest.
 We still use Azure DevOps to track effort. That hasn't changed. The distinction
 is what makes this work:
 
-|                    | Azure DevOps                          | Worklogs                                |
-|--------------------|---------------------------------------|-----------------------------------------|
-| **Purpose**        | Effort tracking (where is the time going?) | Work documentation (what am I doing right now?) |
-| **Granularity**    | One block of effort (may cover multiple tasks) | Individual task (notes, context, outcomes) |
-| **Updated by**     | You (manually)                        | You + your AI agent                     |
-| **Analogy**        | Timesheet                             | Lab notebook                            |
-| **AI-native**      | Not yet                               | Built for it                            |
+|                 | Azure DevOps                                   | Worklogs                                        |
+| --------------- | ---------------------------------------------- | ----------------------------------------------- |
+| **Purpose**     | Effort tracking (where is the time going?)     | Work documentation (what am I doing right now?) |
+| **Granularity** | One block of effort (may cover multiple tasks) | Individual task (notes, context, outcomes)      |
+| **Updated by**  | You (manually)                                 | You + your AI agent                             |
+| **Analogy**     | Timesheet                                      | Lab notebook                                    |
+| **AI-native**   | Not yet                                        | Built for it                                    |
 
 This **separation of concerns** is what makes it powerful. A single Azure DevOps
 work item might have multiple worklogs under it, each capturing a different
 piece of the work. You can link them: the agent tags worklogs with the work item
-ID and you can tell it *"sync worklogs from Azure DevOps"* to import items. But
+ID and you can tell it _"sync worklogs from Azure DevOps"_ to import items. But
 the worklog is yours: your notes, your pace, your documentation of what actually
 happened.
 
 The architecture boils down to three layers:
 
-1. **You in Terminal** (*"open a worklog for auth refactor"* | *"update worklog,
-   found the root cause"* | *"close it, PR merged"*)
+1. **You in Terminal** (_"open a worklog for auth refactor"_ | _"update worklog,
+   found the root cause"_ | _"close it, PR merged"_)
 2. **Copilot CLI + Worklog Skill** (the agent understands your intent and
    invokes the skill, which contains templates, labels, sizing, dedup, and sync
    logic)
@@ -208,7 +208,7 @@ The flow looks like this:
 The speed gain is in the **enqueue step**. Capturing work traditionally means
 stopping, switching to a browser, filling out forms. With worklogs, you say one
 sentence mid-conversation and it's tracked. That low friction means you actually
-capture *everything*, not just the big items you remember to log later.
+capture _everything_, not just the big items you remember to log later.
 
 My recommendation: **start using worklogs as you go**. Don't batch them up or
 plan a big migration. Just next time you start a task, tell the agent to open a
@@ -241,8 +241,8 @@ captures everything as a natural byproduct of the work itself. You get the
 discipline of documentation without the overhead of documentation.
 
 I also don't think worklogs are their final state. This is an evolution. (I
-traced how I got here, [from sort-of-daily Markdown files in 2017 to monthly
-Word docs to today's agent-maintained logs](/blog/nine-years-of-copious-notes/),
+traced how I got here,
+[from sort-of-daily Markdown files in 2017 to monthly Word docs to today's agent-maintained logs](/blog/nine-years-of-copious-notes/),
 in a separate post.) We're in the early days of figuring out how to work with AI
 agents, and I think we're going to discover that we need **more agent-native
 ways of working**. The old tools were designed for humans coordinating with

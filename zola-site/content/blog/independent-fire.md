@@ -10,7 +10,7 @@ tags = ["quest-engine", "autonomy", "high-agency", "team-dynamics", "independent
 I was watching a movie about George Washington the other night, and one small
 moment caught my attention far more than the big battles did. There was a phrase
 in the film that stuck with me: **independent fire.** One thing I want to flag
-up front is the attribution: I heard the phrase in the *movie*, and I cannot
+up front is the attribution: I heard the phrase in the _movie_, and I cannot
 confirm that the real George Washington ever said it. That is the only claim I
 am making about the sourcing (not that the phrase is invented, just that I do
 not know whether Washington used it). What matters more, and is much better
@@ -33,15 +33,15 @@ fighting (open-order skirmishing, aimed fire, using cover and concealment, and
 riflemen who could pick off officers and gun crews at ranges where massed musket
 volleys were useless). It was a genuine departure from the rigid linear tactics
 the British and most European armies fought by, and it is well described in
-accounts of the [Continental
-soldier](https://history.army.mil/Revwar250/Continental-Soldier/). So whatever
-the exact provenance of the words, the tactic they dramatize is real. And the
-reason I keep turning it over is that it is not really about muskets.
-*Independent fire* is a statement about where decision authority should live
-when the environment stops fitting the plan. That is the quest of this post:
-what "independent fire" actually is, why distributed authority beats centralized
-command in certain terrain, and why it is the cleanest picture I have found of
-how a high-agency engineering team should be allowed to operate.
+accounts of the
+[Continental soldier](https://history.army.mil/Revwar250/Continental-Soldier/).
+So whatever the exact provenance of the words, the tactic they dramatize is
+real. And the reason I keep turning it over is that it is not really about
+muskets. _Independent fire_ is a statement about where decision authority should
+live when the environment stops fitting the plan. That is the quest of this
+post: what "independent fire" actually is, why distributed authority beats
+centralized command in certain terrain, and why it is the cleanest picture I
+have found of how a high-agency engineering team should be allowed to operate.
 
 ## The Terrain Broke the Formation
 
@@ -76,26 +76,26 @@ the officer to the soldier. It says: you can see your slice of this fight better
 than I can, so you do not need me to tell you when to pull the trigger. Pick
 your target, judge your moment, act.
 
-The important thing is what it does *not* remove. Independent fire is not every
+The important thing is what it does _not_ remove. Independent fire is not every
 man for himself, and it is not the absence of a plan. The commander still set
 the objective (hold this ground, break that advance), still positioned the men,
-still owned the strategy. What was delegated was the *local execution decision*,
+still owned the strategy. What was delegated was the _local execution decision_,
 the one that depends on information only the person on the spot can have. The
 soldier inherited autonomy over the moment; the commander kept ownership of the
 mission. That split is the whole design. Clear intent from the top, independent
-judgment at the edge. It is the same shape as [being driven inside explicit
-boundaries](/blog/quest-engine-building-high-agency-teams/): the freedom is real
-precisely because the frame around it is clear.
+judgment at the edge. It is the same shape as
+[being driven inside explicit boundaries](/blog/quest-engine-building-high-agency-teams/):
+the freedom is real precisely because the frame around it is clear.
 
 That is also why independent fire is a multiplier and not just a delegation.
 When a hundred soldiers can each act on what they see, the team effectively has
 a hundred sensors and a hundred decision points instead of one. The center is no
 longer the ceiling on how fast or how well the group responds. Contrast that
-with the command model, where every soldier is an [extension of the
-officer](/blog/minimize-humans-as-glue/), a relay passing the commander's intent
-forward but adding no judgment of their own. In easy terrain the relay works. In
-hard terrain the relay is exactly where the information dies. Independent fire
-replaces relays with agents.
+with the command model, where every soldier is an
+[extension of the officer](/blog/minimize-humans-as-glue/), a relay passing the
+commander's intent forward but adding no judgment of their own. In easy terrain
+the relay works. In hard terrain the relay is exactly where the information
+dies. Independent fire replaces relays with agents.
 
 ## The Same Fight on an Engineering Team
 
@@ -119,19 +119,19 @@ Notice that "aim, fire, reload" is not itself the problem. That little
 three-beat sequence is actually a complete Quest Engine loop in miniature:
 **aim** is Search (read the terrain, pick the target), **fire** is Drive
 (commit, apply directed force), and **reload** is Renew (carry state forward and
-arm for the next shot). It is the same loop I mapped in [Set. Action.
-Reload.](/blog/set-action-reload/), the same three-beat structure as [Knowing,
-Walking, Returning](/blog/knowing-walking-returning/) and the [Search / Drive /
-Renew](/blog/search-mastery-drive-autonomy-renew-purpose/) core of the [Quest
-Engine](/blog/quest-engine-introduction/). Aim-fire-reload is one of the
-cleanest small versions of that cycle there is, because a soldier can run the
-whole loop in a few seconds and repeat it all day. So the difference between the
-formation and independent fire is not *whether* the loop runs. The loop runs
-either way. The difference is *who owns it*. In the formation, the officer runs
-the loop and the soldier is just the trigger finger (the aim and the reload
-decisions live at the center). Under independent fire, each soldier owns their
-own aim-fire-reload, running a full Quest Engine loop on their own slice of the
-ground. Distributing authority is really distributing the loop.
+arm for the next shot). It is the same loop I mapped in
+[Set. Action. Reload.](/blog/set-action-reload/), the same three-beat structure
+as [Knowing, Walking, Returning](/blog/knowing-walking-returning/) and the
+[Search / Drive / Renew](/blog/search-mastery-drive-autonomy-renew-purpose/)
+core of the [Quest Engine](/blog/quest-engine-introduction/). Aim-fire-reload is
+one of the cleanest small versions of that cycle there is, because a soldier can
+run the whole loop in a few seconds and repeat it all day. So the difference
+between the formation and independent fire is not _whether_ the loop runs. The
+loop runs either way. The difference is _who owns it_. In the formation, the
+officer runs the loop and the soldier is just the trigger finger (the aim and
+the reload decisions live at the center). Under independent fire, each soldier
+owns their own aim-fire-reload, running a full Quest Engine loop on their own
+slice of the ground. Distributing authority is really distributing the loop.
 
 The high-agency team is independent fire. The intent is set clearly at the top
 (this is the mission, these are the boundaries, this is what we are trying to
@@ -141,9 +141,9 @@ They can fix the thing they see. They can pick the moment. They own the local
 decision because they hold the local information. This is not chaos, and it is
 not the absence of leadership; it is leadership that has recognized where the
 good information actually lives and pushed the decision to meet it. It is also
-not recklessness (independent fire still demands a [calculated read of risk and
-reach](/blog/fearless-engineering/), just made by the person closest to the
-ground rather than the one farthest from it).
+not recklessness (independent fire still demands a
+[calculated read of risk and reach](/blog/fearless-engineering/), just made by
+the person closest to the ground rather than the one farthest from it).
 
 The reason this matters more every year is that the terrain keeps getting more
 like the New World and less like the open field. The problems are more
@@ -156,12 +156,13 @@ autonomous reads of the ground instead of one.
 
 ---
 
-*Independent fire is the picture I keep coming back to for [high-agency
-teams](/blog/quest-engine-building-high-agency-teams/): set the mission and the
-boundaries at the center, then push the decision to the edge where the real
-information lives. It is the [autonomy pillar of the Quest
-Engine](/blog/quest-engine-the-why/) stated in a single phrase, the opposite of
-turning people into [relays for someone else's
-judgment](/blog/minimize-humans-as-glue/), and a reminder that the command that
-worked on the open field is exactly the command that gets you cut down in the
-trees. Give the soldiers independent fire, and give the engineers the same.*
+_Independent fire is the picture I keep coming back to for
+[high-agency teams](/blog/quest-engine-building-high-agency-teams/): set the
+mission and the boundaries at the center, then push the decision to the edge
+where the real information lives. It is the
+[autonomy pillar of the Quest Engine](/blog/quest-engine-the-why/) stated in a
+single phrase, the opposite of turning people into
+[relays for someone else's judgment](/blog/minimize-humans-as-glue/), and a
+reminder that the command that worked on the open field is exactly the command
+that gets you cut down in the trees. Give the soldiers independent fire, and
+give the engineers the same._

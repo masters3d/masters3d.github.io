@@ -7,7 +7,7 @@ categories = ["career", "engineering", "mindset"]
 tags = ["glue-work", "career-growth", "boundaries", "on-call", "saying-no", "systems-thinking", "self-healing", "promotion"]
 +++
 
-Tanya Reilly's talk [*Being Glue*](https://www.noidea.dog/glue) is one of those
+Tanya Reilly's talk [_Being Glue_](https://www.noidea.dog/glue) is one of those
 pieces of writing that reorganizes how you see your own week. The idea is simple
 and uncomfortable: every team runs on a layer of invisible work (coordinating,
 unblocking, onboarding, documenting, smoothing over the rough edges between
@@ -18,7 +18,7 @@ helpful, more visible colleagues move up the ladder while their own careers
 quietly stall.
 
 I lived the trap before I had a name for it. A few years back I learned about
-*Being Glue*, and it landed hard because I was exactly the person being
+_Being Glue_, and it landed hard because I was exactly the person being
 described. I ran the ad hoc meetings, I jumped on every quick debug session, I
 taught everyone my process before I had even finished proving it worked. The
 team was genuinely better for all of it. And yet none of it pointed back at me.
@@ -84,7 +84,7 @@ passed out.
 ## Patching versus fixing
 
 The biggest lesson underneath all of this is about systems, not personalities.
-The longer I thought about *Being Glue*, the more I realized it describes the
+The longer I thought about _Being Glue_, the more I realized it describes the
 same thing as a high-maintenance system: something that only keeps working
 because a person keeps manually intervening to hold it together. The article
 catalogs the human version (onboarding, unblocking, documentation, all the work
@@ -104,7 +104,7 @@ whenever I face a system that needs constant maintenance, that is the image in
 my head. Stop pumping air. Take it apart. Repair the underlying cause, not the
 symptom that keeps resurfacing.
 
-On-call is where this bites hardest, and I would extend the *Being Glue* idea
+On-call is where this bites hardest, and I would extend the _Being Glue_ idea
 straight into it. In my mind, on-call is the exception, not the rule. It is a
 gap where you did not design the system to heal itself. Yes, sometimes you carry
 the pager, and yes, sometimes you get called, but the threshold for waking a
@@ -141,8 +141,9 @@ work instead of being the glue holding a patch in place.
 
 ---
 
-*This post is a reflection on Tanya Reilly's [Being
-Glue](https://www.noidea.dog/glue). The systems-over-heroics theme also runs
-through [Leverage and the Stairs You
-Build](/blog/leverage-and-the-stairs-you-build/), and the team-ownership
-counterpart is in [Team Identity Ownership](/blog/team-identity-ownership/).*
+_This post is a reflection on Tanya Reilly's
+[Being Glue](https://www.noidea.dog/glue). The systems-over-heroics theme also
+runs through
+[Leverage and the Stairs You Build](/blog/leverage-and-the-stairs-you-build/),
+and the team-ownership counterpart is in
+[Team Identity Ownership](/blog/team-identity-ownership/)._

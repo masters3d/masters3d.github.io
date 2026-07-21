@@ -106,7 +106,7 @@ first place).
 
 ---
 
-*Related reading: [Context Hunting vs Context
-Gathering](/blog/context-hunting-vs-context-gathering/), [Effort Tracking vs
-Task Tracking](/blog/effort-tracking-vs-task-tracking/), and [Why I Love
-Worklogs](/blog/why-i-love-worklogs/).*
+_Related reading:
+[Context Hunting vs Context Gathering](/blog/context-hunting-vs-context-gathering/),
+[Effort Tracking vs Task Tracking](/blog/effort-tracking-vs-task-tracking/), and
+[Why I Love Worklogs](/blog/why-i-love-worklogs/)._

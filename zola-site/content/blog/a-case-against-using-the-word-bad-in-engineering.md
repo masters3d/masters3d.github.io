@@ -18,14 +18,14 @@ was running perfectly fine for everyone else at the exact same moment. Calling
 it "bad" wasn't wrong so much as it was low-resolution, a binary word smeared
 over a reality that was never binary.
 
-This is the same move as [Orthogonal, Not
-Opposite](/blog/orthogonal-not-opposite/): the mistake is collapsing something
-with structure onto a single line. There, sweet and salty got folded into one
-slider that was never real. Here, "good version" and "bad version" get treated
-as the two ends of one axis, when what you actually have is an artifact meeting
-a population and producing a spread of results. Good and bad are not the two
-ends of a version. They are a summary statistic we compute (badly) in our heads
-and then mistake for the thing itself.
+This is the same move as
+[Orthogonal, Not Opposite](/blog/orthogonal-not-opposite/): the mistake is
+collapsing something with structure onto a single line. There, sweet and salty
+got folded into one slider that was never real. Here, "good version" and "bad
+version" get treated as the two ends of one axis, when what you actually have is
+an artifact meeting a population and producing a spread of results. Good and bad
+are not the two ends of a version. They are a summary statistic we compute
+(badly) in our heads and then mistake for the thing itself.
 
 ## The Word Smuggles In a Response
 
@@ -33,7 +33,7 @@ The reason "bad" is so sticky is that it works, right up until it doesn't. It's
 fast. It's emotionally satisfying at 2am when a graph is red and people are
 angry and you need something to point at. It rallies a room. But the word
 carries a hidden passenger: a response. "Bad version" doesn't just describe, it
-prescribes, and what it prescribes is *roll it back for everyone*. That's the
+prescribes, and what it prescribes is _roll it back for everyone_. That's the
 correct move when the thing really is bad across the board. It's the wrong move
 when the truth is "this regresses one cohort running one configuration," where
 the right response might be to roll back for that 0.5% and leave the 99% who are
@@ -45,10 +45,10 @@ So the fix is not just to stop saying "bad." It's to replace it with words that
 carry information instead of a verdict. Instead of "bad payload," say "payload
 that regresses configuration X." Instead of "bad rollout," say "rollout that
 affects the cohort on feature-flag Y." The vocabulary I try to reach for now is
-about scope, not quality: the *blast radius* (how much of the population is
-affected), the *affected cohort* (specifically who), the *regression scope*
-(what exactly stopped working), and whether we've hit a *floor violation* (data
-loss, security, total outage) or merely a *ceiling degradation* (something is
+about scope, not quality: the _blast radius_ (how much of the population is
+affected), the _affected cohort_ (specifically who), the _regression scope_
+(what exactly stopped working), and whether we've hit a _floor violation_ (data
+loss, security, total outage) or merely a _ceiling degradation_ (something is
 slower or uglier but nobody is losing anything they can't get back). Precision
 in the words forces precision in the diagnosis. You cannot say "the rollout
 regresses customers on the legacy auth path under high concurrency" without
@@ -56,7 +56,7 @@ having actually gone and looked, and the looking is the part that was always
 missing when "bad" was doing the work.
 
 That reach for precision has a prerequisite, and it's worth being honest about
-it: you can only stop saying "bad" if you can actually *see* the distribution.
+it: you can only stop saying "bad" if you can actually _see_ the distribution.
 Per-cohort success rates, per-config telemetry, the ability to slice an error
 budget by customer and version and flag. If all you have is one global
 red-or-green light, then "bad" is genuinely all the resolution you've got, and
@@ -72,7 +72,7 @@ than a counting argument. Take your users, times your supported configurations,
 times the versions still in the wild, times the feature flags, times the
 locales, times the hardware. That product is enormous, and it is not decorative:
 each of those combinations is a real place where your software actually runs.
-Once the space is that large, the probability that *every single corner* works
+Once the space is that large, the probability that _every single corner_ works
 is essentially zero. Some combination will fail. Not because anyone was
 careless, but because a space that big always has a corner nobody tested, nobody
 imagined, and nobody could have. A nonzero failure corner isn't a defect of
@@ -81,7 +81,7 @@ moving parts.
 
 And this is exactly where "bad" breaks down hardest, because if a
 guaranteed-failing corner makes a version bad, then every version is bad,
-always, forever, including the one you're about to roll back *to*. The word
+always, forever, including the one you're about to roll back _to_. The word
 stops distinguishing anything. It can't tell the difference between "one exotic
 combination degrades" and "the whole fleet is down," and those are the two
 situations you most need to tell apart in the first ten minutes of an incident.
@@ -91,7 +91,7 @@ cohort is running isn't a failed rollout just because it found a corner. Newer
 isn't better and it isn't worse. It's newer, and it landed on a coordinate the
 old one never visited.
 
-The sharpest version of this is that the *fix* has a blast radius too, and this
+The sharpest version of this is that the _fix_ has a blast radius too, and this
 is the symmetry I most wish someone had told me early. We talk as if there's a
 good state (before) and a bad state (after) and the rollback simply returns us
 to good. But rolling back to help the 0.5% can re-break the 99% who had quietly
@@ -110,7 +110,7 @@ thing as a bad payload, and I'll say it plainly: if it brings down all sites, if
 it corrupts data, if it opens a security hole, if the blast radius is the whole
 population or it punches through a floor, then "bad" is not lazy shorthand, it's
 the accurate word and you should use it loudly. The point was never to retire
-"bad." The point is to *earn* it. Reserve it for floor violations and near-total
+"bad." The point is to _earn_ it. Reserve it for floor violations and near-total
 blast radius, and it snaps back to meaning something. Spend it on every
 one-cohort regression and it means nothing when you finally need it.
 
@@ -136,17 +136,17 @@ know about yet. Once you actually believe that, "bad" stops working as a
 verdict, because a verdict implies there was a clean version available and you
 chose wrong. There wasn't. There was a distribution, and you picked the best one
 you could see, and it had corners, like they all do. Bad stopped being a
-judgment I passed on a release and became a coordinate on a map: not *is this
-bad*, but *bad for whom, how many, and against which floor*.
+judgment I passed on a release and became a coordinate on a map: not _is this
+bad_, but _bad for whom, how many, and against which floor_.
 
 ---
 
-*This is part of a running thread on names and dichotomies that don't survive a
+_This is part of a running thread on names and dichotomies that don't survive a
 second look. [Orthogonal, Not Opposite](/blog/orthogonal-not-opposite/) pulls
-apart false opposites, [Context Hunting vs Context
-Gathering](/blog/context-hunting-vs-context-gathering/) shows how one word swap
-changes a whole mindset, and [Stop Conflating Effort Tracking with Work
-Tracking](/blog/effort-tracking-vs-task-tracking/) separates two things a single
-label had quietly fused. The "engineer away the false state" instinct is the
-same systems-over-heroics idea in [Minimize Humans as
-Glue](/blog/minimize-humans-as-glue/).*
+apart false opposites,
+[Context Hunting vs Context Gathering](/blog/context-hunting-vs-context-gathering/)
+shows how one word swap changes a whole mindset, and
+[Stop Conflating Effort Tracking with Work Tracking](/blog/effort-tracking-vs-task-tracking/)
+separates two things a single label had quietly fused. The "engineer away the
+false state" instinct is the same systems-over-heroics idea in
+[Minimize Humans as Glue](/blog/minimize-humans-as-glue/)._

@@ -180,6 +180,6 @@ things that actually matter. 🚀
 
 ---
 
-*This post is a draft reflection on my ongoing journey with AI coding tools. As
+_This post is a draft reflection on my ongoing journey with AI coding tools. As
 the technology continues to evolve, I expect my perspectives will evolve with
-it.*
+it._

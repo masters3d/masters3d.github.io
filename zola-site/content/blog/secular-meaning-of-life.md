@@ -168,12 +168,12 @@ search, drive, and renewal.**
 
 ## The Connection to Quest Engine
 
-Discovery, Play, Joy map directly to the three forces in [Quest
-Engine](/blog/quest-engine-the-why/): Searching, Driven, Renewal. The names are
-different, but the structure is identical. Quest Engine makes these forces
-operational (how to apply them to work, projects, decisions). Discovery, Play,
-Joy make them existential (why they matter for a life worth living). One is the
-framework. The other is the foundation.
+Discovery, Play, Joy map directly to the three forces in
+[Quest Engine](/blog/quest-engine-the-why/): Searching, Driven, Renewal. The
+names are different, but the structure is identical. Quest Engine makes these
+forces operational (how to apply them to work, projects, decisions). Discovery,
+Play, Joy make them existential (why they matter for a life worth living). One
+is the framework. The other is the foundation.
 
 **Discovery is Searching:** The pull toward the search for understanding what
 you don't yet know. Not passive learning, but active exploration. The universe
@@ -253,11 +253,11 @@ two. The universe doesn't care. You do. That's enough.
 
 ---
 
-*Discovery, Play, Joy as secular meaning connects to the [Quest Engine
-framework](/blog/quest-engine-the-why/) (Searching, Driven, Renewal), which sits
-above operational cycles and defines what success means. The three forces are
-diagnostic: when life feels meaningless, check which one is missing. For the
-complete framework, see the [Quest Engine
-introduction](/blog/quest-engine-introduction/) and the [Objective Function
-pillar](https://github.com/masters3d/ingenio/blob/main/pillars/objective_function.md)
-in the ingenio repository.*
+_Discovery, Play, Joy as secular meaning connects to the
+[Quest Engine framework](/blog/quest-engine-the-why/) (Searching, Driven,
+Renewal), which sits above operational cycles and defines what success means.
+The three forces are diagnostic: when life feels meaningless, check which one is
+missing. For the complete framework, see the
+[Quest Engine introduction](/blog/quest-engine-introduction/) and the
+[Objective Function pillar](https://github.com/masters3d/ingenio/blob/main/pillars/objective_function.md)
+in the ingenio repository._

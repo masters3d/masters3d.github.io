@@ -9,8 +9,8 @@ tags = ["world-cup", "soccer", "team-dynamics", "star-players", "single-point-of
 
 I have been watching a lot of the World Cup 2026, not all of it (there are far
 too many games for that), but many of them when time allows. The thing that
-keeps pulling my attention is not the scoreline. It is that the *team
-conversation* looks completely different depending on which squad is on the
+keeps pulling my attention is not the scoreline. It is that the _team
+conversation_ looks completely different depending on which squad is on the
 pitch. Some teams talk like a collection of individuals who happen to wear the
 same shirt. Others talk like a single organism. Watching that difference play
 out, game after game, is what I went looking to explain: what actually makes one
@@ -19,7 +19,7 @@ the engineering teams I have worked on.
 
 That question is the quest of this post, so let me name the angle up front,
 because it is the thing I only understood by writing my way to it. Soccer is a
-*one-dimensional* model of a team: one field, eleven positions, one ball, one
+_one-dimensional_ model of a team: one field, eleven positions, one ball, one
 clock running forward at the same rate for everyone. Engineering teams are not
 one-dimensional. They are played across many fields at once (one person's field
 is the language, another's is the network, another's is the deployment pipeline)
@@ -58,27 +58,27 @@ no one is there to receive it. That is a miss, and it is a miss the whole team
 owns, not just the passer. I have also watched the rarer thing: a player who
 makes their own luck, who manufactures the chance out of almost nothing and then
 finishes it. That is uncommon, and it is exactly the quality worth prizing. It
-is recognizing the chance, going full [Quest
-Engine](/blog/quest-engine-introduction/) on it, and executing on the
+is recognizing the chance, going full
+[Quest Engine](/blog/quest-engine-introduction/) on it, and executing on the
 opportunity. It sounds like a cliché, but it really is about honoring the
 opportunity, respecting it, and acting accordingly. In the Quest Engine terms I
 keep coming back to, the star player is the one whose searching (seeing the
 chance before anyone else) and being driven (committing to it without
 hesitation) are both sharp at the same instant.
 
-This is the same three-term dynamic I wrote about in [Timing, Momentum, and
-Resonance](/blog/quest-engine-timing-momentum-resonance/). The chance is the
-**timing** (the window the world opens, which the player does not control). The
-conversion is the **momentum** (the sustained force the player brings, which
-they do control). And the pass actually being received is the **resonance** (the
-coupling between the player and their teammates, which they can only influence).
-A star player is the one who couples all three at once. That beautiful pass with
-no one there to receive it is not a timing failure and not a momentum failure.
-It is off-resonance: the force was applied but never coupled. And the pass that
-arrives six months too early at work (the proposal the team finally asks for
-long after you made it) is the same phase mismatch, right frequency, wrong
-moment. The miss belongs to the whole team because resonance requires two
-oscillators, never one.
+This is the same three-term dynamic I wrote about in
+[Timing, Momentum, and Resonance](/blog/quest-engine-timing-momentum-resonance/).
+The chance is the **timing** (the window the world opens, which the player does
+not control). The conversion is the **momentum** (the sustained force the player
+brings, which they do control). And the pass actually being received is the
+**resonance** (the coupling between the player and their teammates, which they
+can only influence). A star player is the one who couples all three at once.
+That beautiful pass with no one there to receive it is not a timing failure and
+not a momentum failure. It is off-resonance: the force was applied but never
+coupled. And the pass that arrives six months too early at work (the proposal
+the team finally asks for long after you made it) is the same phase mismatch,
+right frequency, wrong moment. The miss belongs to the whole team because
+resonance requires two oscillators, never one.
 
 The same is true in engineering. A star engineer is not the person who talks the
 most or touches the most code. It is the person who, handed an ambiguous chance,
@@ -123,7 +123,7 @@ everything on one number nine.
 ## Many Star Players, Across Many Planes
 
 The solution, at least in the engineering world, is that you need multiple star
-players, and you need to be able to *develop* multiple star players who are
+players, and you need to be able to _develop_ multiple star players who are
 actually happy being on the same team. There is no fighting over the ball, no
 fighting the bell curve. There is no reason to fight the bell curve at all. But
 the average of the curve needs to be higher. You use everyone's qualities to the
@@ -146,7 +146,7 @@ on the networking plane, another owns the deployment plane, another the
 gnarly-subsystem plane. These are not the same skill wearing different jerseys.
 They are genuinely different games being played on the same team, at the same
 time, and every one of them can have its own number nine. So the question stops
-being "who is *the* star" and becomes "does every plane that matters have
+being "who is _the_ star" and becomes "does every plane that matters have
 someone who converts on it, and can that role move when the plane heats up." You
 can have many star players in many places instead of one hero and ten supporting
 cast members, because the field itself is plural.
@@ -170,7 +170,7 @@ who is not there to receive it yet (the proposal nobody is ready for, the
 abstraction nobody needs until the quarter it suddenly saves everyone). Landing
 that pass is not luck. It takes the same skill and coordination as a perfectly
 weighted through-ball, except the hard part is the timing across months instead
-of meters. The star players who can do *that* (aim the ball at where the team
+of meters. The star players who can do _that_ (aim the ball at where the team
 will be, not where it is) are playing a dimension the one-dimensional model
 cannot even draw.
 
@@ -180,7 +180,7 @@ interchangeable parts. The point is the opposite: work is not the simple game
 with simple rules, the dynamics are much more complicated than eleven positions
 on a field, and that complexity is a gift. It is exactly what lets a team have
 many star players in many places, each one a genuine star on their own plane and
-across their own slice of time, mostly working *with* each other rather than
+across their own slice of time, mostly working _with_ each other rather than
 against each other.
 
 So the "why" I went looking for, the thing that separates the squad that talks
@@ -188,7 +188,7 @@ like an organism from the one that talks like strangers in matching shirts, is
 this. A single star who scores all the goals is a one-dimensional answer to a
 multi-dimensional game, and it fails the moment that person is sick, on
 vacation, or gone. The resilient answer is a team that recognizes stardom is
-*local* (every plane and every timeslot can have its own), that prizes the
+_local_ (every plane and every timeslot can have its own), that prizes the
 versatile generalists who move between planes and pass the ball into the future,
 and that keeps the star-player role rotating so no single absence ever ends the
 season. That is what lets a team gel, and it is the pattern I keep landing on in
@@ -197,18 +197,18 @@ many planes, coordinating across time.
 
 ---
 
-*This one started as a set of notes scribbled during World Cup 2026 games and
-turned into another way of looking at the [Quest
-Engine](/blog/quest-engine-introduction/). It even followed the Quest Engine's
-own arc to get here: I went **exploring** by watching squad after squad and
-searching for what made some of them cohere, I **executed** on the idea by
+_This one started as a set of notes scribbled during World Cup 2026 games and
+turned into another way of looking at the
+[Quest Engine](/blog/quest-engine-introduction/). It even followed the Quest
+Engine's own arc to get here: I went **exploring** by watching squad after squad
+and searching for what made some of them cohere, I **executed** on the idea by
 pinning down what a star player actually is (recognize the chance, convert it,
 own the miss when the receiver is not there), and then I **reflected** back to
 answer the why, which turned the single-star intuition into a multi-dimensional,
 across-time one. The star player is the person whose searching and driving line
 up on the opportunity, and a resilient team is one that renews by developing and
 rotating that capability across many planes instead of hoarding it in one place.
-The chance-and-conversion pattern is the soccer version of [Timing, Momentum,
-and Resonance](/blog/quest-engine-timing-momentum-resonance/), and for more on
-how teams take ownership of their own identity, see [Team Identity
-Ownership](/blog/team-identity-ownership/).*
+The chance-and-conversion pattern is the soccer version of
+[Timing, Momentum, and Resonance](/blog/quest-engine-timing-momentum-resonance/),
+and for more on how teams take ownership of their own identity, see
+[Team Identity Ownership](/blog/team-identity-ownership/)._

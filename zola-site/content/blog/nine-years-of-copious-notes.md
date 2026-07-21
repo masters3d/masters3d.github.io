@@ -37,13 +37,13 @@ The break came when the notes stopped being something I had to write. With AI
 coding agents in the loop, the log writes itself as a side effect of the work.
 That's the whole premise behind [worklogs](/blog/why-i-love-worklogs/): the
 agent captures context, status, and outcomes as you go, so you get the rigor of
-a lab notebook without the overhead. This is the [Quest
-Engine's](/blog/quest-engine-introduction/) Searching step made cheap: building
-the context that shapes a better decision, except you no longer pay for it by
-hand. Nine years of relaxing my cadence to fight friction, and the answer turned
-out to be removing the human from the writing step entirely. I don't open a file
-anymore. I tell the agent what's happening and it logs it, sizes it, and links
-the PR.
+a lab notebook without the overhead. This is the
+[Quest Engine's](/blog/quest-engine-introduction/) Searching step made cheap:
+building the context that shapes a better decision, except you no longer pay for
+it by hand. Nine years of relaxing my cadence to fight friction, and the answer
+turned out to be removing the human from the writing step entirely. I don't open
+a file anymore. I tell the agent what's happening and it logs it, sizes it, and
+links the PR.
 
 The real value shows up later, in consistency. Because the agent logs everything
 the same way every time, those worklogs become a structured record you can mine.

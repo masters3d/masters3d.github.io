@@ -7,13 +7,14 @@ categories = ["ai", "productivity", "workflow"]
 tags = ["quest-engine", "agents", "worklogs", "collaboration", "search-drive-renew", "context", "strategy", "improvement"]
 +++
 
-The [Quest Engine
-framework](https://github.com/masters3d/ingenio/tree/main/presentation) is built
-on three recursive action steps that help you solve problems at any scale. These
-steps work because they align with how you naturally search for better
-solutions, how you're driven to act on what you discover, and how you renew your
-understanding as context evolves. AI coding agents amplify these processes
-(they're tools that multiply your leverage, not replacements for your judgment).
+The
+[Quest Engine framework](https://github.com/masters3d/ingenio/tree/main/presentation)
+is built on three recursive action steps that help you solve problems at any
+scale. These steps work because they align with how you naturally search for
+better solutions, how you're driven to act on what you discover, and how you
+renew your understanding as context evolves. AI coding agents amplify these
+processes (they're tools that multiply your leverage, not replacements for your
+judgment).
 
 ## The Problem
 
@@ -28,8 +29,8 @@ that makes teams smarter over time. That's what the Quest Engine provides.
 ## Three Moves: Search, Drive, Renew
 
 The Quest Engine has three action steps that you repeat continuously. Each cycle
-leaves you better than the last. These three moves are how the [why behind the
-how](/blog/quest-engine-the-why/) manifests in practice.
+leaves you better than the last. These three moves are how the
+[why behind the how](/blog/quest-engine-the-why/) manifests in practice.
 
 **Contextual Awareness (Searching)**: Understand before acting. Search for
 what's true right now. What dependencies exist? What will change? What do you
@@ -58,12 +59,12 @@ calibration. All three working together create the compounding effect (but
 Here's the complete structure showing how each pillar follows the same recursive
 pattern:
 
-| **Phase** | **Contextual Awareness (Searching)** | **Clear Strategy (Driven)** | **Systematic Improvement (Renewing)** |
-|-----------|-------------------------|-------------------|---------------------------|
-| **Main Action** | Search: Understand before acting | Drive: Execute based on what you know | Renew: Make the next cycle better |
-| **Step 1: Search** | Proactive Curiosity<br/>Systematically find and organize information | Challenge Matching<br/>Assess where your capability meets the challenge | Iterative Integration<br/>Measure results against expectations |
-| **Step 2: Driven** | Cohesive Narrative<br/>Build accurate mental models | Directed Intentionality<br/>Commit to one clear objective | Deliberate Practice<br/>Identify patterns to improve |
-| **Step 3: Renewal** | Shared Understanding<br/>Keep everyone aligned on what's true | Adaptive Control<br/>Adjust based on feedback | Update Propagation<br/>Make improvements permanent and spread them |
+| **Phase**           | **Contextual Awareness (Searching)**                                 | **Clear Strategy (Driven)**                                             | **Systematic Improvement (Renewing)**                              |
+| ------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| **Main Action**     | Search: Understand before acting                                     | Drive: Execute based on what you know                                   | Renew: Make the next cycle better                                  |
+| **Step 1: Search**  | Proactive Curiosity<br/>Systematically find and organize information | Challenge Matching<br/>Assess where your capability meets the challenge | Iterative Integration<br/>Measure results against expectations     |
+| **Step 2: Driven**  | Cohesive Narrative<br/>Build accurate mental models                  | Directed Intentionality<br/>Commit to one clear objective               | Deliberate Practice<br/>Identify patterns to improve               |
+| **Step 3: Renewal** | Shared Understanding<br/>Keep everyone aligned on what's true        | Adaptive Control<br/>Adjust based on feedback                           | Update Propagation<br/>Make improvements permanent and spread them |
 
 Each column is a complete cycle. Each row represents the same type of action
 across all three pillars. The structure repeats at every scale.
@@ -271,10 +272,10 @@ don't replace your judgment).
 
 ---
 
-*The Quest Engine framework originates from [presentation materials on
-engineering and career
-development](https://github.com/masters3d/ingenio/tree/main/presentation). The
-name connects "quest" (Latin *quaere*, to seek) with "engine" (Latin *ingenium*,
-cleverness), representing systematic inquiry driven by continuous improvement.
-The framework's recursive nature (where each cycle refines both execution and
-objectives) makes it a compounding system for both humans and AI agents.*
+*The Quest Engine framework originates from
+[presentation materials on engineering and career development](https://github.com/masters3d/ingenio/tree/main/presentation).
+The name connects "quest" (Latin *quaere*, to seek) with "engine" (Latin
+*ingenium*, cleverness), representing systematic inquiry driven by continuous
+improvement. The framework's recursive nature (where each cycle refines both
+execution and objectives) makes it a compounding system for both humans and AI
+agents.*

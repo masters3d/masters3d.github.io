@@ -20,9 +20,9 @@ bicycle is the most efficient creature on earth. The bicycle isn't faster than a
 human; it's a structure that converts the same effort into more distance. That's
 leverage.
 
-This is the same insight behind the [Quest
-Engine](/blog/quest-engine-introduction/): you don't get better by working
-harder against the wall. You get better by building the staircase.
+This is the same insight behind the
+[Quest Engine](/blog/quest-engine-introduction/): you don't get better by
+working harder against the wall. You get better by building the staircase.
 
 ## The Wall, the Stairs, and the Scaffold
 
@@ -60,7 +60,7 @@ Or think of creating a work of art. A painter may spend more time on primer
 layers, under-drawings, grid lines, and reference studies than on the final
 visible surface. A sculptor's armature (the steel skeleton that holds wet clay
 during shaping) is often a feat of engineering that no audience will ever see.
-The scaffold *serves* the work; the work does not serve the scaffold. Yet the
+The scaffold _serves_ the work; the work does not serve the scaffold. Yet the
 more ambitious the work, the more intricate the scaffold must be.
 
 **Scaffold engineering is the discipline of building structures that enable the
@@ -99,10 +99,10 @@ right fulcrum). When a task feels impossibly hard, the first question is often
 not "how do I get stronger?" but "how do I give this more time?" You don't
 always need a bigger effort; sometimes you need a longer arm on the lever.
 
-This is the **Driven** force from the [WHY behind the Quest
-Engine](/blog/quest-engine-the-why/): the daily commitment to act on what you
-control. You don't need a breakthrough. You need consistency (a streak is just
-consistency made visible).
+This is the **Driven** force from the
+[WHY behind the Quest Engine](/blog/quest-engine-the-why/): the daily commitment
+to act on what you control. You don't need a breakthrough. You need consistency
+(a streak is just consistency made visible).
 
 The payoff for sizing steps correctly isn't just progress. It's **flow**.
 Csikszentmihalyi's research on optimal experience shows that people enter flow
@@ -120,17 +120,17 @@ else entirely. The scaffold was internalized; it became load-bearing structure.
 the skill is structural** (until it runs without effort, freeing your attention
 for the next step up).
 
-The same geometry shows up in information design as [progressive
-disclosure](https://en.wikipedia.org/wiki/Progressive_disclosure): **reveal
-complexity only when the learner or user is ready for it.** Don't show every
-setting on the first screen. Don't introduce exceptions before the rule. Don't
-hand someone the full map before they know how to walk. A well-designed tutorial
-starts with the simplest working example (just enough to get something running)
-and defers edge cases, advanced options, and error handling until the learner
-has internalized the foundation. A good CLI tool has sensible defaults that hide
-every option you don't need right now, with a `--help` flag that reveals more
-only when you ask. Each of these is a correctly sized step. The complexity
-didn't disappear (it was deferred to the stair where it belongs).
+The same geometry shows up in information design as
+[progressive disclosure](https://en.wikipedia.org/wiki/Progressive_disclosure):
+**reveal complexity only when the learner or user is ready for it.** Don't show
+every setting on the first screen. Don't introduce exceptions before the rule.
+Don't hand someone the full map before they know how to walk. A well-designed
+tutorial starts with the simplest working example (just enough to get something
+running) and defers edge cases, advanced options, and error handling until the
+learner has internalized the foundation. A good CLI tool has sensible defaults
+that hide every option you don't need right now, with a `--help` flag that
+reveals more only when you ask. Each of these is a correctly sized step. The
+complexity didn't disappear (it was deferred to the stair where it belongs).
 
 This is why good documentation starts with a Quick Start, moves to a Concepts
 guide, and only then dives into a full Reference. The Quick Start is not a
@@ -172,7 +172,7 @@ stopped task if you can take the next smallest available action:
 
 - Write down what you know so far.
 - Ask the specific question that unblocks you.
-- Break the problem into the part you *can* move on right now.
+- Break the problem into the part you _can_ move on right now.
 - Document the blocker so the next person doesn't hit the same wall.
 
 The Quest Engine's **Searching** move is exactly this: when the direct path is
@@ -208,8 +208,8 @@ Three metaphors, one idea:
   achievable steps.
 
 Engineering, learning, and collaboration are all the same job under different
-names: *find the wall, size the next stair, take the step, leave the stair
-behind for the next person (including future you).*
+names: _find the wall, size the next stair, take the step, leave the stair
+behind for the next person (including future you)._
 
 That's why daily practice works. That's why progressive disclosure works. That's
 why forward progress matters. That's why iterative development works. That's why
@@ -221,8 +221,8 @@ really can move the world. Or at least the next step of it.
 
 ---
 
-*This post connects the leverage metaphor to the [Quest Engine
-framework](/blog/quest-engine-introduction/) and its
+_This post connects the leverage metaphor to the
+[Quest Engine framework](/blog/quest-engine-introduction/) and its
 [WHY](/blog/quest-engine-the-why/): Searching for the right next step, being
 Driven by daily action, and Renewing through iteration so each cycle leaves a
-stair behind.*
+stair behind._

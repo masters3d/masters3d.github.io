@@ -26,7 +26,7 @@ shooting and little of the editing.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/waXta2PAjfc" frameborder="0" allowfullscreen style="max-width: 100%; height: auto;"></iframe>
 
-### Guatemala 2014 Mission Trip - Upon this Rock Ministries  
+### Guatemala 2014 Mission Trip - Upon this Rock Ministries
 
 Documentation of humanitarian work in Guatemala 2014, showcasing community
 impact, construction projects, and volunteer efforts.

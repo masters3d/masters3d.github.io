@@ -2,6 +2,9 @@
 zola-site/public/
 zola-site/public/*
 
+# Node tooling (Prettier + markdownlint)
+node_modules/
+
 # OS artifacts
 .DS_Store
 .DS_Store?

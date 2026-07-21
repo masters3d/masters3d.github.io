@@ -7,20 +7,21 @@ categories = ["development", "languages"]
 tags = ["swift", "rust", "concurrency", "actors", "memory-safety", "type-systems", "languages"]
 +++
 
-I keep coming back to Swift's [actor
-model](https://developer.apple.com/documentation/swift/actor), and something
-small keeps nagging at me. I say this as someone who loves the language (I have
-written before about [why Swift is my favorite language I never got paid to
-use](/blog/swift-journey-why-not-professional/), and I predicted its rise [back
-in 2014](/blog/apple-swift-apps-everywhere-prediction/)). The whole promise of
-actors was isolation: give each unit of concurrency its own protected state so
-the compiler can rule out data races. That goal is exactly right, and I think it
-was absolutely needed. Yet as an outsider looking in, I keep noticing that an
-actor still feels like a class that is a little different for thread safety,
-while [Rust](https://www.rust-lang.org/) reaches stronger, more versatile
-isolation with no actor construct at all. The question that pulls me in is
-simple: if Rust needs no actors to be safe across threads, what is Swift's actor
-model actually buying, and why does it feel like it stops one step short?
+I keep coming back to Swift's
+[actor model](https://developer.apple.com/documentation/swift/actor), and
+something small keeps nagging at me. I say this as someone who loves the
+language (I have written before about
+[why Swift is my favorite language I never got paid to use](/blog/swift-journey-why-not-professional/),
+and I predicted its rise
+[back in 2014](/blog/apple-swift-apps-everywhere-prediction/)). The whole
+promise of actors was isolation: give each unit of concurrency its own protected
+state so the compiler can rule out data races. That goal is exactly right, and I
+think it was absolutely needed. Yet as an outsider looking in, I keep noticing
+that an actor still feels like a class that is a little different for thread
+safety, while [Rust](https://www.rust-lang.org/) reaches stronger, more
+versatile isolation with no actor construct at all. The question that pulls me
+in is simple: if Rust needs no actors to be safe across threads, what is Swift's
+actor model actually buying, and why does it feel like it stops one step short?
 
 ## Two Kinds of Thread Safety
 
@@ -41,9 +42,9 @@ from very different base camps.
 
 ## Why Rust Reaches Safety Without Actors
 
-Rust's data-race freedom falls out of [ownership and
-borrowing](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html) plus
-two marker traits, all checked at compile time. The starting point is that
+Rust's data-race freedom falls out of
+[ownership and borrowing](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
+plus two marker traits, all checked at compile time. The starting point is that
 access permissions are encoded directly in the types. For some type `T`, you
 work with three forms: `T` is an owned value, `&mut T` is an exclusive (unique)
 mutable borrow, and `&T` is a shared, read-only borrow. Ownership means `T` is
@@ -53,18 +54,19 @@ yours; `&mut T` means you have the only handle that can mutate it right now;
 The foundation is a single rule the borrow checker enforces on those forms: at
 any moment you can have many shared references (`&T`) or exactly one mutable
 reference (`&mut T`), never both, and never two `&mut T` at once. The Rust Book
-spells this out in its chapter on [references and
-borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html).
+spells this out in its chapter on
+[references and borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html).
 A data race requires aliasing and mutation and concurrency together, so by
 statically forbidding the aliasing-plus-mutation combination, Rust makes the
 race impossible before threads even enter the picture. Two more guarantees round
 this out: every reference carries a
 [lifetime](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html) and
 cannot outlive the `T` it points to (so you can never hold a dangling
-reference), and each owned value is [freed exactly
-once](https://doc.rust-lang.org/book/ch15-03-drop.html) when its single owner
-goes out of scope (so there is no double-free). The effect is that you must
-prove to the compiler you have no data races before your program will build.
+reference), and each owned value is
+[freed exactly once](https://doc.rust-lang.org/book/ch15-03-drop.html) when its
+single owner goes out of scope (so there is no double-free). The effect is that
+you must prove to the compiler you have no data races before your program will
+build.
 
 A direct consequence is that Rust will not let you mutate a value through a
 shared `&T` at all. If you want to share something across threads and still
@@ -89,10 +91,9 @@ be moved to another thread, and
 reference to it can be used from multiple threads. These propagate automatically
 through every type: `Rc<T>` is not `Send` because its reference count is
 non-atomic, while `Arc<T>` is `Send` because its count is atomic. The
-[Rustonomicon chapter on Send and
-Sync](https://doc.rust-lang.org/nomicon/send-and-sync.html) walks through
-exactly how the compiler derives and checks this. When you hand a value to
-another thread through a
+[Rustonomicon chapter on Send and Sync](https://doc.rust-lang.org/nomicon/send-and-sync.html)
+walks through exactly how the compiler derives and checks this. When you hand a
+value to another thread through a
 [channel](https://doc.rust-lang.org/book/ch16-02-message-passing.html),
 ownership transfers and the sender can no longer touch it.
 
@@ -106,30 +107,30 @@ becomes a compile error rather than a rare production crash.
 That transfer point is where I have to correct my own intuition. I used to
 describe Rust's safety in terms of copies, as if independence came from
 duplicating data. The mechanism that actually makes Rust both safe and cheap is
-a [move that invalidates the
-source](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html), not a
-deep copy. Nothing is duplicated; ownership simply relocates, so there is no
-performance penalty and no size limit. My worry about "structs too big to copy"
-mostly dissolves once I think in moves instead of copies. So Rust gives you
-per-unit isolation exactly when you want it (channels, `Mutex<T>`, thread-local
-ownership) without ever imposing an actor runtime. Actors in Rust exist only as
-an optional library pattern, such as [Actix](https://actix.rs/), because the
-language already provides the guarantee that actors elsewhere provide at
-runtime.
+a
+[move that invalidates the source](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html),
+not a deep copy. Nothing is duplicated; ownership simply relocates, so there is
+no performance penalty and no size limit. My worry about "structs too big to
+copy" mostly dissolves once I think in moves instead of copies. So Rust gives
+you per-unit isolation exactly when you want it (channels, `Mutex<T>`,
+thread-local ownership) without ever imposing an actor runtime. Actors in Rust
+exist only as an optional library pattern, such as [Actix](https://actix.rs/),
+because the language already provides the guarantee that actors elsewhere
+provide at runtime.
 
 ## The Monumental Task Swift Took On
 
 Here is where I want to be fair, because it is easy to critique a result without
 honoring the pursuit. Swift set out to add strict, safe concurrency to a
 language that was already mature, already shipping in billions of devices, and
-already committed to seamless [interoperability with C and
-C++](https://www.swift.org/documentation/cxx-interop/), reference-semantics
-classes, [automatic reference
-counting](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/),
+already committed to seamless
+[interoperability with C and C++](https://www.swift.org/documentation/cxx-interop/),
+reference-semantics classes,
+[automatic reference counting](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/),
 and a stable ABI. Retrofitting compile-time data-race safety onto that
 foundation, and doing it progressively so existing code keeps working, is one of
-the more ambitious language-evolution efforts I have watched unfold. The [Swift
-6 migration path](https://www.swift.org/migration/documentation/migrationguide/)
+the more ambitious language-evolution efforts I have watched unfold. The
+[Swift 6 migration path](https://www.swift.org/migration/documentation/migrationguide/)
 lets teams opt into complete concurrency checking incrementally rather than
 through a single breaking cutover, which is a remarkable amount of care for
 real-world codebases.
@@ -153,17 +154,16 @@ strong as the `Sendable`-ness of what crosses it, which is why the actor reads
 to me as a serialization point rather than a fully sealed environment.
 
 The pieces that make this work are genuinely clever, not incidental complexity.
-[Region-based
-isolation](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0414-region-based-isolation.md)
+[Region-based isolation](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0414-region-based-isolation.md)
 (SE-0414) lets the compiler prove that a non-`Sendable` value is disconnected
 from every other region, so it can be transferred into an actor safely without
-full ownership tracking, and [`sending`
-parameters](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0430-transferring-parameters-and-results.md)
+full ownership tracking, and
+[`sending` parameters](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0430-transferring-parameters-and-results.md)
 (SE-0430) build directly on that analysis. Swift is even importing ownership
-ideas the language did not start with, through [noncopyable
-types](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0390-noncopyable-structs-and-enums.md)
-(`~Copyable`, SE-0390) and the [`borrowing` and
-`consuming`](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0377-parameter-ownership-modifiers.md)
+ideas the language did not start with, through
+[noncopyable types](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0390-noncopyable-structs-and-enums.md)
+(`~Copyable`, SE-0390) and the
+[`borrowing` and `consuming`](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0377-parameter-ownership-modifiers.md)
 modifiers (SE-0377). These features land in the middle of an existing model, so
 they feel additive rather than foundational, but each one is a considered step
 toward the same safety Rust gets from its base.
@@ -202,48 +202,48 @@ Rust reached safety by designing for it from day one; Swift is reaching for the
 same safety while carrying a decade of compatibility on its back, and it is
 getting there in careful, deliberate steps.
 
-*Rust does not need actors because ownership, `Send`, and `Sync`, plus
+_Rust does not need actors because ownership, `Send`, and `Sync`, plus
 move-by-default, make data races a compile error at the type level, uniformly.
 Swift's actors serialize access on top of a shared, C-compatible core, so full
 isolation has to be rebuilt progressively with `Sendable`, regions, and
 move-only types. The more I sit with it, the less this looks like a shortcoming
 and the more it looks like the tax of backward compatibility being paid down
-honestly, one release at a time. It rhymes with what I found in [My Swift
-Journey](/blog/swift-journey-why-not-professional/) and in [Language Choice in
-the LLM Era](/blog/language-choice-in-the-llm-era/): Swift keeps making sound
-engineering choices under real constraints, and the pursuit of strict, safe
-concurrency on a mature language is worth admiring even where it has not yet
-caught up to a language that started from ownership. The trade-off is not that
-Swift got it wrong; it is that it chose to bring everyone along, and that is a
-harder road.*
+honestly, one release at a time. It rhymes with what I found in
+[My Swift Journey](/blog/swift-journey-why-not-professional/) and in
+[Language Choice in the LLM Era](/blog/language-choice-in-the-llm-era/): Swift
+keeps making sound engineering choices under real constraints, and the pursuit
+of strict, safe concurrency on a mature language is worth admiring even where it
+has not yet caught up to a language that started from ownership. The trade-off
+is not that Swift got it wrong; it is that it chose to bring everyone along, and
+that is a harder road._
 
 ### Sources
 
-| Source | Link |
-|---|---|
-| `actor` — Apple Developer Documentation | [developer.apple.com](https://developer.apple.com/documentation/swift/actor) |
-| `Sendable` — Apple Developer Documentation | [developer.apple.com](https://developer.apple.com/documentation/swift/sendable) |
-| SE-0306: Actors | [swift-evolution](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0306-actors.md) |
-| SE-0302: `Sendable` and `@Sendable` closures | [swift-evolution](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0302-concurrent-value-and-concurrent-closures.md) |
-| SE-0414: Region-based isolation | [swift-evolution](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0414-region-based-isolation.md) |
-| SE-0430: `sending` parameters and results | [swift-evolution](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0430-transferring-parameters-and-results.md) |
-| SE-0390: Noncopyable structs and enums (`~Copyable`) | [swift-evolution](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0390-noncopyable-structs-and-enums.md) |
-| SE-0377: `borrowing` and `consuming` parameter ownership modifiers | [swift-evolution](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0377-parameter-ownership-modifiers.md) |
-| Swift 6 Migration Guide (data-race safety and strict concurrency) | [swift.org](https://www.swift.org/migration/documentation/migrationguide/) |
-| Automatic Reference Counting — The Swift Programming Language | [docs.swift.org](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/) |
-| Mixing Swift and C++ — Swift.org | [swift.org](https://www.swift.org/documentation/cxx-interop/) |
-| What Is Ownership? — The Rust Programming Language | [doc.rust-lang.org](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html) |
-| References and Borrowing — The Rust Programming Language | [doc.rust-lang.org](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html) |
-| Message Passing / channels — The Rust Programming Language | [doc.rust-lang.org](https://doc.rust-lang.org/book/ch16-02-message-passing.html) |
-| Fearless Concurrency — The Rust Programming Language | [doc.rust-lang.org](https://doc.rust-lang.org/book/ch16-00-concurrency.html) |
-| Validating References with Lifetimes — The Rust Programming Language | [doc.rust-lang.org](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html) |
-| Running Code on Cleanup with the `Drop` Trait — The Rust Programming Language | [doc.rust-lang.org](https://doc.rust-lang.org/book/ch15-03-drop.html) |
-| `std::marker::Send` — Rust standard library | [doc.rust-lang.org](https://doc.rust-lang.org/std/marker/trait.Send.html) |
-| `std::marker::Sync` — Rust standard library | [doc.rust-lang.org](https://doc.rust-lang.org/std/marker/trait.Sync.html) |
-| `std::sync::Mutex` — Rust standard library | [doc.rust-lang.org](https://doc.rust-lang.org/std/sync/struct.Mutex.html) |
-| `std::sync::RwLock` — Rust standard library | [doc.rust-lang.org](https://doc.rust-lang.org/std/sync/struct.RwLock.html) |
-| Send and Sync — The Rustonomicon | [doc.rust-lang.org](https://doc.rust-lang.org/nomicon/send-and-sync.html) |
-| The Rust Programming Language (official site) | [rust-lang.org](https://www.rust-lang.org/) |
-| Actix (actor framework for Rust) | [actix.rs](https://actix.rs/) |
-| Actor model — Wikipedia | [wikipedia.org](https://en.wikipedia.org/wiki/Actor_model) |
-| Erlang (official site) | [erlang.org](https://www.erlang.org/) |
+| Source                                                                        | Link                                                                                                                                 |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| `actor` — Apple Developer Documentation                                       | [developer.apple.com](https://developer.apple.com/documentation/swift/actor)                                                         |
+| `Sendable` — Apple Developer Documentation                                    | [developer.apple.com](https://developer.apple.com/documentation/swift/sendable)                                                      |
+| SE-0306: Actors                                                               | [swift-evolution](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0306-actors.md)                                   |
+| SE-0302: `Sendable` and `@Sendable` closures                                  | [swift-evolution](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0302-concurrent-value-and-concurrent-closures.md) |
+| SE-0414: Region-based isolation                                               | [swift-evolution](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0414-region-based-isolation.md)                   |
+| SE-0430: `sending` parameters and results                                     | [swift-evolution](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0430-transferring-parameters-and-results.md)      |
+| SE-0390: Noncopyable structs and enums (`~Copyable`)                          | [swift-evolution](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0390-noncopyable-structs-and-enums.md)            |
+| SE-0377: `borrowing` and `consuming` parameter ownership modifiers            | [swift-evolution](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0377-parameter-ownership-modifiers.md)            |
+| Swift 6 Migration Guide (data-race safety and strict concurrency)             | [swift.org](https://www.swift.org/migration/documentation/migrationguide/)                                                           |
+| Automatic Reference Counting — The Swift Programming Language                 | [docs.swift.org](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/)         |
+| Mixing Swift and C++ — Swift.org                                              | [swift.org](https://www.swift.org/documentation/cxx-interop/)                                                                        |
+| What Is Ownership? — The Rust Programming Language                            | [doc.rust-lang.org](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)                                                   |
+| References and Borrowing — The Rust Programming Language                      | [doc.rust-lang.org](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html)                                            |
+| Message Passing / channels — The Rust Programming Language                    | [doc.rust-lang.org](https://doc.rust-lang.org/book/ch16-02-message-passing.html)                                                     |
+| Fearless Concurrency — The Rust Programming Language                          | [doc.rust-lang.org](https://doc.rust-lang.org/book/ch16-00-concurrency.html)                                                         |
+| Validating References with Lifetimes — The Rust Programming Language          | [doc.rust-lang.org](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)                                                     |
+| Running Code on Cleanup with the `Drop` Trait — The Rust Programming Language | [doc.rust-lang.org](https://doc.rust-lang.org/book/ch15-03-drop.html)                                                                |
+| `std::marker::Send` — Rust standard library                                   | [doc.rust-lang.org](https://doc.rust-lang.org/std/marker/trait.Send.html)                                                            |
+| `std::marker::Sync` — Rust standard library                                   | [doc.rust-lang.org](https://doc.rust-lang.org/std/marker/trait.Sync.html)                                                            |
+| `std::sync::Mutex` — Rust standard library                                    | [doc.rust-lang.org](https://doc.rust-lang.org/std/sync/struct.Mutex.html)                                                            |
+| `std::sync::RwLock` — Rust standard library                                   | [doc.rust-lang.org](https://doc.rust-lang.org/std/sync/struct.RwLock.html)                                                           |
+| Send and Sync — The Rustonomicon                                              | [doc.rust-lang.org](https://doc.rust-lang.org/nomicon/send-and-sync.html)                                                            |
+| The Rust Programming Language (official site)                                 | [rust-lang.org](https://www.rust-lang.org/)                                                                                          |
+| Actix (actor framework for Rust)                                              | [actix.rs](https://actix.rs/)                                                                                                        |
+| Actor model — Wikipedia                                                       | [wikipedia.org](https://en.wikipedia.org/wiki/Actor_model)                                                                           |
+| Erlang (official site)                                                        | [erlang.org](https://www.erlang.org/)                                                                                                |

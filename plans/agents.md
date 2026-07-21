@@ -34,13 +34,14 @@
 - **Rationale**: `master` is the default branch and the single source of truth; PRs accidentally based on another working branch (e.g. another `copilot/*` branch) do not reach `master` when merged
 - **Before creating a PR**: verify the base branch is `master`; if a PR was opened against the wrong base, retarget it to `master`
 
-### 6. Markdown Line Wrapping
-**DECIDED**: Blog Markdown is wrapped to a fixed line width (80 columns) using `scripts/wrap_markdown.py`
-- **Rationale**: One-line-per-paragraph posts produce whole-paragraph diffs; wrapping yields small, reviewable line-level diffs
-- **Guarantee**: Wrapping only inserts Markdown soft breaks (single newlines), which render as spaces, so the generated HTML is unchanged. Hard breaks (two trailing spaces) are preserved verbatim
-- **Rule for agents**: After creating or editing any blog post, run `python3 scripts/wrap_markdown.py` (standard-library Python 3, portable across Linux/macOS/Windows) before committing
-- **Enforced**: The PR Validation workflow runs `python3 scripts/wrap_markdown.py --check`; unwrapped Markdown fails CI
-- **Do NOT** hand-wrap or hand-reflow paragraphs; always let the script do it so the result is deterministic and idempotent
+### 6. Markdown Formatting (Prettier + markdownlint)
+**DECIDED**: Blog Markdown is formatted with Prettier and linted with markdownlint; `scripts/format_markdown.py` is a thin wrapper that just calls these two tools
+- **Rationale**: One-line-per-paragraph posts produce whole-paragraph diffs; Prettier wraps prose to 80 columns for small, reviewable line-level diffs, and markdownlint catches structural issues. Using standard tools (instead of a bespoke script) is portable and well understood
+- **Guarantee**: Prettier is configured with `proseWrap: always` (soft breaks render as spaces) and `embeddedLanguageFormatting: off` (fenced sample code is untouched), so the generated HTML is byte-identical before and after formatting
+- **Rule for agents**: After creating or editing any blog post, run `npm install` (once) then `python3 scripts/format_markdown.py` before committing
+- **Enforced**: The PR Validation workflow runs `npm ci` + `python3 scripts/format_markdown.py --check`; incorrectly formatted or lint-failing Markdown fails CI
+- **Config**: `.prettierrc.json`, `.markdownlint-cli2.jsonc`, and pinned versions in `package.json`
+- **Do NOT** hand-wrap or hand-reflow paragraphs; always let Prettier do it so the result is deterministic and idempotent
 
 ## Session Consistency Rules
 
@@ -273,7 +274,7 @@ masters3d.github.io/
    +++
    ```
 3. **Write content**: Standard Markdown below frontmatter
-4. **Wrap lines**: `python3 scripts/wrap_markdown.py` (required; keeps diffs small, does not change rendered output)
+4. **Format Markdown**: `python3 scripts/format_markdown.py` (required; runs Prettier + markdownlint, keeps diffs small, does not change rendered output)
 5. **Test locally**: `cd zola-site && zola serve`
 6. **Build**: `zola build` before committing
 

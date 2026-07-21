@@ -45,7 +45,7 @@ thing that would improve the next one.
 
 Both biases share a root: they treat data collection as a search for a
 defendant. Unbiased data gathering starts from the opposite stance. You are not
-asking *who*, you are asking *what let this through*. What signal was missing.
+asking _who_, you are asking _what let this through_. What signal was missing.
 What context did not reach the person who needed it. What part of the process
 assumed a human would catch something no human could reliably catch. When the
 question is unbiased, people stop defending and start reconstructing, and
@@ -54,7 +54,7 @@ reconstruction is where the useful information lives.
 ## Heroes are a symptom, not a solution
 
 Here is where blamelessness shifts left from the retrospective into the design.
-If the team is the unit of work, then the individual sits *below* the team in
+If the team is the unit of work, then the individual sits _below_ the team in
 the accounting of responsibility. The team owns the outcome. The individual is a
 component inside the team's system. And that reframes one of the most celebrated
 figures in engineering: the hero.
@@ -65,9 +65,9 @@ need one, because the work would already be taken care of. You only reach for a
 hero when something has gone wrong, when a dependency was not met, when a seam
 that should have held started to split. So the hero is never really the win. The
 hero is the visible symptom of a gap, the human who stepped into a place where a
-fix was never made. This is the same shape I wrote about in [Minimize Humans as
-Glue](/blog/minimize-humans-as-glue/): a person standing in for missing
-structure, holding the system together by manual effort.
+fix was never made. This is the same shape I wrote about in
+[Minimize Humans as Glue](/blog/minimize-humans-as-glue/): a person standing in
+for missing structure, holding the system together by manual effort.
 
 Seen from the failure side, that gap has a familiar name. If an outage happened
 because exactly one person knew how a thing worked, and that person was on
@@ -114,7 +114,7 @@ truth well enough to fix it when it did.
 
 ---
 
-*This post extends the systems-over-heroics theme from [Minimize Humans as
-Glue](/blog/minimize-humans-as-glue/). For the framework behind treating failure
-as data to loop forward rather than fault to assign, see [Quest Engine: A
-Framework for Agent-Human Collaboration](/blog/quest-engine-introduction/).*
+_This post extends the systems-over-heroics theme from
+[Minimize Humans as Glue](/blog/minimize-humans-as-glue/). For the framework
+behind treating failure as data to loop forward rather than fault to assign, see
+[Quest Engine: A Framework for Agent-Human Collaboration](/blog/quest-engine-introduction/)._

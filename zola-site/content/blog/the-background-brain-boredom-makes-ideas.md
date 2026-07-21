@@ -19,7 +19,7 @@ not to work more.
 
 ## The Background Brain
 
-*Learning How to Learn* (Barbara Oakley) draws a line between two modes: focus
+_Learning How to Learn_ (Barbara Oakley) draws a line between two modes: focus
 mode and diffuse mode. Focus mode is you at the desk, attention locked on the
 problem, deliberately grinding. Diffuse mode is what happens when you step away,
 when your mind is loose and wandering and apparently doing nothing at all. The
@@ -30,7 +30,7 @@ Eureka moment arrives on a walk, in the shower, or right as you fall asleep, and
 almost never while you are staring the problem down. The solution was being
 assembled the whole time, just not by the part of you that was watching.
 
-This maps almost cleanly onto Kahneman's *Thinking, Fast and Slow*. The book
+This maps almost cleanly onto Kahneman's _Thinking, Fast and Slow_. The book
 splits the mind into two systems, and it is worth stating them plainly because
 the names alone do not tell you which is which: System 1 is fast, intuitive, and
 emotional, while System 2 is slower, more deliberative, and more logical. System
@@ -57,17 +57,17 @@ actually generating the ideas I valued most. Protecting boredom is protecting
 the conditions under which the best thinking happens.
 
 This is worth being precise about, because in some of my other writing boredom
-shows up as a warning sign. In [Find Your
-Why](/blog/find-your-why-intrinsic-motivation/), feeling bored at work is the
-symptom of mastery going quiet, of the work no longer teaching you anything, and
-in the [Quest Engine](/blog/quest-engine-introduction/) too-easy work drops you
-out of flow into boredom. Both of those are true, and they are a different thing
-from what I mean here. There is a difference between being chronically bored
-*by* your work (a signal something is wrong) and deliberately allowing an
-unfilled, restful gap *around* your work (the raw material of new ideas). The
-first is a problem to fix. The second is a resource to protect. The mistake is
-filling every quiet moment so aggressively that you never get the generative
-kind of boredom at all.
+shows up as a warning sign. In
+[Find Your Why](/blog/find-your-why-intrinsic-motivation/), feeling bored at
+work is the symptom of mastery going quiet, of the work no longer teaching you
+anything, and in the [Quest Engine](/blog/quest-engine-introduction/) too-easy
+work drops you out of flow into boredom. Both of those are true, and they are a
+different thing from what I mean here. There is a difference between being
+chronically bored _by_ your work (a signal something is wrong) and deliberately
+allowing an unfilled, restful gap _around_ your work (the raw material of new
+ideas). The first is a problem to fix. The second is a resource to protect. The
+mistake is filling every quiet moment so aggressively that you never get the
+generative kind of boredom at all.
 
 It helps to separate three very different things that all get called boredom.
 The first is generative boredom: "I am bored, so let me figure out how to get
@@ -105,8 +105,8 @@ depends on new ideas, working past a certain point each day is not neutral, it
 is detrimental, because the extra focus-mode hours come directly out of the
 diffuse-mode time the ideas actually needed. You are not just getting
 diminishing returns, you are cannibalizing the background process that would
-have produced tomorrow's insight. This is the core of Cal Newport's *Slow
-Productivity: The Lost Art of Accomplishment Without Burnout*. Anyone can sit at
+have produced tomorrow's insight. This is the core of Cal Newport's _Slow
+Productivity: The Lost Art of Accomplishment Without Burnout_. Anyone can sit at
 a desk for sixteen hours, and I have done it, but I would not call all sixteen
 of those hours productive, and past the ceiling the marginal creative hour
 returns almost nothing while quietly stealing from the rest that consolidates
@@ -114,13 +114,13 @@ what you already did. Giving yourself more time to learn something, and more
 time to come up with something, is not laziness and it is not a concession. For
 creative work it is the mechanism that produces the output at all.
 
-*Three books, one idea. Learning How to Learn says the background brain solves
+_Three books, one idea. Learning How to Learn says the background brain solves
 what focus cannot. Thinking, Fast and Slow says that background is System 1,
 always running when you give it room. Slow Productivity says the creative output
 you care about depends on protecting that background rather than drowning it in
 hours. Put together, they explain why some of my best ideas came from stopping,
 and why the honest answer to "how do I have more good ideas" is often to
-schedule less, not more. The lever, as always in the [Quest
-Engine](/blog/quest-engine-introduction/), is renewal: guard the boredom,
+schedule less, not more. The lever, as always in the
+[Quest Engine](/blog/quest-engine-introduction/), is renewal: guard the boredom,
 protect the quiet, and let the downstairs machinery do the work you cannot
-force. The Eureka was never going to come at the desk anyway.*
+force. The Eureka was never going to come at the desk anyway._

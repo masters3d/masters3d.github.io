@@ -25,6 +25,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
       - name: Setup Zola
         uses: taiki-e/install-action@v2
         with:
@@ -95,16 +100,18 @@ jobs:
           echo "✓ Blog feed contains $ENTRY_COUNT posts"
           echo "✓ Feed structure validated"
           
-      - name: Validate Markdown line length in blog posts
-        # Enforces a maximum line width on blog Markdown so edits produce small,
-        # readable diffs. The formatter only inserts Markdown "soft breaks"
-        # (single newlines), which render as spaces, so the rendered HTML is
-        # unchanged. If this fails, run `python3 scripts/wrap_markdown.py` locally
-        # and commit the result.
+      - name: Validate Markdown formatting (Prettier + markdownlint)
+        # Blog Markdown is formatted by Prettier (wraps prose to 80 cols using
+        # soft breaks, so the rendered HTML is unchanged) and linted by
+        # markdownlint. This step FAILS the build if any file is not correctly
+        # formatted or has a lint violation. To fix locally:
+        #   npm install && python3 scripts/format_markdown.py
         run: |
-          echo "Checking blog Markdown line length (portable Python, no deps)..."
-          python3 scripts/wrap_markdown.py --check
-          echo "✓ All blog posts are wrapped to the configured line width"
+          echo "Installing pinned Markdown tooling (Prettier + markdownlint)..."
+          npm ci
+          echo "Checking blog Markdown formatting and lint..."
+          python3 scripts/format_markdown.py --check
+          echo "✓ Blog Markdown is correctly formatted and lint-clean"
 
       - name: Validate date formats in blog posts
         run: |

@@ -7,10 +7,10 @@ categories = ["productivity", "mindset", "philosophy"]
 tags = ["quest-engine", "motivation", "growth", "steve-jobs", "whole-earth-catalog", "curiosity"]
 +++
 
-In 1968, Stewart Brand started publishing the *Whole Earth Catalog* (a
+In 1968, Stewart Brand started publishing the _Whole Earth Catalog_ (a
 counterculture toolbox for self-sufficiency, alternative education, and personal
-empowerment). Steve Jobs later described it as *"a sort of Google in paperback
-form, thirty-five years before Google came along."* Its motto was simple:
+empowerment). Steve Jobs later described it as _"a sort of Google in paperback
+form, thirty-five years before Google came along."_ Its motto was simple:
 **"access to tools."**
 
 In 1974, the final issue rolled off the press. On the back cover, below a
@@ -21,28 +21,27 @@ photograph of an early morning country road, were four words:
 A parting gift from Brand and his editors to their readers. No explanation. No
 attribution. Just a dare.
 
-Thirty-one years later, Steve Jobs borrowed those words to close his [2005
-Stanford commencement
-address](https://stevejobsarchive.com/stories/stay-hungry-stay-foolish) (a
-speech about dropping out, getting fired from the company he built, and facing
-death). He told the graduates:
+Thirty-one years later, Steve Jobs borrowed those words to close his
+[2005 Stanford commencement address](https://stevejobsarchive.com/stories/stay-hungry-stay-foolish)
+(a speech about dropping out, getting fired from the company he built, and
+facing death). He told the graduates:
 
-> *"When I was young, there was an amazing publication called The Whole Earth
+> _"When I was young, there was an amazing publication called The Whole Earth
 > Catalog… On the back cover of their final issue was a photograph of an early
 > morning country road… and beneath it were the words: 'Stay Hungry. Stay
 > Foolish.' It was their farewell message as they signed off. Stay Hungry. Stay
 > Foolish. And I have always wished that for myself. And now, as you graduate to
-> begin anew, I wish that for you."*
+> begin anew, I wish that for you."_
 
-The full speech and transcript are preserved at the [Steve Jobs
-Archive](https://stevejobsarchive.com/stories/stay-hungry-stay-foolish). You can
-explore the original *Whole Earth Catalog* issues at the [Whole Earth
-Index](https://wholeearth.info/) and the [Internet
-Archive](https://archive.org/details/1stWEC-complete).
+The full speech and transcript are preserved at the
+[Steve Jobs Archive](https://stevejobsarchive.com/stories/stay-hungry-stay-foolish).
+You can explore the original _Whole Earth Catalog_ issues at the
+[Whole Earth Index](https://wholeearth.info/) and the
+[Internet Archive](https://archive.org/details/1stWEC-complete).
 
 ## What the words actually mean
 
-**Hungry** doesn't mean starving. It means *unsatisfied on purpose*. The refusal
+**Hungry** doesn't mean starving. It means _unsatisfied on purpose_. The refusal
 to coast. The decision that where you are is never where you stop.
 
 **Foolish** doesn't mean reckless. It means willing to look like you don't know
@@ -62,14 +61,14 @@ opened. Foolish gets you to start. Happy keeps you going. Curious tells you
 where.
 
 Together — hungry, foolish, happy, curious — they describe a state of permanent,
-joyful pursuit. Not grinding. Not hustling. *Questing.*
+joyful pursuit. Not grinding. Not hustling. _Questing._
 
 ## The engine of self-advancement
 
 The trap most people fall into isn't laziness — it's expertise. You learn enough
-to be comfortable, and comfort becomes the ceiling. The *Whole Earth Catalog*
-existed to fight that trap. Its entire premise was: *here are tools you didn't
-know existed, for problems you haven't thought to solve yet.* It assumed its
+to be comfortable, and comfort becomes the ceiling. The _Whole Earth Catalog_
+existed to fight that trap. Its entire premise was: _here are tools you didn't
+know existed, for problems you haven't thought to solve yet._ It assumed its
 readers were hungry enough to reach for something they couldn't yet name, and
 foolish enough to try.
 
@@ -122,10 +121,11 @@ aggregate, consistently enough that it becomes a force of habit.
 When I kept noticing the same pattern (smart people working hard on the wrong
 problems), I started searching for a way to articulate what was missing. They
 knew enough to execute, but they'd stopped questioning whether execution was
-pointed in the right direction. They'd mastered the *how* but forgotten to keep
-asking *why*. So I built something for myself called [Quest
-Engine](/blog/quest-engine-the-why/). Not as a rule or a system everyone should
-follow, but as a personal tool to keep me from falling into the expert's trap.
+pointed in the right direction. They'd mastered the _how_ but forgotten to keep
+asking _why_. So I built something for myself called
+[Quest Engine](/blog/quest-engine-the-why/). Not as a rule or a system everyone
+should follow, but as a personal tool to keep me from falling into the expert's
+trap.
 
 Quest Engine is what happened when I tried to turn "stay hungry, stay foolish,
 stay happy, stay curious" into something I could use day-to-day. The framework
@@ -152,7 +152,7 @@ right problem. When you choose to see the path as the reward, renewal becomes
 the checkpoint that asks: "Am I still finding joy in this? Or have I drifted
 into just executing?"
 
-The *Whole Earth Catalog* ethos of "access to tools" is still there — Quest
+The _Whole Earth Catalog_ ethos of "access to tools" is still there — Quest
 Engine isn't about what to do, it's a meta-tool for figuring out which tools
 matter. It's useful to me. If other people find it useful, great. If not, that's
 fine too. What makes it work isn't that it's universal, it's that it makes the
@@ -167,11 +167,11 @@ The quest itself is the engine of growth.
 
 ### Sources
 
-| Source | Link |
-|---|---|
-| Steve Jobs' 2005 Stanford Commencement Address (video) | [YouTube](https://www.youtube.com/watch?v=UF8uR6Z6KLc) |
-| "Stay hungry, stay foolish" — Steve Jobs Archive | [stevejobsarchive.com](https://stevejobsarchive.com/stories/stay-hungry-stay-foolish) |
-| *Whole Earth Catalog* — Wikipedia | [Wikipedia](https://en.wikipedia.org/wiki/Whole_Earth_Catalog) |
-| *Whole Earth Catalog* — Full digital archive | [Whole Earth Index](https://wholeearth.info/) |
-| *Whole Earth Catalog* (Fall 1968) — Internet Archive | [archive.org](https://archive.org/details/1stWEC-complete) |
-| Stewart Brand — Wikipedia | [Wikipedia](https://en.wikipedia.org/wiki/Stewart_Brand) |
+| Source                                                 | Link                                                                                  |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------- |
+| Steve Jobs' 2005 Stanford Commencement Address (video) | [YouTube](https://www.youtube.com/watch?v=UF8uR6Z6KLc)                                |
+| "Stay hungry, stay foolish" — Steve Jobs Archive       | [stevejobsarchive.com](https://stevejobsarchive.com/stories/stay-hungry-stay-foolish) |
+| _Whole Earth Catalog_ — Wikipedia                      | [Wikipedia](https://en.wikipedia.org/wiki/Whole_Earth_Catalog)                        |
+| _Whole Earth Catalog_ — Full digital archive           | [Whole Earth Index](https://wholeearth.info/)                                         |
+| _Whole Earth Catalog_ (Fall 1968) — Internet Archive   | [archive.org](https://archive.org/details/1stWEC-complete)                            |
+| Stewart Brand — Wikipedia                              | [Wikipedia](https://en.wikipedia.org/wiki/Stewart_Brand)                              |

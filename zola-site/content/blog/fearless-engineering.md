@@ -34,10 +34,10 @@ risk, and the tool for that is the old known/unknown matrix. Fear thrives in the
 fog of not knowing what you do not know. The matrix drags each concern into a
 quadrant so you can see what you are actually dealing with:
 
-| | You know it | You do not know it |
-|---|---|---|
-| **Known** | **Known knowns**: tested behavior, documented facts, things you can rely on. | **Unknown knowns**: tacit assumptions, "everybody knows" folklore, things the team knows but you have not surfaced. |
-| **Unknown** | **Known unknowns**: mapped gaps you can research, measure, or test before acting. | **Unknown unknowns**: the surprises, the true blast-radius risk you cannot see yet. |
+|             | You know it                                                                       | You do not know it                                                                                                  |
+| ----------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Known**   | **Known knowns**: tested behavior, documented facts, things you can rely on.      | **Unknown knowns**: tacit assumptions, "everybody knows" folklore, things the team knows but you have not surfaced. |
+| **Unknown** | **Known unknowns**: mapped gaps you can research, measure, or test before acting. | **Unknown unknowns**: the surprises, the true blast-radius risk you cannot see yet.                                 |
 
 Most hesitation lives in the two right-hand cells. Known unknowns are the easy
 win: they are already named, so you research them, write a test, or run a small
@@ -141,9 +141,9 @@ but far larger in degree: many independent systems checking each other, many
 batteries of validation, run longer and longer, because you never get 100
 percent certainty, only high certainty that keeps climbing. Even there, the
 useful posture is not fear but methodical risk management plus independence. The
-framework I keep returning to explains why. The [Quest
-Engine](/blog/quest-engine-the-why/) puts the WHY above the HOW, and runs three
-forces: Searching (what does better look like), being Driven (what can I
+framework I keep returning to explains why. The
+[Quest Engine](/blog/quest-engine-the-why/) puts the WHY above the HOW, and runs
+three forces: Searching (what does better look like), being Driven (what can I
 control), and Renewal (am I still aligned). The risk matrix maps cleanly onto
 it. Searching is how you convert known unknowns into known knowns and surface
 the unknown knowns you were carrying as assumptions. Being Driven is naming what
@@ -177,11 +177,11 @@ taking.
 
 ---
 
-*This maps onto the [Quest Engine framework](/blog/quest-engine-introduction/):
+_This maps onto the [Quest Engine framework](/blog/quest-engine-introduction/):
 risk assessment as a Searching move (converting unknowns to knowns), a Driven
 question (what you actually control), and a Renewal answer (the guardrails that
-carry forward). For the WHY-above-the-HOW structure, see [The Why Behind the
-How](/blog/quest-engine-the-why/). Related: [Set. Action.
-Reload.](/blog/set-action-reload/) on closing the loop so gains compound, and
-[Faith. Guts. Stamina.](/blog/faith-guts-stamina/) on courage that has a
-direction.*
+carry forward). For the WHY-above-the-HOW structure, see
+[The Why Behind the How](/blog/quest-engine-the-why/). Related:
+[Set. Action. Reload.](/blog/set-action-reload/) on closing the loop so gains
+compound, and [Faith. Guts. Stamina.](/blog/faith-guts-stamina/) on courage that
+has a direction._

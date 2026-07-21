@@ -87,10 +87,10 @@ the right things into System 1. The parts that used to demand attention
 (deployment, testing, environment setup, the hundred small decisions of a build)
 get pushed down into automatic, low-cost routines so that the humans on top can
 spend their scarce, expensive System 2 attention on the problems that genuinely
-need it. This is exactly the argument from [Leverage and the Stairs You
-Build](/blog/leverage-and-the-stairs-you-build/): you build the staircase so
-that climbing becomes trivial, and then you walk up without thinking, and so
-does everyone who comes after you.
+need it. This is exactly the argument from
+[Leverage and the Stairs You Build](/blog/leverage-and-the-stairs-you-build/):
+you build the staircase so that climbing becomes trivial, and then you walk up
+without thinking, and so does everyone who comes after you.
 
 Automaticity is what leverage feels like from the inside. The bicycle converts
 the same effort into more distance. A skill compiled into System 1 converts the

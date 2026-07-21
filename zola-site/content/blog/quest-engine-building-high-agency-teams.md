@@ -26,10 +26,10 @@ handle implementation, but you decide the boundaries.
 solutions, but you decide which problems matter.
 
 These three aren't innate talents—they're skills you develop through practice.
-And they map directly to how the [Quest Engine
-framework](/blog/quest-engine-introduction/) works: craftsmanship connects to
-searching (mastery), judgment to being driven (autonomy), and taste to renewal
-(purpose).
+And they map directly to how the
+[Quest Engine framework](/blog/quest-engine-introduction/) works: craftsmanship
+connects to searching (mastery), judgment to being driven (autonomy), and taste
+to renewal (purpose).
 
 ## Craftsmanship: Mastery Through Searching
 
@@ -114,16 +114,16 @@ taste.
 When you work with AI agents, these three define the collaboration—and they
 build on each other:
 
-**Craftsmanship** determines *which* solutions you explore. The agent can search
+**Craftsmanship** determines _which_ solutions you explore. The agent can search
 faster, but you bring the systematic approach to learning. Without
 craftsmanship, you might find an answer but miss the better pattern.
 
-**Judgment** determines *how* you divide the work. The agent can handle
+**Judgment** determines _how_ you divide the work. The agent can handle
 implementation, but you decide the boundaries. Without judgment, you either
 micromanage (wasting the agent's capability) or over-delegate (losing control of
 critical decisions).
 
-**Taste** determines *what* problems you solve together. The agent can generate
+**Taste** determines _what_ problems you solve together. The agent can generate
 solutions, but you bring the sense of what's worth building. Without taste, you
 might execute perfectly on the wrong problem.
 
@@ -184,9 +184,8 @@ contribution to the collaboration.
 
 ---
 
-*Craftsmanship, judgment, and taste define what humans contribute when working
-with AI coding agents. For the complete Quest Engine framework, see [Quest
-Engine: A Framework for Agent-Human
-Collaboration](/blog/quest-engine-introduction/). For the intrinsic motivations
-behind these forces, see [Quest Engine: The Why Behind the
-How](/blog/quest-engine-the-why/).*
+_Craftsmanship, judgment, and taste define what humans contribute when working
+with AI coding agents. For the complete Quest Engine framework, see
+[Quest Engine: A Framework for Agent-Human Collaboration](/blog/quest-engine-introduction/).
+For the intrinsic motivations behind these forces, see
+[Quest Engine: The Why Behind the How](/blog/quest-engine-the-why/)._

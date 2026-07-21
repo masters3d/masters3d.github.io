@@ -41,10 +41,10 @@ If it was not the hours, the temptation is to blame the difficulty of the work
 itself, and that is closer but still wrong. Genuinely hard work is tiring, but
 tiring is not the same as burning out. Looking back, the long hours, the
 constant travel, the financial pressure, and the missing mastery, autonomy, and
-purpose (an absence I unpack in [Find Your
-Why](/blog/find-your-why-intrinsic-motivation/)) were not four separate causes.
-They were four faces of one cause. What they had in common was that I had
-stopped deciding where my own time went.
+purpose (an absence I unpack in
+[Find Your Why](/blog/find-your-why-intrinsic-motivation/)) were not four
+separate causes. They were four faces of one cause. What they had in common was
+that I had stopped deciding where my own time went.
 
 ## Stress Comes From Lost Control
 
@@ -60,18 +60,18 @@ I had given all of it to one thing and lost the ability to steer any of the
 rest.
 
 That reframes burnout as a control problem rather than an hours problem, and it
-lines up with something I have written about the [Quest
-Engine's](/blog/quest-engine-introduction/) three forces. In [Quest Engine: The
-Why](/blog/quest-engine-the-why/), I described burnout as a failure of Renewal,
-the moment the connection between effort and meaning severs because you never
-surface from execution to check that the work still matters. I still think that
-is right, and I think the control frame is the same failure seen from a
-different angle. Losing control over your time is precisely how the thread back
-to meaning gets cut: you are so fully committed to one thing that you cannot
-renew, cannot step back, cannot ask whether this is still the thing worth doing.
-Autonomy (owning the shape of your time) and Renewal (verifying the work still
-connects) are the two forces that go quiet together, and burnout is what their
-silence sounds like.
+lines up with something I have written about the
+[Quest Engine's](/blog/quest-engine-introduction/) three forces. In
+[Quest Engine: The Why](/blog/quest-engine-the-why/), I described burnout as a
+failure of Renewal, the moment the connection between effort and meaning severs
+because you never surface from execution to check that the work still matters. I
+still think that is right, and I think the control frame is the same failure
+seen from a different angle. Losing control over your time is precisely how the
+thread back to meaning gets cut: you are so fully committed to one thing that
+you cannot renew, cannot step back, cannot ask whether this is still the thing
+worth doing. Autonomy (owning the shape of your time) and Renewal (verifying the
+work still connects) are the two forces that go quiet together, and burnout is
+what their silence sounds like.
 
 ## Buy Back the Slack
 
@@ -87,11 +87,11 @@ back even a little slack (an evening, a weekend, the movie, the gathering) is
 not a reward for finishing the work. It is the thing that keeps the work from
 consuming the person doing it.
 
-*Burnout wore the costume of overwork, but underneath it was a control problem.
+_Burnout wore the costume of overwork, but underneath it was a control problem.
 The hours were a symptom, the difficulty was a red herring, and the real damage
 was losing the ability to decide where my own time went. That is why the fix is
-not discipline or more caffeine but the return that the [Quest
-Engine](/blog/quest-engine-the-why/) calls Renewal: step back often enough to
-keep owning your time, and protect the slack that lets you be more than the one
-thing you are working on. You do not avoid burnout by controlling the work. You
-avoid it by keeping control of your life around the work.*
+not discipline or more caffeine but the return that the
+[Quest Engine](/blog/quest-engine-the-why/) calls Renewal: step back often
+enough to keep owning your time, and protect the slack that lets you be more
+than the one thing you are working on. You do not avoid burnout by controlling
+the work. You avoid it by keeping control of your life around the work._

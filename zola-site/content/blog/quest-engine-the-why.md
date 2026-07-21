@@ -194,6 +194,7 @@ were executing?
 
 When all three forces are present, you get sustained motivation. When one is
 missing, the system degrades predictably:
+
 - Searching without being driven → you know what to do but can't act on it
 - Driven without searching → you're executing but don't know if you're building
   the right thing
@@ -273,15 +274,15 @@ that just execute faster toward the wrong destination.
 
 ---
 
-*Searching, being driven, and renewal (the WHY) sit above the operational cycle
-in the [Quest Engine
-framework](https://github.com/masters3d/ingenio/tree/main/pillars), which
-originates from [presentation materials on engineering and career
-development](https://github.com/masters3d/ingenio/tree/main/presentation). For
-the complete treatment of these intrinsic motivations, see the [Objective
-Function](https://github.com/masters3d/ingenio/blob/main/pillars/objective_function.md)
-and [Intrinsic
-Motivation](https://github.com/masters3d/ingenio/blob/main/pillars/intrinsic_motivation.md)
+_Searching, being driven, and renewal (the WHY) sit above the operational cycle
+in the
+[Quest Engine framework](https://github.com/masters3d/ingenio/tree/main/pillars),
+which originates from
+[presentation materials on engineering and career development](https://github.com/masters3d/ingenio/tree/main/presentation).
+For the complete treatment of these intrinsic motivations, see the
+[Objective Function](https://github.com/masters3d/ingenio/blob/main/pillars/objective_function.md)
+and
+[Intrinsic Motivation](https://github.com/masters3d/ingenio/blob/main/pillars/intrinsic_motivation.md)
 pillars. The name "Quest Engine" connects "quest" (Latin quaere, to seek) with
 "engine" (Latin ingenium, cleverness), representing systematic inquiry driven by
-continuous improvement.*
+continuous improvement._

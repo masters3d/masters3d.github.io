@@ -26,12 +26,13 @@ three is far more versatile than the other two.
 The first boundary is **local gRPC over protobuf**. You compile your core into a
 small executable that speaks gRPC, run it co-located with your application, and
 talk to it over a loopback connection or a Unix domain socket rather than the
-network (gRPC's resolver accepts `unix:` targets directly, see the [gRPC naming
-doc](https://github.com/grpc/grpc/blob/master/doc/naming.md)). Because the
-contract is a [protobuf](https://github.com/protocolbuffers/protobuf) schema,
-every language gets a generated, typed client for free. This is the loosest
-coupling: two processes, isolated memory, a serialized wire format between them.
-(There is also a true in-process gRPC channel in some implementations, but it is
+network (gRPC's resolver accepts `unix:` targets directly, see the
+[gRPC naming doc](https://github.com/grpc/grpc/blob/master/doc/naming.md)).
+Because the contract is a
+[protobuf](https://github.com/protocolbuffers/protobuf) schema, every language
+gets a generated, typed client for free. This is the loosest coupling: two
+processes, isolated memory, a serialized wire format between them. (There is
+also a true in-process gRPC channel in some implementations, but it is
 same-language and mostly used for testing, so it does not help cross-language
 sharing.)
 
@@ -39,10 +40,10 @@ The second boundary is a **WebAssembly module loaded in-process**. Instead of a
 separate process, you compile the core to WASM and load it into the host through
 a runtime like [Wasmtime](https://github.com/bytecodealliance/wasmtime). The
 core runs inside your process, in a sandbox, and you call its exports directly.
-The [WebAssembly Component
-Model](https://github.com/WebAssembly/component-model) turns this into a real
-cross-language story (typed interfaces that let a host in one language call a
-module written in another), and projects like
+The
+[WebAssembly Component Model](https://github.com/WebAssembly/component-model)
+turns this into a real cross-language story (typed interfaces that let a host in
+one language call a module written in another), and projects like
 [Extism](https://github.com/extism/extism) package that into a plugin system
 with host SDKs for many languages at once.
 
@@ -60,8 +61,8 @@ automates much of that binding generation for Swift, Kotlin, and Python.
 The plain-FFI boundary carries one cost that its speed tends to hide: the C ABI
 is a wide, hand-written, unsafe surface, and it grows with every rich type you
 want to pass. Mozilla's application-services team ran straight into this and
-wrote up their fix in ["Crossing the Rust FFI frontier with Protocol
-Buffers"](https://hacks.mozilla.org/2019/04/crossing-the-rust-ffi-frontier-with-protocol-buffers/).
+wrote up their fix in
+["Crossing the Rust FFI frontier with Protocol Buffers"](https://hacks.mozilla.org/2019/04/crossing-the-rust-ffi-frontier-with-protocol-buffers/).
 Instead of exposing tree-shaped Rust types across the boundary as a growing pile
 of pointers and accessor functions, they serialize the whole structure to
 protobuf bytes on the Rust side, pass a single `(pointer, length)` across FFI,
@@ -101,8 +102,7 @@ the core cannot reach the rest of the host), and with the component model it
 composes across languages the way FFI does, but without hand-writing a C
 boundary for each one. That is why 1Password keeps its logic in a Rust core and
 compiles it to WASM for the web instead of re-implementing it in JavaScript
-([Syntax podcast, episode 776, with Andrew
-Burkhart](https://syntax.fm/show/776/how-1password-uses-wasm-and-rust-for-local-first-dev-with-andrew-burkhart/transcript)).
+([Syntax podcast, episode 776, with Andrew Burkhart](https://syntax.fm/show/776/how-1password-uses-wasm-and-rust-for-local-first-dev-with-andrew-burkhart/transcript)).
 
 The most striking demonstration of that portability is how the Zig language
 bootstraps its own compiler. Bootstrapping a self-hosted compiler has a
@@ -111,9 +111,9 @@ the usual fix is to keep an old native binary around per platform. Zig instead
 commits a WebAssembly build of the compiler (`zig1.wasm`) to its source tree. On
 a fresh machine with nothing but a C compiler, the build converts that WASM to
 portable C (via a bundled `wasm2c`), compiles it, and uses the result to build a
-real native Zig compiler from source (the mechanism is described in the [Zig
-0.10 release notes](https://ziglang.org/download/0.10.0/release-notes.html), and
-the artifact lives in the [Zig repository](https://github.com/ziglang/zig)).
+real native Zig compiler from source (the mechanism is described in the
+[Zig 0.10 release notes](https://ziglang.org/download/0.10.0/release-notes.html),
+and the artifact lives in the [Zig repository](https://github.com/ziglang/zig)).
 WebAssembly is acting as a stage-one, architecture-neutral seed: a single
 committed blob that stands in for "a working compiler" on any target. If WASM is
 portable enough to bootstrap a compiler onto a platform it has never seen, it is
@@ -132,8 +132,8 @@ the kernel rather than by App Review, so there is no entitlement that re-enables
 them. An Apple Developer Technical Support engineer states it plainly on the
 [Apple Developer Forums](https://developer.apple.com/forums/thread/72265) (see
 also the [fork discussion](https://developer.apple.com/forums/thread/747499)),
-and the [App Sandbox
-model](https://developer.apple.com/library/archive/documentation/Security/Conceptual/AppSandboxDesignGuide/)
+and the
+[App Sandbox model](https://developer.apple.com/library/archive/documentation/Security/Conceptual/AppSandboxDesignGuide/)
 confirms each app is confined to its own container. That rules out the
 gRPC-subprocess boundary on iOS and leaves you with WASM or FFI.
 
@@ -191,10 +191,10 @@ two cannot match.
 
 ---
 
-*This is the practical follow-through to my thinking on [language choice in the
-LLM era](/blog/language-choice-in-the-llm-era/): the point was never to crown
-one language for everything, but to keep the shared logic in one place and let
-each layer use the language that fits. Same-node code sharing is where that
-intention meets the operating system, and the boundary you can afford (in
-performance, in portability, and in maintenance) is usually the boundary the
-platform was going to allow anyway.*
+_This is the practical follow-through to my thinking on
+[language choice in the LLM era](/blog/language-choice-in-the-llm-era/): the
+point was never to crown one language for everything, but to keep the shared
+logic in one place and let each layer use the language that fits. Same-node code
+sharing is where that intention meets the operating system, and the boundary you
+can afford (in performance, in portability, and in maintenance) is usually the
+boundary the platform was going to allow anyway._

@@ -168,9 +168,10 @@ incomplete. AI just makes the missing part impossible to ignore.
 
 ---
 
-*This post connects to a few ideas I have been writing about lately: [Context as
-Code](/blog/context-as-code/) on why alignment artifacts matter more in an
-agent-driven world, [Craftsmanship, Judgment, and
-Taste](/blog/quest-engine-building-high-agency-teams/) on the human side of
-agent collaboration, and the growing overlap between engineering, coordination,
-and strategy that more people are starting to notice across the industry.*
+_This post connects to a few ideas I have been writing about lately:
+[Context as Code](/blog/context-as-code/) on why alignment artifacts matter more
+in an agent-driven world,
+[Craftsmanship, Judgment, and Taste](/blog/quest-engine-building-high-agency-teams/)
+on the human side of agent collaboration, and the growing overlap between
+engineering, coordination, and strategy that more people are starting to notice
+across the industry._

@@ -174,7 +174,7 @@ which is the difference between a guess and a proof.
 
 ---
 
-*The point is not to review harder, it is to arrive at the pull request with the
+_The point is not to review harder, it is to arrive at the pull request with the
 validation already done, so the review stops being the gate and becomes a place
 to share context (a way for other people to learn what changes are coming)
 rather than the first place anyone finds out whether the change works. That
@@ -183,7 +183,8 @@ rigor is front-loaded into an environment instead of spent in the review cycle.
 This is the [self-healing systems](/blog/minimize-humans-as-glue/) idea applied
 to validation, the
 [proof-over-opinion](/blog/bicycle-of-the-mind-fast-slow-agents/) distinction
-applied to review, and the reason [fearless
-engineering](/blog/fearless-engineering/) is possible at all: you move fast
-because the rail was built before you needed it, and the context that makes the
-environment reproducible is itself [context as code](/blog/context-as-code/).*
+applied to review, and the reason
+[fearless engineering](/blog/fearless-engineering/) is possible at all: you move
+fast because the rail was built before you needed it, and the context that makes
+the environment reproducible is itself
+[context as code](/blog/context-as-code/)._

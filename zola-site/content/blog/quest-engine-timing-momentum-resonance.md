@@ -7,13 +7,13 @@ categories = ["ai", "productivity", "workflow"]
 tags = ["quest-engine", "timing", "momentum", "resonance", "dynamics", "coupling"]
 +++
 
-> *"Timing and momentum is more important than talent."* — André 3000
+> _"Timing and momentum is more important than talent."_ — André 3000
 
 This phrase privileges **when** (Timing) and **sustained directional force**
-(Momentum) over raw **capability** (Talent). The [Quest Engine
-framework](/blog/quest-engine-introduction/) already has a strong account of
-talent and capability through Mastery, Challenge Matching, and Flow. What it
-lacks is the **third term** the quote leaves implicit.
+(Momentum) over raw **capability** (Talent). The
+[Quest Engine framework](/blog/quest-engine-introduction/) already has a strong
+account of talent and capability through Mastery, Challenge Matching, and Flow.
+What it lacks is the **third term** the quote leaves implicit.
 
 ## The Three-Term Model
 
@@ -27,7 +27,7 @@ Here's the extension: **Timing · Momentum · Resonance**
 - **Timing** (the window the world opens; you don't set the clock)
 - **Momentum** (the sustained directed force you bring; you control this)
 - **Resonance** (the coupling between your force and the people who must receive
-  it; you can only *influence* this, it is fundamentally relational)
+  it; you can only _influence_ this, it is fundamentally relational)
 
 Resonance is the new contribution. It's the only one that **requires another
 oscillator** (a person, team, audience, or organization) to exist at all. Timing
@@ -35,11 +35,11 @@ and Momentum can be measured on you alone. Resonance cannot.
 
 The triad spans the full locus-of-control axis:
 
-| Quest Engine Pillar | Physics Term | Locus of Control |
-|---|---|---|
-| **Search** (Prospective / KNOWING) | **Timing** | Accept |
-| **Drive** (Actuation / ACTING) | **Momentum** | Control |
-| **Renew** (Retrospective / IMPROVING) | **Resonance** | Influence |
+| Quest Engine Pillar                   | Physics Term  | Locus of Control |
+| ------------------------------------- | ------------- | ---------------- |
+| **Search** (Prospective / KNOWING)    | **Timing**    | Accept           |
+| **Drive** (Actuation / ACTING)        | **Momentum**  | Control          |
+| **Renew** (Retrospective / IMPROVING) | **Resonance** | Influence        |
 
 Timing maps to Search because you don't control when the window opens (when the
 market shifts, when your manager gets budget, when the team acknowledges the
@@ -59,12 +59,13 @@ until conditions are perfect). The opposite failure is **ignoring timing
 entirely** (shipping too early or too late). You can't create the window, but
 you can miss it by not searching.
 
-**Momentum** is mass times velocity. You build mass through [Deliberate
-Practice](/blog/quest-engine-introduction/) (not just repetition, but focused
-improvement). You increase velocity through tight feedback loops and removing
-friction. The failure mode is **confusing motion with momentum** (staying busy
-but finishing nothing). **Sustainable momentum means increasing velocity without
-decreasing mass** (shipping faster while maintaining capability).
+**Momentum** is mass times velocity. You build mass through
+[Deliberate Practice](/blog/quest-engine-introduction/) (not just repetition,
+but focused improvement). You increase velocity through tight feedback loops and
+removing friction. The failure mode is **confusing motion with momentum**
+(staying busy but finishing nothing). **Sustainable momentum means increasing
+velocity without decreasing mass** (shipping faster while maintaining
+capability).
 
 **Resonance** is the coupling between your sustained force and the people who
 must receive it. You can have perfect timing and enormous momentum, but if
@@ -95,11 +96,11 @@ changing state (that's damping). Sometimes you and your audience agree on the
 goal but you're out of sync on timing. Six months later, they come back asking
 for exactly what you proposed. The frequency was right. The phase was wrong
 (that's phase mismatch). Watch a World Cup game and you'll see the same physics
-on the pitch: a [star
-player](/blog/world-cup-2026-star-players-and-team-strategy/) reading the window
-(timing), driving the run and the finish (momentum), and threading a pass that a
-teammate is actually positioned to receive (resonance). A beautiful pass with no
-one there to receive it is textbook off-resonance (perfect force, zero
+on the pitch: a
+[star player](/blog/world-cup-2026-star-players-and-team-strategy/) reading the
+window (timing), driving the run and the finish (momentum), and threading a pass
+that a teammate is actually positioned to receive (resonance). A beautiful pass
+with no one there to receive it is textbook off-resonance (perfect force, zero
 coupling), and the through-ball that arrives a beat before the runner is pure
 phase mismatch. The meta-pattern: **resonance is about energy transfer, not
 energy application**. You can apply enormous force, but if it doesn't couple, it
@@ -130,16 +131,17 @@ together (that's how effort converts to lasting benefit).
 
 ---
 
-*Timing, Momentum, and Resonance extend the [Quest Engine
-framework](/blog/quest-engine-introduction/) with a dynamics layer, originating
-from [André 3000's observation](https://www.youtube.com/shorts/kbEdxWtUPB8) on
-timing and momentum. For a concrete, non-physics illustration of the same triad,
-see how a [star player converts chances at World Cup
-2026](/blog/world-cup-2026-star-players-and-team-strategy/). The framework
-connects to the [Objective
-Function](https://github.com/masters3d/ingenio/blob/main/pillars/objective_function.md)
+_Timing, Momentum, and Resonance extend the
+[Quest Engine framework](/blog/quest-engine-introduction/) with a dynamics
+layer, originating from
+[André 3000's observation](https://www.youtube.com/shorts/kbEdxWtUPB8) on timing
+and momentum. For a concrete, non-physics illustration of the same triad, see
+how a
+[star player converts chances at World Cup 2026](/blog/world-cup-2026-star-players-and-team-strategy/).
+The framework connects to the
+[Objective Function](https://github.com/masters3d/ingenio/blob/main/pillars/objective_function.md)
 through the locus-of-control axis (accept, control, influence) and integrates
-with existing Quest Engine pillars on [Search, Drive, and
-Renew](https://github.com/masters3d/ingenio/tree/main/presentation). The physics
-terminology serves engineering and career behavior, not physics for its own
-sake.*
+with existing Quest Engine pillars on
+[Search, Drive, and Renew](https://github.com/masters3d/ingenio/tree/main/presentation).
+The physics terminology serves engineering and career behavior, not physics for
+its own sake._

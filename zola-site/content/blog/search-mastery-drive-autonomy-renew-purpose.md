@@ -7,20 +7,20 @@ categories = ["philosophy", "mindset", "productivity"]
 tags = ["quest-engine", "motivation", "mastery", "autonomy", "purpose", "search-drive-renew"]
 +++
 
-There's a natural-sounding way to line up the [Quest Engine's three
-forces](/blog/quest-engine-the-why/) with the three human motivations, and it is
-wrong. The intuition goes like this: autonomy is the freedom to explore, and
-exploring is searching, so **Autonomy** must map to **Search**. And if autonomy
-is the searching force, then **Mastery** (executing with skill) must be the
-driving force, so Mastery maps to **Drive**. It is a tidy guess. It is also
-backwards, and the reason it is backwards is the single most clarifying thing
-about the whole framework.
+There's a natural-sounding way to line up the
+[Quest Engine's three forces](/blog/quest-engine-the-why/) with the three human
+motivations, and it is wrong. The intuition goes like this: autonomy is the
+freedom to explore, and exploring is searching, so **Autonomy** must map to
+**Search**. And if autonomy is the searching force, then **Mastery** (executing
+with skill) must be the driving force, so Mastery maps to **Drive**. It is a
+tidy guess. It is also backwards, and the reason it is backwards is the single
+most clarifying thing about the whole framework.
 
 The correct mapping is the plain one: **Search is Mastery, Drive is Autonomy,
 Renew is Purpose.** What makes it correct is not that the words rhyme. It is
 that each pair occupies the same moment in the cycle. Search and Mastery both
-happen *before* you act. Drive and Autonomy both happen *while* you act. Renew
-and Purpose both happen *after* you act, looking back. The mapping is settled by
+happen _before_ you act. Drive and Autonomy both happen _while_ you act. Renew
+and Purpose both happen _after_ you act, looking back. The mapping is settled by
 timing, not by vocabulary, and once you see the timing the confusion dissolves.
 
 ## The Order Settles It
@@ -65,7 +65,7 @@ genuinely does help you search. An engineer with real freedom can poke at
 different approaches and discover what is worth learning, and that exploration
 looks a lot like searching. The intuition is picking up on something real.
 
-But it is picking up on an *enabler* relationship, not an *identity*. Having
+But it is picking up on an _enabler_ relationship, not an _identity_. Having
 autonomy in one turn of the loop makes your searching better on the next turn
 (the cycle feeds back: what you owned and acted on this time sharpens what you
 go looking for next time). That is Drive in cycle one improving Search in cycle
@@ -95,7 +95,7 @@ When the timing argument and the psychology agree, the mapping is not a
 stylistic choice. It is structural.
 
 The practical takeaway is small but sturdy. When you try to place one of these
-forces, do not ask what its name sounds like. Ask *when* it happens. Before you
+forces, do not ask what its name sounds like. Ask _when_ it happens. Before you
 act, that is Search and Mastery. While you act, that is Drive and Autonomy.
 After you act, that is Renew and Purpose. The order is the answer, and it is why
 the [intrinsic motivations](/blog/find-your-why-intrinsic-motivation/) slot into

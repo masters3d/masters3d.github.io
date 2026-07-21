@@ -25,7 +25,7 @@ community. When I was deep in the Swift world, we even tried to give ourselves a
 name: Swifties. It never really stuck (people kept trying, and there were always
 jokes about how it borrowed from a certain pop star's fan base). But the attempt
 is the interesting part. We had a common language, a common set of rules, and a
-common way of communicating (the forums, the GitHub issues). The community *was*
+common way of communicating (the forums, the GitHub issues). The community _was_
 the team, and the glue showed up on its own. Everyone was already there because
 they liked the thing.
 
