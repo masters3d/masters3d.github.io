@@ -92,7 +92,7 @@ need it. This is exactly the argument from
 you build the staircase so that climbing becomes trivial, and then you walk up
 without thinking, and so does everyone who comes after you.
 
-Automaticity is what leverage feels like from the inside. The bicycle converts
+_Automaticity is what leverage feels like from the inside. The bicycle converts
 the same effort into more distance. A skill compiled into System 1 converts the
 same attention into more thinking. A well-engineered system converts the same
 team into more capability, because it has quietly absorbed everything that used
@@ -100,4 +100,4 @@ to require someone to stand there and manage it by hand. The craft of
 engineering, and increasingly the craft of working with agents, is deciding what
 deserves your slow, deliberate attention today and what should become fast,
 automatic, and invisible tomorrow. You learn to ride so that you can stop
-thinking about riding, and then you go somewhere with it.
+thinking about riding, and then you go somewhere with it._

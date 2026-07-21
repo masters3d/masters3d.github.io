@@ -61,13 +61,12 @@ as a personal computer, and it ran great across all of them. Even my server at
 the time was macOS based: an [Xserve](https://en.wikipedia.org/wiki/Xserve) that
 held all the RAID storage. For a decade the Mac was simply everything.
 
-## The Server Evolution: From a Room Full of Machines to the Cloud
-
-My first real introduction to servers was at work, when the company started
-hosting a room full of them. I never had a server of my own back then, but that
-was the first time I understood the idea of a machine that did things for me,
-running in a work setting rather than under my desk. Around the same time, cloud
-platforms like [AWS](https://en.wikipedia.org/wiki/Amazon_Web_Services) and
+Servers were making their own trip from rooms full of machines to the cloud. My
+first real introduction to them was at work, when the company started hosting a
+room full of them. I never had a server of my own back then, but that was the
+first time I understood the idea of a machine that did things for me, running in
+a work setting rather than under my desk. Around the same time, cloud platforms
+like [AWS](https://en.wikipedia.org/wiki/Amazon_Web_Services) and
 [Azure](https://en.wikipedia.org/wiki/Microsoft_Azure) were becoming relevant,
 and suddenly you could run your code on someone else's infrastructure. I also
 started deploying websites on hosts like

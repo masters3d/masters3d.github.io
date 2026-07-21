@@ -141,11 +141,9 @@ doesn't feel like it matters. Not because there's no meaning available, but
 because you've stopped verifying that what you're doing still connects to it.
 **Joy is the force that keeps life feeling worthwhile.**
 
-## The Three Forces Together
-
-Discovery, Play, Joy aren't independent. They're a system. Each one amplifies
-the others. When all three are present, life feels full. When one is missing,
-the system degrades predictably:
+Together, Discovery, Play, and Joy form a system. Each one amplifies the others.
+When all three are present, life feels full. When one is missing, the system
+degrades predictably:
 
 **Discovery without Play or Joy:** You're endlessly researching but never
 acting. You understand more and more about less and less, but nothing compounds.
@@ -165,8 +163,6 @@ discover (Play), and you renew connection to what matters (Joy). Then you search
 again, having expanded what you're capable of understanding. The loop compounds.
 **This is secular meaning: not a destination, but a self-reinforcing cycle of
 search, drive, and renewal.**
-
-## The Connection to Quest Engine
 
 Discovery, Play, Joy map directly to the three forces in
 [Quest Engine](/blog/quest-engine-the-why/): Searching, Driven, Renewal. The
@@ -192,8 +188,6 @@ The secular claim is simple: you don't need metaphysics. You don't need
 religion. You don't need the universe to care. Discovery, Play, Joy are
 sufficient. They generate the subjective experience of a life that matters, and
 that experience is the only "meaning" that was ever available to begin with.
-
-## When One Force Goes Missing
 
 Most people don't realize when they've lost one of these forces. They know they
 feel stuck, empty, or burned out, but they can't articulate why. Making the
@@ -223,8 +217,6 @@ The diagnostic is simple: **Which force is missing?** Not as a permanent state,
 but as a current gap. You're not trying to maintain all three forces 100% of the
 time. You're noticing when one has drifted and choosing to come back. On
 aggregate, that consistency compounds.
-
-## A Secular Approach to Meaning
 
 Here's the secular claim stripped to its core: **meaning isn't something the
 universe provides. It's something you experience when you're fully engaged with

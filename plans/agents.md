@@ -114,9 +114,50 @@
   - Goal: Improve readability and maintain storytelling quality
   - Example: A blog post should have 3 major sections marking key turning points, not 10+ sections for every topic
 
+### Common Authorial Voice
+
+**DECIDED**: Use the posts published before 2015 as the primary voice reference,
+especially `palm-sony-android-iphone-blackberry.md` (2009) and
+`apple-swift-apps-everywhere-prediction.md` (2014). Preserve their historical
+wording rather than rewriting them to match newer conventions.
+
+- **Begin with something noticed or lived** - Open on a moment, object, problem,
+  or reaction that actually prompted the idea. Do not begin with an abstract
+  summary of what the post will cover.
+- **Use first person when it carries evidence** - "I remember," "I noticed," and
+  "I think" should introduce direct experience or honest judgment, not decorate a
+  generic explanation.
+- **Keep specific details** - Names, dates, prices, tools, failed attempts, and
+  surprising preferences make the voice recognizable. Do not sand those details
+  into generic professional prose.
+- **Move from concrete to abstract** - Tell the story or show the example first,
+  then extract the principle, then explain where else it applies.
+- **Be opinionated without pretending certainty** - State conclusions directly,
+  and clearly label predictions, incomplete evidence, or changes of mind.
+- **Prefer conversational precision** - Use short declarative sentences,
+  occasional questions, and natural transitions. Avoid corporate language,
+  inflated claims, generic enthusiasm, and tutorial voice unless the post is
+  actually a tutorial.
+- **Keep the author's energy** - Curiosity, delight, frustration, and surprise
+  are part of the voice. Edit for clarity without making every post sound
+  detached or academically uniform.
+- **End with earned reflection** - Return to the opening observation, say what
+  changed in the author's understanding, connect to related posts where useful,
+  and state why the idea matters.
+
+**Review test**: A reader should be able to answer four questions after a post:
+What did the author notice? What specific experience supports it? What principle
+did the author extract? Why does it matter now?
+
+**Content-type exceptions**: Portfolio pages, reference guides, historical
+artifacts, source lists, and appendices may use more headings, tables, or lists
+than narrative posts. Do not force the Quest Arc onto reference material. Keep
+the narrative introduction and conclusion in the common voice, and use the
+structure that makes the reference content easiest to navigate.
+
 ### Blog Post Meta-Structure: The Quest Arc (Exploration → Execution → Reflection)
 
-**DECIDED**: Every blog post should be built on a single Quest-Engine backbone so it reads like a quest, not a pile of notes. Before writing (or revising) a post, name the quest: what is the angle, what question is being chased, and what is the "why" the reader should leave with. Then carry that one thread from the first line to the last.
+**DECIDED**: Every narrative blog post should be built on a single Quest-Engine backbone so it reads like a quest, not a pile of notes. Before writing (or revising) a post, name the quest: what is the angle, what question is being chased, and what is the "why" the reader should leave with. Then carry that one thread from the first line to the last.
 
 The backbone has three phases, which map directly to the [Quest Engine](/blog/quest-engine-introduction/) cycle (Search/Mastery = before, Drive/Autonomy = during, Renew/Purpose = after):
 

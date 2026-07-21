@@ -7,13 +7,15 @@ categories = ["development", "ai", "meta"]
 tags = ["agents", "automation", "keyboards", "golang", "copilot", "productivity"]
 +++
 
-Sometimes the best way to understand the future of software development is to
-watch a project evolve through different paradigms. The
+I built the Keyboard Layout Config Mapper because I wanted one source of truth
+for every keyboard I used. Following that project from 2022 to 2025 taught me
+something I did not expect: sometimes the lightest automation is asking an agent
+to make the change directly. The
 [Keyboard Layout Config Mapper (KLCM)](https://github.com/masters3d/keyboard_layout_config_mapper)
 project is a perfect case study in how AI-assisted development is fundamentally
 changing our approach to automation.
 
-## The Problem: Managing Multiple Keyboard Configurations
+## The Automation Problem
 
 If you use multiple ergonomic keyboards (Kinesis Advantage360, MoErgo Glove80,
 custom mods with Nice!Nano controllers) you face a unique challenge: keeping
@@ -24,12 +26,9 @@ The vision was clear: create a tool that could parse, validate, and sync
 keyboard configurations across multiple keyboards, acting as a single source of
 truth for your layout preferences.
 
-## Phase 1: The Manual Coding Approach (2022)
-
-### The Initial Implementation
-
-In April 2022, the project started with what any experienced developer would do:
-**write comprehensive code to solve the problem programmatically**.
+The first phase was a manual coding approach. In April 2022, the project started
+with what any experienced developer would do: **write comprehensive code to
+solve the problem programmatically**.
 
 The initial PR (#1) was massive (a proper software engineering solution) with:
 
@@ -52,18 +51,14 @@ test-driven development, abstractions for different firmware formats. The kind
 of code that feels satisfying to write because it's solving a hard problem with
 elegance.
 
-### The Reality Check
-
-But here's what actually happened: the tool worked, but it was complex. Every
-new keyboard layout feature required updating parsers. Every firmware update
-could break the mappings. The "simple" problem of keeping keyboard configs in
-sync required maintaining a sophisticated parsing and transformation pipeline.
+Then came the reality check: the tool worked, but it was complex. Every new
+keyboard layout feature required updating parsers. Every firmware update could
+break the mappings. The "simple" problem of keeping keyboard configs in sync
+required maintaining a sophisticated parsing and transformation pipeline.
 
 The code existed. It technically worked. But the maintenance burden was real.
 
-## Phase 2: The Stalling Period (2023)
-
-After the initial burst of development, 2023 saw minimal activity:
+After the initial burst of development, the project stalled in 2023:
 
 - A couple of config file updates
 - Some layout experiments
@@ -76,14 +71,11 @@ was supposed to save time required its own time investment.
 The sophisticated Go codebase sat largely dormant, a monument to the challenge
 of maintaining automation infrastructure.
 
-## Phase 3: The Copilot Renaissance (2025)
+Fast forward to August 2025, and a Copilot renaissance began. The project came
+back to life, but with a completely different approach.
 
-Fast forward to August 2025, and something interesting happened. The project
-came back to life, but with a completely different approach.
-
-### Building Better Tools with AI Assistance
-
-The V5 target release (PR #12) rebuilt the project with modern CLI tooling:
+With AI assistance, the V5 target release (PR #12) rebuilt the project with
+modern CLI tooling:
 
 - Complete CLI tool with Cobra framework
 - Git-style diff functionality
@@ -100,10 +92,8 @@ But here's the key insight: this wasn't about abandoning the parsing and
 automation. It was about using AI coding assistants to **build better tools
 faster**.
 
-### The Critical Realization
-
-Then came the recent PRs in November-December 2025, and you can see the pattern
-shift:
+Then came the critical realization. The PRs in November-December 2025 show the
+pattern shift:
 
 **PR #28**: "Add screenshot key to right pinky column on all ZMK keyboards"
 
@@ -126,7 +116,7 @@ keyboards, just ask an AI agent to make the changes directly**.
 
 Here's the profound realization that emerged from this project's evolution:
 
-### The Old Way: Write Code to Automate
+The old way was to write code to automate:
 
 1. Identify a repetitive task (syncing keyboard configs)
 2. Write parsers to understand the config format
@@ -137,7 +127,7 @@ Here's the profound realization that emerged from this project's evolution:
 
 **Time investment**: Hours to write, ongoing maintenance burden
 
-### The New Way: Use Agents Directly
+The new way is to use agents directly:
 
 1. Identify a repetitive task
 2. Tell an AI agent: "Add this key to all three keyboards"
@@ -146,10 +136,9 @@ Here's the profound realization that emerged from this project's evolution:
 
 **Time investment**: Minutes per change, no maintenance
 
-### When Agents Are Better Than Automation
-
-The KLCM project reveals a crucial insight: **For many tasks, having an AI agent
-make direct changes is simpler than writing code to automate those changes**.
+The KLCM project reveals when agents are better than automation: **For many
+tasks, having an AI agent make direct changes is simpler than writing code to
+automate those changes**.
 
 This is especially true when:
 
@@ -164,8 +153,6 @@ It's not that the initial Go implementation was wrong (it was a necessary
 exploration of the problem space). But it taught an important lesson: **the best
 automation is sometimes no automation at all, just better tools for making
 changes**.
-
-## The Modern KLCM Workflow
 
 Today, KLCM has found its optimal form:
 
@@ -184,39 +171,31 @@ The Go code that remains is focused on:
 These are the coordination tasks that genuinely benefit from automation (the
 scaffolding around the changes, not the changes themselves).
 
-## Lessons for Software Development
+## What the Project Taught Me
 
-### 1. Question Your Automation Assumptions
-
-Just because something _can_ be automated doesn't mean it _should_ be automated
-with custom code. Sometimes the better solution is:
+First, question your automation assumptions. Just because something _can_ be
+automated doesn't mean it _should_ be automated with custom code. Sometimes the
+better solution is:
 
 - Better tools for manual work
 - AI assistance for contextual changes
 - Automation only for scaffolding and coordination
 
-### 2. Maintenance Burden Is Real
+Second, maintenance burden is real. That sophisticated parser you built? It's
+now technical debt. Every line of code is a liability that needs maintenance. AI
+agents don't accumulate technical debt (they work with whatever the current
+state is).
 
-That sophisticated parser you built? It's now technical debt. Every line of code
-is a liability that needs maintenance. AI agents don't accumulate technical debt
-(they work with whatever the current state is).
+Third, context matters more than consistency. Traditional automation excels at
+consistency but struggles with context. AI agents are the opposite (they excel
+at understanding context and can handle inconsistency gracefully).
 
-### 3. Context Matters More Than Consistency
-
-Traditional automation excels at consistency but struggles with context. AI
-agents are the opposite (they excel at understanding context and can handle
-inconsistency gracefully).
-
-### 4. The Future Is Hybrid
-
-The best solution isn't "no automation" or "full automation" (it's **strategic
-automation**):
+Finally, the future is hybrid. The best solution isn't "no automation" or "full
+automation" (it's **strategic automation**):
 
 - Automate the workflow (git operations, PR creation, validation)
 - Use AI for the transformations (actual config changes)
 - Keep humans in the loop for review and decisions
-
-## A New Development Paradigm
 
 The KLCM project's evolution mirrors a broader shift in software development:
 
@@ -233,19 +212,15 @@ This doesn't make traditional programming obsolete (the KLCM CLI tools are still
 valuable Go code). But it changes what we choose to automate and how we approach
 repetitive tasks.
 
-## The Irony of Software Automation
-
-There's a del.icio.us irony here: a project designed to automate keyboard
-configuration management taught us that sometimes **the best automation is
-helping a human work better** (not replacing their work entirely).
+There is an irony here: a project designed to automate keyboard configuration
+management taught us that sometimes **the best automation is helping a human
+work better** (not replacing their work entirely).
 
 The failed promise of automation has always been: "Write this code once, save
 time forever."
 
 AI assistance offers a different approach: describe what you want, and it
 happens, with context understood and edge cases considered.
-
-## Practical Applications
 
 This pattern applies beyond keyboard configurations:
 
@@ -265,7 +240,7 @@ This pattern applies beyond keyboard configurations:
 The key question isn't "Can I automate this?" but "What's the lightest-weight
 way to handle this task reliably?"
 
-## Conclusion: Embracing the Agent-Assisted Future
+## The Agent-Assisted Future
 
 The Keyboard Layout Config Mapper started as an ambitious automation project and
 evolved into something more interesting: **a case study in knowing when NOT to
@@ -292,7 +267,7 @@ to research the repository and write this analysis. The agent read commit
 messages, analyzed the evolution, and synthesized insights (exactly the kind of
 contextual work that traditional automation struggles with)._
 
-## Appendix: Timeline
+The timeline makes the progression visible:
 
 **March 2022**: Initial commit  
 **April 2022**: PR #1 - Massive Go implementation with parsers, tests, and
