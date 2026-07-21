@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <id>{% if section %}{{ get_url(path=section.path ~ "atom.xml") }}{% else %}{{ get_url(path="atom.xml") }}{% endif %}</id>
-    <title>{{ config.title }}{% if section %} - {{ section.title }}{% endif %}</title>
+    <id>{{ feed_url | safe }}</id>
+    <title>{{ config.title }}{% if term %} - {{ term.name }}{% elif section %} - {{ section.title }}{% endif %}</title>
     {% if config.description %}
     <subtitle>{{ config.description }}</subtitle>
     {% endif %}
-    <updated>{{ now() | date(format="%+") }}</updated>
-    <link rel="alternate" type="text/html" href="{{ config.base_url }}{% if section %}{{ section.path }}{% endif %}"/>
-    <link rel="self" type="application/atom+xml" href="{% if section %}{{ get_url(path=section.path ~ "atom.xml") }}{% else %}{{ get_url(path="atom.xml") }}{% endif %}"/>
+    <updated>{{ last_updated | default(value=now()) | date(format="%+") }}</updated>
+    <link rel="alternate" type="text/html" href="{% if term %}{{ term.permalink | safe }}{% elif section %}{{ section.permalink | safe }}{% else %}{{ config.base_url }}{% endif %}"/>
+    <link rel="self" type="application/atom+xml" href="{{ feed_url | safe }}"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     {% if config.extra.github_username %}
     <author>
@@ -16,29 +16,36 @@
     </author>
     {% endif %}
 
-    {% if section %}
-        {% if section.pages %}
-            {% for page in section.pages %}
-            <entry xml:lang="en">
-                <title>{{ page.title }}</title>
-                <id>{{ page.permalink }}</id>
-                <link rel="alternate" type="text/html" href="{{ page.permalink }}"/>
-                <published>{{ page.date | date(format="%+") }}</published>
-                <updated>{{ page.updated | default(value=page.date) | date(format="%+") }}</updated>
-                {% if page.description %}
-                <summary>{{ page.description }}</summary>
-                {% endif %}
-                {% if page.content %}
-                <content type="html">{{ page.content }}</content>
-                {% endif %}
-                {% if config.extra.github_username %}
-                <author>
-                    <name>{{ config.extra.github_username }}</name>
-                    <uri>{{ config.base_url }}</uri>
-                </author>
-                {% endif %}
-            </entry>
-            {% endfor %}
-        {% endif %}
+    {# Feed pagination: cap the number of entries so the feed stays a manageable
+       size once the archive grows large. `pages` is sorted newest-first, so the
+       most recent posts are kept. Set config.extra.feed_limit to enable capping;
+       leave it unset (or 0) to output every post. #}
+    {% set feed_limit = config.extra.feed_limit | default(value=0) %}
+    {% if feed_limit > 0 %}
+        {% set feed_pages = pages | slice(end=feed_limit) %}
+    {% else %}
+        {% set feed_pages = pages %}
     {% endif %}
+
+    {% for page in feed_pages %}
+    <entry xml:lang="en">
+        <title>{{ page.title }}</title>
+        <id>{{ page.permalink | safe }}</id>
+        <link rel="alternate" type="text/html" href="{{ page.permalink | safe }}"/>
+        <published>{{ page.date | date(format="%+") }}</published>
+        <updated>{{ page.updated | default(value=page.date) | date(format="%+") }}</updated>
+        {% if page.description %}
+        <summary>{{ page.description }}</summary>
+        {% endif %}
+        {% if page.content %}
+        <content type="html">{{ page.content }}</content>
+        {% endif %}
+        {% if config.extra.github_username %}
+        <author>
+            <name>{{ config.extra.github_username }}</name>
+            <uri>{{ config.base_url }}</uri>
+        </author>
+        {% endif %}
+    </entry>
+    {% endfor %}
 </feed>
