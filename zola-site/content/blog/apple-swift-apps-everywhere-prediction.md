@@ -3,8 +3,11 @@ title = "What Apple Swift Means to Apple and the Future of Apps Everywhere (A Pr
 date = "2014-06-08"
 description = "A 2014 prediction about Apple's newly released Swift language, why it could become the foundation of connected app frameworks, and how apps might eventually run everywhere."
 template = "blog-post.html"
-categories = ["technology", "languages", "prediction"]
+[taxonomies]
+categories = ["Field Notes"]
 tags = ["swift", "apple", "prediction", "languages", "ios", "retrospective"]
+[extra]
+editorial_track = "field-notes"
 +++
 
 _This was originally published on 2014-06-08._

@@ -3,11 +3,17 @@ title = "Why Search Maps to Mastery, Not Autonomy"
 date = "2026-06-07"
 description = "There's a natural-sounding intuition that autonomy is about exploring, so maybe it lines up with Search. It turns out backwards, and the reason it's backwards is the most useful thing about the framework: the mapping between Search/Drive/Renew and Mastery/Autonomy/Purpose is fixed by when each force acts, not by what its name sounds like."
 template = "blog-post.html"
-categories = ["philosophy", "mindset", "productivity"]
+[taxonomies]
+categories = ["Quest Engine"]
 tags = ["quest-engine", "motivation", "mastery", "autonomy", "purpose", "search-drive-renew"]
+[extra]
+editorial_track = "quest-engine"
+series = "quest-engine"
+series_order = 14
 +++
 
-There's a natural-sounding way to line up the
+When I first lined up the Quest Engine with the three human motivations, I made
+a tidy mistake. There's a natural-sounding way to line up the
 [Quest Engine's three forces](/blog/quest-engine-the-why/) with the three human
 motivations, and it is wrong. The intuition goes like this: autonomy is the
 freedom to explore, and exploring is searching, so **Autonomy** must map to
@@ -94,9 +100,9 @@ different reasons, arranges the three needs in the same order the cycle does.
 When the timing argument and the psychology agree, the mapping is not a
 stylistic choice. It is structural.
 
-The practical takeaway is small but sturdy. When you try to place one of these
-forces, do not ask what its name sounds like. Ask _when_ it happens. Before you
+_The practical takeaway is small but sturdy. When you try to place one of these
+forces, do not ask what its name sounds like. Ask \_when_ it happens. Before you
 act, that is Search and Mastery. While you act, that is Drive and Autonomy.
 After you act, that is Renew and Purpose. The order is the answer, and it is why
 the [intrinsic motivations](/blog/find-your-why-intrinsic-motivation/) slot into
-the [why behind the how](/blog/quest-engine-the-why/) in exactly one way.
+the [why behind the how](/blog/quest-engine-the-why/) in exactly one way.\_

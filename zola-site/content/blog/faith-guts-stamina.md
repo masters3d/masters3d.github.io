@@ -3,8 +3,13 @@ title = "Faith. Guts. Stamina."
 date = "2026-05-16"
 description = "In Sing 2, an elderly sheep tells Buster Moon: 'Guts, Stamina, Faith.' The order lands perfectly for the moment. It's not the order the forces operate in. Faith belongs first. Guts follows. Stamina closes the loop."
 template = "blog-post.html"
-categories = ["philosophy", "mindset", "productivity"]
+[taxonomies]
+categories = ["Quest Engine"]
 tags = ["quest-engine", "motivation", "persistence", "search-drive-renew", "triads"]
+[extra]
+editorial_track = "quest-engine"
+series = "quest-engine"
+series_order = 12
 +++
 
 In _Sing 2_ (2021), Buster Moon has just been told he's not good enough. He goes

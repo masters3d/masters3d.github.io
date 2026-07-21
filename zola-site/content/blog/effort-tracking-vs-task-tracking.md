@@ -3,13 +3,17 @@ title = "Stop Conflating Effort Tracking with Work Tracking"
 date = "2026-04-01"
 description = "Why effort tracking (where is my time going?) needs to be separate from work tracking (what am I building?) and how centralizing effort in one tool provides visibility that scattered work-tracking systems can't."
 template = "blog-post.html"
-categories = ["productivity", "workflow"]
+[taxonomies]
+categories = ["Field Notes"]
 tags = ["effort-tracking", "time-management", "azure-devops", "workflow", "productivity"]
+[extra]
+editorial_track = "field-notes"
 +++
 
-I've written before about [why I use worklogs](/blog/why-i-love-worklogs/) to
-track individual pieces of work. Worklogs answer "what am I working on?" But
-there's a different question: **where is my time actually going?**
+I started separating effort from work after noticing that a full week could
+produce plenty of completed tasks and still leave me unable to explain where the
+week went. [Worklogs](/blog/why-i-love-worklogs/) answered "what am I working
+on?" But I needed a different answer: **where is my time actually going?**
 
 That's what effort tracking is for. And here's the key insight: **effort
 tracking and work tracking are fundamentally different things that shouldn't be
@@ -33,7 +37,7 @@ stays where it naturally belongs (incidents in your incident system, features in
 GitHub, compliance work in your security portal). Effort tracking lives in one
 centralized place focused on one question: where is my time going?
 
-## What Makes a Good Effort Group
+## A Coarse-Grained Method
 
 My effort groups represent **types of work**, not individual deliverables:
 
@@ -50,9 +54,7 @@ to "Live Site / Production Support." I use tags to group related tasks together
 (no hierarchy, just tags), and that gives me the flexibility to see patterns
 without maintaining a complex structure.
 
-## The "Dev Day" Concept
-
-I track effort in "dev days," which isn't a solar day but what an average day
+I track effort with a "dev day," which isn't a solar day but what an average day
 would have of capacity to do work (minus meetings). For my team, that's 4-6
 hours of actual work per day, but we track dev days, not hours. There's no
 strict math, and it's not meant to be super precise.
@@ -62,9 +64,7 @@ if you're on-call, for example). A 10-hour day might count as "2 days of
 effort," though that's rare. The simplicity is the point. I'm trying to
 understand patterns, not account for every hour.
 
-## Why This Matters
-
-Effort groups answer questions that task-level tracking can't:
+The groups answer questions that task-level tracking can't:
 
 **"How much time did I spend on live site work last quarter?"** With effort
 groups: one query. Done.
@@ -77,9 +77,7 @@ features."
 50% of my time in reactive mode. If I can reduce that to 30%, I'd have 20% more
 time for strategic work."
 
-## Tasks vs. Worklogs vs. Effort Groups
-
-To be clear how these differ:
+This produces three distinct views:
 
 - **Tasks**: What needs to be done ("Implement OAuth login")
 - **Worklogs**: Document work in progress with context for AI agents
@@ -88,21 +86,16 @@ To be clear how these differ:
 You might have 20 tasks for authentication, 3 worklogs documenting phases of
 that work, and all of it logs to one effort group: "Feature Development."
 
-## Cross-System Work
-
-One of the biggest benefits: work spans multiple systems. Live site incidents
-are in one system, security tickets in another, feature work in GitHub, IT
-requests somewhere else.
+One of the biggest benefits appears when work spans multiple systems. Live site
+incidents are in one system, security tickets in another, feature work in
+GitHub, IT requests somewhere else.
 
 With effort groups, I don't care which system a task lives in. At the end of the
 week, I categorize my time: "1 day on live site, 2 days on features, 0.5 days on
 POC work." The effort tracking system sees all of it in one place.
 
-## My Implementation: Azure DevOps
-
-My centralized effort tracking lives in Azure DevOps. This is just my
-implementation detail - you could use any system that lets you centralize effort
-data.
+My implementation lives in Azure DevOps, but that is only an implementation
+detail. You could use any system that lets you centralize effort data.
 
 In ADO, I track effort in tasks or bugs, but these aren't the same as my
 work-tracking tasks. These are effort-tracking entries. The key is separating
@@ -135,10 +128,8 @@ context, and work-in-progress documentation go in worklogs (GitHub Issues) or in
 the actual work-tracking systems. ADO just tracks: which effort group, how many
 dev days, when.
 
-## Update Frequently (But Not Obsessively)
-
-This only works if you update it regularly. **Minimum: twice a week.** Ideally:
-daily, or at least three times a week.
+This only works if you update it frequently, but not obsessively. **Minimum:
+twice a week.** Ideally: daily, or at least three times a week.
 
 The pattern I follow: Monday, Wednesday, Friday. Update effort at the end of
 those days. If you wait a whole week, you'll forget. If you update twice a week,
@@ -149,7 +140,7 @@ The tooling makes it fast enough that daily updates don't feel like a burden.
 Think about your day, categorize your time, log the numbers. 30 seconds per
 update, maybe a minute if it was a complex week.
 
-## Why This Matters: Detecting Team Overload
+## Detecting Team Overload
 
 Here's the real value: **visibility into whether your team is overloaded.**
 
@@ -176,18 +167,15 @@ perfection. 80-90% accuracy is plenty. You're trying to detect patterns: is the
 team overloaded? Is time going where we planned? Are we spending more time on
 one thing than another?
 
-## Effort Groups Evolve
-
-My effort groups have evolved over time. I'm still an individual contributor,
-but the mix of work changes. Some quarters "Feature Development" is 80% of my
-time. Other quarters I'm doing more POC work or handling more live site
-incidents.
+The groups also evolve over time. I'm still an individual contributor, but the
+mix of work changes. Some quarters "Feature Development" is 80% of my time.
+Other quarters I'm doing more POC work or handling more live site incidents.
 
 The groups adapt to reflect how you spend your time. You can add categories when
 you take on new work, retire ones that aren't relevant. The framework is
 flexible because groups represent activities, not organizational structures.
 
-## The Point
+## The Separation Is the Point
 
 **Stop conflating effort tracking with work tracking.** They answer different
 questions:
@@ -223,6 +211,7 @@ didn't plan for and want to address in the next quarter or month.
 
 ---
 
-_This post builds on my earlier post about
-[worklogs](/blog/why-i-love-worklogs/). Worklogs and effort tracking serve
-different purposes and complement each other in my workflow._
+_This distinction gave me the view that task tracking could not: whether my time
+still matched what I said mattered. [Worklogs](/blog/why-i-love-worklogs/)
+preserve the story of the work, while effort groups reveal its shape. Keeping
+those views separate makes both of them more honest._

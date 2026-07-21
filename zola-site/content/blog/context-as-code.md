@@ -3,17 +3,20 @@ title = "Context as Code"
 date = "2026-05-30"
 description = "Configuration earned its place next to code: versioned, reviewed, owned. The corpus of context that aligns a team (design docs, contextual documents, the why behind the system) deserves the same standard. It's the operating system humans run on, and now the grounding agents read to understand how we work."
 template = "blog-post.html"
-categories = ["engineering", "productivity", "workflow"]
+[taxonomies]
+categories = ["Engineering Systems"]
 tags = ["context", "configuration", "alignment", "high-agency", "knowledge-management"]
+[extra]
+editorial_track = "engineering-systems"
 +++
 
-There was a time when configuration was treated as an afterthought. It lived in
-a file someone edited by hand on a server, undocumented, unreviewed, owned by
-whoever touched it last. Then the industry grew up. Configuration became code:
-versioned in the same repository, reviewed in the same pull requests, tested in
-the same pipelines, owned with the same seriousness. Infrastructure as code,
-config as code. We stopped pretending the settings that determine how a system
-behaves were somehow lesser than the logic inside it.
+I remember when configuration was treated as an afterthought. It lived in a file
+someone edited by hand on a server, undocumented, unreviewed, owned by whoever
+touched it last. Then the industry grew up. Configuration became code: versioned
+in the same repository, reviewed in the same pull requests, tested in the same
+pipelines, owned with the same seriousness. Infrastructure as code, config as
+code. We stopped pretending the settings that determine how a system behaves
+were somehow lesser than the logic inside it.
 
 I want to make the same argument for context. **The corpus of context that
 aligns a team should be held in the same regard as configuration and code.** Not
@@ -97,4 +100,9 @@ standard. We did all of that for configuration once we admitted it was as
 load-bearing as the code. Context is more load-bearing still, because it's the
 thing that produces both.
 
-**Treat your context as code.**
+_Configuration became code when we admitted that it determines how a system
+behaves. Context deserves the same treatment because it determines how people
+and agents understand that system in the first place.
+[Worklogs](/blog/why-i-love-worklogs/) capture the context of the work, while
+[context hunting](/blog/context-hunting-vs-context-gathering/) finds what is
+missing. Version it, review it, own it, and treat your context as code._

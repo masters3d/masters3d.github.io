@@ -1,0 +1,30 @@
+{% set categories = get_taxonomy(kind="categories") %}
+<section class="editorial-tracks" aria-labelledby="editorial-tracks-title">
+  <h2 id="editorial-tracks-title">Editorial Tracks</h2>
+  <p>Every post belongs to one track with its own subject, reading rhythm, and voice. Tags connect ideas across tracks.</p>
+  <div class="editorial-track-grid">
+    {% for term in categories.items %}
+    {% if term.name == "Quest Engine" %}
+      {% set track = "quest-engine" %}
+      {% set description = "The connected framework, from Search, Drive, and Renew to practical applications." %}
+    {% elif term.name == "Engineering Systems" %}
+      {% set track = "engineering-systems" %}
+      {% set description = "Architecture, reliability, languages, and the mechanisms behind engineering choices." %}
+    {% elif term.name == "AI & Tools" %}
+      {% set track = "ai-and-tools" %}
+      {% set description = "Agent workflows and tools examined through experiments, worklogs, and practical limits." %}
+    {% elif term.name == "Leadership & Teams" %}
+      {% set track = "leadership-and-teams" %}
+      {% set description = "Ownership, autonomy, communication, and the systems that shape how teams operate." %}
+    {% else %}
+      {% set track = "field-notes" %}
+      {% set description = "Personal history, retrospectives, portfolios, and observations from work in progress." %}
+    {% endif %}
+    <article class="track-summary track-{{ track }}">
+      <p class="track-kicker">{{ term.pages | length }} posts</p>
+      <h3><a href="{{ term.permalink }}">{{ term.name }}</a></h3>
+      <p>{{ description }}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>

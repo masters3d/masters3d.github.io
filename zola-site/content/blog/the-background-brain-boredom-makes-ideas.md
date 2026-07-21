@@ -3,8 +3,13 @@ title = "The Background Brain: Why Boredom Makes Ideas"
 date = "2026-07-13"
 description = "Some of my best ideas came from stopping work, not doing more of it. Learning How to Learn's diffuse mode, Kahneman's System 1, and Cal Newport's Slow Productivity all describe the same mechanism: the mind does its best creative work in the background, so past a point more hours make creative output worse, not better."
 template = "blog-post.html"
-categories = ["philosophy", "mindset", "learning"]
+[taxonomies]
+categories = ["Field Notes"]
 tags = ["diffuse-mode", "focus-mode", "system-1", "system-2", "thinking-fast-and-slow", "slow-productivity", "boredom", "creativity", "default-mode-network", "quest-engine"]
+[extra]
+editorial_track = "field-notes"
+series = "quest-engine"
+series_order = 25
 +++
 
 Some of my best ideas never arrived while I was working on the problem. They

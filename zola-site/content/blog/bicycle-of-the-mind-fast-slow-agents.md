@@ -3,8 +3,13 @@ title = "The Bicycle of the Mind: Fast, Slow, and Automatic Thinking About Agent
 date = "2026-07-03"
 description = "Kahneman's two modes of thinking (fast System 1 and slow System 2) map onto learning to ride a bicycle. Attention gives way to automaticity, and that same arc is a methodology for thinking about agents, leverage, and engineering systems."
 template = "blog-post.html"
-categories = ["engineering", "ai", "learning"]
+[taxonomies]
+categories = ["Engineering Systems"]
 tags = ["thinking-fast-and-slow", "system-1", "system-2", "automaticity", "bicycle-of-the-mind", "agents", "leverage", "quest-engine", "systems-thinking", "deliberate-practice"]
+[extra]
+editorial_track = "engineering-systems"
+series = "quest-engine"
+series_order = 19
 +++
 
 Daniel Kahneman gave us a useful cartoon of the mind: two systems. System 1 is
@@ -92,7 +97,7 @@ need it. This is exactly the argument from
 you build the staircase so that climbing becomes trivial, and then you walk up
 without thinking, and so does everyone who comes after you.
 
-Automaticity is what leverage feels like from the inside. The bicycle converts
+_Automaticity is what leverage feels like from the inside. The bicycle converts
 the same effort into more distance. A skill compiled into System 1 converts the
 same attention into more thinking. A well-engineered system converts the same
 team into more capability, because it has quietly absorbed everything that used
@@ -100,4 +105,4 @@ to require someone to stand there and manage it by hand. The craft of
 engineering, and increasingly the craft of working with agents, is deciding what
 deserves your slow, deliberate attention today and what should become fast,
 automatic, and invisible tomorrow. You learn to ride so that you can stop
-thinking about riding, and then you go somewhere with it.
+thinking about riding, and then you go somewhere with it._

@@ -3,8 +3,11 @@ title = "25 Years of Operating Systems: Windows, macOS, and Back Again"
 date = "2026-07-04"
 description = "A personal retrospective spanning 25 years of operating systems, from Windows 98, 2000, and XP through a decade of macOS to a return to Windows 10 and 11, and a look at where a fully Linux development environment might fit next."
 template = "blog-post.html"
-categories = ["technology", "personal", "retrospective"]
+[taxonomies]
+categories = ["Field Notes"]
 tags = ["windows", "macos", "linux", "retrospective", "wsl", "operating-systems"]
+[extra]
+editorial_track = "field-notes"
 +++
 
 Looking back across 25 years, the operating systems I have lived on tell a story
@@ -61,13 +64,12 @@ as a personal computer, and it ran great across all of them. Even my server at
 the time was macOS based: an [Xserve](https://en.wikipedia.org/wiki/Xserve) that
 held all the RAID storage. For a decade the Mac was simply everything.
 
-## The Server Evolution: From a Room Full of Machines to the Cloud
-
-My first real introduction to servers was at work, when the company started
-hosting a room full of them. I never had a server of my own back then, but that
-was the first time I understood the idea of a machine that did things for me,
-running in a work setting rather than under my desk. Around the same time, cloud
-platforms like [AWS](https://en.wikipedia.org/wiki/Amazon_Web_Services) and
+Servers were making their own trip from rooms full of machines to the cloud. My
+first real introduction to them was at work, when the company started hosting a
+room full of them. I never had a server of my own back then, but that was the
+first time I understood the idea of a machine that did things for me, running in
+a work setting rather than under my desk. Around the same time, cloud platforms
+like [AWS](https://en.wikipedia.org/wiki/Amazon_Web_Services) and
 [Azure](https://en.wikipedia.org/wiki/Microsoft_Azure) were becoming relevant,
 and suddenly you could run your code on someone else's infrastructure. I also
 started deploying websites on hosts like

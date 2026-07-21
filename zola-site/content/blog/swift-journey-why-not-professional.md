@@ -3,8 +3,11 @@ title = "My Swift Journey: Why I Love It but Can't Use It at Work"
 date = "2026-07-05"
 description = "Swift might be my favorite language, striking a rare balance between low-level and high-level features, yet I've never been able to use it professionally. This is why, and what it takes for a language to break out of its home ecosystem."
 template = "blog-post.html"
-categories = ["development", "languages", "personal"]
+[taxonomies]
+categories = ["Field Notes"]
 tags = ["swift", "rust", "csharp", "go", "apple", "languages", "open-source"]
+[extra]
+editorial_track = "field-notes"
 +++
 
 Swift was the second language I ever learned, right after Python. Apple had just

@@ -3,14 +3,17 @@ title = "My AI Tools Journey Since Claude Opus 4.5: Rust, Scripting Languages, a
 date = "2026-02-07"
 description = "Reflecting on my experience using AI coding tools since Claude Opus 4.5, contrasting Rust and scripting language development, and insights on multi-agent workflows."
 template = "blog-post.html"
-categories = ["ai", "development", "rust", "scripting"]
+[taxonomies]
+categories = ["AI & Tools"]
 tags = ["claude", "copilot", "agents", "rust", "powershell", "bash", "ai-development"]
+[extra]
+editorial_track = "ai-and-tools"
 +++
 
-My journey with AI coding tools has been transformative, particularly since the
-release of Claude Opus 4.5 on November 24, 2025. This post reflects on how AI
-tooling has evolved and what that means for language choices in CLI development,
-using my experience with Rust and scripting languages as a case study.
+Before Claude Opus 4.5, I would not ask an agent to build a serious Rust CLI. I
+stayed with shell scripts because Rust seemed too complex and too easy for an
+agent to get subtly wrong. Then Opus 4.5 arrived on November 24, 2025, and the
+boundary moved.
 
 The vast majority of my development work has been through GitHub Copilot CLI,
 and the experience has been nothing short of eye-opening. I've been using it
@@ -180,6 +183,10 @@ things that actually matter. 🚀
 
 ---
 
-_This post is a draft reflection on my ongoing journey with AI coding tools. As
-the technology continues to evolve, I expect my perspectives will evolve with
-it._
+_The change I keep coming back to is not that agents made every language equal.
+They made stronger validation loops easier to use, which changed what I was
+willing to build in Rust. The human work moved upward toward taste,
+architecture, and deciding what matters (the same shift behind
+[language choice in the LLM era](/blog/language-choice-in-the-llm-era/) and
+[proof-carrying work](/blog/proof-carrying-work/)). The tools will keep
+changing, and I expect my conclusions to change with them._

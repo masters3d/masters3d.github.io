@@ -3,8 +3,13 @@ title = "9 Years of Copious Notes"
 date = "2026-06-29"
 description = "Nine years of work notes, from sort-of-daily Markdown files in 2017 to monthly Word docs to a single yearly running document, and how AI agents finally took over the writing through worklogs."
 template = "blog-post.html"
-categories = ["ai", "productivity", "development"]
+[taxonomies]
+categories = ["AI & Tools"]
 tags = ["worklogs", "notes", "agents", "copilot", "workflow", "ai-development", "quest-engine"]
+[extra]
+editorial_track = "ai-and-tools"
+series = "quest-engine"
+series_order = 16
 +++
 
 This whole thing started as a development journal in 2017. Nine years later, the

@@ -3,8 +3,13 @@ title = "Set. Action. Reload."
 date = "2026-05-01"
 description = "The phrase 'Lights. Camera. Action.' is a one-shot pipeline, not a cycle. Replacing it with 'Set. Action. Reload.' turns it into a generalizable loop that compounds, showing how common phrases can be transformed into better ways of thinking."
 template = "blog-post.html"
-categories = ["ai", "productivity", "workflow"]
+[taxonomies]
+categories = ["Quest Engine"]
 tags = ["quest-engine", "phrases", "mental-models", "cycles", "reframing"]
+[extra]
+editorial_track = "quest-engine"
+series = "quest-engine"
+series_order = 10
 +++
 
 Almost everyone on the planet knows this cue:

@@ -1,0 +1,33 @@
+{% set track = page.extra.editorial_track | default(value="field-notes") %}
+{% set series = page.extra.series | default(value="") %}
+{% set category_name = page.taxonomies.categories | first %}
+<aside class="editorial-track-card" aria-label="Editorial track">
+  <p class="track-kicker">Editorial track</p>
+  {% if track == "quest-engine" %}
+  <p class="track-title">Quest Engine</p>
+  <p>Framework essays that build one connected model through definitions, comparisons, and applications.</p>
+  {% elif track == "engineering-systems" %}
+  <p class="track-title">Engineering Systems</p>
+  <p>Technical arguments grounded in mechanisms, constraints, tradeoffs, and evidence from working systems.</p>
+  {% elif track == "ai-and-tools" %}
+  <p class="track-title">AI &amp; Tools</p>
+  <p>Experiments with agents and software tools, told through what changed in the work and what remained human.</p>
+  {% elif track == "leadership-and-teams" %}
+  <p class="track-title">Leadership &amp; Teams</p>
+  <p>Team dynamics made concrete through observed behavior, incentives, ownership, and operating boundaries.</p>
+  {% else %}
+  <p class="track-title">Field Notes</p>
+  <p>First-person records, retrospectives, and portfolios that preserve the details before drawing conclusions.</p>
+  {% endif %}
+
+  <p class="track-links">
+    <a href="{{ get_taxonomy_url(kind='categories', name=category_name) }}">
+      Explore this track
+    </a>
+    {% if series == "quest-engine" %}
+    <a href="{{ get_taxonomy_url(kind='tags', name='quest-engine') }}">
+      Quest Engine reading order ({{ page.extra.series_order }} of 25)
+    </a>
+    {% endif %}
+  </p>
+</aside>
