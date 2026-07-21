@@ -1,0 +1,14 @@
+{
+  "name": "masters3d-site-tooling",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Markdown formatting/linting tooling for the masters3d.github.io Zola site.",
+  "scripts": {
+    "format:md": "python3 scripts/format_markdown.py",
+    "check:md": "python3 scripts/format_markdown.py --check"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "0.14.0",
+    "prettier": "3.3.3"
+  }
+}
