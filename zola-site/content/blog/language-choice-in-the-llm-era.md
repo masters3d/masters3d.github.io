@@ -3,8 +3,10 @@ title = "Language Choice in the LLM Era"
 date = "2026-05-24"
 description = "A practical guide to choosing programming languages for frontend, CLI, and server development with decision matrices that account for modern LLM-assisted development."
 template = "blog-post.html"
-categories = ["development", "ai", "languages"]
+categories = ["AI & Tools"]
 tags = ["rust", "python", "typescript", "go", "csharp", "swift", "llm", "ai-development"]
+[extra]
+editorial_track = "ai-and-tools"
 +++
 
 I started programming in 2014, but I could have started much earlier. C and C++

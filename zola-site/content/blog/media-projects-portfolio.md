@@ -3,9 +3,11 @@ title = "Media Projects & Digital Production Portfolio"
 date = "2015-06-15"
 description = "Video production work spanning documentary, commercial, and technical content. From humanitarian missions to commercial products."
 template = "blog-post.html"
-[extra]
-categories = ["portfolio", "media", "video"]
+categories = ["Field Notes"]
 tags = ["video-production", "documentary", "commercial", "humanitarian", "drone", "motion-graphics"]
+[extra]
+editorial_track = "field-notes"
+content_type = "portfolio"
 +++
 
 A collection of video production work spanning documentary, commercial, and

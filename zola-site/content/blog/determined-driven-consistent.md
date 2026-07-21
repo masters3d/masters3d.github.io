@@ -3,8 +3,12 @@ title = "Determined. Driven. Consistent."
 date = "2026-05-05"
 description = "Tom Brady's Hall of Fame answer was three parts: consistent, determined, and willing to work for it. Most people drop the middle one. That missing piece is why you can be determined and consistent and still be moving in the wrong direction."
 template = "blog-post.html"
-categories = ["philosophy", "mindset", "productivity"]
+categories = ["Quest Engine"]
 tags = ["quest-engine", "motivation", "persistence", "search-drive-renew", "triads"]
+[extra]
+editorial_track = "quest-engine"
+series = "quest-engine"
+series_order = 11
 +++
 
 When Tom Brady was inducted into the Patriots Hall of Fame in 2024, someone

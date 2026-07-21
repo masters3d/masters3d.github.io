@@ -3,8 +3,12 @@ title = "The Bicycle of the Mind: Fast, Slow, and Automatic Thinking About Agent
 date = "2026-07-03"
 description = "Kahneman's two modes of thinking (fast System 1 and slow System 2) map onto learning to ride a bicycle. Attention gives way to automaticity, and that same arc is a methodology for thinking about agents, leverage, and engineering systems."
 template = "blog-post.html"
-categories = ["engineering", "ai", "learning"]
+categories = ["Engineering Systems"]
 tags = ["thinking-fast-and-slow", "system-1", "system-2", "automaticity", "bicycle-of-the-mind", "agents", "leverage", "quest-engine", "systems-thinking", "deliberate-practice"]
+[extra]
+editorial_track = "engineering-systems"
+series = "quest-engine"
+series_order = 19
 +++
 
 Daniel Kahneman gave us a useful cartoon of the mind: two systems. System 1 is

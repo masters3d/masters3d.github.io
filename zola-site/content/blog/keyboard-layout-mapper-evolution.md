@@ -3,8 +3,10 @@ title = "The Evolution of Keyboard Layout Config Mapper: When Agents Are Better 
 date = "2025-12-11"
 description = "A deep dive into how a keyboard configuration project evolved from manual Go programming to agent-assisted development, and the surprising realization that having agents make direct changes is simpler than writing code to automate everything."
 template = "blog-post.html"
-categories = ["development", "ai", "meta"]
+categories = ["AI & Tools"]
 tags = ["agents", "automation", "keyboards", "golang", "copilot", "productivity"]
+[extra]
+editorial_track = "ai-and-tools"
 +++
 
 I built the Keyboard Layout Config Mapper because I wanted one source of truth

@@ -3,8 +3,10 @@ title = "The Word \"Impact\" Considered Harmful at Work"
 date = "2026-06-28"
 description = "A reflection on why the word impact is too overloaded for work conversations, and why accomplishments and outcomes are clearer alternatives."
 template = "blog-post.html"
-categories = ["communication", "work", "leadership"]
+categories = ["Leadership & Teams"]
 tags = ["language", "clarity", "outcomes", "accomplishments"]
+[extra]
+editorial_track = "leadership-and-teams"
 +++
 
 I do not like using the word "impact" in work settings.

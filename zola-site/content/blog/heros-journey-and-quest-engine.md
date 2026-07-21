@@ -3,8 +3,12 @@ title = "The Hero's Journey and the Quest Engine"
 date = "2026-04-29"
 description = "Joseph Campbell's monomyth (Departure, Initiation, Return) maps naturally onto the Quest Engine's three forces (Searching, Driven, Renewal). The hero's journey is the narrative; the Quest Engine is the operating system."
 template = "blog-post.html"
-categories = ["philosophy", "productivity", "workflow"]
+categories = ["Quest Engine"]
 tags = ["quest-engine", "heros-journey", "monomyth", "search-drive-renew", "narrative", "mythology"]
+[extra]
+editorial_track = "quest-engine"
+series = "quest-engine"
+series_order = 8
 +++
 
 Joseph Campbell spent decades studying myths across every culture he could reach

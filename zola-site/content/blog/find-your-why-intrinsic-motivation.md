@@ -3,8 +3,12 @@ title = "Find Your Why: Mastery, Autonomy, and Purpose"
 date = "2026-06-07"
 description = "Interesting motivation is intrinsic, not extrinsic. Mastery (the pull to get better), Autonomy (ownership and a map of what you control), and Purpose (the why that renews) are the three forces that make work gel. Find your why, and let the Quest Engine help you search for a more interesting one."
 template = "blog-post.html"
-categories = ["philosophy", "mindset", "productivity"]
+categories = ["Quest Engine"]
 tags = ["motivation", "intrinsic-motivation", "mastery", "autonomy", "purpose", "quest-engine"]
+[extra]
+editorial_track = "quest-engine"
+series = "quest-engine"
+series_order = 13
 +++
 
 Hand someone a task and a paycheck, and they will do the work. Hand them a

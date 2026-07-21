@@ -3,9 +3,11 @@ title = "Technical Projects & Development Portfolio"
 date = "2015-03-20"
 description = "Software development projects spanning mobile applications, web development, system tools, and emerging technologies."
 template = "blog-post.html"
-[extra]
-categories = ["portfolio", "development", "technology"]
+categories = ["Field Notes"]
 tags = ["ios", "swift", "react", "web-development", "mobile", "automation", "devops"]
+[extra]
+editorial_track = "field-notes"
+content_type = "portfolio"
 +++
 
 A comprehensive collection of software development projects spanning mobile

@@ -3,8 +3,12 @@ title = "Orthogonal, Not Opposite"
 date = "2026-06-27"
 description = "Salty is not the opposite of sweet. They are separate receptors, separate dials, and salted caramel exists because you can turn up both at once. Most 'balance' advice is secretly slider-thinking. The method is to catch the false opposite, test for a real tradeoff, and go to the corner everyone told you was impossible."
 template = "blog-post.html"
-categories = ["philosophy", "mindset", "engineering"]
+categories = ["Engineering Systems"]
 tags = ["systems-thinking", "mental-models", "teams", "hiring", "false-tradeoffs", "quest-engine", "self-healing"]
+[extra]
+editorial_track = "engineering-systems"
+series = "quest-engine"
+series_order = 15
 +++
 
 The first time I really tasted salted caramel, I had the thought a beat too

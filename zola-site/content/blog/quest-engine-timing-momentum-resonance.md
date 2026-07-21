@@ -3,8 +3,12 @@ title = "Quest Engine: Timing, Momentum, and Resonance"
 date = 2026-04-28
 description = "Timing and momentum matter more than talent, but there's a third term missing: resonance. This dynamics layer extends the Quest Engine with the physics of coupling (how your sustained force meets the world's readiness to receive it)."
 template = "blog-post.html"
-categories = ["ai", "productivity", "workflow"]
+categories = ["Quest Engine"]
 tags = ["quest-engine", "timing", "momentum", "resonance", "dynamics", "coupling"]
+[extra]
+editorial_track = "quest-engine"
+series = "quest-engine"
+series_order = 7
 +++
 
 > _"Timing and momentum is more important than talent."_ — André 3000

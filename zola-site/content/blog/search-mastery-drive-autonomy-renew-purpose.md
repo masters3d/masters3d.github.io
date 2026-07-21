@@ -3,8 +3,12 @@ title = "Why Search Maps to Mastery, Not Autonomy"
 date = "2026-06-07"
 description = "There's a natural-sounding intuition that autonomy is about exploring, so maybe it lines up with Search. It turns out backwards, and the reason it's backwards is the most useful thing about the framework: the mapping between Search/Drive/Renew and Mastery/Autonomy/Purpose is fixed by when each force acts, not by what its name sounds like."
 template = "blog-post.html"
-categories = ["philosophy", "mindset", "productivity"]
+categories = ["Quest Engine"]
 tags = ["quest-engine", "motivation", "mastery", "autonomy", "purpose", "search-drive-renew"]
+[extra]
+editorial_track = "quest-engine"
+series = "quest-engine"
+series_order = 14
 +++
 
 When I first lined up the Quest Engine with the three human motivations, I made

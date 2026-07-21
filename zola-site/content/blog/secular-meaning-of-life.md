@@ -3,8 +3,12 @@ title = "Discovery, Play, Joy — A Secular Meaning of Life"
 date = "2026-04-26"
 description = "Exploring a secular approach to life's meaning through three forces: Discovery (the search for understanding), Play (the drive to engage), and Joy (the renewal of purpose). These aren't abstract ideals — they're diagnostic tools for a life that matters."
 template = "blog-post.html"
-categories = ["philosophy", "mindset", "productivity"]
+categories = ["Quest Engine"]
 tags = ["meaning", "discovery", "play", "joy", "secular-philosophy", "quest-engine"]
+[extra]
+editorial_track = "quest-engine"
+series = "quest-engine"
+series_order = 6
 +++
 
 If you strip away religious frameworks, metaphysical claims, and appeals to

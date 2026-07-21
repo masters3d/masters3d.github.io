@@ -3,8 +3,10 @@ title = "Team Identity Ownership"
 date = "2026-05-30"
 description = "Choosing a name is the first step in taking your team's destiny into your own hands. It is the first thing that creates a sense of belonging, and it is often ignored even though it is such a multiplier. Belonging cannot be dictated. It has to be adopted. It has to be organic."
 template = "blog-post.html"
-categories = ["leadership", "teams", "culture"]
+categories = ["Leadership & Teams"]
 tags = ["team-identity", "ownership", "open-source", "team-cohesion", "principles", "two-pizza-rule"]
+[extra]
+editorial_track = "leadership-and-teams"
 +++
 
 Team identity is the first place a team takes ownership. Everything else about a

@@ -3,8 +3,10 @@ title = "Stop Conflating Effort Tracking with Work Tracking"
 date = "2026-04-01"
 description = "Why effort tracking (where is my time going?) needs to be separate from work tracking (what am I building?) and how centralizing effort in one tool provides visibility that scattered work-tracking systems can't."
 template = "blog-post.html"
-categories = ["productivity", "workflow"]
+categories = ["Field Notes"]
 tags = ["effort-tracking", "time-management", "azure-devops", "workflow", "productivity"]
+[extra]
+editorial_track = "field-notes"
 +++
 
 I started separating effort from work after noticing that a full week could

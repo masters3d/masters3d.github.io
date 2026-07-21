@@ -3,8 +3,12 @@ title = "Knowing, Walking, Returning: Completing the Path Triad"
 date = "2026-04-29"
 description = "Morpheus told Neo there is a difference between knowing the path and walking the path. That's two-thirds of a triad. The third move is returning — when you connect the dots, give back what the walk taught you, and become someone who can show others the way."
 template = "blog-post.html"
-categories = ["philosophy", "mindset", "productivity"]
+categories = ["Quest Engine"]
 tags = ["quest-engine", "motivation", "renewal", "the-matrix", "path", "searching", "driven", "triads", "prodigal-son", "steve-jobs"]
+[extra]
+editorial_track = "quest-engine"
+series = "quest-engine"
+series_order = 9
 +++
 
 In 1999, the Wachowskis wrote a line that has outlasted most of what surrounded

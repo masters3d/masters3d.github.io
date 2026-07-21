@@ -3,8 +3,10 @@ title = "Shift Left Until the PR Is Just a Confirmation"
 date = "2026-07-10"
 description = "Agentic tooling made pull requests cheap and plentiful, so the bottleneck moved from writing code to trusting it. The answer is not another review loop but front-loaded rigor: invest the engineering effort ahead of time to build a full, production-shaped synthetic environment you run locally, so that validation itself becomes cheap and the PR turns into a context-sharing mechanism instead of an approval gate. Tools like .NET Aspire and Dapr show what that inner loop can look like, and the same principles carry over to homegrown systems."
 template = "blog-post.html"
-categories = ["engineering", "workflow", "ai"]
+categories = ["Engineering Systems"]
 tags = ["shift-left", "testing", "synthetic-environments", "digital-twin", "ci-cd", "developer-velocity", "agents", "contract-testing", "dapr", "aspire", "systems-thinking"]
+[extra]
+editorial_track = "engineering-systems"
 +++
 
 I have been watching my own pull request queue change shape over the last year.

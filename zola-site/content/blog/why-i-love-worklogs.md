@@ -3,8 +3,10 @@ title = "Why I Switched to Worklogs (and You Should Too)"
 date = "2026-03-28"
 description = "How worklogs transformed my workflow with AI coding agents (capturing context across sessions, using GitHub Issues as a backend, and turning structured logs into an agentic work queue)."
 template = "blog-post.html"
-categories = ["ai", "development", "productivity"]
+categories = ["AI & Tools"]
 tags = ["worklogs", "agents", "copilot", "github", "workflow", "ai-development"]
+[extra]
+editorial_track = "ai-and-tools"
 +++
 
 I wanted to share something that's been a game-changer for how I organize my
