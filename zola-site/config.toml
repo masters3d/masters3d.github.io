@@ -60,8 +60,12 @@ feed_limit = 0
 # archive.org (Internet Archive) intermittently returns 503 (Service Unavailable) to
 # automated checkers under load, causing false-positive broken-link failures in CI;
 # the link is valid in a browser, so skip it.
+# learning.oreilly.com (O'Reilly) requires an authenticated subscription, so the
+# library/video links return 4xx to anonymous automated checkers even though they
+# are valid for logged-in readers; skip it.
 skip_prefixes = [
     "https://xcancel.com/",
+    "https://learning.oreilly.com/",
     "https://www.youtube.com/",
     "https://youtube.com/",
     "https://youtu.be/",
