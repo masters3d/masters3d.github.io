@@ -26,6 +26,16 @@ the work usually gets less observability than the laptop on the desk. My quest
 has been to reverse that: pay attention to the physical system first, without
 confusing measurement with diagnosis or turning every number into a crisis.
 
+Health is much larger than the examples in this essay. Exercise, nutrition,
+hydration, preventive care, daylight, relationships, time away from work, and
+the conditions of the workplace all belong in the picture. So do ordinary
+occupational concerns such as eye strain, hearing, repetitive motion, and
+ergonomics. Employers share responsibility through sustainable workloads,
+psychological safety, accommodations, healthcare access, and permission to
+disconnect. I am only going to explore a few areas here, not because the others
+matter less, but because sleep, standing, measurement, and mental health are the
+ones where my own experience gives me something concrete to say.
+
 ## Sleep Is Part of the Work
 
 Seven or eight hours is not time stolen from work. It is part of the work. The
@@ -78,6 +88,17 @@ desk was not that standing is virtuous and sitting is wrong. It was that the
 body adapts gradually, discomfort is information, and the best workstation
 allows movement instead of locking a person into one posture.
 
+Standing is also not working out. It keeps me more active during the workday,
+but it does not replace walking, cardiovascular exercise, strength training, or
+mobility. Staying active is a large part of physical health and deserves more
+than a passing mention, even though it is not the personal thread I am exploring
+in depth here. The
+[CDC's guidance for adults](https://www.cdc.gov/physical-activity-basics/guidelines/adults.html)
+combines aerobic activity with muscle-strengthening work. The exact routine has
+to fit the person, their abilities, and medical circumstances. The principle I
+want to keep is simpler: a standing desk changes a posture; exercise trains the
+body.
+
 ## Observability Without Obsession
 
 I believe we should monitor our bodies at least as carefully as we monitor our
@@ -86,6 +107,13 @@ and how we feel after eating. A trend is not a verdict. It is a prompt for a
 question. If my weight begins climbing, did my food change? Am I stress eating?
 Did movement disappear from my day? Without a record I am left arguing with my
 memory, and memory is a very accommodating witness.
+
+This is the Quest Engine loop applied to health. Search asks what better health
+looks like and gathers a useful signal. Drive turns that signal into one action
+within my control. Renewal compares what happened with what I expected and asks
+whether the action made my life better, not merely whether one number moved. A
+measurement without a question or a safe action can become noise, false
+precision, or another source of anxiety.
 
 As I have gotten older, I have also become curious about glucose. I pay for
 Stelo sensors that provide roughly two weeks of continuous readings. They let me
@@ -134,12 +162,13 @@ Two books helped me find language for this. In
 [_Solve for Happy_](https://www.simonandschuster.com/books/Solve-for-Happy/Mo-Gawdat/9781501157585),
 Mo Gawdat approaches happiness with an engineer's instinct to examine the gap
 between events and expectations. In
-[_No Bad Parts_](https://us.macmillan.com/books/9781683646686/nobadparts/),
-Richard C. Schwartz introduces Internal Family Systems and the idea that the
-apparently conflicting parts of us are often trying to protect us. Neither book
-replaces therapy or medical care. Both gave me a different path for
-understanding what I was feeling instead of treating the feeling as a defect to
-suppress.
+[_Self-Therapy_](https://books.google.com/books/about/Self_Therapy.html?id=S_0suAAACAAJ),
+Jay Earley gives a step-by-step introduction to Internal Family Systems, the
+therapy system developed by Richard C. Schwartz. The idea that apparently
+conflicting parts of us are often trying to protect us gave me a more curious
+way to approach those conflicts. Neither book replaces therapy or medical care.
+Both gave me a different path for understanding what I was feeling instead of
+treating the feeling as a defect to suppress.
 
 _The body is not the container that carries the worker to the desk. It is the
 system doing the work. Sleep, movement, glucose, grief, anxiety, and time off
