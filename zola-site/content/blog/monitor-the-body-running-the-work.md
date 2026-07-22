@@ -14,16 +14,16 @@ series_order = 26
 
 There was a period when I could drink three or four cappuccinos or mochas before
 lunch and still call the day normal. I felt productive. I could keep going, so I
-assumed the system was working. What I did not count was the sleep getting worse,
-the anxiety getting louder, and the next day beginning with another coffee to pay
-the debt from the day before. As I have gotten older, that bargain has become
-harder to ignore.
+assumed the system was working. What I did not count was the sleep getting
+worse, the anxiety getting louder, and the next day beginning with another
+coffee to pay the debt from the day before. As I have gotten older, that bargain
+has become harder to ignore.
 
 The strange part is that I would never operate a computer this way. For hardware
 we have logs, dashboards, alerts, temperatures, and historical trends. We notice
-when a number drifts. We investigate before the machine fails. The body doing the
-work usually gets less observability than the laptop on the desk. My quest has
-been to reverse that: pay attention to the physical system first, without
+when a number drifts. We investigate before the machine fails. The body doing
+the work usually gets less observability than the laptop on the desk. My quest
+has been to reverse that: pay attention to the physical system first, without
 confusing measurement with diagnosis or turning every number into a crisis.
 
 ## Sleep Is Part of the Work
@@ -39,8 +39,8 @@ I did not always believe this. When I was younger, I could pull an all-nighter,
 add coffee, and apparently be fine. I can still do it occasionally, but the cost
 is now obvious. During stretches when I slept poorly and used caffeine to keep
 moving, my memories of the period became strangely thin. I remember working
-hard, but I do not have a clear collection of the days. Attention is not the only
-thing poor sleep takes.
+hard, but I do not have a clear collection of the days. Attention is not the
+only thing poor sleep takes.
 
 Caffeine is not universally wrong. Plenty of people enjoy coffee without
 breaking their sleep. I had to notice what it did to mine instead of treating
@@ -62,21 +62,21 @@ sleep aid is safe.
 
 ## The Desk Trains the Body
 
-About five years ago, I stopped sitting at my desk. At first I could barely stand
-for ten minutes without my brain refusing to work. The discomfort occupied all
-of my attention. I used an adjustable desk and alternated: stand for perhaps
-thirty minutes, sit, then stand again. Later I used a tall stool that let me lean
-briefly without taking my hands away from the keyboard. After roughly six months
-I needed the stool less, and eventually I removed it from the room.
+About five years ago, I stopped sitting at my desk. At first I could barely
+stand for ten minutes without my brain refusing to work. The discomfort occupied
+all of my attention. I used an adjustable desk and alternated: stand for perhaps
+thirty minutes, sit, then stand again. Later I used a tall stool that let me
+lean briefly without taking my hands away from the keyboard. After roughly six
+months I needed the stool less, and eventually I removed it from the room.
 
 Now I can spend most of a workday standing, and that has felt liberating. It
-keeps me from disappearing into a chair for eight hours. But my experience is not
-a universal prescription to stand all day. Static standing has problems too.
+keeps me from disappearing into a chair for eight hours. But my experience is
+not a universal prescription to stand all day. Static standing has problems too.
 [OSHA's workstation guidance](https://www.osha.gov/etools/computer-workstations/positions)
 recommends changing positions and moving periodically. The useful lesson from my
-desk was not that standing is virtuous and sitting is wrong. It was that the body
-adapts gradually, discomfort is information, and the best workstation allows
-movement instead of locking a person into one posture.
+desk was not that standing is virtuous and sitting is wrong. It was that the
+body adapts gradually, discomfort is information, and the best workstation
+allows movement instead of locking a person into one posture.
 
 ## Observability Without Obsession
 
@@ -87,16 +87,16 @@ question. If my weight begins climbing, did my food change? Am I stress eating?
 Did movement disappear from my day? Without a record I am left arguing with my
 memory, and memory is a very accommodating witness.
 
-As I have gotten older, I have also become curious about glucose. I pay for Stelo
-sensors that provide roughly two weeks of continuous readings. They let me see
-how my glucose responds after different meals, which is information I could not
-feel directly. The interesting part is often the surprise: a food I considered
-harmless produces a response I did not expect, or movement after a meal changes
-the shape of the curve.
+As I have gotten older, I have also become curious about glucose. I pay for
+Stelo sensors that provide roughly two weeks of continuous readings. They let me
+see how my glucose responds after different meals, which is information I could
+not feel directly. The interesting part is often the surprise: a food I
+considered harmless produces a response I did not expect, or movement after a
+meal changes the shape of the curve.
 
 That visibility has limits. Stelo is an over-the-counter wellness tool, not a
-diagnosis, and I do not use a reading to change medication or declare that a food
-is medically good or bad. The
+diagnosis, and I do not use a reading to change medication or declare that a
+food is medically good or bad. The
 [FDA's clearance](https://www.fda.gov/news-events/press-announcements/fda-clears-first-over-counter-continuous-glucose-monitor)
 specifically excludes people who use insulin or have problematic hypoglycemia.
 More data is not automatically more understanding.
@@ -118,8 +118,8 @@ the ability to concentrate. Work can leave the body carrying a problem long
 after the laptop closes.
 
 Mood belongs among the signals worth noticing. Am I disconnected? Am I still
-excited about what I am doing? If today were my last day, would I choose to spend
-it this way? Have I lost someone without allowing myself to grieve? Those
+excited about what I am doing? If today were my last day, would I choose to
+spend it this way? Have I lost someone without allowing myself to grieve? Those
 questions are not a substitute for care, but they can reveal when pretending to
 be fine has become the default.
 
@@ -137,12 +137,13 @@ between events and expectations. In
 [_No Bad Parts_](https://us.macmillan.com/books/9781683646686/nobadparts/),
 Richard C. Schwartz introduces Internal Family Systems and the idea that the
 apparently conflicting parts of us are often trying to protect us. Neither book
-replaces therapy or medical care. Both gave me a different path for understanding
-what I was feeling instead of treating the feeling as a defect to suppress.
+replaces therapy or medical care. Both gave me a different path for
+understanding what I was feeling instead of treating the feeling as a defect to
+suppress.
 
 _The body is not the container that carries the worker to the desk. It is the
-system doing the work. Sleep, movement, glucose, grief, anxiety, and time off all
-meet inside that same system, which is why
+system doing the work. Sleep, movement, glucose, grief, anxiety, and time off
+all meet inside that same system, which is why
 [burnout is physical](/blog/burnout-is-a-control-problem/) and Renewal cannot be
 postponed until everything else is finished. I do not want to obsess over every
 reading, and I do not want to surrender judgment to a sensor. I want enough
