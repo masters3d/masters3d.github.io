@@ -31,8 +31,8 @@ the loop still work when the system is a person and the objective is health?
 It does, with an important constraint. A body is not a machine to optimize into
 submission. It is the system doing the searching, driving, and renewing. The
 health quest is therefore not a project with a final state called "healthy." It
-is a continuous calibration loop whose objective is preserving the capability
-to live, choose, work, and care about the result.
+is a continuous calibration loop whose objective is preserving the capability to
+live, choose, work, and care about the result.
 
 ## Search: Build Context Before Choosing a Fix
 
@@ -48,12 +48,12 @@ confidence it deserves. Sleep duration is a signal. Caffeine timing is another.
 Anxiety, appetite, and concentration add context. Together they can suggest a
 model that no reading could establish alone.
 
-Sleep made this concrete for me. When I was younger, I could pull an all-nighter,
-add coffee, and apparently be fine. During later stretches of poor sleep, my
-memories of the period became strangely thin. I remember working hard, but not a
-clear collection of the days. The missing context changed my objective. Seven
-or eight hours was no longer time stolen from the work. It was part of
-preserving the life I was supposedly working to build. The
+Sleep made this concrete for me. When I was younger, I could pull an
+all-nighter, add coffee, and apparently be fine. During later stretches of poor
+sleep, my memories of the period became strangely thin. I remember working hard,
+but not a clear collection of the days. The missing context changed my
+objective. Seven or eight hours was no longer time stolen from the work. It was
+part of preserving the life I was supposedly working to build. The
 [CDC recommends at least seven hours](https://www.cdc.gov/sleep/about/index.html)
 for adults between 18 and 60, but duration alone does not answer whether sleep
 restored me. Schedule, environment, caffeine, and how I function the next day
@@ -70,9 +70,9 @@ describes who the system is for and who should not use it.
 
 More data is not automatically more understanding. A trend should produce a
 better question, not a verdict. Loud snoring, gasping, persistent insomnia, or
-daytime exhaustion belongs in a conversation with a clinician, not in a
-shopping cart for another tracker. Search includes finding the right expertise
-and recognizing when the system cannot safely investigate itself.
+daytime exhaustion belongs in a conversation with a clinician, not in a shopping
+cart for another tracker. Search includes finding the right expertise and
+recognizing when the system cannot safely investigate itself.
 
 ## Drive: Turn One Signal Into a Controlled Change
 
@@ -86,8 +86,8 @@ plan, I learn only that an oversized plan was oversized.
 The Driven phase of the health quest needs the same properties as any other
 Quest Engine execution cycle:
 
-- **Challenge matching:** choose a change large enough to matter and small enough
-  to sustain.
+- **Challenge matching:** choose a change large enough to matter and small
+  enough to sustain.
 - **Directed intentionality:** name the result I am trying to produce rather
   than vaguely attempting to "be healthier."
 - **Adaptive control:** observe feedback early and adjust without treating the
@@ -142,11 +142,11 @@ change appetite, energy, and concentration. Work can leave the body carrying a
 problem long after the laptop closes.
 
 No sensor can tell me whether I am disconnected, still excited by what I am
-doing, or avoiding grief. Those observations still belong in the model. They
-can also reveal when another person is the right next part of the loop. A
-therapist, qualified coach, couples therapist, mentor, or clinician provides
-context that a private dashboard cannot. Asking for help does not hand away
-control. It improves the quality of Search and makes the next action safer.
+doing, or avoiding grief. Those observations still belong in the model. They can
+also reveal when another person is the right next part of the loop. A therapist,
+qualified coach, couples therapist, mentor, or clinician provides context that a
+private dashboard cannot. Asking for help does not hand away control. It
+improves the quality of Search and makes the next action safer.
 
 Two books helped me renew my own model. In
 [_Solve for Happy_](https://www.simonandschuster.com/books/Solve-for-Happy/Mo-Gawdat/9781501157585),
