@@ -208,6 +208,31 @@ The backbone has three phases, which map directly to the [Quest Engine](/blog/qu
 
 **For agent authors and reviewers**: When drafting or revising a post, check that all three phases are present and that a single "why" runs through them. If a draft is "a collection of individuals who happen to wear the same shirt" (paragraphs with no shared thread), the fix is to name the quest and re-cohere the post around it, not to add more sections.
 
+### Recurring Framing: Personality Styles (DOPE / Director-Thinker)
+
+**DECIDED**: When writing about communication or personality styles (for example
+the DOPE bird model: Dove/Relater, Owl/Thinker, Peacock/Socializer,
+Eagle/Director), hold these positions consistently:
+
+- **No personality is good or bad** - Never rank the four styles from best to
+  worst. Fit depends on context: the Dove is ideal for therapy and the social
+  sciences, the Peacock for many performing/creative roles (though plenty of
+  artists are secluded). Ranking a style as the "worst" is a category error.
+- **Personalities are contextual and can change** - A person shows different
+  personalities across rooms (family, friends, work) and across seasons of life.
+  Personality is mostly what you are and partly what you have learned; it is not
+  a fixed grade.
+- **There is a learnable work personality** - The best performers cue the
+  communication style a moment calls for and step back out. This is a skill you
+  can exercise, not a trait you were issued.
+- **Engineering fit is Director + Thinker only** - For engineering, the Director
+  (Eagle) and Thinker (Owl) are the two work-mode personalities worth
+  practicing. Map only these to the Quest Engine: Thinker → Searching, Director →
+  Being Driven. Do not force the Dove or Peacock onto the framework; not every
+  personality maps cleanly, and forcing it cheapens the mapping.
+
+Reference post: `zola-site/content/blog/director-and-thinker-work-mode-personalities.md`.
+
 ## Project Structure Standards
 
 ```
