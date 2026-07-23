@@ -40,9 +40,9 @@ attention. It took pieces of the life I was supposedly working so hard to build.
 Seven or eight hours is not time stolen from the work. It is part of the work.
 The
 [CDC recommends at least seven hours](https://www.cdc.gov/sleep/about/index.html)
-for adults between 18 and 60, but my useful measure is not only duration. Did the
-sleep restore me? A consistent schedule, a quiet room, and less caffeine late in
-the day do more for me than one heroic night of recovery on the weekend.
+for adults between 18 and 60, but my useful measure is not only duration. Did
+the sleep restore me? A consistent schedule, a quiet room, and less caffeine
+late in the day do more for me than one heroic night of recovery on the weekend.
 
 Sleep also taught me that rest is not empty time. I like to put a hard problem
 or unfamiliar subject in my mind before bed. Sometimes I wake with a direction
@@ -59,10 +59,10 @@ not an answer to a recurring problem. Measurement can reveal a question. It
 cannot grant me the expertise to answer every question alone.
 
 My desk gave me a more physical version of the same lesson. About five years
-ago, I stopped sitting through the workday. At first I could barely stand for ten
-minutes without the discomfort consuming all my attention. I alternated between
-an adjustable desk and a chair, then used a tall stool so I could lean without
-leaving the keyboard. After roughly six months, I needed the stool less.
+ago, I stopped sitting through the workday. At first I could barely stand for
+ten minutes without the discomfort consuming all my attention. I alternated
+between an adjustable desk and a chair, then used a tall stool so I could lean
+without leaving the keyboard. After roughly six months, I needed the stool less.
 Eventually I removed it from the room.
 
 Now I can spend most of a workday standing, and that freedom feels remarkable
@@ -82,8 +82,8 @@ trying to teach me: listen early, then make a change the body can sustain.
 
 ## A Dashboard Is Only a Beginning
 
-I began with signals I already had: sleep, weight, movement, mood, and how I felt
-after eating. A trend is not a verdict. It is an invitation to ask a better
+I began with signals I already had: sleep, weight, movement, mood, and how I
+felt after eating. A trend is not a verdict. It is an invitation to ask a better
 question. If my weight starts climbing, did my food change? Am I stress eating?
 Did movement disappear from my day? Without a record, I am left arguing with my
 memory, and memory is a very accommodating witness.
@@ -111,9 +111,9 @@ engineering problem will not end when the sensors arrive. We will still have to
 separate signal from noise and know when the right next step is not another
 dashboard, but another person.
 
-This is the [Quest Engine](/blog/quest-engine-introduction/) loop applied inward.
-Search asks what I am trying to understand and finds a useful signal. Drive
-turns that signal into one action within my control. Renewal compares what
+This is the [Quest Engine](/blog/quest-engine-introduction/) loop applied
+inward. Search asks what I am trying to understand and finds a useful signal.
+Drive turns that signal into one action within my control. Renewal compares what
 happened with what I expected and asks whether the action made my life better,
 not merely whether a number moved. The loop matters because observation without
 action is just surveillance, while action without reflection can become
