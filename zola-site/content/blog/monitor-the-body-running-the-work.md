@@ -1,170 +1,182 @@
 +++
-title = "The Body Is the System Doing the Work"
+title = "Quest Engine: Running the Health Quest"
 date = "2026-07-22"
-description = "Coffee, lost sleep, a standing desk, glucose sensors, and grief taught me the same lesson: the body is not carrying me to the work. It is the system doing the work."
+description = "Health is a continuous Quest Engine loop: Search for signals from the body, Drive one controlled change, and Renew from the difference between expected and actual results."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Field Notes"]
+categories = ["Quest Engine"]
 tags = ["physical-health", "sleep", "caffeine", "standing-desk", "measurement", "mental-health", "work", "renewal", "quest-engine"]
 [extra]
-editorial_track = "field-notes"
+editorial_track = "quest-engine"
 series = "quest-engine"
 series_order = 26
 +++
 
 There was a period when I could drink three or four cappuccinos or mochas before
-lunch and call the day normal. I felt productive because I could keep going. The
-coffee hid the cost well enough that I mistook motion for health.
+lunch and call the day normal. I felt productive because I could keep going.
+Coffee hid the cost well enough that I mistook motion for health.
 
-Then the bill began arriving. Sleep got worse. Anxiety got louder. The next
-morning started with another coffee to borrow energy from another night. I was
-running a loop that I would never tolerate in a computer. For hardware, I watch
-temperatures, logs, alerts, and historical trends. If a number drifts, I ask why
-before the machine fails. Meanwhile, the body operating the computer had almost
-no observability at all.
+Then the loop became visible. Poor sleep led to coffee. Coffee made the next
+night worse. The next morning required another loan from the following night. I
+would never operate a computer this way. I watch its temperatures, logs, alerts,
+and historical trends. If a number drifts, I investigate before the machine
+fails. Meanwhile, the body operating the computer had almost no observability.
 
-That contradiction has stayed with me. The body is not a container that carries
-me to the desk. It is the system doing the work. Once I understood that, sleep,
-movement, food, anxiety, and even grief stopped looking like separate concerns.
-They became signals from one astonishing system trying to keep a life running.
+That contradiction gave me a new test for the
+[Quest Engine](/blog/quest-engine-introduction/). The framework is usually easy
+to picture around a project: Search for context, Drive toward an objective, then
+Renew from the difference between what happened and what I expected. But does
+the loop still work when the system is a person and the objective is health?
 
-## The Debt I Could Not See
+It does, with an important constraint. A body is not a machine to optimize into
+submission. It is the system doing the searching, driving, and renewing. The
+health quest is therefore not a project with a final state called "healthy." It
+is a continuous calibration loop whose objective is preserving the capability
+to live, choose, work, and care about the result.
 
-When I was younger, I could pull an all-nighter, add coffee, and apparently be
-fine. I can still do it occasionally, but I can no longer pretend the cost is
-zero. During stretches when I slept poorly and used caffeine to keep moving, my
-memories of the period became strangely thin. I remember working hard, but I do
-not have a clear collection of the days. Losing sleep did not only take my
-attention. It took pieces of the life I was supposedly working so hard to build.
+## Search: Build Context Before Choosing a Fix
 
-Seven or eight hours is not time stolen from the work. It is part of the work.
-The
+Search begins by replacing a vague judgment ("I feel bad") with a useful model
+of the current state. The signals can be simple: sleep, movement, weight, mood,
+caffeine, and how I feel after eating. A record matters because memory is a very
+accommodating witness. Without one, I can turn a difficult day into a trend or
+explain away a trend as one difficult day.
+
+The point is not to collect every available number. Searching has three jobs:
+find a signal, connect it to the rest of the system, and decide how much
+confidence it deserves. Sleep duration is a signal. Caffeine timing is another.
+Anxiety, appetite, and concentration add context. Together they can suggest a
+model that no reading could establish alone.
+
+Sleep made this concrete for me. When I was younger, I could pull an all-nighter,
+add coffee, and apparently be fine. During later stretches of poor sleep, my
+memories of the period became strangely thin. I remember working hard, but not a
+clear collection of the days. The missing context changed my objective. Seven
+or eight hours was no longer time stolen from the work. It was part of
+preserving the life I was supposedly working to build. The
 [CDC recommends at least seven hours](https://www.cdc.gov/sleep/about/index.html)
-for adults between 18 and 60, but my useful measure is not only duration. Did
-the sleep restore me? A consistent schedule, a quiet room, and less caffeine
-late in the day do more for me than one heroic night of recovery on the weekend.
+for adults between 18 and 60, but duration alone does not answer whether sleep
+restored me. Schedule, environment, caffeine, and how I function the next day
+complete the picture.
 
-Sleep also taught me that rest is not empty time. I like to put a hard problem
-or unfamiliar subject in my mind before bed. Sometimes I wake with a direction
-to try. That is part of what I called the
-[background brain](/blog/the-background-brain-boredom-makes-ideas/): when I stop
-forcing an answer, the mind keeps making connections. Random videos before bed
-fill that space with somebody else's choices. Sleep gives it back to me.
-
-There is a limit to what personal observation can solve. Loud snoring, gasping,
-persistent insomnia, or daytime exhaustion belong in a conversation with a
-clinician, not in a shopping cart for a better tracker. I have occasionally
-reached for an over-the-counter sleep aid such as ZzzQuil, but occasional use is
-not an answer to a recurring problem. Measurement can reveal a question. It
-cannot grant me the expertise to answer every question alone.
-
-My desk gave me a more physical version of the same lesson. About five years
-ago, I stopped sitting through the workday. At first I could barely stand for
-ten minutes without the discomfort consuming all my attention. I alternated
-between an adjustable desk and a chair, then used a tall stool so I could lean
-without leaving the keyboard. After roughly six months, I needed the stool less.
-Eventually I removed it from the room.
-
-Now I can spend most of a workday standing, and that freedom feels remarkable
-when I remember those first ten minutes. The result did not come from ignoring
-discomfort. It came from listening to it and adapting gradually. Nor did I
-discover that standing is virtuous and sitting is wrong.
-[OSHA's workstation guidance](https://www.osha.gov/etools/computer-workstations/positions)
-recommends changing positions and moving periodically. A good workstation gives
-the body choices.
-
-Standing is not a workout either. It changes a posture; exercise trains the
-body. The
-[CDC's guidance for adults](https://www.cdc.gov/physical-activity-basics/guidelines/adults.html)
-combines aerobic activity with muscle-strengthening work. The right routine
-depends on the person, but the larger principle is the same one my sleep was
-trying to teach me: listen early, then make a change the body can sustain.
-
-## A Dashboard Is Only a Beginning
-
-I began with signals I already had: sleep, weight, movement, mood, and how I
-felt after eating. A trend is not a verdict. It is an invitation to ask a better
-question. If my weight starts climbing, did my food change? Am I stress eating?
-Did movement disappear from my day? Without a record, I am left arguing with my
-memory, and memory is a very accommodating witness.
-
-As I have gotten older, I have become curious about glucose. I pay for Stelo
-sensors that give me roughly two weeks of continuous readings. For the first
-time, I can see a response that I cannot reliably feel. The delightful part is
-being surprised. A food I considered harmless can produce a curve I did not
-expect. A walk after a meal can change its shape. Something invisible becomes
-visible, and the ordinary act of eating becomes a small experiment.
-
-The visibility has limits. Stelo is an over-the-counter tool, not a diagnosis. I
-do not use one reading to change medication or declare a food medically good or
-bad. The
+Some signals require instruments. I pay for Stelo sensors that provide roughly
+two weeks of continuous glucose readings. They let me see a response I cannot
+reliably feel. A food I considered harmless can produce an unexpected curve. A
+walk after a meal can change its shape. The sensor expands my context, but it
+does not make the decision. Stelo is an over-the-counter tool, not a diagnosis,
+and the
 [FDA's decision summary](https://www.accessdata.fda.gov/cdrh_docs/reviews/K234070.pdf)
-describes who the system is for and who should not use it. More data is not
-automatically more understanding.
+describes who the system is for and who should not use it.
 
-I still want the full picture. I would love a safe, inexpensive sensor that
-could show useful hormone trends, including cortisol, beside glucose and sleep.
-Imagine being able to see more of the quiet coordination that keeps a human
-being alive: chemistry changing with a meal, a walk, an anxious afternoon, or a
-restful night. I think much more of that operation will become visible. The hard
-engineering problem will not end when the sensors arrive. We will still have to
-separate signal from noise and know when the right next step is not another
-dashboard, but another person.
+More data is not automatically more understanding. A trend should produce a
+better question, not a verdict. Loud snoring, gasping, persistent insomnia, or
+daytime exhaustion belongs in a conversation with a clinician, not in a
+shopping cart for another tracker. Search includes finding the right expertise
+and recognizing when the system cannot safely investigate itself.
 
-This is the [Quest Engine](/blog/quest-engine-introduction/) loop applied
-inward. Search asks what I am trying to understand and finds a useful signal.
-Drive turns that signal into one action within my control. Renewal compares what
-happened with what I expected and asks whether the action made my life better,
-not merely whether a number moved. The loop matters because observation without
-action is just surveillance, while action without reflection can become
-obsession.
+## Drive: Turn One Signal Into a Controlled Change
 
-## The Signals No Sensor Can Read
+Search creates possibilities. Drive chooses one objective and acts. That
+separation matters in health because a dashboard can surface ten things at once:
+sleep longer, eat differently, exercise more, reduce caffeine, change the desk,
+and somehow feel less anxious. Trying to change all of them destroys the
+feedback loop. If the result changes, I do not know why. If I cannot sustain the
+plan, I learn only that an oversized plan was oversized.
 
-Some of the most important signals still do not appear on a screen. I once filed
-mental health in a separate category from physical health. That division no
-longer makes sense to me. The brain is physical. Sleep changes mood and memory.
-Caffeine can change anxiety. Grief can change appetite, energy, and
-concentration. Work can leave the body carrying a problem long after the laptop
-closes.
+The Driven phase of the health quest needs the same properties as any other
+Quest Engine execution cycle:
 
-So mood belongs in my observations too. Am I disconnected? Am I still excited
-about what I am doing? If today were my last day, would I choose to spend it
-this way? Have I lost someone without allowing myself to grieve? Those questions
-cannot diagnose me, but they can reveal when pretending to be fine has become
-the default.
+- **Challenge matching:** choose a change large enough to matter and small enough
+  to sustain.
+- **Directed intentionality:** name the result I am trying to produce rather
+  than vaguely attempting to "be healthier."
+- **Adaptive control:** observe feedback early and adjust without treating the
+  original plan as a promise.
 
-I think more people could benefit from support before a crisis. That might mean
-an individual therapist, a qualified goal-oriented coach, or a couples therapist
-who helps two people examine a problem while it is still small. A mentor can be
-invaluable, but mentorship and therapy are different tools. Asking for help is
-not handing away control. It is recognizing that another human being can see
-what my private dashboard cannot.
+My standing desk was a small experiment in all three. About five years ago, I
+could barely stand for ten minutes without the discomfort consuming my
+attention. "Stand all day" would have been an objective mismatched to my
+capability. I alternated between an adjustable desk and a chair, then added a
+tall stool so I could lean without leaving the keyboard. After roughly six
+months, I needed the stool less. Eventually I removed it from the room.
 
-Two books helped me find language for that recognition. In
+The story is not that standing is virtuous and sitting is wrong. The useful
+result was learning how a right-sized change could expand my range without
+requiring me to ignore feedback.
+[OSHA's workstation guidance](https://www.osha.gov/etools/computer-workstations/positions)
+recommends changing positions and moving periodically. Standing is not a workout
+either. It changes a posture, while exercise trains the body. The
+[CDC's guidance for adults](https://www.cdc.gov/physical-activity-basics/guidelines/adults.html)
+combines aerobic activity with muscle-strengthening work.
+
+The same control logic applies to sleep and food. If I move caffeine earlier, I
+can compare sleep before and after. If a glucose curve surprises me, I can
+repeat the meal or add a walk rather than declaring the food good or bad. Each
+action is a probe into the model created during Search. It should produce
+information even when it does not produce the result I wanted.
+
+This is where health differs sharply from mechanical optimization. Pain,
+exhaustion, anxiety, and hunger are not adversaries trying to block the
+objective. They are feedback from the system responsible for reaching it.
+Adaptive control means listening early. Pushing harder is not control when it
+removes the body's ability to continue.
+
+## Renew: Improve the Loop, Not Just the Number
+
+Renewal compares expected and actual results. Did moving caffeine earlier
+improve sleep? Did better sleep change anxiety or concentration? Did the new
+routine survive a demanding week? The delta is the learning signal. A useful
+cycle updates both the next action and the model behind it.
+
+That last part prevents the health quest from becoming surveillance. If I focus
+only on whether a number moved, I can optimize a proxy while making the life
+around it worse. Weight can move while energy disappears. More time at a
+standing desk can create different pain. A perfect sleep score can become
+another reason to feel anxious. Renewal asks the question above the metric: did
+this change improve my capability and the life that capability serves?
+
+It also looks for interactions. I once filed mental health in a separate
+category from physical health. That boundary no longer helps me. The brain is
+physical. Sleep changes mood and memory. Caffeine can change anxiety. Grief can
+change appetite, energy, and concentration. Work can leave the body carrying a
+problem long after the laptop closes.
+
+No sensor can tell me whether I am disconnected, still excited by what I am
+doing, or avoiding grief. Those observations still belong in the model. They
+can also reveal when another person is the right next part of the loop. A
+therapist, qualified coach, couples therapist, mentor, or clinician provides
+context that a private dashboard cannot. Asking for help does not hand away
+control. It improves the quality of Search and makes the next action safer.
+
+Two books helped me renew my own model. In
 [_Solve for Happy_](https://www.simonandschuster.com/books/Solve-for-Happy/Mo-Gawdat/9781501157585),
 Mo Gawdat examines the gap between events and expectations with an engineer's
 instinct. In
 [_Self-Therapy_](https://books.google.com/books/about/Self_Therapy.html?id=S_0suAAACAAJ),
 Jay Earley introduces Internal Family Systems, the therapy system developed by
-Richard C. Schwartz. The thought that apparently conflicting parts of us may be
-trying to protect us gave me a more curious way to approach my own conflicts.
-Neither book replaces care. Both helped me stop treating a feeling as a defect
-to suppress and start asking what it was trying to tell me.
+Richard C. Schwartz. The idea that apparently conflicting parts of us may be
+trying to protect us gave me a more curious way to investigate conflict. Neither
+book replaces care. Both changed the questions I brought to it.
 
-Personal attention does not remove shared responsibility. A workplace can
-provide sustainable workloads, psychological safety, accommodations, healthcare
-access, and permission to disconnect (or it can make every one of those things
-harder). Eye strain, hearing, repetitive motion, hydration, daylight,
-relationships, preventive care, and time away from work all belong to the same
-picture. Health is larger than the few signals I can describe from my own life.
+Renewal also changes the environment when the pattern lives there. A workplace
+can provide sustainable workloads, psychological safety, accommodations,
+healthcare access, and permission to disconnect (or make every one of those
+harder). Personal discipline cannot correct every system around a person.
+Sometimes the durable improvement is a changed workload, a different
+workstation, a protected evening, or professional support.
 
-_I began by thinking I needed to monitor myself as carefully as I monitor a
-computer. I now think the deeper lesson is to care for myself in a way I never
-could care for a machine. A dashboard can warn me about drift, but it cannot
-decide what makes a day worth remembering. A sensor can show a curve, but it
-cannot grieve, ask for help, or choose to rest. Sleep, movement, glucose,
-anxiety, and loss meet inside one system, which is why
-[burnout is physical](/blog/burnout-is-a-control-problem/) and Renewal cannot be
-postponed until the work is done. Renewal is how the person doing the work
-remains alive inside the life the work is meant to serve._
+Then the cycle begins again with better context. Search observes the current
+system without rushing to judgment. Drive turns one observation into an action
+within my control. Renew checks the result against the objective and carries the
+lesson into the next cycle. The stories about coffee, sleep, standing, glucose,
+and grief are not separate health programs. They are probes that taught the same
+engine how to calibrate itself.
+
+_The health quest changed what the Quest Engine means to me. Search without
+Drive becomes passive monitoring. Drive without Renewal becomes punishment.
+Renewal without a larger objective can improve a metric while losing the person.
+The loop only works when all three preserve the system capable of running it.
+That is why [burnout is physical](/blog/burnout-is-a-control-problem/), why the
+[background brain needs unclaimed time](/blog/the-background-brain-boredom-makes-ideas/),
+and why health is not preparation for the real quest. Health is the recursive
+quest that keeps every other quest possible._
