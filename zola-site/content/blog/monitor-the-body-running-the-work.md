@@ -18,9 +18,12 @@ Coffee hid the cost well enough that I mistook motion for health.
 
 Then the loop became visible. Poor sleep led to coffee. Coffee made the next
 night worse. The next morning required another loan from the following night. I
-would never operate a computer this way. I watch its temperatures, logs, alerts,
-and historical trends. If a number drifts, I investigate before the machine
-fails. Meanwhile, the body operating the computer had almost no observability.
+also began to understand that caffeine can contribute to anxiety. Feeling
+anxious does not prove that coffee is the cause, but it is a reason to look
+honestly at how much I am drinking and when. I would never operate a computer
+without inspecting an obvious input. I watch its temperatures, logs, alerts, and
+historical trends. If a number drifts, I investigate before the machine fails.
+Meanwhile, the body operating the computer had almost no observability.
 
 That contradiction gave me a new test for the
 [Quest Engine](/blog/quest-engine-introduction/). The framework is usually easy
@@ -45,8 +48,9 @@ explain away a trend as one difficult day.
 The point is not to collect every available number. Searching has three jobs:
 find a signal, connect it to the rest of the system, and decide how much
 confidence it deserves. Sleep duration is a signal. Caffeine timing is another.
-Anxiety, appetite, and concentration add context. Together they can suggest a
-model that no reading could establish alone.
+Anxiety, appetite, and concentration add context. If I feel more anxious, coffee
+intake is one of the first variables worth examining. Together these signals can
+suggest a model that no reading could establish alone.
 
 Sleep made this concrete for me. When I was younger, I could pull an
 all-nighter, add coffee, and apparently be fine. During later stretches of poor
@@ -138,25 +142,38 @@ this change improve my capability and the life that capability serves?
 It also looks for interactions. I once filed mental health in a separate
 category from physical health. That boundary no longer helps me. The brain is
 physical. Sleep changes mood and memory. Caffeine can change anxiety. Grief can
-change appetite, energy, and concentration. Work can leave the body carrying a
-problem long after the laptop closes.
+change appetite, energy, and concentration. Losing someone or living through a
+traumatic event can change how the brain and body respond to stress. Work can
+leave the body carrying a problem long after the laptop closes. I use "health"
+in the broad sense because brain health is not secondary to physical health. It
+is part of the same system.
 
 No sensor can tell me whether I am disconnected, still excited by what I am
-doing, or avoiding grief. Those observations still belong in the model. They can
-also reveal when another person is the right next part of the loop. A therapist,
-qualified coach, couples therapist, mentor, or clinician provides context that a
-private dashboard cannot. Asking for help does not hand away control. It
-improves the quality of Search and makes the next action safer.
+doing, or avoiding grief. Those observations still belong in the model, and I
+cannot assume I will notice them while they are happening. The health quest
+needs scheduled Search as well as responsive Search: a recurring moment to ask
+how I have been sleeping, eating, thinking, and relating to other people. A
+journal or calendar can expose a pattern that was invisible inside the day.
+
+Other people are signals too. A personal friend may notice that I have withdrawn
+or changed before I can name it myself. Systematically asking someone I trust
+what they have noticed is not surrendering judgment. It adds an external sensor
+to a system with predictable blind spots. A therapist, qualified coach, couples
+therapist, mentor, or clinician can provide context that a private dashboard
+cannot. Asking for help improves the quality of Search and makes the next action
+safer.
 
 Two books helped me renew my own model. In
 [_Solve for Happy_](https://www.simonandschuster.com/books/Solve-for-Happy/Mo-Gawdat/9781501157585),
 Mo Gawdat examines the gap between events and expectations with an engineer's
-instinct. In
+instinct through a book shaped by the grief of losing his son. In
 [_Self-Therapy_](https://books.google.com/books/about/Self_Therapy.html?id=S_0suAAACAAJ),
 Jay Earley introduces Internal Family Systems, the therapy system developed by
 Richard C. Schwartz. The idea that apparently conflicting parts of us may be
-trying to protect us gave me a more curious way to investigate conflict. Neither
-book replaces care. Both changed the questions I brought to it.
+trying to protect us gave me a more curious way to approach what can remain
+after a traumatic event. Grief and trauma are not abstract interruptions to
+"real" health. They can affect the system I think with, work with, and live
+through. Neither book replaces care. Both changed the questions I brought to it.
 
 Renewal also changes the environment when the pattern lives there. A workplace
 can provide sustainable workloads, psychological safety, accommodations,
@@ -178,5 +195,9 @@ Renewal without a larger objective can improve a metric while losing the person.
 The loop only works when all three preserve the system capable of running it.
 That is why [burnout is physical](/blog/burnout-is-a-control-problem/), why the
 [background brain needs unclaimed time](/blog/the-background-brain-boredom-makes-ideas/),
-and why health is not preparation for the real quest. Health is the recursive
-quest that keeps every other quest possible._
+and why health is not preparation for the real quest. Money can replace many
+things, but it cannot buy back time already lost or guarantee the return of
+health once it is gone. Being healthier for longer gives me more time to live
+and more capability within that time. Health is the recursive quest that keeps
+every other quest possible, which may make it the most important quest I can
+choose to keep running._
