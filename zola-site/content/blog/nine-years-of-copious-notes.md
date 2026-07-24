@@ -9,7 +9,6 @@ tags = ["worklogs", "notes", "agents", "copilot", "workflow", "ai-development", 
 [extra]
 editorial_track = "ai-and-tools"
 series = "quest-engine"
-series_order = 16
 +++
 
 This whole thing started as a development journal in 2017. Nine years later, the

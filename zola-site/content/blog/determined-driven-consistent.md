@@ -9,7 +9,6 @@ tags = ["quest-engine", "motivation", "persistence", "search-drive-renew", "tria
 [extra]
 editorial_track = "quest-engine"
 series = "quest-engine"
-series_order = 11
 +++
 
 When Tom Brady was inducted into the Patriots Hall of Fame in 2024, someone

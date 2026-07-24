@@ -9,7 +9,6 @@ tags = ["quest-engine", "ai-safety", "objective-function", "search-drive-renew",
 [extra]
 editorial_track = "quest-engine"
 series = "quest-engine"
-series_order = 20
 aliases = ["/blog/four-shutdown-criteria-and-the-quest-engine/", "/blog/four-capabilities-and-the-quest-engine/"]
 +++
 

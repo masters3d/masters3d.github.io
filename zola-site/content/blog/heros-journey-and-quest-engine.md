@@ -9,7 +9,6 @@ tags = ["quest-engine", "heros-journey", "monomyth", "search-drive-renew", "narr
 [extra]
 editorial_track = "quest-engine"
 series = "quest-engine"
-series_order = 8
 +++
 
 Joseph Campbell spent decades studying myths across every culture he could reach

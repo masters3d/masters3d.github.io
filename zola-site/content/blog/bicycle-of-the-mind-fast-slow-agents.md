@@ -9,7 +9,6 @@ tags = ["thinking-fast-and-slow", "system-1", "system-2", "automaticity", "bicyc
 [extra]
 editorial_track = "engineering-systems"
 series = "quest-engine"
-series_order = 19
 +++
 
 Daniel Kahneman gave us a useful cartoon of the mind: two systems. System 1 is

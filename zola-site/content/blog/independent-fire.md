@@ -9,7 +9,6 @@ tags = ["quest-engine", "autonomy", "high-agency", "team-dynamics", "independent
 [extra]
 editorial_track = "leadership-and-teams"
 series = "quest-engine"
-series_order = 23
 +++
 
 I was watching a movie about George Washington the other night, and one small

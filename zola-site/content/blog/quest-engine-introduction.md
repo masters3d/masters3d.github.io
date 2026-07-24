@@ -9,7 +9,6 @@ tags = ["quest-engine", "agents", "worklogs", "collaboration", "search-drive-ren
 [extra]
 editorial_track = "quest-engine"
 series = "quest-engine"
-series_order = 1
 +++
 
 The

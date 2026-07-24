@@ -9,7 +9,6 @@ tags = ["diffuse-mode", "focus-mode", "system-1", "system-2", "thinking-fast-and
 [extra]
 editorial_track = "field-notes"
 series = "quest-engine"
-series_order = 25
 +++
 
 Some of my best ideas never arrived while I was working on the problem. They

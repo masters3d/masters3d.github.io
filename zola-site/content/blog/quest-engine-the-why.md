@@ -9,7 +9,6 @@ tags = ["quest-engine", "objective-function", "search-drive-renew", "alignment",
 [extra]
 editorial_track = "quest-engine"
 series = "quest-engine"
-series_order = 2
 +++
 
 The [Quest Engine framework](/blog/quest-engine-introduction/) describes three

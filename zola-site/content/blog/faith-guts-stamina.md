@@ -9,7 +9,6 @@ tags = ["quest-engine", "motivation", "persistence", "search-drive-renew", "tria
 [extra]
 editorial_track = "quest-engine"
 series = "quest-engine"
-series_order = 12
 +++
 
 In _Sing 2_ (2021), Buster Moon has just been told he's not good enough. He goes

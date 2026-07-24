@@ -9,7 +9,6 @@ tags = ["quest-engine", "phrases", "mental-models", "cycles", "reframing"]
 [extra]
 editorial_track = "quest-engine"
 series = "quest-engine"
-series_order = 10
 +++
 
 Almost everyone on the planet knows this cue:

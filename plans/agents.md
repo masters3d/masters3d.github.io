@@ -179,7 +179,9 @@ across tracks; they do not replace the primary track.
 
 Front matter uses one human-readable `categories` value plus the matching
 `extra.editorial_track` slug. Posts that participate in the Quest Engine series
-also use `extra.series = "quest-engine"` and a unique `extra.series_order`.
+also use `extra.series = "quest-engine"`. The reading-order number is derived
+automatically from post dates at build time (oldest post is 1), so it is never
+stored per post — add the post with the correct `date` and its position follows.
 
 **Content-type exceptions**: Portfolio pages, reference guides, historical
 artifacts, source lists, and appendices may use more headings, tables, or lists

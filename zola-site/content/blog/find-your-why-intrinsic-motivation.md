@@ -9,7 +9,6 @@ tags = ["motivation", "intrinsic-motivation", "mastery", "autonomy", "purpose", 
 [extra]
 editorial_track = "quest-engine"
 series = "quest-engine"
-series_order = 13
 +++
 
 Hand someone a task and a paycheck, and they will do the work. Hand them a

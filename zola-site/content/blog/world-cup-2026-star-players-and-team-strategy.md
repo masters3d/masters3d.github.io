@@ -9,7 +9,6 @@ tags = ["world-cup", "soccer", "team-dynamics", "star-players", "single-point-of
 [extra]
 editorial_track = "leadership-and-teams"
 series = "quest-engine"
-series_order = 22
 +++
 
 I have been watching a lot of the World Cup 2026, not all of it (there are far

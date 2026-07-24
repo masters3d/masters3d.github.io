@@ -9,7 +9,6 @@ tags = ["systems-thinking", "mental-models", "teams", "hiring", "false-tradeoffs
 [extra]
 editorial_track = "engineering-systems"
 series = "quest-engine"
-series_order = 15
 +++
 
 The first time I really tasted salted caramel, I had the thought a beat too
