@@ -9,7 +9,6 @@ tags = ["quest-engine", "motivation", "mastery", "autonomy", "purpose", "search-
 [extra]
 editorial_track = "quest-engine"
 series = "quest-engine"
-series_order = 14
 +++
 
 When I first lined up the Quest Engine with the three human motivations, I made

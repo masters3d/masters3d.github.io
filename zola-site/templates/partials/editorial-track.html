@@ -25,8 +25,25 @@
       Explore this track
     </a>
     {% if series == "quest-engine" %}
+    {# Derive the reading number from date order across the series so it never
+       has to be stored per post. Find the quest-engine tag, sort its pages by
+       date (oldest first), and locate this post's position in that sequence. #}
+    {% set tags_taxonomy = get_taxonomy(kind="tags") %}
+    {% set_global series_total = 0 %}
+    {% set_global series_number = 0 %}
+    {% for tag_term in tags_taxonomy.items %}
+      {% if tag_term.name == "quest-engine" %}
+        {% set ordered = tag_term.pages | sort(attribute="date") %}
+        {% set_global series_total = ordered | length %}
+        {% for ordered_page in ordered %}
+          {% if ordered_page.permalink == page.permalink %}
+            {% set_global series_number = loop.index %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
     <a href="{{ get_taxonomy_url(kind='tags', name='quest-engine') }}">
-      Quest Engine reading order ({{ page.extra.series_order }} of 25)
+      Quest Engine reading order ({{ series_number }} of {{ series_total }})
     </a>
     {% endif %}
   </p>

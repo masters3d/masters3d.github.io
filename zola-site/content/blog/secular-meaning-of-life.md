@@ -9,7 +9,6 @@ tags = ["meaning", "discovery", "play", "joy", "secular-philosophy", "quest-engi
 [extra]
 editorial_track = "quest-engine"
 series = "quest-engine"
-series_order = 6
 +++
 
 If you strip away religious frameworks, metaphysical claims, and appeals to

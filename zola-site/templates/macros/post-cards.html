@@ -1,9 +1,14 @@
 {% macro render(pages, show_series=false) %}
+{# When show_series is true the caller passes pages in reverse-chronological
+   order (newest first), so the reading number is derived from each post's
+   position: the oldest post is 1 and the newest is the series total. This keeps
+   the numbering in sync with dates automatically, with no per-post number. #}
+{% set total = pages | length %}
 <div class="blog-posts">
   {% for page in pages %}
   <article class="blog-post-preview track-{{ page.extra.editorial_track | default(value='field-notes') }}">
     {% if show_series %}
-    <p class="track-kicker">Reading {{ page.extra.series_order }} of 25</p>
+    <p class="track-kicker">Reading {{ total - loop.index0 }} of {{ total }}</p>
     {% endif %}
     <h2><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
     <div class="post-meta">

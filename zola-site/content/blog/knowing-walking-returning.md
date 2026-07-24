@@ -9,7 +9,6 @@ tags = ["quest-engine", "motivation", "renewal", "the-matrix", "path", "searchin
 [extra]
 editorial_track = "quest-engine"
 series = "quest-engine"
-series_order = 9
 +++
 
 In 1999, the Wachowskis wrote a line that has outlasted most of what surrounded

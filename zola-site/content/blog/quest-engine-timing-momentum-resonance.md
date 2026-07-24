@@ -9,7 +9,6 @@ tags = ["quest-engine", "timing", "momentum", "resonance", "dynamics", "coupling
 [extra]
 editorial_track = "quest-engine"
 series = "quest-engine"
-series_order = 7
 +++
 
 > _"Timing and momentum is more important than talent."_ — André 3000

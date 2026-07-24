@@ -9,7 +9,6 @@ tags = ["quest-engine", "motivation", "growth", "steve-jobs", "whole-earth-catal
 [extra]
 editorial_track = "quest-engine"
 series = "quest-engine"
-series_order = 3
 +++
 
 In 1968, Stewart Brand started publishing the _Whole Earth Catalog_ (a

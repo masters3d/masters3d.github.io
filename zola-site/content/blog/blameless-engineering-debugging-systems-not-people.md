@@ -9,7 +9,6 @@ tags = ["blameless", "sre", "postmortem", "systems-thinking", "quest-engine", "a
 [extra]
 editorial_track = "engineering-systems"
 series = "quest-engine"
-series_order = 18
 +++
 
 Google's SRE practice popularized a phrase that sounds soft until you understand

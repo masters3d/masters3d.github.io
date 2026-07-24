@@ -9,7 +9,6 @@ tags = ["leverage", "scaffolding", "deliberate-practice", "iterative-development
 [extra]
 editorial_track = "engineering-systems"
 series = "quest-engine"
-series_order = 5
 +++
 
 > "Give me a lever long enough and a fulcrum on which to place it, and I shall

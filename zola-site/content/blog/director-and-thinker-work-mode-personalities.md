@@ -9,7 +9,6 @@ tags = ["quest-engine", "personality", "communication", "director", "thinker", "
 [extra]
 editorial_track = "quest-engine"
 series = "quest-engine"
-series_order = 26
 +++
 
 A long time ago, at one of the companies I worked for, someone in a training

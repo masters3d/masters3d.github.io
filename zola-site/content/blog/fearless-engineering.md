@@ -9,7 +9,6 @@ tags = ["quest-engine", "fearless", "risk-management", "bias-to-action", "system
 [extra]
 editorial_track = "engineering-systems"
 series = "quest-engine"
-series_order = 17
 +++
 
 When I was starting out as a software engineer, a lot of hesitation held me back

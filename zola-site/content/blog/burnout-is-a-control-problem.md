@@ -9,7 +9,6 @@ tags = ["burnout", "control", "autonomy", "time", "slow-productivity", "renewal"
 [extra]
 editorial_track = "field-notes"
 series = "quest-engine"
-series_order = 24
 +++
 
 More than a decade ago I burned out, and burned out badly. I need to say

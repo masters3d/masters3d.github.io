@@ -9,7 +9,6 @@ tags = ["physical-health", "sleep", "caffeine", "standing-desk", "measurement", 
 [extra]
 editorial_track = "quest-engine"
 series = "quest-engine"
-series_order = 26
 +++
 
 There was a period when I could drink three or four cappuccinos or mochas before

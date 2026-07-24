@@ -9,7 +9,6 @@ tags = ["agents", "craftsmanship", "judgment", "taste", "quest-engine", "collabo
 [extra]
 editorial_track = "quest-engine"
 series = "quest-engine"
-series_order = 4
 +++
 
 I keep hearing "taste, judgment, and craft" on podcasts about exceptional

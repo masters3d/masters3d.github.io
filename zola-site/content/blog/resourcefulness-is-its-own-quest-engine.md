@@ -9,7 +9,6 @@ tags = ["quest-engine", "resourcefulness", "search-drive-renew", "mastery", "aut
 [extra]
 editorial_track = "quest-engine"
 series = "quest-engine"
-series_order = 21
 +++
 
 In the mapping between Mustafa Suleyman's four capabilities and the Quest
