@@ -1,11 +1,11 @@
 +++
-title = "Where Is Spiritual?"
+title = "Demystifying Spirituality"
 date = "2026-07-24"
-description = "At Ranger camp we said 'be prepared: physically, mentally, and spiritually.' Physical has a home in the body. Mental has a home in the higher brain. But where does spiritual live? A secular look at how the feelings we call spiritual are the felt output of older social and emotional systems."
+description = "At Ranger camp we said 'be prepared: physically, mentally, and spiritually.' Physical has a home in the body. Mental has a home in the higher brain. But where does spiritual live? A secular look at how the feelings we call spiritual are the felt output of older social and emotional systems, and what the soul might be once you stop treating it as a mystery."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Quest Engine"]
-tags = ["quest-engine", "secular-philosophy", "connection", "belonging", "renewal"]
+tags = ["quest-engine", "secular-philosophy", "connection", "belonging", "soul", "renewal"]
 [extra]
 editorial_track = "quest-engine"
 series = "quest-engine"
@@ -48,54 +48,95 @@ spiritual are largely the felt output of systems that are older and faster than
 deliberate thought, systems we don't consciously author. That's exactly why they
 feel like they come from somewhere beyond us.
 
-## The Old Brain Is Real, the Reptile Is a Myth
+## The Body Was the Map All Along
 
-There's a tempting story here, and I want to get it right rather than get it
-punchy. The tempting story is the "reptilian brain": a primitive lizard core that
-runs instinct and emotion, sitting under a rational modern brain. It's a clean
-picture. It's also wrong. The
-[triune brain model](https://en.wikipedia.org/wiki/Triune_brain) (reptilian
-complex, limbic system, neocortex as three stacked layers) is considered outdated
-in modern neuroscience. The brain isn't three tenants in a stack. Emotion and
-reason are interconnected networks, not separate floors of a building. So I'm
-retiring the lizard. It's a folk metaphor, not an anatomy.
-
-What's true is subtler and better. There really are older, faster,
-largely automatic systems, they're just not one primitive lump. The
+There really are older, faster, largely automatic systems doing this work. The
 [amygdala](https://en.wikipedia.org/wiki/Amygdala) handles threat and emotional
 salience (the jolt before you've decided anything). The
 [hypothalamus](https://en.wikipedia.org/wiki/Hypothalamus) runs drives and
 releases [oxytocin](https://en.wikipedia.org/wiki/Oxytocin), the hormone tied to
 bonding and attachment. The
-[hippocampus](https://en.wikipedia.org/wiki/Hippocampus), which folk stories
-sometimes cast as the "emotion center," is actually the memory structure (it
-gives events their context, which is a different and quieter job).
+[hippocampus](https://en.wikipedia.org/wiki/Hippocampus), sometimes cast in folk
+stories as the "emotion center," is actually the memory structure (it gives
+events their context, which is a different and quieter job). These systems are
+fast, deep, hard to override, and not consciously chosen. You don't decide to
+feel the pull toward your family. You don't reason your way into awe. The output
+arrives fully formed, without a paper trail you can inspect. A feeling with no
+visible author is exactly the kind of feeling a person reaches for the word
+"spiritual" to describe.
 
-Here's the part that matters for spiritual. These systems are fast, deep, hard to
-override, and not consciously chosen. You don't decide to feel the pull toward
-your family. You don't reason your way into awe. The output arrives fully formed,
-without a paper trail you can inspect. A feeling with no visible author is exactly
-the kind of feeling a person reaches for the word "spiritual" to describe. Naming
-the machinery doesn't shrink the experience. It just tells you the experience is
-coming from inside the house.
+Darwin gave the cleanest demonstration of this I know of. He put his face right
+up to the glass in front of a puff adder, determined not to flinch when it
+struck. It struck, and he jumped back anyway, "my resolution went for nothing,"
+he wrote in
+[The Expression of the Emotions in Man and Animals](https://en.wikipedia.org/wiki/The_Expression_of_the_Emotions_in_Man_and_Animals).
+Knowing the glass was there changed nothing. An older system overrode the
+deliberate one before the deliberate one could vote. That gap (the reaction that
+runs without your permission) is the same gap the word "spiritual" so often
+names.
 
-## Heart, Gut, and Soul Were Pointing at the Body
-
-Old language for the spiritual is almost always anatomical. Heart. Soul. A gut
+Old language for these feelings is almost always anatomical. Heart. Soul. A gut
 feeling. People said heart-and-soul long before anyone could name a hormone, and
-they weren't being vague on purpose. They were pointing at real bodily signals
-with the only vocabulary they had.
-
-A "gut feeling" is a good example. It turns out there's a real sense for the
-state of your own insides:
+they weren't being vague on purpose. A "gut feeling" turns out to point at a real
+sense for the state of your own insides:
 [interoception](https://en.wikipedia.org/wiki/Interoception), the perception of
-internal signals like heartbeat, breath, and the state of your stomach. A hunch
-that lands in your stomach before your reasoning catches up isn't mysticism. It's
-your body reporting a fast read of a situation, ahead of the slow deliberate
-system. "Heart" works the same way (the pounding chest of fear or love is
-autonomic arousal you can feel). "Soul" is the roomier word, the felt sense of
-the whole self at once. None of these are wrong. They're folk maps, and the
-territory they were mapping was the body all along.
+internal signals like heartbeat, breath, and the state of your stomach. "Heart"
+works the same way (the pounding chest of fear or love is autonomic arousal you
+can feel). None of these are wrong. They're folk maps, and the territory they
+were mapping was the body all along.
+
+## What Is the Soul?
+
+Soul is the roomier word, and it deserves more than a footnote. Here's how I've
+come to think about it: the soul is the collective memory of a full experience.
+It's the accumulated record of everything you've lived, compressed into the
+characteristics of who you are. Not your IQ, not your aptitudes (those sit closer
+to the mental layer), but the deeper thing underneath them. And crucially, it
+sits at a level where everybody's soul is equal, even though every soul carries
+different qualities. Aptitude ranks people. Soul, in this sense, does not.
+
+Pixar has been circling this idea from both sides. In
+[Soul](https://en.wikipedia.org/wiki/Soul_(2020_film)), a soul is what has a
+personality and a "spark" before and after a life, the essence that isn't the
+body. A few years earlier, in
+[Inside Out](https://en.wikipedia.org/wiki/Inside_Out_(2015_film)), they told the
+inverse story: the self is not a single narrator but a committee of emotions
+arguing at a console. One studio, two films, and together they sketch what most
+spiritual traditions have said for a long time, that there is some essence of a
+person that transcends the body, and that it is somehow both singular and made of
+many things at once.
+
+## A Soul Made of Parts
+
+That second half (made of many things) is the part modern thinking has gotten
+sharper about. We tend to assume we are one unified self. The more accurate
+picture is that we are a coalition. Psychology has a whole model for this: the
+[Internal Family Systems](https://en.wikipedia.org/wiki/Internal_Family_Systems_Model)
+approach treats a person as a set of interacting parts (subpersonalities) rather
+than one voice. Neuroscience points the same way. Jeff Hawkins's
+[A Thousand Brains](https://en.wikipedia.org/wiki/A_Thousand_Brains) argues the
+cortex is thousands of small, semi-independent models running in parallel, each
+building its own map, voting, and only sometimes surfacing a single answer to the
+conscious self. Which is why, in the ordinary flow of a day, things happen in
+your own head that you can't fully explain. The snake flinch is one vote winning
+before you knew a vote was being held.
+
+Add time to that and the coalition stretches across your whole life. You are, in
+a real sense, a different person young than old. Your younger self was always
+talking to a future self it couldn't see, and your future self spends a lot of
+energy reconciling with the decisions the past self made. Packaging all of that
+(the parts, the memories, the accumulated experience across time) into one word,
+soul, is genuinely easier than tracking every thread. Fiction has been rehearsing
+what happens if we could capture the whole bundle:
+[Ghost in the Shell](https://en.wikipedia.org/wiki/Ghost_in_the_Shell_(1995_film))
+and [Expelled from Paradise](https://en.wikipedia.org/wiki/Expelled_from_Paradise)
+both imagine a "ghost," a full consciousness lifted out of the body into a digital
+world, cross-cutting memory and feeling and identity. It's the most compelling
+picture I've seen of what a soul would look like made explicit. And it's no
+longer only fiction: today's AI agents are often described as ghosts of a kind,
+personas distilled from the thoughts of millions of people posted across the
+internet, reflected back as one coherent voice. A composite that reads as
+singular. That's closer to what we are than we like to admit.
 
 ## Belonging Is the Thing We Keep Calling Spiritual
 
@@ -136,10 +177,13 @@ _This is a Renewal move: not solving spirituality, but re-examining where I'd
 filed it. For me, moving the feelings we call spiritual from "the ether" into the
 social and emotional systems of the body doesn't cheapen them. It makes them
 tractable. A yearning for family or belonging is something you can honor, tend,
-and act on, instead of something that only happens to you. The reframe sits
-alongside the [secular meaning of life](/blog/secular-meaning-of-life/)
-(Discovery, Play, Joy) and [Faith. Guts. Stamina.](/blog/faith-guts-stamina/),
-where faith is named as the Searching move rather than a metaphysical claim. All
-three are the same instinct: take the words that feel too big to hold, and find
-the human system underneath. For the framework that ties these together, see the
+and act on, instead of something that only happens to you. The soul, seen this
+way, isn't discarded either: it's the collective memory of a full experience, a
+coalition of parts held together across time, and it shines brightest when it
+connects to other people. The reframe sits alongside the
+[secular meaning of life](/blog/secular-meaning-of-life/) (Discovery, Play, Joy)
+and [Faith. Guts. Stamina.](/blog/faith-guts-stamina/), where faith is named as
+the Searching move rather than a metaphysical claim. All three are the same
+instinct: take the words that feel too big to hold, and find the human system
+underneath. For the framework that ties these together, see the
 [Quest Engine](/blog/quest-engine-the-why/)._
