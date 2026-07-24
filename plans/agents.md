@@ -182,6 +182,20 @@ Front matter uses one human-readable `categories` value plus the matching
 also use `extra.series = "quest-engine"`. The reading-order number is derived
 automatically from post dates at build time (oldest post is 1), so it is never
 stored per post — add the post with the correct `date` and its position follows.
+The same series mechanism is generic: the **Rust for Swift Practitioners** series
+uses `extra.series = "rust-for-swift"` plus a `rust-for-swift` tag, and
+`templates/partials/editorial-track.html` renders a reading-order badge for any
+series id.
+
+**Runnable code series (Rust for Swift Practitioners)**: posts in this series
+show Swift and Rust code that must compile and run. The authoritative snippet
+files live under `zola-site/code-examples/` and are compiled, run, and
+output-asserted by `zola-site/code-examples/verify.py`; the same script checks
+that every ```rust / ```swift fence in a `rust-for-swift-*` post is
+byte-identical to a snippet file (illustrative fragments use ```text). CI runs
+this via `.github/workflows/code-examples.yml`. Never hand-write code in these
+posts that is not backed by a verified file. The shared series brief lives at
+`plans/rust-for-swift-series-brief.md`.
 
 **Content-type exceptions**: Portfolio pages, reference guides, historical
 artifacts, source lists, and appendices may use more headings, tables, or lists

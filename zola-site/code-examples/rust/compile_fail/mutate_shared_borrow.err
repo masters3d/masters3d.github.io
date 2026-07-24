@@ -1,0 +1,1 @@
+error[E0502]: cannot borrow `name` as mutable because it is also borrowed as immutable

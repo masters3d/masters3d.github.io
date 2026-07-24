@@ -24,15 +24,17 @@
     <a href="{{ get_taxonomy_url(kind='categories', name=category_name) }}">
       Explore this track
     </a>
-    {% if series == "quest-engine" %}
+    {% if series %}
     {# Derive the reading number from date order across the series so it never
-       has to be stored per post. Find the quest-engine tag, sort its pages by
-       date (oldest first), and locate this post's position in that sequence. #}
+       has to be stored per post. The series id doubles as a tag: find that tag,
+       sort its pages by date (oldest first), and locate this post's position in
+       that sequence. This works for any series (quest-engine, rust-for-swift,
+       ...) without per-post ordering metadata. #}
     {% set tags_taxonomy = get_taxonomy(kind="tags") %}
     {% set_global series_total = 0 %}
     {% set_global series_number = 0 %}
     {% for tag_term in tags_taxonomy.items %}
-      {% if tag_term.name == "quest-engine" %}
+      {% if tag_term.name == series %}
         {% set ordered = tag_term.pages | sort(attribute="date") %}
         {% set_global series_total = ordered | length %}
         {% for ordered_page in ordered %}
@@ -42,8 +44,15 @@
         {% endfor %}
       {% endif %}
     {% endfor %}
-    <a href="{{ get_taxonomy_url(kind='tags', name='quest-engine') }}">
-      Quest Engine reading order ({{ series_number }} of {{ series_total }})
+    {% if series == "quest-engine" %}
+    {% set series_label = "Quest Engine reading order" %}
+    {% elif series == "rust-for-swift" %}
+    {% set series_label = "Rust for Swift Practitioners reading order" %}
+    {% else %}
+    {% set series_label = "Series reading order" %}
+    {% endif %}
+    <a href="{{ get_taxonomy_url(kind='tags', name=series) }}">
+      {{ series_label }} ({{ series_number }} of {{ series_total }})
     </a>
     {% endif %}
   </p>

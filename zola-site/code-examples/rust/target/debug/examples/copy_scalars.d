@@ -1,0 +1,1 @@
+/home/runner/work/masters3d.github.io/masters3d.github.io/zola-site/code-examples/rust/target/debug/examples/copy_scalars: /home/runner/work/masters3d.github.io/masters3d.github.io/zola-site/code-examples/rust/examples/copy_scalars.rs /home/runner/work/masters3d.github.io/masters3d.github.io/zola-site/code-examples/rust/src/lib.rs

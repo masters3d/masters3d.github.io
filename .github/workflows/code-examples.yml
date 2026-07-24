@@ -1,0 +1,48 @@
+# Verifies that every code snippet used in the "Rust for Swift Practitioners"
+# blog series actually compiles, runs, and behaves as the posts claim, and that
+# the code fences in the posts are byte-identical to the authoritative snippet
+# files under zola-site/code-examples/.
+#
+# Path-filtered so prose-only PRs that touch unrelated posts do not pay for a
+# Rust + Swift toolchain install. The single source of truth is
+# zola-site/code-examples/verify.py.
+name: Code Examples
+
+on:
+  pull_request:
+    branches: ["master"]
+    paths:
+      - "zola-site/code-examples/**"
+      - "zola-site/content/blog/rust-for-swift-*.md"
+      - ".github/workflows/code-examples.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Rust (stable)
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Install Swift
+        uses: swift-actions/setup-swift@v2
+        with:
+          swift-version: "6.0"
+
+      - name: Show toolchain versions
+        run: |
+          rustc --version
+          cargo --version
+          swift --version
+
+      - name: Verify snippets (compile, run, assert, and post sync)
+        run: |
+          cd zola-site/code-examples
+          python3 verify.py

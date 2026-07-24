@@ -1,0 +1,21 @@
+[package]
+name = "rust-for-swift-examples"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+# Every runnable Rust snippet embedded in a "Rust for Swift Practitioners" post
+# lives under examples/ as its own `fn main()` program. `cargo run --example
+# <name>` runs it; verify.py compares its stdout to expected/<name>.out.
+#
+# Snippets that are supposed to be REJECTED by the compiler (borrow-checker
+# demonstrations) live under compile_fail/ instead, so they never break the
+# build. verify.py compiles those with rustc and asserts they fail with the
+# error text recorded in compile_fail/<name>.err.
+
+[lib]
+path = "src/lib.rs"
+
+# No dependencies on purpose: the examples use only the standard library so CI
+# never needs network access to crates.io to verify them.
+[dependencies]

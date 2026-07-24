@@ -1,0 +1,1 @@
+/home/runner/work/masters3d.github.io/masters3d.github.io/zola-site/code-examples/rust/target/debug/examples/derive_copy_struct: /home/runner/work/masters3d.github.io/masters3d.github.io/zola-site/code-examples/rust/examples/derive_copy_struct.rs /home/runner/work/masters3d.github.io/masters3d.github.io/zola-site/code-examples/rust/src/lib.rs

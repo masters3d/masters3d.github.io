@@ -128,6 +128,28 @@ editorial_track = "engineering-systems"
 
 ### 📄 Editing Existing Pages
 
+## 🧪 Runnable Code Examples (Rust / Swift blog series)
+
+Some posts (the **Rust for Swift Practitioners** series) show Swift and Rust code
+that is guaranteed to compile and run. The authoritative source for every
+snippet lives under `zola-site/code-examples/`, and CI compiles, runs, and
+asserts each one, then checks that the code fences in the posts are
+byte-identical to those files. See `zola-site/code-examples/README.md` for the
+full workflow. In short:
+
+```bash
+cd zola-site/code-examples
+python3 verify.py            # compile + run + assert + post/file sync
+python3 verify.py --sync     # sync check only (no Rust/Swift toolchain needed)
+```
+
+The GitHub Actions workflow `.github/workflows/code-examples.yml` runs these
+checks on any change under `code-examples/**` or to a `rust-for-swift-*` post.
+Blocks tagged ```` ```rust ```` / ```` ```swift ```` must match a real snippet
+file; purely illustrative fragments use ```` ```text ````.
+
+### 📄 Editing Existing Pages
+
 1. Edit the appropriate markdown file:
    - Homepage: `zola-site/content/_index.md`
    - Tech page: `zola-site/content/tech/_index.md`

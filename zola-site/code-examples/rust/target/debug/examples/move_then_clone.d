@@ -1,0 +1,1 @@
+/home/runner/work/masters3d.github.io/masters3d.github.io/zola-site/code-examples/rust/target/debug/examples/move_then_clone: /home/runner/work/masters3d.github.io/masters3d.github.io/zola-site/code-examples/rust/examples/move_then_clone.rs /home/runner/work/masters3d.github.io/masters3d.github.io/zola-site/code-examples/rust/src/lib.rs
