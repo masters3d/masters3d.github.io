@@ -38,7 +38,7 @@
 **DECIDED**: Blog Markdown is formatted with Prettier and linted with markdownlint; `scripts/format_markdown.py` is a thin wrapper that just calls these two tools
 - **Rationale**: One-line-per-paragraph posts produce whole-paragraph diffs; Prettier wraps prose to 80 columns for small, reviewable line-level diffs, and markdownlint catches structural issues. Using standard tools (instead of a bespoke script) is portable and well understood
 - **Guarantee**: Prettier is configured with `proseWrap: always` (soft breaks render as spaces) and `embeddedLanguageFormatting: off` (fenced sample code is untouched), so the generated HTML is byte-identical before and after formatting
-- **Rule for agents**: After creating or editing any blog post, run `npm install` (once) then `python3 scripts/format_markdown.py` before committing
+- **Rule for agents (REQUIRED)**: ALWAYS run the formatter before committing. After creating or editing any Markdown, run `npm install` (once) then `python3 scripts/format_markdown.py`, and verify with `python3 scripts/format_markdown.py --check` (must exit clean). Never commit Markdown that has not been through the formatter
 - **Enforced**: The PR Validation workflow runs `npm ci` + `python3 scripts/format_markdown.py --check`; incorrectly formatted or lint-failing Markdown fails CI
 - **Config**: `.prettierrc.json`, `.markdownlint-cli2.jsonc`, and pinned versions in `package.json`
 - **Do NOT** hand-wrap or hand-reflow paragraphs; always let Prettier do it so the result is deterministic and idempotent
