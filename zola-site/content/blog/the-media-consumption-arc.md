@@ -17,16 +17,16 @@ of viewing a year (about four hours every week). I loved being transported into
 a new reality by a movie, but I kept asking what else I could do with those four
 hours.
 
-The draft also contained a sentence that aged almost immediately: "Until today
-I do not watch shows."
+The draft also contained a sentence that aged almost immediately: "Until today I
+do not watch shows."
 
 Then the pandemic arrived, and I became a show person. My wife and I started
 watching shows together, then more shows, and the ritual became one of the
 things that helped us cope. The person who had avoided _Game of Thrones_ because
-eight seasons looked like an 80-hour commitment was suddenly measuring the
-value differently. Those hours were not only being consumed by a screen. They
-were hours my wife and I spent together during a period when the world outside
-had become uncertain and very small.
+eight seasons looked like an 80-hour commitment was suddenly measuring the value
+differently. Those hours were not only being consumed by a screen. They were
+hours my wife and I spent together during a period when the world outside had
+become uncertain and very small.
 
 That reversal made me reconsider a decision I had made more than 20 years
 earlier, when I started college and stopped wanting to play video games. Movies,
@@ -51,12 +51,12 @@ finish and watch it as if it were one long movie. A feature film also had a
 visible boundary. However immersive it became, two hours later the story was
 usually over.
 
-Console games did not have that boundary. A game required my eyes, my hands,
-and my decisions. It reacted to me, which made it harder to leave than a story
-that continued in only one direction. Starting college, when an hour invested
-in learning could compound for decades, walking away from games was a good
-trade for me. It was not a judgment that games were worthless. I knew that I
-was especially vulnerable to the loop, so I changed the environment instead of
+Console games did not have that boundary. A game required my eyes, my hands, and
+my decisions. It reacted to me, which made it harder to leave than a story that
+continued in only one direction. Starting college, when an hour invested in
+learning could compound for decades, walking away from games was a good trade
+for me. It was not a judgment that games were worthless. I knew that I was
+especially vulnerable to the loop, so I changed the environment instead of
 depending on willpower.
 
 The pre-pandemic draft treated shows mostly as a time commitment. The pandemic
@@ -69,23 +69,23 @@ company had.
 ## Two Axes Instead of One Label
 
 Calling media "active" or "passive" collapses two different properties. I find
-it more useful to draw two axes. The first is **attention demand**, from zero to
-100. At zero, I can do something else while listening. At 100, the medium needs
-my full attention. The second is **interactivity**, from one-way to two-way. A
-book changes me, but it does not change its next sentence because of what I do.
-A game does.
+it more useful to draw two axes. The first is **attention demand**, from zero
+to 100. At zero, I can do something else while listening. At 100, the medium
+needs my full attention. The second is **interactivity**, from one-way to
+two-way. A book changes me, but it does not change its next sentence because of
+what I do. A game does.
 
 My rough map looks like this:
 
-| Medium | Attention demand | Direction |
-| --- | ---: | --- |
-| Radio or familiar music | 10-30 | One-way |
-| Podcast or audiobook | 30-60 | One-way |
-| Movie, show, or anime | 80-100 | One-way |
-| Printed book | 90-100 | One-way |
-| Single-player video game | 90-100 | Two-way with a system |
-| Multiplayer video game | 90-100 | Two-way with a system and people |
-| AI conversation | 70-100 | Two-way with a system |
+| Medium                   | Attention demand | Direction                        |
+| ------------------------ | ---------------: | -------------------------------- |
+| Radio or familiar music  |            10-30 | One-way                          |
+| Podcast or audiobook     |            30-60 | One-way                          |
+| Movie, show, or anime    |           80-100 | One-way                          |
+| Printed book             |           90-100 | One-way                          |
+| Single-player video game |           90-100 | Two-way with a system            |
+| Multiplayer video game   |           90-100 | Two-way with a system and people |
+| AI conversation          |           70-100 | Two-way with a system            |
 
 These numbers are not scientific scores. They change with the person, the
 content, and the situation. Music I know well can sit in the background while I
@@ -95,8 +95,8 @@ though it is one-way. A movie is passive in the interaction sense, even though
 watching it well may require all of my visual attention.
 
 This also explains why raw hours are incomplete. Ten hours of radio while
-driving are not equivalent to ten hours of reading. Four hours of movies are
-not equivalent to four hours of a game that keeps asking me to act. Time is one
+driving are not equivalent to ten hours of reading. Four hours of movies are not
+equivalent to four hours of a game that keeps asking me to act. Time is one
 cost. Attention and interaction are two others.
 
 There is another layer that the chart cannot capture. A one-way medium can
@@ -147,12 +147,12 @@ The value of a medium changes because the value of an hour changes. After high
 school and during college, I wanted hours to compound into education and a
 career. During the working and family years, uninterrupted attention became
 scarce, so a medium without an ending carried a higher opportunity cost. During
-the pandemic, connection and stress relief became more urgent, and shows with
-my wife earned their hours in a way my old spreadsheet could not measure.
+the pandemic, connection and stress relief became more urgent, and shows with my
+wife earned their hours in a way my old spreadsheet could not measure.
 
 Retirement may reverse the calculation again. For many people, retirement
-resembles a long vacation from the outside, but a good vacation is not simply
-an empty calendar filled with consumption. It includes rest, movement,
+resembles a long vacation from the outside, but a good vacation is not simply an
+empty calendar filled with consumption. It includes rest, movement,
 conversation, curiosity, and enough structure to make the freedom meaningful.
 Retirement probably needs the same portfolio over a much longer period.
 
@@ -166,17 +166,17 @@ for using media change.
 
 The goal is not to drive consumption to zero. Even empty time has a purpose, as
 I explored in
-[The Background Brain](/blog/the-background-brain-boredom-makes-ideas/).
-Filling every gap with audio because it is "passive" can still prevent boredom
-and reflection. Likewise, demanding an external product from every active hour
-turns renewal into another job. Entertainment can be worthwhile because it
-restores me, connects me to someone, or simply gives me an experience I value.
+[The Background Brain](/blog/the-background-brain-boredom-makes-ideas/). Filling
+every gap with audio because it is "passive" can still prevent boredom and
+reflection. Likewise, demanding an external product from every active hour turns
+renewal into another job. Entertainment can be worthwhile because it restores
+me, connects me to someone, or simply gives me an experience I value.
 
-_More than 20 years ago, quitting video games gave me the attention I needed
-for college. During the pandemic, starting shows gave my wife and me a ritual
-we needed to cope. Later, returning to games may give me a kind of challenge I
-need to stay engaged. None of those choices has to become a permanent identity.
-As with the skills that move between effort and instinct in
+_More than 20 years ago, quitting video games gave me the attention I needed for
+college. During the pandemic, starting shows gave my wife and me a ritual we
+needed to cope. Later, returning to games may give me a kind of challenge I need
+to stay engaged. None of those choices has to become a permanent identity. As
+with the skills that move between effort and instinct in
 [The Bicycle of the Mind](/blog/bicycle-of-the-mind-fast-slow-agents/), the
 right media changes with the work my mind and my life are asking me to do. I do
 not need one rule for every age. I need to know what the medium takes, what it
