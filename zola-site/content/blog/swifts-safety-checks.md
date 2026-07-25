@@ -51,6 +51,21 @@ both, but pretending they are the same property only hides the trade-off.
 Recoverable conditions should use recovery mechanisms. Broken invariants should
 not quietly become data.
 
+Memory safety is not the same as security against threats, either. Preventing
+invalid memory access closes off important classes of exploits, but it does not
+prove that authorization is correct, secrets are protected, dependencies are
+trustworthy, or inputs cannot be abused. Memory safety is one foundation of a
+secure system, not a complete threat model.
+
+A crash by itself therefore does not tell me whether a language kept its safety
+promise. A deliberate bounds-check trap can be the exact mechanism preserving
+memory safety. Swift also cannot prevent every other reason a process might
+terminate. It can still run out of memory, overflow the stack, recurse forever
+until that stack is exhausted, encounter an operating-system failure, or call
+unsafe code that violates Swift's guarantees. Those failures matter for
+reliability, but their existence does not erase the narrower memory-safety
+guarantee.
+
 ## Following `Character` Into the Standard Library
 
 I first tried to understand this by following the initializer for `Character`. A
