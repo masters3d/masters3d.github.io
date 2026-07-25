@@ -34,9 +34,9 @@ changing how we use every other computer.
 
 The central bet was vertical integration. A company that designs the chip,
 software, and device can make trade-offs that are difficult when those parts
-come from separate vendors. The M-series Mac proved that point. CPU, GPU, memory,
-and Neural Engine became one system rather than a collection of replaceable
-parts.
+come from separate vendors. The M-series Mac proved that point. CPU, GPU,
+memory, and Neural Engine became one system rather than a collection of
+replaceable parts.
 
 That integration did not make the Mac less powerful, as I worried it might. It
 made the Mac more interesting. Unified memory became useful not only for
@@ -69,16 +69,16 @@ providers, researchers, and companies built around that stack for years. By the
 time large language models created enormous demand for parallel computation,
 NVIDIA was selling a working system, not an isolated component.
 
-The financial scale shows how quickly that system became infrastructure. For
-its fiscal 2026, NVIDIA
+The financial scale shows how quickly that system became infrastructure. For its
+fiscal 2026, NVIDIA
 [reported $215.9 billion in annual revenue](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026).
 Its fourth-quarter data center revenue alone was $62.3 billion. Those numbers
 are not just a story about chip sales. They show where the industry is spending
 to create the next layer of computing.
 
 Apple's integration is optimized around a person carrying or wearing a device.
-NVIDIA's integration is optimized around racks of accelerators behaving like
-one computer. Both strategies connect hardware and software tightly, but they
+NVIDIA's integration is optimized around racks of accelerators behaving like one
+computer. Both strategies connect hardware and software tightly, but they
 operate at different scales. Apple asks how much intelligence can fit within a
 power and privacy budget on the device. NVIDIA asks how much computation can fit
 within the networking, cooling, and power budget of a data center.
@@ -101,8 +101,8 @@ reduce their dependence on any one supplier. Both can be true at once.
 
 The phrase "state of AI" can make this sound like a competition between models.
 The models matter, but they sit inside a physical system. A model needs chips.
-The chips need high-bandwidth memory and networking. The racks need cooling.
-The data center needs land, transformers, and electricity.
+The chips need high-bandwidth memory and networking. The racks need cooling. The
+data center needs land, transformers, and electricity.
 
 The
 [International Energy Agency estimates](https://www.iea.org/reports/energy-and-ai/executive-summary)
@@ -122,9 +122,9 @@ shared computation.
 That brings me back to glasses. The useful version of AR glasses may depend less
 on putting a complete supercomputer on somebody's face and more on dividing the
 work among sensors, a phone, local models, and cloud models. The glasses become
-an interface to intelligence that lives across several computers. In that
-sense, Apple chips may still lead to AR glasses, but NVIDIA and the rest of the
-AI infrastructure world are part of the path too.
+an interface to intelligence that lives across several computers. In that sense,
+Apple chips may still lead to AR glasses, but NVIDIA and the rest of the AI
+infrastructure world are part of the path too.
 
 ---
 
