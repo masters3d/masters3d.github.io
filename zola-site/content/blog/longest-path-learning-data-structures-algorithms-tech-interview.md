@@ -141,7 +141,7 @@ Happy coding!
 
 [cracking]: https://www.crackingthecodinginterview.com/
 [google-interviews]:
-  https://careers.google.com/how-we-hire/interview/#interviews-for-software-engineering-and-technical-roles
+  https://www.google.com/about/careers/applications/
 [mit-6-006]:
   https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/
 [mit-6-046j]:
