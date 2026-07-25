@@ -10,8 +10,11 @@ tags = ["ipad", "ipad-pro", "vision-pro", "apple", "retrospective", "mobile", "l
 editorial_track = "field-notes"
 +++
 
+Ten years later, the future I hoped for did not arrive for me. My iPad is mostly
+in my drawer, not being used.
+
 When the Vision Pro made its debut, I was reminded of when I first got the iPad
-Pro. Ten years ago, I wrote about
+Pro. I wrote about
 [my first year with the 12.9-inch iPad Pro](/blog/2016-one-year-of-ipad-pro-12-9/).
 I loved the hardware, the battery life, and the speakers. I used it to watch
 movies, read books and PDFs, browse the internet, and occasionally as a mobile
@@ -19,8 +22,7 @@ hotspot. I also kept circling the same problem: typing on glass never felt
 natural, and none of the physical keyboards felt compelling enough.
 
 No, I did not buy the Vision Pro. I do wonder how different my reviews of these
-devices would be. Ten years later, my iPad is mostly in my drawer, not being
-used.
+devices would be.
 
 ## After the Honeymoon
 

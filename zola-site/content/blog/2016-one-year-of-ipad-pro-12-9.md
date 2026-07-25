@@ -22,9 +22,9 @@ The iPad Pro has impressive hardware.
 I've been getting an average of 10 hours of battery life on the weekend.
 
 I wanted to use the iPad mainly for personal use during the weekend. I ended up
-using it mostly after work when I wanted to watch a show or a movie with my
-wife. I love how loud the speakers are. The only snag I had was the iPad not
-waking up after a full charge, but that got fixed pretty fast.
+using it mostly after work when I wanted to watch a show or a movie. I love how
+loud the speakers are. The only snag I had was the iPad not waking up after a
+full charge, but that got fixed pretty fast.
 
 I looked at mobile hardware keyboards, but I did not really like any of them.
 Even the Apple Smart Keyboard did not feel compelling enough for me to get, so I
@@ -71,5 +71,5 @@ feel natural.
 
 ---
 
-_Ten years later, that future did not arrive for me. The iPad is now
-[mostly in my drawer](/blog/2026-ten-years-later-ipad-pro-in-the-drawer/)._
+_Read my
+[ten-year iPad Pro retrospective](/blog/2026-ten-years-later-ipad-pro-in-the-drawer/)._
