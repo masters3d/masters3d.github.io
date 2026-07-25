@@ -12,8 +12,8 @@ editorial_track = "field-notes"
 
 _Editor's note: This backdated origin story combines and revises two posts I
 originally published on Medium on October 25, 2016, and July 29, 2017. It keeps
-the journey from those posts while removing the job search and credential
-commentary that belonged to that moment._
+the journey from those posts while leaving their period-specific commentary in
+the originals._
 
 I did not always know what I wanted to do for a living, but I always liked
 computers as tools for creativity and general fun. My list of possible futures
@@ -53,8 +53,8 @@ the physical world. More importantly, I interpreted struggling with those
 classes as evidence that I did not have the capacity to become a programmer.
 
 I transferred to a community college to pursue digital media instead. I thought
-I was walking away from programming and toward creative work. In reality, I
-kept finding programming inside the creative work.
+I was walking away from programming and toward creative work. In reality, I kept
+finding programming inside the creative work.
 
 ## Code hiding inside creative work
 
@@ -68,8 +68,8 @@ processor. I used it to learn video editing in Final Cut and multimedia work in
 Adobe's suite of creative tools. I can get lost in a project when I find the
 flow of it, and those tools gave me plenty of places to disappear.
 
-One of my first jobs was web design, but I relied heavily on Adobe Dreamweaver to
-turn designs into code. The machinery behind a website was still a mystery to
+One of my first jobs was web design, but I relied heavily on Adobe Dreamweaver
+to turn designs into code. The machinery behind a website was still a mystery to
 me. Code looked foreign and cryptic, and the web itself felt disappointing.
 Internet connections were slow, the iPhone had not arrived, and Flash was king.
 Video editing seemed more exciting, so I became a video editor full time for a
@@ -130,7 +130,5 @@ all part of the same path.
 ---
 
 _This is the background to the software engineering career that followed. A
-decade later, I return to it in
-[Ten Years in Software Engineering](/blog/ten-years-in-software-engineering/):
-what changed after programming stopped being the intimidating option and became
-the work itself._
+decade later, the next part of the story will ask what changed after programming
+stopped being the intimidating option and became the work itself._

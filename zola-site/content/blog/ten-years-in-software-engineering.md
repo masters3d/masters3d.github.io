@@ -94,8 +94,8 @@ of my interests. Software engineering became that medium.
 
 A decade is long enough to recognize patterns and short enough to know how many
 remain invisible. I have more judgment than I had in 2017, but judgment has made
-me less interested in pretending that any one framework, language, or process
-is the answer. Context keeps winning.
+me less interested in pretending that any one framework, language, or process is
+the answer. Context keeps winning.
 
 The biggest change is that I no longer need programming to prove that I am
 technical. I care more about whether the work is worth doing, whether the system
@@ -106,7 +106,8 @@ scoreboard.
 Ten years ago, I was afraid that the black screen of a terminal meant I did not
 belong. Now it is simply one of many places where the work can begin. The lesson
 was not that fear disappears after enough time. It was that fear can become
-curiosity, curiosity can become practice, and practice can become responsibility.
+curiosity, curiosity can become practice, and practice can become
+responsibility.
 
 ---
 
