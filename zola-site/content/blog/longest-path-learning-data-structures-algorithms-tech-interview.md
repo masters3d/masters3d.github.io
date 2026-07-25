@@ -19,17 +19,17 @@ computer scientists. Instead, they call themselves engineers. From what I can
 tell, most Software Engineering jobs do not require hardcore CS skills, yet most
 companies still interview software engineers for core CS skills.
 
-The game is this: if you want a job at Google or Facebook, you need to learn core
-algorithms and data structures. Most bootcamps teach some data structures and
-algorithms, but most bootcamps do not spend enough time on these core areas.
+The game is this: if you want a job at Google or Facebook, you need to learn
+core algorithms and data structures. Most bootcamps teach some data structures
+and algorithms, but most bootcamps do not spend enough time on these core areas.
 
 ## My First Attempts
 
-At first, I tried following along with Udacity's
-[Data Structures and Algorithms in Python][udacity] course. I found the content
-entertaining and engaging, but not deep enough. At my bootcamp, we covered all
-the same content in a very similar fashion, but I found myself feeling unready
-when I started doing mock interviews.
+At first, I tried following along with Udacity's [Data Structures and Algorithms
+in Python][udacity] course. I found the content entertaining and engaging, but
+not deep enough. At my bootcamp, we covered all the same content in a very
+similar fashion, but I found myself feeling unready when I started doing mock
+interviews.
 
 About that time, I found the following Princeton courses:
 
@@ -38,8 +38,8 @@ About that time, I found the following Princeton courses:
 
 I started with Part I, which really helped me reinforce some of my previous
 knowledge. These courses are based on Java instead of Python, but that was not a
-big deal. The main issue for me was that I could not get some of the code running
-locally in a reasonable amount of time.
+big deal. The main issue for me was that I could not get some of the code
+running locally in a reasonable amount of time.
 
 I finished the first course and some of the second. I stopped because I felt as
 if I was missing a lot of information. The lectures focused on proofs and
@@ -51,21 +51,21 @@ So far, I felt as if I could not learn this information by myself. There were
 knowledge obstacles that I kept finding. It was like hitting an invisible wall
 or force field. I felt as if I could not steal the fire from the gods.
 
-Around this time, I learned about the book
-[_Cracking the Coding Interview_][cracking]. I looked at this book, read some of
-the first chapters, and decided that it was not for me. The book is geared toward
-traditional software engineers. The only thing I gathered from the first chapter
-was that this stuff is hard since even software engineers need a self-help book.
+Around this time, I learned about the book [_Cracking the Coding
+Interview_][cracking]. I looked at this book, read some of the first chapters,
+and decided that it was not for me. The book is geared toward traditional
+software engineers. The only thing I gathered from the first chapter was that
+this stuff is hard since even software engineers need a self-help book.
 
 Surprisingly, the fact that the data structures and algorithms I needed to learn
-to pass a technical interview were not easy made me feel better. All this time, I
-thought I was trying to climb a wall with zero tools.
+to pass a technical interview were not easy made me feel better. All this time,
+I thought I was trying to climb a wall with zero tools.
 
 ## The MIT Turning Point
 
 I was about ready to give up. While searching YouTube for algorithm tutorials, I
-found a random video about
-[dynamic programming from MIT's 6.006 course][mit-dynamic-programming].
+found a random video about [dynamic programming from MIT's 6.006
+course][mit-dynamic-programming].
 
 "Oh, cool. This is a lecture about dynamic programming from MIT," I thought to
 myself. "I am probably not going to understand anything being discussed, so I
@@ -73,14 +73,13 @@ might as well watch it to see how it feels to be in an MIT lecture."
 
 I felt that I was going to watch something akin to a nuclear fusion lecture. I
 had seen lectures like this pop up from other institutions, but I always
-underestimated how much of the content I could absorb. I watched the lecture and,
-to my surprise, I understood everything about it. And there were three more
+underestimated how much of the content I could absorb. I watched the lecture
+and, to my surprise, I understood everything about it. And there were three more
 lectures about dynamic programming! This was a turning point for me.
 
-I started watching the
-[whole MIT 6.006 Introduction to Algorithms class][mit-6-006] from the
-beginning. I had a physical notebook with me to simulate sitting in the
-classroom, and I did the problems by hand.
+I started watching the [whole MIT 6.006 Introduction to Algorithms
+class][mit-6-006] from the beginning. I had a physical notebook with me to
+simulate sitting in the classroom, and I did the problems by hand.
 
 I knew about sorting algorithms, but I had never heard about counting sort
 (which can sort numbers in linear time). I learned about polynomial time and
@@ -112,22 +111,22 @@ Google's interview guidance said:
 > ready to discuss complex algorithms like Dijkstra and A\*.
 >
 > Think about what efficiency means in terms of runtime and space used. For
-> example, in exceptional cases insertion sort or radix sort are much better than
-> the generic QuickSort/MergeSort/HeapSort answers.
+> example, in exceptional cases insertion sort or radix sort are much better
+> than the generic QuickSort/MergeSort/HeapSort answers.
 >
 > Data structures most frequently used are arrays, linked lists, stacks, queues,
-> hash sets, hash maps, hash tables, dictionaries, trees and binary trees, heaps,
-> and graphs. You should know the data structure inside out, and what algorithms
-> tend to go along with each data structure.
+> hash sets, hash maps, hash tables, dictionaries, trees and binary trees,
+> heaps, and graphs. You should know the data structure inside out, and what
+> algorithms tend to go along with each data structure.
 
-Source:
-[Google's software engineering and technical interview guidance][google-interviews].
+Source: [Google's software engineering and technical interview
+guidance][google-interviews].
 
 Everything Google listed above is what you would learn in a college-level
-introduction to data structures and algorithms class like
-[MIT 6.006 Introduction to Algorithms][mit-6-006] (and, to be safe, probably
-some selected topics from a design and analysis of algorithms class like
-[MIT 6.046J][mit-6-046j]).
+introduction to data structures and algorithms class like [MIT 6.006
+Introduction to Algorithms][mit-6-006] (and, to be safe, probably some selected
+topics from a design and analysis of algorithms class like [MIT
+6.046J][mit-6-046j]).
 
 If you are a nontraditional developer like me, you probably need to "take" the
 classes above. Do not just watch the lectures or recitations. Do the problems by
@@ -141,10 +140,14 @@ suggest taking your time to absorb the topics.
 Happy coding!
 
 [cracking]: https://www.crackingthecodinginterview.com/
-[google-interviews]: https://careers.google.com/how-we-hire/interview/#interviews-for-software-engineering-and-technical-roles
-[mit-6-006]: https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/
-[mit-6-046j]: https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/
+[google-interviews]:
+  https://careers.google.com/how-we-hire/interview/#interviews-for-software-engineering-and-technical-roles
+[mit-6-006]:
+  https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/
+[mit-6-046j]:
+  https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/
 [mit-dynamic-programming]: https://www.youtube.com/watch?v=OQ5jsbhAv_M
 [princeton-part-1]: https://www.coursera.org/learn/algorithms-part1
 [princeton-part-2]: https://www.coursera.org/learn/algorithms-part2
-[udacity]: https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513
+[udacity]:
+  https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513
