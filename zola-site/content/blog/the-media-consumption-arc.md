@@ -1,7 +1,7 @@
 +++
 title = "The Media Consumption Arc: From Video Games to Shows to AI"
 date = "2026-07-25"
-description = "Before the pandemic I avoided television shows because of their time commitment. Then watching shows with my wife helped us through isolation. Looking from college to retirement, the better question is not whether media is good or bad, but what kind of attention, interaction, and season of life it asks from us."
+description = "Before the pandemic I avoided television shows because of their time commitment. Then watching shows with my wife helped us through isolation. Looking from college to retirement, the better question is not whether media is good or bad, but what degree of attention and responsiveness it asks from us at each season of life."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Field Notes"]
@@ -10,15 +10,14 @@ tags = ["media", "movies", "television", "video-games", "ai", "attention", "pand
 editorial_track = "field-notes"
 +++
 
-Right before the pandemic, I had an unfinished draft called "Movies Time
-commitment." I had calculated that I watched about 70 movies a year. At roughly
-two hours each, plus anime and movies I rewatched, I estimated around 200 hours
-of viewing a year (about four hours every week). I loved being transported into
-a new reality by a movie, but I kept asking what else I could do with those four
-hours.
+Right before the pandemic, I was thinking about the time I invested in movies. I
+had calculated that I watched about 70 movies a year. At roughly two hours each,
+plus anime and movies I rewatched, I estimated around 200 hours of viewing a
+year (about four hours every week). I loved being transported into a new reality
+by a movie, but I kept asking what else I could do with those four hours.
 
-The draft also contained a sentence that aged almost immediately: "Until today I
-do not watch shows."
+At the time, I could still say, "Until today I do not watch shows." That
+sentence aged almost immediately.
 
 Then the pandemic arrived, and I became a show person. My wife and I started
 watching shows together, then more shows, and the ritual became one of the
@@ -52,58 +51,60 @@ visible boundary. However immersive it became, two hours later the story was
 usually over.
 
 Console games did not have that boundary. A game required my eyes, my hands, and
-my decisions. It reacted to me, which made it harder to leave than a story that
-continued in only one direction. Starting college, when an hour invested in
-learning could compound for decades, walking away from games was a good trade
-for me. It was not a judgment that games were worthless. I knew that I was
-especially vulnerable to the loop, so I changed the environment instead of
-depending on willpower.
+my decisions. It reacted to me, which made it harder to leave than a fixed
+story. Starting college, when an hour invested in learning could compound for
+decades, walking away from games was a good trade for me. It was not a judgment
+that games were worthless. I knew that I was especially vulnerable to the loop,
+so I changed the environment instead of depending on willpower.
 
-The pre-pandemic draft treated shows mostly as a time commitment. The pandemic
-showed what that calculation left out. Watching a series was still one-way
-communication from the screen, but watching it with my wife was a shared
-experience. We talked, predicted, laughed, and had something waiting for us at
-the end of another strange day. The medium had not changed. The purpose and the
-company had.
+Before the pandemic, I treated shows mostly as a time commitment. The pandemic
+showed what that calculation left out. The series itself followed a fixed path,
+but watching it with my wife was a shared experience. We talked, predicted,
+laughed, and had something waiting for us at the end of another strange day. The
+medium had not changed. The purpose and the company had.
 
 ## Two Axes Instead of One Label
 
-Calling media "active" or "passive" collapses two different properties. I find
-it more useful to draw two axes. The first is **attention demand**, from zero
-to 100. At zero, I can do something else while listening. At 100, the medium
-needs my full attention. The second is **interactivity**, from one-way to
-two-way. A book changes me, but it does not change its next sentence because of
-what I do. A game does.
+The word "active" can describe two different properties, so I find it more
+useful to draw two axes. The first is **attention demand**, from
+background-compatible to attention-exclusive. At the low end, I can do something
+else while listening. At the high end, the medium needs my full attention. A
+movie is active in this sense. I am glued to the screen and cannot meaningfully
+do something else.
+
+The second axis is **responsiveness**, from fixed to interactive. A book or
+movie follows the same path regardless of what I do. A game reacts to my
+decisions, and an AI conversation responds to my input. This is separate from
+attention: a movie and a game can both demand my full attention even though only
+the game responds to me.
 
 My rough map looks like this:
 
-| Medium                   | Attention demand | Direction                        |
-| ------------------------ | ---------------: | -------------------------------- |
-| Radio or familiar music  |            10-30 | One-way                          |
-| Podcast or audiobook     |            30-60 | One-way                          |
-| Movie, show, or anime    |           80-100 | One-way                          |
-| Printed book             |           90-100 | One-way                          |
-| Single-player video game |           90-100 | Two-way with a system            |
-| Multiplayer video game   |           90-100 | Two-way with a system and people |
-| AI conversation          |           70-100 | Two-way with a system            |
+| Medium                   | Attention demand | Responsiveness                       |
+| ------------------------ | ---------------: | ------------------------------------ |
+| Radio or familiar music  |            10-30 | Fixed                                |
+| Podcast or audiobook     |            30-60 | Fixed                                |
+| Movie, show, or anime    |           90-100 | Fixed                                |
+| Printed book             |           90-100 | Fixed                                |
+| Single-player video game |           90-100 | Interactive with a system            |
+| Multiplayer video game   |           90-100 | Interactive with a system and people |
+| AI conversation          |           70-100 | Interactive with a system            |
 
 These numbers are not scientific scores. They change with the person, the
 content, and the situation. Music I know well can sit in the background while I
 work. A new audiobook may demand enough attention that I cannot safely pair it
-with anything complicated. A book is "active" in the attention sense, even
-though it is one-way. A movie is passive in the interaction sense, even though
-watching it well may require all of my visual attention.
+with anything complicated. Books and movies are attention-exclusive even though
+their content is fixed. Games are attention-exclusive and responsive.
 
 This also explains why raw hours are incomplete. Ten hours of radio while
 driving are not equivalent to ten hours of reading. Four hours of movies are not
 equivalent to four hours of a game that keeps asking me to act. Time is one
-cost. Attention and interaction are two others.
+cost. Attention and responsiveness are two others.
 
-There is another layer that the chart cannot capture. A one-way medium can
-create a two-way human experience. A show watched with my wife generated
-conversation and connection. A multiplayer game may do the same among friends.
-The direction of the software is not necessarily the direction of the whole
-experience.
+There is another layer that the chart cannot capture. Fixed media can create a
+responsive human experience. A show watched with my wife generated conversation
+and connection. A multiplayer game may do the same among friends. The behavior
+of the medium is not necessarily the behavior of the whole experience.
 
 ## AI Feels More Like a Game Than a Movie
 
@@ -167,10 +168,11 @@ for using media change.
 The goal is not to drive consumption to zero. Even empty time has a purpose, as
 I explored in
 [The Background Brain](/blog/the-background-brain-boredom-makes-ideas/). Filling
-every gap with audio because it is "passive" can still prevent boredom and
-reflection. Likewise, demanding an external product from every active hour turns
-renewal into another job. Entertainment can be worthwhile because it restores
-me, connects me to someone, or simply gives me an experience I value.
+every gap with background-compatible audio can still prevent boredom and
+reflection. Likewise, demanding an external product from every
+attention-exclusive hour turns renewal into another job. Entertainment can be
+worthwhile because it restores me, connects me to someone, or simply gives me an
+experience I value.
 
 _More than 20 years ago, quitting video games gave me the attention I needed for
 college. During the pandemic, starting shows gave my wife and me a ritual we
