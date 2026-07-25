@@ -62,6 +62,8 @@ y += 1             // changes only y
 print("x = \(x), y = \(y)")
 ```
 
+{{ compiler_explorer(snippet="int_value_copy") }}
+
 Rust does not do this by default. For most types, assigning a value _moves_ it,
 and the source binding becomes unusable. The exceptions are small types like
 integers, which are marked `Copy` and behave exactly like the Swift instinct

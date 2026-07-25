@@ -68,6 +68,10 @@ feed_limit = 0
 # douggregor.net is the personal blog the "Rust for Swift Practitioners" series
 # attributes as inspiration; skip it so its bot-handling behavior can never flake
 # the link check (the reference is valid in a browser).
+# godbolt.org "Run on Compiler Explorer" links embed the full snippet as a very
+# long base64 /clientstate/ URL; these are generated (code-examples/godbolt.py)
+# and validated offline, and Compiler Explorer rate-limits automated checkers, so
+# skip the domain to avoid false-positive broken-link failures in CI.
 skip_prefixes = [
     "https://xcancel.com/",
     "https://learning.oreilly.com/",
@@ -83,6 +87,7 @@ skip_prefixes = [
     "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html",
     "https://www.simonandschuster.com/books/Solve-for-Happy/Mo-Gawdat/9781501157585",
     "https://www.douggregor.net/",
+    "https://godbolt.org/",
 ]
 # skip_anchor_prefixes: add URL prefixes here to skip anchor checking for specific domains
 # Note: zola check always validates external links — this is intentional.

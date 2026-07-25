@@ -35,12 +35,15 @@ from __future__ import annotations
 
 import argparse
 import glob
+import json
 import os
 import re
 import shutil
 import subprocess
 import sys
 import tempfile
+
+import godbolt
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RUST_DIR = os.path.join(HERE, "rust")
@@ -260,6 +263,53 @@ def verify_sync(rep: Reporter) -> None:
 
 
 # --------------------------------------------------------------------------- #
+# Compiler Explorer "Run" links
+# --------------------------------------------------------------------------- #
+# Matches the shortcode invocations the posts use, e.g.
+#   {{ compiler_explorer(snippet="copy_scalars") }}
+#   {{ compiler_explorer(pair="point-value-vs-copy") }}
+SHORTCODE_RE = re.compile(
+    r"compiler_explorer\(\s*(snippet|pair)\s*=\s*\"([^\"]+)\""
+)
+
+
+def verify_links(rep: Reporter) -> None:
+    print("Links: godbolt-links.json <-> snippet files and post shortcodes")
+
+    # 1. The committed data file must match what godbolt.py would generate from
+    #    the current snippet sources and pinned compilers (the "keep honest"
+    #    guarantee, mirroring the post<->snippet byte-sync check above).
+    expected = godbolt.expected_file_text()
+    if not os.path.isfile(godbolt.LINKS_JSON):
+        rep.fail("godbolt-links.json is missing; run `python3 godbolt.py`")
+        return
+    if _read(godbolt.LINKS_JSON) != expected:
+        rep.fail(
+            "godbolt-links.json is stale (snippet source or pinned compiler "
+            "changed); regenerate with `python3 godbolt.py`"
+        )
+    else:
+        rep.ok("godbolt-links.json matches snippet sources and pinned compilers")
+
+    # 2. Every compiler_explorer(...) reference in a post must resolve to a real
+    #    link id, so a shortcode can never render a broken/empty link.
+    data = json.loads(expected)
+    valid_ids = {"snippet": set(data["singles"]), "pair": set(data["pairs"])}
+    for post in sorted(glob.glob(SERIES_GLOB)):
+        for kind, link_id in SHORTCODE_RE.findall(_read(post)):
+            if link_id in valid_ids[kind]:
+                rep.ok(
+                    f"{os.path.basename(post)}: compiler_explorer({kind}="
+                    f'"{link_id}") resolves'
+                )
+            else:
+                rep.fail(
+                    f"{os.path.basename(post)}: compiler_explorer({kind}="
+                    f'"{link_id}") has no matching {kind} in godbolt-links.json'
+                )
+
+
+# --------------------------------------------------------------------------- #
 # main
 # --------------------------------------------------------------------------- #
 def main() -> int:
@@ -278,6 +328,7 @@ def main() -> int:
         verify_swift(rep)
     if run_all or args.sync:
         verify_sync(rep)
+        verify_links(rep)
 
     print()
     if rep.warnings:

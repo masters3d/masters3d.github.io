@@ -43,6 +43,8 @@ b.x = 99           // mutates only b
 print("a = (\(a.x), \(a.y)), b = (\(b.x), \(b.y))")
 ```
 
+{{ compiler_explorer(snippet="value_struct_copy") }}
+
 That prints `a = (1, 2), b = (99, 2)`. The copy is silent and free-feeling, and
 it is the reflex you carry into Rust. Now watch Rust take it away. A `String`
 owns a heap buffer, so it is not one of the cheap types Rust will duplicate for
@@ -60,6 +62,8 @@ fn main() {
     println!("original = {original}, duplicate = {duplicate}");
 }
 ```
+
+{{ compiler_explorer(snippet="use_after_move") }}
 
 The compiler is not vague about it:
 
@@ -90,6 +94,8 @@ fn main() {
 }
 ```
 
+{{ compiler_explorer(snippet="move_then_clone") }}
+
 This compiles and prints `original = swift, duplicate = swift`. The lesson a
 Swift programmer should take is not "Rust makes you type more." It is that Swift
 was making a decision on your behalf (deep-copy this value type) and Rust moved
@@ -116,6 +122,8 @@ second.value = 7
 print("first.value = \(first.value), second.value = \(second.value)")
 ```
 
+{{ compiler_explorer(snippet="class_is_reference") }}
+
 That prints `first.value = 7, second.value = 7`. Swift gives you two default
 behaviors depending on whether you reached for `struct` or `class`. Rust gives
 you neither for free: owning types move, and if you want the shared-reference
@@ -140,6 +148,8 @@ fn main() {
 }
 ```
 
+{{ compiler_explorer(snippet="copy_scalars") }}
+
 This compiles and prints `x = 41, y = 41`, with both bindings alive. It is the
 mirror image of the Swift scalar, which does the same:
 
@@ -152,6 +162,8 @@ var y = x          // copies
 y += 1             // changes only y
 print("x = \(x), y = \(y)")
 ```
+
+{{ compiler_explorer(snippet="int_value_copy") }}
 
 You can even opt your own small struct back into this world. Derive `Copy` (and
 its companion `Clone`) and a `Point` starts behaving like an `i32`: assignment
@@ -173,6 +185,10 @@ fn main() {
     println!("a = ({}, {}), b = ({}, {})", a.x, a.y, b.x, b.y);
 }
 ```
+
+{{ compiler_explorer(snippet="derive_copy_struct") }}
+
+{{ compiler_explorer(pair="point-value-vs-copy") }}
 
 So Swift's value-type feeling is not gone from Rust; it is available on request,
 for the types where cheap copying is genuinely fine. What changed is the
@@ -200,6 +216,8 @@ fn main() {
     println!("{reader}");
 }
 ```
+
+{{ compiler_explorer(snippet="mutate_shared_borrow") }}
 
 ```text
 error[E0502]: cannot borrow `name` as mutable because it is also borrowed as immutable
@@ -233,6 +251,8 @@ func run() {
 
 run()
 ```
+
+{{ compiler_explorer(snippet="noncopyable_use_after_consume") }}
 
 ```text
 error: 'handle' consumed more than once
