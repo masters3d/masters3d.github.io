@@ -41,9 +41,8 @@ In October 2000, Sony released the
 [Clié PEG-N700C](https://en.wikipedia.org/wiki/Sony_Clié), their first color
 PDA. I was in a trance and I worked all summer to get the Clié PEG-760C (the
 improved model). I remember I thought it was the greatest thing I had ever held
-in my hand. It ran
-[Palm OS](https://en.wikipedia.org/wiki/Palm_OS), and I would install about 50
-games on it. In fact, I used it as a very expensive Game Boy.
+in my hand. It ran [Palm OS](https://en.wikipedia.org/wiki/Palm_OS), and I would
+install about 50 games on it. In fact, I mostly used it as a Game Boy.
 
 I was in love with Palm OS and I would check the website every day to see if a
 new version of their OS 6 (Cobalt) would come out, but it never did. Then in
