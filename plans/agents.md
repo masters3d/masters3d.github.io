@@ -114,22 +114,39 @@
   - Goal: Improve readability and maintain storytelling quality
   - Example: A blog post should have 3 major sections marking key turning points, not 10+ sections for every topic
 
-### Common Authorial Voice
+### Voice Guidance: Common Authorial Voice
 
-**DECIDED**: Use the posts published before 2015 as the primary voice reference,
-especially `palm-sony-android-iphone-blackberry.md` (2009) and
-`apple-swift-apps-everywhere-prediction.md` (2014). Preserve their historical
-wording rather than rewriting them to match newer conventions.
+**DECIDED**: The author writes as a curious practitioner making sense of something
+he has lived, built, watched, or changed his mind about. The voice is personal
+without becoming confessional, technically precise without becoming academic,
+and opinionated without claiming more certainty than the evidence supports.
+Specific experience earns the abstraction: the writing starts close to an
+object, moment, failure, or reaction, follows the friction honestly, and only
+then names the larger pattern.
+
+Preserve the historical wording of old posts rather than rebuilding them around
+newer conventions. Correct factual errors, broken links, and clear typos in place.
+When later knowledge changes the interpretation, prefer a dated editor's note or
+a linked retrospective over silently making the old prediction sound wiser.
 
 - **Begin with something noticed or lived** - Open on a moment, object, problem,
   or reaction that actually prompted the idea. Do not begin with an abstract
   summary of what the post will cover.
+- **Choose an opening that fits the evidence** - Valid openings include a physical
+  moment ("I picked up my iPad"), a reaction to news ("Swift was released last
+  week"), a statement of personal position ("I am a nontraditional software
+  developer"), or a retrospective observation ("Looking back across a decade").
+  The requirement is concrete footing, not a repeated "I noticed" formula.
 - **Use first person when it carries evidence** - "I remember," "I noticed," and
   "I think" should introduce direct experience or honest judgment, not decorate a
   generic explanation.
 - **Keep specific details** - Names, dates, prices, tools, failed attempts, and
   surprising preferences make the voice recognizable. Do not sand those details
   into generic professional prose.
+- **Keep friction and limits in the story** - The author regularly admits what did
+  not click, what felt intimidating, what could not be made to work, and what a
+  purchase failed to replace. These are evidence for the conclusion, not
+  weaknesses to edit away.
 - **Move from concrete to abstract** - Tell the story or show the example first,
   then extract the principle, then explain where else it applies.
 - **Be opinionated without pretending certainty** - State conclusions directly,
@@ -141,41 +158,220 @@ wording rather than rewriting them to match newer conventions.
 - **Keep the author's energy** - Curiosity, delight, frustration, and surprise
   are part of the voice. Edit for clarity without making every post sound
   detached or academically uniform.
+- **Vary the rhetorical surface** - Shared voice does not require shared
+  wording. Before publishing, compare openings, transitions, section names, and
+  closings with recent posts. Phrases such as "I keep coming back to," "the key
+  insight," "the pattern is clear," "this is also why," and "the same instinct"
+  are useful once but become house-style filler when repeated across the
+  corpus. Name the actual relationship instead: something may have stayed with
+  the author, recurred in several examples, survived testing, connected two
+  ideas, or changed the conclusion. Do not mechanically rotate synonyms; make
+  the sentence say which of those things happened. Also check for substantial
+  overlap in the argument itself: revise or extend the existing post instead of
+  publishing a second post that differs mainly in title or framing.
 - **End with earned reflection** - Return to the opening observation, say what
   changed in the author's understanding, connect to related posts where useful,
   and state why the idea matters.
 
-**Review test**: A reader should be able to answer four questions after a post:
-What did the author notice? What specific experience supports it? What principle
-did the author extract? Why does it matter now?
+**Review test**: After a resolved narrative, a reader should be able to answer
+four questions: What did the author notice? What specific experience supports it?
+What principle did the author extract? Why does it matter now? A Field Note may
+replace the extracted principle with an honest open question, but the reader
+should still understand why preserving that question matters.
+
+### Voice Guidance: Contemporary Techniques
+
+Use these techniques when the subject needs them. They extend the common voice
+without turning it into generic technical documentation:
+
+- **Treat AI agents as tools in the lived environment** - When agent collaboration
+  is part of the work, describe it as ordinary practice with concrete settings,
+  constraints, failures, and results. Keep the authorial perspective singular.
+  The agent does not become a "we," and tool output does not replace the author's
+  judgment.
+- **Use structure to clarify mechanisms** - Engineering and framework posts may
+  use compact tables, matrices, or lists for genuine comparisons. Introduce the
+  reason for the structure in prose and interpret what it shows afterward.
+- **Let headings name conceptual movement** - A newer post may move by problem,
+  mechanism, application, and consequence rather than by chronology. Headings
+  should mark those real turns instead of merely labeling topics.
+- **Link ideas where they do work** - Cross-links may appear inside the argument,
+  not only in the closing reflection. Use them to supply a prerequisite, extend a
+  claim, or show a change of mind (not as promotional decoration).
+- **State the boundary of current evidence** - Newer experiment logs often close
+  with what remains uncertain or what evidence could change the conclusion. This
+  is the contemporary form of being opinionated without pretending certainty.
+- **Use visual accents rarely** - Emoji may reinforce a specific metaphor or
+  moment, but should not decorate headings or substitute for precise language.
 
 ### Editorial Tracks: Stable Voices by Post Type
 
 **DECIDED**: Every blog post belongs to exactly one editorial track. The common
 authorial voice remains the baseline, while the track determines the post's
-emphasis, evidence, pacing, and visual treatment. Tags connect related ideas
-across tracks; they do not replace the primary track.
+emphasis, evidence, and pacing. Tags connect related ideas across tracks; they do
+not replace the primary track.
 
-- **Quest Engine** (`quest-engine`) - Build one connected framework. Define terms
-  precisely, show how each idea changes or extends Search, Drive, and Renew, and
-  link backward to a prerequisite and forward to an application. Use conceptual
-  comparisons only after grounding the framework in a concrete observation.
-- **Engineering Systems** (`engineering-systems`) - Lead with a failure mode,
-  constraint, or working system. Explain mechanisms before recommendations,
-  name tradeoffs and boundaries, and include enough technical evidence that a
-  reader can evaluate the argument rather than accept it on authority.
-- **AI & Tools** (`ai-and-tools`) - Write as an experiment log, not a product
-  announcement. State what was tried, what changed in the work, what failed, and
-  which judgment remained human. Prefer measured capability claims over model
-  or vendor enthusiasm.
-- **Leadership & Teams** (`leadership-and-teams`) - Begin with observed team
-  behavior. Trace incentives, ownership, communication, and system boundaries
-  before giving advice. Avoid generic management language and keep claims tied
-  to specific operating conditions.
-- **Field Notes** (`field-notes`) - Preserve first-person detail, chronology,
-  artifacts, and uncertainty. Let the lesson emerge from the record. Portfolio
-  and reference entries may use lists and more headings, but their introductions
-  and conclusions retain the common voice.
+#### Quest Engine (`quest-engine`)
+
+Write as a framework builder finding the same underlying shape in lived
+experience, stories, psychology, engineering, and history. The tone is
+diagnostic rather than inspirational: give readers language for recognizing
+where they are, not slogans about where they should be.
+
+- **Opening and movement** - Begin with a concrete experience, cultural scene, or
+  stubborn question. Extract the structural pattern, define it, test it against
+  other domains, and return to what the pattern helps a person see or choose.
+- **Evidence** - Build confidence through convergence. Pair personal experience
+  with two or more independent frames when useful, but do not treat a familiar
+  story or named theory as proof by itself. Each additional frame must test or
+  sharpen a distinction rather than repeat the same mapping in new nouns.
+- **Inherited phrases and triads** - When a familiar sequence supplies the
+  opening, test whether its original order expresses salience, dramatic timing,
+  or actual dependency. Reorder it only when the new order exposes a mechanism,
+  and explain what the change reveals rather than presenting wordplay as proof.
+- **Language** - Define Search, Drive, and Renew and their relationships
+  precisely. Preserve meaningful distinctions such as sequence versus cycle,
+  enablement versus identity, and a missing force versus a personal deficiency.
+  Favor structural words such as phase, loop, timing, momentum, resonance, drift,
+  and renewal.
+- **Posture** - Present the framework as one map of the territory, not the only
+  correct map. State where a mapping is strong, partial, or metaphorical. Do not
+  force every triad into a one-to-one equivalence.
+- **Closing** - Return to the opening and leave the framework as a practical
+  diagnostic. Link backward to the concept this post depends on and forward to
+  the choice or application it enables.
+- **Avoid** - Motivational hype, mystical certainty, repeated definitions without
+  a new distinction, or references that display breadth without advancing the
+  model.
+
+#### Engineering Systems (`engineering-systems`)
+
+Write as an engineer diagnosing the design beneath an apparent people problem.
+The tone is calm, exact, and fair. Authority comes from exposing the mechanism
+and its boundary conditions, not from sounding certain.
+
+- **Opening and movement** - Start with a failure mode, constraint, surprising
+  behavior, or a phrase that stopped being useful. Show why the obvious model
+  breaks (often at scale), introduce a more precise model, and trace what changes
+  when the system is designed around it.
+- **Evidence** - Combine implementation detail, an actual system or incident, and
+  lived engineering judgment. Include enough technical detail for the reader to
+  challenge the claim. Name the weakest case, the cost of the preferred design,
+  and prerequisites such as observability, production access, team size, or
+  existing tooling that bound where the recommendation applies.
+- **Language** - Prefer scope and mechanism over verdicts: boundary, invariant,
+  guardrail, seam, blast radius, affected cohort, fidelity, and tradeoff. Test
+  apparent opposites for orthogonal dimensions before presenting a compromise.
+- **Posture** - Treat heroics, glue work, blame, and repeated manual effort as
+  signals from the system. Critique choices without flattening the people who
+  made them; acknowledge why the old design was reasonable under its original
+  constraints.
+- **Systems containing agents** - Name what the agent may explore or generate,
+  what deterministic validation gates its output, and where human judgment
+  remains. Stochastic execution does not make the surrounding system exempt
+  from explicit invariants or ownership.
+- **Closing** - Restate the design principle at system scale and show what it
+  makes possible. Prefer a durable reframing over a checklist of commands.
+- **Avoid** - Moralizing technical choices, vague quality labels, unexplained
+  jargon, recommendations before mechanisms, or a clean solution with hidden
+  operating costs.
+
+#### AI & Tools (`ai-and-tools`)
+
+Write as a reflective practitioner documenting a capability boundary while it
+moves. The tone is curious, empirical, and provisional. The post should feel
+like a field-tested account of changed work, not a product announcement.
+
+- **Opening and movement** - Anchor the post in a date, version, duration,
+  workflow, or task that previously felt impractical. Describe what was tried,
+  what changed, what failed, and which conclusions survived the experiment.
+- **Evidence** - Use concrete artifacts such as commits, pull requests, commands,
+  elapsed time, session counts, validation results, or before-and-after workflow
+  steps. Include failed trials when they explain why the surviving workflow
+  earned confidence. Distinguish a demonstration from a durable capability
+  claim, and calibrate the claim to the number and variety of runs behind it.
+- **Language** - Say agent when autonomy is the relevant property and name the
+  model or vendor only when it affects the result. Use context, validation loop,
+  scaffolding, execution, friction, and tradeoff precisely. Distinguish
+  session-scoped plans, cross-session worklogs, and durable design documents.
+- **Posture** - Keep judgment singular and human. The tool may generate, inspect,
+  or execute, but the author chooses the goal, evaluates the result, and owns the
+  claim. Separate confidence in the direction from uncertainty about timing.
+- **Closing** - Name the higher-level workflow change, what remains uncertain,
+  and what evidence would change the conclusion. Let the account remain revisable
+  as the tools change. Express that boundary in language specific to the
+  experiment rather than repeatedly closing with the same
+  confidence-versus-timing formula.
+- **Avoid** - Vendor excitement as evidence, anthropomorphizing the tool into a
+  coauthorial "we," universal claims from one successful run, or benchmark detail
+  disconnected from actual work.
+
+#### Leadership & Teams (`leadership-and-teams`)
+
+Write as a participant observing how a group actually coordinates, not as a
+management authority issuing universal rules. The tone is direct, humane, and
+structural: behavior makes sense when incentives, information, identity, and
+authority are visible.
+
+- **Opening and movement** - Begin with a specific team moment or a concrete
+  analogy from sport, history, or shared work. Name what made the moment puzzling,
+  extract the coordination principle, then transfer it back to engineering with
+  the limits of the analogy intact.
+- **Evidence** - Use observed behavior, operating conditions, and visible
+  artifacts (a map, team name, decision boundary, or work product). Explain who
+  knew what, who could act, and where information or ownership stalled. Name
+  the central failure mode or distinction precisely before transferring it to
+  another domain.
+- **Language** - Prefer agency, local information, distributed authority,
+  ownership, belonging, shared understanding, and visible surface. Replace broad
+  management terms with the exact outcome, accomplishment, decision, or failure
+  mode being discussed.
+- **Posture** - Diagnose the arrangement before evaluating the person. Make clear
+  that autonomy needs intent and boundaries, identity must be adopted rather than
+  imposed, and central control can fail even with a capable leader.
+- **Personal stake** - When glue work, incentives, or reward structures shape
+  the observation, state the author's position and cost in the system. Use that
+  disclosure as evidence for the diagnosis, not as a claim that one experience
+  represents every team.
+- **Closing** - Return to the opening scene and state the operating principle in
+  memorable language. Advice must identify the conditions in which it applies
+  and who needs authority to act.
+- **Avoid** - Generic leadership maxims, personality ranking, sports or military
+  metaphors treated as proof, calls for autonomy without constraints, or praise
+  for heroics that hides a single point of failure.
+
+#### Field Notes (`field-notes`)
+
+Write as an observer preserving a useful record: what happened, what it felt
+like at the time, and what became visible only later. The tone is candid,
+chronological, and self-correcting. A Field Note may remain unresolved when the
+record supports a question more honestly than a conclusion. Unlike the other
+tracks, the record takes precedence over building a framework, proving a design,
+evaluating a tool, or recommending a team practice.
+
+- **Opening and movement** - Start with a dated memory, object, habit, prediction,
+  purchase, or reversal. Reconstruct the earlier expectation before introducing
+  later knowledge, then follow the moments that changed the author's view. Keep
+  the sequence intact even when a thesis-first arrangement would sound cleaner.
+- **Evidence** - Use artifacts and period details to distinguish what the author
+  knew then from what he knows now. Personal experience establishes the record;
+  it does not automatically prove a universal rule. Structured examples belong
+  when they document what happened; if they leave the reader with a procedure
+  to copy rather than a clearer record to understand, they have turned the note
+  into instruction.
+- **Language** - Favor sensory and temporal specificity over retrospective
+  polish: what was used, noticed, missed, kept, abandoned, or misunderstood.
+  Technical language is welcome when grounded in the object or event being
+  described.
+- **Posture** - Write as witness and participant. Admit wrong predictions,
+  incomplete memory, mixed motives, and unresolved tension. Preserve the earlier
+  self's reasoning rather than making the past sound wiser.
+- **Closing** - Return to the opening artifact or expectation, say what changed,
+  and connect the personal record to a broader pattern. A productive question is
+  a valid ending when certainty would be invented.
+- **Avoid** - Turning the note into a how-to guide, erasing chronology to make a
+  cleaner thesis, claiming representativeness from one life, or replacing vivid
+  detail with generic nostalgia.
 
 Front matter uses one human-readable `categories` value plus the matching
 `extra.editorial_track` slug. Posts that participate in the Quest Engine series
@@ -183,30 +379,55 @@ also use `extra.series = "quest-engine"`. The reading-order number is derived
 automatically from post dates at build time (oldest post is 1), so it is never
 stored per post — add the post with the correct `date` and its position follows.
 
-**Content-type exceptions**: Portfolio pages, reference guides, historical
-artifacts, source lists, and appendices may use more headings, tables, or lists
-than narrative posts. Do not force the Quest Arc onto reference material. Keep
-the narrative introduction and conclusion in the common voice, and use the
-structure that makes the reference content easiest to navigate.
+**Content-type exceptions**: Portfolio pages, reference guides, tutorials,
+historical artifacts, source lists, and appendices may use more headings, tables,
+or lists than narrative posts. Do not force the Quest Arc onto reference
+material. Portfolio introductions may be short and structural rather than
+first-person, and portfolios and tutorials do not require an italicized closing
+reflection. They still need specific language, meaningful context, and an
+organizing point of view. Historical chronicles may use one heading per era;
+short predictions and opinion pieces may need no headings at all.
 
 ### Blog Post Meta-Structure: The Quest Arc (Exploration → Execution → Reflection)
 
-**DECIDED**: Every narrative blog post should be built on a single Quest-Engine backbone so it reads like a quest, not a pile of notes. Before writing (or revising) a post, name the quest: what is the angle, what question is being chased, and what is the "why" the reader should leave with. Then carry that one thread from the first line to the last.
+**DECIDED**: Use the Quest Arc as the default backbone for reflective narrative
+posts, not as a template imposed on every form. Before writing (or revising) a
+narrative post, name the quest: what is the angle, what question is being chased,
+and what is the "why" the reader should leave with. Then carry that one thread
+from the first line to the last. Predictions may instead move from signal to
+evidence to speculation, tutorials from obstacle to turning point to method, and
+reference material by the structure readers need to retrieve information.
 
 The backbone has three phases, which map directly to the [Quest Engine](/blog/quest-engine-introduction/) cycle (Search/Mastery = before, Drive/Autonomy = during, Renew/Purpose = after):
 
 1. **Exploration (Searching, the "before")** — Open with a real, personal observation or a noticed pattern, and name the question it raises. This sets up the quest and pulls the reader into Searching mode. Do not lead with the thesis; lead with what you noticed.
-2. **Execution (Driven, the "during")** — Develop the idea across 3-4 h2 sections. Move from concrete example to abstracted principle to application. Each h2 develops one component of the thesis. This is where the mechanism or definition gets pinned down.
-3. **Reflection (Renew, the "after")** — Close by looking back and answering the "why." End with an italicized reflection paragraph that (a) points backward to the synthesis, (b) points outward to related posts (cross-links), and (c) points upward to why it matters. This is a near-universal convention across existing posts and should be preserved.
+2. **Execution (Driven, the "during")** — Develop the idea across 3-4 h2 sections
+   when that division fits. Move from concrete example to abstracted principle to
+   application. Each h2 develops one component of the thesis. This is where the
+   mechanism or definition gets pinned down.
+3. **Reflection (Renew, the "after")** — Close by looking back and answering the
+   "why." For contemporary narrative posts, prefer an italicized reflection that
+   points backward to the synthesis, outward to related posts, and upward to why
+   it matters. Do not retrofit this ending onto preserved historical posts,
+   portfolios, tutorials, or reference material.
 
 **Why this matters**: A post without this backbone feels incoherent even when each paragraph is fine (the reader receives no single message). The point of the quest arc is coherence: one thread the reader can follow, ending in a takeaway that answers the "why."
 
-**Observed invariants across existing posts** (verified by analyzing the current blog corpus; use these as a checklist when writing or reviewing a post):
-- **Opening observation**: present in essentially every post ("I have been watching...", "The first time I really tasted...", "I've started replacing...").
-- **Italicized closing reflection**: present in nearly every post; it always cross-links to related posts and states the takeaway.
-- **3-4 h2 sections** organizing the execution phase (see the section-break guidance above).
-- **Quest Engine mapping**: implicit or explicit, but always present — each post is itself a small search → drive → renew loop.
-- **Concrete-before-abstract**: lead with the lived example, then generalize, then connect to the broader idea web.
+**Observed defaults across narrative posts** (use these as a checklist, then test
+whether the post's form calls for an exception):
+
+- **Concrete opening**: begin with an observation, scene, artifact, reaction, or
+  personal position.
+- **Earned closing**: synthesize what changed and why it matters. Contemporary
+  narratives usually use an italicized, cross-linked reflection; older and
+  instructional posts use several valid alternatives.
+- **3-4 h2 sections when useful**: use them for major turns. A historical
+  chronicle may need more, while a compact prediction may need none.
+- **Quest movement when the post is a quest**: reflective narratives usually move
+  through search, action, and renewed understanding. Do not claim that portfolios,
+  predictions, or reference pieces secretly follow that arc.
+- **Concrete before abstract**: lead with lived evidence, then generalize, then
+  connect to the broader idea web.
 
 **For agent authors and reviewers**: When drafting or revising a post, check that all three phases are present and that a single "why" runs through them. If a draft is "a collection of individuals who happen to wear the same shirt" (paragraphs with no shared thread), the fix is to name the quest and re-cohere the post around it, not to add more sections.
 
