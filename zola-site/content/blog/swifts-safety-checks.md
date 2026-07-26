@@ -52,14 +52,14 @@ or incorrect reference count. A defect there can corrupt the interpreter rather
 than becoming a clean Python exception.
 
 So I need to ask what layer a safety claim describes. Python-the-language
-protects ordinary Python operations, but a Python process is only as
-memory-safe as its interpreter and every native extension loaded into it.
-Crossing that extension boundary does not make Python's language rules false.
-It means those rules cannot prove the safety of code they do not govern. The
-same qualification applies when Swift calls C or C++, or when Rust crosses an
-`unsafe` or foreign-function boundary. Safe code can narrow and audit those
-boundaries, but it cannot make an unchecked dependency safe merely by wrapping
-it in a safer interface.
+protects ordinary Python operations, but a Python process is only as memory-safe
+as its interpreter and every native extension loaded into it. Crossing that
+extension boundary does not make Python's language rules false. It means those
+rules cannot prove the safety of code they do not govern. The same qualification
+applies when Swift calls C or C++, or when Rust crosses an `unsafe` or
+foreign-function boundary. Safe code can narrow and audit those boundaries, but
+it cannot make an unchecked dependency safe merely by wrapping it in a safer
+interface.
 
 Safety can also be enforced at different times. Python places most of that work
 in its runtime. Rust moves far more of it into compile-time ownership,
