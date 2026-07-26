@@ -116,13 +116,13 @@
 
 ### Voice Guidance: Common Authorial Voice
 
-**DECIDED**: Use the complete pre-2021 corpus as the historical voice reference.
-The eight posts cover personal chronicles, predictions, product retrospectives,
-an origin story, a learning journey, and two portfolios. Within that corpus,
-`palm-sony-android-iphone-blackberry.md` (2009) and
-`apple-swift-apps-everywhere-prediction.md` (2014) remain the clearest references
-for the author's unfiltered voice. The later posts show how that voice adapts to
-different forms.
+**DECIDED**: The author writes as a curious practitioner making sense of something
+he has lived, built, watched, or changed his mind about. The voice is personal
+without becoming confessional, technically precise without becoming academic,
+and opinionated without claiming more certainty than the evidence supports.
+Specific experience earns the abstraction: the writing starts close to an
+object, moment, failure, or reaction, follows the friction honestly, and only
+then names the larger pattern.
 
 Preserve the historical wording of old posts rather than rebuilding them around
 newer conventions. Correct factual errors, broken links, and clear typos in place.
@@ -166,10 +166,10 @@ a linked retrospective over silently making the old prediction sound wiser.
 What did the author notice? What specific experience supports it? What principle
 did the author extract? Why does it matter now?
 
-### Voice Guidance: Accommodating Newer Posts
+### Voice Guidance: Contemporary Techniques
 
-Posts from 2021 onward extend the historical voice without replacing it. Preserve
-these useful additions:
+Use these techniques when the subject needs them. They extend the common voice
+without turning it into generic technical documentation:
 
 - **Treat AI agents as tools in the lived environment** - When agent collaboration
   is part of the work, describe it as ordinary practice with concrete settings,
@@ -198,26 +198,141 @@ authorial voice remains the baseline, while the track determines the post's
 emphasis, evidence, pacing, and visual treatment. Tags connect related ideas
 across tracks; they do not replace the primary track.
 
-- **Quest Engine** (`quest-engine`) - Build one connected framework. Define terms
-  precisely, show how each idea changes or extends Search, Drive, and Renew, and
-  link backward to a prerequisite and forward to an application. Use conceptual
-  comparisons only after grounding the framework in a concrete observation.
-- **Engineering Systems** (`engineering-systems`) - Lead with a failure mode,
-  constraint, or working system. Explain mechanisms before recommendations,
-  name tradeoffs and boundaries, and include enough technical evidence that a
-  reader can evaluate the argument rather than accept it on authority.
-- **AI & Tools** (`ai-and-tools`) - Write as an experiment log, not a product
-  announcement. State what was tried, what changed in the work, what failed, and
-  which judgment remained human. Prefer measured capability claims over model
-  or vendor enthusiasm.
-- **Leadership & Teams** (`leadership-and-teams`) - Begin with observed team
-  behavior. Trace incentives, ownership, communication, and system boundaries
-  before giving advice. Avoid generic management language and keep claims tied
-  to specific operating conditions.
-- **Field Notes** (`field-notes`) - Preserve first-person detail, chronology,
-  artifacts, and uncertainty. Let the lesson emerge from the record. Portfolio
-  and reference entries may use lists and more headings, but their introductions
-  and conclusions retain the common voice.
+#### Quest Engine (`quest-engine`)
+
+Write as a framework builder finding the same underlying shape in lived
+experience, stories, psychology, engineering, and history. The tone is
+diagnostic rather than inspirational: give readers language for recognizing
+where they are, not slogans about where they should be.
+
+- **Opening and movement** - Begin with a concrete experience, cultural scene, or
+  stubborn question. Extract the structural pattern, define it, test it against
+  other domains, and return to what the pattern helps a person see or choose.
+- **Evidence** - Build confidence through convergence. Pair personal experience
+  with two or more independent frames when useful, but do not treat a familiar
+  story or named theory as proof by itself.
+- **Language** - Define Search, Drive, and Renew and their relationships
+  precisely. Preserve meaningful distinctions such as sequence versus cycle,
+  enablement versus identity, and a missing force versus a personal deficiency.
+  Favor structural words such as phase, loop, timing, momentum, resonance, drift,
+  and renewal.
+- **Posture** - Present the framework as one map of the territory, not the only
+  correct map. State where a mapping is strong, partial, or metaphorical. Do not
+  force every triad into a one-to-one equivalence.
+- **Closing** - Return to the opening and leave the framework as a practical
+  diagnostic. Link backward to the concept this post depends on and forward to
+  the choice or application it enables.
+- **Avoid** - Motivational hype, mystical certainty, repeated definitions without
+  a new distinction, or references that display breadth without advancing the
+  model.
+
+#### Engineering Systems (`engineering-systems`)
+
+Write as an engineer diagnosing the design beneath an apparent people problem.
+The tone is calm, exact, and fair. Authority comes from exposing the mechanism
+and its boundary conditions, not from sounding certain.
+
+- **Opening and movement** - Start with a failure mode, constraint, surprising
+  behavior, or a phrase that stopped being useful. Show why the obvious model
+  breaks (often at scale), introduce a more precise model, and trace what changes
+  when the system is designed around it.
+- **Evidence** - Combine implementation detail, an actual system or incident, and
+  lived engineering judgment. Include enough technical detail for the reader to
+  challenge the claim. Name the weakest case and the cost of the preferred
+  design.
+- **Language** - Prefer scope and mechanism over verdicts: boundary, invariant,
+  guardrail, seam, blast radius, affected cohort, fidelity, and tradeoff. Test
+  apparent opposites for orthogonal dimensions before presenting a compromise.
+- **Posture** - Treat heroics, glue work, blame, and repeated manual effort as
+  signals from the system. Critique choices without flattening the people who
+  made them; acknowledge why the old design was reasonable under its original
+  constraints.
+- **Closing** - Restate the design principle at system scale and show what it
+  makes possible. Prefer a durable reframing over a checklist of commands.
+- **Avoid** - Moralizing technical choices, vague quality labels, unexplained
+  jargon, recommendations before mechanisms, or a clean solution with hidden
+  operating costs.
+
+#### AI & Tools (`ai-and-tools`)
+
+Write as a reflective practitioner documenting a capability boundary while it
+moves. The tone is curious, empirical, and provisional. The post should feel
+like a field-tested account of changed work, not a product announcement.
+
+- **Opening and movement** - Anchor the post in a date, version, duration,
+  workflow, or task that previously felt impractical. Describe what was tried,
+  what changed, what failed, and which conclusions survived the experiment.
+- **Evidence** - Use concrete artifacts such as commits, pull requests, commands,
+  elapsed time, session counts, validation results, or before-and-after workflow
+  steps. Distinguish a demonstration from a durable capability claim.
+- **Language** - Say agent when autonomy is the relevant property and name the
+  model or vendor only when it affects the result. Use context, validation loop,
+  scaffolding, execution, friction, and tradeoff precisely. Distinguish
+  session-scoped plans, cross-session worklogs, and durable design documents.
+- **Posture** - Keep judgment singular and human. The tool may generate, inspect,
+  or execute, but the author chooses the goal, evaluates the result, and owns the
+  claim. Separate confidence in the direction from uncertainty about timing.
+- **Closing** - Name the higher-level workflow change, what remains uncertain,
+  and what evidence would change the conclusion. Let the account remain revisable
+  as the tools change.
+- **Avoid** - Vendor excitement as evidence, anthropomorphizing the tool into a
+  coauthorial "we," universal claims from one successful run, or benchmark detail
+  disconnected from actual work.
+
+#### Leadership & Teams (`leadership-and-teams`)
+
+Write as a participant observing how a group actually coordinates, not as a
+management authority issuing universal rules. The tone is direct, humane, and
+structural: behavior makes sense when incentives, information, identity, and
+authority are visible.
+
+- **Opening and movement** - Begin with a specific team moment or a concrete
+  analogy from sport, history, or shared work. Name what made the moment puzzling,
+  extract the coordination principle, then transfer it back to engineering with
+  the limits of the analogy intact.
+- **Evidence** - Use observed behavior, operating conditions, and visible
+  artifacts (a map, team name, decision boundary, or work product). Explain who
+  knew what, who could act, and where information or ownership stalled.
+- **Language** - Prefer agency, local information, distributed authority,
+  ownership, belonging, shared understanding, and visible surface. Replace broad
+  management terms with the exact outcome, accomplishment, decision, or failure
+  mode being discussed.
+- **Posture** - Diagnose the arrangement before evaluating the person. Make clear
+  that autonomy needs intent and boundaries, identity must be adopted rather than
+  imposed, and central control can fail even with a capable leader.
+- **Closing** - Return to the opening scene and state the operating principle in
+  memorable language. Advice must identify the conditions in which it applies
+  and who needs authority to act.
+- **Avoid** - Generic leadership maxims, personality ranking, sports or military
+  metaphors treated as proof, calls for autonomy without constraints, or praise
+  for heroics that hides a single point of failure.
+
+#### Field Notes (`field-notes`)
+
+Write as an observer preserving a useful record: what happened, what it felt
+like at the time, and what became visible only later. The tone is candid,
+chronological, and self-correcting. A Field Note may remain unresolved when the
+record supports a question more honestly than a conclusion.
+
+- **Opening and movement** - Start with a dated memory, object, habit, prediction,
+  purchase, or reversal. Reconstruct the earlier expectation before introducing
+  later knowledge, then follow the moments that changed the author's view.
+- **Evidence** - Keep names, dates, devices, prices, artifacts, failed attempts,
+  and surprising preferences. Personal experience is evidence of what happened
+  to the author, not automatic proof of a universal rule.
+- **Language** - Favor sensory and temporal specificity over retrospective
+  polish: what was used, noticed, missed, kept, abandoned, or misunderstood.
+  Technical language is welcome when grounded in the object or event being
+  described.
+- **Posture** - Write as witness and participant. Admit wrong predictions,
+  incomplete memory, mixed motives, and unresolved tension. Preserve the earlier
+  self's reasoning rather than making the past sound wiser.
+- **Closing** - Return to the opening artifact or expectation, say what changed,
+  and connect the personal record to a broader pattern. A productive question is
+  a valid ending when certainty would be invented.
+- **Avoid** - Turning the note into a how-to guide, erasing chronology to make a
+  cleaner thesis, claiming representativeness from one life, or replacing vivid
+  detail with generic nostalgia.
 
 Front matter uses one human-readable `categories` value plus the matching
 `extra.editorial_track` slug. Posts that participate in the Quest Engine series
