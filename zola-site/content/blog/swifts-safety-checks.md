@@ -33,11 +33,30 @@ prevents operations such as reading uninitialized memory, accessing memory after
 it has been deallocated, indexing outside an array, and making conflicting
 accesses to the same memory.
 
-Some of those guarantees can be proved by the compiler. Others depend on values
-that exist only while the program is running. If an array has ten elements, the
-compiler cannot always know whether the index supplied at runtime will be 3
-or 30. Swift checks the index before performing the access. If the check fails,
-it traps.
+Calling a language "safe" does not mean every program written in it is correct.
+It means ordinary language operations cannot silently step outside the
+language's defined model and perform arbitrary memory access. Python is commonly
+called memory-safe because its interpreter checks operations at runtime and
+manages object lifetimes for the program. C++ is not memory-safe by default
+because ordinary C++ permits unchecked pointer arithmetic, use after free, and
+out-of-bounds access with undefined behavior. Both languages can fail, and both
+can call native code that violates their usual boundaries. The distinction is
+what their normal language semantics permit.
+
+Safety can also be enforced at different times. Python places most of that work
+in its runtime. Rust moves far more of it into compile-time ownership, borrowing,
+and lifetime checks, rejecting many invalid programs before they run. Swift uses
+both approaches: its type and ownership rules prove some properties during
+compilation, while runtime checks protect properties that depend on live values.
+This is not a ranking where runtime safety is less real than compile-time safety.
+It is a difference in when an invalid operation is rejected and what cost or
+feedback comes with that rejection.
+
+If a Swift array has ten elements, the compiler cannot always know whether the
+index supplied at runtime will be 3 or 30. Swift checks the index before
+performing the access. Rust performs the same kind of runtime bounds check when
+an index cannot be proven valid. If the check fails, either language traps
+rather than allowing the access.
 
 The trap is the safety mechanism. The program stops before it can read unrelated
 memory, corrupt state, or continue with a value that has no valid meaning. It
