@@ -114,7 +114,7 @@
   - Goal: Improve readability and maintain storytelling quality
   - Example: A blog post should have 3 major sections marking key turning points, not 10+ sections for every topic
 
-### Common Authorial Voice
+### Voice Guidance: Common Authorial Voice
 
 **DECIDED**: Use the posts published before 2015 as the primary voice reference,
 especially `palm-sony-android-iphone-blackberry.md` (2009) and
