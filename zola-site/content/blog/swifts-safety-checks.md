@@ -44,13 +44,13 @@ can call native code that violates their usual boundaries. The distinction is
 what their normal language semantics permit.
 
 Safety can also be enforced at different times. Python places most of that work
-in its runtime. Rust moves far more of it into compile-time ownership, borrowing,
-and lifetime checks, rejecting many invalid programs before they run. Swift uses
-both approaches: its type and ownership rules prove some properties during
-compilation, while runtime checks protect properties that depend on live values.
-This is not a ranking where runtime safety is less real than compile-time safety.
-It is a difference in when an invalid operation is rejected and what cost or
-feedback comes with that rejection.
+in its runtime. Rust moves far more of it into compile-time ownership,
+borrowing, and lifetime checks, rejecting many invalid programs before they run.
+Swift uses both approaches: its type and ownership rules prove some properties
+during compilation, while runtime checks protect properties that depend on live
+values. This is not a ranking where runtime safety is less real than
+compile-time safety. It is a difference in when an invalid operation is rejected
+and what cost or feedback comes with that rejection.
 
 If a Swift array has ten elements, the compiler cannot always know whether the
 index supplied at runtime will be 3 or 30. Swift checks the index before
