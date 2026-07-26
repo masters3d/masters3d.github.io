@@ -158,6 +158,15 @@ a linked retrospective over silently making the old prediction sound wiser.
 - **Keep the author's energy** - Curiosity, delight, frustration, and surprise
   are part of the voice. Edit for clarity without making every post sound
   detached or academically uniform.
+- **Vary the rhetorical surface** - Shared voice does not require shared
+  wording. Before publishing, compare openings, transitions, section names, and
+  closings with recent posts. Phrases such as "I keep coming back to," "the key
+  insight," "the pattern is clear," "this is also why," and "the same instinct"
+  are useful once but become house-style filler when repeated across the
+  corpus. Name the actual relationship instead: something may have stayed with
+  the author, recurred in several examples, survived testing, connected two
+  ideas, or changed the conclusion. Do not mechanically rotate synonyms; make
+  the sentence say which of those things happened.
 - **End with earned reflection** - Return to the opening observation, say what
   changed in the author's understanding, connect to related posts where useful,
   and state why the idea matters.
@@ -212,7 +221,12 @@ where they are, not slogans about where they should be.
   other domains, and return to what the pattern helps a person see or choose.
 - **Evidence** - Build confidence through convergence. Pair personal experience
   with two or more independent frames when useful, but do not treat a familiar
-  story or named theory as proof by itself.
+  story or named theory as proof by itself. Each additional frame must test or
+  sharpen a distinction rather than repeat the same mapping in new nouns.
+- **Inherited phrases and triads** - When a familiar sequence supplies the
+  opening, test whether its original order expresses salience, dramatic timing,
+  or actual dependency. Reorder it only when the new order exposes a mechanism,
+  and explain what the change reveals rather than presenting wordplay as proof.
 - **Language** - Define Search, Drive, and Renew and their relationships
   precisely. Preserve meaningful distinctions such as sequence versus cycle,
   enablement versus identity, and a missing force versus a personal deficiency.
@@ -240,8 +254,9 @@ and its boundary conditions, not from sounding certain.
   when the system is designed around it.
 - **Evidence** - Combine implementation detail, an actual system or incident, and
   lived engineering judgment. Include enough technical detail for the reader to
-  challenge the claim. Name the weakest case and the cost of the preferred
-  design.
+  challenge the claim. Name the weakest case, the cost of the preferred design,
+  and prerequisites such as observability, production access, team size, or
+  existing tooling that bound where the recommendation applies.
 - **Language** - Prefer scope and mechanism over verdicts: boundary, invariant,
   guardrail, seam, blast radius, affected cohort, fidelity, and tradeoff. Test
   apparent opposites for orthogonal dimensions before presenting a compromise.
@@ -249,6 +264,10 @@ and its boundary conditions, not from sounding certain.
   signals from the system. Critique choices without flattening the people who
   made them; acknowledge why the old design was reasonable under its original
   constraints.
+- **Systems containing agents** - Name what the agent may explore or generate,
+  what deterministic validation gates its output, and where human judgment
+  remains. Stochastic execution does not make the surrounding system exempt
+  from explicit invariants or ownership.
 - **Closing** - Restate the design principle at system scale and show what it
   makes possible. Prefer a durable reframing over a checklist of commands.
 - **Avoid** - Moralizing technical choices, vague quality labels, unexplained
@@ -266,7 +285,9 @@ like a field-tested account of changed work, not a product announcement.
   what changed, what failed, and which conclusions survived the experiment.
 - **Evidence** - Use concrete artifacts such as commits, pull requests, commands,
   elapsed time, session counts, validation results, or before-and-after workflow
-  steps. Distinguish a demonstration from a durable capability claim.
+  steps. Include failed trials when they explain why the surviving workflow
+  earned confidence. Distinguish a demonstration from a durable capability
+  claim, and calibrate the claim to the number and variety of runs behind it.
 - **Language** - Say agent when autonomy is the relevant property and name the
   model or vendor only when it affects the result. Use context, validation loop,
   scaffolding, execution, friction, and tradeoff precisely. Distinguish
@@ -276,7 +297,9 @@ like a field-tested account of changed work, not a product announcement.
   claim. Separate confidence in the direction from uncertainty about timing.
 - **Closing** - Name the higher-level workflow change, what remains uncertain,
   and what evidence would change the conclusion. Let the account remain revisable
-  as the tools change.
+  as the tools change. Express that boundary in language specific to the
+  experiment rather than repeatedly closing with the same
+  confidence-versus-timing formula.
 - **Avoid** - Vendor excitement as evidence, anthropomorphizing the tool into a
   coauthorial "we," universal claims from one successful run, or benchmark detail
   disconnected from actual work.
@@ -294,7 +317,9 @@ authority are visible.
   the limits of the analogy intact.
 - **Evidence** - Use observed behavior, operating conditions, and visible
   artifacts (a map, team name, decision boundary, or work product). Explain who
-  knew what, who could act, and where information or ownership stalled.
+  knew what, who could act, and where information or ownership stalled. Name
+  the central failure mode or distinction precisely before transferring it to
+  another domain.
 - **Language** - Prefer agency, local information, distributed authority,
   ownership, belonging, shared understanding, and visible surface. Replace broad
   management terms with the exact outcome, accomplishment, decision, or failure
@@ -302,6 +327,10 @@ authority are visible.
 - **Posture** - Diagnose the arrangement before evaluating the person. Make clear
   that autonomy needs intent and boundaries, identity must be adopted rather than
   imposed, and central control can fail even with a capable leader.
+- **Personal stake** - When glue work, incentives, or reward structures shape
+  the observation, state the author's position and cost in the system. Use that
+  disclosure as evidence for the diagnosis, not as a claim that one experience
+  represents every team.
 - **Closing** - Return to the opening scene and state the operating principle in
   memorable language. Advice must identify the conditions in which it applies
   and who needs authority to act.
@@ -324,7 +353,10 @@ evaluating a tool, or recommending a team practice.
   the sequence intact even when a thesis-first arrangement would sound cleaner.
 - **Evidence** - Use artifacts and period details to distinguish what the author
   knew then from what he knows now. Personal experience establishes the record;
-  it does not automatically prove a universal rule.
+  it does not automatically prove a universal rule. Structured examples belong
+  when they document what happened; if they leave the reader with a procedure
+  to copy rather than a clearer record to understand, they have turned the note
+  into instruction.
 - **Language** - Favor sensory and temporal specificity over retrospective
   polish: what was used, noticed, missed, kept, abandoned, or misunderstood.
   Technical language is welcome when grounded in the object or event being
