@@ -116,20 +116,37 @@
 
 ### Voice Guidance: Common Authorial Voice
 
-**DECIDED**: Use the posts published before 2015 as the primary voice reference,
-especially `palm-sony-android-iphone-blackberry.md` (2009) and
-`apple-swift-apps-everywhere-prediction.md` (2014). Preserve their historical
-wording rather than rewriting them to match newer conventions.
+**DECIDED**: Use the complete pre-2021 corpus as the historical voice reference.
+The eight posts cover personal chronicles, predictions, product retrospectives,
+an origin story, a learning journey, and two portfolios. Within that corpus,
+`palm-sony-android-iphone-blackberry.md` (2009) and
+`apple-swift-apps-everywhere-prediction.md` (2014) remain the clearest references
+for the author's unfiltered voice. The later posts show how that voice adapts to
+different forms.
+
+Preserve the historical wording of old posts rather than rebuilding them around
+newer conventions. Correct factual errors, broken links, and clear typos in place.
+When later knowledge changes the interpretation, prefer a dated editor's note or
+a linked retrospective over silently making the old prediction sound wiser.
 
 - **Begin with something noticed or lived** - Open on a moment, object, problem,
   or reaction that actually prompted the idea. Do not begin with an abstract
   summary of what the post will cover.
+- **Choose an opening that fits the evidence** - Valid openings include a physical
+  moment ("I picked up my iPad"), a reaction to news ("Swift was released last
+  week"), a statement of personal position ("I am a nontraditional software
+  developer"), or a retrospective observation ("Looking back across a decade").
+  The requirement is concrete footing, not a repeated "I noticed" formula.
 - **Use first person when it carries evidence** - "I remember," "I noticed," and
   "I think" should introduce direct experience or honest judgment, not decorate a
   generic explanation.
 - **Keep specific details** - Names, dates, prices, tools, failed attempts, and
   surprising preferences make the voice recognizable. Do not sand those details
   into generic professional prose.
+- **Keep friction and limits in the story** - The author regularly admits what did
+  not click, what felt intimidating, what could not be made to work, and what a
+  purchase failed to replace. These are evidence for the conclusion, not
+  weaknesses to edit away.
 - **Move from concrete to abstract** - Tell the story or show the example first,
   then extract the principle, then explain where else it applies.
 - **Be opinionated without pretending certainty** - State conclusions directly,
@@ -148,6 +165,31 @@ wording rather than rewriting them to match newer conventions.
 **Review test**: A reader should be able to answer four questions after a post:
 What did the author notice? What specific experience supports it? What principle
 did the author extract? Why does it matter now?
+
+### Voice Guidance: Accommodating Newer Posts
+
+Posts from 2021 onward extend the historical voice without replacing it. Preserve
+these useful additions:
+
+- **Treat AI agents as tools in the lived environment** - When agent collaboration
+  is part of the work, describe it as ordinary practice with concrete settings,
+  constraints, failures, and results. Keep the authorial perspective singular.
+  The agent does not become a "we," and tool output does not replace the author's
+  judgment.
+- **Use structure to clarify mechanisms** - Engineering and framework posts may
+  use compact tables, matrices, or lists for genuine comparisons. Introduce the
+  reason for the structure in prose and interpret what it shows afterward.
+- **Let headings name conceptual movement** - A newer post may move by problem,
+  mechanism, application, and consequence rather than by chronology. Headings
+  should mark those real turns instead of merely labeling topics.
+- **Link ideas where they do work** - Cross-links may appear inside the argument,
+  not only in the closing reflection. Use them to supply a prerequisite, extend a
+  claim, or show a change of mind (not as promotional decoration).
+- **State the boundary of current evidence** - Newer experiment logs often close
+  with what remains uncertain or what evidence could change the conclusion. This
+  is the contemporary form of being opinionated without pretending certainty.
+- **Use visual accents rarely** - Emoji may reinforce a specific metaphor or
+  moment, but should not decorate headings or substitute for precise language.
 
 ### Editorial Tracks: Stable Voices by Post Type
 
@@ -183,30 +225,55 @@ also use `extra.series = "quest-engine"`. The reading-order number is derived
 automatically from post dates at build time (oldest post is 1), so it is never
 stored per post — add the post with the correct `date` and its position follows.
 
-**Content-type exceptions**: Portfolio pages, reference guides, historical
-artifacts, source lists, and appendices may use more headings, tables, or lists
-than narrative posts. Do not force the Quest Arc onto reference material. Keep
-the narrative introduction and conclusion in the common voice, and use the
-structure that makes the reference content easiest to navigate.
+**Content-type exceptions**: Portfolio pages, reference guides, tutorials,
+historical artifacts, source lists, and appendices may use more headings, tables,
+or lists than narrative posts. Do not force the Quest Arc onto reference
+material. Portfolio introductions may be short and structural rather than
+first-person, and portfolios and tutorials do not require an italicized closing
+reflection. They still need specific language, meaningful context, and an
+organizing point of view. Historical chronicles may use one heading per era;
+short predictions and opinion pieces may need no headings at all.
 
 ### Blog Post Meta-Structure: The Quest Arc (Exploration → Execution → Reflection)
 
-**DECIDED**: Every narrative blog post should be built on a single Quest-Engine backbone so it reads like a quest, not a pile of notes. Before writing (or revising) a post, name the quest: what is the angle, what question is being chased, and what is the "why" the reader should leave with. Then carry that one thread from the first line to the last.
+**DECIDED**: Use the Quest Arc as the default backbone for reflective narrative
+posts, not as a template imposed on every form. Before writing (or revising) a
+narrative post, name the quest: what is the angle, what question is being chased,
+and what is the "why" the reader should leave with. Then carry that one thread
+from the first line to the last. Predictions may instead move from signal to
+evidence to speculation, tutorials from obstacle to turning point to method, and
+reference material by the structure readers need to retrieve information.
 
 The backbone has three phases, which map directly to the [Quest Engine](/blog/quest-engine-introduction/) cycle (Search/Mastery = before, Drive/Autonomy = during, Renew/Purpose = after):
 
 1. **Exploration (Searching, the "before")** — Open with a real, personal observation or a noticed pattern, and name the question it raises. This sets up the quest and pulls the reader into Searching mode. Do not lead with the thesis; lead with what you noticed.
-2. **Execution (Driven, the "during")** — Develop the idea across 3-4 h2 sections. Move from concrete example to abstracted principle to application. Each h2 develops one component of the thesis. This is where the mechanism or definition gets pinned down.
-3. **Reflection (Renew, the "after")** — Close by looking back and answering the "why." End with an italicized reflection paragraph that (a) points backward to the synthesis, (b) points outward to related posts (cross-links), and (c) points upward to why it matters. This is a near-universal convention across existing posts and should be preserved.
+2. **Execution (Driven, the "during")** — Develop the idea across 3-4 h2 sections
+   when that division fits. Move from concrete example to abstracted principle to
+   application. Each h2 develops one component of the thesis. This is where the
+   mechanism or definition gets pinned down.
+3. **Reflection (Renew, the "after")** — Close by looking back and answering the
+   "why." For contemporary narrative posts, prefer an italicized reflection that
+   points backward to the synthesis, outward to related posts, and upward to why
+   it matters. Do not retrofit this ending onto preserved historical posts,
+   portfolios, tutorials, or reference material.
 
 **Why this matters**: A post without this backbone feels incoherent even when each paragraph is fine (the reader receives no single message). The point of the quest arc is coherence: one thread the reader can follow, ending in a takeaway that answers the "why."
 
-**Observed invariants across existing posts** (verified by analyzing the current blog corpus; use these as a checklist when writing or reviewing a post):
-- **Opening observation**: present in essentially every post ("I have been watching...", "The first time I really tasted...", "I've started replacing...").
-- **Italicized closing reflection**: present in nearly every post; it always cross-links to related posts and states the takeaway.
-- **3-4 h2 sections** organizing the execution phase (see the section-break guidance above).
-- **Quest Engine mapping**: implicit or explicit, but always present — each post is itself a small search → drive → renew loop.
-- **Concrete-before-abstract**: lead with the lived example, then generalize, then connect to the broader idea web.
+**Observed defaults across narrative posts** (use these as a checklist, then test
+whether the post's form calls for an exception):
+
+- **Concrete opening**: begin with an observation, scene, artifact, reaction, or
+  personal position.
+- **Earned closing**: synthesize what changed and why it matters. Contemporary
+  narratives usually use an italicized, cross-linked reflection; older and
+  instructional posts use several valid alternatives.
+- **3-4 h2 sections when useful**: use them for major turns. A historical
+  chronicle may need more, while a compact prediction may need none.
+- **Quest movement when the post is a quest**: reflective narratives usually move
+  through search, action, and renewed understanding. Do not claim that portfolios,
+  predictions, or reference pieces secretly follow that arc.
+- **Concrete before abstract**: lead with lived evidence, then generalize, then
+  connect to the broader idea web.
 
 **For agent authors and reviewers**: When drafting or revising a post, check that all three phases are present and that a single "why" runs through them. If a draft is "a collection of individuals who happen to wear the same shirt" (paragraphs with no shared thread), the fix is to name the quest and re-cohere the post around it, not to add more sections.
 
