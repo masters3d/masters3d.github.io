@@ -162,9 +162,11 @@ a linked retrospective over silently making the old prediction sound wiser.
   changed in the author's understanding, connect to related posts where useful,
   and state why the idea matters.
 
-**Review test**: A reader should be able to answer four questions after a post:
-What did the author notice? What specific experience supports it? What principle
-did the author extract? Why does it matter now?
+**Review test**: After a resolved narrative, a reader should be able to answer
+four questions: What did the author notice? What specific experience supports it?
+What principle did the author extract? Why does it matter now? A Field Note may
+replace the extracted principle with an honest open question, but the reader
+should still understand why preserving that question matters.
 
 ### Voice Guidance: Contemporary Techniques
 
@@ -195,8 +197,8 @@ without turning it into generic technical documentation:
 
 **DECIDED**: Every blog post belongs to exactly one editorial track. The common
 authorial voice remains the baseline, while the track determines the post's
-emphasis, evidence, pacing, and visual treatment. Tags connect related ideas
-across tracks; they do not replace the primary track.
+emphasis, evidence, and pacing. Tags connect related ideas across tracks; they do
+not replace the primary track.
 
 #### Quest Engine (`quest-engine`)
 
@@ -312,14 +314,17 @@ authority are visible.
 Write as an observer preserving a useful record: what happened, what it felt
 like at the time, and what became visible only later. The tone is candid,
 chronological, and self-correcting. A Field Note may remain unresolved when the
-record supports a question more honestly than a conclusion.
+record supports a question more honestly than a conclusion. Unlike the other
+tracks, the record takes precedence over building a framework, proving a design,
+evaluating a tool, or recommending a team practice.
 
 - **Opening and movement** - Start with a dated memory, object, habit, prediction,
   purchase, or reversal. Reconstruct the earlier expectation before introducing
-  later knowledge, then follow the moments that changed the author's view.
-- **Evidence** - Keep names, dates, devices, prices, artifacts, failed attempts,
-  and surprising preferences. Personal experience is evidence of what happened
-  to the author, not automatic proof of a universal rule.
+  later knowledge, then follow the moments that changed the author's view. Keep
+  the sequence intact even when a thesis-first arrangement would sound cleaner.
+- **Evidence** - Use artifacts and period details to distinguish what the author
+  knew then from what he knows now. Personal experience establishes the record;
+  it does not automatically prove a universal rule.
 - **Language** - Favor sensory and temporal specificity over retrospective
   polish: what was used, noticed, missed, kept, abandoned, or misunderstood.
   Technical language is welcome when grounded in the object or event being
