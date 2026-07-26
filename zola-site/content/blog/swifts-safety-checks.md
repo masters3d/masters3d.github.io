@@ -43,6 +43,24 @@ out-of-bounds access with undefined behavior. Both languages can fail, and both
 can call native code that violates their usual boundaries. The distinction is
 what their normal language semantics permit.
 
+That last boundary makes the label less absolute than it first sounds. CPython
+itself is implemented largely in C, and many of Python's most important
+libraries wrap performance-critical C or C++ code. The Python expression calling
+one of those libraries remains constrained by Python's semantics, but the native
+implementation underneath can still contain a buffer overflow, use after free,
+or incorrect reference count. A defect there can corrupt the interpreter rather
+than becoming a clean Python exception.
+
+So I need to ask what layer a safety claim describes. Python-the-language
+protects ordinary Python operations, but a Python process is only as
+memory-safe as its interpreter and every native extension loaded into it.
+Crossing that extension boundary does not make Python's language rules false.
+It means those rules cannot prove the safety of code they do not govern. The
+same qualification applies when Swift calls C or C++, or when Rust crosses an
+`unsafe` or foreign-function boundary. Safe code can narrow and audit those
+boundaries, but it cannot make an unchecked dependency safe merely by wrapping
+it in a safer interface.
+
 Safety can also be enforced at different times. Python places most of that work
 in its runtime. Rust moves far more of it into compile-time ownership,
 borrowing, and lifetime checks, rejecting many invalid programs before they run.
