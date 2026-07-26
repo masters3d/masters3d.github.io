@@ -67,6 +67,8 @@ feed_limit = 0
 # though the specific references remain valid in a browser; skip only those URLs.
 # red3d.com intermittently times out in automated link checks; skip only the cited
 # Boids paper page rather than the entire domain.
+# The IEA Energy and AI executive summary also returns 403 to automated checkers;
+# skip only that reference rather than disabling checks for the full domain.
 skip_prefixes = [
     "https://xcancel.com/",
     "https://learning.oreilly.com/",
@@ -82,6 +84,7 @@ skip_prefixes = [
     "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html",
     "https://www.simonandschuster.com/books/Solve-for-Happy/Mo-Gawdat/9781501157585",
     "https://www.red3d.com/cwr/papers/1987/boids.html",
+    "https://www.iea.org/reports/energy-and-ai/executive-summary",
 ]
 # skip_anchor_prefixes: add URL prefixes here to skip anchor checking for specific domains
 # Note: zola check always validates external links — this is intentional.

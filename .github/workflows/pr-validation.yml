@@ -71,11 +71,14 @@ jobs:
           fi
           echo "✓ Blog RSS feed contains $ENTRY_COUNT entries"
 
-          # Validate the feed outputs EVERY blog post (no truncation / feed_limit
-          # silently dropping posts). The atom.xml template iterates the pages and
-          # caps them at config.extra.feed_limit when that is set to a positive
-          # value, so the expected entry count is min(post_count, feed_limit).
-          POST_COUNT=$(find content/blog -name "*.md" -not -name "_index.md" -type f | wc -l)
+          # Validate the feed outputs EVERY published blog post (no truncation /
+          # feed_limit silently dropping posts). Zola excludes drafts from feeds,
+          # so exclude files with draft = true from the expected count. The
+          # atom.xml template caps pages at config.extra.feed_limit when that is
+          # set to a positive value, so the expected entry count is
+          # min(post_count, feed_limit).
+          POST_COUNT=$(find content/blog -name "*.md" -not -name "_index.md" -type f \
+            -exec grep -L -E '^draft[[:space:]]*=[[:space:]]*true([[:space:]]*)$' {} + | wc -l)
           FEED_LIMIT=$(grep -E '^feed_limit[[:space:]]*=' config.toml | grep -oE '[0-9]+' | head -1)
           FEED_LIMIT=${FEED_LIMIT:-0}
           if [ "$FEED_LIMIT" -gt "0" ] && [ "$FEED_LIMIT" -lt "$POST_COUNT" ]; then
