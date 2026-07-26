@@ -141,11 +141,11 @@ The biggest recent development has been Opus 4.6 Fast mode (I like to call it
 "Ludicrous mode"), which came out on February 7, 2026. It's like having Opus
 4.5's thinking power at Haiku's speed. My less than 24 hours of experience with
 it has been great so far. I can iterate much faster, which could be especially
-helpful when running multiple sessions across different repos. The model is 3X
-the cost of regular Opus, so I'm still doing cost evaluation in the face of long
-running sessions which are driven by a plan. Something I need to take a look at
-is maybe using fast mode for the planning phase before switching to the regular
-model for actual implementation. The speed boost is undeniable though.
+helpful when running multiple sessions across different repos. I'm still
+evaluating it in the face of long-running sessions which are driven by a plan.
+Something I need to take a look at is maybe using fast mode for the planning
+phase before switching to the regular model for actual implementation. The speed
+boost is undeniable though.
 
 ## The Human Element
 

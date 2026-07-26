@@ -72,9 +72,8 @@ NVIDIA was selling a working system, not an isolated component.
 The financial scale shows how quickly that system became infrastructure. For its
 fiscal 2026, NVIDIA
 [reported $215.9 billion in annual revenue](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026).
-Its fourth-quarter data center revenue alone was $62.3 billion. Those numbers
-are not just a story about chip sales. They show where the industry is spending
-to create the next layer of computing.
+That number is not just a story about chip sales. It shows where the industry is
+spending to create the next layer of computing.
 
 Apple's integration is optimized around a person carrying or wearing a device.
 NVIDIA's integration is optimized around racks of accelerators behaving like one
