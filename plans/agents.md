@@ -166,7 +166,9 @@ a linked retrospective over silently making the old prediction sound wiser.
   corpus. Name the actual relationship instead: something may have stayed with
   the author, recurred in several examples, survived testing, connected two
   ideas, or changed the conclusion. Do not mechanically rotate synonyms; make
-  the sentence say which of those things happened.
+  the sentence say which of those things happened. Also check for substantial
+  overlap in the argument itself: revise or extend the existing post instead of
+  publishing a second post that differs mainly in title or framing.
 - **End with earned reflection** - Return to the opening observation, say what
   changed in the author's understanding, connect to related posts where useful,
   and state why the idea matters.
