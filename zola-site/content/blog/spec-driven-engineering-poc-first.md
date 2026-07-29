@@ -1,15 +1,16 @@
 +++
-title = "Spec-Driven Engineering Gets the Order Backwards"
+title = "Verification-Driven Development: Let Proofs of Concept Write the Spec"
 date = "2026-07-29"
-description = "Spec-driven development promises that a fully written design ahead of time will let an agent execute autonomously. I tried it and it backfired: an over-specified spec removes the room an agent needs to try different approaches. Working proofs of concept, built first and compared against each other, are what the spec should come from, not the other way around."
+description = "Spec-driven development is a vague enough term that it can mean anything from a paragraph of intent to a fully waterfalled design. I tried the fully-specified version and it backfired: it left no room for an autonomous agent to explore alternatives. What worked instead was naming the actual sequence. Build multiple proofs of concept, verify each one against something real, and only then write the design document, informed by what the proofs of concept actually showed."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
 tags = [
   "agents",
-  "spec-driven-development",
+  "verification-driven-development",
   "autonomous-agents",
   "proof-of-concept",
+  "definition-of-done",
   "workflow",
   "waterfall",
 ]
