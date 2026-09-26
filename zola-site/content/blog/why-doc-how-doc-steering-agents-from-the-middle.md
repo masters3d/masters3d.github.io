@@ -105,7 +105,7 @@ a software engineer, working from the code inward, are writing toward the same
 overlap from opposite directions. The person steering the agent is the one
 standing in the middle of that Venn diagram, and the two documents are what keep
 that middle position from collapsing into "outward alignment with no technical
-teeth" or "technical precision nobody upstream can evaluate."
+substance" or "technical precision nobody upstream can evaluate."
 
 ---
 
