@@ -69,6 +69,8 @@ feed_limit = 0
 # Boids paper page rather than the entire domain.
 # The IEA Energy and AI executive summary also returns 403 to automated checkers;
 # skip only that reference rather than disabling checks for the full domain.
+# osha.gov (OSHA) also bot-protects its eTools pages and returns 403 to automated
+# checkers even though the link is valid in a browser; skip only that page.
 skip_prefixes = [
     "https://xcancel.com/",
     "https://learning.oreilly.com/",
@@ -85,6 +87,7 @@ skip_prefixes = [
     "https://www.simonandschuster.com/books/Solve-for-Happy/Mo-Gawdat/9781501157585",
     "https://www.red3d.com/cwr/papers/1987/boids.html",
     "https://www.iea.org/reports/energy-and-ai/executive-summary",
+    "https://www.osha.gov/etools/computer-workstations/positions",
 ]
 # skip_anchor_prefixes: add URL prefixes here to skip anchor checking for specific domains
 # Note: zola check always validates external links — this is intentional.
