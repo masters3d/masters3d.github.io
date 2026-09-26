@@ -118,13 +118,13 @@ what it is.
 If there is one piece of this I would put above all the others, it is this: the
 proof of concept is only as good as what you can verify it against. A proof of
 concept that "looks right" is not much better than a spec that "sounds right,"
-they are the same unverified confidence wearing different clothes. What makes
-the proof of concept trustworthy is a strong, specific verification sequence the
-agent can run against itself: real data where you have it, real use cases where
-you do not, and a definition of done that is a check, not a description. "Send a
-message and receive it back through this import path" is a definition of done.
-"Implement a robust pop-up service" is not, no matter how carefully you specify
-robust.
+they are the same unverified confidence, just under a different label. What
+makes the proof of concept trustworthy is a strong, specific verification
+sequence the agent can run against itself: real data where you have it, real use
+cases where you do not, and a definition of done that is a check, not a
+description. "Send a message and receive it back through this import path" is a
+definition of done. "Implement a robust pop-up service" is not, no matter how
+carefully you specify robust.
 
 Get the verification step solid first, before worrying about how tight the spec
 should be. Once an agent can check its own work against something real, the
@@ -185,4 +185,10 @@ different lifetimes. The local, self-checking verification loop described here
 rests on the same rails discussed in
 [Fearless Engineering](/blog/fearless-engineering/): confidence to let an agent
 run unattended comes from the guardrails around it, not from a tightly specified
-plan._
+plan. It also maps onto the three forces in
+[Quest Engine: The Why Behind the How](/blog/quest-engine-the-why/): spinning up
+several proofs of concept is Searching (finding out what "better" looks like
+before committing to it), the autonomous run inside a verifiable boundary is
+Driven (real ownership over how the goal gets reached), and the verification
+step itself is Renewal, the periodic check that what shipped still matches what
+was actually meant._
