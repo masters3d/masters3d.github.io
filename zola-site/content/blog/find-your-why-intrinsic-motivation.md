@@ -39,6 +39,24 @@ pressure fills the gap. The value of naming them is diagnostic. When you feel
 flat about something you used to care about, you can ask which of the three has
 gone quiet instead of just concluding you are lazy or burned out.
 
+> **How these three connect to the objective function**
+>
+> An objective function is just the answer to "what counts as better here?" Your
+> intrinsic motivation is your personal version of that answer, and the three
+> forces are the three jobs it has to do.
+>
+> | **Force**    | **Its job in the objective function** | **Question it answers**      |
+> | ------------ | ------------------------------------- | ---------------------------- |
+> | **Mastery**  | Sets the target                       | Better at what, exactly?     |
+> | **Autonomy** | Gives you the lever                   | Which part of it can I move? |
+> | **Purpose**  | Keeps the target honest               | Is it still worth moving?    |
+>
+> Motivation is high when your answer and the work's answer overlap. It drains
+> when they drift apart, which is why the fix is almost never more effort. The
+> framework version of this is in
+> [Quest Engine: The Why](/blog/quest-engine-the-why/), where the same three
+> show up as Searching, being Driven, and Renewal.
+
 ## Mastery: The Pull to Get Better
 
 Mastery is the pull to get better at something that matters to you. It is
