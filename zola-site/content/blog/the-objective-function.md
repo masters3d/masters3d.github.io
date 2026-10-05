@@ -37,8 +37,8 @@ This is that page, and it is the first of
 [Contextual Core of Who, What, When, and Where](/blog/the-four-ws/), then
 [How](/blog/quest-engine-introduction/). Four things to settle: what an
 objective function actually is, what the general human one is, why it is better
-called a *directive* than a question, and why that directive comes in two
-nested forms, one personal and one structural.
+called a _directive_ than a question, and why that directive comes in two nested
+forms, one personal and one structural.
 
 ## What an Objective Function Is
 
@@ -290,11 +290,11 @@ thereafter, for the same reason every other shift-left is.
 Here is the stack in one table. Each row is one question, and the columns are
 the same structure described from different distances.
 
-| **Question**                    | **Force** | **Human motivation** | **Felt as** | **Its job**                               |
-| ------------------------------- | --------- | -------------------- | ----------- | ----------------------------------------- |
-| **Why**                         | Renew     | Purpose              | Joy         | Issues the directive; audits it afterwards |
-| **Who / What / When / Where**   | Search    | Mastery              | Explore     | Locates you against the directive          |
-| **How**                         | Drive     | Autonomy             | Play        | Executes, and produces the evidence        |
+| **Question**                  | **Force** | **Human motivation** | **Felt as** | **Its job**                                |
+| ----------------------------- | --------- | -------------------- | ----------- | ------------------------------------------ |
+| **Why**                       | Renew     | Purpose              | Joy         | Issues the directive; audits it afterwards |
+| **Who / What / When / Where** | Search    | Mastery              | Explore     | Locates you against the directive          |
+| **How**                       | Drive     | Autonomy             | Play        | Executes, and produces the evidence        |
 
 Read the columns and every triad in the series lines up: Search/Drive/Renew,
 Mastery/Autonomy/Purpose, Explore/Play/Joy, and now the question words. They are

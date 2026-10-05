@@ -56,10 +56,10 @@ by deciding wrong first.
 
 The other reason to split them out is that **they are the part you can actually
 delegate.** An agent cannot issue your directive and should not be unsupervised
-on consequential execution, but crawling a codebase to find every caller, pulling
-the calendar constraints, mapping which services a change touches, and listing
-who has opinions is exactly the work agents are good at. If the four Ws stay
-buried inside the How, that leverage is invisible. Pulled out, they are a
+on consequential execution, but crawling a codebase to find every caller,
+pulling the calendar constraints, mapping which services a change touches, and
+listing who has opinions is exactly the work agents are good at. If the four Ws
+stay buried inside the How, that leverage is invisible. Pulled out, they are a
 well-defined, highly delegable step with a clear completion condition.
 
 ## The Four Questions
@@ -71,22 +71,23 @@ kinds of being lost.
 **Who — who is this for, and who else has a stake?** The question covers users,
 the people who maintain it afterwards, whoever has veto power, and whoever gets
 surprised if it changes. The completion test is that you can name them, not
-describe them in the abstract ("the users" is not an answer). The failure mode is
-building for an imagined person: technically sound work that nobody specific ever
-asked for, discovered at the review where someone real finally reads it.
+describe them in the abstract ("the users" is not an answer). The failure mode
+is building for an imagined person: technically sound work that nobody specific
+ever asked for, discovered at the review where someone real finally reads it.
 
 **What — what exactly is the thing, and what is explicitly not it?** The
 boundary matters more than the description. Most "what" answers are too vague to
-disprove, and a scope that cannot be disproved cannot be finished. The completion
-test is that you can state what is out of scope and have someone disagree with
-you. The failure mode is scope that quietly grows because it was never fenced,
-which reads as slowness and is actually ambiguity.
+disprove, and a scope that cannot be disproved cannot be finished. The
+completion test is that you can state what is out of scope and have someone
+disagree with you. The failure mode is scope that quietly grows because it was
+never fenced, which reads as slowness and is actually ambiguity.
 
 **When — what is the actual timing, and what does it depend on?** Not only the
-deadline but the ordering: what has to exist first, what is waiting on this, what
-window closes if you miss it. The completion test is knowing what breaks if this
-lands a month late, specifically. The failure mode is correct work delivered into
-a moment that has already passed, which is the most demoralizing way to be right.
+deadline but the ordering: what has to exist first, what is waiting on this,
+what window closes if you miss it. The completion test is knowing what breaks if
+this lands a month late, specifically. The failure mode is correct work
+delivered into a moment that has already passed, which is the most demoralizing
+way to be right.
 ([Timing is its own subject.](/blog/quest-engine-timing-momentum-resonance/))
 
 **Where — where does this live, and what does it touch?** The system, the
@@ -123,10 +124,10 @@ read everything. When more information would not change the ranking.
 ## Then, and Only Then, How
 
 With the directive answered and the four Ws located, How becomes a much smaller
-and much better-posed problem. Most of what makes execution hard is not technical
-difficulty; it is executing against unknowns that were knowable. A How step that
-begins after the locating step is finished is mostly craft, which is the part
-that is actually enjoyable and the part agents can help with most.
+and much better-posed problem. Most of what makes execution hard is not
+technical difficulty; it is executing against unknowns that were knowable. A How
+step that begins after the locating step is finished is mostly craft, which is
+the part that is actually enjoyable and the part agents can help with most.
 
 This is a [shift-left](/blog/shift-left-synthetic-environments/) move in the
 plainest sense: the cost of a wrong answer rises the further right you find it.
@@ -135,10 +136,10 @@ during the How. The order **Why → Who/What/When/Where → How** is not ceremon
 It is paying for information at the point where it is cheapest.
 
 Then the cycle closes: you execute, the execution produces evidence, and the
-evidence is what the directive gets audited against before the next cycle starts.
-How the three steps fold back into each other, and why the labels for "before"
-and "after" move around depending on which step you are standing in, is the
-subject of [the meta post](/blog/the-meta-structure/).
+evidence is what the directive gets audited against before the next cycle
+starts. How the three steps fold back into each other, and why the labels for
+"before" and "after" move around depending on which step you are standing in, is
+the subject of [the meta post](/blog/the-meta-structure/).
 
 ---
 

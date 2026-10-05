@@ -227,6 +227,11 @@ waiting to stumble back into it.
 | Motivation (the pull)      | All three              | All three        | The whole loop |
 | Motivation (the objective) | The objective function | —                | Above the loop |
 
+The timing column is relative to the act being considered, not a fixed property
+of each force; if you zoom in on any one row, that row becomes the current act
+and grows its own before and after
+([why the labels move](/blog/the-meta-structure/)).
+
 Read down the table and the claim from the video survives the translation mostly
 intact. The language gives you Drive-level freedom and Play-level joy while you
 work, Search-level discovery when it shows you something new, and Renew-level

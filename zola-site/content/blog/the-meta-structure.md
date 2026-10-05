@@ -44,10 +44,10 @@ execution hard was decided in the two steps above it.
 Then it cycles. The evidence How produced is what the directive gets audited
 against, and the audit issues the next directive.
 
-The ordering is the whole practical payload: **Why → Who/What/When/Where →
-How → Why.** It runs against the default, which is to start at How, because How
-is where the typing is and typing feels like progress. Everything else here is
-an argument for that order, or an explanation of why the order is harder to keep
+The ordering is the whole practical payload: **Why → Who/What/When/Where → How →
+Why.** It runs against the default, which is to start at How, because How is
+where the typing is and typing feels like progress. Everything else here is an
+argument for that order, or an explanation of why the order is harder to keep
 straight than it looks.
 
 ## The First Meta Property: It Is Self-Referencing
@@ -138,27 +138,27 @@ of the confusion:
 **Fixed terms.** These do not move. They mean the same thing at every level and
 from every vantage point.
 
-| Term                        | What it is                                        |
-| --------------------------- | ------------------------------------------------- |
-| Why / Primary Directive     | The rule that ranks; always answered first         |
-| Who, What, When, Where      | The four locating questions; always the middle     |
-| How                         | The execution; always the last step of a cycle     |
-| Search, Drive, Renew        | The three forces, in that order                    |
-| Mastery, Autonomy, Purpose  | The motivations attached to those forces           |
-| Explore, Play, Joy          | The general directive; terminal, same at all levels |
-| The order itself            | Why → four Ws → How → Why                          |
+| Term                       | What it is                                          |
+| -------------------------- | --------------------------------------------------- |
+| Why / Primary Directive    | The rule that ranks; always answered first          |
+| Who, What, When, Where     | The four locating questions; always the middle      |
+| How                        | The execution; always the last step of a cycle      |
+| Search, Drive, Renew       | The three forces, in that order                     |
+| Mastery, Autonomy, Purpose | The motivations attached to those forces            |
+| Explore, Play, Joy         | The general directive; terminal, same at all levels |
+| The order itself           | Why → four Ws → How → Why                           |
 
 **Relative terms.** These are coordinates, not properties. Each one is only
 meaningful once you say which act and which level you are standing in.
 
-| Term               | Relative to what          | What moves it                              |
-| ------------------ | ------------------------- | ------------------------------------------ |
-| Before / during / after | The act under discussion | Changing which act you mean                |
-| Current            | Whatever you are doing now | Starting the next step                      |
-| Above / below      | The level under discussion | Zooming out to a slower cycle, or in        |
-| Faster / slower    | The neighbouring level     | Which two levels you are comparing          |
-| First / last       | One cycle                 | Where you cut the loop (it has no true end) |
-| The why            | Altitude                  | Whether you mean the whole layer or one step |
+| Term                    | Relative to what           | What moves it                                |
+| ----------------------- | -------------------------- | -------------------------------------------- |
+| Before / during / after | The act under discussion   | Changing which act you mean                  |
+| Current                 | Whatever you are doing now | Starting the next step                       |
+| Above / below           | The level under discussion | Zooming out to a slower cycle, or in         |
+| Faster / slower         | The neighbouring level     | Which two levels you are comparing           |
+| First / last            | One cycle                  | Where you cut the loop (it has no true end)  |
+| The why                 | Altitude                   | Whether you mean the whole layer or one step |
 
 That last row deserves its own sentence, because it is the single worst
 ambiguity in this whole series. **"The WHY" sometimes means the entire layer
@@ -200,8 +200,7 @@ loops, and it has the same answer at every scale because the structure repeats.
 
 _This is the overview of the three steps in the
 [Quest Engine framework](https://github.com/masters3d/ingenio/tree/main/pillars):
-[Why](/blog/the-objective-function/),
-[Who/What/When/Where](/blog/the-four-ws/), and
-[How](/blog/quest-engine-introduction/). For the forces underneath the question
-words, see [Quest Engine: The Why](/blog/quest-engine-the-why/) and
+[Why](/blog/the-objective-function/), [Who/What/When/Where](/blog/the-four-ws/),
+and [How](/blog/quest-engine-introduction/). For the forces underneath the
+question words, see [Quest Engine: The Why](/blog/quest-engine-the-why/) and
 [Why Search Maps to Mastery, Not Autonomy](/blog/search-mastery-drive-autonomy-renew-purpose/)._

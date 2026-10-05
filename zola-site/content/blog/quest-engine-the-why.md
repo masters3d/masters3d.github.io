@@ -262,11 +262,14 @@ we even optimizing for the right thing?"
 
 One clarification on the word, because it operates at two altitudes. "The WHY"
 in this post is the whole layer above the loop (all three forces of it). "The
-why" in the narrower sense (the reason this work matters) is just one force
-inside a layer: the renewing, purpose-facing one. In that narrower sense Why
-pairs with How as the driving force, and the searching force in that pair has
-its own name: **What**. That three-way split is unpacked in
-[The Objective Function](/blog/the-objective-function/).
+why" in the narrower sense is one specific step: the
+[Primary Directive](/blog/the-objective-function/), the standing order that
+everything else gets ranked against. In that narrower sense Why does not pair
+with How as a complete set. The searching force in between has four names, not
+one: [Who, What, When, and Where](/blog/the-four-ws/). The full running order is
+Why → Who/What/When/Where → How, and the [meta post](/blog/the-meta-structure/)
+covers why terms like this one shift meaning depending on which level you are
+standing in.
 
 **The three forces work together:**
 
