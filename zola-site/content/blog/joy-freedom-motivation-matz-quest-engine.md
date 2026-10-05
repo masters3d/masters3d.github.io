@@ -139,8 +139,9 @@ trying to produce.
 
 The useful move is to put that objective where the framework already has a slot
 for it. It belongs to the objective function, the layer that
-[defines what success means before you act](/blog/quest-engine-the-why/). Once
-you put it there, the hierarchy sorts itself out:
+[defines what success means before you act](/blog/quest-engine-the-why/) (and
+which now has [a page of its own](/blog/the-primary-directive/)). Once you put
+it there, the hierarchy sorts itself out:
 
 - The **objective** says what you want to exist (a working site, a shipped
   feature, a problem that stops being a problem).
@@ -225,6 +226,11 @@ waiting to stumble back into it.
 | Joy (the Joy part)         | Renew                  | Purpose          | After the act  |
 | Motivation (the pull)      | All three              | All three        | The whole loop |
 | Motivation (the objective) | The objective function | —                | Above the loop |
+
+The timing column is relative to the act being considered, not a fixed property
+of each force; if you zoom in on any one row, that row becomes the current act
+and grows its own before and after
+([why the labels move](/blog/the-meta-structure/)).
 
 Read down the table and the claim from the video survives the translation mostly
 intact. The language gives you Drive-level freedom and Play-level joy while you

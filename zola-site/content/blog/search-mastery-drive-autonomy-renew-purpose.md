@@ -81,6 +81,25 @@ conclude that autonomy is exploration. It is not. It is the thing that, once you
 already know what to look for, lets you go after it (and in going after it,
 teaches you what to look for next).
 
+## Before, During, and After Are Coordinates, Not Labels
+
+One caveat about the timing rule, because it is easy to over-read. "Before,"
+"during," and "after" are positions relative to **the act under discussion**.
+They are not fixed properties that each force carries around.
+
+Hold the act fixed and the order is rigid: for any one act, Search precedes it,
+Drive occupies it, Renew follows it. Move the act and the labels move with it.
+The moment you stop planning and actually sit down to do the searching, the
+search _is_ the current act. It now has its own before (what am I looking for,
+and when is it enough) and its own after (did I find it). The force did not
+change position in the cycle. The frame did.
+
+That is not a flaw in the mapping; it is a consequence of the structure being
+[self-referencing](/blog/the-meta-structure/), where every step contains the
+whole shape again. The practical habit is to always name the frame: not "Search
+comes before," but "Search comes before _this act_." One extra clause, and the
+whole apparent contradiction disappears.
+
 ## The Outside Check
 
 This is not just internal bookkeeping. Self-Determination Theory (the psychology

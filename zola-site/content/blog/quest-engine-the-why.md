@@ -20,6 +20,29 @@ question that sits above this entire cycle: **Why?**
 Why are we acting? What does "better" even mean? Who decides? Search, Drive, and
 Renew are the answer to that question.
 
+That layer has a name in this framework: the **Objective Function**. It is the
+part people find most abstract, so before anything else, here is the plain
+version. (It now has [a post of its own](/blog/the-primary-directive/), which
+covers what the general human objective function is and how the levels nest.)
+
+> **The Objective Function, in one box**
+>
+> An objective function is the thing a system is actually optimizing for. In
+> machine learning it is the score you maximize. In work, it is the answer to
+> "what counts as better here?" Every team has one whether they wrote it down or
+> not, and when nobody writes it down, the team quietly adopts whatever is
+> easiest to measure (tickets closed, hours logged, lines shipped).
+>
+> The Quest Engine's claim is that a person's intrinsic motivation **is** their
+> personal objective function. You do not have one score for the company and a
+> separate feeling called motivation. Motivation is what it feels like from the
+> inside when your own objective function and the work's objective function
+> point in the same direction. Burnout is what it feels like when they do not.
+
+That is the connection this post is really about: **the link between what makes
+you want to do the work and what the work is being optimized toward.** Search,
+Drive, and Renew are the three places that link can hold or break.
+
 ## The Problem with Optimization Without Purpose
 
 Here's a pattern I've seen repeatedly: teams execute flawlessly on the wrong
@@ -61,6 +84,60 @@ These three mirror the operational cycle (Prospective, Actuation,
 Retrospective). Together, they create sustainable motivation. When any one is
 missing, performance degrades. Missing Searching → stagnation. Missing Driven →
 learned helplessness. Missing Renewal → burnout.
+
+Here is the whole link in one table. Read a row left to right: the force, the
+human motivation it is made of, the question it asks of the objective function,
+and what breaks when it goes quiet.
+
+| **Force**     | **Human motivation** | **Question it asks the objective function** | **What it contributes to the score** | **Failure mode when missing** |
+| ------------- | -------------------- | ------------------------------------------- | ------------------------------------ | ----------------------------- |
+| **Searching** | Mastery              | What does "better" look like here?          | Defines the target                   | Stagnation                    |
+| **Driven**    | Autonomy             | What part of this is mine to decide?        | Supplies the power to move toward it | Learned helplessness          |
+| **Renewal**   | Purpose              | Is this still worth optimizing for?         | Corrects the target over time        | Burnout                       |
+
+The mapping is fixed by timing, not by vocabulary: Search and Mastery act
+_before_ you move, Drive and Autonomy act _while_ you move, Renew and Purpose
+act _after_, looking back. (If that ordering is surprising, the long version is
+in
+[Why Search Maps to Mastery, Not Autonomy](/blog/search-mastery-drive-autonomy-renew-purpose/).)
+
+## Motivation Is the Objective Function You Actually Run On
+
+The sentence worth slowing down on is this one: **you are always optimizing
+something, and motivation is the readout.**
+
+An objective function has to be fed by something. On a machine it is a number.
+On a person it is interest. If the work's stated objective and your own
+intrinsic objective disagree, your body reports the disagreement long before
+your calendar does: you procrastinate, you need more caffeine to start, you do
+the work correctly and feel nothing when it ships.
+
+> **Three ways the link breaks**
+>
+> **Wrong target.** The objective is clear, but it is not one you can care
+> about. "Close more tickets" is measurable and motivates nobody. Searching is
+> what repairs this: it goes looking for a definition of "better" that is both
+> true and interesting.
+>
+> **No hands on the lever.** The objective is good and you believe in it, but
+> every decision that would move it belongs to someone else. Being driven is
+> what repairs this: explicit ownership over a real part of the problem.
+>
+> **Stale target.** The objective was right and you had the lever, but the world
+> moved and the goal did not. Renewal is what repairs this: periodic
+> verification that the thing you are optimizing still matters.
+
+Notice that none of the three is fixed by trying harder. Effort applied to the
+wrong target, without a lever, toward a stale goal produces exhaustion, not
+progress. That is why the WHY sits above the HOW: **the HOW makes you faster,
+and the WHY decides whether speed helps.**
+
+The practical form of this is a question you can ask out loud about any task:
+_what would make this interesting to me, and does that overlap with what this
+work is being measured on?_ Where those two overlap is where motivation is free.
+Where they do not, you either renegotiate the objective, renegotiate your
+ownership of it, or accept that you are running on extrinsic fuel and will need
+to refill it from outside, forever.
 
 ## Searching: What Does Better Look Like?
 
@@ -183,6 +260,17 @@ Strategy, Systematic Improvement). But they're optimizing for yesterday's
 definition of success. The WHY sits above the operational cycle and asks: "Are
 we even optimizing for the right thing?"
 
+One clarification on the word, because it operates at two altitudes. "The WHY"
+in this post is the whole layer above the loop (all three forces of it). "The
+why" in the narrower sense is one specific step: the
+[Primary Directive](/blog/the-primary-directive/), the standing order that
+everything else gets ranked against. In that narrower sense Why does not pair
+with How as a complete set. The searching force in between has four names, not
+one: [Who, What, When, and Where](/blog/the-four-ws/). The full running order is
+Why → Who/What/When/Where → How, and the [meta post](/blog/the-meta-structure/)
+covers why terms like this one shift meaning depending on which level you are
+standing in.
+
 **The three forces work together:**
 
 Searching discovers what "better" means in your current context. Not what
@@ -223,6 +311,12 @@ diagnose which force is missing before motivation collapses entirely.**
 
 The WHY isn't abstract philosophy. It's diagnostic. When motivation drops, ask
 which force is missing:
+
+| **What you feel**        | **Force that stopped** | **Motivation that went quiet** | **First move**                                         |
+| ------------------------ | ---------------------- | ------------------------------ | ------------------------------------------------------ |
+| Stuck, stale, bored      | Searching              | Mastery                        | Go find what "better" means now; block time to explore |
+| Micromanaged, helpless   | Driven                 | Autonomy                       | Make ownership boundaries explicit in writing          |
+| Burned out, disconnected | Renewal                | Purpose                        | Re-ask whether this work still serves anything real    |
 
 **If you feel stuck or stagnant:** Searching has stopped. You're executing on
 what you already know instead of actively researching what's next. Fix: Block

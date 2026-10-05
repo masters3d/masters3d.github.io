@@ -17,8 +17,12 @@
 - **Maintain**: Same URL structure, Google Analytics
 
 ### 3. Deployment Strategy
-**DECIDED**: GitHub Actions → gh-pages branch
+**DECIDED**: GitHub Actions → GitHub Pages artifact
 - **Rationale**: GitHub Pages doesn't natively support Zola
+- **How**: `.github/workflows/static.yml` runs `zola build` on push to `master` and publishes
+  `zola-site/public` via `upload-pages-artifact` + `deploy-pages`. There is **no `gh-pages`
+  branch** — the built output is never committed, so you cannot inspect the live site by
+  reading a branch.
 - **Preserve**: masters3d.com custom domain via CNAME
 - **Rollback**: Keep original files in legacy/ folder
 
@@ -497,10 +501,31 @@ masters3d.github.io/
 - **Styling**: Preserve existing CSS, convert to Sass if beneficial
 
 ### GitHub Actions
-- **Trigger**: On push to main branch
-- **Build**: Use official Zola action
-- **Deploy**: To gh-pages branch
+- **Trigger**: On push to `master`
+- **Build**: `zola build` with Zola pinned to a specific version in `static.yml`
+- **Deploy**: Upload `zola-site/public` as a Pages artifact (no `gh-pages` branch)
 - **Preserve**: CNAME file in output
+
+### Verifying What Is Actually Deployed
+
+Agent sandboxes usually cannot reach masters3d.com or masters3d.github.io (DNS is blocked), and
+there is no `gh-pages` branch to read. Pages artifacts also expire, so they are typically
+unavailable for older runs. To check the live site without guessing:
+
+1. **Find the deployed commit**: list runs of `static.yml` on `master` and take the most recent
+   successful one. Its `head_sha` is what is live.
+2. **Reproduce that build exactly**: check the commit out in a worktree and build it with the
+   same Zola version `static.yml` pins. The build is deterministic, so the output matches what
+   was published.
+   ```bash
+   git worktree add /tmp/deployed <head_sha>
+   cd /tmp/deployed/zola-site && zola build
+   ```
+3. **Inspect `public/`** to answer the question (does a URL exist, does a redirect resolve), then
+   `git worktree remove /tmp/deployed --force`.
+
+Never assert that something is or isn't live based on the source tree alone — a declared
+`aliases` entry does not mean a redirect was published.
 
 ## Common Questions & Answers
 
@@ -508,7 +533,7 @@ masters3d.github.io/
 **A**: Zola (Rust-based), decided in Session 1
 
 **Q**: "How are we deploying?"  
-**A**: GitHub Actions building to gh-pages branch
+**A**: GitHub Actions builds the Zola site and publishes it as a GitHub Pages artifact (no gh-pages branch)
 
 **Q**: "What about the custom domain?"  
 **A**: Preserving masters3d.com via CNAME file
@@ -598,6 +623,36 @@ masters3d.github.io/
 4. **Format Markdown**: `python3 scripts/format_markdown.py` (required; runs Prettier + markdownlint, keeps diffs small, does not change rendered output)
 5. **Test locally**: `cd zola-site && zola serve`
 6. **Build**: `zola build` before committing
+
+### Retitling or Renaming Posts - Never Break a Published URL
+
+A post's URL comes from its filename, so renaming the file changes the URL and 404s every
+existing link to it. When you retitle a post, rename the file to match **and** keep the old URL
+alive with `aliases`.
+
+1. **Rename the file** so the slug matches the new title: `git mv old-slug.md new-slug.md`
+2. **Add the old URL to `aliases`** in the frontmatter, listing every slug the post was
+   previously published under:
+   ```toml
+   aliases = ["/blog/old-slug/"]
+   ```
+3. **Put `aliases` at the top level, before any `[...]` table header.** This is the most common
+   mistake. In TOML, every key after a table header belongs to that table, so an `aliases` line
+   placed after `[extra]` parses as `page.extra.aliases`, which Zola does not read. It generates
+   **no** redirect and fails silently — the build still succeeds. Keep `aliases` above
+   `[taxonomies]` and `[extra]`.
+4. **Update internal links** to the new slug across `zola-site/content/`. Do not blanket-`sed`
+   the old slug: that also rewrites the `aliases` value you just added, which must keep pointing
+   at the old URL.
+5. **Verify the redirect was actually generated** after `zola build`:
+   ```bash
+   cat zola-site/public/blog/old-slug/index.html   # expect a meta refresh to the new URL
+   ```
+   If that file does not exist, the alias was not picked up — recheck step 3.
+
+**Auditing for lost URLs**: to prove no live URL was dropped, build the currently-deployed
+commit in a worktree and diff its slug list against the new build. Anything present in the old
+build but missing from the new one is a 404 waiting to happen.
 
 ### Blog Guidelines for Agents
 - **Preserve workflow**: Keep simple file-based posting

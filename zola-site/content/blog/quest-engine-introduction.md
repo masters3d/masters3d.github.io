@@ -30,6 +30,32 @@ compound.
 What's missing isn't more process. What's missing is a coherent operating system
 that makes teams smarter over time. That's what the Quest Engine provides.
 
+## Where This Post Sits: How Is the Action Phase
+
+One orienting note before the mechanics, because this post is one of
+[three steps](/blog/the-meta-structure/) and it is the last of them.
+
+The full order is **Why → Who/What/When/Where → How**.
+[Why is the Primary Directive](/blog/the-primary-directive/), the standing order
+that decides what counts as better.
+[Who, What, When, and Where are the Contextual Core](/blog/the-four-ws/), the
+locating step that tells you where you are standing relative to that directive.
+**How is the action phase**: the driving force, where execution happens and
+where the evidence gets produced that the directive is later audited against.
+
+Everything below is the How. It is deliberately the last step and not the first
+one, which is the opposite of how work usually starts. When the two steps above
+it have been answered, How gets considerably smaller, because most of what makes
+execution hard is executing against unknowns that were knowable. What is left
+when you remove those is craft.
+
+One caution about reading the rest, which the
+[meta post](/blog/the-meta-structure/) covers properly: the How contains the
+whole shape again. It has its own directive (what does "done" mean here), its
+own locating (what does this touch), and its own execution. So the three moves
+below are not a smaller copy of the three steps above by coincidence. They are
+the same structure, one level down.
+
 ## Three Moves: Search, Drive, Renew
 
 The Quest Engine has three action steps that you repeat continuously. Each cycle
