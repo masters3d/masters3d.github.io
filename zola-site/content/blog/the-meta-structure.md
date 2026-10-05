@@ -26,7 +26,7 @@ any one step. It is the post about how to read the other three.
 
 ## The Three Steps
 
-**[Why: the Primary Directive.](/blog/the-objective-function/)** The standing
+**[Why: the Primary Directive.](/blog/the-primary-directive/)** The standing
 order that everything downstream is ranked against. It comes in two nested
 forms: a specific one that is personal and particular to your situation, and a
 general one that is structural and shared (Explore, Play, Joy). Answered first.
@@ -176,7 +176,7 @@ idea, only in the sentence.
 ## How to Read the Other Three
 
 So the series reads like this. Start with
-[the directive](/blog/the-objective-function/), because without it the next step
+[the directive](/blog/the-primary-directive/), because without it the next step
 has no edges. Then [the four Ws](/blog/the-four-ws/), because without them the
 action is executing against knowable unknowns. Then
 [the action](/blog/quest-engine-introduction/), which is smaller and better
@@ -200,7 +200,7 @@ loops, and it has the same answer at every scale because the structure repeats.
 
 _This is the overview of the three steps in the
 [Quest Engine framework](https://github.com/masters3d/ingenio/tree/main/pillars):
-[Why](/blog/the-objective-function/), [Who/What/When/Where](/blog/the-four-ws/),
+[Why](/blog/the-primary-directive/), [Who/What/When/Where](/blog/the-four-ws/),
 and [How](/blog/quest-engine-introduction/). For the forces underneath the
 question words, see [Quest Engine: The Why](/blog/quest-engine-the-why/) and
 [Why Search Maps to Mastery, Not Autonomy](/blog/search-mastery-drive-autonomy-renew-purpose/)._

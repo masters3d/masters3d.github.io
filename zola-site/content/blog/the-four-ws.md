@@ -24,7 +24,7 @@ and the first real artifact is an attempt at a solution. The usual correction is
 "start with why," which is good advice and incomplete, because there is a whole
 step between the directive and the action that neither word covers.
 
-[Why is the Primary Directive](/blog/the-objective-function/). It tells you what
+[Why is the Primary Directive](/blog/the-primary-directive/). It tells you what
 counts as better. [How is the action](/blog/quest-engine-introduction/). It is
 where the work gets done. In between sits the step that tells you **where you
 are standing**, and it has four parts: **Who, What, When, Where.**
@@ -146,7 +146,7 @@ the subject of [the meta post](/blog/the-meta-structure/).
 _The Contextual Core is the Search force of the
 [Quest Engine](/blog/quest-engine-introduction/), expressed as the four question
 words that are not Why. It follows the
-[Primary Directive](/blog/the-objective-function/) and precedes the
+[Primary Directive](/blog/the-primary-directive/) and precedes the
 [action phase](/blog/quest-engine-introduction/). For the underlying pillar, see
 [Contextual Awareness](https://github.com/masters3d/ingenio/tree/main/pillars)
 in the ingenio repository._

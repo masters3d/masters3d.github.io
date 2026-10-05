@@ -3,13 +3,13 @@ title = "The Four Capabilities and the Human Singularity of the Quest Engine"
 date = "2026-07-04"
 description = "Mustafa Suleyman named four capabilities that would make him shut an AI down. They map exactly onto the Quest Engine: one of them (setting its own goals) is the Objective Function, and the other three are Search, Drive, and Renew. The full mapping exposes the one layer the framework leaves to you: staying conscious of your own why while the loop closes on itself."
 template = "blog-post.html"
+aliases = ["/blog/four-shutdown-criteria-and-the-quest-engine/", "/blog/four-capabilities-and-the-quest-engine/"]
 [taxonomies]
 categories = ["Quest Engine"]
 tags = ["quest-engine", "ai-safety", "objective-function", "search-drive-renew", "mastery", "autonomy", "purpose", "agency"]
 [extra]
 editorial_track = "quest-engine"
 series = "quest-engine"
-aliases = ["/blog/four-shutdown-criteria-and-the-quest-engine/", "/blog/four-capabilities-and-the-quest-engine/"]
 +++
 
 Mustafa Suleyman was asked a direct question: is there anything you could see an

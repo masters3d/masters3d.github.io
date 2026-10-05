@@ -36,8 +36,8 @@ One orienting note before the mechanics, because this post is one of
 [three steps](/blog/the-meta-structure/) and it is the last of them.
 
 The full order is **Why → Who/What/When/Where → How**.
-[Why is the Primary Directive](/blog/the-objective-function/), the standing
-order that decides what counts as better.
+[Why is the Primary Directive](/blog/the-primary-directive/), the standing order
+that decides what counts as better.
 [Who, What, When, and Where are the Contextual Core](/blog/the-four-ws/), the
 locating step that tells you where you are standing relative to that directive.
 **How is the action phase**: the driving force, where execution happens and

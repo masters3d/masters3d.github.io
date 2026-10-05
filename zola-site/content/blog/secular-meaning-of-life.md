@@ -181,7 +181,7 @@ rule underneath it (the thing you are actually ranking options against when you
 ask whether something is worth doing). They qualify because they are terminal:
 every "why do you want that?" chain eventually lands on one of the three and
 stops. That argument, and how it nests inside the rest of the framework, is in
-[The Objective Function](/blog/the-objective-function/).
+[The Objective Function](/blog/the-primary-directive/).
 
 **Discovery is Searching:** The pull toward the search for understanding what
 you don't yet know. Not passive learning, but active exploration. The universe

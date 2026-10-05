@@ -3,6 +3,7 @@ title = "The Primary Directive: The Objective Function as Why"
 date = "2026-10-05"
 description = "Why is not a question, it is the Primary Directive, and it stands alone above the other two steps. What it is, why the general human directive is Explore/Play/Joy, how the specific human directive nests inside the general authentic one, and why Why is answered first and audited last."
 template = "blog-post.html"
+aliases = ["/blog/the-objective-function/"]
 [taxonomies]
 categories = ["Quest Engine"]
 tags = [

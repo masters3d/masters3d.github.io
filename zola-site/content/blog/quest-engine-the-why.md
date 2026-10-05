@@ -22,7 +22,7 @@ Renew are the answer to that question.
 
 That layer has a name in this framework: the **Objective Function**. It is the
 part people find most abstract, so before anything else, here is the plain
-version. (It now has [a post of its own](/blog/the-objective-function/), which
+version. (It now has [a post of its own](/blog/the-primary-directive/), which
 covers what the general human objective function is and how the levels nest.)
 
 > **The Objective Function, in one box**
@@ -263,7 +263,7 @@ we even optimizing for the right thing?"
 One clarification on the word, because it operates at two altitudes. "The WHY"
 in this post is the whole layer above the loop (all three forces of it). "The
 why" in the narrower sense is one specific step: the
-[Primary Directive](/blog/the-objective-function/), the standing order that
+[Primary Directive](/blog/the-primary-directive/), the standing order that
 everything else gets ranked against. In that narrower sense Why does not pair
 with How as a complete set. The searching force in between has four names, not
 one: [Who, What, When, and Where](/blog/the-four-ws/). The full running order is
