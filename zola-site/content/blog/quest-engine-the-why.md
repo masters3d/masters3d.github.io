@@ -22,7 +22,8 @@ Renew are the answer to that question.
 
 That layer has a name in this framework: the **Objective Function**. It is the
 part people find most abstract, so before anything else, here is the plain
-version.
+version. (It now has [a post of its own](/blog/the-objective-function/), which
+covers what the general human objective function is and how the levels nest.)
 
 > **The Objective Function, in one box**
 >
@@ -258,6 +259,14 @@ all the time. They have the HOW figured out (Contextual Awareness, Clear
 Strategy, Systematic Improvement). But they're optimizing for yesterday's
 definition of success. The WHY sits above the operational cycle and asks: "Are
 we even optimizing for the right thing?"
+
+One clarification on the word, because it operates at two altitudes. "The WHY"
+in this post is the whole layer above the loop (all three forces of it). "The
+why" in the narrower sense (the reason this work matters) is just one force
+inside a layer: the renewing, purpose-facing one. In that narrower sense Why
+pairs with How as the driving force, and the searching force in that pair has
+its own name: **What**. That three-way split is unpacked in
+[The Objective Function](/blog/the-objective-function/).
 
 **The three forces work together:**
 

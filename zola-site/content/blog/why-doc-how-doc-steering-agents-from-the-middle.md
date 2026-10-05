@@ -107,6 +107,25 @@ standing in the middle of that Venn diagram, and the two documents are what keep
 that middle position from collapsing into "outward alignment with no technical
 substance" or "technical precision nobody upstream can evaluate."
 
+## The third document the pair implies
+
+Two documents is where this started, and two is not quite the whole set. Why is
+a backward-looking judgment on a target that already exists, and How is the
+mechanics of hitting it. Neither one produces the target. The step where
+somebody decides what should exist, out of everything that could, is a separate
+act with its own name: the **What**.
+
+Most of the time the What is small enough to live as the first section of the
+How doc, which is why it rarely gets its own file and why it is so easy to skip.
+It is worth naming anyway, because skipping it has a signature. A Why doc with
+no What underneath it is a persuasive case that never commits to a thing to
+build. A How doc with no What underneath it is a precise specification of
+something nobody chose, which an agent will implement flawlessly and at speed.
+When a project feels well-documented and still drifts, the missing document is
+usually this one. The framework version of that argument (why What is the
+searching force, and how it completes the triad with How and Why) is in
+[The Objective Function](/blog/the-objective-function/).
+
 ---
 
 _This extends the Venn diagram from

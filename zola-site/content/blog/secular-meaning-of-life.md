@@ -175,6 +175,14 @@ forces operational (how to apply them to work, projects, decisions). Discovery,
 Play, Joy make them existential (why they matter for a life worth living). One
 is the framework. The other is the foundation.
 
+Said more precisely: **Discovery, Play, and Joy are the general human objective
+function.** They are not just a description of a good life, they are the scoring
+rule underneath it (the thing you are actually ranking options against when you
+ask whether something is worth doing). They qualify because they are terminal:
+every "why do you want that?" chain eventually lands on one of the three and
+stops. That argument, and how it nests inside the rest of the framework, is in
+[The Objective Function](/blog/the-objective-function/).
+
 **Discovery is Searching:** The pull toward the search for understanding what
 you don't yet know. Not passive learning, but active exploration. The universe
 is indifferent, but the act of searching to understand generates the experience

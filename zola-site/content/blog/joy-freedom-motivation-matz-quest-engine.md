@@ -139,8 +139,9 @@ trying to produce.
 
 The useful move is to put that objective where the framework already has a slot
 for it. It belongs to the objective function, the layer that
-[defines what success means before you act](/blog/quest-engine-the-why/). Once
-you put it there, the hierarchy sorts itself out:
+[defines what success means before you act](/blog/quest-engine-the-why/) (and
+which now has [a page of its own](/blog/the-objective-function/)). Once you put
+it there, the hierarchy sorts itself out:
 
 - The **objective** says what you want to exist (a working site, a shipped
   feature, a problem that stops being a problem).
