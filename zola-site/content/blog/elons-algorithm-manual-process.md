@@ -1,7 +1,7 @@
 +++
-title = "Elon's Algorithm Applied to the Manual Process"
+title = "Elon's Algorithm: A Reference for the Manual Process"
 date = "2026-10-06"
-description = "Musk's five-step algorithm is usually quoted at factories, but the ordering is really a general claim about where the return is, and it maps cleanly onto the manual processes software teams run every day. Question the requirement, delete the step, simplify, speed up the loop, and only then automate. Automation is step five for a reason, and most of the value is in the four steps you skipped to get there."
+description = "A reference write-up of Musk's five-step algorithm and what each step is supposed to mean when the thing being improved is a manual process in software engineering. Question the requirement, delete the step, simplify, accelerate, automate. Mostly a description of what the algorithm claims rather than an argument that it is correct, with a short closing note on where I do agree, in particular the rule that if you are not occasionally adding things back you are not cutting enough."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
@@ -10,7 +10,7 @@ tags = [
   "manual-process",
   "elons-algorithm",
   "process",
-  "roi",
+  "reference",
   "systems-thinking",
   "quest-engine",
   "deployment",
@@ -19,199 +19,200 @@ tags = [
 editorial_track = "engineering-systems"
 +++
 
-Elon Musk's five-step algorithm gets quoted mostly at hardware people, because
-that is where it came from: a production line, a part that should not have
-existed, a factory that was fast at building the wrong thing. The steps
-themselves are not about hardware at all. They are a claim about ordering, and
-the ordering holds anywhere there is a process.
+This is a reference post. The five-step algorithm associated with Elon Musk gets
+cited often and paraphrased loosely, so what follows is an attempt to write down
+what the steps are supposed to be, and what each one is supposed to mean when
+the thing being improved is a manual process in software engineering rather than
+a production line.
 
-Software teams have processes everywhere, and most of them are manual. Not
-because anyone designed them that way, but because they accumulated. Somebody
-has to approve the release. Somebody has to run the migration. Somebody has to
-confirm the on-call handoff happened. The algorithm is a very good tool for
-these, and applying it has consistently told me something different from what I
-assumed going in.
+To be explicit about the frame: this post is mostly not making the case that the
+algorithm is right, and it is not making the case that it is wrong. The walk
+through the steps below reports the algorithm's claims as the algorithm's
+claims. Whether they hold for any particular team, process, or organization is a
+separate question that this post does not try to settle. The one place I do give
+an opinion is the short section at the end, and it stays general.
 
 ## The Five Steps
 
-1. **Make the requirements less dumb.** Every requirement needs a person's name
-   attached, not a department's.
-2. **Delete the part or process step.** If you are not adding back at least ten
-   percent of what you delete, you are not deleting enough.
-3. **Simplify or optimize.** Only after the first two, because the most common
-   mistake is optimizing something that should not exist.
-4. **Accelerate cycle time.** Speed up what is left.
-5. **Automate.**
+As usually stated, in order:
 
-The famous part is that most people run these in reverse. They automate first,
-then speed it up, then simplify, and only when something breaks badly enough do
-they finally ask whether the requirement made sense. Musk's own stated version
-of the mistake is that he has personally done all of this backwards more than
-once, which is the only reason the list is worth anything. It is a description
-of a trap, written by someone who fell in it.
+1. **Make the requirements less dumb.** Question every requirement, and attach a
+   person's name to each one rather than a department's.
+2. **Delete the part or process step.** The stated heuristic is that if you are
+   not adding back at least ten percent of what you delete, you are not deleting
+   enough.
+3. **Simplify or optimize.** Explicitly after the first two, on the grounds that
+   the common error is optimizing something that should not exist.
+4. **Accelerate cycle time.** Speed up what remains.
+5. **Automate.** Last.
 
-## What a Manual Process Actually Is
+Two things are claimed about the list itself. First, that the order is load
+bearing rather than decorative. Second, that the common failure is running it in
+reverse: automating first, accelerating next, simplifying later, and questioning
+the requirement only after something breaks. The account Musk gives is that he
+arrived at the ordering by making that mistake himself.
 
-Before running the steps, it helps to be precise about the target, because the
-phrase hides the problem. "Manual process" sounds like the absence of a process.
-It is not. It is a process whose rules are distributed across people's heads and
-whose messages travel over channels nobody wrote down.
+## What "Manual Process" Is Taken to Mean Here
 
-People text each other. Someone says "you're good to go." Someone else says "we
-got the green light," and the deploy happens. On my teams the signal was
-literally a thumbs up in a chat thread, and everyone knew exactly what it meant:
-the checks the person had done before sending it, the conditions under which
-they would not have sent it, who they would have pinged instead.
+The steps are stated in terms of parts and process steps, so applying them to
+software requires saying what the target is.
 
-That is the part worth noticing. The message is one emoji; the process behind
-the message is enormous. A human sent that signal after running an unwritten
-checklist, and that checklist is the actual system. The manual part is not the
-typing. The manual part is a person holding a model of the whole thing and
-making a judgment call.
+A manual process in this sense is not the absence of a process. It is a process
+whose rules live in people's heads and whose messages travel over channels that
+were never written down. Someone says "you're good to go." Someone says "we got
+the green light," and the deploy happens. The signal is often a single message
+or a thumbs up in a chat thread, and the people involved understand what it
+carries: the checks the sender performed first, the conditions under which they
+would not have sent it, and who they would have escalated to instead.
 
-So "let's automate the green light" is never a proposal to automate a message.
-It is a proposal to externalize somebody's model of the system, and you usually
-have no idea how big that model is until you are halfway through.
+The framing the algorithm depends on is that the message is small and the
+process behind it is not. The manual part is not the typing. The manual part is
+a person holding a model of the system and making a judgment call with it. On
+that reading, a proposal to automate the green light is a proposal to
+externalize that model, and the size of the model is generally not known in
+advance.
 
 ## Step 1: Make the Requirements Less Dumb
 
-Start with why the step exists, and insist on a name.
+The step says to start with why the requirement exists and to insist on a named
+owner for it.
 
-"Compliance requires a manual approval before production deploys" is not an
-auditable statement. It is a sentence that has survived because no one can be
-blamed for repeating it. "Dana requires it, and here is the incident in 2021
-that made her ask for it" is auditable. You can go find Dana. You can find out
-whether the control she wanted is the control you are performing, which in my
-experience is roughly a coin flip.
+The distinction drawn is between a requirement stated institutionally
+("compliance requires a manual approval before production deploys") and one
+stated personally ("this person asked for it, in response to this incident").
+The claim is that only the second is auditable, because only the second gives
+you somebody to go ask whether the control they wanted is the control currently
+being performed.
 
-The failure mode here is specific to software and worth naming: the requirement
-outlives the person, the incident, and sometimes the system. A manual step gets
-added to compensate for a deploy pipeline that had no rollback. The pipeline
-gains rollback two years later. The manual step stays, because removing it would
-require someone to claim ownership of the removal, and the step costs ten
-minutes a week, which is never worth a fight.
-
-Attaching a name is how you break that. Requirements with owners can be
-renegotiated. Requirements owned by "the process" cannot.
+The software-specific version of the problem this is meant to catch: a manual
+gate gets added to compensate for a deploy pipeline with no rollback, the
+pipeline gains rollback later, and the gate remains, because removing it
+requires someone to own the removal and the gate is individually cheap. The
+step's claim is that requirements with named owners can be renegotiated and
+requirements owned by "the process" cannot.
 
 ## Step 2: Delete the Step
 
-Try to remove it entirely, and expect to put some of it back.
+The step says to attempt removal of the whole thing, and to expect to restore
+part of it.
 
-The ten percent rule is the part people quote and the part people skip. If you
-delete only things you are certain are safe, you were never near the boundary,
-and the boundary is where the information is. Deleting a step and having to
-restore it teaches you precisely what it was for, which is knowledge you did not
-have before and could not have gotten by asking.
+The ten percent heuristic is the operative part. Its stated logic is that if
+nothing ever has to be added back, the deletions were never near the boundary of
+what is actually load bearing, and the boundary is where the information is.
+Deleting something and being forced to restore it is treated as a measurement,
+not as a failure.
 
-In software this is cheap in a way it never is in hardware. Removing a manual
-gate for one sprint costs a revert. Removing a part from a car costs a tooling
-change. The asymmetry should make software teams far more aggressive about
-deletion than they actually are, and the reason they are not is social rather
-than technical: the person who deletes a check owns the next incident, whether
-or not the deletion caused it.
+Applied to software, the asymmetry usually noted is cost: suspending a manual
+gate for a sprint is a revert, while removing a part from a vehicle is a tooling
+change. The counter-pressure usually noted alongside it is social rather than
+technical, in that whoever removes a check tends to be associated with the next
+incident regardless of cause.
 
-Worth being clear that deletion here means the step, not the intent. If the
-manual approval existed to catch schema changes, you are not deleting the
-catching of schema changes. You are deleting a human being as the mechanism.
+One clarification that belongs with this step: what is being deleted is the
+step, not the intent behind it. If a manual approval exists to catch schema
+changes, the step does not claim that catching schema changes should stop. It
+claims that a human being is one mechanism among others.
 
-## Step 3: Simplify What Survives
+## Step 3: Simplify or Optimize
 
-Only now, and only on what is left.
+The step says to simplify only what survived the first two.
 
-Simplification of a manual process usually means collapsing handoffs. Three
-people sign off; find out whether the second one ever says no. A ticket moves
-through four states; find out whether any behavior differs between two of them.
-Most ugly manual processes are not complicated because the work is complicated.
-They are complicated because each incident in the past added a participant and
-nobody ever removed one.
+For a manual process, simplification generally refers to collapsing handoffs:
+whether the second of three approvers ever declines, whether any behavior
+differs between two adjacent ticket states, whether a participant added after
+some past incident is still doing anything. The claim is that such processes are
+usually complex because participants accumulated, not because the underlying
+work is complex.
 
-This is also where you fix the shape of the signal. A thumbs up is a terrible
-interface not because it is informal, but because it carries no record of what
-was checked. "Approved: migrations reviewed, feature flag off, rollback tested"
-is the same amount of human effort and an enormously better artifact. You have
-not automated anything. You have made the process legible, which is the
-precondition for everything after this point.
+A related point that often gets filed here is the form of the signal. A thumbs
+up carries no record of what was checked, while a line such as "approved:
+migrations reviewed, flag off, rollback tested" carries the same human cost and
+leaves an artifact. Nothing is automated by that change; what it produces is
+legibility, which the later steps depend on.
 
-## Step 4: Accelerate the Cycle
+## Step 4: Accelerate Cycle Time
 
-Speed up the loop before mechanizing it.
+The step says to speed up the remaining process before mechanizing it.
 
-Manual processes are usually slow in the waiting, not in the doing. The approval
-takes thirty seconds and arrives nine hours later because the approver is in
-another timezone and the request landed at the end of their day. Scripting the
-thirty seconds does nothing about the nine hours. Adding a second approver in a
-different timezone fixes most of it, and it is a change you can make this
-afternoon.
+The observation it rests on is that manual processes are typically slow in the
+waiting rather than in the doing. An approval that takes thirty seconds may
+arrive nine hours later because of timezones and queueing. On that reading,
+reducing the thirty seconds addresses the smaller term.
 
-There is a trap at this step that is specific to the modern version of this
-problem: agents and tooling make it very easy to accelerate a loop that should
-have been deleted at step two. Fast is not the same as valuable, and a
-well-instrumented fast loop around an unnecessary step is harder to kill than a
-slow one, because now it has dashboards.
+The ordering warning attached to this step is that accelerating a process is
+only sensible for one that survived step two, since a fast version of an
+unnecessary step is still unnecessary, and is arguably more durable once it has
+instrumentation around it.
 
 ## Step 5: Automate
 
-Now, and only on what survived the four steps above.
+The step says automation comes last, and only to what survived.
 
-Two things will be true if you got here honestly. The thing you are automating
-is smaller than what you started with, and you can state what it is for in one
-sentence. Both matter, and the second one matters more, because the automation
-you can explain is the automation somebody will maintain after you move on.
+The stated reason is not that automation is difficult. It is that each earlier
+step changes what you would have automated, so automating first encodes a
+requirement that was never questioned, a step that might have been deleted, and
+a shape that was never simplified.
 
-The reason to put this last is not that automation is hard. It is that every
-step above it changes what you would have automated. Automate first and you have
-industrialized a requirement nobody questioned, a step that should have been
-deleted, and a shape that was never simplified. You end up with a fast, reliable
-machine for doing something that did not need doing, plus a maintenance tail you
-now own forever.
+The cost argument usually given alongside it is that the true cost of automating
+a process is not visible from outside it. The happy path is quick; the
+exceptions are where the work is (the team that does it differently, the
+period-end variant, the case where a human would have declined to send the
+signal and escalated in person). The claim is that a long tail of special cases
+can end up more expensive to maintain than the manual process was.
 
-And the cost is genuinely unknowable from the outside. You script the happy path
-in two days and it feels fantastic, because two days of automation feels like
-more progress than two days of asking questions. Then the exceptions arrive: the
-team that does the step differently, the quarter-end variant, the case where the
-human would have simply not sent the green light and walked over to someone
-instead, and your script has no concept of "walk over to someone." Now you are
-deep enough in that stopping feels like waste, so the automation grows a long
-tail of special cases that is harder to maintain than the manual process ever
-was.
+The algorithm does not claim that every process should end up automated. A
+process that resists automation is a possible outcome of running the steps. What
+it claims is that the steps are what distinguishes "resistant to automation"
+from "not yet understood."
 
-Some processes genuinely resist automation, and that is a legitimate finding.
-But you cannot tell "hard to automate" apart from "I do not understand this yet"
-without doing the understanding first, and the four steps above are what
-understanding looks like when it is written down.
+## How This Lines Up With the Quest Engine
 
-## Why the Order Is the Whole Point
+Worth noting, without arguing that either framework validates the other, that
+the ordering claim resembles the one in the
+[Quest Engine](/blog/the-meta-structure/).
 
-The same claim shows up in the [Quest Engine](/blog/the-meta-structure/) from a
-different direction, which is part of why I trust it.
-
-Automation is **How**. It is the Action Phase, the part where the typing
-happens, and the default failure of the whole framework is starting there
-because that is where progress is visible. The ROI question (what does this buy,
-for whom, measured how) is **Why**, the
-[Primary Directive](/blog/the-primary-directive/) that everything downstream
-gets ranked against. And steps one through four are really the
+Under that mapping, automation is **How**, the action phase, which the Quest
+Engine also places last and also describes as the default starting point people
+drift toward because it is where visible progress happens. The question of
+whether a given process is worth automating corresponds to **Why**, the
+[Primary Directive](/blog/the-primary-directive/) that downstream work is ranked
+against. Steps one through four correspond to the
 [Contextual Core](/blog/the-four-ws/): who sends the signal and who accepts it,
-what actually gets checked, when it fires, where the state lives when nobody is
-looking at it.
+what gets checked, when it fires, where the state lives.
 
-A step that runs twice a year and takes ten minutes can be perfectly automatable
-and still rank below everything else you could do. Without the directive there
-is no ranking, so the step you automate ends up being whichever one annoyed you
-most recently. That is not a strategy, it is a mood.
+The parallel is structural. It is noted here because readers of one framework
+tend to encounter the other, not as evidence for either.
 
-## The Part Worth Keeping
+## Where I Land, Generally
 
-Run the process yourself for a few cycles before you touch it. Not observe it,
-run it. Be the person who sends the green light. You will find the unwritten
-rules faster than any interview does, because you will feel the moment where you
-hesitate, and the hesitation is the undocumented rule.
+Having kept the rest of this descriptive, it is worth saying briefly where I
+actually come down, without relitigating each step.
 
-Automating a process you do not understand is not automation. It is encoding
-your current confusion at machine speed, and machines are very good at repeating
-things.
+Broadly, the ordering claim matches what I have seen. Automating first has
+consistently cost me more than the four steps it skipped would have, and I have
+never regretted understanding a process before mechanizing it.
 
-The manual process is not the enemy. It is the specification, written in the
-only medium it has ever existed in. Read it first, then run the algorithm, and
-automate whatever is still standing at the end.
+The piece I agree with most specifically is the add-back heuristic in step two:
+if you are not occasionally putting things back, you are not cutting enough.
+That one has held up every time. Deletions that never need reversing are a sign
+you stayed comfortably inside the safe margin, and the margin is exactly where
+you learn what a step was really doing. Treating the occasional restore as
+expected (rather than as a mistake to be avoided) is what makes it safe to cut
+aggressively in the first place.
+
+What I am less sure about is the universality. The steps assume you have the
+authority to question requirements and delete things, and plenty of manual
+processes in software sit inside constraints where that is not on the table.
+That is a limit on applicability, not a disagreement with the sequence.
+
+## Summary
+
+Stated plainly, the algorithm's position on manual processes is: understand what
+the process is for and who asked for it, try removing it, simplify what is left,
+shorten the loop, and automate only at the end. Its central assertion is about
+sequence, and its central warning is that automation performed first is
+indistinguishable from progress while it is happening.
+
+Whether that sequence is the right one for a given process is left to the
+reader. Apart from the section above, this post has only tried to state what the
+algorithm says it is supposed to be.
