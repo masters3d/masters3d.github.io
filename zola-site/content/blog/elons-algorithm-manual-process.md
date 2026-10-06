@@ -182,8 +182,9 @@ what gets checked, when it fires, where the state lives.
 
 The parallel is structural. It is noted here because readers of one framework
 tend to encounter the other, not as evidence for either. The argued version of
-that mapping, as opposed to this note, is in
-[Automate Last](/blog/automate-last-not-first/).
+that mapping, including why the steps above are better read as a procedure for
+reaching shared understanding than as one for reaching automation, is in
+[From Manual to Self-Sustaining](/blog/manual-to-self-sustaining-quest-engine/).
 
 ## Where I Land, Generally
 
