@@ -181,7 +181,9 @@ against. Steps one through four correspond to the
 what gets checked, when it fires, where the state lives.
 
 The parallel is structural. It is noted here because readers of one framework
-tend to encounter the other, not as evidence for either.
+tend to encounter the other, not as evidence for either. The argued version of
+that mapping, as opposed to this note, is in
+[Automate Last](/blog/automate-last-not-first/).
 
 ## Where I Land, Generally
 
