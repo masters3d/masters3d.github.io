@@ -21,15 +21,25 @@ series = "quest-engine"
 
 A note went around recently from one of the people closest to how Claude Code
 actually gets built, and the surprising part was how unsurprising the advice
-was: talk to the model the way you would talk to a coworker. Do not overly
-scaffold. Do not be prescriptive for most tasks. Give it a goal and it will
-figure out the rest. Then the part worth keeping, which is that back in the
-Sonnet 3.5 days your prompt mattered a lot, and now what matters is
-communicating three things:
+was. Here it is in full:
 
-1. What you want it to do
-2. How much effort you want it to spend
-3. How it should verify that it did the right thing
+> _"I am surprised that people are surprised this is how I prompt Claude._
+>
+> _Talk to Claude the way you would a coworker. There's no secret to prompting.
+> Don't overly scaffold, don't be prescriptive for most tasks -- give Claude a
+> goal, and it will figure it out._
+>
+> _Back in the Sonnet 3.5 days, your prompt mattered a lot. Nowadays, it's much
+> more important to communicate to the model:_
+>
+> _1. What you want it to do_
+>
+> _2. How much effort you want it to spend_
+>
+> _3. How it should verify that it did the right thing"_
+>
+> — Boris Cherny,
+> [Threads, posted publicly](https://www.threads.com/@boris_cherny/post/DeKrEiy)
 
 I want to take that list seriously rather than treat it as prompting folklore,
 because when I put it next to [the three steps](/blog/the-meta-structure/) I
@@ -200,10 +210,11 @@ naming it every time.
 
 ---
 
-_The three directives summarized here are from a public note by Boris Cherny on
-how he prompts Claude; the mapping onto Search, Drive, and Renew, and any
-strained analogies in it, are mine. The framework posts referenced throughout
-are [The Meta Structure](/blog/the-meta-structure/),
+_The three directives quoted at the top are from
+[a public note by Boris Cherny on how he prompts Claude](https://www.threads.com/@boris_cherny/post/DeKrEiy);
+the mapping onto Search, Drive, and Renew, and any strained analogies in it, are
+mine. The framework posts referenced throughout are
+[The Meta Structure](/blog/the-meta-structure/),
 [The Primary Directive](/blog/the-primary-directive/),
 [The Contextual Core](/blog/the-four-ws/), and
 [the Quest Engine introduction](/blog/quest-engine-introduction/)._
