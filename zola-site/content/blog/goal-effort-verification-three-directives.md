@@ -1,7 +1,7 @@
 +++
 title = "Goal, Effort, Verification: Three Directives on the Quest Engine Map"
 date = "2026-10-08"
-description = "A widely shared note on prompting says the model now needs three things: what you want it to do, how much effort to spend, and how it should verify it did the right thing. Those three are not a prompting trick. Two of them are the Quest Engine's Why and Renew, one of them is a dial inside the Drive, and the Search step is conspicuously missing because the agent took it."
+description = "Boris Cherny's three prompting directives map onto the Quest Engine exactly: what you want is the Why (the problem statement), how it should verify is Renew (the definition of done), and how much effort is the How. The middle one is the subtle one, because effort is no longer a procedure, it is a strategy, a topology of agents, and a budget of resource plus time. The list is short because Search and execution are assumed."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Quest Engine"]
@@ -19,9 +19,8 @@ editorial_track = "quest-engine"
 series = "quest-engine"
 +++
 
-A note went around recently from one of the people closest to how Claude Code
-actually gets built, and the surprising part was how unsurprising the advice
-was. Here it is in full:
+Boris Cherny, who built Claude Code, posted a short note on how he prompts it.
+Here it is in full:
 
 > _"I am surprised that people are surprised this is how I prompt Claude._
 >
@@ -41,179 +40,216 @@ was. Here it is in full:
 > — Boris Cherny,
 > [Threads, posted publicly](https://www.threads.com/@boris_cherny/post/DeKrEiy)
 
-I want to take that list seriously rather than treat it as prompting folklore,
-because when I put it next to [the three steps](/blog/the-meta-structure/) I
-already use, it does not line up the way I expected it to. It lines up better.
+Three fields. That is the whole prompt. I want to take the list literally and
+run it against [the three steps](/blog/the-meta-structure/) I already use,
+because the mapping is cleaner than I expected at the top and bottom, and much
+more subtle in the middle.
 
-## The ceiling moved, it did not disappear
+The short version: directive one is the **Why**, directive three is the
+**definition of done**, and directive two is the **How** — but the How
+compressed into a single variable, which is the part worth unpacking.
 
-The headline claim is that prompt craft used to be the constraint and is not
-anymore. That is a ceiling argument, and ceilings are the thing I pay attention
-to, because a ceiling tells you which skill is currently load-bearing and which
-one has quietly stopped paying.
+## Read it for what it does not say
 
-In the Sonnet 3.5 era the ceiling was phrasing. The model had the capability but
-needed to be walked to it, so people who were good at decomposition, few-shot
-examples, and rigid output contracts got visibly better results than people who
-were not. That skill was real and it was scarce, which is exactly what a binding
-ceiling looks like.
+A three-item list is short because of everything it assumes, and the assumptions
+here are doing more work than the items.
 
-The models got better, and that particular ceiling lifted. What did not happen
-is that the work became unbounded. The limit relocated. When the model can
-figure out the mechanics from a goal, the quality of the goal becomes the
-binding constraint, and the quality of the check at the end becomes the other
-one. Nobody is getting worse output today because they phrased something
-awkwardly. They are getting worse output because they asked for the wrong thing
+**It assumes the agent does its own Search.** "Don't overly scaffold" is a
+statement about [contextual awareness](/blog/quest-engine-introduction/). The
+elaborate prompt structures of the Sonnet 3.5 era — the decomposition, the
+few-shot examples, the rigid output contracts — were a prosthetic for a Search
+step the model could not perform yet. It can now. It will crawl the callers,
+read the neighboring files, and locate the work on its own, which is why none of
+that appears in the list.
+
+**It assumes the agent drives.** "Give Claude a goal and it will figure it out"
+means the mechanics of execution are no longer yours to specify. You do not
+describe the steps. You describe the destination.
+
+So the list is not three steps. It is the **residue** of the steps: what is left
+over for the human once an agent absorbs the searching and most of the driving.
+And the residue is exactly the two ends plus one dial in the middle — the
+directive going in, the verification coming out, and the sizing knob that says
+how hard to push between them.
+
+That relocation is the real claim in "there's no secret to prompting." It is not
+that nothing matters. The binding constraint moved out of the phrasing and into
+the ends: nobody is getting worse output today because they worded something
+awkwardly, they are getting worse output because they asked for the wrong thing
 precisely, or because they had no way to tell whether what came back was right.
+The middle is where [agents took the Drive](/blog/agents-are-taking-the-drive/).
 
-That is the useful reading of "there is no secret to prompting." It is not that
-nothing matters. It is that the scarce skill moved from the middle of the
-process to both ends of it. The middle is where
-[agents took the Drive](/blog/agents-are-taking-the-drive/). The two ends are
-the parts that were always mine.
+Here is the mapping, one directive at a time.
 
-## The question I actually want answered
+### 1. What you want it to do → the Why, and the problem statement
 
-So here is the question this post exists to ask, stated plainly, because I would
-rather pose it sharply than smuggle in an answer:
+This is the [Primary Directive](/blog/the-primary-directive/): the standing
+order that decides what counts as better when the agent hits a fork I did not
+anticipate. An agent cannot generate this. It is the one input with no
+substitute.
 
-**Do those three directives map one-to-one onto Search, Drive, and Renew, or do
-they map onto something else that only looks like the three steps from a
-distance?**
+"Add retries to the client" is a task. "This call must not drop user writes, and
+I would rather be slow than lossy" is a directive, and an agent holding it will
+make a defensible choice at every fork downstream without asking me. The second
+version is also, in plain agile terms, a **problem statement** — what is wrong
+and what better looks like, stated before anyone proposes a solution.
 
-My answer is the second one, and the mismatch is the interesting part. Here is
-the mapping as I read it.
+The agent will fill in the [four W's](/blog/the-four-ws/) underneath it — who it
+is for, what is in scope, when, where it lives and what it touches — by going
+and looking. That is the locating step, and it is now mostly delegable. What is
+not delegable is the ranking on top of it. The agent can tell me what the change
+touches. It cannot tell me which outcome is worth more. That split is the same
+one I drew between the
+[Why doc and the How doc](/blog/why-doc-how-doc-steering-agents-from-the-middle/)
+when both readers were human.
 
-### 1. What you want it to do → the Primary Directive, plus the locating step
+### 2. How much effort to spend → the How, compressed into one dial
 
-"What you want it to do" sounds like one thing and is reliably two.
+This is the directive that looks the least important and is, I think, the most
+important, because it is the only place in the list where the How survives.
 
-The first is the [Why](/blog/the-primary-directive/): the standing order, the
-thing that decides what counts as better when the agent hits a fork I did not
-anticipate. This is the half that cannot be delegated and the half people skip.
-"Add retries to the client" is not a directive. "This call must not drop user
-writes, and I would rather be slow than lossy" is a directive, and an agent that
-holds it will make a defensible choice at every fork downstream without asking
-me.
+Effort **is** the Drive. That part maps cleanly. The subtlety is that it no
+longer looks like the How used to look. The old How was procedural: do this,
+then this, then that. The agent handles that now. What is left of the How is one
+dial that selects the **strategy** the agent uses to get there, and a dial is a
+strange-looking thing to call a step, which is why it reads like a footnote
+instead of a third of the framework.
 
-The second is the [Contextual Core](/blog/the-four-ws/): who it is for, what
-exactly is in and out, when it has to exist, where it lives and what it touches.
-This is the locating step, and it is the one the agent will now do for me if I
-let it. It will crawl callers, map the blast radius, and tell me what the change
-touches. It cannot tell me what counts as better.
+Think about automatic transmissions. An automatic will downshift for you most of
+the time, and most of the time that is fine, which is the whole argument for not
+scaffolding. But every modern car still ships with explicit modes: a hill
+descent setting, a snow setting, a tow mode, a four-wheel-drive option that
+takes the same engine and splits the power across four wheels instead of two.
+Those modes exist because there are conditions where the automatic cannot infer
+the right strategy from the road alone. It knows the grade. It does not know you
+are towing.
 
-So directive one is not a single Quest Engine step. It is the Why with the four
-W's folded underneath it, which is exactly the shape I described as the
-[Why doc and the locating doc](/blog/why-doc-how-doc-steering-agents-from-the-middle/)
-when the audience was human.
+An agent is in the same position. It can infer a lot from the repository. It
+cannot infer how much this particular problem is worth to you, how deep the
+unknowns run, or whether you want one careful pass or a search across the space.
+And the strategies available at different effort levels are not the same
+strategy run harder. They are structurally different shapes:
 
-### 2. How much effort to spend → a dial inside the Drive, not a step
+- **Low effort.** One agent, smallest change that satisfies the check, no
+  exploration.
+- **Medium.** One agent, but told to explore alternatives before committing, and
+  to show the discarded options.
+- **High, parallel.** A fleet: several agents attacking the same problem
+  independently, then a comparison pass over their outputs.
+- **High, adversarial.** A swarm where sub-agents critique each other's work
+  before anything surfaces to me — the shape I reach for on a port of a codebase
+  from one language to another, where correctness is hard to eyeball and cheap
+  to check adversarially.
+- **High, hierarchical.** Ten cheap agents summarize chunks, five summarize
+  those summaries, two summarize again. Each individual agent is running at
+  trivial effort. The aggregate is enormous.
 
-This is the one with no clean counterpart, and I think that is why it is the
-most skipped of the three.
+That last one makes the point sharpest. The effort there is not located in any
+single agent's intensity. It is in the **topology** — how many, arranged how,
+checking whom. That is a strategy decision, and strategy is the How. Effort is
+how you state it when you are not the one executing.
 
-Effort is not a phase. It is **Challenge Matching**, the sizing move inside the
-Drive. In the human version of the framework it is the thing that keeps work in
-flow: too large and you stall, too small and you coast. With an agent the same
-dial exists and it is the one almost nobody states out loud. "Take the smallest
-change that makes this test pass" and "go audit every caller in the repo and
-propose a migration" are the same goal at two wildly different efforts, and if I
-do not say which one I want, the agent picks for me. Usually it picks
-ambitiously, because ambition reads as helpful.
+Which also means effort is not a quality adjective. It resolves into two
+measurable things: **resource and time**. How many agents, how many tokens, how
+many passes, and how long I am willing to wait for the answer. Effort is the
+cost I am authorizing, and like any power budget it is finite — ten agents at
+low effort and one agent at high effort can cost the same, and they buy
+completely different things. Going up the mountain, you can either floor it in
+the gear you are in or downshift. Same engine. Different distribution.
 
-It also fixes a long-standing confusion I have written about in the human
-context: effort and work are
-[different quantities and should not be conflated](/blog/effort-tracking-vs-task-tracking/).
-A task says what; effort says how much of a budget it is allowed to consume.
-That distinction was already load-bearing for people. It turns out to be
-load-bearing for agents too, and for the same reason. The scope of the goal does
-not imply the size of the attempt.
+This is the same distinction I keep insisting on for humans, where
+[effort and work are different quantities](/blog/effort-tracking-vs-task-tracking/)
+that should never be tracked in the same field. A task says what. Effort says
+how much of a budget it is allowed to consume. That was already load-bearing
+when the budget was my own week. It is more load-bearing now, because the thing
+spending the budget is not me, will not ask, and whatever it assumes is a
+decision I made by staying quiet.
 
-So: directive two sits inside the Drive. It is the knob I now have to set
-explicitly because the thing doing the driving is not me.
+### 3. How it should verify → Renew, pulled to the front, as a definition of done
 
-### 3. How it should verify → Renew, pulled forward into the prompt
+The third directive is [Renewal](/blog/quest-engine-introduction/) with the
+timing changed.
 
-The third one is the one I would defend hardest, and it is
-[Renewal](/blog/quest-engine-introduction/) with the timing changed.
+In the framework, Renewal runs after the work: compare actual against expected,
+find the root pattern, make the fix permanent. The directive version hands the
+agent the verification method before it starts. Same activity, moved to the
+front of the loop, so the agent can run the comparison itself dozens of times
+instead of handing me an artifact and waiting for me to discover what is wrong
+with it.
 
-In the framework, Renewal is what happens after: compare actual against
-expected, find the root pattern, make the fix permanent. The directive version
-says to hand the agent the verification method up front, before it starts. That
-is not a different activity. That is the same activity moved earlier, so the
-agent can run the loop itself instead of handing me an artifact and waiting for
-me to discover what is wrong with it.
+Stated that way it is the most familiar idea in the list: a **definition of
+done**. The acceptance criteria. The test case written before the
+implementation. Agile has argued for a decade that work without one is not
+really defined, and an agent makes the argument unanswerable, because an agent
+without a definition of done will declare victory with total confidence and
+nothing behind it.
 
-This is also what makes the output [proof-carrying](/blog/proof-carrying-work/)
-rather than merely plausible. "Run the integration suite and show me the diff in
-the failing case" produces evidence. "Make it work" produces an assertion. An
-agent given a verification method will iterate against it dozens of times before
-I ever look, which is the entire reason the Drive became cheap enough to
-delegate in the first place.
+This is what makes output [proof-carrying](/blog/proof-carrying-work/) rather
+than merely plausible. "Run the integration suite and show me the diff in the
+failing case" produces evidence. "Make it work" produces an assertion.
 
 What stays mine is the harder half of Renewal: deciding what the delta between
-expected and actual _means_, and whether the lesson generalizes. The agent can
-run the check. It cannot decide the check was measuring the wrong thing.
+expected and actual _means_, and whether the lesson generalizes beyond this
+case. The agent can run the check. It cannot decide the check was measuring the
+wrong thing.
 
-## The step that is missing, and why
+## The whole thing on one line each
 
-Line the mapping up and one thing is obviously absent:
+| Directive                 | Quest Engine                       | Ordinary name            |
+| ------------------------- | ---------------------------------- | ------------------------ |
+| 1. What you want it to do | Why (the Primary Directive)        | The problem statement    |
+| 2. How much effort        | How (the Drive), as strategy       | The resource + time cost |
+| 3. How it should verify   | Renew, moved to the front          | The definition of done   |
+| _(unstated)_              | **Search** — assumed, delegated    | —                        |
+| _(unstated)_              | **Execution** — assumed, delegated | —                        |
 
-| Directive       | Quest Engine                           |
-| --------------- | -------------------------------------- |
-| What you want   | Why (Primary Directive) + the four W's |
-| How much effort | Challenge Matching, inside the Drive   |
-| How to verify   | Renew, moved to the front of the loop  |
-| —               | **Search**                             |
+The list is not a replacement for the three steps. It is the three steps with
+the delegable parts removed. You supply the directive, you set the budget, and
+you supply the check. The agent fills the middle.
 
-Search does not appear, and it is not an oversight in the advice. It is the
-whole reason the advice works. "Do not overly scaffold" is a statement about
-Search: the model will do its own contextual awareness now, so the elaborate
-prompt structures that used to substitute for the model's own searching have
-become dead weight. Scaffolding was never the goal. It was a prosthetic for a
-Search step the model could not perform yet.
+Which is why "there's no secret to prompting" and "the Quest Engine still
+describes this" are both true at once. The steps did not change. The division of
+labor did.
 
-Which means the three directives are not a replacement for the three steps. They
-are what is left of the three steps once an agent can run the Search and the
-Drive on its own: you supply the directive, you set the effort budget, and you
-supply the verification. The agent fills the middle.
-
-That is the same conclusion I reached from the other direction when I noticed
-agents had taken 80% of my construction. It is mildly satisfying to see someone
-who builds these tools for a living arrive at the three fields a prompt actually
-needs, and have them turn out to be the Why, the sizing knob, and the Renewal
-criteria.
+This is also the second time I have read Boris Cherny and found the same engine
+underneath. His
+[six-step system for solving problems](/blog/i-am-often-wrong-and-the-quest-engine/)
+collapses into Search, Drive, and Renew with the seams still showing, and the
+part he treats as an aside — going back and redefining the plan when new
+information arrives — is Renew carrying as much weight as Drive. The note above
+is the same framework again, aimed at an agent instead of a team, with Search
+and execution handed off. Renew survives both times, in both directions: as the
+correction after, and as the definition of done before.
 
 ## What I am changing
 
-Three concrete habits, which is what I actually want out of reading something
-like this:
-
 **State the directive, not the task.** If the agent hits a fork I did not
-anticipate, it should be able to resolve it from what I wrote. If it cannot, I
-wrote a task, not a directive.
+anticipate, it should resolve it from what I wrote. If it cannot, I wrote a
+task.
 
-**Say the effort out loud.** Smallest viable change, or full audit. The agent
-will not ask, and whatever it assumes is a decision I made by omission.
+**Say the effort out loud, and say it as a strategy.** Not "try hard." One
+careful pass, or a fleet, or a swarm that critiques itself. Name the shape and
+the budget. The agent will not ask.
 
-**Hand over the verification before the work, not after.** The command to run,
-the condition that must hold, what evidence I expect to see. If I cannot state
-how the work gets checked, then I have not finished the directive either, and
-that is the real signal.
+**Hand over the definition of done before the work, not after.** The command to
+run, the condition that must hold, the evidence I expect. If I cannot state how
+the work gets checked, I have not finished stating the Why either.
 
-The open question I am still sitting with is the effort dial, because it is the
-one with no home. Why and Renew have posts, vocabulary, and years of practice
-behind them. Effort has a sentence. If the binding ceiling has moved to the two
-ends of the process, the dial in the middle is the piece most likely to be
-mis-set silently, and I do not yet have a good way to talk about it other than
-naming it every time.
+Of the three, effort is the one I still get wrong most often, and I think that
+is because it is the only one that has no natural artifact. The Why gets a
+document. The definition of done gets a test. Effort gets a sentence I usually
+forget to write, and its default — whatever the agent assumed — is invisible
+until the bill arrives or the work comes back three times larger than the
+problem deserved.
 
 ---
 
 _The three directives quoted at the top are from
 [a public note by Boris Cherny on how he prompts Claude](https://www.threads.com/@boris_cherny/post/DeKrEiy);
-the mapping onto Search, Drive, and Renew, and any strained analogies in it, are
-mine. The framework posts referenced throughout are
+the mapping onto Search, Drive, and Renew, and the gear-selection analogy, are
+mine. The companion reading is
+[his six-step system](/blog/i-am-often-wrong-and-the-quest-engine/). The
+framework posts referenced throughout are
 [The Meta Structure](/blog/the-meta-structure/),
 [The Primary Directive](/blog/the-primary-directive/),
 [The Contextual Core](/blog/the-four-ws/), and
