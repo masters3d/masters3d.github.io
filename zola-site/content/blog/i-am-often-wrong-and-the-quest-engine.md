@@ -1,7 +1,7 @@
 +++
 title = "I Am Often Wrong: The Six-Step System Hiding a Quest Engine"
 date = 2026-09-20
-description = "Boris Chernyak says he loves being wrong, and lays out a six-step system for how he solves every problem. Underneath the labels, it's three moves repeated twice, and the move he treats as a footnote (Renew) is doing exactly as much work as the one he calls urgent (Drive)."
+description = "Boris Cherny says he loves being wrong, and lays out a six-step system for how he solves every problem. Underneath the labels, it's three moves repeated twice, and the move he treats as a footnote (Renew) is doing exactly as much work as the one he calls urgent (Drive)."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Quest Engine"]
@@ -11,7 +11,7 @@ editorial_track = "quest-engine"
 series = "quest-engine"
 +++
 
-Boris Chernyak opens
+Boris Cherny opens
 ["I am often wrong"](https://borischerny.com/management,/product/2026/09/19/I-am-often-wrong.html)
 with a claim most people would bury, not lead with: he's wrong, often, and he
 loves it. Then he lays out the six-step system he runs on every problem he
@@ -41,7 +41,7 @@ the part where the plan actually leaves the page. And the line that looked like
 an aside, go back and redefine 3 through 5, repeat, is **Renew**: the move that
 takes what just happened and feeds it back into the plan.
 
-| Chernyak's Step                         | Quest Engine Move | Why It Fits                                                  |
+| Cherny's Step                           | Quest Engine Move | Why It Fits                                                  |
 | --------------------------------------- | ----------------- | ------------------------------------------------------------ |
 | 1. Understand the available information | **Search**        | Take stock before you touch anything else                    |
 | 2. Gather missing information           | **Search**        | Go close the gap on what you don't know yet                  |
@@ -69,42 +69,42 @@ most like leadership advice. Renew gets one sentence near the end. It would be
 easy to walk away thinking Drive does the real work and Renew just cleans up
 after it.
 
-That reading gets the essay backwards, and here's why it matters. Chernyak
-insists on a "clear and simple approach," and a simple plan is only safe to
-commit to if you know it will get checked and corrected. Renew is that check.
-Take it away and "keep it simple" quietly turns into "hope you got it right the
-first time." The two failure modes Chernyak names as most common, a poorly
-defined problem and an unclear approach, are both failures that live inside
-Drive, but they're only visible once Renew runs and holds the plan up against
-new evidence. A bad Drive with no Renew behind it doesn't fail loudly. It just
-runs to completion, unnoticed, while everyone stays busy.
+That reading gets the essay backwards, and here's why it matters. Cherny insists
+on a "clear and simple approach," and a simple plan is only safe to commit to if
+you know it will get checked and corrected. Renew is that check. Take it away
+and "keep it simple" quietly turns into "hope you got it right the first time."
+The two failure modes Cherny names as most common, a poorly defined problem and
+an unclear approach, are both failures that live inside Drive, but they're only
+visible once Renew runs and holds the plan up against new evidence. A bad Drive
+with no Renew behind it doesn't fail loudly. It just runs to completion,
+unnoticed, while everyone stays busy.
 
-Renew also does something Drive never has to: it turns on itself. Chernyak
-doesn't just apply the loop to the problem. He closes by applying it to the
-loop: "if part of this meta-process is meta-wrong, I am open to changing it."
-That's Renew, reflected onto the very method that produced it. Drive is never
-asked to redefine what commitment means. Renew gets asked to redefine the whole
-system, and does it without flinching.
+Renew also does something Drive never has to: it turns on itself. Cherny doesn't
+just apply the loop to the problem. He closes by applying it to the loop: "if
+part of this meta-process is meta-wrong, I am open to changing it." That's
+Renew, reflected onto the very method that produced it. Drive is never asked to
+redefine what commitment means. Renew gets asked to redefine the whole system,
+and does it without flinching.
 
-So when Chernyak says "act with urgency," read the fine print. Urgency only
-stays honest if the correction loop underneath it is just as fast. He says he
-tries to give feedback in real time so his team can catch drift while it's still
-cheap to fix, which is Renew setting the tempo, not Drive. Fast Drive paired
-with slow Renew isn't speed. It's drift with good posture.
+So when Cherny says "act with urgency," read the fine print. Urgency only stays
+honest if the correction loop underneath it is just as fast. He says he tries to
+give feedback in real time so his team can catch drift while it's still cheap to
+fix, which is Renew setting the tempo, not Drive. Fast Drive paired with slow
+Renew isn't speed. It's drift with good posture.
 
 ## The One-Line Summary
 
 Six steps looked like a list. It's a loop: Search is understand and gather,
 Drive is problem-approach-goal-act with a full Search-Drive-Renew folded inside
 it, and Renew is both the correction on the plan and the correction on the
-framework itself, carrying exactly as much weight as Drive. Boris Chernyak says
-he loves being wrong. What he's actually describing is what it feels like when
+framework itself, carrying exactly as much weight as Drive. Boris Cherny says he
+loves being wrong. What he's actually describing is what it feels like when
 Renew is doing its job.
 
 ---
 
 _This post reads
-[Boris Chernyak's "I am often wrong"](https://borischerny.com/management,/product/2026/09/19/I-am-often-wrong.html)
+[Boris Cherny's "I am often wrong"](https://borischerny.com/management,/product/2026/09/19/I-am-often-wrong.html)
 through the [Quest Engine framework](/blog/quest-engine-introduction/) and its
 [self-similar](/blog/quest-engine-introduction/)
 [Search, Drive, Renew](https://github.com/masters3d/ingenio/tree/main/presentation)
