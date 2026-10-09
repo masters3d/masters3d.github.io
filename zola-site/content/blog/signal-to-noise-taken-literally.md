@@ -1,7 +1,7 @@
 +++
 title = "Signal-to-Noise, Taken Literally"
 date = "2026-10-08"
-description = "People praise someone for having a 100% signal-to-noise ratio. Taken literally that is not a compliment: SNR is a power ratio, no channel has zero noise, and a signal that is pure signal carries no information at all. Borrowing the real engineering terms gives a sharper set of leadership lessons than the phrase does."
+description = "People praise someone for having a 100% signal-to-noise ratio. Borrowed back from the field it came from, that is not a compliment, it is an impossible measurement. Three stories from radio engineering (a hissing resistor, a GPS signal buried under the noise floor, and a rover you cannot steer from Earth) and what each one actually says about working with people."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Leadership & Teams"]
@@ -10,183 +10,201 @@ tags = [
   "systems-thinking",
   "communication",
   "context",
-  "agents",
+  "autonomy",
 ]
 [extra]
 editorial_track = "leadership-and-teams"
 +++
 
-Someone will tell you that a particular person has a **100% signal-to-noise
-ratio**. It is meant as praise: everything they say is worth hearing. I know
-what that is reaching for, but the phrase does not survive contact with the
-field it borrowed from, and the ways it fails are more useful than the
-compliment.
+Someone will tell you that a person on their team has a **100% signal-to-noise
+ratio**. It is meant as praise. Everything they say is worth hearing, nothing is
+filler, no wasted words.
 
-SNR is a ratio of two powers. It is dimensionless, which is why engineers write
-it in decibels. "100%" would mean the noise is zero, and no such channel exists.
+I know what that is reaching for, and I have said versions of it myself. But
+signal-to-noise is a real measurement from a real field, and if you borrow it
+back from that field the compliment turns into something stranger and more
+useful than it was. So let me actually explain what the thing is, and then tell
+three short stories about it, because I think two of them change how you run a
+team.
 
-## Noise Is the Floor You Build On
+## What the Ratio Actually Measures
 
-Any resistor above absolute zero generates noise, because the charge carriers
-inside it are moving thermally. Its power is **kTB**: Boltzmann's constant times
-temperature times bandwidth. You can cool the receiver or narrow the bandwidth.
-You cannot reach zero without reaching absolute zero, and even then the cosmic
-microwave background is still arriving from every direction at 2.7 kelvin.
+Signal-to-noise ratio is exactly what the name says: the power of the thing you
+want, divided by the power of everything else arriving with it. If your signal
+lands at the antenna carrying a thousand times the power of the background hiss,
+your SNR is a thousand to one.
 
-Noise is not a defect in the equipment. It is a property of being a physical
-object in a universe with a temperature. **The engineering question was never
-how to remove it. It is what you can reliably push through a channel that will
-never be clean.** Everything below follows from that.
+Two details matter. First, it is a **ratio of two numbers**, so it has no units
+and it has no maximum. It can be ten, or a million. Because those numbers get
+unwieldy fast, engineers write them in decibels, which is just a logarithmic
+shorthand: 10 dB means ten times, 20 dB means a hundred times, 30 dB means a
+thousand. A decent link runs around 40 dB. Your phone call is fine at 20.
 
-## A Pure Signal Carries Nothing
+Second, and this is the part the compliment trips over: **a ratio is not a
+percentage.** There is no 100%. A ratio of one to zero is not "complete," it is
+undefined, because you have divided by zero. For "100% signal" to mean anything,
+the noise would have to be exactly zero, and that is the part that turns out to
+be physically impossible.
 
-Transmit an unmodulated carrier, a perfect steady sine wave. It is 100% signal
-and completely useless, because every future sample is predictable from the past
-ones.
+## The Hiss You Cannot Turn Off
 
-Information lives in the part a receiver could not have predicted, which has an
-uncomfortable corollary: the more a transmission carries, the more it looks like
-noise. Compressed and encrypted streams are statistically indistinguishable from
-random. The structure you can see is the redundancy.
+Take a plain resistor, nothing connected to it, sitting on a bench. Put a
+sensitive enough amplifier across it and you will hear hiss. Not from
+interference, not from a bad solder joint. The electrons inside the resistor are
+jittering around because the resistor has a temperature, and that jitter is a
+tiny voltage you can measure. It is called thermal noise, and the formula for it
+is about as short as physics formulas get: **kTB**, Boltzmann's constant times
+temperature times bandwidth.
 
-So the meeting where everyone agrees quickly is high signal by the colloquial
-definition and nearly empty by the technical one. Every statement in it was
-predictable before it was made.
+Look at what is and is not in that formula. There is nothing about the quality
+of the component. You cannot buy a better resistor and make it go away. The only
+terms you get to touch are **T**, the temperature, and **B**, how much of the
+spectrum you are listening to. That is why serious radio telescopes cool their
+receivers with liquid helium, and why every receiver is built to listen as
+narrowly as it can get away with. Both moves are attacking the only two
+variables available.
 
-## The Ratio Lives at the Receiver
+And you still cannot reach zero. Drop the temperature all the way and the cosmic
+microwave background is still arriving from every direction at 2.7 kelvin, the
+leftover warmth of the early universe. Noise is not a defect in the equipment.
+**It is a property of being a physical object in a universe that has a
+temperature.**
 
-GPS signals arrive **below the thermal noise floor**. Point an analyzer at that
-band and there is no peak to find. Your phone recovers them anyway by
-correlating against the pseudorandom code each satellite uses, and thirty-odd
-decibels of processing gain pull the data out from underneath. Without the code,
-that band is pure noise. With it, the same waveform is clean data.
+That is the first lesson and it quietly dissolves the compliment. No engineer
+has ever tried to build a channel with no noise in it, because there is no such
+channel. The entire discipline is about what you can reliably push through a
+channel that is _permanently_ dirty. Every piece of advice that starts with
+"eliminate the noise" is describing a system that cannot exist. The real
+question was always: given the hiss, what gets through intact?
 
-Encryption is the deliberate version: a good cipher is designed so the output is
-indistinguishable from random to everyone without the key.
+## The Signal You Cannot Even See
 
-**SNR is not a property of a message. It is a measurement taken at one receiver,
-with one bandwidth, holding one key.** Which means that calling something noise
-is a report on the instrument, not the transmission. It is the mechanism under
-the failure in [Independent Fire](/blog/independent-fire/): the edge was
-transmitting and the center had no correlator for it. Shared context is the
-decryption key, which makes
+Here is the story that reframed the whole phrase for me.
+
+Your phone knows where it is because it is listening to satellites about twenty
+thousand kilometers up, each transmitting with roughly the power of a household
+light bulb. By the time that reaches the ground the signal is _weaker than the
+background noise_. Not faint. Weaker than the hiss. If you put a spectrum
+analyzer on that band and look, there is no bump, no peak, nothing poking above
+the floor. Visually there is no transmission there at all.
+
+Your phone reads it anyway. Each satellite multiplies its data by a long
+pseudorandom code, a specific scramble pattern, and the receiver knows that
+pattern. It takes the apparent noise coming in and correlates it against the
+code it expects. The real signal lines up with the pattern and reinforces, again
+and again, while the genuine noise does not line up with anything and averages
+toward nothing. Thirty-odd decibels of gain fall out of that, and the data
+climbs out from under the floor.
+
+Sit with what that means. To a receiver without the code, that band is 100%
+noise, and that is not a figure of speech, it is a correct measurement. To a
+receiver with the code, the identical waveform is clean data. Same photons, same
+antenna, same instant. Opposite verdict.
+
+Encryption is the deliberate version of the same trick. The design goal of a
+good cipher is that the output be statistically indistinguishable from random to
+anyone without the key. We _engineer_ transmissions to be pure noise to
+everybody except one intended receiver.
+
+So here is the thing I cannot un-see now: **signal-to-noise is not a property of
+the message. It is a measurement taken at one particular receiver, listening on
+one particular band, holding one particular key.** Ask what the SNR of a
+transmission is, with no receiver specified, and the question has no answer.
+
+Which means that when someone says "that is just noise" about a colleague's
+concern, they have not described the concern. They have described their own
+instrument: what they were tuned to, what vocabulary they share, what context
+they are holding. The transmission may have been perfectly clean and they may
+simply not have the code for it.
+
+I think this is the real mechanism under the failure I wrote about in
+[Independent Fire](/blog/independent-fire/), where a command structure breaks
+down because the people at the edge can see more than the center can. The
+soldier behind the tree was transmitting. The formation had no correlator for
+him. And it reframes the work of
 [story mapping](/blog/story-mapping-shared-understanding/) and
-[context as code](/blog/context-as-code/) key distribution rather than
-paperwork.
+[context as code](/blog/context-as-code/) entirely: those are not documentation
+chores, they are **key distribution**. You are handing people the code that lets
+them pull signal out of what would otherwise read as hiss.
 
-## Capacity, and Why Shouting Is the Worst Move
+## The Rover You Cannot Steer
 
-Shannon-Hartley sets the ceiling for a noisy channel: capacity equals bandwidth
-times the log of one plus the signal-to-noise ratio. **Power sits inside a
-logarithm; bandwidth is a multiplier out front.**
+The second story is my favorite, because it takes something we usually argue
+about as a management philosophy and turns it into arithmetic.
 
-Repeating yourself louder, in more meetings, escalated harder, is a power
-increase, and it pays logarithmically. Opening a channel of a different shape
-(write the doc, build the prototype, show the trace) pays linearly. The instinct
-to turn up the volume when you are not being heard is, literally, the worst
-available move.
+We drive rovers on Mars. We do not, however, _drive_ them. Mars is far enough
+away that radio takes somewhere between about six and forty-four minutes for a
+round trip, depending on where the two planets are in their orbits. That number
+is not a budget problem or an engineering shortfall. It is the speed of light.
+There is nothing to optimize.
 
-The ceiling is also finite, which is the same wall as
-[there is no speedup for shared understanding](/blog/no-speedup-for-shared-understanding/).
-Producing above capacity does not transmit faster; it drops the excess. But
-below capacity, error-free transmission over a dirty channel is possible, paid
-for in redundancy. Reviews, tests, and worked examples are redundancy bought on
-purpose.
+So picture trying to joystick a rover around a rock from Earth. You see an
+image. You decide to turn left. You send the command. Twenty minutes later it
+arrives, and by then the rover is somewhere else entirely, or more likely it
+stopped moving fifteen minutes ago because it was not about to drive blind.
+Every control input you make is a reply to a world that no longer exists.
 
-## Four Filters Worth Naming
+The answer was never a faster radio. The answer was to put the decision on the
+vehicle. The rover does its own hazard detection, picks its own path between the
+waypoints, and stops itself when something looks wrong. Earth sends intent (go
+to that ridge, sample that rock) and the rover owns everything underneath it.
 
-**Band-limiting.** Noise power is kTB, so every hertz you accept is noise taken
-in for free. A receiver open everywhere is not better informed, just hotter.
-Narrowing also cuts capacity, so every filter is a bet about where the signal
-will be.
+The general version is one of the cleanest results in control theory: **when the
+time it takes to get feedback back to the center exceeds the timescale of the
+decisions being made, centralized control is not inefficient. It is
+impossible.** It does not matter how good the center is. The loop cannot close
+in time, so authority has to move to wherever the information already is.
 
-**Matched filtering.** The optimal detector for a known waveform is a correlator
-shaped like the thing you are hunting. The precondition nobody mentions is that
-**you cannot filter for a signal you cannot describe.** This is why
-[context hunting beats context gathering](/blog/context-hunting-vs-context-gathering/),
-and why a genuinely new failure goes undetected: monitoring is a bank of filters
-for failures we have already seen.
+I find that more convincing than any argument I have made about autonomy from
+the people side, because it is not a values claim. It is a latency calculation.
+And every team has the same number, we just never measure it. How long between a
+developer seeing something and a decision coming back? A day? A week, if it
+needs a meeting? Then anything that moves faster than a week is, by definition,
+not actually being controlled from the center. It is being controlled at the
+edge whether or not anyone admits it, and the only real question is whether the
+people at the edge have been told they are allowed to decide.
 
-**Processing gain.** Integrate longer and coherent signal adds up linearly while
-random noise adds as the square root, so a signal below the floor climbs out of
-it. Time buys SNR. The weak repeated signal beats the loud one-off, which is the
-arithmetic behind [nine years of notes](/blog/nine-years-of-copious-notes/) and
-behind prevention work, which has a terrible instantaneous reading and an
-excellent integrated one.
+That is the same conclusion as Independent Fire, reached from propagation delay
+instead of terrain. Clear intent from the center, local decisions at the edge,
+not because it is empowering but because the round trip does not fit.
 
-**Noise figure.** Every stage adds noise, and Friis's formula says the first
-stage dominates, because everything after it is divided by the gain already
-applied. **Who hears it first sets the ceiling for every review that follows.**
+## What I Keep
 
-## Distance Sets Where Authority Lives
+So what survives from the original compliment?
 
-Free space still punishes you: power falls off as the inverse square of
-distance, and light speed is a hard floor. A round trip to Mars runs six to
-forty-four minutes, and no budget changes that.
+The thing people are grasping at when they say someone has great signal-to-noise
+is real, I just think they have the mechanism backwards. They are describing a
+receiver, not a transmitter. The colleagues I would describe that way are not
+the ones who talk least. They are the ones whose statements decode to the same
+thing every time: when they say they are confident they turn out to be right,
+and when they are unsure they say that too, so I never have to estimate their
+reliability from outside the conversation. That is not compression. It is
+calibration.
 
-So a rover cannot be joysticked around a rock. By the time the image lands and
-the command returns, it has already stopped or fallen in, which is why the
-autonomy gets moved onto the vehicle. **When feedback latency exceeds the
-timescale of the decisions, centralized control is not inefficient, it is
-impossible.** That is the same conclusion as
-[Independent Fire](/blog/independent-fire/), reached from propagation delay
-instead of terrain, and I find the physical version more convincing.
+And three things I actually took from the physics:
 
-## Output, Input, and Agents
+**Noise is the floor, not the enemy.** It never goes to zero, for anyone, ever.
+Every plan that depends on a clean channel is a plan that will not run. Build
+for a dirty one, which mostly means spending real effort on redundancy you know
+is redundant: the second reviewer, the worked example, the thing said once in a
+meeting and once in writing.
 
-For **output**, what people are actually praising is low noise figure and low
-error rate: this person adds little of their own noise and what arrives decodes
-correctly. That is calibration, not brevity. Stating confidence accurately keeps
-the noise figure low even when you are often uncertain; stating everything with
-equal confidence makes the receiver estimate your reliability from outside the
-channel. Shipping the evidence with the claim, as in
-[proof-carrying work](/blog/proof-carrying-work/), is how you let them stop
-guessing.
+**There is no SNR without a receiver.** "That was noise" is a statement about
+the listener. Before I use it on someone else's input, the honest version is
+noise _to me, from here, with what I currently know_, and sometimes the fix is
+to go get the key rather than to tune them out.
 
-For **input**, kTB is a calendar argument. The number of channels you monitor
-sets your noise intake directly, which is part of why
-[burnout is a control problem](/blog/burnout-is-a-control-problem/): a receiver
-that cannot choose its own filter is swamped no matter how few hours it runs.
-And long integration over a quiet band is exactly how the
-[background brain](/blog/the-background-brain-boredom-makes-ideas/) pulls
-something weak out from under the floor, which fails if you keep retuning.
+**Latency decides where authority lives.** Not philosophy, not trust, not
+seniority. If the round trip to the center is slower than the thing being
+decided, the decision belongs at the edge, and pretending otherwise just means
+the rover drives into the rock while waiting for permission.
 
-For **agents**, this stops being analogy. A context window is a
-bandwidth-limited channel, and filling it with marginally relevant material is
-kTB: accepted bandwidth, accepted noise, worse decoding. The sharpest mapping is
-that a good decoder has an **erasure symbol**, a way to report "could not decode
-this" instead of guessing. A system without one must emit something for every
-input, so feeding it noise returns confident garbage. That is hallucination in
-channel terms, and the countermeasures are the standard ones: narrow the band,
-give it a template to match, add redundancy. Humans fail the same way under the
-same conditions.
-
-## The Extraction
-
-- **Noise is a given.** Any advice premised on removing it describes a system
-  that does not exist.
-- **There is no SNR without a receiver.** "That is just noise" is a statement
-  about the instrument.
-- **Perfect signal means zero information.** Smooth and entirely expected is
-  nearly empty.
-- **Power pays logarithmically, bandwidth linearly.** A different channel beats
-  a louder one.
-- **Reliability over a dirty channel costs redundancy**, bought deliberately.
-- **Time buys SNR.** Quiet work that repeats will out-resolve a loud one-off.
-- **The first receiver dominates the noise figure.**
-- **You cannot filter for what you cannot describe**, so filter attention hard
-  and capture wide. New signal always arrives looking like noise.
-
-What people mean by a 100% signal-to-noise ratio is closer to: low noise figure,
-honest error bars, no wasted bandwidth, and a receiver disciplined enough to
-stay tuned. All of those are achievable. None of them require the noise to go
-away, which is fortunate, because it is not going to.
+None of that requires the noise to go away, which is fortunate, because it is
+not going to.
 
 ---
 
-_Related reading: [Independent Fire](/blog/independent-fire/) on why authority
-belongs where the information already is,
+_Related reading: [Independent Fire](/blog/independent-fire/) on pushing the
+decision to where the information lives, and
 [There Is No Speedup for Shared Understanding](/blog/no-speedup-for-shared-understanding/)
-on capacity into another person's head, and
-[The Word "Impact" Considered Harmful at Work](/blog/word-impact-at-work/) on
-work with a poor instantaneous reading and an excellent integrated one._
+on the hard capacity limit of the channel into another person's head._
