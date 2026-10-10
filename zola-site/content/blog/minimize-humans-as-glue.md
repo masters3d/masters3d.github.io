@@ -54,7 +54,7 @@ most of the work:
   produce the change and open the pull request, your hands stay free for the
   work that moves you up.
 - **Instead of setting up the meeting, have an agent write the email and send
-  it.** Most coordination glue is a communication task in disguise. Draft once,
+  it.** Most coordination glue is really a communication task. Draft once,
   automate the rest, and reserve synchronous time for the things that genuinely
   need it.
 - **Spend more time on learning.** The hours you reclaim from glue are best

@@ -1,7 +1,7 @@
 +++
 title = "Far Away Is the Same as Far in the Future"
 date = "2026-10-09"
-description = "You cannot drive a Mars rover with a joystick, because the round trip for a radio signal runs six to forty-four minutes. Distance and delay are the same constraint wearing different clothes, and once the round trip is slower than the thing you are controlling, central control stops being inefficient and becomes impossible. The physics version of the argument for autonomy at the edge."
+description = "You cannot drive a Mars rover with a joystick, because the round trip for a radio signal runs six to forty-four minutes. Distance and delay are one constraint measured in two different units, and once the round trip is slower than the thing you are controlling, central control stops being inefficient and becomes impossible. The physics version of the argument for autonomy at the edge."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Leadership & Teams"]
@@ -39,7 +39,7 @@ to that ridge, sample that rock) and the rover owns everything underneath it.
 I keep coming back to this because it takes something we usually argue about as
 a management philosophy and turns it into arithmetic.
 
-## Distance Is Just Delay Wearing a Costume
+## Distance Converts Directly Into Delay
 
 The thing I find genuinely clarifying here is that **distance and delay are not
 two constraints. They are one constraint measured in two units.**
