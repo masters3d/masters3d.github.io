@@ -42,7 +42,7 @@ than a four-year degree all showed up at the same time. But the reason it kept
 me is easier to name now than it was then: watching an expert do something feels
 almost exactly like doing it, and it costs almost nothing.
 
-## Watching is the exploration phase wearing a costume
+## Watching is the exploration phase with nothing at stake
 
 The [Quest Engine](/blog/quest-engine-introduction/) splits work into Searching,
 being Driven, and Renewing. Searching is the phase where you scan for the right

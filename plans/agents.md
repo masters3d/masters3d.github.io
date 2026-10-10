@@ -109,6 +109,7 @@
   - "stupid" - avoid entirely (dismissive and imprecise). Use "misguided", "flawed", "ill-suited", "not optimal", or name the specific problem instead
   - "impact" - see "Avoid overloaded words" above
   - When adding new posts or editing existing ones, survey the text for these words and remove them where they are not needed
+- **Phrases to avoid** - Do not use the costume metaphor for "two things are really the same thing": "wearing a costume", "wearing different clothes", "in disguise", "by another name", "dressed up as". It reads as a stock figure of speech rather than an explanation, and it hides the thing worth stating. Name the actual relationship instead: what converts into what, at what exchange rate, or which property the two share. "Distance and delay are one constraint measured in two units" says something; "distance is delay wearing a costume" does not
 - **Minimize section breaks for narrative flow** - Avoid excessive section headings that break narrative flow
   - Write blog posts as cohesive stories rather than overly segmented documentation
   - Minimize h2 (##) section headings - use only for major inflection points (aim for 3-4 max in a blog post)
