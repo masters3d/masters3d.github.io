@@ -136,6 +136,14 @@ jobs:
           python3 scripts/format_markdown.py --check
           echo "✓ Blog Markdown is correctly formatted and lint-clean"
 
+      - name: Reject covert Unicode and whitespace marks
+        # Fails with the file, line, character column, code point, and the
+        # exact edit. Word-choice watermarks have no character to point at;
+        # the script prints why those are out of scope instead of guessing.
+        run: |
+          python3 scripts/check_content_marks.py --self-test
+          python3 scripts/check_content_marks.py
+
       - name: Validate date formats in blog posts
         run: |
           cd zola-site/content/blog

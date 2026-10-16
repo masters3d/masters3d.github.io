@@ -5,7 +5,8 @@
   "description": "Markdown formatting/linting tooling for the masters3d.github.io Zola site.",
   "scripts": {
     "format:md": "python3 scripts/format_markdown.py",
-    "check:md": "python3 scripts/format_markdown.py --check"
+    "check:md": "python3 scripts/format_markdown.py --check",
+    "check:marks": "python3 scripts/check_content_marks.py"
   },
   "devDependencies": {
     "markdownlint-cli2": "0.14.0",

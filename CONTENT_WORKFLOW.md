@@ -72,6 +72,36 @@ that just calls Prettier and markdownlint; the tools are pinned in
 so a PR whose blog Markdown is not correctly formatted (or fails lint) will fail
 the `validate` check.
 
+## 🔎 Covert character check (required)
+
+Some model outputs hide a mark in characters a reader never sees: a zero-width
+space, a Unicode tag character, a bidirectional override, a byte-order mark, or
+a space that is not U+0020. Others swap in a lookalike letter (Cyrillic U+0430
+standing in for Latin a). `scripts/check_content_marks.py` scans the text files
+in this repository and fails if it finds one. The failure names the file, line,
+character column, code point, and the edit: delete that character, or replace
+it with the named ASCII character. It does not rewrite the file.
+
+```bash
+python3 scripts/check_content_marks.py --self-test   # detector fixtures
+python3 scripts/check_content_marks.py               # scan the repository
+```
+
+PR Validation and the deploy workflow both run those two commands. Ordinary
+punctuation (em dash, accented Latin, emoji, and a variation selector that
+follows an emoji) is left alone. Two trailing ASCII spaces at the end of a
+Markdown line are a hard line break, not a mark.
+
+Word-choice watermarks are a different channel, and this check cannot fail
+them. SynthID-Text and the Kirchenbauer green-list scheme bias which token is
+picked. They do not insert a character, so there is no line to edit. Detecting
+them requires the secret key used when the text was generated. The public
+implementation is [google-deepmind/synthid-text](https://github.com/google-deepmind/synthid-text);
+the detector does nothing useful without that key. Public descriptions of
+Claude's text watermark say it is this kind of keyed statistical mark, not
+hidden Unicode, and no detector key is published. The check says that in its
+output. It does not paraphrase text to chase a signal it cannot locate.
+
 ## 🔄 Deployment Process
 
 **Automatic via GitHub Actions:**

@@ -31,7 +31,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
+
+      - name: Reject covert Unicode and whitespace marks
+        # Same gate as PR validation, so a direct push cannot deploy a file
+        # that still contains an invisible or lookalike mark.
+        run: |
+          python3 scripts/check_content_marks.py --self-test
+          python3 scripts/check_content_marks.py
+
       - name: Setup Zola
         uses: taiki-e/install-action@v2
         with:
