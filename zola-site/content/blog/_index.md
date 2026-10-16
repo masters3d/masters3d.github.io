@@ -9,7 +9,7 @@ generate_feeds = true
 
 # Blog
 
-This is one body of work organized into five editorial tracks. Each track keeps
+This is one body of work organized into four editorial tracks. Each track keeps
 a stable voice and reading rhythm, while tags connect related ideas across the
 whole collection.
 

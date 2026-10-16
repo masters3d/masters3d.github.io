@@ -4,10 +4,10 @@ date = "2026-07-21"
 description = "Around 2022, before AI was useful, I onboarded a whole team into a brand new area with two- and three-hour meetings every day. Documentation was thin, the knowledge lived in people's heads, and everyone was drowning. A working session built around user story mapping cut the fog: put every actor (human or system) on a visible surface, walk the flow out loud, and let the shared picture replace the marathon meetings."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Leadership & Teams"]
+categories = ["Field Notes"]
 tags = ["user-story-mapping", "onboarding", "shared-understanding", "facilitation", "user-stories", "agile", "glue-work"]
 [extra]
-editorial_track = "leadership-and-teams"
+editorial_track = "field-notes"
 +++
 
 Around 2022, before AI was addictive or even useful, I was pulled into a brand

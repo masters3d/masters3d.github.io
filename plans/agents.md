@@ -311,40 +311,6 @@ like a field-tested account of changed work, not a product announcement.
   coauthorial "we," universal claims from one successful run, or benchmark detail
   disconnected from actual work.
 
-#### Leadership & Teams (`leadership-and-teams`)
-
-Write as a participant observing how a group actually coordinates, not as a
-management authority issuing universal rules. The tone is direct, humane, and
-structural: behavior makes sense when incentives, information, identity, and
-authority are visible.
-
-- **Opening and movement** - Begin with a specific team moment or a concrete
-  analogy from sport, history, or shared work. Name what made the moment puzzling,
-  extract the coordination principle, then transfer it back to engineering with
-  the limits of the analogy intact.
-- **Evidence** - Use observed behavior, operating conditions, and visible
-  artifacts (a map, team name, decision boundary, or work product). Explain who
-  knew what, who could act, and where information or ownership stalled. Name
-  the central failure mode or distinction precisely before transferring it to
-  another domain.
-- **Language** - Prefer agency, local information, distributed authority,
-  ownership, belonging, shared understanding, and visible surface. Replace broad
-  management terms with the exact outcome, accomplishment, decision, or failure
-  mode being discussed.
-- **Posture** - Diagnose the arrangement before evaluating the person. Make clear
-  that autonomy needs intent and boundaries, identity must be adopted rather than
-  imposed, and central control can fail even with a capable leader.
-- **Personal stake** - When glue work, incentives, or reward structures shape
-  the observation, state the author's position and cost in the system. Use that
-  disclosure as evidence for the diagnosis, not as a claim that one experience
-  represents every team.
-- **Closing** - Return to the opening scene and state the operating principle in
-  memorable language. Advice must identify the conditions in which it applies
-  and who needs authority to act.
-- **Avoid** - Generic leadership maxims, personality ranking, sports or military
-  metaphors treated as proof, calls for autonomy without constraints, or praise
-  for heroics that hides a single point of failure.
-
 #### Field Notes (`field-notes`)
 
 Write as an observer preserving a useful record: what happened, what it felt
