@@ -8,6 +8,7 @@ categories = ["Engineering Systems"]
 tags = ["quality", "ownership", "security", "documentation", "incentives", "shift-left", "systems-thinking"]
 [extra]
 editorial_track = "engineering-systems"
+related = ["overlapping-roles-in-tech", "guiding-policies-behavior-alignment", "development-vs-production"]
 +++
 
 In May 2024 I wrote myself a note with a title that looked like a typo: "Quality

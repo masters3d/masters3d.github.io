@@ -1,6 +1,6 @@
 +++
 title = "Open Guides Over Closed Answers"
-date = "2027-04-15"
+date = "2027-02-15"
 draft = true
 description = "When someone asks for the same explanation by email, the durable answer is usually a guide that others can find, reuse, and improve. Answering once in a shared place turns private help into organizational context."
 template = "blog-post.html"
@@ -9,6 +9,7 @@ categories = ["Engineering Systems"]
 tags = ["documentation", "knowledge-management", "context", "wiki", "async-work", "collaboration"]
 [extra]
 editorial_track = "engineering-systems"
+related = ["types-of-engineering-documentation", "update-propagation", "story-is-engineering-memory"]
 +++
 
 In November 2021 I wrote a small behavioral rule to myself: instead of

@@ -856,6 +856,16 @@ already states a thesis in the author's words.
    visible. A failing gate means: publish that draft or move its date. Run it
    locally with `python3 scripts/check_upcoming_drafts.py` (add `--today
    YYYY-MM-DD` to preview a future date).
+   **Cross-references follow release order.** An inline link
+   `[text](/blog/<slug>/)` may only point at a published post, or (from a
+   draft) at a draft dated on or before this one, because those go out first.
+   Anything later goes in `related` under `[extra]`:
+   `related = ["slug-a", "slug-b"]`. The post template lists related posts
+   that are published, in both directions (posts this one names plus posts
+   that name it), so when a later post goes out, the earlier one picks up the
+   link on the next build without editing it. When publishing a draft out of
+   order, check its inline links first. `scripts/check_post_links.py` enforces
+   this in PR validation and deploy (it also fails on missing slugs).
 5. Use `covered` (with the existing slug) or `dropped` (with a reason) to close
    a row without writing a new post.
 

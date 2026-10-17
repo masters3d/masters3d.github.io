@@ -1,6 +1,6 @@
 +++
 title = "Software 3.0 Needs Engineering, Not Magic"
-date = "2028-02-15"
+date = "2027-12-15"
 draft = true
 description = "Software 3.0 is not a permission slip to trust agents. It is an engineering problem: define the human role, constrain the agent role, and build validation loops around the work they share."
 template = "blog-post.html"
@@ -9,6 +9,7 @@ categories = ["Software Engineering"]
 tags = ["software-3-0", "agents", "engineering", "validation", "collaboration"]
 [extra]
 editorial_track = "software-engineering"
+related = ["cognitive-continuous-integration-and-the-broken-agent-loop", "humans-and-agents-on-one-team", "five-levels-of-agent-capability"]
 +++
 
 In 2025 I had an agent draft a vision document for what I was calling a

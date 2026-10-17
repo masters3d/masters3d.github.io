@@ -1,6 +1,6 @@
 +++
 title = "Anti-Patterns Show Where the Loop Broke"
-date = "2027-11-15"
+date = "2027-09-15"
 draft = true
 description = "The Quest Engine anti-patterns are not a separate list of bad habits. Each one points to a missing phase in the loop: failed knowing, failed acting, or failed improving."
 template = "blog-post.html"
@@ -10,6 +10,7 @@ tags = ["quest-engine", "anti-patterns", "context", "strategy", "improvement"]
 [extra]
 editorial_track = "quest-engine"
 series = "quest-engine"
+related = ["the-fractal-pattern-inside-the-quest-engine", "measuring-the-three-pillars", "anti-patterns-in-human-agent-interaction"]
 +++
 
 The pillar source files end with anti-patterns: information hoarding, stale

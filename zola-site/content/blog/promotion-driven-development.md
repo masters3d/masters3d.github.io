@@ -1,6 +1,6 @@
 +++
 title = "Promotion-Driven Development"
-date = "2027-05-01"
+date = "2027-03-01"
 draft = true
 description = "Promotion incentives shape engineering behavior whether a company admits it or not. If advancement rewards visible launches more than durable systems, engineers will learn to build work that reads well in a packet, even when the product needs maintenance, context, and quiet reliability."
 template = "blog-post.html"
@@ -9,6 +9,7 @@ categories = ["Engineering Systems"]
 tags = ["promotion", "incentives", "career", "engineering-culture", "ownership", "systems-thinking"]
 [extra]
 editorial_track = "engineering-systems"
+related = ["pie-theory-being-seen-at-work", "guiding-policies-behavior-alignment", "quality-engineering-vs-engineering-quality", "overjustification-effect-at-work"]
 +++
 
 In December 2021 I saved a phrase from a 2021 post on the

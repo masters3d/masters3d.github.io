@@ -1,6 +1,6 @@
 +++
 title = "The Kernel of Strategy"
-date = "2027-06-15"
+date = "2027-04-15"
 draft = true
 description = "Rumelt's kernel of strategy (diagnosis, guiding policy, and coherent action) maps cleanly onto engineering work. Diagnosis is contextual awareness, coherent action is clear strategy in motion, and guiding policy is where purpose becomes behavior."
 template = "blog-post.html"
@@ -9,6 +9,7 @@ categories = ["Engineering Systems"]
 tags = ["strategy", "contextual-awareness", "guiding-policy", "clear-strategy", "systems-thinking"]
 [extra]
 editorial_track = "engineering-systems"
+related = ["guiding-policies-behavior-alignment", "philosophy-manifesto-principle-north-star", "directed-intentionality"]
 +++
 
 In May 2024 I wrote a small reading note from Richard Rumelt's _Good Strategy /

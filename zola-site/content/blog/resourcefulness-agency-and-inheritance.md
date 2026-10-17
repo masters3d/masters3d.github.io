@@ -1,6 +1,6 @@
 +++
 title = "Resourcefulness, Agency, and Inheritance"
-date = "2028-02-01"
+date = "2027-12-01"
 draft = true
 description = "Resourcefulness can look inherited because people receive different tools, patterns, and permission structures. But agency also grows through practice. The useful question is which patterns we pass forward, and whether they make the next person more capable of acting."
 template = "blog-post.html"
@@ -10,6 +10,7 @@ tags = ["resourcefulness", "agency", "inheritance", "learning", "systems", "ques
 [extra]
 editorial_track = "human-systems"
 series = "quest-engine"
+related = ["ingenio-the-engine-inside-engineering", "locus-of-control-at-work", "growth-mindset-and-mastery"]
 +++
 
 Resourcefulness can look like a trait some people simply have. One person sees

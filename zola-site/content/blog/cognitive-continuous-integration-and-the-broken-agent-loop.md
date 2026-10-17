@@ -1,6 +1,6 @@
 +++
 title = "Cognitive Continuous Integration and the Broken Agent Loop"
-date = "2027-10-01"
+date = "2027-08-01"
 draft = true
 description = "INGENIO-1 was a real experiment in using GitHub Actions to turn opted-in notes issues into reviewable VISION.md specifications. The lesson was that agent output only became useful after the workflow had explicit boundaries, review seams, and failure handling."
 template = "blog-post.html"
@@ -9,6 +9,7 @@ categories = ["Software Engineering"]
 tags = ["agents", "continuous-integration", "specs", "github-actions", "validation"]
 [extra]
 editorial_track = "software-engineering"
+related = ["software-3-0-needs-engineering-not-magic", "five-levels-of-agent-capability", "hypothesis-driven-agent-experiments", "testing-systems-that-change-themselves"]
 +++
 
 INGENIO-1 was an experiment I ran on my own notes repository. The idea was

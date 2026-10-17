@@ -1,6 +1,6 @@
 +++
 title = "Dotnet Actor Systems and Testable Concurrency"
-date = "2027-09-15"
+date = "2027-07-15"
 draft = true
 description = "Actor systems are useful because they turn shared state into message boundaries. Coyote adds the missing engineering move: make the schedules testable before the rare interleaving becomes production behavior."
 template = "blog-post.html"
@@ -9,6 +9,7 @@ categories = ["Software Engineering"]
 tags = ["dotnet", "actors", "concurrency", "coyote", "testing"]
 [extra]
 editorial_track = "software-engineering"
+related = ["swift-actor-model-vs-rust-ownership", "cognitive-continuous-integration-and-the-broken-agent-loop"]
 +++
 
 In April 2022 I wrote myself a short note titled "dotNet Actor System." The

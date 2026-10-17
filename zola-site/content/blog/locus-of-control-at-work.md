@@ -1,6 +1,6 @@
 +++
 title = "Locus of Control at Work"
-date = "2027-02-15"
+date = "2026-12-15"
 draft = true
 description = "A useful locus of control model at work is not optimism versus pessimism. It is the repeated practice of sorting what you control, what you can influence, what you have to accept, and what you can slowly move from one circle to another."
 template = "blog-post.html"
@@ -10,6 +10,7 @@ tags = ["control", "agency", "career", "engineering-excellence", "feedback-loops
 [extra]
 editorial_track = "human-systems"
 series = "quest-engine"
+related = ["burnout-is-a-control-problem", "pie-theory-being-seen-at-work", "individual-contributor-levels-as-changing-scope"]
 +++
 
 I used to hear "locus of control" as a personality judgment. Some people have an

@@ -1,6 +1,6 @@
 +++
 title = "Guiding Policies and Behavior Alignment"
-date = "2027-07-15"
+date = "2027-05-15"
 draft = true
 description = "Guiding policies are useful only when they align behavior. They should help people make local decisions that fit organizational goals without turning every choice into permission seeking or compliance theater."
 template = "blog-post.html"
@@ -9,6 +9,7 @@ categories = ["Engineering Systems"]
 tags = ["guiding-policy", "behavior", "alignment", "strategy", "engineering-culture"]
 [extra]
 editorial_track = "engineering-systems"
+related = ["kernel-of-strategy", "promotion-driven-development", "quality-engineering-vs-engineering-quality"]
 +++
 
 In May 2024 I wrote a short question to myself: "How does one go about creating,

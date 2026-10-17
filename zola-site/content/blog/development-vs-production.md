@@ -8,6 +8,7 @@ categories = ["Engineering Systems"]
 tags = ["production", "operations", "feedback-loops", "reliability", "ownership", "systems-thinking"]
 [extra]
 editorial_track = "engineering-systems"
+related = ["feature-cradle-to-grave", "quality-engineering-vs-engineering-quality", "overlapping-roles-in-tech"]
 +++
 
 In July 2022 I wrote myself a two-sentence note: the act of developing a product

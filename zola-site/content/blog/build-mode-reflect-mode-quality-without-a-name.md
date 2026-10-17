@@ -1,6 +1,6 @@
 +++
 title = "Build Mode, Reflect Mode, and Quality Without a Name"
-date = "2027-08-15"
+date = "2027-06-15"
 draft = true
 description = "Some quality is specified before construction, and some quality only becomes visible after contact with the thing being built. Build mode and reflect mode are different cognitive states, and good work needs a loop between them."
 template = "blog-post.html"
@@ -10,6 +10,7 @@ tags = ["judgment", "quality", "taste", "craft", "reflection", "quest-engine"]
 [extra]
 editorial_track = "human-systems"
 series = "quest-engine"
+related = ["seeking-is-the-reward", "deliberate-practice-for-engineers", "kaizen-and-the-observe-orient-decide-act-return-loop"]
 +++
 
 There is a kind of quality I can recognize before I can explain it. A page feels

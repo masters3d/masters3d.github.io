@@ -1,6 +1,6 @@
 +++
 title = "Philosophy, Manifesto, Principle, North Star"
-date = "2027-09-01"
+date = "2027-07-01"
 draft = true
 description = "Teams often use philosophy, manifesto, principle, and North Star as if they were interchangeable. They are different tools: worldview, declaration, decision rule, and direction. Confusing them makes strategy sound clearer than it is."
 template = "blog-post.html"
@@ -9,6 +9,7 @@ categories = ["Engineering Systems"]
 tags = ["strategy", "principles", "language", "decision-making", "north-star", "manifesto"]
 [extra]
 editorial_track = "engineering-systems"
+related = ["kernel-of-strategy", "guiding-policies-behavior-alignment", "types-of-engineering-documentation"]
 +++
 
 In July 2022 I wrote down four words as a thinking prompt: philosophy,

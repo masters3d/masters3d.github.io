@@ -1,6 +1,6 @@
 +++
 title = "Career Quest Engineering, the 2021 Talk"
-date = "2027-12-01"
+date = "2027-10-01"
 draft = true
 description = "The 2021 Career Quest Engineering talk preserved a transition from video editor, to project manager, to software engineer. The lasting thread was not arriving at the perfect role, but learning which work still made the journey worth taking."
 template = "blog-post.html"
@@ -9,6 +9,7 @@ categories = ["Field Notes"]
 tags = ["career", "field-notes", "video-editing", "project-management", "software-engineering"]
 [extra]
 editorial_track = "field-notes"
+related = ["motivation-ability-narrative", "ingenio-the-engine-inside-engineering", "career-levels-depend-on-context"]
 +++
 
 In November 2021 I gave a talk called "Career Quest Engineering," with a

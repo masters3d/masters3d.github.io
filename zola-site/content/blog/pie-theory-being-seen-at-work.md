@@ -1,6 +1,6 @@
 +++
 title = "PIE Theory: Being Seen Is Part of the Work"
-date = "2027-02-01"
+date = "2026-12-01"
 draft = true
 description = "Performance matters, but engineering careers do not move on performance alone. PIE theory names the uncomfortable system around work: what you deliver, how that delivery is understood, and whether the right people ever see it."
 template = "blog-post.html"
@@ -10,6 +10,7 @@ tags = ["career", "pie-theory", "visibility", "reputation", "engineering-careers
 [extra]
 editorial_track = "human-systems"
 series = "quest-engine"
+related = ["locus-of-control-at-work", "individual-contributor-levels-as-changing-scope", "promotion-driven-development", "motivation-ability-narrative"]
 +++
 
 The first time I heard some version of PIE theory, I resisted it. Performance,

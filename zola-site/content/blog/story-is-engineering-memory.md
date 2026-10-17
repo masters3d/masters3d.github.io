@@ -1,6 +1,6 @@
 +++
 title = "Story Is Engineering Memory"
-date = "2027-08-01"
+date = "2027-06-01"
 draft = true
 description = "Engineering information does not survive because it was written down once. It survives when people can store it, retell it, and use it under pressure. Story is one of the ways technical context becomes memory."
 template = "blog-post.html"
@@ -9,6 +9,7 @@ categories = ["Human Systems"]
 tags = ["story", "engineering", "memory", "documentation", "context", "narrative"]
 [extra]
 editorial_track = "human-systems"
+related = ["cohesive-narrative", "motivation-ability-narrative", "types-of-engineering-documentation"]
 +++
 
 I have read technically correct documents that left almost no memory behind.
