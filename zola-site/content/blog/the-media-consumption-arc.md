@@ -4,10 +4,10 @@ date = "2026-07-25"
 description = "Before the pandemic I avoided television shows because of their time commitment. Then watching shows with my wife helped us through isolation. Looking from college to retirement, the better question is not whether media is good or bad, but what degree of attention and responsiveness it asks from us at each season of life."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Field Notes"]
+categories = ["Human Systems"]
 tags = ["media", "movies", "television", "video-games", "ai", "attention", "pandemic", "retirement"]
 [extra]
-editorial_track = "field-notes"
+editorial_track = "human-systems"
 +++
 
 Right before the pandemic, I was thinking about the time I invested in movies. I

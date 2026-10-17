@@ -4,10 +4,10 @@ date = "2026-04-26"
 description = "Exploring a secular approach to life's meaning through three forces: Discovery (the search for understanding), Play (the drive to engage), and Joy (the renewal of purpose). These aren't abstract ideals — they're diagnostic tools for a life that matters."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Human Cognition"]
+categories = ["Human Systems"]
 tags = ["meaning", "discovery", "play", "joy", "secular-philosophy", "quest-engine"]
 [extra]
-editorial_track = "human-cognition"
+editorial_track = "human-systems"
 series = "quest-engine"
 +++
 

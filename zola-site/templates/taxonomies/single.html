@@ -39,8 +39,8 @@
           <h1>{% if taxonomy.name == "categories" %}{{ term.name }}{% else %}Tag: {{ term.name }}{% endif %}</h1>
           {% if taxonomy.name == "categories" and term.name == "Quest Engine" %}
           <p class="taxonomy-description">The framework itself. Start with the introduction, then follow the model through its foundations.</p>
-          {% elif taxonomy.name == "categories" and term.name == "Human Cognition" %}
-          <p class="taxonomy-description">The human side of the loop: attention, habit, motivation, meaning, rest, and the body that runs the work. The part of renewal no tool does for you.</p>
+          {% elif taxonomy.name == "categories" and term.name == "Human Systems" %}
+          <p class="taxonomy-description">The person running the loop, treated as a system with three parts: cognitive (attention, habit, motivation, meaning), physical (the body, energy, rest), and health (sleep, stress, burnout, recovery). The part of renewal no tool does for you.</p>
           {% elif taxonomy.name == "categories" and term.name == "Engineering Systems" %}
           <p class="taxonomy-description">Systems thinking about how engineering teams and organizations work: the design beneath an apparent people problem.</p>
           {% elif taxonomy.name == "categories" and term.name == "Software Engineering" %}
@@ -83,7 +83,7 @@
           <h3>All Editorial Tracks</h3>
           {% set categories_terms = get_taxonomy(kind="categories") %}
           <ul>
-            {% for track_name in ["Quest Engine", "Field Notes", "Software Engineering", "Engineering Systems", "Human Cognition"] %}
+            {% for track_name in ["Quest Engine", "Field Notes", "Software Engineering", "Engineering Systems", "Human Systems"] %}
             {% for category_term in categories_terms.items %}
             {% if category_term.name == track_name %}
             <li><a href="{{ category_term.permalink }}">{{ category_term.name }}</a> ({{ category_term.pages | length }})</li>

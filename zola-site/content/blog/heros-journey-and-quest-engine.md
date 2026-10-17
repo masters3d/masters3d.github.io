@@ -4,10 +4,10 @@ date = "2026-04-29"
 description = "Joseph Campbell's monomyth (Departure, Initiation, Return) maps naturally onto the Quest Engine's three forces (Searching, Driven, Renewal). The hero's journey is the narrative; the Quest Engine is the operating system."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Human Cognition"]
+categories = ["Human Systems"]
 tags = ["quest-engine", "heros-journey", "monomyth", "search-drive-renew", "narrative", "mythology"]
 [extra]
-editorial_track = "human-cognition"
+editorial_track = "human-systems"
 series = "quest-engine"
 +++
 

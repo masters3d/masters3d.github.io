@@ -4,10 +4,10 @@ date = "2026-04-12"
 description = "Tracing the phrase 'Stay Hungry. Stay Foolish.' from Stewart Brand's Whole Earth Catalog through Steve Jobs' Stanford address to the mindset of permanent, joyful pursuit that drives self-advancement and connects to Quest Engine."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Human Cognition"]
+categories = ["Human Systems"]
 tags = ["quest-engine", "motivation", "growth", "steve-jobs", "whole-earth-catalog", "curiosity"]
 [extra]
-editorial_track = "human-cognition"
+editorial_track = "human-systems"
 series = "quest-engine"
 +++
 

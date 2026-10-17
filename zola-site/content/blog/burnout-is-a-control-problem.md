@@ -4,10 +4,10 @@ date = "2026-07-13"
 description = "More than a decade ago I burned out badly, and the obvious story (too many hours) turned out to be wrong. Burnout wasn't the work I did; it was the control I lost over where my time went, and everything the work made impossible outside of it."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Human Cognition"]
+categories = ["Human Systems"]
 tags = ["burnout", "control", "autonomy", "time", "slow-productivity", "renewal", "quest-engine", "motivation"]
 [extra]
-editorial_track = "human-cognition"
+editorial_track = "human-systems"
 series = "quest-engine"
 +++
 

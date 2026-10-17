@@ -1,7 +1,7 @@
 {% set categories = get_taxonomy(kind="categories") %}
 {# Tracks follow the Quest Engine structure, not the alphabet: the Why (the
    model itself), the four Ws (the record), then Search, Drive, and Renew. #}
-{% set track_order = ["Quest Engine", "Field Notes", "Software Engineering", "Engineering Systems", "Human Cognition"] %}
+{% set track_order = ["Quest Engine", "Field Notes", "Software Engineering", "Engineering Systems", "Human Systems"] %}
 <section class="editorial-tracks" aria-labelledby="editorial-tracks-title">
   <h2 id="editorial-tracks-title">Editorial Tracks</h2>
   <p>Every post belongs to one track with its own subject, reading rhythm, and voice. The tracks follow the Quest Engine's own outline: the model, the record, then Search, Drive, and Renew. Tags connect ideas across tracks.</p>
@@ -26,9 +26,9 @@
       {% set role = "Drive: autonomy" %}
       {% set description = "How teams and organizations work as systems: incidents, ownership, risk, context, and the words engineers use." %}
     {% else %}
-      {% set track = "human-cognition" %}
+      {% set track = "human-systems" %}
       {% set role = "Renew: purpose" %}
-      {% set description = "How one person thinks, pays attention, stays motivated, and renews: the mind and body running the loop." %}
+      {% set description = "The person as a system: cognitive (attention, habit, motivation, meaning), physical (the body, energy, rest), and health (sleep, stress, burnout, recovery)." %}
     {% endif %}
     <article class="track-summary track-{{ track }}">
       <p class="track-kicker">{{ role }} · {{ term.pages | length }} posts</p>

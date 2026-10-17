@@ -4,10 +4,10 @@ date = "2026-07-13"
 description = "Some of my best ideas came from stopping work, not doing more of it. Learning How to Learn's diffuse mode, Kahneman's System 1, and Cal Newport's Slow Productivity all describe the same mechanism: the mind does its best creative work in the background, so past a point more hours make creative output worse, not better."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Human Cognition"]
+categories = ["Human Systems"]
 tags = ["diffuse-mode", "focus-mode", "system-1", "system-2", "thinking-fast-and-slow", "slow-productivity", "boredom", "creativity", "default-mode-network", "quest-engine"]
 [extra]
-editorial_track = "human-cognition"
+editorial_track = "human-systems"
 series = "quest-engine"
 +++
 
