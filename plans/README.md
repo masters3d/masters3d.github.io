@@ -8,6 +8,7 @@ This folder contains all planning documents, migration strategies, and session n
 - `zola-implementation.md` - Zola (Rust) implementation plan
 - `progress-tracking.md` - Living document tracking progress and decisions
 - `agents.md` - Agent interaction guidelines and decision consistency
+- `post-backlog.md` - Candidate blog posts mined from masters3d/ingenio, with source locations and status
 
 ## Quick Links
 

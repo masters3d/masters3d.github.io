@@ -798,6 +798,47 @@ alive with `aliases`.
 commit in a worktree and diff its slug list against the new build. Anything present in the old
 build but missing from the new one is a 404 waiting to happen.
 
+### Post Backlog: Finding and Closing Ideas
+
+**DECIDED**: Candidate posts live in [`plans/post-backlog.md`](./post-backlog.md).
+Each row has an ID, the idea, its source location, an editorial track, a priority,
+and a status. When asked for "the next post", take the highest-priority `open` row
+unless the user names one.
+
+**Finding more ideas.** The main source is
+[masters3d/ingenio](https://github.com/masters3d/ingenio). Look in this order:
+
+1. **Ingenio issues** (all closed, still readable). The issue body holds the
+   author's own words. Use `list_issues` with `state` unset, then `issue_read`.
+2. **`specs/*/VISION.md`**. Most of each file is generated template text
+   (Mission Statement, Cognitive Agent Enhancement, Success Metrics). Only the
+   "Problem Statement" / "Engineering Context" paragraph is the author's; ignore
+   the rest as evidence of the author's view.
+3. **`pillars/`, `presentation/`, `career.md`, `media/`**. These hold framework
+   detail, talk decks, and diagrams.
+4. **`cognitive_systems/`, `experiments/`, and the root `*_FIX*.md` /
+   `COGNITIVE_*.md` files**. These document the INGENIO-1 experiment itself.
+
+Before adding a row, check that no existing post already makes the argument:
+grep `zola-site/content/blog/` for the topic's key terms and read any hit. If a
+post covers it, add the idea to "Covered by Existing Posts" instead. Pick the
+track with "Placing a Post in a Track" above. Assign `P1` only when the source
+already states a thesis in the author's words.
+
+**Closing an item.**
+
+1. Read the source issue and spec, then write the post following the voice,
+   track, and writing-style rules in this file. Link the ingenio issue when the
+   post grows out of it, and use the issue's `created_at` for any date you
+   mention. Do not invent personal anecdotes the sources do not support.
+2. Run `python3 scripts/format_markdown.py`,
+   `python3 scripts/check_content_marks.py`, and `cd zola-site && zola build`.
+3. In the same PR, set the row's Status to `published` and put the post's slug
+   in the Post column. Do not delete the row; it is the record of where the idea
+   came from.
+4. Use `covered` (with the existing slug) or `dropped` (with a reason) to close
+   a row without writing a new post.
+
 ### Blog Guidelines for Agents
 - **Preserve workflow**: Keep simple file-based posting
 - **Maintain design**: Blog matches existing site theme
