@@ -216,12 +216,88 @@ authorial voice remains the baseline, while the track determines the post's
 emphasis, evidence, and pacing. Tags connect related ideas across tracks; they do
 not replace the primary track.
 
+#### Placing a Post in a Track
+
+**Not everything that says Quest Engine goes into Quest Engine.** Most posts
+on this blog use Search, Drive, and Renew somewhere. That vocabulary is a lens
+the author applies everywhere; it is not evidence of the track. The Quest
+Engine track grew to 30 posts once because framework mentions were treated as
+membership, and it was cut back to the ~10 posts that actually build the model.
+
+Decide the track from the post's subject, in this order:
+
+1. **Is the framework itself the subject?** The post defines a part of the
+   model, connects parts, or extends it (a new layer, a corrected mapping, the
+   structure of the loop). If you deleted every non-framework example, the
+   argument would still stand. → **Quest Engine**. If the framework is the lens
+   and something else is the subject, keep going.
+2. **Is it a dated personal record?** A device, a year, a prediction, a
+   portfolio, a history where the chronology matters more than the lesson. →
+   **Field Notes**.
+3. **Is the subject the craft or career of building software?** Languages,
+   code, verification, agent workflows, expertise, learning to program. →
+   **Software Engineering**.
+4. **Is the subject how teams or organizations behave?** Ownership, incidents,
+   autonomy, team identity, context flow, the words teams use. →
+   **Engineering Systems**.
+5. **Is the subject one person as a system?** Cognitive (attention, habit,
+   automaticity, motivation, meaning, spirituality, a familiar phrase or triad
+   tested as a pattern of how people keep going), physical (the body, energy,
+   movement, rest), or health (sleep, stress, burnout, recovery). →
+   **Human Systems**.
+
+   **Human Systems vs Engineering Systems:** one person is Human Systems; many
+   people coordinating is Engineering Systems. Burnout is Human Systems even
+   when work caused it; on-call rotations that cause burnout are Engineering
+   Systems. If the subject is the craft, it is Software Engineering, even when
+   the post borrows a cognitive model.
+
+Quick tests:
+
+- **Swap test** - Replace "Quest Engine" with a generic phrase like "this
+  model". If the post still makes its point, the framework is the lens, not the
+  subject.
+- **Title test** - A title that pairs the framework with something else
+  ("Agents Are Taking the Drive", "Faith. Guts. Stamina.", "Independent Fire")
+  usually belongs to the something else.
+- **Tag and series are not the track** - `series = "quest-engine"` and the
+  `quest-engine` tag put a post in the reading order. Use them freely on any
+  track; the reading order spans all five tracks.
+
+Examples of the current split:
+
+| Post | Track | Why not Quest Engine |
+| --- | --- | --- |
+| The Meta Structure, The Primary Directive, The Contextual Core | Quest Engine | (These define the model.) |
+| Agents Are Taking the Drive; Goal, Effort, Verification | Software Engineering | Subject is agent-driven engineering work |
+| Independent Fire; World Cup 2026 | Engineering Systems | Subject is how teams distribute authority |
+| Faith. Guts. Stamina.; Secular Meaning of Life; Running the Health Quest | Human Systems | Subject is motivation (cognitive), meaning (cognitive), or the body (physical, health) |
+| Burnout Is a Control Problem | Human Systems | Subject is one person's health and recovery, told with history |
+| The Media Consumption Arc | Human Systems | Subject is how media competes for one person's attention across life stages |
+| The Bicycle of the Mind | Human Systems | Subject is how attention becomes automaticity; agents are the application |
+
+**Track order mirrors the framework.** Templates list tracks in this fixed order,
+not alphabetically: Quest Engine (the Why), Field Notes (the four Ws: who, what,
+when, where), Software Engineering (Search: mastery), Engineering Systems (Drive:
+autonomy), Human Systems (Renew: purpose). The mapping holds for each track as
+a whole, not for every post in it, and it is not a placement rule. Place by
+subject using the steps above. Keep the order list in
+`templates/partials/editorial-tracks.html` and `templates/taxonomies/single.html`
+in sync when adding a track.
+
 #### Quest Engine (`quest-engine`)
 
 Write as a framework builder finding the same underlying shape in lived
 experience, stories, psychology, engineering, and history. The tone is
 diagnostic rather than inspirational: give readers language for recognizing
 where they are, not slogans about where they should be.
+
+This track is reserved for posts whose main contribution is the model itself:
+defining a part, connecting parts, or extending the framework. A post that uses
+the framework as a lens on something else belongs to that subject's track
+(Human Systems for the person: cognitive, physical, and health; Software Engineering for craft and
+agents, Engineering Systems for teams) and joins the reading order through
+`extra.series = "quest-engine"` and the `quest-engine` tag instead.
 
 - **Opening and movement** - Begin with a concrete experience, cultural scene, or
   stubborn question. Extract the structural pattern, define it, test it against
@@ -249,11 +325,51 @@ where they are, not slogans about where they should be.
   a new distinction, or references that display breadth without advancing the
   model.
 
+#### Human Systems (`human-systems`)
+
+Write as an engineer turning the same diagnostic lens on the person running
+the loop. Software Engineering is the craft (Search), Engineering Systems is the
+team (Drive), and Human Systems is the human-specific part of Renew: the
+person running the loop, treated as a system with three parts.
+
+- **Cognitive** - attention, habit, automaticity, motivation, meaning, and
+  belonging.
+- **Physical** - the body, energy, movement, posture, and rest.
+- **Health** - sleep, stress, burnout, and recovery: what happens when the
+  cognitive and physical parts are run past capacity, and how they come back.
+
+The tone is warm but still diagnostic; the post earns its conclusion rather
+than cheering for it.
+
+- **Opening and movement** - Start with a phrase, quote, film scene, or personal
+  moment (a speech, a coach's answer, a camp motto, a burnout). Question its
+  order or completeness, propose the sharper version, and show what the change
+  lets a person notice or do differently.
+- **Evidence** - Lived experience plus one or two independent sources (research,
+  history, a named thinker). The Quest Engine may supply the mapping, but the
+  post must stand on its subject; if the framework is the main contribution, the
+  post belongs in Quest Engine.
+- **Language** - Plain, human words: attention, habit, motivation, meaning,
+  joy, rest, energy, control, belonging. Name cognitive models precisely (System
+  1 and System 2, diffuse and focused mode) and cite where they come from.
+  Define framework terms on first use instead of assuming the reader has read
+  the series.
+- **Posture** - Secular and non-prescriptive. Offer a lens, not a regimen. Admit
+  where a mapping is partial or where one life does not generalize.
+- **Closing** - Return to the opening phrase or moment and leave the reader with
+  a question or a small choice they can make.
+- **Avoid** - Motivational hype, self-help imperatives, mystical certainty,
+  health or medical advice presented as universal, and triads forced into a
+  one-to-one mapping.
+
 #### Engineering Systems (`engineering-systems`)
 
 Write as an engineer diagnosing the design beneath an apparent people problem.
 The tone is calm, exact, and fair. Authority comes from exposing the mechanism
-and its boundary conditions, not from sounding certain.
+and its boundary conditions, not from sounding certain. The subject is how
+engineering teams and organizations work as systems (incidents, ownership,
+risk, glue work, context flow, process design, and the words teams use).
+Programming-language and code-level deep dives belong in Software Engineering.
 
 - **Opening and movement** - Start with a failure mode, constraint, surprising
   behavior, or a phrase that stopped being useful. Show why the obvious model
@@ -311,6 +427,11 @@ does, verifies, owns, and learns.
   as nostalgia. Name the skill that mattered, the one that turned out to matter
   more, and what a person entering the field now should practice. Pure
   chronological records without that present-day lens belong in Field Notes.
+- **Languages and code** - Programming-language, runtime, and code-architecture
+  deep dives (concurrency models, safety checks, cross-language boundaries)
+  belong here as part of the craft. Lead with the mechanism, show the code or
+  standard-library detail that proves it, and name the tradeoff and where the
+  comparison stops holding.
 - **Closing** - Name the higher-level workflow change, what remains uncertain,
   and what evidence would change the conclusion. Let the account remain revisable
   as the tools change. Express that boundary in language specific to the

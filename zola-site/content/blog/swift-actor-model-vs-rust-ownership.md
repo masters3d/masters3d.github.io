@@ -4,10 +4,10 @@ date = "2026-07-19"
 description = "A Swift admirer's deep dive into why the actor model feels like it stops short of full isolation, why Rust reaches data-race freedom without any actors at all, and why adding strict, safe concurrency to a mature language is a monumental engineering pursuit worth praising."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Engineering Systems"]
+categories = ["Software Engineering"]
 tags = ["swift", "rust", "concurrency", "actors", "memory-safety", "type-systems", "languages"]
 [extra]
-editorial_track = "engineering-systems"
+editorial_track = "software-engineering"
 +++
 
 I keep coming back to Swift's

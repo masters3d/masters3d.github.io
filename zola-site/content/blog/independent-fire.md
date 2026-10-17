@@ -4,10 +4,10 @@ date = "2026-07-08"
 description = "A George Washington film handed me a phrase that stuck: 'independent fire.' I cannot vouch that Washington ever said it, but the tactic it points at is real history. The colonists could not win by copying British linear volleys on open fields; they had to use cover and let soldiers pick their own targets. Independent fire is the perfect model for how high-agency engineering teams should be allowed to operate."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Quest Engine"]
+categories = ["Engineering Systems"]
 tags = ["quest-engine", "autonomy", "high-agency", "team-dynamics", "independent-fire", "command-and-control"]
 [extra]
-editorial_track = "quest-engine"
+editorial_track = "engineering-systems"
 series = "quest-engine"
 +++
 

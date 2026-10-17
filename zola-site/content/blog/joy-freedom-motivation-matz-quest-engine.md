@@ -4,7 +4,7 @@ date = "2026-10-05"
 description = "In a conversation about Ruby, Rails, and the future of programming, Matz described joy, freedom, and motivation as the thing a language gives you that is hard to replicate. Freedom maps cleanly to Autonomy and Drive. Joy turns out to be the Discovery/Play/Joy triad. Motivation is not a force at all, it is the container, and it needs expanding before the mapping closes."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Quest Engine"]
+categories = ["Human Systems"]
 tags = [
   "quest-engine",
   "motivation",
@@ -19,7 +19,7 @@ tags = [
   "triads",
 ]
 [extra]
-editorial_track = "quest-engine"
+editorial_track = "human-systems"
 series = "quest-engine"
 +++
 

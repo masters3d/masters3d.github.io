@@ -26,6 +26,13 @@
   --link-hover: #cda8ff;
 }
 
+.track-human-systems {
+  --accent-color: #f5b942;
+  --accent-hover: #f8cc70;
+  --link-color: #f5b942;
+  --link-hover: #f8cc70;
+}
+
 .track-engineering-systems {
   --accent-color: #4da6ff;
   --accent-hover: #79bdff;
@@ -425,7 +432,8 @@ aside#sidebar hr {
   border-left: 4px solid var(--accent-color);
 }
 
-.track-quest-engine .post-content blockquote {
+.track-quest-engine .post-content blockquote,
+.track-human-systems .post-content blockquote {
   background: var(--bg-secondary);
   border-radius: 0 8px 8px 0;
   padding-bottom: 0.75rem;

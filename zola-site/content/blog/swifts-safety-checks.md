@@ -4,10 +4,10 @@ date = "2026-07-25"
 description = "Swift sometimes preserves memory safety by stopping the program. Following a Character initializer into the standard library explains when to use assert, precondition, and fatalError."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Engineering Systems"]
+categories = ["Software Engineering"]
 tags = ["swift", "memory-safety", "assertions", "preconditions", "standard-library", "languages"]
 [extra]
-editorial_track = "engineering-systems"
+editorial_track = "software-engineering"
 +++
 
 In 2020 I was writing queries in Kusto, a loosely typed database language, and

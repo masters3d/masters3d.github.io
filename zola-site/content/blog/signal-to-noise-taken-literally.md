@@ -119,9 +119,9 @@ I think that is the mechanism under the failure I wrote about in
 [Independent Fire](/blog/independent-fire/), where a command structure breaks
 down because the people at the edge see more than the center can. The soldier
 behind the tree was transmitting; the formation had no correlator for him. It
-also reframes [story mapping](/blog/story-mapping-shared-understanding/) and
-[context as code](/blog/context-as-code/) as **key distribution** rather than
-documentation chores: handing people the code that makes your transmissions
+also reframes [story mapping](/blog/user-story-mapping-shared-understanding/)
+and [context as code](/blog/context-as-code/) as **key distribution** rather
+than documentation chores: handing people the code that makes your transmissions
 decodable.
 
 ## Your Best Filter Is Also Your Biggest Blind Spot

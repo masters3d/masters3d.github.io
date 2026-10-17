@@ -5,13 +5,16 @@
   <p class="track-kicker">Editorial track</p>
   {% if track == "quest-engine" %}
   <p class="track-title">Quest Engine</p>
-  <p>Framework essays that build one connected model through definitions, comparisons, and applications.</p>
+  <p>Framework essays that define one connected model and the parts that hold it together.</p>
+  {% elif track == "human-systems" %}
+  <p class="track-title">Human Systems</p>
+  <p>Essays on the person as a system (cognitive, physical, and health), tested against lived experience and research.</p>
   {% elif track == "engineering-systems" %}
   <p class="track-title">Engineering Systems</p>
-  <p>Technical arguments grounded in mechanisms, constraints, tradeoffs, and evidence from working systems.</p>
+  <p>Systems arguments about teams and organizations, grounded in mechanisms, constraints, and tradeoffs.</p>
   {% elif track == "software-engineering" %}
   <p class="track-title">Software Engineering</p>
-  <p>The next generation of the craft, told through what changed in the work, what remained human, and how engineers grow.</p>
+  <p>The craft of building software, from languages and code to what changed in the work and how engineers grow.</p>
   {% else %}
   <p class="track-title">Field Notes</p>
   <p>First-person records, retrospectives, and portfolios that preserve the details before drawing conclusions.</p>

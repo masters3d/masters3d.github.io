@@ -4,7 +4,7 @@ date = "2026-10-08"
 description = "The top labs and the current administration got together and decided to start calling it Super Intelligence instead of Artificial Intelligence, SpaceX is renaming its AI unit to SpaceXSI, and some states like California are sticking with AI. This is about the name itself rather than the politics. I actually like the SI framing, the one real argument for it is linguistic because super and intelligence travel across languages and the acronym does not flip the way IA does in Spanish, I am wary of anything that shades into compelled speech, and my only real concern is whether the benefit reaches everybody rather than the top one percent."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Software Engineering"]
+categories = ["Field Notes"]
 tags = [
   "ai-development",
   "terminology",
@@ -15,7 +15,7 @@ tags = [
   "access",
 ]
 [extra]
-editorial_track = "software-engineering"
+editorial_track = "field-notes"
 +++
 
 There was a meeting between the top labs and the current administration, and

@@ -4,7 +4,7 @@ date = "2026-10-06"
 description = "Elon's algorithm is not really an automation algorithm. It is a procedure for forcing shared understanding of a process, and automation is what it happens to permit at the end. The Quest Engine says the same thing structurally and translates it to a world that is mostly digital, where the walk around the factory floor can be delegated to agents and the goal is not a fully automated process but a self-sustaining one that keeps humans only where judgment genuinely lives."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Quest Engine"]
+categories = ["Software Engineering"]
 tags = [
   "quest-engine",
   "automation",
@@ -16,7 +16,7 @@ tags = [
   "self-healing",
 ]
 [extra]
-editorial_track = "quest-engine"
+editorial_track = "software-engineering"
 series = "quest-engine"
 +++
 
@@ -221,10 +221,10 @@ process from the artifacts — sequence, frequency, exception rate, origin of ea
 requirement, who actually holds each decision — and have that surfaced as a
 draft. Then do the irreducibly human half: walk the draft through with the
 people who run it and collect everything the artifacts could not contain.
-[User story mapping](/blog/story-mapping-shared-understanding/) is the format I
-use, because it is specifically good at surfacing the steps nobody thinks to
-mention. The output is a shared picture, and until it exists nothing downstream
-is trustworthy.
+[User story mapping](/blog/user-story-mapping-shared-understanding/) is the
+format I use, because it is specifically good at surfacing the steps nobody
+thinks to mention. The output is a shared picture, and until it exists nothing
+downstream is trustworthy.
 
 **Delete before you build.** Most processes that look like automation candidates
 contain steps that exist because of a constraint lifted years ago. Those cost

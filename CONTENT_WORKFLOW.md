@@ -149,8 +149,10 @@ tags = ["tag1", "tag2"]
 editorial_track = "engineering-systems"
 +++
 ```
-3. Choose exactly one editorial track: `Quest Engine`, `Engineering Systems`,
-   `Software Engineering`, or `Field Notes`
+3. Choose exactly one editorial track: `Quest Engine`, `Field Notes`,
+   `Software Engineering`, `Engineering Systems`, or `Human Systems`. Mentioning
+   the Quest Engine does not make a post a Quest Engine post; follow "Placing a
+   Post in a Track" in `plans/agents.md`
 4. Use tags for series and ideas that cross editorial tracks
 5. Write content in markdown below the frontmatter
 6. Format the Markdown: run `python3 scripts/format_markdown.py`
