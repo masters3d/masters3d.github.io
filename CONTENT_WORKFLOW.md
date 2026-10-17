@@ -150,7 +150,7 @@ editorial_track = "engineering-systems"
 +++
 ```
 3. Choose exactly one editorial track: `Quest Engine`, `Engineering Systems`,
-   `AI & Tools`, or `Field Notes`
+   `Software Engineering`, or `Field Notes`
 4. Use tags for series and ideas that cross editorial tracks
 5. Write content in markdown below the frontmatter
 6. Format the Markdown: run `python3 scripts/format_markdown.py`

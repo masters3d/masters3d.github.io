@@ -4,10 +4,10 @@ date = "2026-05-24"
 description = "A practical guide to choosing programming languages for frontend, CLI, and server development with decision matrices that account for modern LLM-assisted development."
 template = "blog-post.html"
 [taxonomies]
-categories = ["AI & Tools"]
+categories = ["Software Engineering"]
 tags = ["rust", "python", "typescript", "go", "csharp", "swift", "llm", "ai-development"]
 [extra]
-editorial_track = "ai-and-tools"
+editorial_track = "software-engineering"
 +++
 
 I started programming in 2014, but I could have started much earlier. C and C++

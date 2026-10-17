@@ -281,15 +281,19 @@ and its boundary conditions, not from sounding certain.
   jargon, recommendations before mechanisms, or a clean solution with hidden
   operating costs.
 
-#### AI & Tools (`ai-and-tools`)
+#### Software Engineering (`software-engineering`)
 
-Write as a reflective practitioner documenting a capability boundary while it
-moves. The tone is curious, empirical, and provisional. The post should feel
-like a field-tested account of changed work, not a product announcement.
+Write as a reflective practitioner documenting how the craft and career of
+software engineering change while agents take on more of the execution. The
+tone is curious, empirical, and provisional. The post should feel like a
+field-tested account of changed work, not a product announcement. Agents are
+the setting more often than the subject: the question is what the engineer now
+does, verifies, owns, and learns.
 
 - **Opening and movement** - Anchor the post in a date, version, duration,
-  workflow, or task that previously felt impractical. Describe what was tried,
-  what changed, what failed, and which conclusions survived the experiment.
+  workflow, task, or career moment that previously felt impractical or
+  different. Describe what was tried, what changed, what failed, and which
+  conclusions survived the experiment.
 - **Evidence** - Use concrete artifacts such as commits, pull requests, commands,
   elapsed time, session counts, validation results, or before-and-after workflow
   steps. Include failed trials when they explain why the surviving workflow
@@ -302,6 +306,11 @@ like a field-tested account of changed work, not a product announcement.
 - **Posture** - Keep judgment singular and human. The tool may generate, inspect,
   or execute, but the author chooses the goal, evaluates the result, and owns the
   claim. Separate confidence in the direction from uncertainty about timing.
+- **Career and craft** - When the post is about growth, expertise, or a career
+  milestone, treat personal history as evidence of how the job is changing, not
+  as nostalgia. Name the skill that mattered, the one that turned out to matter
+  more, and what a person entering the field now should practice. Pure
+  chronological records without that present-day lens belong in Field Notes.
 - **Closing** - Name the higher-level workflow change, what remains uncertain,
   and what evidence would change the conclusion. Let the account remain revisable
   as the tools change. Express that boundary in language specific to the

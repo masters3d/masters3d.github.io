@@ -4,10 +4,10 @@ date = "2026-02-07"
 description = "Reflecting on my experience using AI coding tools since Claude Opus 4.5, contrasting Rust and scripting language development, and insights on multi-agent workflows."
 template = "blog-post.html"
 [taxonomies]
-categories = ["AI & Tools"]
+categories = ["Software Engineering"]
 tags = ["claude", "copilot", "agents", "rust", "powershell", "bash", "ai-development"]
 [extra]
-editorial_track = "ai-and-tools"
+editorial_track = "software-engineering"
 +++
 
 Before Claude Opus 4.5, I would not ask an agent to build a serious Rust CLI. I

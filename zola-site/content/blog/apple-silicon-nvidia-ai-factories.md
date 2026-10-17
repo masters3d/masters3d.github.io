@@ -4,10 +4,10 @@ date = "2026-07-25"
 description = "Revisiting a 2020 Apple Silicon and AR prediction in a world where NVIDIA, AI accelerators, software ecosystems, and electricity define the next computing platform."
 template = "blog-post.html"
 [taxonomies]
-categories = ["AI & Tools"]
+categories = ["Field Notes"]
 tags = ["ai", "nvidia", "apple", "apple-silicon", "spatial-computing", "hardware", "prediction", "retrospective"]
 [extra]
-editorial_track = "ai-and-tools"
+editorial_track = "field-notes"
 +++
 
 On June 21, 2020, I published

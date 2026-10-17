@@ -4,10 +4,10 @@ date = "2026-06-29"
 description = "Nine years of work notes, from sort-of-daily Markdown files in 2017 to monthly Word docs to a single yearly running document, and how AI agents finally took over the writing through worklogs."
 template = "blog-post.html"
 [taxonomies]
-categories = ["AI & Tools"]
+categories = ["Software Engineering"]
 tags = ["worklogs", "notes", "agents", "copilot", "workflow", "ai-development", "quest-engine"]
 [extra]
-editorial_track = "ai-and-tools"
+editorial_track = "software-engineering"
 series = "quest-engine"
 +++
 

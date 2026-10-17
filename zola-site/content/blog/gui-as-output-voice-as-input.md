@@ -4,10 +4,10 @@ date = "2026-07-24"
 description = "For thirty years we optimized software to be easy for a human hand. Agents invert that goal. The graphical interface is turning from the thing you drive into the thing you read, and the tools that survive the shift are the ones an agent can talk to."
 template = "blog-post.html"
 [taxonomies]
-categories = ["AI & Tools"]
+categories = ["Software Engineering"]
 tags = ["agents", "cli", "tui", "voice", "interfaces", "ai-development", "prediction"]
 [extra]
-editorial_track = "ai-and-tools"
+editorial_track = "software-engineering"
 +++
 
 Here is the observation that started this: I have not opened a graphical editor

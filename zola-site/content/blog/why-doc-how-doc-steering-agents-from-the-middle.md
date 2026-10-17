@@ -4,7 +4,7 @@ date = "2026-07-31"
 description = "Start with the code works for the software engineering circle of the Venn diagram, but a technical program manager naturally starts from the why, not the code. Once agents act like subordinates, the person steering them sits in the overlap and needs two documents: a Why doc facing outward toward the problem and stakeholders, and a How doc facing inward toward the agent's technical direction."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Engineering Systems"]
+categories = ["Software Engineering"]
 tags = [
   "context-as-code",
   "technical-program-management",
@@ -14,7 +14,7 @@ tags = [
   "leadership",
 ]
 [extra]
-editorial_track = "engineering-systems"
+editorial_track = "software-engineering"
 +++
 
 I have written before about the
