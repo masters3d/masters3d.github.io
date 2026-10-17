@@ -140,7 +140,7 @@ choice:
   (performance-critical, cross-platform distribution)
 - **[Aider](https://aider.chat/):** Written in Python (rapid iteration,
   pip-based distribution)
-- **[Antigravity CLI](https://agentpedia.codes/blog/antigravity-cli-deep-dive):**
+- **[Antigravity CLI](https://github.com/google-antigravity/antigravity-cli):**
   Written in Go (server-like characteristics, cross-platform)
 - **[Claude Code](https://github.com/anthropics/claude-code):** Written in
   TypeScript (web ecosystem integration, npm-based distribution)
