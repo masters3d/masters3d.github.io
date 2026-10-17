@@ -4,10 +4,10 @@ date = "2016-10-25"
 description = "How a yellow film camera, video editing, web design, Python, Swift, and open source gradually revealed that programming had been part of my creative work all along."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Field Notes"]
+categories = ["Software Engineering"]
 tags = ["origin-story", "software-engineering", "programming", "creative-tools", "swift", "python", "open-source"]
 [extra]
-editorial_track = "field-notes"
+editorial_track = "software-engineering"
 +++
 
 _Editor's note: This backdated origin story combines and revises two posts I
