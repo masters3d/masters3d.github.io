@@ -1,6 +1,6 @@
 +++
 title = "Conversation Formats Are Engineering Tools"
-date = "2026-10-17"
+date = "2027-12-15"
 draft = true
 description = "Collaboration is shaped by the container that holds the conversation. A fishbowl, a design review, an RFC thread, and a one-on-one all produce different information, so the format should be chosen as deliberately as any other engineering tool."
 template = "blog-post.html"
@@ -11,11 +11,15 @@ tags = ["collaboration", "conversation", "fishbowl", "meetings", "facilitation",
 editorial_track = "engineering-systems"
 +++
 
-In May 2022 I opened an issue titled "conversation types for collaborations" and
-put only one link in the body: fishbowl conversation. That was the entire note.
-Looking back, the thinness is almost useful. I was not collecting meeting
-tricks. I was noticing that conversation has formats, and those formats change
-what a group is able to learn.
+In May 2022 I wrote the phrase "conversation types for collaborations" and put
+one example underneath it: a fishbowl conversation. Wikipedia describes the
+fishbowl as a format where a small inner circle actively discusses a topic while
+a larger outer circle observes. In an open version, someone from the outside can
+take an empty seat and join, while someone else leaves the inner circle; in a
+closed version, the inner circle is replaced after a set interval. That was the
+entire note. Looking back, the thinness is almost useful. I was not collecting
+meeting tricks. I was noticing that conversation has formats, and those formats
+change what a group is able to learn.
 
 Engineers often talk about meetings as if the only variables are duration and
 attendance. Is this meeting necessary? Can it be thirty minutes? Who needs to be
@@ -108,8 +112,8 @@ define the decider. If the output is surfaced concerns, use a structure that
 lets quiet concerns appear. If the output is shared reasoning, consider a
 fishbowl. If the output is durable context, write first and meet second.
 
-The old issue only had a link, but I think the instinct was right. Collaboration
-is not merely people plus topic. It is people plus topic plus form. The form can
-hide information or reveal it, concentrate authority or distribute it, create
-safety or remove it. That makes conversation formats engineering tools. We
-should pick them deliberately.
+The original note only had one example, but I think the instinct was right.
+Collaboration is not merely people plus topic. It is people plus topic plus
+form. The form can hide information or reveal it, concentrate authority or
+distribute it, create safety or remove it. That makes conversation formats
+engineering tools. We should pick them deliberately.

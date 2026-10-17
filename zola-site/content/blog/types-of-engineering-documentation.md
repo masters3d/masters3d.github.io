@@ -1,6 +1,6 @@
 +++
 title = "Types of Engineering Documentation"
-date = "2026-10-17"
+date = "2027-06-01"
 draft = true
 description = "Documentation is not one thing. Team-private notes, organization-wide engineering docs, troubleshooting guides, onboarding material, diagrams, and recorded context all serve different jobs, and the medium should match the job."
 template = "blog-post.html"
@@ -11,12 +11,13 @@ tags = ["documentation", "context", "onboarding", "async-work", "engineering-sys
 editorial_track = "engineering-systems"
 +++
 
-In an engineering documentation deck from 2021, I wrote a sentence that still
-makes me smile because it sounds too obvious until a team tries to act on it:
-"You may think that documentation is self-explanatory, but you more than likely
-are wrong." Nobody agrees on what documentation means. One person means an API
-reference. Another means a runbook. Another means a diagram in a slide deck.
-Another means the decision that was only explained in a meeting.
+In 2021, while trying to sort engineering documentation into useful categories,
+I wrote a sentence that still makes me smile because it sounds too obvious until
+a team tries to act on it: "You may think that documentation is
+self-explanatory, but you more than likely are wrong." Nobody agrees on what
+documentation means. One person means an API reference. Another means a runbook.
+Another means a diagram. Another means the decision that was only explained in a
+meeting.
 
 The disagreement matters because a team can say "we need better docs" for years
 and never improve. The phrase is too large. Better docs for whom? For a new
@@ -26,11 +27,11 @@ not the same document.
 
 ## Documentation Has an Audience
 
-The first split in that old deck was between customer documentation and
-engineering documentation. Customer documentation is its own discipline. It has
-a product surface, a support function, and often a marketing function. The deck
-put that aside to focus on engineering documentation: the context producers need
-in order to build, operate, and change the system.
+The first split was between customer documentation and engineering
+documentation. Customer documentation is its own discipline. It has a product
+surface, a support function, and often a marketing function. I want to put that
+aside here and focus on engineering documentation: the context producers need in
+order to build, operate, and change the system.
 
 Even inside engineering documentation, there are at least two large audiences.
 Some docs are private to the team. They are close to the work and may include
@@ -56,13 +57,12 @@ Each document is a tool. Tools have users.
 
 ## The Medium Is Part of the Message
 
-In a contextual awareness deck, I split context sharing across several mediums.
-Text can live in markdown, a wiki, or a document. Visual context can be a
-diagram, a photo of a whiteboard, or a slide. Interactive context can happen in
-pull requests, document comments, email, or chat. Recorded audio and video can
-carry a presentation to people who could not attend. Synchronous conversation
-can unlock confusion quickly, but it has to be repeated for every new person
-unless someone turns it into an artifact.
+Context sharing also needs more than one medium. Text can live in markdown, a
+wiki, or a document. Visual context can be a diagram or a photo of a whiteboard.
+Interactive context can happen in pull requests, document comments, email, or
+chat. Recorded audio and video can carry a presentation to people who could not
+attend. Synchronous conversation can unlock confusion quickly, but it has to be
+repeated for every new person unless someone turns it into an artifact.
 
 That last point is the trap. Meetings feel efficient because they move context
 in real time. They are useful, but they are single-use by default. A meeting
@@ -83,12 +83,11 @@ the medium that lets the next person act" is better.
 
 ## Documentation Is Shared Infrastructure
 
-The contextual awareness deck used the tragedy of the commons as the economic
-model for documentation. Everyone benefits from good context. The cost of
-creating and maintaining it lands on a smaller set of people, often at the exact
-moment they are busiest. If the organization does not make documentation easy,
-visible, required where it matters, and integrated with the work, the commons
-will decay.
+The tragedy of the commons is the economic model I keep coming back to for
+documentation. Everyone benefits from good context. The cost of creating and
+maintaining it lands on a smaller set of people, often at the exact moment they
+are busiest. If the organization does not make documentation easy, visible,
+required where it matters, and integrated with the work, the commons will decay.
 
 That decay is not moral failure. It is a system doing what it was designed to
 do. If promotion, planning, and review systems only reward shipped features,

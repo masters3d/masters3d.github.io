@@ -39,6 +39,14 @@ jobs:
           python3 scripts/check_content_marks.py --self-test
           python3 scripts/check_content_marks.py
 
+      - name: Block deploy when a draft post is due within 7 days
+        # Upcoming posts wait as drafts dated for release. A draft whose date
+        # is within the next 7 days (or already past) must be published or
+        # rescheduled first, so the planned queue never silently lapses.
+        run: |
+          python3 scripts/check_upcoming_drafts.py --self-test > /dev/null
+          python3 scripts/check_upcoming_drafts.py
+
       - name: Setup Zola
         uses: taiki-e/install-action@v2
         with:

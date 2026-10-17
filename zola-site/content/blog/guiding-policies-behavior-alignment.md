@@ -1,6 +1,6 @@
 +++
 title = "Guiding Policies and Behavior Alignment"
-date = "2026-10-17"
+date = "2027-07-15"
 draft = true
 description = "Guiding policies are useful only when they align behavior. They should help people make local decisions that fit organizational goals without turning every choice into permission seeking or compliance theater."
 template = "blog-post.html"
@@ -11,11 +11,10 @@ tags = ["guiding-policy", "behavior", "alignment", "strategy", "engineering-cult
 editorial_track = "engineering-systems"
 +++
 
-In May 2024 I wrote a short
-[ingenio issue](https://github.com/masters3d/ingenio/issues/29) as a question:
-"How does one go about creating, updating and enforcing guiding policies?" It
-was filed under behavior alignment, but the question is really about the
-distance between what an organization says and what people actually do.
+In May 2024 I wrote a short question to myself: "How does one go about creating,
+updating and enforcing guiding policies?" I put it under the heading of behavior
+alignment, but the question is really about the distance between what an
+organization says and what people actually do.
 
 Every company has stated values. Every engineering organization has principles.
 Some are useful. Some are posters. The difference is not the wording. The
@@ -78,9 +77,11 @@ that normal work is exempt.
 
 ## Policies Need Feedback Loops
 
-The generated behavior alignment vision connected this topic to action,
-feedback, and adjustment. That connection is essential. A guiding policy is a
-hypothesis about behavior. It should be observed and updated.
+Behavior alignment connects directly to action, feedback, and adjustment. The
+policy asks for an action. The organization observes the behavior and its
+outcomes. Then the policy, incentive, or surrounding system has to adjust. A
+guiding policy is a hypothesis about behavior. It should be observed and
+updated.
 
 Maybe the policy is too vague. Maybe it produces gaming. Maybe it works for one
 team and fails for another because the context changed. Maybe the metric chosen
@@ -110,8 +111,8 @@ that will keep us aligned. It leaves room for context. It names the reason
 behind the preference. It is backed by systems that reward the behavior it asks
 for. It has a feedback loop so the policy can learn from reality.
 
-That is the answer I would give to the old issue. Create guiding policies by
-starting from the behavior you need, not the slogan you want. Update them when
-feedback shows the behavior is not matching the goal. Enforce them by designing
-the surrounding system so the aligned behavior is easier, visible, and rewarded.
-The policy is only real when it changes what people do.
+That is the answer I would give now. Create guiding policies by starting from
+the behavior you need, not the slogan you want. Update them when feedback shows
+the behavior is not matching the goal. Enforce them by designing the surrounding
+system so the aligned behavior is easier, visible, and rewarded. The policy is
+only real when it changes what people do.

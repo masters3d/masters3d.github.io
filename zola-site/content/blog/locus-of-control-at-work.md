@@ -1,6 +1,6 @@
 +++
 title = "Locus of Control at Work"
-date = "2026-10-17"
+date = "2027-02-15"
 draft = true
 description = "A useful locus of control model at work is not optimism versus pessimism. It is the repeated practice of sorting what you control, what you can influence, what you have to accept, and what you can slowly move from one circle to another."
 template = "blog-post.html"
@@ -61,11 +61,12 @@ be that the evidence is wrong, the story is unclear, the cost is landing on the
 wrong team, or the organization has a constraint you have not understood yet.
 Influence is not weaker control. It is a different kind of work.
 
-That distinction keeps this post separate from burnout. Burnout can happen when
-control over your life collapses and the rest of the system consumes the slack
-around you. Locus of control at work is the daily operating model before that
-failure. It is how you decide where action belongs while you still have the
-ability to choose.
+That distinction keeps this post separate from
+[burnout as a control problem](/blog/burnout-is-a-control-problem/). Burnout can
+happen when control over your life collapses and the rest of the system consumes
+the slack around you. Locus of control at work is the daily operating model
+before that failure. It is how you decide where action belongs while you still
+have the ability to choose.
 
 ## Widening the circle
 

@@ -1,6 +1,6 @@
 +++
 title = "PIE Theory: Being Seen Is Part of the Work"
-date = "2026-10-17"
+date = "2027-02-01"
 draft = true
 description = "Performance matters, but engineering careers do not move on performance alone. PIE theory names the uncomfortable system around work: what you deliver, how that delivery is understood, and whether the right people ever see it."
 template = "blog-post.html"
@@ -84,6 +84,13 @@ Performance is Drive: doing the work and producing something real. Image is
 Renew: checking whether the work is being understood accurately and adjusting
 the system around it. Exposure is Search: finding the context, audience, and
 timing where the work can be received.
+
+It also maps back to the older Three Pillars language in a useful way.
+Performance needs Intrinsic Drive because craft has to be practiced when nobody
+is watching. Image needs Clear Strategy because a reputation is not every fact
+about you; it is the coherent shape repeated evidence takes. Exposure needs
+Contextual Awareness because visibility only helps when the right people receive
+the right resolution of the work.
 
 That mapping is not perfect, but it keeps the theory honest. It says visibility
 should serve the work, not replace it. It says reputation should be earned by

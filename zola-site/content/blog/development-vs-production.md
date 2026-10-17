@@ -10,14 +10,12 @@ tags = ["production", "operations", "feedback-loops", "reliability", "ownership"
 editorial_track = "engineering-systems"
 +++
 
-In July 2022 I wrote a two-sentence note in my notes repository,
-[ingenio](https://github.com/masters3d/ingenio/issues/21): the act of developing
-a product differs from actually running that product, especially at scale.
-Feedback from production should create work streams that flow back to improve
-the product, but that improvement flow is different from just making the
-product. A day later I added a question under it that I did not know how to
-answer: how much of this correlates to cost of goods sold versus operating
-expenses?
+In July 2022 I wrote myself a two-sentence note: the act of developing a product
+differs from actually running that product, especially at scale. Feedback from
+production should create work streams that flow back to improve the product, but
+that improvement flow is different from just making the product. A day later I
+added a question under it that I did not know how to answer: how much of this
+correlates to cost of goods sold versus operating expenses?
 
 That second question is the one that made the note worth keeping. It suggested
 the split I was noticing was not a matter of team preference. It was showing up

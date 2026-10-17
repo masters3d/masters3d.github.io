@@ -1,6 +1,6 @@
 +++
 title = "A Feature Needs a Life Cycle From Cradle to Grave"
-date = "2026-10-17"
+date = "2027-01-15"
 draft = true
 description = "Features are easier to start than to retire, so they need a visible life cycle. A feature is born as an idea, grows through implementation and deployment, reproduces when other teams copy the pattern, and eventually needs a deliberate path to decommissioning."
 template = "blog-post.html"
@@ -11,12 +11,12 @@ tags = ["features", "life-cycle", "decommissioning", "production", "ownership", 
 editorial_track = "engineering-systems"
 +++
 
-In July 2022 I opened a short issue in my notes repository with a question that
-looked almost biological: how is a feature born, how does it scale or reproduce,
-and how does it die? The list underneath was not complicated: idea,
-implementation, deployment, postmortem, decommission. What made the note worth
-keeping was the last sentence. There needs to be a clear way to define when a
-feature is going into production and when it gets decommissioned.
+In July 2022 I wrote myself a short note with a question that looked almost
+biological: how is a feature born, how does it scale or reproduce, and how does
+it die? The list underneath was not complicated: idea, implementation,
+deployment, postmortem, decommission. What made the note worth keeping was the
+last sentence. There needs to be a clear way to define when a feature is going
+into production and when it gets decommissioned.
 
 That sounds obvious until you look at how most product work is planned. We are
 much better at births than deaths. We know how to write a pitch, open a ticket,

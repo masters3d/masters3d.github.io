@@ -1,6 +1,6 @@
 +++
 title = "Kaizen and the Observe, Orient, Decide, Act Return Loop"
-date = "2026-10-17"
+date = "2027-10-15"
 draft = true
 description = "Systematic Improvement is the return path of the Quest Engine. Kaizen gives it the discipline of change for the better, and Boyd's loop shows why improvement has to feed the next observation."
 template = "blog-post.html"

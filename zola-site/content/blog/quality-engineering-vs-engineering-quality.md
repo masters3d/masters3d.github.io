@@ -10,13 +10,12 @@ tags = ["quality", "ownership", "security", "documentation", "incentives", "shif
 editorial_track = "engineering-systems"
 +++
 
-In May 2024 I opened [an issue](https://github.com/masters3d/ingenio/issues/25)
-in my notes repository, [ingenio](https://github.com/masters3d/ingenio), with a
-title that looked like a typo: "Quality Engineering vs Engineering Quality." The
-two phrases use the same words in a different order, and they are easy to treat
-as interchangeable. They are not. Swapping the order moves the responsibility to
-a different person, and that difference shows up in how software gets built, who
-gets paged, and who gets promoted.
+In May 2024 I wrote myself a note with a title that looked like a typo: "Quality
+Engineering vs Engineering Quality." The two phrases use the same words in a
+different order, and they are easy to treat as interchangeable. They are not.
+Swapping the order moves the responsibility to a different person, and that
+difference shows up in how software gets built, who gets paged, and who gets
+promoted.
 
 The note I wrote that day was short. The main difference between quality
 engineering (QE) and quality assurance (QA) is that we do not separate quality
@@ -138,7 +137,7 @@ conversation, not as a score. It is also why
 matters here: if finding a defect gets someone punished, people stop finding
 them early and the measurements turn into a record of who hid problems best.
 
-Looking back at that issue, the word order still carries the whole idea.
+Looking back at that note, the word order still carries the whole idea.
 Engineering quality is what you hope to get. Quality engineering is what you
 have to do, and it only happens when the person doing the work owns the result
 and the organization notices when they do. Handing quality, security, or context

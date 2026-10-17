@@ -1,6 +1,6 @@
 +++
 title = "The Kernel of Strategy"
-date = "2026-10-17"
+date = "2027-06-15"
 draft = true
 description = "Rumelt's kernel of strategy (diagnosis, guiding policy, and coherent action) maps cleanly onto engineering work. Diagnosis is contextual awareness, coherent action is clear strategy in motion, and guiding policy is where purpose becomes behavior."
 template = "blog-post.html"
@@ -11,14 +11,13 @@ tags = ["strategy", "contextual-awareness", "guiding-policy", "clear-strategy", 
 editorial_track = "engineering-systems"
 +++
 
-In May 2024 I opened an
-[ingenio issue](https://github.com/masters3d/ingenio/issues/26) with a small
-reading note from Richard Rumelt's _Good Strategy / Bad Strategy_. I wrote the
-three parts of the kernel of strategy on separate lines: diagnosis, guiding
-policy, coherent action. Then I added the part that made it connect to my own
-framework: diagnosis maps to contextual awareness, coherent action maps to clear
-strategy, and guiding policy connects to intrinsic motivation, although it is
-larger than intrinsic motivation alone.
+In May 2024 I wrote a small reading note from Richard Rumelt's _Good Strategy /
+Bad Strategy_. The note had two parts. First, it named Rumelt's three-part
+kernel of strategy: diagnosis, guiding policy, and coherent action. Second, it
+translated that kernel into my own engineering language: diagnosis maps to
+contextual awareness, coherent action maps to clear strategy, and guiding policy
+connects to intrinsic motivation, although it is larger than intrinsic
+motivation alone.
 
 That last caveat is the reason the note became more than a book summary. The
 kernel of strategy is useful because it refuses to let strategy remain a slogan.

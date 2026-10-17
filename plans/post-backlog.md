@@ -20,6 +20,46 @@ words are in the "Engineering Context" paragraph of the spec and in the
 original GitHub issue body (all ingenio issues are closed but still readable).
 Always read the issue, not only the spec.
 
+## Release Schedule
+
+Drafts go out two per month (the 1st and the 15th) in this order, which is
+also the author's review order. Every draft keeps `draft = true` until the
+author reviews it. `scripts/check_upcoming_drafts.py` fails PR validation and
+deploy once a draft is within 7 days of its date, so each one must be published
+or moved before its slot arrives. New drafts join the end of the queue.
+
+| # | Date | ID | Title | Post |
+| --- | --- | --- | --- | --- |
+| 1 | 2027-01-01 | B26 | Ingenio: The Engine Inside Engineering | `ingenio-the-engine-inside-engineering` |
+| 2 | 2027-01-15 | B03 | A Feature Needs a Life Cycle From Cradle to Grave | `feature-cradle-to-grave` |
+| 3 | 2027-02-01 | B20 | PIE Theory: Being Seen Is Part of the Work | `pie-theory-being-seen-at-work` |
+| 4 | 2027-02-15 | B21 | Locus of Control at Work | `locus-of-control-at-work` |
+| 5 | 2027-03-01 | B22 | Seeking Is the Reward | `seeking-is-the-reward` |
+| 6 | 2027-03-15 | B04 | Design Review Needs Governance | `design-review-needs-governance` |
+| 7 | 2027-04-01 | B05 | The Sprintspective: One Loop for Looking Back and Planning Next | `sprintspective-one-loop` |
+| 8 | 2027-04-15 | B06 | Open Guides Over Closed Answers | `open-guides-over-closed-answers` |
+| 9 | 2027-05-01 | B08 | Promotion-Driven Development | `promotion-driven-development` |
+| 10 | 2027-05-15 | B09 | Overlapping Roles in Tech | `overlapping-roles-in-tech` |
+| 11 | 2027-06-01 | B10 | Types of Engineering Documentation | `types-of-engineering-documentation` |
+| 12 | 2027-06-15 | B11 | The Kernel of Strategy | `kernel-of-strategy` |
+| 13 | 2027-07-01 | B12 | Action, Feedback, Adjustment | `action-feedback-adjustment` |
+| 14 | 2027-07-15 | B14 | Guiding Policies and Behavior Alignment | `guiding-policies-behavior-alignment` |
+| 15 | 2027-08-01 | B23 | Story Is Engineering Memory | `story-is-engineering-memory` |
+| 16 | 2027-08-15 | B24 | Build Mode, Reflect Mode, and Quality Without a Name | `build-mode-reflect-mode-quality-without-a-name` |
+| 17 | 2027-09-01 | B25 | Philosophy, Manifesto, Principle, North Star | `philosophy-manifesto-principle-north-star` |
+| 18 | 2027-09-15 | B30 | Dotnet Actor Systems and Testable Concurrency | `dotnet-actor-systems-and-testable-concurrency` |
+| 19 | 2027-10-01 | B32 | Cognitive Continuous Integration and the Broken Agent Loop | `cognitive-continuous-integration-and-the-broken-agent-loop` |
+| 20 | 2027-10-15 | B40 | Kaizen and the Observe, Orient, Decide, Act Return Loop | `kaizen-and-the-observe-orient-decide-act-return-loop` |
+| 21 | 2027-11-01 | B41 | The Fractal Pattern Inside the Quest Engine | `the-fractal-pattern-inside-the-quest-engine` |
+| 22 | 2027-11-15 | B42 | Anti-Patterns Show Where the Loop Broke | `anti-patterns-show-where-the-loop-broke` |
+| 23 | 2027-12-01 | B50 | Career Quest Engineering, the 2021 Talk | `career-quest-engineering-2021-talk` |
+| 24 | 2027-12-15 | B07 | Conversation Formats Are Engineering Tools | `conversation-formats-fishbowl` |
+| 25 | 2028-01-01 | B13 | Remote Work Needs Context, Not Just Tools | `remote-work-needs-context-not-just-tools` |
+| 26 | 2028-01-15 | B15 | People Systems and the Hiring Pipeline | `people-systems-and-the-hiring-pipeline` |
+| 27 | 2028-02-01 | B27 | Resourcefulness, Agency, and Inheritance | `resourcefulness-agency-and-inheritance` |
+| 28 | 2028-02-15 | B31 | Software 3.0 Needs Engineering, Not Magic | `software-3-0-needs-engineering-not-magic` |
+| 29 | 2028-03-01 | B43 | Individual Contributor Levels as Changing Scope | `individual-contributor-levels-as-changing-scope` |
+
 ## Engineering Systems
 
 | ID | Idea | Source in ingenio | Priority | Status | Post |
@@ -50,7 +90,7 @@ Always read the issue, not only the spec.
 | B23 | Story as how people store information; where story fits in engineering | `specs/where_does_story_fit_into_the_engineering_process_and_the_cognitive_storage_of_information_via_story_telling/VISION.md` (#34), `media/synergies_narrative.md` | P2 | draft | `story-is-engineering-memory` |
 | B24 | Build mode vs reflect mode; judgement and "quality without a name" | `specs/cognitive_architecture_wrt_build_mode_and_reflect_mode/VISION.md`, issue #56 | P2 | draft | `build-mode-reflect-mode-quality-without-a-name` |
 | B25 | Philosophy, manifesto, principle, north star: how they differ (drafted in Engineering Systems) | `specs/philosophy_manifesto_principle_northstar/VISION.md`, issue #19 | P2 | draft | `philosophy-manifesto-principle-north-star` |
-| B26 | Ingenious vs ingenuous (the word behind the repository name) | `specs/ingenious_vs_ingenuous/VISION.md` (#13), `README.md` | P3 | draft | `ingenious-and-ingenuous` |
+| B26 | Ingenio: the engineering background and history of the word (ingenium, engine, engineer, sugar mill), plus ingenious vs ingenuous | `specs/ingenious_vs_ingenuous/VISION.md` (#13), `README.md` | P3 | draft | `ingenio-the-engine-inside-engineering` |
 | B27 | Resourcefulness and agency as inherited vs learned traits | `specs/resourceful_agency_genetic_systems_relationships/VISION.md`, issue #38 (check overlap with `resourcefulness-is-its-own-quest-engine`) | P3 | draft | `resourcefulness-agency-and-inheritance` |
 
 ## Software Engineering

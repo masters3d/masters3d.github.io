@@ -1,6 +1,6 @@
 +++
 title = "Seeking Is the Reward"
-date = "2026-10-17"
+date = "2027-03-01"
 draft = true
 description = "Finishing matters, but the act of building changes the builder in ways the finished artifact cannot contain. Seeking is the reward because the search, the attempts, and the revisions are where capability is formed."
 template = "blog-post.html"
@@ -40,7 +40,7 @@ That hidden search is where most of the reward lives. It is where taste changes.
 It is where a person learns which constraints are real and which were imagined.
 It is where you discover that the tool you thought you needed was not the tool,
 or that the simple version you dismissed on Monday was the right design by
-Friday.
+Friday. The reward is not only pleasure. It is new capacity.
 
 The finished artifact can be useful to other people. The seeking changes you.
 

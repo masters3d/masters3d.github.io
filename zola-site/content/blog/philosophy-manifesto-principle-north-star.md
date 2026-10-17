@@ -1,6 +1,6 @@
 +++
 title = "Philosophy, Manifesto, Principle, North Star"
-date = "2026-10-17"
+date = "2027-09-01"
 draft = true
 description = "Teams often use philosophy, manifesto, principle, and North Star as if they were interchangeable. They are different tools: worldview, declaration, decision rule, and direction. Confusing them makes strategy sound clearer than it is."
 template = "blog-post.html"
@@ -11,13 +11,20 @@ tags = ["strategy", "principles", "language", "decision-making", "north-star", "
 editorial_track = "engineering-systems"
 +++
 
-In July 2022 I opened [an issue](https://github.com/masters3d/ingenio/issues/19)
-in my notes repository with four words in the title (philosophy, manifesto,
-principle, North Star) and one link in the body: the
-[Carbon language safety strategy](https://github.com/carbon-language/carbon-lang/blob/trunk/docs/project/principles/safety_strategy.md).
-Teams often use those four words as if they were four fonts for the same idea.
-Pick the one that sounds the most inspiring, put it at the top of the document,
-and the strategy feels more serious.
+In July 2022 I wrote down four words as a thinking prompt: philosophy,
+manifesto, principle, North Star. I paired them with the
+[Carbon language safety strategy](https://github.com/carbon-language/carbon-lang/blob/trunk/docs/project/principles/safety_strategy.md)
+because that document shows the difference between a value and a usable decision
+structure. Carbon says safety means protecting programs from bugs that can
+become vulnerabilities, then separates guarantees, runtime error detection, and
+safety hardening. It states a philosophy first: prefer guaranteed safety where
+feasible, but preserve performance, interoperability with C++, and a low barrier
+to adoption. Then it turns that philosophy into principles about making safe
+choices easy, keeping compile-time rules understandable, limiting build modes,
+and relying on strong testing where the language cannot prove safety. Teams
+often use philosophy, manifesto, principle, and North Star as if they were four
+fonts for the same idea. Pick the one that sounds the most inspiring, put it at
+the top of the document, and the strategy feels more serious.
 
 But these words do different jobs. When they are blurred together, the document
 may sound aligned while leaving people without a usable decision rule. A
@@ -32,7 +39,7 @@ right kind of statement for the kind of uncertainty they are facing.
 
 A philosophy explains how you believe the world works. It sits upstream from
 decisions. It says what kind of system you think you are in, what you value, and
-what assumptions you bring before the specific problem begins.
+what assumptions you bring before a particular problem begins.
 
 For engineering, a philosophy might say that safety should be designed into the
 language rather than left entirely to discipline. It might say that context
@@ -68,10 +75,16 @@ choose when simplicity conflicts with performance, safety, compatibility, speed,
 or user control.
 
 This is why good engineering principles often come with rationale and examples.
-The Carbon language safety strategy is interesting as a source because it treats
-safety as something that needs structure, not merely a word that sounds good.
-The useful part is not the presence of a value. The useful part is how the value
-becomes a guide for design pressure.
+The Carbon language safety strategy is interesting because it treats safety as
+something that needs structure, not merely a word that sounds good. Its
+principles make safety operational. New developers should receive some safety by
+default. Unsafe choices should be visible. Guaranteed safety is preferred over
+error detection, error detection over hardening, and hardening over unmitigated
+risk. Safety mechanisms should work with migrated C++ code, and the rules should
+be documented well enough that developers can predict them. Debug, performance,
+and hardened builds then express different tradeoffs without pretending one
+principle removes all tension. The useful part is not the presence of a value.
+The useful part is how the value becomes a guide for design pressure.
 
 A principle earns its keep when it changes a decision. If it never rules
 anything out, it is decoration.

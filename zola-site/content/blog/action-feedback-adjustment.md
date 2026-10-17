@@ -1,6 +1,6 @@
 +++
 title = "Action, Feedback, Adjustment"
-date = "2026-10-17"
+date = "2027-07-01"
 draft = true
 description = "Action and feedback are as fundamental to engineering as action and reaction are to physics, but adjustment is the human part. It is where judgment turns noisy signals into a better next move."
 template = "blog-post.html"
@@ -11,8 +11,7 @@ tags = ["feedback-loops", "judgment", "observability", "retrospectives", "system
 editorial_track = "engineering-systems"
 +++
 
-In February 2025 I wrote one sentence in
-[ingenio](https://github.com/masters3d/ingenio/issues/30): "Action and reaction
+In February 2025 I wrote one rough sentence to myself: "Action and reaction
 (feedback) are as fundamentals as physics. Adjustment signals judgment, decision
 making, alignment." The grammar was rough, but the idea was clean. Engineering
 organizations talk constantly about action. They talk about feedback when
@@ -77,10 +76,12 @@ is only stated intention.
 
 ## Designing the Loop
 
-The generated vision document for this idea named several common antipatterns:
-vanity metrics, late feedback, noisy signal, and blame feedback. I would group
-them under one larger rule: every feedback loop should be designed around the
-decision it is meant to improve.
+When I later expanded the idea, the common antipatterns were easy to name:
+vanity metrics that make the dashboard look better without changing the work,
+late feedback that arrives after the useful decision point, noisy signal that
+teaches people to tune out, and blame feedback that makes people protect
+themselves. I would group them under one larger rule: every feedback loop should
+be designed around the decision it is meant to improve.
 
 For code quality, the loop should be close to the code: tests, static checks,
 local validation, and review comments that teach a reusable pattern. For

@@ -1,6 +1,6 @@
 +++
 title = "Overlapping Roles in Tech"
-date = "2026-10-17"
+date = "2027-05-15"
 draft = true
 description = "Engineering roles overlap on purpose. The risk is not the overlap itself, but the unowned intersection where product, design, engineering, data, operations, and management all assume someone else is carrying the decision."
 template = "blog-post.html"
@@ -11,11 +11,14 @@ tags = ["roles", "ownership", "collaboration", "engineering-management", "system
 editorial_track = "engineering-systems"
 +++
 
-In April 2022 I saved a note in
-[ingenio](https://github.com/masters3d/ingenio/issues/14) with almost no prose
-of my own. It was a link to a thread about overlapping roles in tech and a
-picture of the places where those roles cross. The title was the useful part:
-roles Overlapping in tech and the intersection you should be aware of.
+In April 2022 I saved a note with almost no prose of my own. It pointed to a
+thread by Gergely Orosz about overlapping roles in tech and a picture of the
+places where those roles cross. The useful part was the warning I wrote above
+it: roles overlap in tech, and there is an intersection you should be aware of.
+Orosz's broader product-minded engineering work argues that strong engineers do
+not only write code. They also carry product sense, collaborate with design and
+data, understand operations and support, and help align complicated work across
+teams.
 
 That sentence stayed unfinished because the picture was doing most of the work.
 Product, program management, design, engineering, data, operations, support, and
@@ -116,5 +119,5 @@ decision is better?
 
 An org chart can show who reports to whom. It cannot show where judgment must be
 shared. That map has to be built by the team doing the work. The warning in the
-old note is still the one I would keep: beware the intersection where everyone
-is near the decision and nobody owns it.
+original note is still the one I would keep: beware the intersection where
+everyone is near the decision and nobody owns it.

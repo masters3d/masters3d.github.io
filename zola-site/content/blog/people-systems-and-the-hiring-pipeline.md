@@ -1,6 +1,6 @@
 +++
 title = "People Systems and the Hiring Pipeline"
-date = "2026-10-17"
+date = "2028-01-15"
 draft = true
 description = "Hiring is a people system before it is a recruiting funnel. College internships, bootcamps, apprenticeships, and self-taught paths all optimize for different evidence, and the pipeline a company builds decides who gets seen."
 template = "blog-post.html"
@@ -11,7 +11,7 @@ tags = ["hiring", "people-systems", "career", "engineering-culture", "software-e
 editorial_track = "engineering-systems"
 +++
 
-In a 2021 career progression deck, I put a Francois Chollet quote near the
+In 2021 notes on career progression, I put a Francois Chollet quote near the
 front: technical systems are mostly made of people. The people who design the
 product, write the code, maintain the code, and use the product are the real
 nodes. The technical artifacts are transient edges. I liked that framing because
@@ -19,13 +19,13 @@ it explains why career systems, hiring systems, and promotion systems belong in
 engineering conversations. They are not outside the technical system. They shape
 who gets to build it.
 
-Another short deck from the same period was about hiring. It listed several
-pipelines into software engineering: STEM university programs, internships,
-software development bootcamps, apprenticeship programs such as Apprenti, and
-self-taught paths. The note underneath was the part worth keeping: different
-pipelines favor different kinds of evidence. Big companies often have strong
-college pipelines. Nontraditional candidates are asked for experience before
-they are allowed to get experience.
+Another short set of notes from the same period was about hiring. It listed
+several pipelines into software engineering: STEM university programs,
+internships, software development bootcamps, apprenticeship programs such as
+Apprenti, and self-taught paths. The note underneath was the part worth keeping:
+different pipelines favor different kinds of evidence. Big companies often have
+strong college pipelines. Nontraditional candidates are asked for experience
+before they are allowed to get experience.
 
 That is a people system design problem.
 
@@ -103,11 +103,11 @@ People systems have to be coherent.
 
 ## Who Gets Seen
 
-The hiring deck was short, but it pointed at a larger engineering question: who
-gets seen by the system? A pipeline is not neutral. It has intake points,
-filters, interview formats, risk models, and support assumptions. Those choices
-determine which candidates become visible and which candidates are treated as
-exceptions.
+Those hiring notes were short, but they pointed at a larger engineering
+question: who gets seen by the system? A pipeline is not neutral. It has intake
+points, filters, interview formats, risk models, and support assumptions. Those
+choices determine which candidates become visible and which candidates are
+treated as exceptions.
 
 This is not an argument to lower standards. It is an argument to name the
 standard more precisely. What does the role need now? Which skills must be

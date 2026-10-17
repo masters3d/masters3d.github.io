@@ -828,9 +828,15 @@ already states a thesis in the author's words.
 **Closing an item.**
 
 1. Read the source issue and spec, then write the post following the voice,
-   track, and writing-style rules in this file. Link the ingenio issue when the
-   post grows out of it, and use the issue's `created_at` for any date you
-   mention. Do not invent personal anecdotes the sources do not support.
+   track, and writing-style rules in this file. Use the issue's `created_at`
+   for any date you mention. Do not invent personal anecdotes the sources do
+   not support.
+   **Every post must stand on its own.** Do not link to the ingenio repository,
+   its issues, or its files, and do not point the reader at "the issue", "the
+   spec", or "the repo". State what the note said in the post itself. When the
+   note was mostly a link to an outside article, explain that article's idea
+   with attribution; the link may stay as a citation, but the post must make
+   sense without it.
 2. Run `python3 scripts/format_markdown.py`,
    `python3 scripts/check_content_marks.py`, and `cd zola-site && zola build`.
 3. In the same PR, set the row's Status to `published` and put the post's slug
@@ -838,8 +844,18 @@ already states a thesis in the author's words.
    came from.
 4. When asked to write posts without publishing them, add `draft = true` to the
    frontmatter (after `date`) and set the row's Status to `draft`. Zola skips
-   drafts in `zola build` and the feed. To publish a draft, the author reviews
-   it, removes `draft = true`, updates `date`, and the row moves to `published`.
+   drafts in `zola build` and the feed. Date each draft for its planned release:
+   new drafts join the end of the queue at two per month (the 1st and the 15th),
+   and the queue order is the author's review order. The list lives in the
+   "Release Schedule" section of `plans/post-backlog.md`. To publish a draft,
+   the author reviews it, removes `draft = true`, and the row moves to
+   `published`.
+   **Draft gate:** `scripts/check_upcoming_drafts.py` runs in PR validation and
+   in the deploy workflow. It fails when any draft is dated within the next 7
+   days or is overdue, and it prints the queue by month so the runway is
+   visible. A failing gate means: publish that draft or move its date. Run it
+   locally with `python3 scripts/check_upcoming_drafts.py` (add `--today
+   YYYY-MM-DD` to preview a future date).
 5. Use `covered` (with the existing slug) or `dropped` (with a reason) to close
    a row without writing a new post.
 

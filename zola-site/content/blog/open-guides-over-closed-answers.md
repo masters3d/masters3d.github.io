@@ -1,6 +1,6 @@
 +++
 title = "Open Guides Over Closed Answers"
-date = "2026-10-17"
+date = "2027-04-15"
 draft = true
 description = "When someone asks for the same explanation by email, the durable answer is usually a guide that others can find, reuse, and improve. Answering once in a shared place turns private help into organizational context."
 template = "blog-post.html"
@@ -13,9 +13,9 @@ editorial_track = "engineering-systems"
 
 In November 2021 I wrote a small behavioral rule to myself: instead of
 responding to an email, consider opening a wiki with all the requested
-information so it can be shared. The issue title was clumsy (general open guides
-over specific closed guides), but the behavior was clear. When the same
-explanation wants to travel from one person to another, do not trap it in a
+information so it can be shared. I called it general open guides over specific
+closed guides, which was clumsy but useful. The behavior was clear. When the
+same explanation wants to travel from one person to another, do not trap it in a
 private reply if it can become shared context.
 
 This is one of those ideas that sounds like extra work until the third request

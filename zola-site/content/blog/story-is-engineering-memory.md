@@ -1,6 +1,6 @@
 +++
 title = "Story Is Engineering Memory"
-date = "2026-10-17"
+date = "2027-08-01"
 draft = true
 description = "Engineering information does not survive because it was written down once. It survives when people can store it, retell it, and use it under pressure. Story is one of the ways technical context becomes memory."
 template = "blog-post.html"
@@ -74,7 +74,8 @@ This is why story also belongs in knowledge transfer. The new person on a team
 does not only need the current architecture. They need the ghosts inside it: the
 failed rewrite, the compliance constraint, the customer behavior that surprised
 everyone, the optimization that was removed because it made incidents worse.
-Story is how a team hands over the lived part of the system.
+Story is how a team hands over the lived part of the system, not as folklore but
+as context with a retrieval path.
 
 ## The story must serve the work
 

@@ -1,6 +1,6 @@
 +++
 title = "The Fractal Pattern Inside the Quest Engine"
-date = "2026-10-17"
+date = "2027-11-01"
 draft = true
 description = "The Quest Engine repeats because the same three-beat shape appears inside every pillar. The content changes at each level, but the pattern remains: know, act, and improve."
 template = "blog-post.html"

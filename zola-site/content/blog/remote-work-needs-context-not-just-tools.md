@@ -1,6 +1,6 @@
 +++
 title = "Remote Work Needs Context, Not Just Tools"
-date = "2026-10-17"
+date = "2028-01-01"
 draft = true
 description = "The useful lesson from remote and async work research is not that every team should be async all the time. It is that distributed work succeeds when context survives distance, meetings are intentional, and chat does not become the only memory."
 template = "blog-post.html"
@@ -11,13 +11,17 @@ tags = ["remote-work", "async-work", "context", "meetings", "collaboration"]
 editorial_track = "engineering-systems"
 +++
 
-In December 2021 I opened an
-[ingenio issue](https://github.com/masters3d/ingenio/issues/10) that was mostly
-a reading list. It linked to Microsoft's New Future of Work research, advice for
-staying healthy and productive while working remotely, a guide to better remote
-meetings, a report page, and a paper about parallel chat in video meetings. I
-added two more links in a comment: a Twist remote communication guide and
-Doist's writing on asynchronous communication.
+In December 2021 I kept a reading list about remote and asynchronous work. The
+Microsoft Research material in that list argued that remote work needs more
+intentional health habits, clearer meeting design, and better understanding of
+side channels such as chat during video calls. Microsoft's parallel chat paper
+was especially useful because it treated meeting chat as both promise and peril:
+it can include quieter voices, preserve questions, and share links, but it can
+also split attention or create a second conversation that changes power in the
+meeting. The Twist and Doist writing made the complementary argument from an
+async-first company perspective: write context clearly, organize conversations
+into durable threads, separate urgency from visibility, and do not make people
+prove commitment by being always online.
 
 That is what the moment felt like. Remote work had become normal faster than our
 habits had adapted. Everyone had tools. Fewer teams had a theory of how context

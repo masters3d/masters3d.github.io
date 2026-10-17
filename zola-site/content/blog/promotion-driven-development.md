@@ -1,6 +1,6 @@
 +++
 title = "Promotion-Driven Development"
-date = "2026-10-17"
+date = "2027-05-01"
 draft = true
 description = "Promotion incentives shape engineering behavior whether a company admits it or not. If advancement rewards visible launches more than durable systems, engineers will learn to build work that reads well in a packet, even when the product needs maintenance, context, and quiet reliability."
 template = "blog-post.html"
@@ -11,8 +11,12 @@ tags = ["promotion", "incentives", "career", "engineering-culture", "ownership",
 editorial_track = "engineering-systems"
 +++
 
-In December 2021 I saved a link under the title "Promotion Driven Development
-(PDD)." The note was only a pointer to someone else's phrase, but the phrase
+In December 2021 I saved a phrase from a 2021 post on the
+[Niche Software blog](https://www.nichesoftware.co.nz/2021/05/29/promotion-driven-development.html):
+"Promotion Driven Development" (PDD). It names an engineering anti-pattern:
+developers choosing work that looks good for advancement, especially visible new
+features, while less visible product needs such as reliability, bug fixing, and
+maintenance are neglected or pushed onto people with less choice. The phrase
 stayed with me because it names a behavior every engineering organization
 creates whether it means to or not. People build toward the incentives they can
 see. If promotion rewards certain kinds of evidence, development will bend

@@ -1,6 +1,6 @@
 +++
 title = "The Sprintspective: One Loop for Looking Back and Planning Next"
-date = "2026-10-17"
+date = "2027-04-01"
 draft = true
 description = "Retrospective and sprint planning are usually scheduled as separate ceremonies, but they are parts of one feedback loop. A team should look back, regain context, choose the next direction, and sprint again while the evidence is still fresh."
 template = "blog-post.html"
@@ -11,12 +11,12 @@ tags = ["agile", "retrospective", "planning", "feedback-loops", "contextual-awar
 editorial_track = "engineering-systems"
 +++
 
-In May 2022 I wrote down an awkward word: sprintspective. The issue title tried
-to define it before the word settled: combine the prospective and retrospective
-in the same flow or feedback loop. In agile we usually stop after a sprint to
-run a retrospective, and around the same time we plan the next sprint. I wanted
-to combine those activities so people could see what was done and plan what
-comes next without losing the thread.
+In May 2022 I wrote down an awkward word: sprintspective. The phrase was my
+attempt to define the idea before the word settled: combine the prospective and
+retrospective in the same flow or feedback loop. In agile we usually stop after
+a sprint to run a retrospective, and around the same time we plan the next
+sprint. I wanted to combine those activities so people could see what was done
+and plan what comes next without losing the thread.
 
 The image I added was stranger and better than the word. Some bugs move very
 fast, then stop to saccade and scan their environment, regain contextual

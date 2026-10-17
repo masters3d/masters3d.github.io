@@ -1,6 +1,6 @@
 +++
 title = "Build Mode, Reflect Mode, and Quality Without a Name"
-date = "2026-10-17"
+date = "2027-08-15"
 draft = true
 description = "Some quality is specified before construction, and some quality only becomes visible after contact with the thing being built. Build mode and reflect mode are different cognitive states, and good work needs a loop between them."
 template = "blog-post.html"
@@ -48,7 +48,8 @@ answer cannot always be derived from a code. It has to be judged.
 "Quality without a name" points at this second category. It is not mystical. It
 is quality whose rule has not been fully articulated yet, often because the rule
 emerges from many small relationships rather than one measurable property. You
-notice it as fit before you can reduce it to a checklist.
+notice it as fit before you can reduce it to a checklist. Reflect mode is often
+where that unnamed fit becomes language the next builder can use.
 
 ## Build mode finds material
 

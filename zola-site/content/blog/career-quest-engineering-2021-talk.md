@@ -1,6 +1,6 @@
 +++
 title = "Career Quest Engineering, the 2021 Talk"
-date = "2026-10-17"
+date = "2027-12-01"
 draft = true
 description = "The 2021 Career Quest Engineering talk preserved a transition from video editor, to project manager, to software engineer. The lasting thread was not arriving at the perfect role, but learning which work still made the journey worth taking."
 template = "blog-post.html"
@@ -11,13 +11,13 @@ tags = ["career", "field-notes", "video-editing", "project-management", "softwar
 editorial_track = "field-notes"
 +++
 
-In November 2021 I had a presentation titled `Career Quest Engineering`. Another
-file from the same period was called `Personal Journey`. The slides are sparse,
-but the speaker notes preserve the shape: video editor at a nonprofit, project
-manager at a portable buildings company, software engineer at a tech company.
-The journey diagram in `media/journey_cheyo.md` gives the same sequence in an
-even smaller form: Media Producer, Video Editor, Project Manager, Software
-Engineer, then a future retired self.
+In November 2021 I gave a talk called "Career Quest Engineering," with a
+companion deck I titled "Personal Journey." The slides are sparse, but the
+speaker notes preserve the shape: video editor at a nonprofit, project manager
+at a portable buildings company, software engineer at a tech company. A small
+journey diagram I drew for it gives the same sequence in an even shorter form:
+Media Producer, Video Editor, Project Manager, Software Engineer, then a future
+retired self.
 
 This is a Field Note because the artifact matters. The slides are not a polished
 career theory. They are a 2021 snapshot of someone trying to explain why a path
@@ -87,12 +87,10 @@ leadership, confidence, support, and creating clarity from ambiguity. But even
 there, the slide refuses the clean ending. More money did not remove career
 angst. Mastery mattered more than arrival.
 
-The `Career Quest Engineering` deck contains the early Quest Engine vocabulary.
-It connects career to the Latin `carrus`, a chariot, and engineering to
-`ingenium`, the root behind engine and engineer. It defines career as movement,
-quest as inquiry, and engineering as operating the engine. The wordplay is rough
-in places, but the attempt is clear: career is not only the job title. It is the
-engineered motion of a professional life.
+The `Career Quest Engineering` deck contains the early Quest Engine vocabulary:
+career as movement, quest as inquiry, and engineering as operating the engine.
+The wordplay is rough in places, but the attempt is clear: career is not only
+the job title. It is the engineered motion of a professional life.
 
 The talk also contains the beginnings of what later became more formal: Clear
 Strategy, Objective Function, and Contextual Awareness. In 2021 the notes still

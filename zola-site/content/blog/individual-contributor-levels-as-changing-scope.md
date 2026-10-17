@@ -1,6 +1,6 @@
 +++
 title = "Individual Contributor Levels as Changing Scope"
-date = "2026-10-17"
+date = "2028-03-01"
 draft = true
 description = "Individual contributor levels are easiest to understand as changes in scope. The work grows from learning and code, to components, to systems, to the systems that shape other teams."
 template = "blog-post.html"
@@ -11,11 +11,11 @@ tags = ["career", "individual-contributor", "levels", "scope", "engineering-syst
 editorial_track = "engineering-systems"
 +++
 
-The `career.md` source file starts its people systems section with Individual
-Contributor levels 0 through 7+. It is a software engineering career document,
-but the reason I would place this post in Engineering Systems is that the level
-ladder is really a scope model. The job changes as the system you are expected
-to hold in your head gets larger.
+When I wrote down how I think about software engineering careers, the first
+thing I listed was a ladder of individual contributor (IC) levels, from 0
+through 7 and beyond. I wrote it for software, but the ladder is really a scope
+model, and that holds for any engineering organization. The job changes as the
+system you are expected to hold in your head gets larger.
 
 That is a better framing than treating levels as seniority badges. Time matters,
 but time is not the mechanism. The mechanism is expanding responsibility: from

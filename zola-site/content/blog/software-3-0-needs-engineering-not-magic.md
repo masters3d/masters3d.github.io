@@ -1,6 +1,6 @@
 +++
 title = "Software 3.0 Needs Engineering, Not Magic"
-date = "2026-10-17"
+date = "2028-02-15"
 draft = true
 description = "Software 3.0 is not a permission slip to trust agents. It is an engineering problem: define the human role, constrain the agent role, and build validation loops around the work they share."
 template = "blog-post.html"
@@ -11,12 +11,13 @@ tags = ["software-3-0", "agents", "engineering", "validation", "collaboration"]
 editorial_track = "software-engineering"
 +++
 
-The source file for this post is bluntly named
-`specs/software_3_0_engineering_framework/VISION.md`. It describes a world where
-traditional software engineering, built for human-only teams writing
-deterministic code, has to make room for cognitive agents that write, test, and
-deploy code. The generated document is too confident in places, but the question
-under it is real: what changes when the thing helping build software is also a
+In 2025 I had an agent draft a vision document for what I was calling a
+"Software 3.0 engineering framework," borrowing Andrej Karpathy's term for
+software that is written as prompts and run by large models. It described a
+world where traditional software engineering, built for human-only teams writing
+deterministic code, has to make room for agents that write, test, and deploy
+code. The generated document was too confident in places, but the question under
+it was real: what changes when the thing helping build software is also a
 software system with its own context window, tools, and failure modes?
 
 I do not think the answer is that engineering becomes less important. The answer

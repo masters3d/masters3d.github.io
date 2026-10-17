@@ -1,6 +1,6 @@
 +++
 title = "Resourcefulness, Agency, and Inheritance"
-date = "2026-10-17"
+date = "2028-02-01"
 draft = true
 description = "Resourcefulness can look inherited because people receive different tools, patterns, and permission structures. But agency also grows through practice. The useful question is which patterns we pass forward, and whether they make the next person more capable of acting."
 template = "blog-post.html"
@@ -70,12 +70,13 @@ pattern from one domain into another. None of that requires a heroic
 personality. It requires repeated contact with situations where those moves are
 allowed and rewarded.
 
-This is the part I want to keep distinct from my earlier post on resourcefulness
-as its own Quest Engine. That post zoomed into the internal loop: search for the
-missing resource, acquire it, and improve the acquiring system. This one zooms
-out to the inheritance layer around that loop. Who taught you that acquiring was
-possible? What patterns were already available? What did the system make easier
-or harder to learn?
+This is the part I want to keep distinct from my earlier post on
+[resourcefulness as its own Quest Engine](/blog/resourcefulness-is-its-own-quest-engine/).
+That post zoomed into the internal loop: search for the missing resource,
+acquire it, and improve the acquiring system. This one zooms out to the
+inheritance layer around that loop. Who taught you that acquiring was possible?
+What patterns were already available? What did the system make easier or harder
+to learn?
 
 ## What we pass forward
 
@@ -100,7 +101,8 @@ sense three architectures ago. Agency includes the right to question inherited
 resourcefulness and retire the pattern that no longer earns its place.
 
 So resourcefulness is not simply born, and agency is not simply chosen. Both are
-cultivated inside systems that remember. If we want more resourceful people, we
+cultivated inside systems that remember. If we want more resourceful people, and
+more [high-agency teams](/blog/quest-engine-building-high-agency-teams/), we
 should build environments where resourceful moves are visible, safe to practice,
 and easy to pass forward. The next person should not have to rediscover every
 path from scratch. They should inherit enough paths to start walking, and enough

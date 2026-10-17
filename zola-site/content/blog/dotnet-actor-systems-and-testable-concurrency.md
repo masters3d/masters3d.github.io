@@ -1,6 +1,6 @@
 +++
 title = "Dotnet Actor Systems and Testable Concurrency"
-date = "2026-10-17"
+date = "2027-09-15"
 draft = true
 description = "Actor systems are useful because they turn shared state into message boundaries. Coyote adds the missing engineering move: make the schedules testable before the rare interleaving becomes production behavior."
 template = "blog-post.html"
@@ -11,13 +11,13 @@ tags = ["dotnet", "actors", "concurrency", "coyote", "testing"]
 editorial_track = "software-engineering"
 +++
 
-In April 2022 I opened a short issue in ingenio called
-["dotNet Actor System"](https://github.com/masters3d/ingenio/issues/15). The
+In April 2022 I wrote myself a short note titled "dotNet Actor System." The
 whole note was a small pile of links and names: an On .NET episode about
-reliable async systems with Coyote, Microsoft's Coyote videos, Dapper, New
-Orleans, Coyote, and Service Fabric. It was not an argument yet. It was a sign
-post to a question I was circling: if actors help isolate concurrent work, what
-kind of engineering system makes that isolation trustworthy?
+reliable async systems with Coyote, Microsoft's Coyote videos, Dapper, Orleans
+(which I wrote down then as "New Orleans"), Coyote, and Service Fabric. It was
+not an argument yet. It was a sign post to a question I was circling: if actors
+help isolate concurrent work, what kind of engineering system makes that
+isolation trustworthy?
 
 That question pairs naturally with my later post on
 [Swift actors and Rust ownership](/blog/swift-actor-model-vs-rust-ownership/).
@@ -42,12 +42,13 @@ which messages exist, who can send them, and what state transition each one
 permits. A service becomes less like a bag of methods and more like a small
 state machine with an inbox.
 
-The names in the original issue point at that direction. Dapper, New Orleans,
-Coyote, and Service Fabric all try to make distributed applications easier to
-structure around services, state, and long-running coordination. Service Fabric
-sits in the same family of platform concerns. The common theme is not a single
-framework choice. It is the attempt to give concurrent, distributed work a shape
-that engineers can reason about.
+The names in the original issue point at that direction, though they do not all
+sit at the same layer. Orleans gives the actor-like virtual actor model. Service
+Fabric sits in the platform and coordination layer. Coyote tests asynchronous
+behavior. Dapper is closer to the persistence edge, a reminder that state still
+has to be read and written somewhere. The common theme is not a single framework
+choice. It is the attempt to give concurrent, distributed work a shape that
+engineers can reason about.
 
 That is where I would separate this from the Swift and Rust comparison. Swift
 actors and Rust ownership are language mechanisms. They change what the compiler

@@ -1,6 +1,6 @@
 +++
 title = "Design Review Needs Governance"
-date = "2026-10-17"
+date = "2027-03-15"
 draft = true
 description = "A design review that cannot approve, reject, or route a decision is mostly performance. Governance gives the review a body: who decides, what authority they have, how disagreement is resolved, and how the decision becomes part of the system."
 template = "blog-post.html"
@@ -11,13 +11,12 @@ tags = ["design-review", "governance", "working-groups", "architecture", "decisi
 editorial_track = "engineering-systems"
 +++
 
-In July 2022 I wrote one sentence in my notes repository that still feels
-sharper than the amount of text around it: design review without governance is
-empty. I added that community governance is usually better when working groups
-approve features. The note was short, and a separate issue nearby held a set of
-references I was clearly thinking with: Microsoft's engineering playbook on
-design reviews, the Swift Evolution process, Google's design docs, and Oxide's
-Requests for Discussion.
+In July 2022 I wrote one sentence that still feels sharper than the amount of
+text around it: design review without governance is empty. I added that
+community governance is usually better when working groups approve features. The
+note was short, and a second note nearby was only a reading list. It pointed to
+Microsoft's engineering playbook on design reviews, the Swift Evolution process,
+Google's design doc culture, and Oxide's Requests for Discussion.
 
 What those references have in common is not the template. It is the presence of
 a decision system. A design can be written beautifully and still go nowhere if
@@ -59,13 +58,17 @@ damaging the larger system.
 
 ## The useful parts of public processes
 
-The references in the old issue point at a spectrum. Swift Evolution is a public
-language process with proposals, review periods, core team decisions, and an
+The references point at a spectrum. Microsoft's Code with Engineering Playbook
+treats design reviews as a way to front-load important technical decisions,
+choose the right level of review, bring in the right subject-matter experts, and
+leave a design log behind. Swift Evolution is a public language process with
+pitches, proposals, review periods, workgroup or core-team decisions, and an
 archive that lets future readers see how a feature entered the language.
-Google's design doc culture emphasizes writing as a way to force clarity before
-execution. Oxide's RFDs make discussion durable by turning it into a record.
-Microsoft's design review guidance gives teams a practical shape for looking at
-architecture before the cost of change goes up.
+Google's design doc culture emphasizes writing as a way to surface tradeoffs,
+force clarity before execution, and build consensus while change is still cheap.
+Oxide's Requests for Discussion make even rough ideas discussable in writing, so
+technical and organizational decisions become durable records instead of hallway
+memory.
 
 Most teams should not copy any of these processes whole. A five-person product
 team does not need the same ceremony as a programming language. But the useful
@@ -119,7 +122,7 @@ author and reviewers disagree? If a team cannot answer those questions, it may
 still hold a review, but it should be honest about what the review can do. It
 can advise. It cannot govern.
 
-When I read the old note now, I hear frustration with a familiar theater: smart
+When I read that note now, I hear frustration with a familiar theater: smart
 people gathered around a design with no mechanism to turn their attention into a
 decision. The better version is not more ceremony. It is less ambiguity. Review
 gathers context. Governance converts that context into a responsible decision
