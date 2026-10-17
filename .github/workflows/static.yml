@@ -47,6 +47,14 @@ jobs:
           python3 scripts/check_upcoming_drafts.py --self-test > /dev/null
           python3 scripts/check_upcoming_drafts.py
 
+      - name: Block links to posts that are not live yet
+        # Inline /blog/<slug>/ links must follow release order: published
+        # posts link only to published posts, drafts only to earlier ones.
+        # Forward references go in [extra] related, which renders once live.
+        run: |
+          python3 scripts/check_post_links.py --self-test > /dev/null
+          python3 scripts/check_post_links.py
+
       - name: Setup Zola
         uses: taiki-e/install-action@v2
         with:

@@ -116,6 +116,30 @@
             </div>
 
             <footer class="post-footer" style="margin-top: 3em; padding-top: 2em; border-top: 1px solid var(--border-color);">
+              {# Related posts: slugs this post lists in extra.related, plus posts that list this one.
+                 Only published pages are in the section, so drafts appear here once they go out. #}
+              {% set blog_section = get_section(path="blog/_index.md") %}
+              {% set own_related = page.extra.related | default(value=[]) %}
+              {% set_global related_pages = [] %}
+              {% for other in blog_section.pages %}
+              {% if other.permalink != page.permalink %}
+              {% set other_related = other.extra.related | default(value=[]) %}
+              {% if other.slug in own_related or page.slug in other_related %}
+              {% set_global related_pages = related_pages | concat(with=other) %}
+              {% endif %}
+              {% endif %}
+              {% endfor %}
+              {% if related_pages | length > 0 %}
+              <section class="related-posts" aria-labelledby="cross-reference-title">
+                <h4 id="cross-reference-title">Related posts</h4>
+                <ul>
+                  {% for related in related_pages %}
+                  <li><a href="{{ related.permalink }}">{{ related.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              </section>
+              {% endif %}
+
               {% if page.taxonomies.categories %}
               {% set category_name = page.taxonomies.categories | first %}
               {% set category = get_taxonomy_term(kind="categories", term=category_name) %}
