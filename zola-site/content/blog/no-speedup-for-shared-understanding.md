@@ -4,10 +4,10 @@ date = "2026-09-23"
 description = "Six months of building AI infrastructure and coaching coworkers on their agent workflows taught me the bottleneck is no longer code creation. Someone can write ten thousand lines in a day, but nobody found a way to make a colleague understand those ten thousand lines any faster than in 2019. Validation is still the vehicle through which humans actually learn a system, and that work has not been automated."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Software Engineering"]
+categories = ["Human Systems"]
 tags = ["shared-understanding", "agents", "ai-development", "validation", "documentation", "context", "code-review", "knowledge-management", "pull-requests"]
 [extra]
-editorial_track = "software-engineering"
+editorial_track = "human-systems"
 +++
 
 For the last six months most of my building has been infrastructure for agents

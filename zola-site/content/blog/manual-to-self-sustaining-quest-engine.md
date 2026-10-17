@@ -4,7 +4,7 @@ date = "2026-10-06"
 description = "Elon's algorithm is not really an automation algorithm. It is a procedure for forcing shared understanding of a process, and automation is what it happens to permit at the end. The Quest Engine says the same thing structurally and translates it to a world that is mostly digital, where the walk around the factory floor can be delegated to agents and the goal is not a fully automated process but a self-sustaining one that keeps humans only where judgment genuinely lives."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Software Engineering"]
+categories = ["Engineering Systems"]
 tags = [
   "quest-engine",
   "automation",
@@ -16,7 +16,7 @@ tags = [
   "self-healing",
 ]
 [extra]
-editorial_track = "software-engineering"
+editorial_track = "engineering-systems"
 series = "quest-engine"
 +++
 

@@ -5,10 +5,10 @@ draft = true
 description = "Ten years after entering software engineering, a reflection on moving from fear of code to senior-level judgment, ownership, and helping others grow."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Software Engineering"]
+categories = ["Human Systems"]
 tags = ["software-engineering", "career-growth", "origin-story", "senior-engineering", "reflection"]
 [extra]
-editorial_track = "software-engineering"
+editorial_track = "human-systems"
 +++
 
 Ten years ago, I was still explaining why I wanted to become a programmer. I had
