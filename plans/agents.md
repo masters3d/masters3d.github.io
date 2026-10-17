@@ -228,6 +228,14 @@ Decide the track from what the post is really about, not from the vocabulary
 it uses. Ask the questions in this order and stop at the first yes. A later
 track only gets the post when every earlier track has said no.
 
+**Computer languages go in Software Engineering.** Before the steps below, ask
+whether the post's subject is a programming language: its design, safety,
+concurrency model, runtime, adoption, ecosystem, or a prediction or personal
+history about it. If yes, the post is **Software Engineering**, even when it is
+dated (a launch-week prediction) or personal (why a language never made it to
+work). A post that only uses a language as the setting for another subject (a
+creator's triad about motivation, for example) still follows the steps.
+
 1. **Is it really about one person as a system?** Cognitive (attention, habit,
    learning, expertise, practice, fear and risk tolerance, personality,
    judgment and taste, motivation, meaning, spirituality, a familiar phrase or
@@ -289,6 +297,7 @@ Examples of the current split:
 | 10,000 Hours Was Never Enough; The MOOC Era; Leverage and the Stairs You Build | Human Systems | Subject is how one person learns and builds expertise; software is the setting |
 | Fearless Engineering; Director and Thinker; Craftsmanship, Judgment, and Taste | Human Systems | Subject is one person's risk tolerance, work personality, or developed skill |
 | There Is No Speedup for Shared Understanding; Ten Years in Software Engineering | Human Systems | Subject is the rate a human brain assimilates a system, or one person's growth |
+| My Swift Journey; What Apple Swift Means to Apple (A Prediction) | Software Engineering | Subject is a computer language, so it skips Field Notes even though it is dated and personal |
 | The Last 20% and the Next Nine; From Manual to Self-Sustaining | Engineering Systems | Subject is how organizations reward work and build shared understanding of a process |
 
 **Track order mirrors the framework.** Templates list tracks in this fixed order,

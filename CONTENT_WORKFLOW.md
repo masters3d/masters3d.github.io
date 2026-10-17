@@ -151,7 +151,8 @@ editorial_track = "engineering-systems"
 ```
 3. Choose exactly one editorial track: `Quest Engine`, `Field Notes`,
    `Software Engineering`, `Engineering Systems`, or `Human Systems`. Mentioning
-   the Quest Engine does not make a post a Quest Engine post. Check the tracks
+   the Quest Engine does not make a post a Quest Engine post. A post about a
+   computer language always goes in Software Engineering. Otherwise check the tracks
    in priority order and stop at the first fit: Human Systems (one person),
    Engineering Systems (engineering in general, teams, meta engineering),
    Software Engineering (the craft), Quest Engine (only posts that change the
