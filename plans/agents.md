@@ -836,7 +836,11 @@ already states a thesis in the author's words.
 3. In the same PR, set the row's Status to `published` and put the post's slug
    in the Post column. Do not delete the row; it is the record of where the idea
    came from.
-4. Use `covered` (with the existing slug) or `dropped` (with a reason) to close
+4. When asked to write posts without publishing them, add `draft = true` to the
+   frontmatter (after `date`) and set the row's Status to `draft`. Zola skips
+   drafts in `zola build` and the feed. To publish a draft, the author reviews
+   it, removes `draft = true`, updates `date`, and the row moves to `published`.
+5. Use `covered` (with the existing slug) or `dropped` (with a reason) to close
    a row without writing a new post.
 
 ### Blog Guidelines for Agents

@@ -26,9 +26,9 @@ in how businesses already count money.
 ## Two Kinds of Work That Share a Codebase
 
 Development is the work of making something exist. It has a shape most engineers
-recognize: a goal, a design, a sequence of changes, and a point where the feature
-is done. The questions are about correctness and fit. Does it do what we said it
-would do? Does it solve the problem the customer has?
+recognize: a goal, a design, a sequence of changes, and a point where the
+feature is done. The questions are about correctness and fit. Does it do what we
+said it would do? Does it solve the problem the customer has?
 
 Production is the work of keeping that thing alive in the real world. It has no
 done state. The questions change from "does it work" to "does it keep working":
@@ -51,8 +51,8 @@ then runs an assembly line every day for years. The design team and the plant
 share the product, but nobody confuses designing the car with keeping the line
 running. The plant has its own engineers, its own metrics, and its own budget,
 and what it learns (a part that keeps failing inspection, a step that keeps
-slowing the line) goes back to design as a specific request. Software teams
-tend to blur that line because the "factory" is a deployment pipeline and a few
+slowing the line) goes back to design as a specific request. Software teams tend
+to blur that line because the "factory" is a deployment pipeline and a few
 dashboards, and it is easy to forget that something is running at all.
 
 ## The Accounting Already Knows
@@ -76,7 +76,8 @@ roadmap, so it competes with roadmap work for the same hours, and it loses until
 an incident forces it to win. Second, the cost of production gets attributed to
 development. A team that spends half its time keeping a service alive looks like
 a team that is slow at building features. I wrote about a related reward problem
-in [The Last 20% and the Next Nine](/blog/the-last-twenty-percent-and-the-next-nine/):
+in
+[The Last 20% and the Next Nine](/blog/the-last-twenty-percent-and-the-next-nine/):
 the work that makes a system dependable is the work least likely to be noticed.
 
 ## Feedback as Its Own Stream
