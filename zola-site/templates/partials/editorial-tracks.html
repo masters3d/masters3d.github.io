@@ -6,7 +6,10 @@
     {% for term in categories.items %}
     {% if term.name == "Quest Engine" %}
       {% set track = "quest-engine" %}
-      {% set description = "The connected framework, from Search, Drive, and Renew to practical applications." %}
+      {% set description = "The model itself: Search, Drive, and Renew, the Why, the four Ws, and how they fit together." %}
+    {% elif term.name == "Purpose Driven" %}
+      {% set track = "purpose-driven" %}
+      {% set description = "Motivation, meaning, health, and renewal: familiar phrases and stories read as patterns for a life outside work." %}
     {% elif term.name == "Engineering Systems" %}
       {% set track = "engineering-systems" %}
       {% set description = "How teams and organizations work as systems: incidents, ownership, risk, context, and the words engineers use." %}

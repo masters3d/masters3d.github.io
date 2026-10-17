@@ -4,7 +4,7 @@ date = "2026-10-06"
 description = "Roughly 80% of the software I produce now starts as a prompt, not a keystroke. Mapped onto the Quest Engine, that means agents have moved into the Drive (the How) and are eating into the four W's. What is left for me is the Why, the context still trapped in people's heads, and the work of running a fleet of agents predictably."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Quest Engine"]
+categories = ["Software Engineering"]
 tags = [
   "quest-engine",
   "agents",
@@ -15,7 +15,7 @@ tags = [
   "tech-debt",
 ]
 [extra]
-editorial_track = "quest-engine"
+editorial_track = "software-engineering"
 series = "quest-engine"
 +++
 

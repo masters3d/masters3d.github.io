@@ -4,10 +4,10 @@ date = "2026-07-24"
 description = "At Ranger camp we said 'be prepared: physically, mentally, and spiritually.' Physical has a home in the body. Mental has a home in the higher brain. But where does spiritual live? A secular look at how the feelings we call spiritual are the felt output of older social and emotional systems, and what the soul might be once you stop treating it as a mystery."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Quest Engine"]
+categories = ["Purpose Driven"]
 tags = ["quest-engine", "secular-philosophy", "connection", "belonging", "soul", "renewal"]
 [extra]
-editorial_track = "quest-engine"
+editorial_track = "purpose-driven"
 series = "quest-engine"
 +++
 

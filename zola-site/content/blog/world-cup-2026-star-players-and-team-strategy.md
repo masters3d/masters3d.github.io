@@ -4,10 +4,10 @@ date = "2026-07-07"
 description = "Watching World Cup 2026, some squads talk like a single organism and others like strangers in matching shirts. Soccer is a one-dimensional model of a team (one field, one ball, one clock); engineering is played across many planes at once and across time. The lesson: stardom is local, the most valuable star is the versatile generalist who moves between planes and passes the ball six months into the future, and resilient teams rotate that capability instead of betting on one hero."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Quest Engine"]
+categories = ["Engineering Systems"]
 tags = ["world-cup", "soccer", "team-dynamics", "star-players", "single-point-of-failure", "quest-engine", "team-cohesion"]
 [extra]
-editorial_track = "quest-engine"
+editorial_track = "engineering-systems"
 series = "quest-engine"
 +++
 

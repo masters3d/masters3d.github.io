@@ -4,7 +4,7 @@ date = "2026-10-08"
 description = "Boris Cherny's three prompting directives map onto the Quest Engine exactly: what you want is the Why (the problem statement), how it should verify is Renew (the definition of done), and how much effort is the How. The middle one is the subtle one, because effort is no longer a procedure, it is a strategy, a topology of agents, and a budget of resource plus time. The list is short because Search and execution are assumed."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Quest Engine"]
+categories = ["Software Engineering"]
 tags = [
   "quest-engine",
   "agents",
@@ -15,7 +15,7 @@ tags = [
   "effort-tracking",
 ]
 [extra]
-editorial_track = "quest-engine"
+editorial_track = "software-engineering"
 series = "quest-engine"
 +++
 

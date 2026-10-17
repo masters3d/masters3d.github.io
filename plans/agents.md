@@ -223,6 +223,13 @@ experience, stories, psychology, engineering, and history. The tone is
 diagnostic rather than inspirational: give readers language for recognizing
 where they are, not slogans about where they should be.
 
+This track is reserved for posts whose main contribution is the model itself:
+defining a part, connecting parts, or extending the framework. A post that uses
+the framework as a lens on something else belongs to that subject's track
+(Purpose Driven for life and motivation, Software Engineering for craft and
+agents, Engineering Systems for teams) and joins the reading order through
+`extra.series = "quest-engine"` and the `quest-engine` tag instead.
+
 - **Opening and movement** - Begin with a concrete experience, cultural scene, or
   stubborn question. Extract the structural pattern, define it, test it against
   other domains, and return to what the pattern helps a person see or choose.
@@ -248,6 +255,32 @@ where they are, not slogans about where they should be.
 - **Avoid** - Motivational hype, mystical certainty, repeated definitions without
   a new distinction, or references that display breadth without advancing the
   model.
+
+#### Purpose Driven (`purpose-driven`)
+
+Write as someone testing a familiar phrase, story, or habit against lived
+experience to find what actually moves a person. The subject is life outside
+the job: motivation, meaning, health, rest, and renewal. The tone is warm but
+still diagnostic; the post earns its conclusion rather than cheering for it.
+
+- **Opening and movement** - Start with a phrase, quote, film scene, or personal
+  moment (a speech, a coach's answer, a camp motto, a burnout). Question its
+  order or completeness, propose the sharper version, and show what the change
+  lets a person notice or do differently.
+- **Evidence** - Lived experience plus one or two independent sources (research,
+  history, a named thinker). The Quest Engine may supply the mapping, but the
+  post must stand on its subject; if the framework is the main contribution, the
+  post belongs in Quest Engine.
+- **Language** - Plain, human words: motivation, meaning, joy, rest, energy,
+  control, belonging. Define framework terms on first use instead of assuming
+  the reader has read the series.
+- **Posture** - Secular and non-prescriptive. Offer a lens, not a regimen. Admit
+  where a mapping is partial or where one life does not generalize.
+- **Closing** - Return to the opening phrase or moment and leave the reader with
+  a question or a small choice they can make.
+- **Avoid** - Motivational hype, self-help imperatives, mystical certainty,
+  health or medical advice presented as universal, and triads forced into a
+  one-to-one mapping.
 
 #### Engineering Systems (`engineering-systems`)
 

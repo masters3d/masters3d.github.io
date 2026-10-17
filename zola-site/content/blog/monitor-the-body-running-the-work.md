@@ -4,10 +4,10 @@ date = "2026-07-22"
 description = "Health is a continuous Quest Engine loop: Search for signals from the body, Drive one controlled change, and Renew from the difference between expected and actual results."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Quest Engine"]
+categories = ["Purpose Driven"]
 tags = ["physical-health", "sleep", "caffeine", "standing-desk", "measurement", "mental-health", "work", "renewal", "quest-engine"]
 [extra]
-editorial_track = "quest-engine"
+editorial_track = "purpose-driven"
 series = "quest-engine"
 +++
 

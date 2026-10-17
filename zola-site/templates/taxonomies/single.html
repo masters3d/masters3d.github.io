@@ -38,7 +38,9 @@
 
           <h1>{% if taxonomy.name == "categories" %}{{ term.name }}{% else %}Tag: {{ term.name }}{% endif %}</h1>
           {% if taxonomy.name == "categories" and term.name == "Quest Engine" %}
-          <p class="taxonomy-description">Connected framework essays. Start with the introduction, follow the model through its foundations, then branch into applications.</p>
+          <p class="taxonomy-description">The framework itself. Start with the introduction, then follow the model through its foundations.</p>
+          {% elif taxonomy.name == "categories" and term.name == "Purpose Driven" %}
+          <p class="taxonomy-description">Motivation, meaning, health, and renewal: familiar phrases and stories examined as patterns for a life outside work.</p>
           {% elif taxonomy.name == "categories" and term.name == "Engineering Systems" %}
           <p class="taxonomy-description">Systems thinking about how engineering teams and organizations work: the design beneath an apparent people problem.</p>
           {% elif taxonomy.name == "categories" and term.name == "Software Engineering" %}
@@ -46,7 +48,7 @@
           {% elif taxonomy.name == "categories" and term.name == "Field Notes" %}
           <p class="taxonomy-description">Personal records, retrospectives, and portfolios where specific experience comes before the lesson.</p>
           {% elif taxonomy.name == "tags" and term.name == "quest-engine" %}
-          <p class="taxonomy-description">The complete Quest Engine reading path across all four editorial tracks. The sequence moves from the core model to motivation, systems, teams, and renewal.</p>
+          <p class="taxonomy-description">The complete Quest Engine reading path across all five editorial tracks. The sequence moves from the core model to motivation, systems, teams, and renewal.</p>
           {% else %}
           <p class="taxonomy-description">Posts connected by the {{ term.name }} tag.</p>
           {% endif %}
@@ -87,7 +89,7 @@
           </ul>
           {% else %}
           <h3>Editorial Tracks</h3>
-          <p><a href="/categories/">Browse all four tracks</a></p>
+          <p><a href="/categories/">Browse all five tracks</a></p>
           {% endif %}
           
           <h3>Subscribe</h3>

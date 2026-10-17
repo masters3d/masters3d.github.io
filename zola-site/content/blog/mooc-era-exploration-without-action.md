@@ -4,7 +4,7 @@ date = "2026-07-31"
 description = "Nanodegrees and massive open online courses gave me an endless exploration phase and almost no action phase. Watching someone else code feels like learning right up until you open an empty file. Exercism and Math Academy fixed that by making the first move yours."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Quest Engine"]
+categories = ["Software Engineering"]
 tags = [
   "quest-engine",
   "search-drive-renew",
@@ -16,7 +16,7 @@ tags = [
   "career-growth",
 ]
 [extra]
-editorial_track = "quest-engine"
+editorial_track = "software-engineering"
 series = "quest-engine"
 +++
 
