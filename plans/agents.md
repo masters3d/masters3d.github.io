@@ -267,6 +267,29 @@ track only gets the post when every earlier track has said no.
    Human Systems. Burnout is Human Systems even when work caused it; on-call
    rotations that cause burnout are Engineering Systems.
 
+**When a post is about more than one thing.** The order above applies to the
+post's main subject, not to every subject it touches. A software example, an
+agent workflow in one section, or a closing paragraph about engineering does
+not make the post Software Engineering. Most posts here mix a person, a
+practice, and some code, so find the main subject first:
+
+1. **Thesis test** - Write the post's claim in one sentence from its title,
+   description, and closing paragraph. The track is whatever that sentence is
+   about. "Expertise comes from new constraints, not hours" is about a person
+   learning, even when the evidence is a software career.
+2. **Domain swap test** - Replace the software examples with examples from
+   another field (video editing, sports, cooking, a different kind of
+   engineering). If the claim still holds, software is the setting, not the
+   subject: go to Engineering Systems if it is a practice, Human Systems if it
+   is about a person. If the claim falls apart, it is Software Engineering.
+3. **Weight test** - If the thesis is still split, count where the body goes.
+   The subject that holds most of the sections wins; one section on agents
+   in a post about attention does not move it.
+4. **Tie-break** - If two subjects are truly even, prefer the broader one
+   (Human Systems over Engineering Systems over Software Engineering), so a
+   post reaches the readers its idea applies to. Software Engineering keeps
+   posts that are specifically about languages, code, or building software.
+
 Quick tests:
 
 - **Swap test** - Replace "Quest Engine" with a generic phrase like "this
@@ -289,9 +312,9 @@ Examples of the current split:
 | Faith. Guts. Stamina.; Secular Meaning of Life; Running the Health Quest | Human Systems | Subject is motivation (cognitive), meaning (cognitive), or the body (physical, health) |
 | Burnout Is a Control Problem | Human Systems | Subject is one person's health and recovery, told with history |
 | The Media Consumption Arc | Human Systems | Subject is how media competes for one person's attention across life stages |
-| The Bicycle of the Mind; 10,000 Hours Was Never Enough; The MOOC Era | Software Engineering | Subject is learning to work with coding agents, building expertise in software, or learning to program |
+| The Bicycle of the Mind; 10,000 Hours Was Never Enough; The MOOC Era | Human Systems | Mixed posts whose thesis is how a person builds automaticity, expertise, or learning; software is the evidence and the claim survives the domain swap |
 | Craftsmanship, Judgment, and Taste; There Is No Speedup for Shared Understanding; Ten Years in Software Engineering | Software Engineering | Subject is what the human brings to building software with agents, validating generated code, or a software career |
-| Joy, Freedom, Motivation: Matz's Triad | Software Engineering | Subject is what a computer language gives its users |
+| Joy, Freedom, Motivation: Matz's Triad | Human Systems | Mixed post; it closes by saying the triad "is not a Ruby feature," so the thesis is motivation, with a language as the setting |
 | My Swift Journey; What Apple Swift Means to Apple; From Creative Tools to Software Engineering; Longest Path into Data Structures and Algorithms; Technical Projects Portfolio | Software Engineering | Subject is a language or creating software, so it skips Field Notes even though it is dated and personal |
 | Fearless Engineering; Leverage and the Stairs You Build; Director and Thinker | Engineering Systems | Subject is a general engineering practice (risk, scaffolding, work personalities), not only software |
 | The Last 20% and the Next Nine; From Manual to Self-Sustaining | Engineering Systems | Subject is how organizations reward work and build shared understanding of a process |

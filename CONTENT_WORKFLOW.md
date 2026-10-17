@@ -156,8 +156,11 @@ editorial_track = "engineering-systems"
    languages or creating software, even when dated or personal), Engineering
    Systems (general engineering practices not only about software), Human
    Systems (about humans rather than engineering), Quest Engine (only posts
-   that change the model), then Field Notes as the fallback. See "Placing a
-   Post in a Track" in `plans/agents.md`
+   that change the model), then Field Notes as the fallback. Apply the order
+   to the post's main subject: if a post mixes subjects and its claim still
+   holds with the software examples swapped for another field, it does not go
+   in Software Engineering. See "Placing a Post in a Track" in
+   `plans/agents.md`
 4. Use tags for series and ideas that cross editorial tracks
 5. Write content in markdown below the frontmatter
 6. Format the Markdown: run `python3 scripts/format_markdown.py`
