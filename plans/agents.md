@@ -253,7 +253,10 @@ where they are, not slogans about where they should be.
 
 Write as an engineer diagnosing the design beneath an apparent people problem.
 The tone is calm, exact, and fair. Authority comes from exposing the mechanism
-and its boundary conditions, not from sounding certain.
+and its boundary conditions, not from sounding certain. The subject is how
+engineering teams and organizations work as systems (incidents, ownership,
+risk, glue work, context flow, process design, and the words teams use).
+Programming-language and code-level deep dives belong in Software Engineering.
 
 - **Opening and movement** - Start with a failure mode, constraint, surprising
   behavior, or a phrase that stopped being useful. Show why the obvious model
@@ -311,6 +314,11 @@ does, verifies, owns, and learns.
   as nostalgia. Name the skill that mattered, the one that turned out to matter
   more, and what a person entering the field now should practice. Pure
   chronological records without that present-day lens belong in Field Notes.
+- **Languages and code** - Programming-language, runtime, and code-architecture
+  deep dives (concurrency models, safety checks, cross-language boundaries)
+  belong here as part of the craft. Lead with the mechanism, show the code or
+  standard-library detail that proves it, and name the tradeoff and where the
+  comparison stops holding.
 - **Closing** - Name the higher-level workflow change, what remains uncertain,
   and what evidence would change the conclusion. Let the account remain revisable
   as the tools change. Express that boundary in language specific to the

@@ -5,10 +5,10 @@ description = "An exploration of same-node code sharing across languages through
 template = "blog-post.html"
 aliases = ["/blog/sharing-code-grpc-sidecar-vs-in-process-ffi/"]
 [taxonomies]
-categories = ["Engineering Systems"]
+categories = ["Software Engineering"]
 tags = ["grpc", "webassembly", "wasm", "rust", "ffi", "protobuf", "zig", "ios", "android", "cross-platform"]
 [extra]
-editorial_track = "engineering-systems"
+editorial_track = "software-engineering"
 +++
 
 I spent a while chasing a question that sounds simple: if I write my logic once
