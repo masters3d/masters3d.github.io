@@ -4,10 +4,10 @@ date = "2020-06-27"
 description = "A nontraditional software developer's path through bootcamp, Princeton, and MIT courses to build the algorithms foundation needed for technical interviews."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Field Notes"]
+categories = ["Software Engineering"]
 tags = ["algorithms", "data-structures", "technical-interviews", "education", "nontraditional-careers"]
 [extra]
-editorial_track = "field-notes"
+editorial_track = "software-engineering"
 +++
 
 _This was originally published on 2020-06-27._

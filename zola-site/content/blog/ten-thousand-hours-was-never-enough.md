@@ -4,10 +4,10 @@ date = "2026-06-27"
 description = "Time matters, but expertise does not come from time alone. In software engineering, AI makes the missing part impossible to ignore: growth comes from new constraints, real feedback, rising stakes, and ownership of outcomes."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Human Systems"]
+categories = ["Software Engineering"]
 tags = ["expertise", "software-engineering", "agents", "career-growth", "leadership", "judgment", "ai-development"]
 [extra]
-editorial_track = "human-systems"
+editorial_track = "software-engineering"
 +++
 
 I remember reading about the 10,000-hour rule and finding it compelling. It gave

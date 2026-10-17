@@ -228,30 +228,25 @@ Decide the track from what the post is really about, not from the vocabulary
 it uses. Ask the questions in this order and stop at the first yes. A later
 track only gets the post when every earlier track has said no.
 
-**Computer languages go in Software Engineering.** Before the steps below, ask
-whether the post's subject is a programming language: its design, safety,
-concurrency model, runtime, adoption, ecosystem, or a prediction or personal
-history about it. If yes, the post is **Software Engineering**, even when it is
-dated (a launch-week prediction) or personal (why a language never made it to
-work). A post that only uses a language as the setting for another subject (a
-creator's triad about motivation, for example) still follows the steps.
-
-1. **Is it really about one person as a system?** Cognitive (attention, habit,
-   learning, expertise, practice, fear and risk tolerance, personality,
-   judgment and taste, motivation, meaning, spirituality, a familiar phrase or
-   triad tested as a pattern of how people keep going), physical (the body,
-   energy, movement, rest), or health (sleep, stress, burnout, recovery). →
-   **Human Systems**. This wins even when every example comes from software
-   engineering or the post maps onto the Quest Engine: a post about how an
-   engineer learns, grows, hesitates, or understands is about the human.
-2. **Is it really about engineering in general, or about engineering itself
-   (meta engineering)?** How teams and organizations behave: ownership,
-   incidents, autonomy, incentives and rewards, process, team identity,
-   context flow, the words teams use, how work gets understood and handed off.
-   → **Engineering Systems**. This wins even when the examples are code.
-3. **Is the subject the specific craft of building software?** Languages, code,
-   architecture, verification techniques, tooling, agent workflows. →
-   **Software Engineering**.
+1. **Does it have to do with computer languages or creating software?**
+   Languages (design, safety, concurrency, runtimes, adoption, ecosystems),
+   code, architecture, verification, tooling, agent workflows for building
+   software, learning to program, and a career or expertise built in software.
+   → **Software Engineering**. This wins even when the post is dated (a
+   launch-week language prediction, a projects portfolio), personal (an origin
+   story, why a language never made it to work), or told through a cognitive
+   model or the Quest Engine.
+2. **Is it a general engineering practice that is not only about software?**
+   Risk and blast radius, scaffolding and iteration, process improvement,
+   ownership, incidents, blamelessness, incentives and rewards, team identity,
+   context flow, work personalities, the words engineers use. The practice
+   would hold for any engineering discipline or team. → **Engineering
+   Systems**.
+3. **Is it about humans rather than engineering?** One person as a system:
+   cognitive (attention, habit, creativity, motivation, meaning, spirituality,
+   a familiar phrase or triad tested as a pattern of how people keep going),
+   physical (the body, energy, movement, rest), or health (sleep, stress,
+   burnout, recovery). → **Human Systems**.
 4. **Is the framework itself the subject?** The post defines a part of the
    model, connects parts, or extends it (a new layer, a corrected mapping, the
    structure of the loop). If you deleted every non-framework example, the
@@ -259,17 +254,18 @@ creator's triad about motivation, for example) still follows the steps.
    settled, so this track grows only when a post builds a new version of it
    or questions it deeply enough (human factors, systems thinking, cognitive
    framing) that the model itself changes. Using Search, Drive, and Renew as a
-   lens is not enough.
+   lens is not enough, and a model-defining post does not move to Software
+   Engineering just because the model applies to agents.
 5. **Nothing above fits?** A dated personal record: a device, a year, a
-   prediction, a portfolio, a media review, a history where the chronology
-   matters more than the lesson. → **Field Notes**. This is the fallback, not
-   a first choice.
+   hardware prediction, a media portfolio, a show review, a history where the
+   chronology matters more than the lesson. → **Field Notes**. This is the
+   fallback, not a first choice.
 
-   **Human Systems vs Engineering Systems:** one person is Human Systems; many
-   people coordinating is Engineering Systems. Burnout is Human Systems even
-   when work caused it; on-call rotations that cause burnout are Engineering
-   Systems. Personal growth told through a software career is still Human
-   Systems; reward structures that shape many careers are Engineering Systems.
+   **Where the lines fall:** a post that only works for software is Software
+   Engineering; the same idea stated for any engineering team is Engineering
+   Systems; the person behind the work, outside any engineering practice, is
+   Human Systems. Burnout is Human Systems even when work caused it; on-call
+   rotations that cause burnout are Engineering Systems.
 
 Quick tests:
 
@@ -293,12 +289,13 @@ Examples of the current split:
 | Faith. Guts. Stamina.; Secular Meaning of Life; Running the Health Quest | Human Systems | Subject is motivation (cognitive), meaning (cognitive), or the body (physical, health) |
 | Burnout Is a Control Problem | Human Systems | Subject is one person's health and recovery, told with history |
 | The Media Consumption Arc | Human Systems | Subject is how media competes for one person's attention across life stages |
-| The Bicycle of the Mind | Human Systems | Subject is how attention becomes automaticity; agents are the application |
-| 10,000 Hours Was Never Enough; The MOOC Era; Leverage and the Stairs You Build | Human Systems | Subject is how one person learns and builds expertise; software is the setting |
-| Fearless Engineering; Director and Thinker; Craftsmanship, Judgment, and Taste | Human Systems | Subject is one person's risk tolerance, work personality, or developed skill |
-| There Is No Speedup for Shared Understanding; Ten Years in Software Engineering | Human Systems | Subject is the rate a human brain assimilates a system, or one person's growth |
-| My Swift Journey; What Apple Swift Means to Apple (A Prediction) | Software Engineering | Subject is a computer language, so it skips Field Notes even though it is dated and personal |
+| The Bicycle of the Mind; 10,000 Hours Was Never Enough; The MOOC Era | Software Engineering | Subject is learning to work with coding agents, building expertise in software, or learning to program |
+| Craftsmanship, Judgment, and Taste; There Is No Speedup for Shared Understanding; Ten Years in Software Engineering | Software Engineering | Subject is what the human brings to building software with agents, validating generated code, or a software career |
+| Joy, Freedom, Motivation: Matz's Triad | Software Engineering | Subject is what a computer language gives its users |
+| My Swift Journey; What Apple Swift Means to Apple; From Creative Tools to Software Engineering; Longest Path into Data Structures and Algorithms; Technical Projects Portfolio | Software Engineering | Subject is a language or creating software, so it skips Field Notes even though it is dated and personal |
+| Fearless Engineering; Leverage and the Stairs You Build; Director and Thinker | Engineering Systems | Subject is a general engineering practice (risk, scaffolding, work personalities), not only software |
 | The Last 20% and the Next Nine; From Manual to Self-Sustaining | Engineering Systems | Subject is how organizations reward work and build shared understanding of a process |
+| The Background Brain | Human Systems | Subject is how one mind does creative work, outside any engineering practice |
 
 **Track order mirrors the framework.** Templates list tracks in this fixed order,
 not alphabetically: Quest Engine (the Why), Field Notes (the four Ws: who, what,
@@ -319,9 +316,9 @@ where they are, not slogans about where they should be.
 This track is reserved for posts whose main contribution is the model itself:
 defining a part, connecting parts, or extending the framework. A post that uses
 the framework as a lens on something else belongs to that subject's track
-(Human Systems for the person: cognitive, physical, and health; Engineering
-Systems for teams and engineering in general; Software Engineering for craft
-and agents) and joins the reading order through
+(Software Engineering for languages, building software, and agents;
+Engineering Systems for general engineering practice and teams; Human Systems
+for the person: cognitive, physical, and health) and joins the reading order through
 `extra.series = "quest-engine"` and the `quest-engine` tag instead.
 
 - **Opening and movement** - Begin with a concrete experience, cultural scene, or
@@ -357,8 +354,8 @@ the loop. Software Engineering is the craft (Search), Engineering Systems is the
 team (Drive), and Human Systems is the human-specific part of Renew: the
 person running the loop, treated as a system with three parts.
 
-- **Cognitive** - attention, habit, automaticity, learning, expertise, risk
-  tolerance, work personality, motivation, meaning, and belonging.
+- **Cognitive** - attention, habit, automaticity, creativity, motivation,
+  meaning, and belonging.
 - **Physical** - the body, energy, movement, posture, and rest.
 - **Health** - sleep, stress, burnout, and recovery: what happens when the
   cognitive and physical parts are run past capacity, and how they come back.
@@ -394,7 +391,8 @@ The tone is calm, exact, and fair. Authority comes from exposing the mechanism
 and its boundary conditions, not from sounding certain. The subject is how
 engineering teams and organizations work as systems (incidents, ownership,
 risk, glue work, context flow, process design, incentives, and the words teams
-use), and engineering in general or engineering about engineering.
+use), and general engineering practices that are not only about software
+(risk, scaffolding, iteration, work personalities).
 Programming-language and code-level deep dives belong in Software Engineering.
 
 - **Opening and movement** - Start with a failure mode, constraint, surprising
@@ -448,12 +446,11 @@ does, verifies, owns, and learns.
 - **Posture** - Keep judgment singular and human. The tool may generate, inspect,
   or execute, but the author chooses the goal, evaluates the result, and owns the
   claim. Separate confidence in the direction from uncertainty about timing.
-- **Career and craft** - When a career moment illustrates how the job itself
-  is changing, treat personal history as evidence, not nostalgia. Name the
-  skill that mattered, the one that turned out to matter more, and what a
-  person entering the field now should practice. If the post is really about
-  how the person learns, grows, or builds expertise, it belongs in Human
-  Systems; pure chronological records belong in Field Notes.
+- **Career and craft** - Posts about learning to program, building expertise
+  in software, or a software career belong here, including dated and personal
+  ones. Treat personal history as evidence of how the job is changing, not as
+  nostalgia. Name the skill that mattered, the one that turned out to matter
+  more, and what a person entering the field now should practice.
 - **Languages and code** - Programming-language, runtime, and code-architecture
   deep dives (concurrency models, safety checks, cross-language boundaries)
   belong here as part of the craft. Lead with the mechanism, show the code or

@@ -151,13 +151,13 @@ editorial_track = "engineering-systems"
 ```
 3. Choose exactly one editorial track: `Quest Engine`, `Field Notes`,
    `Software Engineering`, `Engineering Systems`, or `Human Systems`. Mentioning
-   the Quest Engine does not make a post a Quest Engine post. A post about a
-   computer language always goes in Software Engineering. Otherwise check the tracks
-   in priority order and stop at the first fit: Human Systems (one person),
-   Engineering Systems (engineering in general, teams, meta engineering),
-   Software Engineering (the craft), Quest Engine (only posts that change the
-   model), then Field Notes as the fallback. See "Placing a Post in a Track"
-   in `plans/agents.md`
+   the Quest Engine does not make a post a Quest Engine post. Check the tracks
+   in priority order and stop at the first fit: Software Engineering (computer
+   languages or creating software, even when dated or personal), Engineering
+   Systems (general engineering practices not only about software), Human
+   Systems (about humans rather than engineering), Quest Engine (only posts
+   that change the model), then Field Notes as the fallback. See "Placing a
+   Post in a Track" in `plans/agents.md`
 4. Use tags for series and ideas that cross editorial tracks
 5. Write content in markdown below the frontmatter
 6. Format the Markdown: run `python3 scripts/format_markdown.py`

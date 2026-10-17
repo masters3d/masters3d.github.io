@@ -4,10 +4,10 @@ date = "2026-07-23"
 description = "A long time ago a company I worked at decided that being a Relater (a Dove) was the worst personality to have. I think that judgment is wrong, and I think the whole idea of ranking personalities is wrong. Personalities are contextual: they change with the room you are in and the season of life you are in. But there is a work personality you can learn to switch into, and for engineering the Director and the Thinker are the two worth practicing."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Human Systems"]
+categories = ["Engineering Systems"]
 tags = ["quest-engine", "personality", "communication", "director", "thinker", "search-drive-renew", "teams"]
 [extra]
-editorial_track = "human-systems"
+editorial_track = "engineering-systems"
 series = "quest-engine"
 +++
 

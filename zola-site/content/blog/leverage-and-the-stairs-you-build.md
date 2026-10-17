@@ -4,10 +4,10 @@ date = "2026-04-26"
 description = "Archimedes asked for a long enough lever to move the world. Engineering is the discipline of building those levers (correctly sized stairs, daily practice, scaffolded learning, and iterative cycles) so any wall becomes climbable."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Human Systems"]
+categories = ["Engineering Systems"]
 tags = ["leverage", "scaffolding", "deliberate-practice", "iterative-development", "progressive-disclosure", "quest-engine", "tools", "flow", "habit-building", "forward-progress", "time"]
 [extra]
-editorial_track = "human-systems"
+editorial_track = "engineering-systems"
 series = "quest-engine"
 +++
 
