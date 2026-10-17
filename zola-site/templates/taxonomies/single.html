@@ -83,8 +83,12 @@
           <h3>All Editorial Tracks</h3>
           {% set categories_terms = get_taxonomy(kind="categories") %}
           <ul>
+            {% for track_name in ["Quest Engine", "Field Notes", "Software Engineering", "Engineering Systems", "Purpose Driven"] %}
             {% for category_term in categories_terms.items %}
+            {% if category_term.name == track_name %}
             <li><a href="{{ category_term.permalink }}">{{ category_term.name }}</a> ({{ category_term.pages | length }})</li>
+            {% endif %}
+            {% endfor %}
             {% endfor %}
           </ul>
           {% else %}

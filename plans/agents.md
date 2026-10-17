@@ -216,6 +216,65 @@ authorial voice remains the baseline, while the track determines the post's
 emphasis, evidence, and pacing. Tags connect related ideas across tracks; they do
 not replace the primary track.
 
+#### Placing a Post in a Track
+
+**Not everything that says Quest Engine goes into Quest Engine.** Most posts
+on this blog use Search, Drive, and Renew somewhere. That vocabulary is a lens
+the author applies everywhere; it is not evidence of the track. The Quest
+Engine track grew to 30 posts once because framework mentions were treated as
+membership, and it was cut back to the ~10 posts that actually build the model.
+
+Decide the track from the post's subject, in this order:
+
+1. **Is the framework itself the subject?** The post defines a part of the
+   model, connects parts, or extends it (a new layer, a corrected mapping, the
+   structure of the loop). If you deleted every non-framework example, the
+   argument would still stand. → **Quest Engine**. If the framework is the lens
+   and something else is the subject, keep going.
+2. **Is it a dated personal record?** A device, a year, a prediction, a
+   portfolio, a history where the chronology matters more than the lesson. →
+   **Field Notes**.
+3. **Is the subject the craft or career of building software?** Languages,
+   code, verification, agent workflows, expertise, learning to program. →
+   **Software Engineering**.
+4. **Is the subject how teams or organizations behave?** Ownership, incidents,
+   autonomy, team identity, context flow, the words teams use. →
+   **Engineering Systems**.
+5. **Is the subject a life outside the job?** Motivation, meaning, health,
+   rest, spirituality, or a familiar phrase or triad tested as a life pattern.
+   → **Purpose Driven**.
+
+Quick tests:
+
+- **Swap test** - Replace "Quest Engine" with a generic phrase like "this
+  model". If the post still makes its point, the framework is the lens, not the
+  subject.
+- **Title test** - A title that pairs the framework with something else
+  ("Agents Are Taking the Drive", "Faith. Guts. Stamina.", "Independent Fire")
+  usually belongs to the something else.
+- **Tag and series are not the track** - `series = "quest-engine"` and the
+  `quest-engine` tag put a post in the reading order. Use them freely on any
+  track; the reading order spans all five tracks.
+
+Examples of the current split:
+
+| Post | Track | Why not Quest Engine |
+| --- | --- | --- |
+| The Meta Structure, The Primary Directive, The Contextual Core | Quest Engine | (These define the model.) |
+| Agents Are Taking the Drive; Goal, Effort, Verification | Software Engineering | Subject is agent-driven engineering work |
+| Independent Fire; World Cup 2026 | Engineering Systems | Subject is how teams distribute authority |
+| Faith. Guts. Stamina.; Secular Meaning of Life; Running the Health Quest | Purpose Driven | Subject is motivation, meaning, or health |
+| Burnout Is a Control Problem | Purpose Driven | Subject is renewal in a life, told with history |
+
+**Track order mirrors the framework.** Templates list tracks in this fixed order,
+not alphabetically: Quest Engine (the Why), Field Notes (the four Ws: who, what,
+when, where), Software Engineering (Search: mastery), Engineering Systems (Drive:
+autonomy), Purpose Driven (Renew: purpose). The mapping holds for each track as
+a whole, not for every post in it, and it is not a placement rule. Place by
+subject using the steps above. Keep the order list in
+`templates/partials/editorial-tracks.html` and `templates/taxonomies/single.html`
+in sync when adding a track.
+
 #### Quest Engine (`quest-engine`)
 
 Write as a framework builder finding the same underlying shape in lived

@@ -1,30 +1,42 @@
 {% set categories = get_taxonomy(kind="categories") %}
+{# Tracks follow the Quest Engine structure, not the alphabet: the Why (the
+   model itself), the four Ws (the record), then Search, Drive, and Renew. #}
+{% set track_order = ["Quest Engine", "Field Notes", "Software Engineering", "Engineering Systems", "Purpose Driven"] %}
 <section class="editorial-tracks" aria-labelledby="editorial-tracks-title">
   <h2 id="editorial-tracks-title">Editorial Tracks</h2>
-  <p>Every post belongs to one track with its own subject, reading rhythm, and voice. Tags connect ideas across tracks.</p>
+  <p>Every post belongs to one track with its own subject, reading rhythm, and voice. The tracks follow the Quest Engine's own outline: the model, the record, then Search, Drive, and Renew. Tags connect ideas across tracks.</p>
   <div class="editorial-track-grid">
+    {% for track_name in track_order %}
     {% for term in categories.items %}
+    {% if term.name == track_name %}
     {% if term.name == "Quest Engine" %}
       {% set track = "quest-engine" %}
+      {% set role = "The Why" %}
       {% set description = "The model itself: Search, Drive, and Renew, the Why, the four Ws, and how they fit together." %}
-    {% elif term.name == "Purpose Driven" %}
-      {% set track = "purpose-driven" %}
-      {% set description = "Motivation, meaning, health, and renewal: familiar phrases and stories read as patterns for a life outside work." %}
-    {% elif term.name == "Engineering Systems" %}
-      {% set track = "engineering-systems" %}
-      {% set description = "How teams and organizations work as systems: incidents, ownership, risk, context, and the words engineers use." %}
+    {% elif term.name == "Field Notes" %}
+      {% set track = "field-notes" %}
+      {% set role = "The four Ws" %}
+      {% set description = "Personal history, retrospectives, portfolios, and observations from work in progress." %}
     {% elif term.name == "Software Engineering" %}
       {% set track = "software-engineering" %}
+      {% set role = "Search: mastery" %}
       {% set description = "The craft and career: languages, code, verification, agent workflows, judgment, and growth." %}
+    {% elif term.name == "Engineering Systems" %}
+      {% set track = "engineering-systems" %}
+      {% set role = "Drive: autonomy" %}
+      {% set description = "How teams and organizations work as systems: incidents, ownership, risk, context, and the words engineers use." %}
     {% else %}
-      {% set track = "field-notes" %}
-      {% set description = "Personal history, retrospectives, portfolios, and observations from work in progress." %}
+      {% set track = "purpose-driven" %}
+      {% set role = "Renew: purpose" %}
+      {% set description = "Motivation, meaning, health, and renewal: familiar phrases and stories read as patterns for a life outside work." %}
     {% endif %}
     <article class="track-summary track-{{ track }}">
-      <p class="track-kicker">{{ term.pages | length }} posts</p>
+      <p class="track-kicker">{{ role }} · {{ term.pages | length }} posts</p>
       <h3><a href="{{ term.permalink }}">{{ term.name }}</a></h3>
       <p>{{ description }}</p>
     </article>
+    {% endif %}
+    {% endfor %}
     {% endfor %}
   </div>
 </section>
