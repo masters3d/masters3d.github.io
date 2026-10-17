@@ -26,7 +26,7 @@
   --link-hover: #cda8ff;
 }
 
-.track-purpose-driven {
+.track-human-cognition {
   --accent-color: #f5b942;
   --accent-hover: #f8cc70;
   --link-color: #f5b942;
@@ -433,7 +433,7 @@ aside#sidebar hr {
 }
 
 .track-quest-engine .post-content blockquote,
-.track-purpose-driven .post-content blockquote {
+.track-human-cognition .post-content blockquote {
   background: var(--bg-secondary);
   border-radius: 0 8px 8px 0;
   padding-bottom: 0.75rem;

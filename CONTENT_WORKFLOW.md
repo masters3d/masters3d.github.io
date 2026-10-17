@@ -150,7 +150,7 @@ editorial_track = "engineering-systems"
 +++
 ```
 3. Choose exactly one editorial track: `Quest Engine`, `Field Notes`,
-   `Software Engineering`, `Engineering Systems`, or `Purpose Driven`. Mentioning
+   `Software Engineering`, `Engineering Systems`, or `Human Cognition`. Mentioning
    the Quest Engine does not make a post a Quest Engine post; follow "Placing a
    Post in a Track" in `plans/agents.md`
 4. Use tags for series and ideas that cross editorial tracks

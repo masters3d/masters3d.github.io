@@ -4,10 +4,10 @@ date = "2026-05-05"
 description = "Tom Brady's Hall of Fame answer was three parts: consistent, determined, and willing to work for it. Most people drop the middle one. That missing piece is why you can be determined and consistent and still be moving in the wrong direction."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Purpose Driven"]
+categories = ["Human Cognition"]
 tags = ["quest-engine", "motivation", "persistence", "search-drive-renew", "triads"]
 [extra]
-editorial_track = "purpose-driven"
+editorial_track = "human-cognition"
 series = "quest-engine"
 +++
 

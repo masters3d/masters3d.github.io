@@ -240,9 +240,12 @@ Decide the track from the post's subject, in this order:
 4. **Is the subject how teams or organizations behave?** Ownership, incidents,
    autonomy, team identity, context flow, the words teams use. →
    **Engineering Systems**.
-5. **Is the subject a life outside the job?** Motivation, meaning, health,
-   rest, spirituality, or a familiar phrase or triad tested as a life pattern.
-   → **Purpose Driven**.
+5. **Is the subject how one person's mind and body work?** Attention, habit,
+   automaticity, motivation, meaning, rest, health, spirituality, or a familiar
+   phrase or triad tested as a pattern of how people keep going. →
+   **Human Cognition**. If the subject is many people coordinating, it is
+   Engineering Systems; if the subject is the craft, it is Software Engineering,
+   even when the post borrows a cognitive model.
 
 Quick tests:
 
@@ -263,13 +266,14 @@ Examples of the current split:
 | The Meta Structure, The Primary Directive, The Contextual Core | Quest Engine | (These define the model.) |
 | Agents Are Taking the Drive; Goal, Effort, Verification | Software Engineering | Subject is agent-driven engineering work |
 | Independent Fire; World Cup 2026 | Engineering Systems | Subject is how teams distribute authority |
-| Faith. Guts. Stamina.; Secular Meaning of Life; Running the Health Quest | Purpose Driven | Subject is motivation, meaning, or health |
-| Burnout Is a Control Problem | Purpose Driven | Subject is renewal in a life, told with history |
+| Faith. Guts. Stamina.; Secular Meaning of Life; Running the Health Quest | Human Cognition | Subject is motivation, meaning, or health |
+| Burnout Is a Control Problem | Human Cognition | Subject is renewal in a life, told with history |
+| The Bicycle of the Mind | Human Cognition | Subject is how attention becomes automaticity; agents are the application |
 
 **Track order mirrors the framework.** Templates list tracks in this fixed order,
 not alphabetically: Quest Engine (the Why), Field Notes (the four Ws: who, what,
 when, where), Software Engineering (Search: mastery), Engineering Systems (Drive:
-autonomy), Purpose Driven (Renew: purpose). The mapping holds for each track as
+autonomy), Human Cognition (Renew: purpose). The mapping holds for each track as
 a whole, not for every post in it, and it is not a placement rule. Place by
 subject using the steps above. Keep the order list in
 `templates/partials/editorial-tracks.html` and `templates/taxonomies/single.html`
@@ -285,7 +289,7 @@ where they are, not slogans about where they should be.
 This track is reserved for posts whose main contribution is the model itself:
 defining a part, connecting parts, or extending the framework. A post that uses
 the framework as a lens on something else belongs to that subject's track
-(Purpose Driven for life and motivation, Software Engineering for craft and
+(Human Cognition for the mind, motivation, and renewal, Software Engineering for craft and
 agents, Engineering Systems for teams) and joins the reading order through
 `extra.series = "quest-engine"` and the `quest-engine` tag instead.
 
@@ -315,12 +319,14 @@ agents, Engineering Systems for teams) and joins the reading order through
   a new distinction, or references that display breadth without advancing the
   model.
 
-#### Purpose Driven (`purpose-driven`)
+#### Human Cognition (`human-cognition`)
 
-Write as someone testing a familiar phrase, story, or habit against lived
-experience to find what actually moves a person. The subject is life outside
-the job: motivation, meaning, health, rest, and renewal. The tone is warm but
-still diagnostic; the post earns its conclusion rather than cheering for it.
+Write as an engineer turning the same diagnostic lens on the person running
+the loop. Software Engineering is the craft (Search), Engineering Systems is the
+team (Drive), and Human Cognition is the human-specific part of Renew: how one
+mind and body notice, attend, automate, stay motivated, rest, and find meaning.
+The tone is warm but still diagnostic; the post earns its conclusion rather
+than cheering for it.
 
 - **Opening and movement** - Start with a phrase, quote, film scene, or personal
   moment (a speech, a coach's answer, a camp motto, a burnout). Question its
@@ -330,8 +336,9 @@ still diagnostic; the post earns its conclusion rather than cheering for it.
   history, a named thinker). The Quest Engine may supply the mapping, but the
   post must stand on its subject; if the framework is the main contribution, the
   post belongs in Quest Engine.
-- **Language** - Plain, human words: motivation, meaning, joy, rest, energy,
-  control, belonging. Define framework terms on first use instead of assuming
+- **Language** - Plain, human words: attention, habit, motivation, meaning,
+  joy, rest, energy, control, belonging. Name cognitive models precisely (System
+  1 and System 2, diffuse and focused mode) and cite where they come from. Define framework terms on first use instead of assuming
   the reader has read the series.
 - **Posture** - Secular and non-prescriptive. Offer a lens, not a regimen. Admit
   where a mapping is partial or where one life does not generalize.
