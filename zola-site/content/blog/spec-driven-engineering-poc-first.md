@@ -4,7 +4,7 @@ date = "2026-07-29"
 description = "Spec-driven development is a vague enough term that it can mean anything from a paragraph of intent to a fully waterfalled design. I tried the fully-specified version and it backfired: it left no room for an autonomous agent to explore alternatives. What worked instead was naming the actual sequence. Build multiple proofs of concept, verify each one against something real, and only then write the design document, informed by what the proofs of concept actually showed."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Engineering Systems"]
+categories = ["Software Engineering"]
 tags = [
   "agents",
   "verification-driven-development",
@@ -15,7 +15,7 @@ tags = [
   "waterfall",
 ]
 [extra]
-editorial_track = "engineering-systems"
+editorial_track = "software-engineering"
 +++
 
 I was a believer in spec-driven development, and I still think the instinct

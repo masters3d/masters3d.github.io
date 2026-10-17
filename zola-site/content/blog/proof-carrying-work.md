@@ -4,10 +4,10 @@ date = "2026-07-20"
 description = "A proposal for making human and AI contributions visible through provenance, reproducible work, and demonstrated understanding."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Engineering Systems"]
+categories = ["Software Engineering"]
 tags = ["ai", "academia", "research", "authorship", "provenance", "interviews", "proof-carrying-work"]
 [extra]
-editorial_track = "engineering-systems"
+editorial_track = "software-engineering"
 +++
 
 I have been dictating long-form thoughts into AI sessions and asking agents to

@@ -4,10 +4,10 @@ date = "2026-06-28"
 description = "A reflection on why the word impact is too overloaded for work conversations, and why accomplishments and outcomes are clearer alternatives."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Leadership & Teams"]
+categories = ["Engineering Systems"]
 tags = ["language", "clarity", "outcomes", "accomplishments"]
 [extra]
-editorial_track = "leadership-and-teams"
+editorial_track = "engineering-systems"
 +++
 
 I do not like using the word "impact" in work settings.

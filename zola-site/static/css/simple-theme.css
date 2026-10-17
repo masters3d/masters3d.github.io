@@ -33,18 +33,11 @@
   --link-hover: #79bdff;
 }
 
-.track-ai-and-tools {
+.track-software-engineering {
   --accent-color: #2dd4bf;
   --accent-hover: #5eead4;
   --link-color: #2dd4bf;
   --link-hover: #5eead4;
-}
-
-.track-leadership-and-teams {
-  --accent-color: #f0b44d;
-  --accent-hover: #f6c86f;
-  --link-color: #f0b44d;
-  --link-hover: #f6c86f;
 }
 
 .track-field-notes {

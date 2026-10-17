@@ -41,14 +41,12 @@
           <p class="taxonomy-description">Connected framework essays. Start with the introduction, follow the model through its foundations, then branch into applications.</p>
           {% elif taxonomy.name == "categories" and term.name == "Engineering Systems" %}
           <p class="taxonomy-description">Mechanism-first technical writing about architecture, reliability, languages, and engineering judgment.</p>
-          {% elif taxonomy.name == "categories" and term.name == "AI & Tools" %}
-          <p class="taxonomy-description">Experiments with agents and software tools, centered on observed changes in real work.</p>
-          {% elif taxonomy.name == "categories" and term.name == "Leadership & Teams" %}
-          <p class="taxonomy-description">Concrete observations about ownership, autonomy, communication, and team design.</p>
+          {% elif taxonomy.name == "categories" and term.name == "Software Engineering" %}
+          <p class="taxonomy-description">How the work, the craft, and the career of software engineering change when agents do much of the execution.</p>
           {% elif taxonomy.name == "categories" and term.name == "Field Notes" %}
           <p class="taxonomy-description">Personal records, retrospectives, and portfolios where specific experience comes before the lesson.</p>
           {% elif taxonomy.name == "tags" and term.name == "quest-engine" %}
-          <p class="taxonomy-description">The complete Quest Engine reading path across all five editorial tracks. The sequence moves from the core model to motivation, systems, teams, and renewal.</p>
+          <p class="taxonomy-description">The complete Quest Engine reading path across all four editorial tracks. The sequence moves from the core model to motivation, systems, teams, and renewal.</p>
           {% else %}
           <p class="taxonomy-description">Posts connected by the {{ term.name }} tag.</p>
           {% endif %}
@@ -89,7 +87,7 @@
           </ul>
           {% else %}
           <h3>Editorial Tracks</h3>
-          <p><a href="/categories/">Browse all five tracks</a></p>
+          <p><a href="/categories/">Browse all four tracks</a></p>
           {% endif %}
           
           <h3>Subscribe</h3>

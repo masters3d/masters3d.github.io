@@ -4,7 +4,7 @@ date = "2026-09-26"
 description = "A few weeks of running Astra next to Opus 5 left me with three conclusions: the behavior I depend on is mostly harness and habit rather than intelligence, watermarking every output treats a shared piece of work as if the model made it alone, and I want a personal profile that travels with me so the model stops being the thing I have to learn."
 template = "blog-post.html"
 [taxonomies]
-categories = ["AI & Tools"]
+categories = ["Software Engineering"]
 tags = [
   "agents",
   "ai-development",
@@ -17,7 +17,7 @@ tags = [
   "quest-engine",
 ]
 [extra]
-editorial_track = "ai-and-tools"
+editorial_track = "software-engineering"
 +++
 
 For the last few weeks I have been running Astra next to my usual model for the

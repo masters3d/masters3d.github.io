@@ -4,7 +4,7 @@ date = "2026-10-09"
 description = "People praise someone for having a 100% signal-to-noise ratio. Borrowed back from the field it came from, that is not a compliment, it is an impossible measurement. What SNR actually means, why the opposite of noise is information rather than signal, and what a headset with a microphone on it says about being a transmitter and a receiver at the same time."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Leadership & Teams"]
+categories = ["Engineering Systems"]
 tags = [
   "signal-to-noise",
   "communication",
@@ -13,7 +13,7 @@ tags = [
   "systems-thinking",
 ]
 [extra]
-editorial_track = "leadership-and-teams"
+editorial_track = "engineering-systems"
 +++
 
 Someone will tell you that a person on their team has a **100% signal-to-noise

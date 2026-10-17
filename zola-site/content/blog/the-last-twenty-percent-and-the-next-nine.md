@@ -4,7 +4,7 @@ date = "2026-10-15"
 description = "The first 80% of a feature gets the demo, the congratulations, and the promotion packet. The last 20% (the part that makes the thing actually usable) costs a magnitude more and is rewarded far less. The reason is structural: every additional nine of reliability is a different engineering problem than the one before it, and you cannot reach it by extending a design that was never built for it. In the age of AI, when the token cost of writing the scalable version is roughly the token cost of writing the disposable one, the V1-then-rewrite habit deserves a second look."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Engineering Systems"]
+categories = ["Software Engineering"]
 tags = [
   "reliability",
   "nines",
@@ -17,7 +17,7 @@ tags = [
   "systems-thinking",
 ]
 [extra]
-editorial_track = "engineering-systems"
+editorial_track = "software-engineering"
 +++
 
 The pattern I have watched repeat, in more than one team and more than one

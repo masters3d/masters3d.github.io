@@ -179,11 +179,11 @@ jobs:
         # category outside the approved set, so unknown tracks never ship.
         run: |
           cd zola-site/content/blog
-          echo "Checking blog post categories against the five editorial tracks..."
+          echo "Checking blog post categories against the four editorial tracks..."
 
           # The only allowed categories (editorial tracks). Keep in sync with
           # zola-site/config.toml taxonomies and templates/taxonomies/single.html.
-          ALLOWED="Quest Engine|Engineering Systems|AI & Tools|Leadership & Teams|Field Notes"
+          ALLOWED="Quest Engine|Engineering Systems|Software Engineering|Field Notes"
 
           FAILED=0
           for f in $(find . -name "*.md" -not -name "_index.md" -type f); do
@@ -214,7 +214,7 @@ jobs:
             while IFS= read -r cat; do
               if ! echo "$cat" | grep -qxE "$ALLOWED"; then
                 echo "ERROR: $f uses unknown category '$cat'"
-                echo "       Allowed: Quest Engine, Engineering Systems, AI & Tools, Leadership & Teams, Field Notes"
+                echo "       Allowed: Quest Engine, Engineering Systems, Software Engineering, Field Notes"
                 FAILED=1
               fi
             done <<< "$VALUES"

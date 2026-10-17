@@ -4,7 +4,7 @@ date = "2026-10-09"
 description = "You cannot drive a Mars rover with a joystick, because the round trip for a radio signal runs six to forty-four minutes. Distance and delay are one constraint measured in two different units, and once the round trip is slower than the thing you are controlling, central control stops being inefficient and becomes impossible. The physics version of the argument for autonomy at the edge."
 template = "blog-post.html"
 [taxonomies]
-categories = ["Leadership & Teams"]
+categories = ["Engineering Systems"]
 tags = [
   "autonomy",
   "latency",
@@ -14,7 +14,7 @@ tags = [
   "systems-thinking",
 ]
 [extra]
-editorial_track = "leadership-and-teams"
+editorial_track = "engineering-systems"
 +++
 
 We drive rovers on Mars. We do not, however, _drive_ them.
