@@ -221,10 +221,10 @@ process from the artifacts — sequence, frequency, exception rate, origin of ea
 requirement, who actually holds each decision — and have that surfaced as a
 draft. Then do the irreducibly human half: walk the draft through with the
 people who run it and collect everything the artifacts could not contain.
-[User story mapping](/blog/story-mapping-shared-understanding/) is the format I
-use, because it is specifically good at surfacing the steps nobody thinks to
-mention. The output is a shared picture, and until it exists nothing downstream
-is trustworthy.
+[User story mapping](/blog/user-story-mapping-shared-understanding/) is the
+format I use, because it is specifically good at surfacing the steps nobody
+thinks to mention. The output is a shared picture, and until it exists nothing
+downstream is trustworthy.
 
 **Delete before you build.** Most processes that look like automation candidates
 contain steps that exist because of a constraint lifted years ago. Those cost
