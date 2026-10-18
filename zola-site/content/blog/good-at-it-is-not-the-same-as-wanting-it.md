@@ -73,8 +73,8 @@ commander. They do not stop at mitigation. They find the cause, they engage the
 teams that own the broken piece, they chase the actual issue to the end, and
 then they work to keep it from happening again. That follow-through is the right
 way to run an incident, and it is expensive. Every hour of it is an hour not
-spent on the engineering work that would have prevented the next fire, or on
-the new features the team was supposed to be shipping.
+spent on the engineering work that would have prevented the next fire, or on the
+new features the team was supposed to be shipping.
 
 The SRE book puts a number on this: their teams aim to keep toil below 50% of
 each engineer's time. That matches what I have felt. Once toil passes half the
@@ -125,8 +125,8 @@ food. Leave it sitting on the dock long enough and it starts to smell. Leave it
 a little longer and you can no longer tell it apart from waste. Nobody shipped
 garbage. It became garbage by waiting.
 
-Most of the piles that land on a deployment team look like that. When the
-change left the other team's pipeline it was fine. It was real work, meant to be
+Most of the piles that land on a deployment team look like that. When the change
+left the other team's pipeline it was fine. It was real work, meant to be
 processed. Then it sat (blocked on a dependency, waiting on an owner, stuck
 between two teams that each assumed the other was carrying it), and by the time
 it reached my doorstep it smelled. I can shovel it. I am good at shoveling it.
@@ -140,8 +140,8 @@ I do not think the answer is to stop being good in a crisis. Emergencies happen,
 deadlines are sometimes real, and a team is lucky to have someone who can hold
 the thread when they do. I still want to be that person when it counts.
 
-The change is in what I let the strength mean. I treat emergency competence as
-a tool I am glad to have, not as a job description. When I notice that I am
+The change is in what I let the strength mean. I treat emergency competence as a
+tool I am glad to have, not as a job description. When I notice that I am
 enjoying the shoveling, I take that as a signal to ask how often this pile shows
 up, who should be sharing the shovel, who is building the machine, and whose
 pipeline the pile came from. When a fire is out, I try to spend the next stretch
