@@ -751,6 +751,20 @@ Never assert that something is or isn't live based on the source tree alone — 
 - ✅ **Navigation integration** across all pages
 
 ### Adding New Posts - Instructions for Future Agents
+0. **Check for an existing post on the same topic first, drafts included.**
+   Before writing, grep every file in `zola-site/content/blog/` for the idea's
+   key terms and synonyms (titles, descriptions, tags, and body). Do not stop at
+   the published site or the feed: posts with `draft = true` are not built and
+   do not show up there, but they still count as existing posts. Read every
+   hit. Then:
+   - If an existing post (published or draft) already makes the argument,
+     extend or revise that post instead of writing a second one.
+   - If it is adjacent but the new post makes a different claim, state the
+     difference to yourself in one sentence, write the new post around that
+     difference, and connect the two (an inline link to a published post or an
+     earlier draft, otherwise `related` under `[extra]`; see "Cross-references
+     follow release order" below).
+   - Mention the overlap check and its result in the PR description.
 1. **Create file**: `zola-site/content/blog/post-name.md`
 2. **Add frontmatter**:
    ```toml
