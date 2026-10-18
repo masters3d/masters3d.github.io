@@ -2,7 +2,7 @@
 title = "Two Left Socks"
 date = "2026-12-08"
 draft = true
-description = "My spouse recently ended up with two left toe socks and no way to wear them, because each one had lost its only valid partner. My own drawer cannot have that problem: every sock is the same black ankle sock and any two make a pair. The difference is a design choice that shows up far outside the laundry basket. Do not build systems that need a specific matched pair when a part that fits anywhere would do."
+description = "My spouse recently ended up with two left toe socks and no way to wear them, because each one had lost its only valid partner. My drawer, and now our kids' drawers, cannot have that problem: the kids and I wear one style of sock for every occasion, so any two make a pair. The difference is a design choice that shows up far outside the laundry basket. Do not build systems that need a specific matched pair when a part that fits anywhere would do."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
@@ -42,6 +42,12 @@ and any two socks make a pair. There is no sorting step after laundry, no search
 step in the morning, and no such thing as a missing partner. If one sock gets a
 hole, I throw away one sock. If the dryer eats one, the drawer has one fewer
 sock and nothing else changes.
+
+The kids have since joined me. They now follow the same rule I do: one style of
+sock for school, sports, and everything else. Their socks used to be one more
+pile to sort after every wash. Now they work the same way mine do, and the
+laundry basket has one fewer kind of sock to match. It is a simple life, and it
+got simpler with each person who moved to it.
 
 ## What a Matched Pair Costs
 
