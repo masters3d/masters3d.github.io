@@ -135,6 +135,12 @@ zola build
 
 ### 📝 Adding a Blog Post
 
+0. Check that no existing post already covers the topic, **including drafts**
+   (`draft = true` posts are not on the site, so search the files): grep
+   `zola-site/content/blog/` for the idea's key terms and read every hit. If one
+   already makes the argument, extend it instead; if it is adjacent, make the
+   new post's different claim explicit and link the two. See "Adding New Posts"
+   in `plans/agents.md`
 1. Create new file: `zola-site/content/blog/your-post-name.md`
 2. Add frontmatter:
 ```toml
