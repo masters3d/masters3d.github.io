@@ -1,6 +1,7 @@
 +++
 title = "Two Left Socks"
-date = "2026-10-18"
+date = "2026-12-08"
+draft = true
 description = "My spouse recently ended up with two left toe socks and no way to wear them, because each one had lost its only valid partner. My own drawer cannot have that problem: every sock is the same black ankle sock and any two make a pair. The difference is a design choice that shows up far outside the laundry basket. Do not build systems that need a specific matched pair when a part that fits anywhere would do."
 template = "blog-post.html"
 [taxonomies]
