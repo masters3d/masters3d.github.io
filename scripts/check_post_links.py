@@ -11,6 +11,10 @@ target is published, so this check enforces release order for links:
   own date (those go out first). A link to a later draft would ship broken.
 * Every linked slug must exist.
 
+A scheduled post (``scheduled = true`` under ``[extra]``, no ``draft``) counts
+as a draft until its date arrives, because the deploy holds it back until then
+(see ``scripts/scheduled_posts.py``).
+
 Forward references go in ``related`` under ``[extra]`` instead of inline:
 
     [extra]
@@ -32,6 +36,7 @@ Usage
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import os
 import re
 import sys
@@ -46,10 +51,11 @@ LINK_RE = re.compile(
     r"\]\((?:https://masters3d\.github\.io)?/blog/([a-z0-9][a-z0-9-]*)/?[)#]"
 )
 RELATED_RE = re.compile(r"^related\s*=\s*\[([^\]]*)\]", re.M)
+SCHEDULED_RE = re.compile(r"^scheduled\s*=\s*true\s*$", re.M)
 
 
 class Post:
-    def __init__(self, slug: str, text: str) -> None:
+    def __init__(self, slug: str, text: str, today: str) -> None:
         parts = text.split("+++")
         front = parts[1] if len(parts) > 2 else ""
         body = "+++".join(parts[2:]) if len(parts) > 2 else text
@@ -57,21 +63,22 @@ class Post:
         date = DATE_RE.search(top)
         self.slug = slug
         self.date = date.group(1) if date else "0000-00-00"
-        self.draft = bool(DRAFT_RE.search(top))
         self.links = sorted(set(LINK_RE.findall(body)))
         extra = front.split("\n[extra]", 1)[1] if "\n[extra]" in front else ""
         extra = extra.split("\n[", 1)[0]
+        scheduled = bool(SCHEDULED_RE.search(extra)) and self.date > today
+        self.draft = bool(DRAFT_RE.search(top)) or scheduled
         match = RELATED_RE.search(extra)
         self.related = re.findall(r'"([^"]+)"', match.group(1)) if match else []
 
 
-def load(blog_dir: str) -> dict[str, Post]:
+def load(blog_dir: str, today: str) -> dict[str, Post]:
     posts = {}
     for name in sorted(os.listdir(blog_dir)):
         if not name.endswith(".md") or name == "_index.md":
             continue
         with open(os.path.join(blog_dir, name), encoding="utf-8") as handle:
-            posts[name[:-3]] = Post(name[:-3], handle.read())
+            posts[name[:-3]] = Post(name[:-3], handle.read(), today)
     return posts
 
 
@@ -102,8 +109,9 @@ def problems(posts: dict[str, Post]) -> list[str]:
     return out
 
 
-def check(blog_dir: str) -> int:
-    posts = load(blog_dir)
+def check(blog_dir: str, today: str | None = None) -> int:
+    today = today or dt.datetime.now(dt.timezone.utc).date().isoformat()
+    posts = load(blog_dir, today)
     found = problems(posts)
     links = sum(len(p.links) for p in posts.values())
     related = sum(len(p.related) for p in posts.values())
@@ -118,10 +126,15 @@ def check(blog_dir: str) -> int:
 
 def self_test() -> int:
     with tempfile.TemporaryDirectory() as tmp:
-        def write(slug: str, date: str, draft: bool, body: str = "", related: str = "") -> None:
+        def write(
+            slug: str, date: str, draft: bool, body: str = "", related: str = "",
+            scheduled: bool = False,
+        ) -> None:
             text = f'+++\ntitle = "t"\ndate = "{date}"\n'
             text += "draft = true\n" if draft else ""
-            text += f"[extra]\nrelated = [{related}]\n" if related else ""
+            text += "[extra]\n" if related or scheduled else ""
+            text += f"related = [{related}]\n" if related else ""
+            text += "scheduled = true\n" if scheduled else ""
             text += f"+++\n{body}\n"
             with open(os.path.join(tmp, slug + ".md"), "w", encoding="utf-8") as handle:
                 handle.write(text)
@@ -141,6 +154,10 @@ def self_test() -> int:
         assert check(tmp) == 1, "missing link target must fail"
         write("old", "2026-01-01", False, "", '"nope"')
         assert check(tmp) == 1, "missing related slug must fail"
+        write("old", "2026-01-01", False, "See [early](/blog/early/).")
+        write("early", "2027-01-01", False, scheduled=True)
+        assert check(tmp, "2026-12-31") == 1, "link to a future scheduled post must fail"
+        assert check(tmp, "2027-01-01") == 0, "scheduled post is live on its date"
     print("\nself-test passed")
     return 0
 

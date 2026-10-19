@@ -160,6 +160,15 @@ jobs:
           python3 scripts/check_post_links.py --self-test > /dev/null
           python3 scripts/check_post_links.py
 
+      - name: Validate scheduled posts
+        # A post dated in the future without `draft = true` must carry
+        # `scheduled = true` under [extra]; the deploy holds it back until its
+        # date. This build does not hide them, so links in scheduled posts are
+        # still checked and the built-site artifact shows them for review.
+        run: |
+          python3 scripts/scheduled_posts.py --self-test > /dev/null
+          python3 scripts/scheduled_posts.py
+
       - name: Validate date formats in blog posts
         run: |
           cd zola-site/content/blog

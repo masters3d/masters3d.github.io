@@ -6,6 +6,12 @@ on:
   push:
     branches: ["master"]
 
+  # Rebuilds daily so posts marked `scheduled = true` go live on their date
+  # (scripts/scheduled_posts.py holds them back until then). 13:00 UTC is
+  # early morning in the US. Scheduled runs only fire on the default branch.
+  schedule:
+    - cron: "0 13 * * *"
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -41,8 +47,11 @@ jobs:
 
       - name: Block deploy when a draft post is due within 7 days
         # Upcoming posts wait as drafts dated for release. A draft whose date
-        # is within the next 7 days (or already past) must be published or
-        # rescheduled first, so the planned queue never silently lapses.
+        # is within the next 7 days (or already past) must be published,
+        # scheduled, or rescheduled first, so the planned queue never silently
+        # lapses. The daily scheduled run checks this after deploying instead,
+        # so a due draft never blocks a scheduled post from going live.
+        if: github.event_name != 'schedule'
         run: |
           python3 scripts/check_upcoming_drafts.py --self-test > /dev/null
           python3 scripts/check_upcoming_drafts.py
@@ -54,6 +63,14 @@ jobs:
         run: |
           python3 scripts/check_post_links.py --self-test > /dev/null
           python3 scripts/check_post_links.py
+
+      - name: Hold scheduled posts back until their date
+        # Posts with `scheduled = true` under [extra] and a future date get
+        # `draft = true` in this checkout only, so Zola leaves them out of
+        # every page, feed, taxonomy, and the sitemap. Nothing is committed.
+        run: |
+          python3 scripts/scheduled_posts.py --self-test > /dev/null
+          python3 scripts/scheduled_posts.py --hide
 
       - name: Setup Zola
         uses: taiki-e/install-action@v2
@@ -117,3 +134,9 @@ jobs:
         id: deployment_retry
         if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
+
+      - name: Report drafts due within 7 days (scheduled runs)
+        # Runs after the deploy so the daily release still goes out, then
+        # fails the run (and notifies) if a draft needs attention.
+        if: always() && github.event_name == 'schedule'
+        run: python3 scripts/check_upcoming_drafts.py

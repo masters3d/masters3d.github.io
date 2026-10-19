@@ -1,13 +1,13 @@
 +++
 title = "Ingenio: The Engine Inside Engineering"
 date = "2026-11-01"
-draft = true
 description = "Ingenio is the Latin American Spanish word for a sugar cane mill, and it comes from the same Latin root as engine, engineer, and ingenious. Following that word back explains what engineering meant before it meant a job title, and why a near-twin word, ingenuous, names the half of the craft that cleverness leaves out."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
 tags = ["etymology", "engineering", "language", "ingenio", "craft"]
 [extra]
+scheduled = true
 editorial_track = "engineering-systems"
 related = ["quest-engine-introduction", "career-quest-engineering-2021-talk", "resourcefulness-agency-and-inheritance"]
 +++

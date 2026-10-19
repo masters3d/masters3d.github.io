@@ -9,7 +9,8 @@ How to add rows and how to close them is described in
 
 **Status values**: `open` (no post yet), `draft` (post file exists with
 `draft = true`; not built or listed until the author reviews it and removes the
-flag), `published` (post is live; slug in the Post column), `covered` (an existing post already makes the argument; extend it
+flag), `scheduled` (reviewed; `draft = true` replaced with `scheduled = true`
+under `[extra]`, and the daily deploy releases it on its date), `published` (post is live; slug in the Post column), `covered` (an existing post already makes the argument; extend it
 instead of writing a new one), `dropped` (not worth a post; give the reason).
 
 **Priority**: `P1` has a clear thesis and enough author-written source to draft
@@ -25,8 +26,11 @@ Always read the issue, not only the spec.
 Drafts go out two per month (the 1st and the 15th) in this order, which is
 also the author's review order. Every draft keeps `draft = true` until the
 author reviews it. `scripts/check_upcoming_drafts.py` fails PR validation and
-deploy once a draft is within 7 days of its date, so each one must be published
-or moved before its slot arrives. New drafts join the end of the queue.
+deploy once a draft is within 7 days of its date, so each one must be published,
+scheduled, or moved before its slot arrives. New drafts join the end of the queue.
+To approve a post ahead of its slot, replace `draft = true` with
+`scheduled = true` under `[extra]`: the daily deploy keeps it off the site until
+its date, then releases it (`scripts/scheduled_posts.py`).
 Cross-references follow the same order: inline links only point back to
 posts that are already out, and forward references go in `[extra] related`,
 which the template shows once both posts are published
@@ -123,7 +127,7 @@ which the template shows once both posts are published
 | B23 | Story as how people store information; where story fits in engineering | `specs/where_does_story_fit_into_the_engineering_process_and_the_cognitive_storage_of_information_via_story_telling/VISION.md` (#34), `media/synergies_narrative.md` | P2 | draft | `story-is-engineering-memory` |
 | B24 | Build mode vs reflect mode; judgement and "quality without a name" | `specs/cognitive_architecture_wrt_build_mode_and_reflect_mode/VISION.md`, issue #56 | P2 | draft | `build-mode-reflect-mode-quality-without-a-name` |
 | B25 | Philosophy, manifesto, principle, north star: how they differ (drafted in Engineering Systems) | `specs/philosophy_manifesto_principle_northstar/VISION.md`, issue #19 | P2 | draft | `philosophy-manifesto-principle-north-star` |
-| B26 | Ingenio: the engineering background and history of the word (ingenium, engine, engineer, sugar mill), plus ingenious vs ingenuous | `specs/ingenious_vs_ingenuous/VISION.md` (#13), `README.md` | P3 | draft | `ingenio-the-engine-inside-engineering` |
+| B26 | Ingenio: the engineering background and history of the word (ingenium, engine, engineer, sugar mill), plus ingenious vs ingenuous | `specs/ingenious_vs_ingenuous/VISION.md` (#13), `README.md` | P3 | scheduled | `ingenio-the-engine-inside-engineering` |
 | B27 | Resourcefulness and agency as inherited vs learned traits | `specs/resourceful_agency_genetic_systems_relationships/VISION.md`, issue #38 (check overlap with `resourcefulness-is-its-own-quest-engine`) | P3 | draft | `resourcefulness-agency-and-inheritance` |
 
 ## Software Engineering

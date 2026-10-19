@@ -5,8 +5,10 @@ Upcoming posts are kept as drafts (``draft = true``) with the date they are
 meant to go out. Zola skips drafts, so a draft whose date arrives simply never
 appears, and nobody notices. This check turns that into a hard stop: if any
 draft is dated within the next ``--days`` days (default 7), or its date has
-already passed, the check fails and the deploy stops until the post is either
-published (remove ``draft = true``) or rescheduled (move its ``date``).
+already passed, the check fails and the deploy stops until the post is
+published (remove ``draft = true``), scheduled (replace ``draft = true`` with
+``scheduled = true`` under ``[extra]``; see ``scripts/scheduled_posts.py``), or
+rescheduled (move its ``date``).
 
 It also prints the upcoming draft queue by month, so the runway of planned
 posts is visible on every run. It does not rewrite files.
@@ -87,7 +89,8 @@ def check(blog_dir: str, today: dt.date, days: int) -> int:
         state = "overdue" if date < today else "due"
         print(f"  zola-site/content/blog/{name}: date = {date} ({state})")
     print(
-        "\nFor each one, either publish it (delete the `draft = true` line)"
+        "\nFor each one, publish it (delete the `draft = true` line),"
+        "\nschedule it (replace `draft = true` with `scheduled = true` under [extra]),"
         "\nor reschedule it (move `date` past the window), then push again."
     )
     return 1
