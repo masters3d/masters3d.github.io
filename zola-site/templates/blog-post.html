@@ -68,6 +68,13 @@
           </nav>
 
           <article class="blog-post">
+            {% set post_ts = page.date | date(format='%s') | int %}
+            {% if page.extra.scheduled and post_ts > now(timestamp=true) %}
+            {# Only seen in local or PR previews: the deploy holds scheduled posts back until their date (scripts/scheduled_posts.py). #}
+            <div class="scheduled-notice" role="note" style="margin-bottom: 1.5em; padding: 0.8em 1em; border-left: 4px solid var(--accent-color); background: var(--bg-secondary); border-radius: 5px;">
+              🗓️ <strong>Scheduled:</strong> this post goes live on {{ page.date | date(format='%B %d, %Y') }}. It is not on the public site yet.
+            </div>
+            {% endif %}
             <header class="post-header">
               <h1>{{ page.title }}</h1>
               <div class="post-meta" style="color: var(--text-secondary); margin-bottom: 2em; padding: 1em; background: var(--bg-secondary); border-radius: 5px;">

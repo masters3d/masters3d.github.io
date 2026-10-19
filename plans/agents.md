@@ -864,10 +864,20 @@ already states a thesis in the author's words.
    "Release Schedule" section of `plans/post-backlog.md`. To publish a draft,
    the author reviews it, removes `draft = true`, and the row moves to
    `published`.
+   **Scheduled posts:** to approve a draft early but release it on its date,
+   replace `draft = true` with `scheduled = true` under `[extra]` (keep the
+   `date`) and set the row's Status to `scheduled`. The deploy workflow runs
+   daily and `scripts/scheduled_posts.py --hide` keeps the post out of the
+   live build until its date (UTC); it goes live on the first daily build on
+   or after that date. Local `zola serve`/`zola build` and the PR artifact show
+   it with a "Scheduled" notice at the top. PR validation fails if a non-draft
+   post is dated in the future without `scheduled = true`, or if a post has
+   both flags. Once it is live, set the row to `published`; the
+   `scheduled = true` line can stay (it has no effect after the date).
    **Draft gate:** `scripts/check_upcoming_drafts.py` runs in PR validation and
    in the deploy workflow. It fails when any draft is dated within the next 7
    days or is overdue, and it prints the queue by month so the runway is
-   visible. A failing gate means: publish that draft or move its date. Run it
+   visible. A failing gate means: publish, schedule, or re-date that draft. Run it
    locally with `python3 scripts/check_upcoming_drafts.py` (add `--today
    YYYY-MM-DD` to preview a future date).
    **Cross-references follow release order.** An inline link
