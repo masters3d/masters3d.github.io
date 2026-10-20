@@ -103,7 +103,7 @@ which the template shows once both posts are published
 | --- | --- | --- | --- | --- | --- |
 | B01 | Quality engineering vs engineering quality: quality, security, and documentation belong to the engineer, and rewards must follow behaviors | `specs/quality_engineering_qe_vs_engineering_quality/VISION.md`, issue #25 | P1 | published | `quality-engineering-vs-engineering-quality` |
 | B02 | Development vs production: running a product at scale is different work, and production feedback must flow back as its own work stream | `specs/development_vs_production/VISION.md`, issue #21 (and its COGS vs OpEx comment) | P1 | published | `development-vs-production` |
-| B03 | A feature's life cycle "cradle to the grave": how features are born, spread, and retired | `specs/feature_cradle_to_the_grave_life_cycle/VISION.md`, issue #18 | P1 | draft | `feature-cradle-to-grave` |
+| B03 | A feature's life cycle "cradle to the grave": how features are born, spread, and retired | `specs/feature_cradle_to_the_grave_life_cycle/VISION.md`, issue #18 | P1 | scheduled | `feature-cradle-to-grave` |
 | B04 | Design review without governance is empty; working groups that approve features | `specs/design_governance/VISION.md` (#20), `specs/design_reviews_references/VISION.md` (#9) | P2 | draft | `design-review-needs-governance` |
 | B05 | One loop for retrospective and planning (a "sprintspective") | `specs/define_the_act_pro-spective_and_retro-spective_in_the_same_flowfeedback_loop_maybe_sprintspective/VISION.md`, issue #17 | P2 | draft | `sprintspective-one-loop` |
 | B06 | Open guides over closed answers: answer once on a wiki instead of in one email | `specs/behavior_general_open_guides_over_specify_closed_guides/VISION.md`, issue #7 | P2 | draft | `open-guides-over-closed-answers` |
@@ -121,7 +121,7 @@ which the template shows once both posts are published
 
 | ID | Idea | Source in ingenio | Priority | Status | Post |
 | --- | --- | --- | --- | --- | --- |
-| B20 | PIE theory (Performance, Image, Exposure): being seen, not only doing the work | `specs/PIE_theory_integration/`, `specs/pie_theory_integration_to_quest_engine_framework/VISION.md` (#32), `career.md` "PIE Theory Integration" | P1 | draft | `pie-theory-being-seen-at-work` |
+| B20 | PIE theory (Performance, Image, Exposure): being seen, not only doing the work | `specs/PIE_theory_integration/`, `specs/pie_theory_integration_to_quest_engine_framework/VISION.md` (#32), `career.md` "PIE Theory Integration" | P1 | scheduled | `pie-theory-being-seen-at-work` |
 | B21 | Locus of control at work: control, influence, accept, and widening what you control (check overlap with `burnout-is-a-control-problem`) | `specs/locus_of_control/`, issue #47, `career.md` "Locus of Control in Engineering Excellence" | P1 | draft | `locus-of-control-at-work` |
 | B22 | Seeking is the reward: building matters more than finishing | `specs/seeking_is_the_reward/VISION.md`, issue #23 | P1 | draft | `seeking-is-the-reward` |
 | B23 | Story as how people store information; where story fits in engineering | `specs/where_does_story_fit_into_the_engineering_process_and_the_cognitive_storage_of_information_via_story_telling/VISION.md` (#34), `media/synergies_narrative.md` | P2 | draft | `story-is-engineering-memory` |

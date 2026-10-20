@@ -1,13 +1,13 @@
 +++
 title = "A Feature Needs a Life Cycle From Cradle to Grave"
 date = "2026-11-15"
-draft = true
 description = "Features are easier to start than to retire, so they need a visible life cycle. A feature is born as an idea, grows through implementation and deployment, reproduces when other teams copy the pattern, and eventually needs a deliberate path to decommissioning."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
 tags = ["features", "life-cycle", "decommissioning", "production", "ownership", "systems-thinking"]
 [extra]
+scheduled = true
 editorial_track = "engineering-systems"
 related = ["development-vs-production", "design-review-needs-governance", "types-of-engineering-documentation"]
 +++
