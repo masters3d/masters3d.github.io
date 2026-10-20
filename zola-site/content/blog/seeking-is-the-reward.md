@@ -1,13 +1,13 @@
 +++
 title = "Seeking Is the Reward"
 date = "2027-01-01"
-draft = true
 description = "Finishing matters, but the act of building changes the builder in ways the finished artifact cannot contain. Seeking is the reward because the search, the attempts, and the revisions are where capability is formed."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Human Systems"]
 tags = ["building", "motivation", "learning", "craft", "intrinsic-drive", "quest-engine"]
 [extra]
+scheduled = true
 editorial_track = "human-systems"
 series = "quest-engine"
 related = ["find-your-why-intrinsic-motivation", "the-progress-principle", "overjustification-effect-at-work"]
