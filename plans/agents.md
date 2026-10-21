@@ -110,6 +110,29 @@
   - "impact" - see "Avoid overloaded words" above
   - When adding new posts or editing existing ones, survey the text for these words and remove them where they are not needed
 - **Phrases to avoid** - Do not use the costume metaphor for "two things are really the same thing": "wearing a costume", "wearing different clothes", "in disguise", "by another name", "dressed up as". It reads as a stock figure of speech rather than an explanation, and it hides the thing worth stating. Name the actual relationship instead: what converts into what, at what exchange rate, or which property the two share. "Distance and delay are one constraint measured in two units" says something; "distance is delay wearing a costume" does not
+- **Link every citation so the author can verify it** - Whenever a post names a
+  scientist, researcher, study, book, paper, or historical source, or attributes
+  a quote to someone, link the claim inline to a source the author can open and
+  check. This applies when writing a new post and when editing an existing one.
+  - Prefer primary or authoritative sources: a DOI (`https://doi.org/...`), a
+    PubMed or PMC page, the publisher or a library catalog for books, the
+    original project site (e.g. swift.org), or a recognized archive
+    (Monticello for Jefferson quotes, Quote Investigator for disputed quotes,
+    folklore.org for the original Macintosh team).
+  - Verify before linking: confirm that the source exists and says what the post
+    claims (author, year, title, and the specific finding or wording). If you
+    cannot verify it, soften or remove the claim instead of guessing a
+    citation.
+  - Put the link on the claim itself (the paper title, the year, or a short
+    phrase like "remembers"), not on a separate "source" word, and keep the
+    sentence readable without clicking.
+  - Misattributed quotes: say so and link the evidence (for example "usually
+    credited to X, but [Monticello lists it as spurious](...)").
+  - In the PR description, list each citation added or changed with its link
+    so the author can review them in one place.
+  - The link checker (`zola check`) must still pass; if a valid source host
+    blocks automated checks, add the narrowest URL to `skip_prefixes` in
+    `zola-site/config.toml` with a comment explaining why.
 - **Minimize section breaks for narrative flow** - Avoid excessive section headings that break narrative flow
   - Write blog posts as cohesive stories rather than overly segmented documentation
   - Minimize h2 (##) section headings - use only for major inflection points (aim for 3-4 max in a blog post)
@@ -396,7 +419,9 @@ than cheering for it.
   post belongs in Quest Engine.
 - **Language** - Plain, human words: attention, habit, motivation, meaning,
   joy, rest, energy, control, belonging. Name cognitive models precisely (System
-  1 and System 2, diffuse and focused mode) and cite where they come from.
+  1 and System 2, diffuse and focused mode) and cite where they come from with
+  a verified inline link (see "Link every citation so the author can verify
+  it" above).
   Define framework terms on first use instead of assuming the reader has read
   the series.
 - **Posture** - Secular and non-prescriptive. Offer a lens, not a regimen. Admit

@@ -77,7 +77,16 @@ feed_limit = 0
 # and GitHub answers that burst with 503 (Service Unavailable), failing a different
 # proposal on each run even though every page loads in a browser. Skip only that
 # proposals folder; all other github.com links are still checked.
+# This doi.org link resolves to an Elsevier ScienceDirect article page, which returns
+# 403 to automated link checkers even though the DOI is valid in a browser; skip
+# only that DOI.
+# monticello.org and hacks.mozilla.org return 403 (bot protection) to automated
+# link checkers even though both cited pages load in a browser; skip only those
+# two pages.
 skip_prefixes = [
+    "https://doi.org/10.1016/j.neubiorev.2011.03.002",
+    "https://www.monticello.org/encyclopedia/i-am-great-believer-luckspurious-quotation",
+    "https://hacks.mozilla.org/2019/04/crossing-the-rust-ffi-frontier-with-protocol-buffers/",
     "https://xcancel.com/",
     "https://learning.oreilly.com/",
     "https://www.youtube.com/",

@@ -1,13 +1,13 @@
 +++
 title = "Locus of Control at Work"
 date = "2026-12-15"
-draft = true
 description = "A useful locus of control model at work is not optimism versus pessimism. It is the repeated practice of sorting what you control, what you can influence, what you have to accept, and what you can slowly move from one circle to another."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Human Systems"]
 tags = ["control", "agency", "career", "engineering-excellence", "feedback-loops", "quest-engine"]
 [extra]
+scheduled = true
 editorial_track = "human-systems"
 series = "quest-engine"
 related = ["burnout-is-a-control-problem", "pie-theory-being-seen-at-work", "individual-contributor-levels-as-changing-scope"]
@@ -16,7 +16,11 @@ related = ["burnout-is-a-control-problem", "pie-theory-being-seen-at-work", "ind
 I used to hear "locus of control" as a personality judgment. Some people have an
 internal locus. Some people have an external one. The internal people take
 ownership. The external people blame the world. That framing is too clean, and
-it is not how work actually feels.
+it is not how work actually feels. Even the psychologist who introduced the
+term, Julian Rotter, framed it in his
+[1966 monograph](https://pubmed.ncbi.nlm.nih.gov/5340840/) as an expectancy:
+whether you expect outcomes to follow from your own actions or from luck,
+chance, and other people.
 
 At work, control moves around. You may control the code you write but not the
 launch date. You may influence the design but not the staffing. You may accept
