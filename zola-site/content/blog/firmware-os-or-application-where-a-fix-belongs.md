@@ -80,13 +80,14 @@ are the only one.
 Apple solved part of this problem in a way I admire. On iOS, apps do not
 statically link the system libraries the way most server software does. The code
 I write for an app is a thin layer that calls into frameworks the OS provides,
-dynamically, at launch. Because Swift has had a stable ABI on Apple platforms
-since Swift 5, the OS knows exactly what shape the calls will arrive in, so it
-is free to swap the library underneath and route each call to whatever
-implementation it now supports. Compile once, and the OS carries the long-term
-support. That is a big part of why a lot of older apps (games included) keep
-running on newer phones. The application stays fixed while the layer beneath it
-moves, which is exactly the trade I want on servers.
+dynamically, at launch. Because Swift has had
+[a stable ABI on Apple platforms since Swift 5](https://www.swift.org/blog/abi-stability-and-more/)
+(2019), the OS knows exactly what shape the calls will arrive in, so it is free
+to swap the library underneath and route each call to whatever implementation it
+now supports. Compile once, and the OS carries the long-term support. That is a
+big part of why a lot of older apps (games included) keep running on newer
+phones. The application stays fixed while the layer beneath it moves, which is
+exactly the trade I want on servers.
 
 ## When firmware is the right place
 

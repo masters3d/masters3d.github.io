@@ -16,7 +16,11 @@ related = ["burnout-is-a-control-problem", "pie-theory-being-seen-at-work", "ind
 I used to hear "locus of control" as a personality judgment. Some people have an
 internal locus. Some people have an external one. The internal people take
 ownership. The external people blame the world. That framing is too clean, and
-it is not how work actually feels.
+it is not how work actually feels. Even the psychologist who introduced the
+term, Julian Rotter, framed it in his
+[1966 monograph](https://pubmed.ncbi.nlm.nih.gov/5340840/) as an expectancy:
+whether you expect outcomes to follow from your own actions or from luck,
+chance, and other people.
 
 At work, control moves around. You may control the code you write but not the
 launch date. You may influence the design but not the staffing. You may accept

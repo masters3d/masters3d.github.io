@@ -35,18 +35,26 @@ admitting it: the reward was not where I had been told to look for it.
 It turns out there is a decent explanation, and it is not a character flaw.
 
 The neuroscientist Jaak Panksepp spent his career mapping the emotional systems
-that mammals share, and in _Affective Neuroscience_ (1998) he named one of them
-SEEKING, in capital letters on purpose. It is the circuit that drives an animal
-to explore, forage, and investigate. When it runs, it does not feel like
-satisfaction. It feels like eagerness, curiosity, and anticipation, the
-leaning-forward feeling of being on the trail of something.
+that mammals share, and in
+[_Affective Neuroscience_](https://openlibrary.org/books/OL356132M/Affective_neuroscience)
+(Oxford University Press, 1998) he named one of them SEEKING, in capital letters
+on purpose. It is the circuit that drives an animal to explore, forage, and
+investigate. When it runs, it does not feel like satisfaction. It feels like
+eagerness, curiosity, and anticipation, the leaning-forward feeling of being on
+the trail of something (his later review with Antonio Alcaro,
+["The SEEKING mind"](https://doi.org/10.1016/j.neubiorev.2011.03.002), 2011,
+calls it "anticipatory eagerness").
 
 Kent Berridge and Terry Robinson arrived at a related distinction from a
-different direction. Their research separates _wanting_ from _liking_. The
-dopamine system, which most of us were taught to think of as the pleasure
-chemical, turns out to be mostly about wanting: it makes a goal feel urgent and
-worth pursuing. Liking, the actual enjoyment when you get there, runs on
-different and much smaller circuitry.
+different direction. Their research
+([Berridge and Robinson, 1998](https://pubmed.ncbi.nlm.nih.gov/9858756/))
+separates _wanting_ from _liking_. The dopamine system, which most of us were
+taught to think of as the pleasure chemical, turns out to be mostly about
+wanting: it makes a goal feel urgent and worth pursuing. Liking, the actual
+enjoyment when you get there, runs on different and much smaller circuitry: a
+few small, fragile "hedonic hotspots" rather than the large, robust dopamine
+network
+([Berridge and Robinson, 2016](https://pmc.ncbi.nlm.nih.gov/articles/PMC5171207/)).
 
 I am not a neuroscientist, and I do not want to pretend two lines of research
 settle a question about my own motivation. But together they describe exactly
@@ -58,9 +66,9 @@ shipping is not a failure to appreciate the result. It is the system working as
 designed.
 
 Steve Jobs gave the original Macintosh team a version of this. Andy Hertzfeld
-remembers that after a 1982 team retreat, Jobs summed it up in a handful of
-slogans, and one of them was "The journey is the reward." I wrote about another
-of his borrowed lines in
+[remembers](https://www.folklore.org/Credit_Where_Due.html) that at a September
+1982 team retreat, Jobs summed it up in a handful of slogans, and one of them
+was "The journey is the reward." I wrote about another of his borrowed lines in
 [Stay Hungry. Stay Foolish.](/blog/stay-hungry-stay-foolish/), and the two fit
 together. Hunger is the seeking. Foolishness is the willingness to start a new
 search without knowing where it ends.

@@ -27,9 +27,12 @@ what we were sending, that was not a coincidence. A lot of it was the result of
 work I had already done.
 
 There is an old line for this, usually credited to Thomas Jefferson even though
-nobody has found him saying it: "I'm a great believer in luck, and I find the
-harder I work, the more I have of it." I think it is true, and I think both
-halves are true.
+[Monticello lists it as spurious](https://www.monticello.org/encyclopedia/i-am-great-believer-luckspurious-quotation):
+"I'm a great believer in luck, and I find the harder I work, the more I have of
+it." The earliest close match
+[Quote Investigator](https://quoteinvestigator.com/2012/07/21/luck-hard-work/)
+found is from Coleman Cox, in a 1922 collection called _Listen to This_. I think
+it is true, and I think both halves are true.
 
 ## Luck is real, and it is not the whole story
 
