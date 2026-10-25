@@ -83,7 +83,10 @@ feed_limit = 0
 # monticello.org and hacks.mozilla.org return 403 (bot protection) to automated
 # link checkers even though both cited pages load in a browser; skip only those
 # two pages.
+# businesswire.com resets automated link-checker requests (http2 stream error) even
+# though the cited BowFlex press release loads in a browser; skip only that release.
 skip_prefixes = [
+    "https://www.businesswire.com/news/home/20240304359573/",
     "https://doi.org/10.1016/j.neubiorev.2011.03.002",
     "https://www.monticello.org/encyclopedia/i-am-great-believer-luckspurious-quotation",
     "https://hacks.mozilla.org/2019/04/crossing-the-rust-ffi-frontier-with-protocol-buffers/",
