@@ -43,7 +43,7 @@ which the template shows once both posts are published
 | 3 | 2026-12-01 | B20 | PIE Theory: Being Seen Is Part of the Work | `pie-theory-being-seen-at-work` |
 | 4 | 2026-12-15 | B21 | Locus of Control at Work | `locus-of-control-at-work` |
 | 5 | 2027-01-01 | B22 | Seeking Is the Reward | `seeking-is-the-reward` |
-| 6 | 2027-01-15 | B04 | Design Review Needs Governance | `design-review-needs-governance` |
+| 6 | 2026-10-26 | B04 | Design Review Needs Governance | `design-review-needs-governance` |
 | 7 | 2027-02-01 | B05 | The Sprintspective: One Loop for Looking Back and Planning Next | `sprintspective-one-loop` |
 | 8 | 2027-02-15 | B06 | Open Guides Over Closed Answers | `open-guides-over-closed-answers` |
 | 9 | 2027-03-01 | B08 | Promotion-Driven Development | `promotion-driven-development` |
@@ -104,11 +104,11 @@ which the template shows once both posts are published
 | B01 | Quality engineering vs engineering quality: quality, security, and documentation belong to the engineer, and rewards must follow behaviors | `specs/quality_engineering_qe_vs_engineering_quality/VISION.md`, issue #25 | P1 | published | `quality-engineering-vs-engineering-quality` |
 | B02 | Development vs production: running a product at scale is different work, and production feedback must flow back as its own work stream | `specs/development_vs_production/VISION.md`, issue #21 (and its COGS vs OpEx comment) | P1 | published | `development-vs-production` |
 | B03 | A feature's life cycle "cradle to the grave": how features are born, spread, and retired | `specs/feature_cradle_to_the_grave_life_cycle/VISION.md`, issue #18 | P1 | scheduled | `feature-cradle-to-grave` |
-| B04 | Design review without governance is empty; working groups that approve features | `specs/design_governance/VISION.md` (#20), `specs/design_reviews_references/VISION.md` (#9) | P2 | draft | `design-review-needs-governance` |
-| B05 | One loop for retrospective and planning (a "sprintspective") | `specs/define_the_act_pro-spective_and_retro-spective_in_the_same_flowfeedback_loop_maybe_sprintspective/VISION.md`, issue #17 | P2 | draft | `sprintspective-one-loop` |
-| B06 | Open guides over closed answers: answer once on a wiki instead of in one email | `specs/behavior_general_open_guides_over_specify_closed_guides/VISION.md`, issue #7 | P2 | draft | `open-guides-over-closed-answers` |
+| B04 | Design review without governance is empty; working groups that approve features | `specs/design_governance/VISION.md` (#20), `specs/design_reviews_references/VISION.md` (#9) | P2 | scheduled | `design-review-needs-governance` |
+| B05 | One loop for retrospective and planning (a "sprintspective") | `specs/define_the_act_pro-spective_and_retro-spective_in_the_same_flowfeedback_loop_maybe_sprintspective/VISION.md`, issue #17 | P2 | scheduled | `sprintspective-one-loop` |
+| B06 | Open guides over closed answers: answer once on a wiki instead of in one email | `specs/behavior_general_open_guides_over_specify_closed_guides/VISION.md`, issue #7 | P2 | scheduled | `open-guides-over-closed-answers` |
 | B07 | Conversation types for collaboration (fishbowl and other formats) | `specs/conversation_types_for_collaborations/VISION.md`, issue #16 | P3 | draft | `conversation-formats-fishbowl` |
-| B08 | Promotion-driven development: how promotion incentives shape what gets built | `specs/promotion_driven_development_pdd/VISION.md`, issue #11 | P2 | draft | `promotion-driven-development` |
+| B08 | Promotion-driven development: how promotion incentives shape what gets built | `specs/promotion_driven_development_pdd/VISION.md`, issue #11 | P2 | scheduled | `promotion-driven-development` |
 | B09 | Overlapping roles in tech and the risks where they intersect | `specs/roles_overlapping_in_tech_and_the_intersection_you_should_be_beware_of/VISION.md`, issue #14 | P2 | draft | `overlapping-roles-in-tech` |
 | B10 | Kinds of documentation and which medium fits each (team-private vs engineering docs) | `presentation/eng_meta_documenation.md`, `presentation/eng_contextual_awareness.md` | P2 | draft | `types-of-engineering-documentation` |
 | B11 | The kernel of strategy (Rumelt, *Good Strategy / Bad Strategy*) | `specs/from_good_strategy_bad_strategy/VISION.md` (#26), `media/synergies_strategy_kernel.drawio` | P2 | draft | `kernel-of-strategy` |
@@ -192,6 +192,18 @@ results.
 | B86 | Testing systems that change themselves: adaptive tests and emergent behavior | `cognitive_systems/COGNITIVE_ENGINEERING_INTEGRATION.md` | Software Engineering | P2 | draft | `testing-systems-that-change-themselves` |
 | B87 | Hypothesis-driven agent experiments: predictions, logs, and risks like confirmation bias | `experiments/2024-12-19_pie_theory_cognitive_development/`, `cognitive_systems/experiments/EXPERIMENTATION_FRAMEWORK.md` | Software Engineering | P2 | draft | `hypothesis-driven-agent-experiments` |
 | B88 | Measuring an agent beyond task completion | `AGENTS.md` agent metrics, `cognitive_systems/agents/cognitive/INGENIO-1.md` | Software Engineering | P2 | draft | `measuring-an-agent-beyond-task-completion` |
+
+## Unscheduled Ideas (Author's Own)
+
+Ideas the author has not acted on yet. Each has a draft so the thinking is
+written down, but it stays out of the Release Schedule until the author has
+practiced it for a few weeks and the post can report what happened (see
+"Publish what was done, not what is planned" in `plans/agents.md`). The draft
+date is a placeholder far enough out to keep the draft gate quiet.
+
+| ID | Idea | Source | Track | Status | Post |
+| --- | --- | --- | --- | --- | --- |
+| U01 | Wacky health ideas: a plank desk for working horizontally and the resting squat, building on the six-month move to standing in `monitor-the-body-running-the-work` | Author's notes, October 2026 | Human Systems | draft (unscheduled, placeholder date 2028-12-31) | `wacky-health-ideas-plank-desk-and-resting-squat` |
 
 ## Covered by Existing Posts
 
