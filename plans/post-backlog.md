@@ -193,6 +193,18 @@ results.
 | B87 | Hypothesis-driven agent experiments: predictions, logs, and risks like confirmation bias | `experiments/2024-12-19_pie_theory_cognitive_development/`, `cognitive_systems/experiments/EXPERIMENTATION_FRAMEWORK.md` | Software Engineering | P2 | draft | `hypothesis-driven-agent-experiments` |
 | B88 | Measuring an agent beyond task completion | `AGENTS.md` agent metrics, `cognitive_systems/agents/cognitive/INGENIO-1.md` | Software Engineering | P2 | draft | `measuring-an-agent-beyond-task-completion` |
 
+## Unscheduled Ideas (Author's Own)
+
+Ideas the author has not acted on yet. Each has a draft so the thinking is
+written down, but it stays out of the Release Schedule until the author has
+practiced it for a few weeks and the post can report what happened (see
+"Publish what was done, not what is planned" in `plans/agents.md`). The draft
+date is a placeholder far enough out to keep the draft gate quiet.
+
+| ID | Idea | Source | Track | Status | Post |
+| --- | --- | --- | --- | --- | --- |
+| U01 | Wacky health ideas: a plank desk for working horizontally and the resting squat, building on the six-month move to standing in `monitor-the-body-running-the-work` | Author's notes, October 2026 | Human Systems | draft (unscheduled, placeholder date 2028-12-31) | `wacky-health-ideas-plank-desk-and-resting-squat` |
+
 ## Covered by Existing Posts
 
 These ingenio topics already have a post. Extend the post rather than writing a

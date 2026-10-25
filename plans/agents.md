@@ -133,6 +133,19 @@
   - The link checker (`zola check`) must still pass; if a valid source host
     blocks automated checks, add the narrowest URL to `skip_prefixes` in
     `zola-site/config.toml` with a comment explaining why.
+- **Publish what was done, not what is planned** - A published post reports
+  something the author has done, tried, or learned. Do not publish posts that
+  only announce intentions ("I'm going to...", "I plan to...", "I'm starting
+  to..."). They say little and age badly when the plan changes.
+  - Writing a plan or idea down is fine, but keep it as a draft (`draft = true`)
+    with a note at the top saying it is a draft and what would make it
+    publishable. Drafts that never happen can stay drafts or be reused later.
+  - Do not add an idea-only draft to the release queue unless the author asks;
+    give it a far-out date so `scripts/check_upcoming_drafts.py` does not trip.
+  - A plan becomes publishable once the author has practiced it for a few weeks
+    and the post can report progress, or when it is told in the past ("I was
+    thinking about...", "I once planned...") as part of a story about what did
+    happen.
 - **Minimize section breaks for narrative flow** - Avoid excessive section headings that break narrative flow
   - Write blog posts as cohesive stories rather than overly segmented documentation
   - Minimize h2 (##) section headings - use only for major inflection points (aim for 3-4 max in a blog post)
