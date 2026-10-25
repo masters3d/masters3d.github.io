@@ -1,13 +1,13 @@
 +++
 title = "Design Review Needs Governance"
 date = "2027-01-15"
-draft = true
 description = "A design review that cannot approve, reject, or route a decision is mostly performance. Governance gives the review a body: who decides, what authority they have, how disagreement is resolved, and how the decision becomes part of the system."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
 tags = ["design-review", "governance", "working-groups", "architecture", "decision-making", "shared-understanding"]
 [extra]
+scheduled = true
 editorial_track = "engineering-systems"
 related = ["feature-cradle-to-grave", "guiding-policies-behavior-alignment", "types-of-engineering-documentation"]
 +++
