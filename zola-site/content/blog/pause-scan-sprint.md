@@ -6,7 +6,7 @@ description = "The tiger beetle runs so fast that its eyes cannot form an image,
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
-tags = ["feedback-loops", "contextual-awareness", "focus", "planning", "tiger-beetle", "pacing"]
+tags = ["feedback-loops", "contextual-awareness", "focus", "planning", "tiger-beetle", "pacing", "rest", "search-drive-renew"]
 [extra]
 editorial_track = "engineering-systems"
 related = ["sprintspective-one-loop", "action-feedback-adjustment", "kaizen-and-the-observe-orient-decide-act-return-loop", "adaptive-control"]
@@ -50,8 +50,21 @@ That gives the loop four parts, and each one does a different job.
 
 The order matters. A sprint without a scan before it is a guess carried out at
 full speed. A scan without a sprint after it is observation that never becomes
-progress. And a pause without a scan is just stopping: a break that rests the
-legs but does not change the direction.
+progress. And a pause without a scan is rest that never turns into a new
+direction: the legs recover, but the beetle sets off toward the same old spot.
+
+The loop lines up with the three moves of the
+[Quest Engine](/blog/quest-engine-introduction/), which I use as a lens here
+rather than as the subject. The pause is **Renew**: rest first, the plain
+recovery that lets the picture settle, and then the comparison of where the last
+run ended against where it was meant to end. The scan is **Search**: find what
+is true right now, before acting on it. The sprint is **Drive**: commit to a
+goal and execute without reopening the decision every step. The model writes the
+cycle as Search, Drive, Renew; the beetle enters the same cycle at Renew,
+because every chase after the first one begins by stopping. What the beetle adds
+is a hard constraint the model only implies. The moves cannot overlap. Drive
+blinds Search, so the loop has to take turns, and the turn that makes the others
+possible is the rest.
 
 ## Work has the same blind spot
 

@@ -43,7 +43,7 @@ which the template shows once both posts are published
 | 3 | 2026-12-01 | B20 | PIE Theory: Being Seen Is Part of the Work | `pie-theory-being-seen-at-work` |
 | 4 | 2026-12-15 | B21 | Locus of Control at Work | `locus-of-control-at-work` |
 | 5 | 2027-01-01 | B22 | Seeking Is the Reward | `seeking-is-the-reward` |
-| 6 | 2027-01-15 | B04 | Design Review Needs Governance | `design-review-needs-governance` |
+| 6 | 2026-10-26 | B04 | Design Review Needs Governance | `design-review-needs-governance` |
 | 7 | 2027-02-01 | B05 | The Sprintspective: One Loop for Looking Back and Planning Next | `sprintspective-one-loop` |
 | 8 | 2027-02-15 | B06 | Open Guides Over Closed Answers | `open-guides-over-closed-answers` |
 | 9 | 2027-03-01 | B08 | Promotion-Driven Development | `promotion-driven-development` |

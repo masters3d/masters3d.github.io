@@ -1,6 +1,6 @@
 +++
 title = "Design Review Needs Governance"
-date = "2027-01-15"
+date = "2026-10-26"
 description = "A design review that cannot approve, reject, or route a decision is mostly performance. Governance gives the review a body: who decides, what authority they have, how disagreement is resolved, and how the decision becomes part of the system."
 template = "blog-post.html"
 [taxonomies]
