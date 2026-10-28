@@ -96,6 +96,7 @@ which the template shows once both posts are published
 | 56 | 2029-02-15 | B87 | Hypothesis-driven agent experiments: predictions, logs, and risks like confirmation bias | `hypothesis-driven-agent-experiments` |
 | 57 | 2029-03-01 | B77 | Career success metrics, individual and organizational, and growth strategies | `career-success-metrics-individual-and-organizational` |
 | 58 | 2029-03-15 | B88 | Measuring an agent beyond task completion | `measuring-an-agent-beyond-task-completion` |
+| 59 | 2026-11-29 | U02 | A Year of Worklogs: From a Personal Habit to a Team Practice (author's own; dated for the one-year mark, outside the 1st/15th cadence) | `a-year-of-worklogs` |
 
 ## Engineering Systems
 
@@ -204,6 +205,7 @@ date is a placeholder far enough out to keep the draft gate quiet.
 | ID | Idea | Source | Track | Status | Post |
 | --- | --- | --- | --- | --- | --- |
 | U01 | Wacky health ideas: a plank desk for working horizontally and the resting squat, building on the six-month move to standing in `monitor-the-body-running-the-work` | Author's notes, October 2026 | Human Systems | draft (unscheduled, placeholder date 2028-12-31) | `wacky-health-ideas-plank-desk-and-resting-squat` |
+| U03 | Reporting features and epics without a PM or Scrum Master: survey of hierarchy roll-ups, flow metrics, Shape Up hill charts, Now/Next/Later, status updates, and dependency boards, plus an agent-drafted weekly feature status to try, following `a-year-of-worklogs` | Author's notes, October 2026 | Engineering Systems | draft (unscheduled, placeholder date 2029-12-31) | `reporting-features-without-a-pm` |
 
 ## Covered by Existing Posts
 
