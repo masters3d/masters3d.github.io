@@ -1,13 +1,13 @@
 +++
 title = "Overlapping Roles in Tech"
 date = "2027-03-15"
-draft = true
 description = "Engineering roles overlap on purpose. The risk is not the overlap itself, but the unowned intersection where product, design, engineering, data, operations, and management all assume someone else is carrying the decision."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
 tags = ["roles", "ownership", "collaboration", "engineering-management", "systems-thinking"]
 [extra]
+scheduled = true
 editorial_track = "engineering-systems"
 related = ["quality-engineering-vs-engineering-quality", "development-vs-production", "people-systems-and-the-hiring-pipeline"]
 +++

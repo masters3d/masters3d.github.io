@@ -1,13 +1,13 @@
 +++
 title = "Types of Engineering Documentation"
 date = "2027-04-01"
-draft = true
 description = "Documentation is not one thing. Team-private notes, organization-wide engineering docs, troubleshooting guides, onboarding material, diagrams, and recorded context all serve different jobs, and the medium should match the job."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
 tags = ["documentation", "context", "onboarding", "async-work", "engineering-systems"]
 [extra]
+scheduled = true
 editorial_track = "engineering-systems"
 related = ["open-guides-over-closed-answers", "story-is-engineering-memory", "philosophy-manifesto-principle-north-star"]
 +++
