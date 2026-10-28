@@ -123,9 +123,9 @@ target now? Where am I relative to it? What direction will I commit to for the
 next run? If the pause answers those, it was not lost time. It was the only part
 of the loop where I could see.
 
-The note I wrote in 2022 was about agile ceremonies, and the loop applies there
-too: a team's retrospective and planning are its pause and scan, and the sprint
-that follows is its run. But the beetle does not need a ceremony to know when to
-stop. It stops because it is blind while it runs and knows it. The habit worth
-building is the same admission: I cannot see while I sprint, so I will stop on
-purpose, look, and then run again.
+The note I wrote in 2022 was about agile ceremonies, and how a team closes that
+loop together is a separate argument from this one. The beetle's lesson is
+smaller and personal. It does not need a ceremony to know when to stop. It stops
+because it is blind while it runs and knows it. The habit worth building is the
+same admission: I cannot see while I sprint, so I will stop on purpose, look,
+and then run again.
