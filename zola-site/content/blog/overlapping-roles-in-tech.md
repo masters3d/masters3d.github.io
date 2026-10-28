@@ -1,7 +1,7 @@
 +++
 title = "Overlapping Roles in Tech"
 date = "2027-03-15"
-description = "Engineering roles overlap on purpose. The risk is not the overlap itself, but the unowned intersection where product, design, engineering, data, operations, and management all assume someone else is carrying the decision."
+description = "Engineering roles overlap on purpose. A Venn diagram of writing code, stakeholder management, and people management shows which roles share which work, why the center where all three meet is a warning, and why every overlap needs a named owner."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
@@ -13,19 +13,71 @@ related = ["quality-engineering-vs-engineering-quality", "development-vs-product
 +++
 
 In April 2022 I saved a note with almost no prose of my own. It pointed to a
-thread by Gergely Orosz about overlapping roles in tech and a picture of the
-places where those roles cross. The useful part was the warning I wrote above
-it: roles overlap in tech, and there is an intersection you should be aware of.
-Orosz's broader product-minded engineering work argues that strong engineers do
-not only write code. They also carry product sense, collaborate with design and
-data, understand operations and support, and help align complicated work across
-teams.
+[December 2021 post by Gergely Orosz](https://xcancel.com/GergelyOrosz/status/1468606386439344139)
+about overlapping roles in tech, with a picture of the places where those roles
+cross. The useful part was the title I wrote above it: roles overlap in tech,
+and there is an intersection you should beware of. Orosz's broader
+product-minded engineering work argues that strong engineers do not only write
+code. They also carry product sense, collaborate with design and data,
+understand operations and support, and help align complicated work across teams.
 
-That sentence stayed unfinished because the picture was doing most of the work.
-Product, program management, design, engineering, data, operations, support, and
-leadership all touch the same product from different angles. A clean org chart
-makes them look separate. The work does not. The work creates intersections, and
-most serious confusion lives there.
+That title stayed unfinished because the picture was doing most of the work.
+Here is the picture redrawn, so the argument does not depend on a social media
+link staying online.
+
+![A Venn diagram of three overlapping circles labeled writing code, stakeholder management, and people management. Software engineer sits in writing code only. Product manager and technical program manager sit in stakeholder management only. Staff engineer sits where writing code and stakeholder management overlap. Tech lead manager sits where writing code and people management overlap. Engineering manager, and a product or program manager with reports, sit where stakeholder and people management overlap. The center, where all three overlap, is labeled beware.](/images/blog/overlapping-roles-in-tech.svg)
+
+## Where the Roles Overlap
+
+The picture does not sort roles by title. It sorts them by three kinds of work:
+
+- **Writing code**: designing, building, and changing the system with your own
+  hands.
+- **Stakeholder management**: agreeing with people outside the team on what gets
+  built, when, and why. That means customers, partners, leadership, and
+  neighboring teams.
+- **People management**: hiring, growing, and evaluating the people on the team,
+  and carrying their careers.
+
+Each role sits in the region that matches the work it does every week. Reading
+from the edges in:
+
+- **Writing code only: software engineer.** The work is the system itself.
+  Stakeholder and people decisions reach this role through someone else.
+- **Stakeholder management only: product manager and technical program
+  manager.** The work is the agreement about what to build and when. They do not
+  write the production code, and they do not manage the people who do.
+- **People management only: no role.** The picture leaves this region empty. In
+  a technical organization, managing people comes paired with either the code or
+  the stakeholders.
+- **Writing code and stakeholder management: staff engineer.** Still writes
+  code, and also negotiates direction with other teams and leaders, without
+  direct reports. The overlap here is with the product manager: both talk to
+  stakeholders about what the system should become.
+- **Writing code and people management: tech lead manager.** Still writes code,
+  and also has reports. The overlap is with both neighbors: with the software
+  engineers on the code, and with the engineering manager on the people.
+- **Stakeholder and people management: engineering manager, and a product or
+  program manager with reports.** No longer writes the production code. Runs the
+  team and represents it to the rest of the organization. The overlap is with
+  the product manager on stakeholders, and with the tech lead manager on people.
+- **All three: beware.** The picture puts no title in the center, only a
+  warning. One person writing code, managing people, and managing stakeholders
+  is doing three jobs with one calendar. Something gets dropped, and it is
+  rarely clear which one until later: the review that waits, the one-on-one that
+  keeps moving, or the partner team that hears about a change late. When one
+  person holds all three, nobody else is close enough to notice the drop.
+
+So the overlaps are specific. Each two-circle region shares one kind of work
+with each of its neighbors, and the shared work is where two roles can both
+claim the same decision. A staff engineer and a product manager can both be
+right about direction and still disagree. A tech lead manager and an engineering
+manager can both be right about the team and still pull it two ways.
+
+The picture has three circles. A real product adds more: design, data,
+operations, and support all touch the same product from different angles. A
+clean org chart makes them look separate. The work does not. Every circle added
+creates new intersections, and most serious confusion lives there.
 
 ## The Overlap Is Not the Bug
 
@@ -119,6 +171,8 @@ when the owner is wrong? How does feedback return to the boundary so the next
 decision is better?
 
 An org chart can show who reports to whom. It cannot show where judgment must be
-shared. That map has to be built by the team doing the work. The warning in the
-original note is still the one I would keep: beware the intersection where
-everyone is near the decision and nobody owns it.
+shared. That map has to be built by the team doing the work. The original
+picture put one word in the middle: beware. I would keep two versions of that
+warning. Beware the role that sits in all three circles alone, where one person
+owns every decision and nobody else can see what was dropped. And beware the
+intersection where everyone is near the decision and nobody owns it.
