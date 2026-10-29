@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 660" role="img" aria-labelledby="title desc" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
   <title id="title">Overlapping roles in tech</title>
-  <desc id="desc">A Venn diagram of three kinds of technical work: writing code, stakeholder management, and people management. Writing code only: software engineer. Stakeholder management only: product manager and technical program manager. People management only: no role. Writing code and stakeholder management: staff engineer. Writing code and people management: tech lead manager. Stakeholder and people management: engineering manager, and product or program manager with reports. All three at once: beware.</desc>
+  <desc id="desc">A Venn diagram of three kinds of technical work: writing code, stakeholder management, and people management. Writing code only: software engineer. Stakeholder management only: product manager and technical program manager. People management only: engineering manager. Writing code and stakeholder management: staff engineer. Writing code and people management: tech lead manager. Stakeholder and people management: product manager or technical program manager with reports. All three at once: beware.</desc>
   <rect width="760" height="660" rx="12" fill="#1a1a1a"/>
   <rect x="16" y="16" width="728" height="628" rx="8" fill="none" stroke="#808080" stroke-width="1.5" stroke-dasharray="6 6"/>
   <text x="728" y="632" text-anchor="end" font-size="15" fill="#b0b0b0">Technical roles</text>
@@ -29,12 +29,11 @@
     <text x="292" y="365">Tech lead</text>
     <text x="292" y="384">manager</text>
 
-    <text x="466" y="354">Engineering</text>
-    <text x="466" y="373">manager</text>
-    <text x="478" y="391" font-size="13" fill="#b0b0b0">PM or TPM</text>
-    <text x="478" y="406" font-size="13" fill="#b0b0b0">with reports</text>
+    <text x="468" y="353">PM or TPM</text>
+    <text x="468" y="372">with reports</text>
 
-    <text x="380" y="530" font-size="13" font-style="italic" fill="#b0b0b0">(no role here)</text>
+    <text x="380" y="535">Engineering</text>
+    <text x="380" y="554">manager</text>
   </g>
 
   <text x="380" y="300" text-anchor="middle" font-size="19" font-weight="700" fill="#ff6b6b">Beware</text>

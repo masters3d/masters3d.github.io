@@ -25,7 +25,7 @@ That title stayed unfinished because the picture was doing most of the work.
 Here is the picture redrawn, so the argument does not depend on a social media
 link staying online.
 
-![A Venn diagram of three overlapping circles labeled writing code, stakeholder management, and people management. Software engineer sits in writing code only. Product manager and technical program manager sit in stakeholder management only. Staff engineer sits where writing code and stakeholder management overlap. Tech lead manager sits where writing code and people management overlap. Engineering manager, and a product or program manager with reports, sit where stakeholder and people management overlap. The center, where all three overlap, is labeled beware.](/images/blog/overlapping-roles-in-tech.svg)
+![A Venn diagram of three overlapping circles labeled writing code, stakeholder management, and people management. Software engineer sits in writing code only. Product manager and technical program manager sit in stakeholder management only. Staff engineer sits where writing code and stakeholder management overlap. Engineering manager sits in people management only. Tech lead manager sits where writing code and people management overlap. A product or program manager with reports sits where stakeholder and people management overlap. The center, where all three overlap, is labeled beware.](/images/blog/overlapping-roles-in-tech.svg)
 
 ## Where the Roles Overlap
 
@@ -47,9 +47,12 @@ from the edges in:
 - **Stakeholder management only: product manager and technical program
   manager.** The work is the agreement about what to build and when. They do not
   write the production code, and they do not manage the people who do.
-- **People management only: no role.** The picture leaves this region empty. In
-  a technical organization, managing people comes paired with either the code or
-  the stakeholders.
+- **People management only: engineering manager.** The work is the team: hiring,
+  growth, performance, and the health of how the team works. An engineering
+  manager no longer writes the production code and is not the one who decides
+  what the product should be. An engineering manager still talks to
+  stakeholders, but on behalf of the team, not as the owner of the product
+  agreement.
 - **Writing code and stakeholder management: staff engineer.** Still writes
   code, and also negotiates direction with other teams and leaders, without
   direct reports. The overlap here is with the product manager: both talk to
@@ -57,10 +60,10 @@ from the edges in:
 - **Writing code and people management: tech lead manager.** Still writes code,
   and also has reports. The overlap is with both neighbors: with the software
   engineers on the code, and with the engineering manager on the people.
-- **Stakeholder and people management: engineering manager, and a product or
-  program manager with reports.** No longer writes the production code. Runs the
-  team and represents it to the rest of the organization. The overlap is with
-  the product manager on stakeholders, and with the tech lead manager on people.
+- **Stakeholder and people management: a product manager or technical program
+  manager with reports.** Owns the agreement about what to build, and also
+  manages other product or program managers. The overlap is with the product
+  manager on stakeholders, and with the engineering manager on people.
 - **All three: beware.** The picture puts no title in the center, only a
   warning. One person writing code, managing people, and managing stakeholders
   is doing three jobs with one calendar. Something gets dropped, and it is
