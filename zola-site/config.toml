@@ -89,7 +89,13 @@ feed_limit = 0
 # loads in a browser; skip only that page.
 # The Swift 2.2-branch Character.swift source link got a 503 from GitHub in CI even
 # though it loads in a browser; skip only that file.
+# The Krathwohl (2002) DOI resolves to a Taylor & Francis (tandfonline.com) article
+# page, which returns 403 to automated link checkers even though the DOI is valid in
+# a browser; skip only that DOI. quoteinvestigator.com has timed out in CI before, so
+# skip only the cited "55 minutes" page as well.
 skip_prefixes = [
+    "https://doi.org/10.1207/s15430421tip4104_2",
+    "https://quoteinvestigator.com/2014/05/22/solve/",
     "https://www.businesswire.com/news/home/20240304359573/",
     "https://quoteinvestigator.com/2012/07/21/luck-hard-work/",
     "https://github.com/swiftlang/swift/blob/swift-2.2-branch/stdlib/public/core/Character.swift",
