@@ -96,6 +96,7 @@ which the template shows once both posts are published
 | 56 | 2029-02-15 | B87 | Hypothesis-driven agent experiments: predictions, logs, and risks like confirmation bias | `hypothesis-driven-agent-experiments` |
 | 57 | 2029-03-01 | B77 | Career success metrics, individual and organizational, and growth strategies | `career-success-metrics-individual-and-organizational` |
 | 58 | 2029-03-15 | B88 | Measuring an agent beyond task completion | `measuring-an-agent-beyond-task-completion` |
+| 59 | 2029-04-01 | U02 | I am tired, boss: team culture as the team's operating system (shared vocabulary, planning at max capacity, retros cut first, night pages, out-of-sync nodes) | `i-am-tired-boss` |
 
 ## Engineering Systems
 
@@ -204,6 +205,7 @@ date is a placeholder far enough out to keep the draft gate quiet.
 | ID | Idea | Source | Track | Status | Post |
 | --- | --- | --- | --- | --- | --- |
 | U01 | Wacky health ideas: a plank desk for working horizontally and the resting squat, building on the six-month move to standing in `monitor-the-body-running-the-work` | Author's notes, October 2026 | Human Systems | draft (unscheduled, placeholder date 2028-12-31) | `wacky-health-ideas-plank-desk-and-resting-squat` |
+| U02 | I am tired, boss: team culture as the team's operating system. Author's own experience, so it is in the Release Schedule (#59) rather than held back | Author's notes, October 2026 | Human Systems | draft | `i-am-tired-boss` |
 
 ## Covered by Existing Posts
 
