@@ -89,7 +89,14 @@ feed_limit = 0
 # loads in a browser; skip only that page.
 # The Swift 2.2-branch Character.swift source link got a 503 from GitHub in CI even
 # though it loads in a browser; skip only that file.
+# This doi.org link resolves to a Royal Society Publishing article page (Zurek and
+# Gilbert 2014, Proc. R. Soc. B), which returns 403 to automated link checkers even
+# though the DOI is valid in a browser; skip only that DOI.
+# mckinsey.com resets automated link-checker requests (http2 stream error) even
+# though the cited Rumelt article loads in a browser; skip only that article.
 skip_prefixes = [
+    "https://doi.org/10.1098/rspb.2013.3072",
+    "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-perils-of-bad-strategy",
     "https://www.businesswire.com/news/home/20240304359573/",
     "https://quoteinvestigator.com/2012/07/21/luck-hard-work/",
     "https://github.com/swiftlang/swift/blob/swift-2.2-branch/stdlib/public/core/Character.swift",
