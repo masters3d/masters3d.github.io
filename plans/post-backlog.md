@@ -56,7 +56,7 @@ which the template shows once both posts are published
 | 16 | 2027-06-01 | B23 | Story Is Engineering Memory | `story-is-engineering-memory` |
 | 17 | 2027-06-15 | B24 | Build Mode, Reflect Mode, and Quality Without a Name | `build-mode-reflect-mode-quality-without-a-name` |
 | 18 | 2027-07-01 | B25 | Philosophy, Manifesto, Principle, North Star | `philosophy-manifesto-principle-north-star` |
-| 19 | 2027-07-15 | B30 | Dotnet Actor Systems and Testable Concurrency | `dotnet-actor-systems-and-testable-concurrency` |
+| 19 | 2027-07-15 | B30 | .NET Actor Systems and Testable Concurrency | `dotnet-actor-systems-and-testable-concurrency` |
 | 20 | 2027-07-22 | U02 | A Team Culture Where You Can Say "This Sucks" | `a-team-culture-where-you-can-say-this-sucks` |
 | 21 | 2027-08-01 | B32 | Cognitive Continuous Integration and the Broken Agent Loop | `cognitive-continuous-integration-and-the-broken-agent-loop` |
 | 22 | 2027-08-15 | B40 | Kaizen and the Observe, Orient, Decide, Act Return Loop | `kaizen-and-the-observe-orient-decide-act-return-loop` |
@@ -116,7 +116,7 @@ which the template shows once both posts are published
 | B11 | The kernel of strategy (Rumelt, *Good Strategy / Bad Strategy*) | `specs/from_good_strategy_bad_strategy/VISION.md` (#26), `media/synergies_strategy_kernel.drawio` | P2 | scheduled | `kernel-of-strategy` |
 | B12 | Action, feedback, adjustment: slow and noisy feedback loops | `specs/action_feedback_adjustment/VISION.md`, `specs/action-feedback-adjustment/VISION.md`, issue #30 | P2 | scheduled | `action-feedback-adjustment` |
 | B13 | Research on remote and async work (Microsoft New Future of Work) | `specs/async_workplace_public_research_from_microsoft/VISION.md`, issue #10 | P3 | draft | `remote-work-needs-context-not-just-tools` |
-| B14 | Guiding policies that align individual behavior with organizational goals | `specs/behavior_alignment/VISION.md`, issue #29 | P2 | draft | `guiding-policies-behavior-alignment` |
+| B14 | Guiding policies that align individual behavior with organizational goals | `specs/behavior_alignment/VISION.md`, issue #29 | P2 | scheduled | `guiding-policies-behavior-alignment` |
 | B15 | People systems and the hiring pipeline | `presentation/career_progression.md`, `presentation/career_init.md` | P3 | draft | `people-systems-and-the-hiring-pipeline` |
 
 ## Human Systems
@@ -126,9 +126,9 @@ which the template shows once both posts are published
 | B20 | PIE theory (Performance, Image, Exposure): being seen, not only doing the work | `specs/PIE_theory_integration/`, `specs/pie_theory_integration_to_quest_engine_framework/VISION.md` (#32), `career.md` "PIE Theory Integration" | P1 | scheduled | `pie-theory-being-seen-at-work` |
 | B21 | Locus of control at work: control, influence, accept, and widening what you control (check overlap with `burnout-is-a-control-problem`) | `specs/locus_of_control/`, issue #47, `career.md` "Locus of Control in Engineering Excellence" | P1 | scheduled | `locus-of-control-at-work` |
 | B22 | Seeking is the reward: building matters more than finishing | `specs/seeking_is_the_reward/VISION.md`, issue #23 | P1 | scheduled | `seeking-is-the-reward` |
-| B23 | Story as how people store information; where story fits in engineering | `specs/where_does_story_fit_into_the_engineering_process_and_the_cognitive_storage_of_information_via_story_telling/VISION.md` (#34), `media/synergies_narrative.md` | P2 | draft | `story-is-engineering-memory` |
-| B24 | Build mode vs reflect mode; judgement and "quality without a name" | `specs/cognitive_architecture_wrt_build_mode_and_reflect_mode/VISION.md`, issue #56 | P2 | draft | `build-mode-reflect-mode-quality-without-a-name` |
-| B25 | Philosophy, manifesto, principle, north star: how they differ (drafted in Engineering Systems) | `specs/philosophy_manifesto_principle_northstar/VISION.md`, issue #19 | P2 | draft | `philosophy-manifesto-principle-north-star` |
+| B23 | Story as how people store information; where story fits in engineering | `specs/where_does_story_fit_into_the_engineering_process_and_the_cognitive_storage_of_information_via_story_telling/VISION.md` (#34), `media/synergies_narrative.md` | P2 | scheduled | `story-is-engineering-memory` |
+| B24 | Build mode vs reflect mode; judgement and "quality without a name" | `specs/cognitive_architecture_wrt_build_mode_and_reflect_mode/VISION.md`, issue #56 | P2 | scheduled | `build-mode-reflect-mode-quality-without-a-name` |
+| B25 | Philosophy, manifesto, principle, north star: how they differ (drafted in Engineering Systems) | `specs/philosophy_manifesto_principle_northstar/VISION.md`, issue #19 | P2 | scheduled | `philosophy-manifesto-principle-north-star` |
 | B26 | Ingenio: the engineering background and history of the word (ingenium, engine, engineer, sugar mill), plus ingenious vs ingenuous | `specs/ingenious_vs_ingenuous/VISION.md` (#13), `README.md` | P3 | scheduled | `ingenio-the-engine-inside-engineering` |
 | B27 | Resourcefulness and agency as inherited vs learned traits | `specs/resourceful_agency_genetic_systems_relationships/VISION.md`, issue #38 (check overlap with `resourcefulness-is-its-own-quest-engine`) | P3 | draft | `resourcefulness-agency-and-inheritance` |
 
@@ -136,7 +136,7 @@ which the template shows once both posts are published
 
 | ID | Idea | Source in ingenio | Priority | Status | Post |
 | --- | --- | --- | --- | --- | --- |
-| B30 | Actor systems in .NET (Coyote); pairs with the Swift actors vs Rust ownership post | `specs/dotnet_actor_system/VISION.md`, issue #15 | P2 | draft | `dotnet-actor-systems-and-testable-concurrency` |
+| B30 | Actor systems in .NET (Coyote); pairs with the Swift actors vs Rust ownership post | `specs/dotnet_actor_system/VISION.md`, issue #15 | P2 | scheduled | `dotnet-actor-systems-and-testable-concurrency` |
 | B31 | Software 3.0 as an engineering framework | `specs/software_3_0_engineering_framework/VISION.md` | P3 | draft | `software-3-0-needs-engineering-not-magic` |
 | B32 | INGENIO-1 and "cognitive CI": an agent turning issues into specs, and what broke | `cognitive_systems/`, `experiments/`, `COGNITIVE_CI_*.md`, `RACE_CONDITION_FIX.md`, issues #36, #37, #42, #54 | P2 | draft | `cognitive-continuous-integration-and-the-broken-agent-loop` |
 
@@ -206,7 +206,7 @@ date is a placeholder far enough out to keep the draft gate quiet.
 | ID | Idea | Source | Track | Status | Post |
 | --- | --- | --- | --- | --- | --- |
 | U01 | Wacky health ideas: a plank desk for working horizontally and the resting squat, building on the six-month move to standing in `monitor-the-body-running-the-work` | Author's notes, October 2026 | Human Systems | draft (unscheduled, placeholder date 2028-12-31) | `wacky-health-ideas-plank-desk-and-resting-squat` |
-| U02 | A team culture where you can say "this sucks": negative signals as metrics, dedicated time to talk things through, and no culture is also a culture. Author's own experience, so it is in the Release Schedule (#20, off-cycle date in a stretch with no team-culture posts) | Author's notes, October 2026 | Human Systems | draft | `a-team-culture-where-you-can-say-this-sucks` |
+| U02 | A team culture where you can say "this sucks": negative signals as metrics, dedicated time to talk things through, and no culture is also a culture. Author's own experience, so it is in the Release Schedule (#20, off-cycle date in a stretch with no team-culture posts) | Author's notes, October 2026 | Human Systems | scheduled | `a-team-culture-where-you-can-say-this-sucks` |
 | U03 | One year after Claude Opus 4.5: the Bash-and-Python-to-Rust port as evidence that the compiler is a cheaper validator than tokens, Rust as the new assembly, about 20% of time on code with the rest on deployment, validation, agent management and agent cost, AI creating more work (V1 fast, V2/V3 slow), hiring for agency and taste, and a forecast that systems engineering becomes a named discipline again. Author's own experience, so it is in the Release Schedule (#3, off-cycle on the Opus 4.5 anniversary) | Author's notes, October 2026 | Software Engineering | scheduled | `one-year-after-opus-4-5` |
 
 ## Covered by Existing Posts
