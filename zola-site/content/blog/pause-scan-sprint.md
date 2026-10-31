@@ -1,13 +1,13 @@
 +++
 title = "Pause, Scan, Sprint: The Beetle That Cannot See While It Runs"
 date = "2027-01-22"
-draft = true
 description = "The tiger beetle runs so fast that its eyes cannot form an image, so it chases prey in bursts: pause, scan, sprint, and loop. Work has the same trade-off between speed and sight. The pause is not lost time. It is the only part of the loop where you can see where you are going."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
 tags = ["feedback-loops", "contextual-awareness", "focus", "planning", "tiger-beetle", "pacing", "rest", "search-drive-renew"]
 [extra]
+scheduled = true
 editorial_track = "engineering-systems"
 related = ["sprintspective-one-loop", "action-feedback-adjustment", "kaizen-and-the-observe-orient-decide-act-return-loop", "adaptive-control"]
 +++
@@ -123,9 +123,9 @@ target now? Where am I relative to it? What direction will I commit to for the
 next run? If the pause answers those, it was not lost time. It was the only part
 of the loop where I could see.
 
-The note I wrote in 2022 was about agile ceremonies, and the loop applies there
-too: a team's retrospective and planning are its pause and scan, and the sprint
-that follows is its run. But the beetle does not need a ceremony to know when to
-stop. It stops because it is blind while it runs and knows it. The habit worth
-building is the same admission: I cannot see while I sprint, so I will stop on
-purpose, look, and then run again.
+The note I wrote in 2022 was about agile ceremonies, and how a team closes that
+loop together is a separate argument from this one. The beetle's lesson is
+smaller and personal. It does not need a ceremony to know when to stop. It stops
+because it is blind while it runs and knows it. The habit worth building is the
+same admission: I cannot see while I sprint, so I will stop on purpose, look,
+and then run again.
