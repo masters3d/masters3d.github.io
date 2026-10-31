@@ -1,13 +1,13 @@
 +++
 title = "One Year After Opus 4.5: Software Engineering Moves Up the Stack"
 date = "2026-11-24"
-draft = true
 description = "A year after Claude Opus 4.5, my team is converting a few thousand lines of agent-written Bash and Python to Rust, still with agents. The compiler is a cheaper validator than tokens, Rust is becoming the new assembly, only about 20% of my time goes to code, and the job looks more like systems engineering every month. A year in review and a prediction for the next one."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Software Engineering"]
 tags = ["claude", "agents", "rust", "bash", "ai-development", "abstraction", "systems-engineering", "validation", "career-growth", "predictions"]
 [extra]
+scheduled = true
 editorial_track = "software-engineering"
 related = ["overlapping-roles-in-tech", "five-levels-of-agent-capability", "software-3-0-needs-engineering-not-magic", "ten-years-in-software-engineering"]
 +++
