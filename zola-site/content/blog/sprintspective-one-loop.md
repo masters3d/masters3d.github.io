@@ -19,12 +19,13 @@ a sprint to run a retrospective, and around the same time we plan the next
 sprint. I wanted to combine those activities so people could see what was done
 and plan what comes next without losing the thread.
 
-The image I added was stranger and better than the word. Some bugs move very
-fast, then stop to saccade and scan their environment, regain contextual
-awareness, and sprint again. That was the mechanism I was after. Movement is
-useful, but only if the creature stops often enough to reorient. Planning
-without looking back is motion without vision. Retrospective without planning is
-vision that does not change the next movement.
+The image I added was stranger than the word: some bugs run fast, stop to scan
+their environment, and sprint again. That image became its own post,
+[Pause, Scan, Sprint](/blog/pause-scan-sprint/), about the tiger beetle that
+goes blind at full speed and why one person's focus has the same blind spot.
+This post is the team half of the note. Planning without looking back is motion
+without vision. Retrospective without planning is vision that does not change
+the next movement.
 
 The usual agile calendar splits the loop. Retrospective asks what happened.
 Planning asks what we will do. Because they are separate meetings, they often
@@ -59,12 +60,11 @@ The third question is the important one. It turns the meeting from a status
 review into a contextual awareness exercise. The team is not only checking
 whether tasks were completed. It is updating its model of reality.
 
-## Stop, scan, sprint
+## What the team's pause has to surface
 
-The bug metaphor still works for me because it respects both motion and pause.
 The pause is not a failure to sprint. It is what makes the next sprint
-intelligent. In knowledge work, the pause has to surface three kinds of
-information.
+intelligent. For one person, the pause asks where the target went. For a team,
+it has to surface three kinds of information.
 
 First, it should surface facts about the work. Which estimates were wrong? Which
 dependency took longer than expected? Which piece of code resisted change? These

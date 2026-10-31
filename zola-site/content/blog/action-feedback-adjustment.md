@@ -1,13 +1,13 @@
 +++
 title = "Action, Feedback, Adjustment"
 date = "2027-05-01"
-draft = true
 description = "Action and feedback are as fundamental to engineering as action and reaction are to physics, but adjustment is the human part. It is where judgment turns noisy signals into a better next move."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
 tags = ["feedback-loops", "judgment", "observability", "retrospectives", "systems-thinking"]
 [extra]
+scheduled = true
 editorial_track = "engineering-systems"
 related = ["sprintspective-one-loop", "kaizen-and-the-observe-orient-decide-act-return-loop", "adaptive-control"]
 +++

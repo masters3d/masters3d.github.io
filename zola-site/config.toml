@@ -95,10 +95,17 @@ feed_limit = 0
 # skip only the cited "55 minutes" page as well.
 # press.princeton.edu returns 403 (bot protection) to automated link checkers even
 # though the cited How to Solve It page loads in a browser; skip only that page.
+# This doi.org link resolves to a Royal Society Publishing article page (Zurek and
+# Gilbert 2014, Proc. R. Soc. B), which returns 403 to automated link checkers even
+# though the DOI is valid in a browser; skip only that DOI.
+# mckinsey.com resets automated link-checker requests (http2 stream error) even
+# though the cited Rumelt article loads in a browser; skip only that article.
 skip_prefixes = [
     "https://press.princeton.edu/books/paperback/9780691164076/how-to-solve-it",
     "https://doi.org/10.1207/s15430421tip4104_2",
     "https://quoteinvestigator.com/2014/05/22/solve/",
+    "https://doi.org/10.1098/rspb.2013.3072",
+    "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-perils-of-bad-strategy",
     "https://www.businesswire.com/news/home/20240304359573/",
     "https://quoteinvestigator.com/2012/07/21/luck-hard-work/",
     "https://github.com/swiftlang/swift/blob/swift-2.2-branch/stdlib/public/core/Character.swift",
