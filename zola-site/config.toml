@@ -93,7 +93,10 @@ feed_limit = 0
 # page, which returns 403 to automated link checkers even though the DOI is valid in
 # a browser; skip only that DOI. quoteinvestigator.com has timed out in CI before, so
 # skip only the cited "55 minutes" page as well.
+# press.princeton.edu returns 403 (bot protection) to automated link checkers even
+# though the cited How to Solve It page loads in a browser; skip only that page.
 skip_prefixes = [
+    "https://press.princeton.edu/books/paperback/9780691164076/how-to-solve-it",
     "https://doi.org/10.1207/s15430421tip4104_2",
     "https://quoteinvestigator.com/2014/05/22/solve/",
     "https://www.businesswire.com/news/home/20240304359573/",
