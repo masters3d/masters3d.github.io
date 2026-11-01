@@ -45,59 +45,61 @@ which the template shows once both posts are published
 | 5 | 2026-12-15 | B21 | Locus of Control at Work | `locus-of-control-at-work` |
 | 6 | 2027-01-01 | B22 | Seeking Is the Reward | `seeking-is-the-reward` |
 | 7 | 2026-10-26 | B04 | Design Review Needs Governance | `design-review-needs-governance` |
-| 8 | 2027-02-01 | B05 | The Sprintspective: One Loop for Looking Back and Planning Next | `sprintspective-one-loop` |
-| 9 | 2027-02-15 | B06 | Open Guides Over Closed Answers | `open-guides-over-closed-answers` |
-| 10 | 2027-03-01 | B08 | Promotion-Driven Development | `promotion-driven-development` |
-| 11 | 2027-03-15 | B09 | Overlapping Roles in Tech | `overlapping-roles-in-tech` |
-| 12 | 2027-04-01 | B10 | Types of Engineering Documentation | `types-of-engineering-documentation` |
-| 13 | 2027-04-15 | B11 | The Kernel of Strategy | `kernel-of-strategy` |
-| 14 | 2027-05-01 | B12 | Action, Feedback, Adjustment | `action-feedback-adjustment` |
-| 15 | 2027-05-15 | B14 | Guiding Policies and Behavior Alignment | `guiding-policies-behavior-alignment` |
-| 16 | 2027-06-01 | B23 | Story Is Engineering Memory | `story-is-engineering-memory` |
-| 17 | 2027-06-15 | B24 | Build Mode, Reflect Mode, and Quality Without a Name | `build-mode-reflect-mode-quality-without-a-name` |
-| 18 | 2027-07-01 | B25 | Philosophy, Manifesto, Principle, North Star | `philosophy-manifesto-principle-north-star` |
-| 19 | 2027-07-15 | B30 | .NET Actor Systems and Testable Concurrency | `dotnet-actor-systems-and-testable-concurrency` |
-| 20 | 2027-07-22 | U02 | A Team Culture Where You Can Say "This Sucks" | `a-team-culture-where-you-can-say-this-sucks` |
-| 21 | 2027-08-01 | B32 | Cognitive Continuous Integration and the Broken Agent Loop | `cognitive-continuous-integration-and-the-broken-agent-loop` |
-| 22 | 2027-08-15 | B40 | Kaizen and the Observe, Orient, Decide, Act Return Loop | `kaizen-and-the-observe-orient-decide-act-return-loop` |
-| 23 | 2027-09-01 | B41 | The Fractal Pattern Inside the Quest Engine | `the-fractal-pattern-inside-the-quest-engine` |
-| 24 | 2027-09-15 | B42 | Anti-Patterns Show Where the Loop Broke | `anti-patterns-show-where-the-loop-broke` |
-| 25 | 2027-10-01 | B50 | Career Quest Engineering, the 2021 Talk | `career-quest-engineering-2021-talk` |
-| 26 | 2027-10-15 | B07 | Conversation Formats Are Engineering Tools | `conversation-formats-fishbowl` |
-| 27 | 2027-11-01 | B13 | Remote Work Needs Context, Not Just Tools | `remote-work-needs-context-not-just-tools` |
-| 28 | 2027-11-15 | B15 | People Systems and the Hiring Pipeline | `people-systems-and-the-hiring-pipeline` |
-| 29 | 2027-12-01 | B27 | Resourcefulness, Agency, and Inheritance | `resourcefulness-agency-and-inheritance` |
-| 30 | 2027-12-15 | B31 | Software 3.0 Needs Engineering, Not Magic | `software-3-0-needs-engineering-not-magic` |
-| 31 | 2028-01-01 | B43 | Individual Contributor Levels as Changing Scope | `individual-contributor-levels-as-changing-scope` |
-| 32 | 2028-01-15 | B60 | Proactive curiosity: seek context before it is handed to you (first sub-pillar of Contextual Awareness) | `proactive-curiosity` |
-| 33 | 2028-02-01 | B72 | Career levels depend on context: startup, enterprise, product, platform, and culture | `career-levels-depend-on-context` |
-| 34 | 2028-02-15 | B61 | Cohesive narrative: turning scattered facts into one story a team can act on | `cohesive-narrative` |
-| 35 | 2028-03-01 | B82 | Five levels of agent capability: reactive to cognitive, and why systems engineering changes | `five-levels-of-agent-capability` |
-| 36 | 2028-03-15 | B62 | Shared understanding as a practice with components, behaviors and checks | `shared-understanding-as-a-practice` |
-| 37 | 2028-04-01 | B78 | The overjustification effect: when rewards crowd out the reason you did the work | `overjustification-effect-at-work` |
-| 38 | 2028-04-15 | B63 | Challenge matching: fit the task to the skill so flow is possible | `challenge-matching-and-flow` |
-| 39 | 2028-05-01 | B73 | Motivation, ability, narrative: three forces in a career and what happens when one is missing | `motivation-ability-narrative` |
-| 40 | 2028-05-15 | B64 | Directed intentionality: choosing on purpose what not to do | `directed-intentionality` |
-| 41 | 2028-06-01 | B83 | Agent memory in three tiers: short-term, long-term, and memory about learning | `agent-memory-short-long-and-meta` |
-| 42 | 2028-06-15 | B65 | Adaptive control: steering a plan as feedback arrives | `adaptive-control` |
-| 43 | 2028-07-01 | B75 | Level zero is an apprenticeship, a two-sided contract between the new engineer and the team | `level-zero-is-an-apprenticeship` |
-| 44 | 2028-07-15 | B66 | Iterative integration: small changes merged often beat big batches | `iterative-integration` |
-| 45 | 2028-08-01 | B79 | The regulation continuum: from external pressure to work that is yours | `the-regulation-continuum` |
-| 46 | 2028-08-15 | B67 | Deliberate practice for engineers: targeted, feedback-rich repetition | `deliberate-practice-for-engineers` |
-| 47 | 2028-09-01 | B84 | Meta-learning in four levels: learning about learning up to improving the improver | `meta-learning-four-levels` |
-| 48 | 2028-09-15 | B68 | Update propagation: a lesson only counts once it reaches the docs, code and people | `update-propagation` |
-| 49 | 2028-10-01 | B80 | The progress principle: small visible wins renew purpose | `the-progress-principle` |
-| 50 | 2028-10-15 | B69 | Measuring the three pillars: discovery, strategy and improvement metrics | `measuring-the-three-pillars` |
-| 51 | 2028-11-01 | B85 | Safe self-modification for agents: sandbox, validate, check goals, roll back | `safe-self-modification-for-agents` |
-| 52 | 2028-11-15 | B70 | The objective function as the human-agent interface: reward signal, action space, value alignment | `objective-function-search-drive-renew` |
-| 53 | 2028-12-01 | B74 | Juggling projects at different stages: one person, many projects, many people | `juggling-projects-at-different-stages` |
-| 54 | 2028-12-15 | B71 | Anti-patterns in human-agent interaction and how to measure the interface | `anti-patterns-in-human-agent-interaction` |
-| 55 | 2029-01-01 | B86 | Testing systems that change themselves: adaptive tests and emergent behavior | `testing-systems-that-change-themselves` |
-| 56 | 2029-01-15 | B76 | Humans and agents on one team: who does what, and how roles shift | `humans-and-agents-on-one-team` |
-| 57 | 2029-02-01 | B81 | Growth mindset as the base of mastery, by IC level | `growth-mindset-and-mastery` |
-| 58 | 2029-02-15 | B87 | Hypothesis-driven agent experiments: predictions, logs, and risks like confirmation bias | `hypothesis-driven-agent-experiments` |
-| 59 | 2029-03-01 | B77 | Career success metrics, individual and organizational, and growth strategies | `career-success-metrics-individual-and-organizational` |
-| 60 | 2029-03-15 | B88 | Measuring an agent beyond task completion | `measuring-an-agent-beyond-task-completion` |
+| 8 | 2027-01-15 | U04 | Under-Promise, Over-Deliver | `under-promise-over-deliver` |
+| 9 | 2027-02-01 | B05 | The Sprintspective: One Loop for Looking Back and Planning Next | `sprintspective-one-loop` |
+| 10 | 2027-02-15 | B06 | Open Guides Over Closed Answers | `open-guides-over-closed-answers` |
+| 11 | 2027-03-01 | B08 | Promotion-Driven Development | `promotion-driven-development` |
+| 12 | 2027-03-15 | B09 | Overlapping Roles in Tech | `overlapping-roles-in-tech` |
+| 13 | 2027-03-22 | U05 | Nobody Gets Promoted for Grunt Work | `nobody-gets-promoted-for-grunt-work` |
+| 14 | 2027-04-01 | B10 | Types of Engineering Documentation | `types-of-engineering-documentation` |
+| 15 | 2027-04-15 | B11 | The Kernel of Strategy | `kernel-of-strategy` |
+| 16 | 2027-05-01 | B12 | Action, Feedback, Adjustment | `action-feedback-adjustment` |
+| 17 | 2027-05-15 | B14 | Guiding Policies and Behavior Alignment | `guiding-policies-behavior-alignment` |
+| 18 | 2027-06-01 | B23 | Story Is Engineering Memory | `story-is-engineering-memory` |
+| 19 | 2027-06-15 | B24 | Build Mode, Reflect Mode, and Quality Without a Name | `build-mode-reflect-mode-quality-without-a-name` |
+| 20 | 2027-07-01 | B25 | Philosophy, Manifesto, Principle, North Star | `philosophy-manifesto-principle-north-star` |
+| 21 | 2027-07-15 | B30 | .NET Actor Systems and Testable Concurrency | `dotnet-actor-systems-and-testable-concurrency` |
+| 22 | 2027-07-22 | U02 | A Team Culture Where You Can Say "This Sucks" | `a-team-culture-where-you-can-say-this-sucks` |
+| 23 | 2027-08-01 | B32 | Cognitive Continuous Integration and the Broken Agent Loop | `cognitive-continuous-integration-and-the-broken-agent-loop` |
+| 24 | 2027-08-15 | B40 | Kaizen and the Observe, Orient, Decide, Act Return Loop | `kaizen-and-the-observe-orient-decide-act-return-loop` |
+| 25 | 2027-09-01 | B41 | The Fractal Pattern Inside the Quest Engine | `the-fractal-pattern-inside-the-quest-engine` |
+| 26 | 2027-09-15 | B42 | Anti-Patterns Show Where the Loop Broke | `anti-patterns-show-where-the-loop-broke` |
+| 27 | 2027-10-01 | B50 | Career Quest Engineering, the 2021 Talk | `career-quest-engineering-2021-talk` |
+| 28 | 2027-10-15 | B07 | Conversation Formats Are Engineering Tools | `conversation-formats-fishbowl` |
+| 29 | 2027-11-01 | B13 | Remote Work Needs Context, Not Just Tools | `remote-work-needs-context-not-just-tools` |
+| 30 | 2027-11-15 | B15 | People Systems and the Hiring Pipeline | `people-systems-and-the-hiring-pipeline` |
+| 31 | 2027-12-01 | B27 | Resourcefulness, Agency, and Inheritance | `resourcefulness-agency-and-inheritance` |
+| 32 | 2027-12-15 | B31 | Software 3.0 Needs Engineering, Not Magic | `software-3-0-needs-engineering-not-magic` |
+| 33 | 2028-01-01 | B43 | Individual Contributor Levels as Changing Scope | `individual-contributor-levels-as-changing-scope` |
+| 34 | 2028-01-15 | B60 | Proactive curiosity: seek context before it is handed to you (first sub-pillar of Contextual Awareness) | `proactive-curiosity` |
+| 35 | 2028-02-01 | B72 | Career levels depend on context: startup, enterprise, product, platform, and culture | `career-levels-depend-on-context` |
+| 36 | 2028-02-15 | B61 | Cohesive narrative: turning scattered facts into one story a team can act on | `cohesive-narrative` |
+| 37 | 2028-03-01 | B82 | Five levels of agent capability: reactive to cognitive, and why systems engineering changes | `five-levels-of-agent-capability` |
+| 38 | 2028-03-15 | B62 | Shared understanding as a practice with components, behaviors and checks | `shared-understanding-as-a-practice` |
+| 39 | 2028-04-01 | B78 | The overjustification effect: when rewards crowd out the reason you did the work | `overjustification-effect-at-work` |
+| 40 | 2028-04-15 | B63 | Challenge matching: fit the task to the skill so flow is possible | `challenge-matching-and-flow` |
+| 41 | 2028-05-01 | B73 | Motivation, ability, narrative: three forces in a career and what happens when one is missing | `motivation-ability-narrative` |
+| 42 | 2028-05-15 | B64 | Directed intentionality: choosing on purpose what not to do | `directed-intentionality` |
+| 43 | 2028-06-01 | B83 | Agent memory in three tiers: short-term, long-term, and memory about learning | `agent-memory-short-long-and-meta` |
+| 44 | 2028-06-15 | B65 | Adaptive control: steering a plan as feedback arrives | `adaptive-control` |
+| 45 | 2028-07-01 | B75 | Level zero is an apprenticeship, a two-sided contract between the new engineer and the team | `level-zero-is-an-apprenticeship` |
+| 46 | 2028-07-15 | B66 | Iterative integration: small changes merged often beat big batches | `iterative-integration` |
+| 47 | 2028-08-01 | B79 | The regulation continuum: from external pressure to work that is yours | `the-regulation-continuum` |
+| 48 | 2028-08-15 | B67 | Deliberate practice for engineers: targeted, feedback-rich repetition | `deliberate-practice-for-engineers` |
+| 49 | 2028-09-01 | B84 | Meta-learning in four levels: learning about learning up to improving the improver | `meta-learning-four-levels` |
+| 50 | 2028-09-15 | B68 | Update propagation: a lesson only counts once it reaches the docs, code and people | `update-propagation` |
+| 51 | 2028-10-01 | B80 | The progress principle: small visible wins renew purpose | `the-progress-principle` |
+| 52 | 2028-10-15 | B69 | Measuring the three pillars: discovery, strategy and improvement metrics | `measuring-the-three-pillars` |
+| 53 | 2028-11-01 | B85 | Safe self-modification for agents: sandbox, validate, check goals, roll back | `safe-self-modification-for-agents` |
+| 54 | 2028-11-15 | B70 | The objective function as the human-agent interface: reward signal, action space, value alignment | `objective-function-search-drive-renew` |
+| 55 | 2028-12-01 | B74 | Juggling projects at different stages: one person, many projects, many people | `juggling-projects-at-different-stages` |
+| 56 | 2028-12-15 | B71 | Anti-patterns in human-agent interaction and how to measure the interface | `anti-patterns-in-human-agent-interaction` |
+| 57 | 2029-01-01 | B86 | Testing systems that change themselves: adaptive tests and emergent behavior | `testing-systems-that-change-themselves` |
+| 58 | 2029-01-15 | B76 | Humans and agents on one team: who does what, and how roles shift | `humans-and-agents-on-one-team` |
+| 59 | 2029-02-01 | B81 | Growth mindset as the base of mastery, by IC level | `growth-mindset-and-mastery` |
+| 60 | 2029-02-15 | B87 | Hypothesis-driven agent experiments: predictions, logs, and risks like confirmation bias | `hypothesis-driven-agent-experiments` |
+| 61 | 2029-03-01 | B77 | Career success metrics, individual and organizational, and growth strategies | `career-success-metrics-individual-and-organizational` |
+| 62 | 2029-03-15 | B88 | Measuring an agent beyond task completion | `measuring-an-agent-beyond-task-completion` |
 
 ## Engineering Systems
 
@@ -206,8 +208,10 @@ date is a placeholder far enough out to keep the draft gate quiet.
 | ID | Idea | Source | Track | Status | Post |
 | --- | --- | --- | --- | --- | --- |
 | U01 | Wacky health ideas: a plank desk for working horizontally and the resting squat, building on the six-month move to standing in `monitor-the-body-running-the-work` | Author's notes, October 2026 | Human Systems | draft (unscheduled, placeholder date 2028-12-31) | `wacky-health-ideas-plank-desk-and-resting-squat` |
-| U02 | A team culture where you can say "this sucks": negative signals as metrics, dedicated time to talk things through, and no culture is also a culture. Author's own experience, so it is in the Release Schedule (#20, off-cycle date in a stretch with no team-culture posts) | Author's notes, October 2026 | Human Systems | scheduled | `a-team-culture-where-you-can-say-this-sucks` |
+| U02 | A team culture where you can say "this sucks": negative signals as metrics, dedicated time to talk things through, and no culture is also a culture. Author's own experience, so it is in the Release Schedule (#22, off-cycle date in a stretch with no team-culture posts) | Author's notes, October 2026 | Human Systems | scheduled | `a-team-culture-where-you-can-say-this-sucks` |
 | U03 | One year after Claude Opus 4.5: the Bash-and-Python-to-Rust port as evidence that the compiler is a cheaper validator than tokens, Rust as the new assembly, about 20% of time on code with the rest on deployment, validation, agent management and agent cost, AI creating more work (V1 fast, V2/V3 slow), hiring for agency and taste, and a forecast that systems engineering becomes a named discipline again. Author's own experience, so it is in the Release Schedule (#3, off-cycle on the Opus 4.5 anniversary) | Author's notes, October 2026 | Software Engineering | scheduled | `one-year-after-opus-4-5` |
+| U04 | Under-promise, over-deliver: a promise sets the floor others judge you against and they cannot see the effort behind it, so promise at regular capacity (never a 60-hour week), answer "faster" with more people or more preparation time, and solve a recurring manual fix once (the late-October 2026 drive unlocks: two days and one more person instead of ten minutes by hand). Author's own experience, so it is in the Release Schedule (#8, off-cycle in the empty mid-January slot) | Author's notes, November 2026 | Engineering Systems | draft | `under-promise-over-deliver` |
+| U05 | Nobody gets promoted for grunt work: a software engineer doing manual tooling work or customer support is not promoted as a software engineer however well it is done, "that is not my role" is allowed, and startups (many hats) are the exception. Distinct from `good-at-it-is-not-the-same-as-wanting-it` (toil and what the author wants) and `minimize-humans-as-glue` (team glue): this one is about the role the work is measured against. Author's own view, so it is in the Release Schedule (#13, off-cycle after `overlapping-roles-in-tech` so it can link it inline) | Author's notes, November 2026 | Engineering Systems | draft | `nobody-gets-promoted-for-grunt-work` |
 
 ## Covered by Existing Posts
 
