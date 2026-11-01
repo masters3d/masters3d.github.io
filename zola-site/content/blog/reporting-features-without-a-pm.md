@@ -9,7 +9,7 @@ categories = ["Engineering Systems"]
 tags = ["planning", "worklogs", "agile", "flow-metrics", "roadmaps", "reporting"]
 [extra]
 editorial_track = "engineering-systems"
-related = ["a-year-of-worklogs", "why-i-love-worklogs", "effort-tracking-vs-task-tracking", "feature-cradle-to-grave"]
+related = ["one-year-after-opus-4-5", "why-i-love-worklogs", "effort-tracking-vs-task-tracking", "feature-cradle-to-grave"]
 +++
 
 > **Draft (idea only, unscheduled).** This is a survey and a proposal, not a
@@ -29,12 +29,12 @@ related = ["a-year-of-worklogs", "why-i-love-worklogs", "effort-tracking-vs-task
 > Commits. Each one needs a primary link on the claim itself, or the claim gets
 > softened. The GitHub links in the body are already checked.
 
-In [A Year of Worklogs](/blog/a-year-of-worklogs/) I described where worklogs
-stop working: above the product backlog item (PBI). Daily work is covered. The
-feature and epic level, where you see what is slow, what depends on what, and
-what shipped this quarter, used to be kept up by a product manager or a Scrum
-Master. My team has neither, so before trying to fix it I looked at how other
-teams and tools approach the problem.
+In [One Year After Opus 4.5](/blog/one-year-after-opus-4-5/) I described where
+worklogs stop working: above the product backlog item (PBI). Daily work is
+covered. The feature and epic level, where you see what is slow, what depends on
+what, and what shipped this quarter, used to be kept up by a product manager or
+a Scrum Master. My team has neither, so before trying to fix it I looked at how
+other teams and tools approach the problem.
 
 ## What other teams do
 

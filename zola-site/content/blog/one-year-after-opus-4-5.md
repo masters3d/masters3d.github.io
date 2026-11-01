@@ -1,15 +1,15 @@
 +++
 title = "One Year After Opus 4.5: Software Engineering Moves Up the Stack"
 date = "2026-11-24"
-description = "A year after Claude Opus 4.5, my team is converting a few thousand lines of agent-written Bash and Python to Rust, still with agents. The compiler is a cheaper validator than tokens, Rust is becoming the new assembly, only about 20% of my time goes to code, and the job looks more like systems engineering every month. A year in review and a prediction for the next one."
+description = "A year after Claude Opus 4.5, my team is converting a few thousand lines of agent-written Bash and Python to Rust, still with agents. The compiler is a cheaper validator than tokens, Rust is becoming the new assembly, only about 20% of my time goes to code, and the job looks more like systems engineering every month. The worklogs I started the same month went from my notebook to my team's default, and they stop at the feature level. A year in review and a prediction for the next one."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Software Engineering"]
-tags = ["claude", "agents", "rust", "bash", "ai-development", "abstraction", "systems-engineering", "validation", "career-growth", "predictions"]
+tags = ["claude", "agents", "rust", "bash", "ai-development", "abstraction", "systems-engineering", "validation", "career-growth", "predictions", "worklogs", "planning"]
 [extra]
 scheduled = true
 editorial_track = "software-engineering"
-related = ["overlapping-roles-in-tech", "five-levels-of-agent-capability", "software-3-0-needs-engineering-not-magic", "ten-years-in-software-engineering"]
+related = ["why-i-love-worklogs", "effort-tracking-vs-task-tracking", "reporting-features-without-a-pm", "overlapping-roles-in-tech", "five-levels-of-agent-capability", "software-3-0-needs-engineering-not-magic", "ten-years-in-software-engineering"]
 +++
 
 Claude Opus 4.5 came out on November 24, 2025. One year later, I am finishing a
@@ -26,6 +26,11 @@ work I used to reserve for scripts. Later I turned that into a
 that leaned toward static languages for anything new. This year I got to test
 the prediction on real work, and it came full circle: we went the other way
 first, and ended up where the prediction said we would.
+
+The same month, I started keeping a running file for each piece of work I handed
+to an agent. That habit also turns one this month, and by now my whole team
+relies on it, so this review covers both: what changed in the code, and what
+changed in how we track the work around it.
 
 ## The Experiment: Scripts in Production
 
@@ -128,6 +133,56 @@ deployed, how the data gets in, how it is operated, and how all the parts meet.
 Humans are going to be less involved with the machinery of the code and more
 involved with those questions.
 
+## Worklogs: From My Notebook to the Team's Default
+
+In November 2025 I started keeping a running file for each piece of work I
+handed to an agent. I called them plans. They were not the `plan.md` an agent
+writes for itself at the start of a session; they were mine, and they outlived
+the session. By the time I wrote
+[Why I Switched to Worklogs](/blog/why-i-love-worklogs/) in March, they had a
+better name and a home in GitHub Issues, and that post spends a paragraph
+separating worklogs from agent plans because I had spent months blurring the
+two.
+
+The first version was a lab notebook for me and my agents: what I was working
+on, what I tried, what was blocked, and which PR closed it. The value was
+continuity. A new session could read the worklog and pick up where the last one
+stopped, so I could run several sessions in parallel without holding all of them
+in my head. My team has been using worklogs for about nine months, and it
+adopted them for the same reason, not because anyone asked for a new process.
+Capturing work became one sentence in a conversation instead of a form in a
+browser, so people captured the small things too. Effort stayed where
+[I had already put it](/blog/effort-tracking-vs-task-tracking/): coarse, at the
+product backlog item (PBI) level, in a separate place, and not on every task.
+
+For the near horizon, this works. Today, tomorrow, and a few days out are well
+covered. The board shows what is done, what is in flight, and what is blocked.
+Agents read the open worklogs, check dependencies and sizes, and suggest what to
+pick up next. PBIs are the right grain for a person: small enough that one
+person owns it and large enough that tracking it does not become the work. We
+stopped breaking PBIs into tasks with hours on them, and nobody misses it.
+
+The gap is above the PBI. On a classic Scrum team the backlog has more levels:
+epics break into features, features into PBIs, and PBIs into tasks. Someone
+keeps those upper levels honest. I know, because I used to be that someone as a
+Scrum Master. On most teams it is a product manager or a Scrum Master who links
+the PBIs to their feature, notices that a feature has stalled, and tells the
+rest of the organization what shipped. We do not have that role, so the
+hierarchy drifts. Worklogs roll up nicely into "what did I do this week," but
+they do not roll up on their own into "where is this feature," "which feature is
+waiting on which," or "what did we finish this quarter."
+
+Once a team grows past about a dozen people, those questions matter more than
+the daily ones. You want to know when something is going slowly, early enough to
+unblock it. You want to know when one feature depends on another before the
+dependency becomes a delay. And you want to report completed features without
+someone assembling the list by hand every few weeks. AI has not closed this gap
+for us. We use it constantly for the current work and the next few days, but we
+have not found a good way to use it for macro planning: the quarter-level view
+of features and epics, their order, and their dependencies. It is the same
+pattern as the code. V1 of the process was fast; the version that holds up at
+team scale is the slow part.
+
 ## What I Expect Next Year
 
 These are predictions, labeled as such.
@@ -154,6 +209,12 @@ watch a lot of things get done a lot faster, though I would not defend the exact
 number. I have access to Astra as well, but it is too slow for how I work today.
 The agents still have bugs, like any other system, and that is the point: we are
 moving to systems, and systems need engineering.
+
+Planning is part of that system. The next year of worklogs has a clearer problem
+than the first: report on features and epics with the same low effort that
+worklogs brought to daily work, without bringing back a role we do not have. I
+expect agents to help there by reading and summarizing, not by forecasting, and
+I will write up what we try once we have a few weeks of practice with it.
 
 So my forecast for the next year is that systems engineering becomes an actual
 named thing in software again, not a background skill. A lot of opportunity sits
