@@ -1,177 +1,171 @@
 +++
-title = "One Year After Opus 4.5: Rust Is the New Assembly and the Job Is Systems Engineering"
+title = "One Year After Opus 4.5: Software Engineering Moves Up the Stack"
 date = "2026-11-24"
-description = "A year after Claude Opus 4.5, the prediction held: an agent writing Bash and an agent writing Rust cost about the same, so the compiler should do the checking instead of tokens. The abstraction layer moved up again, Rust is becoming the new assembly, and the job that is left looks more like systems engineering than typing code. It also turned out to be more work, not less."
+description = "A year after Claude Opus 4.5, my team is converting a few thousand lines of agent-written Bash and Python to Rust, still with agents. The compiler is a cheaper validator than tokens, Rust is becoming the new assembly, only about 20% of my time goes to code, and the job looks more like systems engineering every month. A year in review and a prediction for the next one."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Software Engineering"]
-tags = ["claude", "agents", "rust", "bash", "ai-development", "systems-engineering", "abstraction", "hiring", "predictions"]
+tags = ["claude", "agents", "rust", "bash", "ai-development", "abstraction", "systems-engineering", "validation", "career-growth", "predictions"]
 [extra]
 scheduled = true
 editorial_track = "software-engineering"
-related = ["five-levels-of-agent-capability", "software-3-0-needs-engineering-not-magic", "ten-years-in-software-engineering"]
+related = ["overlapping-roles-in-tech", "five-levels-of-agent-capability", "software-3-0-needs-engineering-not-magic", "ten-years-in-software-engineering"]
 +++
 
-Right now I am finishing a conversion. Over the last few months, a few thousand
-lines of Bash went into production at work, all of it written with agents. This
-week, still using agents, I am moving every one of those lines to Rust. Nobody
-asked me to rewrite working scripts. I did it because the experiment had
-answered the question it was set up to answer.
+Claude Opus 4.5 came out on November 24, 2025. One year later, I am finishing a
+port of a few thousand lines of Bash and Python into Rust. The scripts were
+written with agents over the last few months, and the Rust is being written with
+agents too. Nobody on the team typed most of either version by hand. What
+changed between the two is not who writes the code. It is what checks it.
 
-Claude Opus 4.5 came out on November 24, 2025. A few months later I wrote about
-[what it changed for me](/blog/ai-tools-journey-opus-4-5/): before it, I only
-trusted agents with shell scripts, and after it, Rust became something an agent
-could write well. A year in, I want to look at what held up, what I got wrong,
-and where I think this goes next. The short version is that the way software
-gets made has turned all the way around in a year, and what software engineering
-means turned with it.
+In February I wrote about
+[my AI tools journey since Opus 4.5](/blog/ai-tools-journey-opus-4-5/), and the
+claim in that post was that capable agents make compiled languages practical for
+work I used to reserve for scripts. Later I turned that into a
+[decision matrix for language choice](/blog/language-choice-in-the-llm-era/)
+that leaned toward static languages for anything new. This year I got to test
+the prediction on real work, and it came full circle: we went the other way
+first, and ended up where the prediction said we would.
 
-## Bash or Rust, the Agent Does Not Care
+## The Experiment: Scripts in Production
 
-The bet a year ago was that agents would move us toward static languages. We ran
-the experiment anyway. We put a lot of scripting language into production, and
-what came back confirmed it: there is no difference between an agent writing
-Bash and an agent writing Rust. The agent produces either one at about the same
-speed, with about the same amount of steering from me.
+We put a lot of scripting languages into production this year. It was not a
+principled experiment at the start; Bash and Python were the fastest way to get
+automation running, and agents produce them as easily as anything else. That
+part of my February claim held up completely. There is no difference between an
+agent writing Bash and an agent writing Rust. The authoring cost is the same.
 
-The difference is everything around the code. With Bash, the only way to know
-the script is good is to run it, or to spend tokens having an agent read it
-carefully and reason about whether it is good. With Rust, the compiler does that
-checking for free, every time, and it does not get tired or skim. In all
-honesty, that is the whole trade. Instead of spending tokens convincing myself a
-script is correct, I let the compiler tell the agent whether the code is
-correct, and the agent fixes what it finds before I ever look at it.
+The difference showed up after authoring. With the scripts, the only way to know
+whether a change was correct was to run it, so validation meant spending agent
+tokens reading the script back, reasoning about quoting and exit codes, and
+executing it to see what happened. With Rust, the compiler does a large share of
+that checking before anything runs, and it does it the same way every time.
+Instead of paying tokens to confirm that a script is probably fine, I let the
+compiler confirm that the code is well-formed and spend the tokens on the
+behavior that actually matters.
 
-The one real cost is deployment. A script you can copy and paste and run. A
-binary needs a compile phase, a build per platform, and a decided story for how
-it gets onto the machine. With Rust you have to figure out deployment ahead of
-time, which is the same point I landed on in
-[language choice in the LLM era](/blog/language-choice-in-the-llm-era/): the
-language barely matters to the agent anymore, and the deployment story matters a
-lot to everyone else. Once deployment is solved once, it stays solved, and the
-compiler keeps paying out on every change after that.
+Rust does not remove the need for a good signal; it moves where the signal comes
+from. What made the port work was a strong compile step plus end-to-end
+validation suites that run locally. Between the two, an agent can tell on its
+own whether something works, and so can I. That is the setup I would ask for now
+on any new piece of software: a compiler that rejects bad code early and a local
+suite that proves the whole path.
 
-There is a distinction worth keeping here. While I am developing, an agent will
-happily write a little Python or PowerShell on the fly to automate a task, look
-something up, or reshape some data. That is fine, and I do not expect it to
-stop. Runtime glue that lives for an afternoon is a different thing from
-software that ships. For the software that ships, I think Rust won.
+The real cost of the switch is deployment. A script can be copied onto a machine
+and run. A compiled tool has to have its deployment figured out ahead of time:
+build targets, artifacts, where the binary lives, how it gets updated. That is
+real work, and it is the honest reason scripts are still tempting. But it is
+work you do once per tool, while the validation savings show up on every change.
 
-## The Abstraction Layer Moved Up Again
+Scripts still have a place, at runtime. An agent that writes a few lines of
+Python or PowerShell on the fly to automate a task in the middle of a session is
+doing exactly what scripting languages are good at, and that is fine while
+developing. The line I draw now is between code the agent uses once and software
+we keep. Software we keep gets a compiler.
 
-The way I make sense of this is the arrival of compilers. Before compilers, you
-had to really understand how assembly worked, because that was the program.
-After compilers, most people wrote in a higher-level language and trusted the
-compiler to produce the assembly. Some people still understood assembly deeply,
-and they still mattered (someone has to write the compiler, and someone has to
-find out why the hot loop is slow), but most programmers stopped needing to read
-it.
+## Rust Is Becoming the New Assembly
 
-I think that is happening again, one layer up. Rust is becoming the new
-assembly: the thing the agent emits, the thing the compiler checks, the thing
-some people understand deeply and most people never read line by line. And the
-reason it is Rust (or a language like it) and not Bash or Python is the same
-reason assembly was never written by hand once compilers were good. You want the
-lowest layer to give the strongest signal. Memory safety is part of that, but
-the bigger part is that a strict compiler is the best automated reviewer an
-agent has. If the compiler accepts it and a local end-to-end validation suite
-passes, the agent knows something is working without me in the loop. A year ago,
-building that kind of full validation locally felt like a stretch. I think we
-are there now.
+Before compilers, programming meant understanding how assembly worked, because
+that was the layer you wrote in. Compilers moved most programmers one layer up,
+and assembly became something some people understand deeply and most people
+rarely read. I think the same move is happening again, one layer higher.
 
-Abstractions will keep getting built on top of this, the same way they got built
-on top of C. I do not know what they will look like. I do expect that most of
-the people building software a year from now will not be reading the Rust their
-agents wrote, any more than most of us read the assembly our compilers write.
+Agents are the new layer, and the language underneath them is shifting toward
+whatever gives the agent and the compiler the clearest signal. Memory safety is
+part of that, but not all of it. Strong types, explicit errors, and tests that
+live next to the code all make "is this working?" a question the toolchain can
+answer instead of a question someone has to investigate. My bet for that layer
+is Rust. It is going to be here to stay, and it is going to play the part
+assembly used to play: some people will understand it well, others will work
+above it, and abstractions will keep getting built on top.
 
-## The Job Is Systems Engineering Again
+Moving up a layer does not mean the lower layer stops mattering. Some work
+really does need to go faster or use less memory, and on those problems someone
+has to dig in, read what the agent produced, and understand why it is slow. I
+expect to spend stretches of time doing exactly that. Reliability also still
+sits underneath everything; a faster way to write code is not a faster way to
+make it dependable.
 
-So what is the job, if not typing code? I looked back at where my time went this
-year, and I would put coding at roughly 20% of it. That number needs a little
-care next to the one in
-[agents are taking the Drive](/blog/agents-are-taking-the-drive/), where I said
-about 80% of the software I produce starts as a prompt. Both are true. One
-measures where the code comes from; this one measures where my hours go.
+## Where the Other 80% of My Time Went
 
-Most of my hours went into the loop around the code: figuring out what was
-actually needed, running the thing and validating that it did what was needed,
-and then doing another loop. The last part of my time went to managing agents,
-and to managing what they cost. Agent consumption is still a big cost factor,
-and keeping it aligned with the value of the work is now a regular part of the
-job. It is becoming ordinary, though: one more tool in the toolbox, with a
-budget like any other.
+In October I wrote that
+[roughly 80% of my software now starts as a prompt](/blog/agents-are-taking-the-drive/).
+Looking at where my time went this year instead of where the code came from
+gives a matching number from the other side: about 20% of my time was coding,
+and most of that coding went through agents rather than my hands.
 
-The rest of my time was never code to begin with. My job already meant working
-with operations folks, with project management, and with security folks. Code
-was always one part of the solution space, not the whole of it. That is the
-reason "software engineering is solved" has never sounded right to me. It is not
-solved. It is shifting, and I think it is shifting back toward something older.
+The rest went to everything around the code. Deploying it and running it.
+Validating that it does what was needed, figuring out what is needed in the
+first place, and then going around the loop again. A real share went to managing
+agents themselves, and another share went to managing the cost of agent
+consumption. Cost is still a big factor, and so is alignment (getting the agent
+to do the thing I meant rather than a plausible neighbor of it). When a pattern
+of agent work proves itself, it turns into tooling and ends up in the toolbox,
+which is its own piece of engineering.
 
-Before computers were everywhere, systems engineering was its own discipline:
-people whose job was to look at the whole system (the parts, the people who
-operate it, the way it gets deployed, the way data gets in and out) and make the
-pieces work together. Software made a large share of engineering about writing
-the software itself. Now that the writing is cheap, I think we are moving to a
-place where humans are less involved with the machinery of the code and more
-involved with the questions around it. How do we deploy this? How do we get the
-data in? Who operates it, and how will we know when it breaks? Integration,
-specification, and validation are where my time goes now, and I would not be
-surprised if "systems engineering" comes back as the name for what software
-engineers do. It fits the work better than the name we have.
+My job also has always involved people who are not writing code: operations,
+project management, and security. None of that went away. When people say
+software engineering is solved, what I see instead is the work shifting. It is
+not that different from before; it moved up the stack, and that is fine.
 
-The other thing I did not predict: the last year created more work, not less.
-The old idea was that AI would free us from doing so much work. So far it has
-mostly let us do a lot more of it. We can get to a V1 really fast. Getting to a
-V2 and a V3 (the versions that are reliable, operable, and actually used) is
-still hard, and now there are many more V1s waiting for that. There is more that
-could be done than I can do. That can be a good thing or a bad thing, depending
-on how deliberately you choose. It is not less work.
+The surprise of the year is that agents created more work, not less. The old
+expectation was that AI would free us from work. So far it has done the
+opposite: it made much more work possible. Getting to a V1 is fast now. Getting
+to a V2 and a V3 (the versions that survive real users, real operations, and
+real change) is still slow, and there is more of that later work in front of me
+than I can do. Whether that is good or bad depends on the day, but it is not the
+story of engineers running out of things to do. I also still do not think
+anybody can just be a software engineer now. The typing got cheaper. Knowing
+what to build, proving it works, and keeping it working did not.
 
-## What I Expect From the Next Year
+This is where systems engineering comes back. Before computers were everywhere,
+systems engineering was the discipline of making a whole system work, and
+software, when there was any, was only one part of the solution space. Software
+engineers have always dealt with the rest of that space (the operators, the
+security reviews, the project plans), but the code used to dominate the
+calendar. With the code mostly generated, what is left is the system: how it is
+deployed, how the data gets in, how it is operated, and how all the parts meet.
+Humans are going to be less involved with the machinery of the code and more
+involved with those questions.
 
-These are predictions, not observations, so take them with that label.
+## What I Expect Next Year
 
-The models will keep getting better, but the jump will feel smaller than the one
-Opus 4.5 brought. Very unscientifically, the agents I use now (Opus 5.5 being
-the most recent) feel maybe 25% better than Opus 4.5. I am fairly sure it is not
-actually 25%, but it does feel better: I can get through a lot more, a lot
-faster. I also have access to some newer models, like GPT-6 Astra, that I mostly
-do not use, because they are too slow for the loop I run. There are still bugs,
-like in any other system. The leap that matters now is not in the model. It is
-in the systems we build around it.
+These are predictions, labeled as such.
 
-People who are not adopting AI are going to be left behind. I do not like
-writing that sentence, and I do not think it is a game anyone wins by waiting it
-out. The job is changing, and it is a different job now. You become a manager of
-agents, and you need to understand the business case more than before. It looks
-a lot like the move up a career ladder, where the higher you go, the less you do
-with your own hands. The difference is that you are still doing a lot of coding;
-it just goes through your agents instead of your hands.
+People who are not adopting AI are going to be left behind. I do not see a way
+to win this by waiting it out. The job is completely different now: an engineer
+becomes an agent manager, and an agent manager needs to understand the business
+case far better than an engineer who only had to implement a ticket. It looks a
+lot like moving up a career ladder, where each step up means doing less of the
+work with your own hands. The difference is that you are still doing a lot of
+coding; it just goes through your agents.
 
-That changes what I look for when we hire. Agency is very important. Taste is
-very important (I wrote about this in
-[craftsmanship, judgment, and taste](/blog/quest-engine-building-high-agency-teams/)).
-More than either, I want people who can move up the stack themselves and stop
-writing assembly, so to speak. Deep expertise still matters. Depending on the
-abstraction you work at, there will be stretches where something really needs to
-go fast or use less memory, and you will have to dig in and understand it at the
-bottom. Reliability still matters everywhere. But those are dives you take for a
-while and then come back up from, not where you live.
+That changes hiring. When we talk about what to look for in new hires, agency
+and taste come up first. I wrote about
+[craftsmanship, judgment, and taste](/blog/quest-engine-building-high-agency-teams/)
+as what humans bring to agent collaboration, and a year of practice made the
+list sharper rather than different. A candidate has to be able to move up the
+stack themselves, stop writing the equivalent of assembly, and still go deep
+when a problem demands it.
 
-I also do not think anyone can now be a software engineer just because agents
-write the code. The bar did not drop. It moved to integration, specification,
-and validation, and that is where the opportunity is for people who want to grow
-into it. If we design our systems around this, I think there is a real
-renaissance in software engineering available, and room for the humans in it to
-do steadier, more durable work.
+On the models: my unscientific sense is that the agents I use now are maybe 25%
+better than Opus 4.5 was. The step from Opus 4.5 to Opus 5.5 is real. I can
+watch a lot of things get done a lot faster, though I would not defend the exact
+number. I have access to Astra as well, but it is too slow for how I work today.
+The agents still have bugs, like any other system, and that is the point: we are
+moving to systems, and systems need engineering.
+
+So my forecast for the next year is that systems engineering becomes an actual
+named thing in software again, not a background skill. A lot of opportunity sits
+in that space for people willing to move into it. I am excited about it. We get
+to become directors of our own movie, and that is a different career from the
+one I started in.
 
 ---
 
-_A year ago I was surprised that an agent could write Rust I would trust. This
-year, the surprise was that the language stopped being the interesting choice at
-all: the compiler is the reviewer, deployment is the price, and the work that is
-left is deciding what the system should be and proving that it is. That is
-systems engineering, and it feels like a different career from the one I had two
-years ago. I am excited about it. We get to be the directors of our own movie
-now, and I expect next year's review to find that the change I am least sure
-about here (the name of the job) is the one that moved the most._
+_A year ago my bet was on compiled languages for agent-written code; this year
+the Bash-to-Rust port is the evidence, from one team and one set of tools. What
+would change my mind is a scripting toolchain that gives agents a validation
+signal as strong and as cheap as the Rust compiler, or a year in which agents
+make V2 and V3 as fast as V1. If either shows up, the stack moves again, and I
+will write that one too._

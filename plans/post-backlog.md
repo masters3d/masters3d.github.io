@@ -40,7 +40,7 @@ which the template shows once both posts are published
 | --- | --- | --- | --- | --- |
 | 1 | 2026-11-01 | B26 | Ingenio: The Engine Inside Engineering | `ingenio-the-engine-inside-engineering` |
 | 2 | 2026-11-15 | B03 | A Feature Needs a Life Cycle From Cradle to Grave | `feature-cradle-to-grave` |
-| 3 | 2026-11-24 | U03 | One Year After Opus 4.5: Rust Is the New Assembly and the Job Is Systems Engineering | `one-year-after-opus-4-5` |
+| 3 | 2026-11-24 | U03 | One Year After Opus 4.5: Software Engineering Moves Up the Stack | `one-year-after-opus-4-5` |
 | 4 | 2026-12-01 | B20 | PIE Theory: Being Seen Is Part of the Work | `pie-theory-being-seen-at-work` |
 | 5 | 2026-12-15 | B21 | Locus of Control at Work | `locus-of-control-at-work` |
 | 6 | 2027-01-01 | B22 | Seeking Is the Reward | `seeking-is-the-reward` |
