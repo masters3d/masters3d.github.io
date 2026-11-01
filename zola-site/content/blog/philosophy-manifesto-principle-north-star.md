@@ -1,13 +1,13 @@
 +++
 title = "Philosophy, Manifesto, Principle, North Star"
 date = "2027-07-01"
-draft = true
 description = "Teams often use philosophy, manifesto, principle, and North Star as if they were interchangeable. They are different tools: worldview, declaration, decision rule, and direction. Confusing them makes strategy sound clearer than it is."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
 tags = ["strategy", "principles", "language", "decision-making", "north-star", "manifesto"]
 [extra]
+scheduled = true
 editorial_track = "engineering-systems"
 related = ["kernel-of-strategy", "guiding-policies-behavior-alignment", "types-of-engineering-documentation"]
 +++
@@ -19,13 +19,15 @@ because that document shows the difference between a value and a usable decision
 structure. Carbon says safety means protecting programs from bugs that can
 become vulnerabilities, then separates guarantees, runtime error detection, and
 safety hardening. It states a philosophy first: prefer guaranteed safety where
-feasible, but preserve performance, interoperability with C++, and a low barrier
-to adoption. Then it turns that philosophy into principles about making safe
-choices easy, keeping compile-time rules understandable, limiting build modes,
-and relying on strong testing where the language cannot prove safety. Teams
-often use philosophy, manifesto, principle, and North Star as if they were four
-fonts for the same idea. Pick the one that sounds the most inspiring, put it at
-the top of the document, and the strategy feels more serious.
+feasible, without getting in the way of performance, interoperability with C++,
+or how easily new developers can ramp up. Then it turns that philosophy into
+principles about making safe choices easy, keeping compile-time rules
+understandable, limiting build modes, and relying on runtime checks, testing,
+and fuzzing where safety cannot be proven at compile time.
+
+Teams often use philosophy, manifesto, principle, and North Star as if they were
+four fonts for the same idea. Pick the one that sounds the most inspiring, put
+it at the top of the document, and the strategy feels more serious.
 
 But these words do different jobs. When they are blurred together, the document
 may sound aligned while leaving people without a usable decision rule. A

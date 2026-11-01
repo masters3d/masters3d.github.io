@@ -1,13 +1,13 @@
 +++
 title = "One Year After Opus 4.5: Rust Is the New Assembly and the Job Is Systems Engineering"
 date = "2026-11-24"
-draft = true
 description = "A year after Claude Opus 4.5, the prediction held: an agent writing Bash and an agent writing Rust cost about the same, so the compiler should do the checking instead of tokens. The abstraction layer moved up again, Rust is becoming the new assembly, and the job that is left looks more like systems engineering than typing code. It also turned out to be more work, not less."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Software Engineering"]
 tags = ["claude", "agents", "rust", "bash", "ai-development", "systems-engineering", "abstraction", "hiring", "predictions"]
 [extra]
+scheduled = true
 editorial_track = "software-engineering"
 related = ["five-levels-of-agent-capability", "software-3-0-needs-engineering-not-magic", "ten-years-in-software-engineering"]
 +++
