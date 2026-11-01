@@ -96,7 +96,7 @@ which the template shows once both posts are published
 | 56 | 2029-02-15 | B87 | Hypothesis-driven agent experiments: predictions, logs, and risks like confirmation bias | `hypothesis-driven-agent-experiments` |
 | 57 | 2029-03-01 | B77 | Career success metrics, individual and organizational, and growth strategies | `career-success-metrics-individual-and-organizational` |
 | 58 | 2029-03-15 | B88 | Measuring an agent beyond task completion | `measuring-an-agent-beyond-task-completion` |
-| 59 | 2026-11-29 | U02 | A Year of Worklogs: From a Personal Habit to a Team Practice (author's own; dated for the one-year mark, outside the 1st/15th cadence) | `a-year-of-worklogs` |
+| 59 | 2026-11-29 | U02 | A Year of Worklogs: From a Personal Habit to a Team Practice (author's own; scheduled for the one-year mark, outside the 1st/15th cadence) | `a-year-of-worklogs` |
 
 ## Engineering Systems
 

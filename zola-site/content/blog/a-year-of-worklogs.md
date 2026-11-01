@@ -1,24 +1,18 @@
 +++
 title = "A Year of Worklogs: From a Personal Habit to a Team Practice"
 date = "2026-11-29"
-draft = true
 description = "A year after I started keeping what I then called plans, worklogs are how my team tracks work in flight. They work well from today out to a few days from now. Above that, at the feature and epic level, nobody owns the roll-up anymore."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
 tags = ["worklogs", "agents", "planning", "agile", "retrospectives", "workflow"]
 [extra]
+scheduled = true
 editorial_track = "engineering-systems"
 related = ["why-i-love-worklogs", "effort-tracking-vs-task-tracking", "nine-years-of-copious-notes", "reporting-features-without-a-pm"]
 +++
 
-> **Draft.** Before publishing, the author should confirm: the month the first
-> "plans" file was written (stated here as around November 2025), the month the
-> team adopted worklogs (stated here as about nine months ago), the tracker of
-> record for features and epics, and any feature-reporting attempts that were
-> tried and dropped (the gaps section has room for them).
-
-Around November 2025 I started keeping a running file for each piece of work I
+In November 2025 I started keeping a running file for each piece of work I
 handed to an agent. I called them plans. They were not the `plan.md` an agent
 writes for itself at the start of a session; they were mine, and they outlived
 the session. By the time I wrote
