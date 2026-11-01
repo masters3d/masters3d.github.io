@@ -1,20 +1,20 @@
 +++
-title = "Dotnet Actor Systems and Testable Concurrency"
+title = ".NET Actor Systems and Testable Concurrency"
 date = "2027-07-15"
-draft = true
 description = "Actor systems are useful because they turn shared state into message boundaries. Coyote adds the missing engineering move: make the schedules testable before the rare interleaving becomes production behavior."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Software Engineering"]
 tags = ["dotnet", "actors", "concurrency", "coyote", "testing"]
 [extra]
+scheduled = true
 editorial_track = "software-engineering"
 related = ["swift-actor-model-vs-rust-ownership", "cognitive-continuous-integration-and-the-broken-agent-loop"]
 +++
 
 In April 2022 I wrote myself a short note titled "dotNet Actor System." The
 whole note was a small pile of links and names: an On .NET episode about
-reliable async systems with Coyote, Microsoft's Coyote videos, Dapper, Orleans
+reliable async systems with Coyote, the Coyote project's videos, Dapper, Orleans
 (which I wrote down then as "New Orleans"), Coyote, and Service Fabric. It was
 not an argument yet. It was a sign post to a question I was circling: if actors
 help isolate concurrent work, what kind of engineering system makes that
@@ -43,18 +43,25 @@ which messages exist, who can send them, and what state transition each one
 permits. A service becomes less like a bag of methods and more like a small
 state machine with an inbox.
 
-The names in the original issue point at that direction, though they do not all
-sit at the same layer. Orleans gives the actor-like virtual actor model. Service
-Fabric sits in the platform and coordination layer. Coyote tests asynchronous
-behavior. Dapper is closer to the persistence edge, a reminder that state still
-has to be read and written somewhere. The common theme is not a single framework
-choice. It is the attempt to give concurrent, distributed work a shape that
-engineers can reason about.
+The names in that note point in that direction, though they do not all sit at
+the same layer. [Orleans](https://github.com/dotnet/orleans) introduced the
+virtual actor model, where an actor exists logically and the runtime decides
+when and where to activate it.
+[Service Fabric](https://github.com/microsoft/service-fabric) is a distributed
+systems platform for stateless and stateful services, with its own actor model
+on top. [Coyote](https://github.com/microsoft/coyote) tests asynchronous
+behavior. The note says "Dapper," which could be either of two projects.
+[Dapper](https://github.com/DapperLib/Dapper) is a small object mapper for .NET,
+which would put it at the persistence edge as a reminder that state still has to
+be read and written somewhere. [Dapr](https://github.com/dapr/dapr) has a
+virtual actor building block, which would fit the list better. Either way, the
+common theme is not a single framework choice. It is the attempt to give
+concurrent, distributed work a shape that engineers can reason about.
 
 That is where I would separate this from the Swift and Rust comparison. Swift
 actors and Rust ownership are language mechanisms. They change what the compiler
 can reject. .NET actor systems, at least in the way I was collecting them in
-that issue, are architecture mechanisms. They change where the seams are. A seam
+that note, are architecture mechanisms. They change where the seams are. A seam
 is weaker than a proof, but it is still valuable. A good seam gives testing and
 review somewhere to stand.
 
@@ -71,9 +78,10 @@ of code you are looking at. They are bugs in the order of events. If a test only
 runs one order, it may be exercising the least interesting version of the
 program. The failure lives in the schedule that the test never tried.
 
-Coyote's promise, as captured by the Microsoft material I linked, is to make
-asynchronous systems testable by controlling and exploring those schedules. That
-is a different mental model from adding sleeps to tests and hoping the race
+Coyote's promise, in its own description, is testing concurrent C# code and
+deterministically reproducing bugs. It does that by controlling and exploring
+those schedules, through what the project calls a concurrency unit test. That is
+a different mental model from adding sleeps to tests and hoping the race
 appears. The test harness becomes part of the design. It can systematically
 force interleavings, expose deadlocks, and replay failures that would otherwise
 look random.
@@ -118,7 +126,7 @@ like Coyote is valuable because it changes the search from accidental to
 deliberate. It lets the engineering system ask, over and over, what happens if
 this message wins the race instead of that one.
 
-Looking back at that April 2022 issue, I can see why I saved the links without
+Looking back at that April 2022 note, I can see why I saved the links without
 knowing what to say yet. The interesting part was not "use actors." It was the
 pairing of actors with systematic schedule testing. Isolation without testing
 still leaves too much to luck. Testing without isolation has too much surface

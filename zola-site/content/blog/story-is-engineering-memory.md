@@ -1,29 +1,35 @@
 +++
 title = "Story Is Engineering Memory"
 date = "2027-06-01"
-draft = true
 description = "Engineering information does not survive because it was written down once. It survives when people can store it, retell it, and use it under pressure. Story is one of the ways technical context becomes memory."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Human Systems"]
 tags = ["story", "engineering", "memory", "documentation", "context", "narrative"]
 [extra]
+scheduled = true
 editorial_track = "human-systems"
 related = ["cohesive-narrative", "motivation-ability-narrative", "types-of-engineering-documentation"]
 +++
 
-I have read technically correct documents that left almost no memory behind.
-Every field was filled in. Every section had the expected heading. The diagram
-was there, the alternatives were there, the decision was there. A week later,
-nobody could explain why the decision happened without reopening the document
-and scanning for the one sentence that mattered.
+In August 2025 I wrote down a question I had been circling: where does story fit
+into the engineering process, and how much of what we know do we store as story?
+Next to it I had a few small diagrams, each one a link between two or three
+words.
 
-I have also heard a five-minute story about a production incident that stayed
-with a team for years. Not because it was dramatic, though incidents usually
-are, but because it had shape. We thought the cache was harmless. The deploy
-changed the read path. The metrics looked healthy because the dashboard averaged
-away the cohort that was failing. We fixed the bug, but the real lesson was
-about observability lying politely when the question is too broad.
+The question came from a familiar gap. A technically correct document can leave
+almost no memory behind. Every field is filled in. Every section has the
+expected heading. The diagram is there, the alternatives are there, the decision
+is there. A week later, nobody can explain why the decision happened without
+reopening the document and scanning for the one sentence that mattered.
+
+Compare that with a five-minute incident story, something like this one. We
+thought the cache was harmless. The deploy changed the read path. The metrics
+looked healthy because the dashboard averaged away the cohort that was failing.
+We fixed the bug, but the real lesson was about observability lying politely
+when the question is too broad. A story with that shape can stay with a team for
+years. Not because it is dramatic, though incidents usually are, but because one
+event leads to the next.
 
 That story stores more than facts. It stores sequence, surprise, cause, and
 consequence. That is why story belongs in engineering.
@@ -32,8 +38,10 @@ consequence. That is why story belongs in engineering.
 
 Engineering organizations often treat documentation as storage. Put the
 information somewhere durable and the knowledge is preserved. That is only half
-true. A document can store facts without giving people a reliable way to
-retrieve the meaning under pressure.
+true. Picking the
+[right kind of document](/blog/types-of-engineering-documentation/) helps, but a
+document can store facts without giving people a reliable way to retrieve the
+meaning under pressure.
 
 Story gives facts a retrieval path. It tells a person where to start, what
 changed, what somebody believed at the time, what broke that belief, and what
@@ -47,11 +55,11 @@ incident reviews, migrations, product tradeoffs) usually need narrative because
 judgment lives in context. The answer matters less without the path that made it
 the answer.
 
-That is what the small narrative diagrams in the source material suggest to me:
-will connects to way; motivation connects to ability; why connects to narrative;
-narrative connects to how. Story is the bridge between intent and method.
-Without it, the "why" stays abstract and the "how" becomes a ritual people copy
-without understanding.
+That is what the small diagrams in my note were reaching for. Will connects to
+way. Motivation and ability feed each other. Then a third word joins each pair:
+narrative sits between motivation and ability, and narrative sits between why
+and how. Story is the bridge between intent and method. Without it, the "why"
+stays abstract and the "how" becomes a ritual people copy without understanding.
 
 ## Narrative is not decoration
 

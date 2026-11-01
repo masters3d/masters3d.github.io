@@ -1,13 +1,13 @@
 +++
 title = "Build Mode, Reflect Mode, and Quality Without a Name"
 date = "2027-06-15"
-draft = true
 description = "Some quality is specified before construction, and some quality only becomes visible after contact with the thing being built. Build mode and reflect mode are different cognitive states, and good work needs a loop between them."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Human Systems"]
 tags = ["judgment", "quality", "taste", "craft", "reflection", "quest-engine"]
 [extra]
+scheduled = true
 editorial_track = "human-systems"
 series = "quest-engine"
 related = ["seeking-is-the-reward", "deliberate-practice-for-engineers", "kaizen-and-the-observe-orient-decide-act-return-loop"]
@@ -46,8 +46,11 @@ invite the right behavior? Is the design progressive in the sense that it can
 grow without collapsing into ceremony? That is closer to taste engineering. The
 answer cannot always be derived from a code. It has to be judged.
 
-"Quality without a name" points at this second category. It is not mystical. It
-is quality whose rule has not been fully articulated yet, often because the rule
+"Quality without a name" is Christopher Alexander's phrase from
+[_The Timeless Way of Building_](https://openlibrary.org/isbn/0195024028)
+(1979), where he uses it for the quality that makes buildings and towns feel
+alive. The phrase points at this second category. It is not mystical. It is
+quality whose rule has not been fully articulated yet, often because the rule
 emerges from many small relationships rather than one measurable property. You
 notice it as fit before you can reduce it to a checklist. Reflect mode is often
 where that unnamed fit becomes language the next builder can use.
