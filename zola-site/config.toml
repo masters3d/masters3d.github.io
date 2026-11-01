@@ -100,7 +100,11 @@ feed_limit = 0
 # though the DOI is valid in a browser; skip only that DOI.
 # mckinsey.com resets automated link-checker requests (http2 stream error) even
 # though the cited Rumelt article loads in a browser; skip only that article.
+# The Strathern (1997) DOI resolves to a Wiley Online Library article page; Wiley
+# blocks automated requests the same way the publisher DOIs above do, so skip only
+# that DOI.
 skip_prefixes = [
+    "https://doi.org/10.1002/(SICI)1234-981X(199707)5:3%3C305::AID-EURO184%3E3.0.CO;2-4",
     "https://press.princeton.edu/books/paperback/9780691164076/how-to-solve-it",
     "https://doi.org/10.1207/s15430421tip4104_2",
     "https://quoteinvestigator.com/2014/05/22/solve/",

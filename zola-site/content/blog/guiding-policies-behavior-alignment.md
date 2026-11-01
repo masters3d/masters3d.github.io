@@ -1,13 +1,13 @@
 +++
 title = "Guiding Policies and Behavior Alignment"
 date = "2027-05-15"
-draft = true
 description = "Guiding policies are useful only when they align behavior. They should help people make local decisions that fit organizational goals without turning every choice into permission seeking or compliance theater."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
 tags = ["guiding-policy", "behavior", "alignment", "strategy", "engineering-culture"]
 [extra]
+scheduled = true
 editorial_track = "engineering-systems"
 related = ["kernel-of-strategy", "promotion-driven-development", "quality-engineering-vs-engineering-quality"]
 +++
@@ -15,7 +15,12 @@ related = ["kernel-of-strategy", "promotion-driven-development", "quality-engine
 In May 2024 I wrote a short question to myself: "How does one go about creating,
 updating and enforcing guiding policies?" I put it under the heading of behavior
 alignment, but the question is really about the distance between what an
-organization says and what people actually do.
+organization says and what people actually do. "Guiding policy" is Richard
+Rumelt's term, the middle piece of
+[the kernel of strategy](/blog/kernel-of-strategy/): a diagnosis names the
+challenge, a guiding policy sets the approach, and coherent actions carry it
+out. The kernel says what a guiding policy is. My note asked the next question:
+how do you get one to change behavior?
 
 Every company has stated values. Every engineering organization has principles.
 Some are useful. Some are posters. The difference is not the wording. The
@@ -78,7 +83,8 @@ that normal work is exempt.
 
 ## Policies Need Feedback Loops
 
-Behavior alignment connects directly to action, feedback, and adjustment. The
+Behavior alignment connects directly to
+[action, feedback, and adjustment](/blog/action-feedback-adjustment/). The
 policy asks for an action. The organization observes the behavior and its
 outcomes. Then the policy, incentive, or surrounding system has to adjust. A
 guiding policy is a hypothesis about behavior. It should be observed and
@@ -86,8 +92,11 @@ updated.
 
 Maybe the policy is too vague. Maybe it produces gaming. Maybe it works for one
 team and fails for another because the context changed. Maybe the metric chosen
-to observe it became the target, and Goodhart's law arrived on schedule. Maybe
-the policy is correct but the surrounding incentives still fight it.
+to observe it became the target, and Goodhart's law arrived on schedule (in
+Marilyn Strathern's
+[1997 phrasing](<https://doi.org/10.1002/(SICI)1234-981X(199707)5:3%3C305::AID-EURO184%3E3.0.CO;2-4>),
+"when a measure becomes a target, it ceases to be a good measure"). Maybe the
+policy is correct but the surrounding incentives still fight it.
 
 Updating a policy should not be treated as failure. It is how the organization
 keeps the policy alive. Old policies can become cultural fossils: repeated
