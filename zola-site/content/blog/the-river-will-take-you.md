@@ -1,7 +1,6 @@
 +++
 title = "The River Will Take You"
 date = "2029-04-01"
-draft = true
 description = "Two Spanish warnings from childhood, \"te va a llevar el río\" and \"te va a llevar el tren,\" and what they say about time, upkeep, and building for the high water."
 template = "blog-post.html"
 [taxonomies]
@@ -9,6 +8,7 @@ categories = ["Human Systems"]
 tags = ["phrases", "spanish", "time", "maintenance", "preparation", "mental-models"]
 [extra]
 editorial_track = "human-systems"
+scheduled = true
 +++
 
 Growing up, two warnings came out of adults' mouths almost as often as "eat your
