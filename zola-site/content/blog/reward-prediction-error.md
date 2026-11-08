@@ -1,7 +1,6 @@
 +++
 title = "Reward Prediction Error: Dopamine Fires on the Surprise"
-date = "2029-04-01"
-draft = true
+date = "2027-01-15"
 description = "Reward prediction error sounds like three things, but it names two: a prediction and an outcome. When the outcome beats the prediction it lands as a reward, and when it falls short it lands as an error. That gap is the teaching signal behind learning and positive reinforcement. Prediction is Search and outcome is Renew. What the name leaves out is the action in between, which is Drive, and that hidden part is where the learning gets used."
 template = "blog-post.html"
 [taxonomies]
@@ -9,8 +8,9 @@ categories = ["Human Systems"]
 tags = ["motivation", "dopamine", "learning", "reinforcement", "feedback", "reward-prediction-error", "search-drive-renew", "quest-engine"]
 [extra]
 editorial_track = "human-systems"
+scheduled = true
 series = "quest-engine"
-related = ["seeking-is-the-reward", "quest-engine-introduction", "iterative-integration", "update-propagation", "adaptive-control", "the-progress-principle", "overjustification-effect-at-work", "objective-function-search-drive-renew"]
+related = ["seeking-is-the-reward", "quest-engine-introduction", "action-feedback-adjustment", "cohesive-narrative", "iterative-integration", "deliberate-practice-for-engineers", "update-propagation", "adaptive-control", "the-progress-principle", "overjustification-effect-at-work", "objective-function-search-drive-renew"]
 +++
 
 In [Seeking Is the Reward](/blog/seeking-is-the-reward/) I started from a
@@ -123,22 +123,19 @@ the hidden one is named.
 | Outcome    | Renew             | Compare what happened with what you predicted          |
 
 **Prediction is Search.** Search builds the context and the mental model you act
-from. Its middle step, [Cohesive Narrative](/blog/cohesive-narrative/), is
-literally "build accurate mental models," and a mental model is a prediction
-about what will happen when you act. A thin Search produces a vague prediction,
-and a vague prediction cannot be wrong in a useful way, because there is nothing
-precise enough to compare against.
+from. Its middle step, Cohesive Narrative, is literally "build accurate mental
+models," and a mental model is a prediction about what will happen when you act.
+A thin Search produces a vague prediction, and a vague prediction cannot be
+wrong in a useful way, because there is nothing precise enough to compare
+against.
 
 **Outcome is Renew.** The [introduction](/blog/quest-engine-introduction/)
 defines Renew as "examine what happened against what you expected." That
-sentence is the comparison.
-[Iterative Integration](/blog/iterative-integration/) (measure results against
-expectations) reads the gap,
-[Deliberate Practice](/blog/deliberate-practice-for-engineers/) finds the
-patterns in it, and [Update Propagation](/blog/update-propagation/) is the
-update rule itself: change the model, by an amount that fits the size of the
-gap, so the next prediction is better. A Renew step that records only "it
-worked" has read no gap and learned nothing.
+sentence is the comparison. Iterative Integration (measure results against
+expectations) reads the gap, Deliberate Practice finds the patterns in it, and
+Update Propagation is the update rule itself: change the model, by an amount
+that fits the size of the gap, so the next prediction is better. A Renew step
+that records only "it worked" has read no gap and learned nothing.
 
 **Action is Drive, and it is the part being taken for granted.** Drive is
 committing to one objective, matching the challenge to your capability, and
@@ -177,9 +174,9 @@ error, was the prediction wrong, or was the action wrong? Did I misjudge the
 problem, or did I misjudge the problem correctly and then execute poorly? The
 same gap can mean either, and the update is different in each case. If I only
 think in terms of prediction and outcome, I will always fix my model and never
-look at what I did. [Adaptive Control](/blog/adaptive-control/), the last step
-of Drive, is where that question gets asked while the action is still running
-rather than after the fact.
+look at what I did. Adaptive Control, the last step of Drive, is where that
+question gets asked while the action is still running rather than after the
+fact.
 
 Put together, the three moves turn into a short practice. In Search, write the
 prediction down before acting, so there is something to compare against. In
@@ -189,8 +186,9 @@ outcome landed as a reward or an error, decide whether the gap belongs to the
 prediction or the action, and update that one, by about as much as the gap
 warrants. And be careful about announcing a reward before the work is done,
 including to yourself, because the announcement moves it into the prediction and
-spends the surprise early. That is one mechanism behind the warning in
-[The Overjustification Effect at Work](/blog/overjustification-effect-at-work/).
+spends the surprise early. That is one mechanism behind the overjustification
+effect, where a promised reward crowds out the reason someone cared in the first
+place.
 
 In the earlier post I admitted that I once read the flat feeling after shipping
 as a defect in how I was wired. The flat fifth win invites the same misreading.
