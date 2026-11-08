@@ -1,13 +1,13 @@
 +++
 title = "Remote Work Needs Context, Not Just Tools"
 date = "2027-11-01"
-draft = true
 description = "The useful lesson from remote and async work research is not that every team should be async all the time. It is that distributed work succeeds when context survives distance, meetings are intentional, and chat does not become the only memory."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
 tags = ["remote-work", "async-work", "context", "meetings", "collaboration"]
 [extra]
+scheduled = true
 editorial_track = "engineering-systems"
 related = ["conversation-formats-fishbowl", "open-guides-over-closed-answers", "shared-understanding-as-a-practice"]
 +++

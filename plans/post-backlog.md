@@ -109,15 +109,15 @@ which the template shows once both posts are published
 | B04 | Design review without governance is empty; working groups that approve features | `specs/design_governance/VISION.md` (#20), `specs/design_reviews_references/VISION.md` (#9) | P2 | scheduled | `design-review-needs-governance` |
 | B05 | One loop for retrospective and planning (a "sprintspective") | `specs/define_the_act_pro-spective_and_retro-spective_in_the_same_flowfeedback_loop_maybe_sprintspective/VISION.md`, issue #17 | P2 | scheduled | `sprintspective-one-loop` |
 | B06 | Open guides over closed answers: answer once on a wiki instead of in one email | `specs/behavior_general_open_guides_over_specify_closed_guides/VISION.md`, issue #7 | P2 | scheduled | `open-guides-over-closed-answers` |
-| B07 | Conversation types for collaboration (fishbowl and other formats) | `specs/conversation_types_for_collaborations/VISION.md`, issue #16 | P3 | draft | `conversation-formats-fishbowl` |
+| B07 | Conversation types for collaboration (fishbowl and other formats) | `specs/conversation_types_for_collaborations/VISION.md`, issue #16 | P3 | scheduled | `conversation-formats-fishbowl` |
 | B08 | Promotion-driven development: how promotion incentives shape what gets built | `specs/promotion_driven_development_pdd/VISION.md`, issue #11 | P2 | scheduled | `promotion-driven-development` |
 | B09 | Overlapping roles in tech and the risks where they intersect | `specs/roles_overlapping_in_tech_and_the_intersection_you_should_be_beware_of/VISION.md`, issue #14 | P2 | scheduled | `overlapping-roles-in-tech` |
 | B10 | Kinds of documentation and which medium fits each (team-private vs engineering docs) | `presentation/eng_meta_documenation.md`, `presentation/eng_contextual_awareness.md` | P2 | scheduled | `types-of-engineering-documentation` |
 | B11 | The kernel of strategy (Rumelt, *Good Strategy / Bad Strategy*) | `specs/from_good_strategy_bad_strategy/VISION.md` (#26), `media/synergies_strategy_kernel.drawio` | P2 | scheduled | `kernel-of-strategy` |
 | B12 | Action, feedback, adjustment: slow and noisy feedback loops | `specs/action_feedback_adjustment/VISION.md`, `specs/action-feedback-adjustment/VISION.md`, issue #30 | P2 | scheduled | `action-feedback-adjustment` |
-| B13 | Research on remote and async work (Microsoft New Future of Work) | `specs/async_workplace_public_research_from_microsoft/VISION.md`, issue #10 | P3 | draft | `remote-work-needs-context-not-just-tools` |
+| B13 | Research on remote and async work (Microsoft New Future of Work) | `specs/async_workplace_public_research_from_microsoft/VISION.md`, issue #10 | P3 | scheduled | `remote-work-needs-context-not-just-tools` |
 | B14 | Guiding policies that align individual behavior with organizational goals | `specs/behavior_alignment/VISION.md`, issue #29 | P2 | scheduled | `guiding-policies-behavior-alignment` |
-| B15 | People systems and the hiring pipeline | `presentation/career_progression.md`, `presentation/career_init.md` | P3 | draft | `people-systems-and-the-hiring-pipeline` |
+| B15 | People systems and the hiring pipeline | `presentation/career_progression.md`, `presentation/career_init.md` | P3 | scheduled | `people-systems-and-the-hiring-pipeline` |
 
 ## Human Systems
 
@@ -130,30 +130,30 @@ which the template shows once both posts are published
 | B24 | Build mode vs reflect mode; judgement and "quality without a name" | `specs/cognitive_architecture_wrt_build_mode_and_reflect_mode/VISION.md`, issue #56 | P2 | scheduled | `build-mode-reflect-mode-quality-without-a-name` |
 | B25 | Philosophy, manifesto, principle, north star: how they differ (drafted in Engineering Systems) | `specs/philosophy_manifesto_principle_northstar/VISION.md`, issue #19 | P2 | scheduled | `philosophy-manifesto-principle-north-star` |
 | B26 | Ingenio: the engineering background and history of the word (ingenium, engine, engineer, sugar mill), plus ingenious vs ingenuous | `specs/ingenious_vs_ingenuous/VISION.md` (#13), `README.md` | P3 | scheduled | `ingenio-the-engine-inside-engineering` |
-| B27 | Resourcefulness and agency as inherited vs learned traits | `specs/resourceful_agency_genetic_systems_relationships/VISION.md`, issue #38 (check overlap with `resourcefulness-is-its-own-quest-engine`) | P3 | draft | `resourcefulness-agency-and-inheritance` |
+| B27 | Resourcefulness and agency as inherited vs learned traits | `specs/resourceful_agency_genetic_systems_relationships/VISION.md`, issue #38 (check overlap with `resourcefulness-is-its-own-quest-engine`) | P3 | scheduled | `resourcefulness-agency-and-inheritance` |
 
 ## Software Engineering
 
 | ID | Idea | Source in ingenio | Priority | Status | Post |
 | --- | --- | --- | --- | --- | --- |
 | B30 | Actor systems in .NET (Coyote); pairs with the Swift actors vs Rust ownership post | `specs/dotnet_actor_system/VISION.md`, issue #15 | P2 | scheduled | `dotnet-actor-systems-and-testable-concurrency` |
-| B31 | Software 3.0 as an engineering framework | `specs/software_3_0_engineering_framework/VISION.md` | P3 | draft | `software-3-0-needs-engineering-not-magic` |
-| B32 | INGENIO-1 and "cognitive CI": an agent turning issues into specs, and what broke | `cognitive_systems/`, `experiments/`, `COGNITIVE_CI_*.md`, `RACE_CONDITION_FIX.md`, issues #36, #37, #42, #54 | P2 | draft | `cognitive-continuous-integration-and-the-broken-agent-loop` |
+| B31 | Software 3.0 as an engineering framework | `specs/software_3_0_engineering_framework/VISION.md` | P3 | scheduled | `software-3-0-needs-engineering-not-magic` |
+| B32 | INGENIO-1 and "cognitive CI": an agent turning issues into specs, and what broke | `cognitive_systems/`, `experiments/`, `COGNITIVE_CI_*.md`, `RACE_CONDITION_FIX.md`, issues #36, #37, #42, #54 | P2 | scheduled | `cognitive-continuous-integration-and-the-broken-agent-loop` |
 
 ## Quest Engine (only if the post changes or defines the model)
 
 | ID | Idea | Source in ingenio | Priority | Status | Post |
 | --- | --- | --- | --- | --- | --- |
-| B40 | Kaizen and the OODA loop (observe, orient, decide, act) as the roots of Systematic Improvement | `presentation/eng_systematic_improvement.md`, `pillars/systematic_improvement.md` | P2 | draft | `kaizen-and-the-observe-orient-decide-act-return-loop` |
-| B41 | The fractal pattern: sub-pillars repeat the know, act, improve cycle | `pillars/FRAMEWORK_STRUCTURE.md`, `presentation/blog_quest_engine_intro.md` | P2 | draft | `the-fractal-pattern-inside-the-quest-engine` |
-| B42 | Anti-patterns per pillar (information hoarding, stale docs, meeting culture, analysis paralysis, scope creep) | `pillars/contextual_awareness.md`, `pillars/clear_strategy.md`, `pillars/systematic_improvement.md` | P2 | draft | `anti-patterns-show-where-the-loop-broke` |
+| B40 | Kaizen and the OODA loop (observe, orient, decide, act) as the roots of Systematic Improvement | `presentation/eng_systematic_improvement.md`, `pillars/systematic_improvement.md` | P2 | scheduled | `kaizen-and-the-observe-orient-decide-act-return-loop` |
+| B41 | The fractal pattern: sub-pillars repeat the know, act, improve cycle | `pillars/FRAMEWORK_STRUCTURE.md`, `presentation/blog_quest_engine_intro.md` | P2 | scheduled | `the-fractal-pattern-inside-the-quest-engine` |
+| B42 | Anti-patterns per pillar (information hoarding, stale docs, meeting culture, analysis paralysis, scope creep) | `pillars/contextual_awareness.md`, `pillars/clear_strategy.md`, `pillars/systematic_improvement.md` | P2 | scheduled | `anti-patterns-show-where-the-loop-broke` |
 | B43 | Behaviors by individual contributor (IC) level 0 to 7+ (drafted in Engineering Systems) | `career.md` "People Systems Framework" | P3 | draft | `individual-contributor-levels-as-changing-scope` |
 
 ## Field Notes
 
 | ID | Idea | Source in ingenio | Priority | Status | Post |
 | --- | --- | --- | --- | --- | --- |
-| B50 | Career Quest Engineering, the 2021 talk: video editor to project manager to software engineer | `presentation/career_quest_engineering.md`, `presentation/career_cheyo.md`, `presentation/presented/Career_Quest_Engineering_CheyoJimenez_2021_11.pptx`, `media/journey_cheyo.md` | P2 | draft | `career-quest-engineering-2021-talk` |
+| B50 | Career Quest Engineering, the 2021 talk: video editor to project manager to software engineer | `presentation/career_quest_engineering.md`, `presentation/career_cheyo.md`, `presentation/presented/Career_Quest_Engineering_CheyoJimenez_2021_11.pptx`, `media/journey_cheyo.md` | P2 | scheduled | `career-quest-engineering-2021-talk` |
 
 ## Second Pass (October 2026)
 
