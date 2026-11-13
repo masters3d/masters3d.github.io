@@ -1,13 +1,13 @@
 +++
 title = "The Fractal Pattern Inside the Quest Engine"
 date = "2027-09-01"
-draft = true
 description = "The Quest Engine repeats because the same three-beat shape appears inside every pillar. The content changes at each level, but the pattern remains: know, act, and improve."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Quest Engine"]
 tags = ["quest-engine", "fractal", "self-similar", "framework", "systems-thinking"]
 [extra]
+scheduled = true
 editorial_track = "quest-engine"
 series = "quest-engine"
 related = ["quest-engine-introduction", "anti-patterns-show-where-the-loop-broke", "objective-function-search-drive-renew", "meta-learning-four-levels"]

@@ -1,13 +1,13 @@
 +++
 title = "People Systems and the Hiring Pipeline"
 date = "2027-11-15"
-draft = true
 description = "Hiring is a people system before it is a recruiting funnel. College internships, bootcamps, apprenticeships, and self-taught paths all optimize for different evidence, and the pipeline a company builds decides who gets seen."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
 tags = ["hiring", "people-systems", "career", "engineering-culture", "software-engineering"]
 [extra]
+scheduled = true
 editorial_track = "engineering-systems"
 related = ["individual-contributor-levels-as-changing-scope", "level-zero-is-an-apprenticeship", "overlapping-roles-in-tech"]
 +++
