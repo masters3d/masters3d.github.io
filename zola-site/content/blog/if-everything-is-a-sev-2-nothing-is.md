@@ -1,31 +1,32 @@
 +++
 title = "If Everything Is a Sev 2, Nothing Is"
-date = "2029-04-15"
-draft = true
-description = "A phrase I keep saying at work: if everything is a severity 2, nothing is. Severity is a shared signal, and once people raise it to buy attention it stops carrying information. How PagerDuty, Atlassian, Google, Microsoft, and AWS define their levels, why severity inflation is usually a tooling gap that got turned into process, and why the way out is funding the lower severities and keeping manual toil small enough that engineers can still write the code that removes it."
+date = "2027-05-15"
+description = "A phrase I picked up on a team long ago: if everything is a severity 2, nothing is. Severity is a shared signal, and once people raise it to buy attention it stops carrying information. How PagerDuty, Atlassian, Google, Microsoft, and AWS define their levels, why severity inflation is usually a tooling gap that got turned into process, and why the way out is funding the lower severities and keeping manual toil between 0.1% and 1%, counted in nines like availability, so engineers can still write the code that removes it."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
 tags = ["incidents", "severity", "on-call", "sre", "toil", "process", "tooling", "prioritization"]
 [extra]
 editorial_track = "engineering-systems"
+scheduled = true
 +++
 
-There is a phrase I keep saying at work, sometimes calmly and sometimes out of
-plain frustration: if everything is a severity 2, nothing is a severity 2.
+There is a phrase I started saying on a team long ago, sometimes calmly and
+sometimes out of plain frustration: if everything is a severity 2, nothing is a
+severity 2.
 
-The ladder in my group looks roughly like most incident ladders. A severity 0 is
-global. A severity 1 is several regions. A severity 2 is one region down. A
-severity 3 says "this might turn into a problem, we need help with it before it
-does." A severity 4 is the one where, after a look, you admit it probably should
-have been a bug report. Severities 0 through 2 call someone. Severities 3 and 4
-do not.
+The ladder on that team looked roughly like most incident ladders. A severity 0
+was global. A severity 1 was several regions. A severity 2 was one region down.
+A severity 3 said "this might turn into a problem, we need help with it before
+it does." A severity 4 was the one where, after a look, you admitted it probably
+should have been a bug report. Severities 0 through 2 called someone. Severities
+3 and 4 did not.
 
-You can predict what happens next. The lowest severity that gets a person on the
-phone becomes the severity that people want. If I file a 3, it waits. If I file
-a 2, somebody gets called. So a lot of things that are really "please work on
-this soon" get filed as 2s, and the queue of live severity 2 incidents grows
-until we have to prioritize _within_ severity 2: which of these 2s is the real
+You can predict what happened next. The lowest severity that got a person on the
+phone became the severity that people wanted. File a 3 and it waited. File a 2
+and somebody got called. So a lot of things that were really "please work on
+this soon" got filed as 2s, and the queue of live severity 2 incidents grew
+until we had to prioritize _within_ severity 2: which of these 2s is the real
 one? That second sort is the tell. Once you need a priority system inside a
 severity, the severity has stopped carrying information. It no longer means what
 the person reading it thinks it means.
@@ -48,24 +49,27 @@ higher severity issue." A severity is not a label of how upset someone is. It is
 a contract that says who gets woken up, how fast, and how much risk they are
 allowed to take to stop the damage.
 
-The public scales differ in how many levels they have, but they share a shape.
-Here are two internal incident scales next to the one I work with:
+Severity 2 is not a local quirk. PagerDuty and Atlassian both use SEV 2 for a
+major incident that pages on-call, and most scales I found start at 0 or 1 and
+run down to 3, 4, or 5. The public scales differ in how many levels they have,
+but they share a shape. Here are two internal incident scales next to the one
+that team used:
 
 | Scale                                                                                      | Pages someone now | Top priority, but during the day                      | Becomes a ticket  |
 | ------------------------------------------------------------------------------------------ | ----------------- | ----------------------------------------------------- | ----------------- |
-| My group                                                                                   | Sev 0 to Sev 2    | (nothing)                                             | Sev 3, Sev 4      |
+| That old team                                                                              | Sev 0 to Sev 2    | (nothing)                                             | Sev 3, Sev 4      |
 | [PagerDuty](https://docs.pagerduty.com/ops-guides/incident-response-guide/severity-levels) | SEV-1 to SEV-3    | SEV-4: low-urgency page, worked ahead of normal tasks | SEV-5             |
 | [Atlassian](https://www.atlassian.com/incident-management/kpis/severity-levels)            | SEV 1, SEV 2      | SEV 3: handled during working hours                   | (below the scale) |
 
-The middle column is the one my ladder is missing. PagerDuty's SEV-4 is "minor
-issues requiring action," and the response is a low-urgency page with the
+The middle column is the one that old ladder was missing. PagerDuty's SEV-4 is
+"minor issues requiring action," and the response is a low-urgency page with the
 instruction to work on it as your first priority, above normal work. One of its
 listed examples is an individual host failing out of a cluster. Atlassian says
 outright that its SEV 3 incidents can be handled during working hours while SEV
 1 and SEV 2 alert on-call at any time of day, and its
 [guidance for app partners](https://developer.atlassian.com/developer-guide/app-incident-severity-levels/)
 describes minor incidents as high priority during local business hours. That is
-the level people in my group keep reaching for when they file a 2: a daytime
+the level people on that team kept reaching for when they filed a 2: a daytime
 severity 2. Important, owned, worked first, and nobody stays up all night for
 it.
 
@@ -156,18 +160,29 @@ to write that code, the problem is no longer the number of issues. It is a
 process that has decided manual work matters more than the tools that would
 remove it.
 
-## Five percent, then scale
+## Toil counted in nines
 
 I wrote about the 50% toil cap in
 [Good at It Is Not the Same as Wanting It](/blog/good-at-it-is-not-the-same-as-wanting-it/),
 and about why
 [humans should be the glue as rarely as possible](/blog/minimize-humans-as-glue/).
 Fifty percent is a ceiling, not a target. My perfect amount of manual toil is
-zero. If I have to give a number, it is somewhere around 5 to 10%. Some manual
-work is needed from time to time. But when weeks or months go by and the manual
-work has not shrunk because everyone was too busy doing it, that is a different
-problem. If 90% of the job is toil, there will never be the bandwidth to get it
-to zero.
+zero. At the scale large services run at, the number I am willing to accept is
+somewhere between 0.1% and 1%. Some manual work is needed from time to time. But
+when weeks or months go by and the manual work has not shrunk because everyone
+was too busy doing it, that is a different problem. If 90% of the job is toil,
+there will never be the bandwidth to get it to zero.
+
+That range sounds extreme until you count it the way reliability gets counted.
+Availability is written in nines: 99% is two nines, 99.9% is three. Google's
+chapter on [embracing risk](https://sre.google/sre-book/embracing-risk/) notes
+that each additional nine is an order of magnitude closer to 100%, and that an
+incremental improvement in reliability may cost 100 times more than the previous
+one. Read toil from the other side and it is the same scale. At 10% toil, 90% of
+the time is free for engineering: one nine. 1% toil is two nines, and 0.1% is
+three. Each nine takes more work than the one before it, which is exactly why
+starting at 10% does not work. The work to reach the next nine needs time that a
+10% budget has already spent.
 
 Years ago I looked at the PMP application, and one section asked you to describe
 the projects you had been part of. That question clarified something for me.
@@ -179,11 +194,14 @@ maintenance and ask what it would take to remove it from the table entirely, so
 nobody has to deal with it again. That is also why nobody gets promoted for
 manual toil.
 
-The reason this matters at scale is arithmetic. Cut the toil by 90%, and the 10%
-that is left gives you room to take on the next order of magnitude. At ten times
-the scale, that 10% grows back into something large, so you cut it by 90% again,
-and scale again. Even 10% is a lot of work at the next magnitude, which is why I
-would rather keep cutting than settle into a comfortable percentage.
+The reason this matters at scale is arithmetic. Toil grows linearly with the
+service, so ten times the scale means ten times the toil. Start at 1% and a
+tenfold jump puts you at 10%: painful, but 90% of the team is still free to
+build the tooling that brings it back down to 1%, and that work is what earns
+the next magnitude. Start at 10% and the same jump leaves the whole job as toil,
+with nobody left to do the cutting. You never level up; the growth gets spent on
+manual work. Getting to the next nine is a project. Staying where you are is
+maintenance.
 
 ---
 
