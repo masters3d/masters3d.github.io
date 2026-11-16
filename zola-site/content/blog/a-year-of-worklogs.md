@@ -28,7 +28,7 @@ used them at all.
 
 (This month is also a year since Claude Opus 4.5, which I wrote about in
 [One Year After Opus 4.5](/blog/one-year-after-opus-4-5/). That is a different
-story. As the next section explains, worklogs never depended on a strong model.)
+story. As the next section explains, worklogs never depended on a strong LLM.)
 
 ## What worklogs are for
 
@@ -64,8 +64,8 @@ worklog for that edge case" or "I just finished the migration," the agent fills
 in a section and runs a command. Nothing in that loop calls for deep reasoning.
 It calls for consistency: the same template and the same labels every time.
 
-That is why worklogs held up while the models underneath kept changing. The
-agent is not designing anything. It follows behind the work, writes down what
+That is why worklogs held up while the LLMs underneath kept changing. The agent
+is not designing anything. It follows behind the work, writes down what
 happened, and puts it where other people can find it. That is documentation and
 surfacing, the part of engineering that always got skipped because a person had
 to stop and do it.
@@ -118,9 +118,8 @@ that answer.
 
 Every level we added made the skill file longer, the template more complicated,
 and the agent's job less mechanical. Simplicity was the reason the practice
-spread, and we were trading it away one field at a time. The lesson I take into
-year two is to keep worklogs to those two roles, the unit of work and the PBI,
-and to stop there.
+spread, and we were trading it away one field at a time. The lesson is to keep
+worklogs to those two roles, the unit of work and the PBI, and to stop there.
 
 ## Growing pains with other teams
 
@@ -182,12 +181,7 @@ chapter on forecasting with the Monte Carlo method. Age is the one that needs no
 estimate: an item that has been open much longer than the team's usual cycle
 time is the signal. Throughput history then gives a finish date with a
 confidence level instead of a single promise, which is a better answer to "what
-is the timeline?" than a guess. Ryan Singer's _Shape Up_ makes a similar point
-visually with [hill charts](https://basecamp.com/shapeup/3.4-chapter-13): uphill
-is still figuring the work out, downhill is executing, and a scope that stops
-climbing is stuck. The chapter opens with the observation that managers would
-rather see status themselves than ask for it, which is what our partner teams
-keep telling us.
+is the timeline?" than a guess.
 
 For the whole picture, Janna Bastow's
 [Now, Next, Later roadmap](https://www.prodpad.com/blog/invented-now-next-later-roadmap/)
@@ -199,32 +193,21 @@ pair a short note with a status such as "On track" or "At risk," and
 list merged pull requests with no upkeep at all, though they say nothing about
 what is in progress or blocked.
 
-## Year two: keep them small, build the bridge
+## For now, not for next
 
-The direction for the second year is to stop asking worklogs to be the hierarchy
-and to bridge to it instead.
+I use worklogs every day, and nothing else I have tried captures the work as
+well while it is happening. After a year, that is the clearest thing I can say
+about them: a worklog is for now and for what happened. It holds the work in
+flight, the bug I filed on the way past, the decision and the reason for it, and
+the PR that closed it.
 
-Worklogs stay at two roles: the unit of work and the PBI. Features and epics
-live where our partners already look, in Azure DevOps. The connection between
-the two is a link, every PBI-sized worklog pointing at the work item it belongs
-to, rather than a copy of the same facts in two places.
+What the current version is not good at is the future. It does not tell you what
+the team should build next quarter, which feature is waiting on which, or when
+something will land. Every time we tried to make it answer those questions, it
+got heavier and worse at the job it does well. A stronger LLM does not change
+that. The gap is not in how well the agent writes; it is in what a worklog is.
 
-The upkeep that a PM or Scrum Master used to do looks a lot like a worklog's
-job, one level up: follow behind, write down what happened, surface it. It does
-not need a strong model either. An agent can read each feature's linked worklogs
-and PRs on a schedule and draft the status our partners ask for: health, the
-oldest open item, blockers, and dependencies. A person approves it before it
-lands on the board. Feature health comes from the age of the oldest open PBI
-rather than from someone's opinion. Completed features come from closed parents
-instead of a hand-kept list.
-
-What the agent should not do is guess dates. Timelines belong to measured
-throughput, scaled up from the coarse PBI effort
-[we already track](/blog/effort-tracking-vs-task-tracking/), not to a model's
-estimate.
-
-The first year took worklogs from my notebook to the team's default and showed
-us where they stop. The second year is about respecting that line: worklogs for
-the work as it happens, the board for the commitments other teams depend on, and
-an agent following behind to keep the two in step. Who owns a feature when no
-one is the PM is still an open question.
+So the line I draw after a year is simple. Worklogs record the present and the
+past, and they do it better than anything else we use. Planning the future still
+lives somewhere else, and for us, with no PM and partners who live in Azure
+DevOps, that somewhere else is the part we have not solved yet.
