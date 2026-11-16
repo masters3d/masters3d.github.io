@@ -41,7 +41,7 @@ which the template shows once both posts are published
 | 1 | 2026-11-01 | B26 | Ingenio: The Engine Inside Engineering | `ingenio-the-engine-inside-engineering` |
 | 2 | 2026-11-15 | B03 | A Feature Needs a Life Cycle From Cradle to Grave | `feature-cradle-to-grave` |
 | 3 | 2026-11-24 | U03 | One Year After Opus 4.5: Software Engineering Moves Up the Stack | `one-year-after-opus-4-5` |
-| 4 | 2026-11-29 | U06 | A Year of Worklogs: What They Are For, Where They Stop | `a-year-of-worklogs` |
+| 4 | 2026-11-29 | U07 | A Year of Worklogs: What They Are For, Where They Stop | `a-year-of-worklogs` |
 | 5 | 2026-12-01 | B20 | PIE Theory: Being Seen Is Part of the Work | `pie-theory-being-seen-at-work` |
 | 6 | 2026-12-15 | B21 | Locus of Control at Work | `locus-of-control-at-work` |
 | 7 | 2027-01-01 | B22 | Seeking Is the Reward | `seeking-is-the-reward` |
@@ -101,6 +101,7 @@ which the template shows once both posts are published
 | 61 | 2029-03-01 | B77 | Career success metrics, individual and organizational, and growth strategies | `career-success-metrics-individual-and-organizational` |
 | 62 | 2029-03-15 | B88 | Measuring an agent beyond task completion | `measuring-an-agent-beyond-task-completion` |
 | 63 | 2029-04-01 | U05 | The River Will Take You | `the-river-will-take-you` |
+| 64 | 2029-04-15 | U06 | If Everything Is a Sev 2, Nothing Is | `if-everything-is-a-sev-2-nothing-is` |
 
 ## Engineering Systems
 
@@ -112,15 +113,15 @@ which the template shows once both posts are published
 | B04 | Design review without governance is empty; working groups that approve features | `specs/design_governance/VISION.md` (#20), `specs/design_reviews_references/VISION.md` (#9) | P2 | scheduled | `design-review-needs-governance` |
 | B05 | One loop for retrospective and planning (a "sprintspective") | `specs/define_the_act_pro-spective_and_retro-spective_in_the_same_flowfeedback_loop_maybe_sprintspective/VISION.md`, issue #17 | P2 | scheduled | `sprintspective-one-loop` |
 | B06 | Open guides over closed answers: answer once on a wiki instead of in one email | `specs/behavior_general_open_guides_over_specify_closed_guides/VISION.md`, issue #7 | P2 | scheduled | `open-guides-over-closed-answers` |
-| B07 | Conversation types for collaboration (fishbowl and other formats) | `specs/conversation_types_for_collaborations/VISION.md`, issue #16 | P3 | draft | `conversation-formats-fishbowl` |
+| B07 | Conversation types for collaboration (fishbowl and other formats) | `specs/conversation_types_for_collaborations/VISION.md`, issue #16 | P3 | scheduled | `conversation-formats-fishbowl` |
 | B08 | Promotion-driven development: how promotion incentives shape what gets built | `specs/promotion_driven_development_pdd/VISION.md`, issue #11 | P2 | scheduled | `promotion-driven-development` |
 | B09 | Overlapping roles in tech and the risks where they intersect | `specs/roles_overlapping_in_tech_and_the_intersection_you_should_be_beware_of/VISION.md`, issue #14 | P2 | scheduled | `overlapping-roles-in-tech` |
 | B10 | Kinds of documentation and which medium fits each (team-private vs engineering docs) | `presentation/eng_meta_documenation.md`, `presentation/eng_contextual_awareness.md` | P2 | scheduled | `types-of-engineering-documentation` |
 | B11 | The kernel of strategy (Rumelt, *Good Strategy / Bad Strategy*) | `specs/from_good_strategy_bad_strategy/VISION.md` (#26), `media/synergies_strategy_kernel.drawio` | P2 | scheduled | `kernel-of-strategy` |
 | B12 | Action, feedback, adjustment: slow and noisy feedback loops | `specs/action_feedback_adjustment/VISION.md`, `specs/action-feedback-adjustment/VISION.md`, issue #30 | P2 | scheduled | `action-feedback-adjustment` |
-| B13 | Research on remote and async work (Microsoft New Future of Work) | `specs/async_workplace_public_research_from_microsoft/VISION.md`, issue #10 | P3 | draft | `remote-work-needs-context-not-just-tools` |
+| B13 | Research on remote and async work (Microsoft New Future of Work) | `specs/async_workplace_public_research_from_microsoft/VISION.md`, issue #10 | P3 | scheduled | `remote-work-needs-context-not-just-tools` |
 | B14 | Guiding policies that align individual behavior with organizational goals | `specs/behavior_alignment/VISION.md`, issue #29 | P2 | scheduled | `guiding-policies-behavior-alignment` |
-| B15 | People systems and the hiring pipeline | `presentation/career_progression.md`, `presentation/career_init.md` | P3 | draft | `people-systems-and-the-hiring-pipeline` |
+| B15 | People systems and the hiring pipeline | `presentation/career_progression.md`, `presentation/career_init.md` | P3 | scheduled | `people-systems-and-the-hiring-pipeline` |
 
 ## Human Systems
 
@@ -133,30 +134,30 @@ which the template shows once both posts are published
 | B24 | Build mode vs reflect mode; judgement and "quality without a name" | `specs/cognitive_architecture_wrt_build_mode_and_reflect_mode/VISION.md`, issue #56 | P2 | scheduled | `build-mode-reflect-mode-quality-without-a-name` |
 | B25 | Philosophy, manifesto, principle, north star: how they differ (drafted in Engineering Systems) | `specs/philosophy_manifesto_principle_northstar/VISION.md`, issue #19 | P2 | scheduled | `philosophy-manifesto-principle-north-star` |
 | B26 | Ingenio: the engineering background and history of the word (ingenium, engine, engineer, sugar mill), plus ingenious vs ingenuous | `specs/ingenious_vs_ingenuous/VISION.md` (#13), `README.md` | P3 | scheduled | `ingenio-the-engine-inside-engineering` |
-| B27 | Resourcefulness and agency as inherited vs learned traits | `specs/resourceful_agency_genetic_systems_relationships/VISION.md`, issue #38 (check overlap with `resourcefulness-is-its-own-quest-engine`) | P3 | draft | `resourcefulness-agency-and-inheritance` |
+| B27 | Resourcefulness and agency as inherited vs learned traits | `specs/resourceful_agency_genetic_systems_relationships/VISION.md`, issue #38 (check overlap with `resourcefulness-is-its-own-quest-engine`) | P3 | scheduled | `resourcefulness-agency-and-inheritance` |
 
 ## Software Engineering
 
 | ID | Idea | Source in ingenio | Priority | Status | Post |
 | --- | --- | --- | --- | --- | --- |
 | B30 | Actor systems in .NET (Coyote); pairs with the Swift actors vs Rust ownership post | `specs/dotnet_actor_system/VISION.md`, issue #15 | P2 | scheduled | `dotnet-actor-systems-and-testable-concurrency` |
-| B31 | Software 3.0 as an engineering framework | `specs/software_3_0_engineering_framework/VISION.md` | P3 | draft | `software-3-0-needs-engineering-not-magic` |
-| B32 | INGENIO-1 and "cognitive CI": an agent turning issues into specs, and what broke | `cognitive_systems/`, `experiments/`, `COGNITIVE_CI_*.md`, `RACE_CONDITION_FIX.md`, issues #36, #37, #42, #54 | P2 | draft | `cognitive-continuous-integration-and-the-broken-agent-loop` |
+| B31 | Software 3.0 as an engineering framework | `specs/software_3_0_engineering_framework/VISION.md` | P3 | scheduled | `software-3-0-needs-engineering-not-magic` |
+| B32 | INGENIO-1 and "cognitive CI": an agent turning issues into specs, and what broke | `cognitive_systems/`, `experiments/`, `COGNITIVE_CI_*.md`, `RACE_CONDITION_FIX.md`, issues #36, #37, #42, #54 | P2 | scheduled | `cognitive-continuous-integration-and-the-broken-agent-loop` |
 
 ## Quest Engine (only if the post changes or defines the model)
 
 | ID | Idea | Source in ingenio | Priority | Status | Post |
 | --- | --- | --- | --- | --- | --- |
-| B40 | Kaizen and the OODA loop (observe, orient, decide, act) as the roots of Systematic Improvement | `presentation/eng_systematic_improvement.md`, `pillars/systematic_improvement.md` | P2 | draft | `kaizen-and-the-observe-orient-decide-act-return-loop` |
-| B41 | The fractal pattern: sub-pillars repeat the know, act, improve cycle | `pillars/FRAMEWORK_STRUCTURE.md`, `presentation/blog_quest_engine_intro.md` | P2 | draft | `the-fractal-pattern-inside-the-quest-engine` |
-| B42 | Anti-patterns per pillar (information hoarding, stale docs, meeting culture, analysis paralysis, scope creep) | `pillars/contextual_awareness.md`, `pillars/clear_strategy.md`, `pillars/systematic_improvement.md` | P2 | draft | `anti-patterns-show-where-the-loop-broke` |
+| B40 | Kaizen and the OODA loop (observe, orient, decide, act) as the roots of Systematic Improvement | `presentation/eng_systematic_improvement.md`, `pillars/systematic_improvement.md` | P2 | scheduled | `kaizen-and-the-observe-orient-decide-act-return-loop` |
+| B41 | The fractal pattern: sub-pillars repeat the know, act, improve cycle | `pillars/FRAMEWORK_STRUCTURE.md`, `presentation/blog_quest_engine_intro.md` | P2 | scheduled | `the-fractal-pattern-inside-the-quest-engine` |
+| B42 | Anti-patterns per pillar (information hoarding, stale docs, meeting culture, analysis paralysis, scope creep) | `pillars/contextual_awareness.md`, `pillars/clear_strategy.md`, `pillars/systematic_improvement.md` | P2 | scheduled | `anti-patterns-show-where-the-loop-broke` |
 | B43 | Behaviors by individual contributor (IC) level 0 to 7+ (drafted in Engineering Systems) | `career.md` "People Systems Framework" | P3 | draft | `individual-contributor-levels-as-changing-scope` |
 
 ## Field Notes
 
 | ID | Idea | Source in ingenio | Priority | Status | Post |
 | --- | --- | --- | --- | --- | --- |
-| B50 | Career Quest Engineering, the 2021 talk: video editor to project manager to software engineer | `presentation/career_quest_engineering.md`, `presentation/career_cheyo.md`, `presentation/presented/Career_Quest_Engineering_CheyoJimenez_2021_11.pptx`, `media/journey_cheyo.md` | P2 | draft | `career-quest-engineering-2021-talk` |
+| B50 | Career Quest Engineering, the 2021 talk: video editor to project manager to software engineer | `presentation/career_quest_engineering.md`, `presentation/career_cheyo.md`, `presentation/presented/Career_Quest_Engineering_CheyoJimenez_2021_11.pptx`, `media/journey_cheyo.md` | P2 | scheduled | `career-quest-engineering-2021-talk` |
 
 ## Second Pass (October 2026)
 
@@ -213,8 +214,9 @@ date is a placeholder far enough out to keep the draft gate quiet.
 | U03 | One year after Claude Opus 4.5: the Bash-and-Python-to-Rust port as evidence that the compiler is a cheaper validator than tokens, Rust as the new assembly, about 20% of time on code with the rest on deployment, validation, agent management and agent cost, AI creating more work (V1 fast, V2/V3 slow), hiring for agency and taste, and a forecast that systems engineering becomes a named discipline again. Author's own experience, so it is in the Release Schedule (#3, off-cycle on the Opus 4.5 anniversary) | Author's notes, October 2026 | Software Engineering | scheduled | `one-year-after-opus-4-5` |
 | U04 | Reward prediction error (dopamine) as the teaching signal behind learning and positive reinforcement (Rescorla-Wagner, TD learning, actor-critic). Author's framing: the name holds two things, a prediction (Search) and an outcome that lands as a reward or an error (Renew); the hidden third is the action (Drive). Extends `seeking-is-the-reward` (wanting vs liking) with the prediction-error mechanism. Scheduled in the Release Schedule (#8, the open 2027-01-15 slot two weeks after its prequel) | Author's request, November 2026 | Human Systems | scheduled | `reward-prediction-error` |
 | U05 | "Te va a llevar el río" and "te va a llevar el tren": childhood warnings as a model for time (the train on a schedule), upkeep (swimming upstream to stay in place), and building for the high water. Author's own experience, so it is in the Release Schedule (#63) | Author's notes, November 2026 | Human Systems | scheduled | `the-river-will-take-you` |
-| U06 | A year of worklogs: from personal "plans" in November 2025 (a little over a year for the author, about a year for the team); what worklogs are for (tracking work as you do it, filing away bugs and edge cases with context for later or for another agent), what they are not (not the ADO board, features, or epics), how metadata stretched them (task/bug and PBI roles, sub-issues, sprint-scoped PBIs vs long-lived worklogs, features and epics), growing pains with teams that track everything in ADO, the no-PM reporting gap, what other teams use, and a year-two bridge instead of more stretching. Combines the U07 draft at the author's request; kept separate from `one-year-after-opus-4-5`. Author's own experience, so it is in the Release Schedule (#4, off-cycle on the one-year mark) | Author's notes, October and November 2026 | Engineering Systems | scheduled | `a-year-of-worklogs` |
-| U07 | Reporting features and epics without a PM or Scrum Master | Author's notes, October 2026 | Engineering Systems | merged into U06 | `a-year-of-worklogs` |
+| U06 | If everything is a severity 2, nothing is: severity inflation when only Sev 0-2 page anyone, the missing daytime tier, the filer proposes and triage decides, tooling gaps should not become process, software engineers on infrastructure on-call and the SRE model's limits, and a 0.1-1% manual toil budget counted in nines like availability, since each nine costs more than the last (PMP: maintenance is not a project). Author approved; scheduled at the end of the queue (#63, 2029-04-15) | Author's notes, November 2026 | Engineering Systems | scheduled | `if-everything-is-a-sev-2-nothing-is` |
+| U07 | A year of worklogs: from personal "plans" in November 2025 (a little over a year for the author, about a year for the team); what worklogs are for (tracking work as you do it, filing away bugs and edge cases with context for later or for another agent), what they are not (not the ADO board, features, or epics), how metadata stretched them (task/bug and PBI roles, sub-issues, sprint-scoped PBIs vs long-lived worklogs, features and epics), growing pains with teams that track everything in ADO, the no-PM reporting gap, what other teams use, and a year-two bridge instead of more stretching. Combines the U08 draft at the author's request; kept separate from `one-year-after-opus-4-5`. Author's own experience, so it is in the Release Schedule (#4, off-cycle on the one-year mark) | Author's notes, October and November 2026 | Engineering Systems | scheduled | `a-year-of-worklogs` |
+| U08 | Reporting features and epics without a PM or Scrum Master | Author's notes, October 2026 | Engineering Systems | merged into U07 | `a-year-of-worklogs` |
 
 ## Covered by Existing Posts
 
