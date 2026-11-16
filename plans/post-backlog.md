@@ -100,6 +100,7 @@ which the template shows once both posts are published
 | 60 | 2029-03-01 | B77 | Career success metrics, individual and organizational, and growth strategies | `career-success-metrics-individual-and-organizational` |
 | 61 | 2029-03-15 | B88 | Measuring an agent beyond task completion | `measuring-an-agent-beyond-task-completion` |
 | 62 | 2029-04-01 | U05 | The River Will Take You | `the-river-will-take-you` |
+| 63 | 2029-04-15 | U06 | If Everything Is a Sev 2, Nothing Is | `if-everything-is-a-sev-2-nothing-is` |
 
 ## Engineering Systems
 
@@ -212,6 +213,7 @@ date is a placeholder far enough out to keep the draft gate quiet.
 | U03 | One year after Claude Opus 4.5: the Bash-and-Python-to-Rust port as evidence that the compiler is a cheaper validator than tokens, Rust as the new assembly, about 20% of time on code with the rest on deployment, validation, agent management and agent cost, AI creating more work (V1 fast, V2/V3 slow), hiring for agency and taste, and a forecast that systems engineering becomes a named discipline again. Author's own experience, so it is in the Release Schedule (#3, off-cycle on the Opus 4.5 anniversary) | Author's notes, October 2026 | Software Engineering | scheduled | `one-year-after-opus-4-5` |
 | U04 | Reward prediction error (dopamine) as the teaching signal behind learning and positive reinforcement (Rescorla-Wagner, TD learning, actor-critic). Author's framing: the name holds two things, a prediction (Search) and an outcome that lands as a reward or an error (Renew); the hidden third is the action (Drive). Extends `seeking-is-the-reward` (wanting vs liking) with the prediction-error mechanism. Scheduled in the Release Schedule (#7, the open 2027-01-15 slot two weeks after its prequel) | Author's request, November 2026 | Human Systems | scheduled | `reward-prediction-error` |
 | U05 | "Te va a llevar el río" and "te va a llevar el tren": childhood warnings as a model for time (the train on a schedule), upkeep (swimming upstream to stay in place), and building for the high water. Author's own experience, so it is in the Release Schedule (#62) | Author's notes, November 2026 | Human Systems | scheduled | `the-river-will-take-you` |
+| U06 | If everything is a severity 2, nothing is: severity inflation when only Sev 0-2 page anyone, the missing daytime tier, the filer proposes and triage decides, tooling gaps should not become process, software engineers on infrastructure on-call and the SRE model's limits, and a 0.1-1% manual toil budget counted in nines like availability, since each nine costs more than the last (PMP: maintenance is not a project). Author approved; scheduled at the end of the queue (#63, 2029-04-15) | Author's notes, November 2026 | Engineering Systems | scheduled | `if-everything-is-a-sev-2-nothing-is` |
 
 ## Covered by Existing Posts
 
