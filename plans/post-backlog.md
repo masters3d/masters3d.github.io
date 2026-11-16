@@ -150,7 +150,7 @@ which the template shows once both posts are published
 | B40 | Kaizen and the OODA loop (observe, orient, decide, act) as the roots of Systematic Improvement | `presentation/eng_systematic_improvement.md`, `pillars/systematic_improvement.md` | P2 | scheduled | `kaizen-and-the-observe-orient-decide-act-return-loop` |
 | B41 | The fractal pattern: sub-pillars repeat the know, act, improve cycle | `pillars/FRAMEWORK_STRUCTURE.md`, `presentation/blog_quest_engine_intro.md` | P2 | scheduled | `the-fractal-pattern-inside-the-quest-engine` |
 | B42 | Anti-patterns per pillar (information hoarding, stale docs, meeting culture, analysis paralysis, scope creep) | `pillars/contextual_awareness.md`, `pillars/clear_strategy.md`, `pillars/systematic_improvement.md` | P2 | scheduled | `anti-patterns-show-where-the-loop-broke` |
-| B43 | Behaviors by individual contributor (IC) level 0 to 7+ (drafted in Engineering Systems) | `career.md` "People Systems Framework" | P3 | draft | `individual-contributor-levels-as-changing-scope` |
+| B43 | Behaviors by individual contributor (IC) level 0 to 7+ (drafted in Engineering Systems) | `career.md` "People Systems Framework" | P3 | scheduled | `individual-contributor-levels-as-changing-scope` |
 
 ## Field Notes
 
@@ -168,11 +168,11 @@ results.
 
 | ID | Idea | Source in ingenio | Track | Priority | Status | Post |
 | --- | --- | --- | --- | --- | --- | --- |
-| B60 | Proactive curiosity: seek context before it is handed to you (first sub-pillar of Contextual Awareness) | `pillars/contextual_awareness.md` "1. Proactive Curiosity", `presentation/eng_contextual_awareness.md` | Quest Engine | P2 | draft | `proactive-curiosity` |
-| B61 | Cohesive narrative: turning scattered facts into one story a team can act on | `pillars/contextual_awareness.md` "2. Cohesive Narrative" | Quest Engine | P2 | draft | `cohesive-narrative` |
-| B62 | Shared understanding as a practice with components, behaviors and checks | `pillars/contextual_awareness.md` "3. Shared Understanding" | Quest Engine | P2 | draft | `shared-understanding-as-a-practice` |
-| B63 | Challenge matching: fit the task to the skill so flow is possible | `pillars/clear_strategy.md` "1. Challenge Matching", `pillars/intrinsic_motivation.md` "Flow State Connection" | Quest Engine | P2 | draft | `challenge-matching-and-flow` |
-| B64 | Directed intentionality: choosing on purpose what not to do | `pillars/clear_strategy.md` "2. Directed Intentionality" | Quest Engine | P2 | draft | `directed-intentionality` |
+| B60 | Proactive curiosity: seek context before it is handed to you (first sub-pillar of Contextual Awareness) | `pillars/contextual_awareness.md` "1. Proactive Curiosity", `presentation/eng_contextual_awareness.md` | Quest Engine | P2 | scheduled | `proactive-curiosity` |
+| B61 | Cohesive narrative: turning scattered facts into one story a team can act on | `pillars/contextual_awareness.md` "2. Cohesive Narrative" | Quest Engine | P2 | scheduled | `cohesive-narrative` |
+| B62 | Shared understanding as a practice with components, behaviors and checks | `pillars/contextual_awareness.md` "3. Shared Understanding" | Quest Engine | P2 | scheduled | `shared-understanding-as-a-practice` |
+| B63 | Challenge matching: fit the task to the skill so flow is possible | `pillars/clear_strategy.md` "1. Challenge Matching", `pillars/intrinsic_motivation.md` "Flow State Connection" | Quest Engine | P2 | scheduled | `challenge-matching-and-flow` |
+| B64 | Directed intentionality: choosing on purpose what not to do | `pillars/clear_strategy.md` "2. Directed Intentionality" | Quest Engine | P2 | scheduled | `directed-intentionality` |
 | B65 | Adaptive control: steering a plan as feedback arrives | `pillars/clear_strategy.md` "3. Adaptive Control" | Quest Engine | P2 | draft | `adaptive-control` |
 | B66 | Iterative integration: small changes merged often beat big batches | `pillars/systematic_improvement.md` "1. Iterative Integration" | Quest Engine | P2 | draft | `iterative-integration` |
 | B67 | Deliberate practice for engineers: targeted, feedback-rich repetition | `pillars/systematic_improvement.md` "2. Deliberate Practice" | Quest Engine | P2 | draft | `deliberate-practice-for-engineers` |
@@ -180,17 +180,17 @@ results.
 | B69 | Measuring the three pillars: discovery, strategy and improvement metrics | "Measuring ..." sections of `pillars/contextual_awareness.md`, `pillars/clear_strategy.md`, `pillars/systematic_improvement.md` | Quest Engine | P2 | draft | `measuring-the-three-pillars` |
 | B70 | The objective function as the human-agent interface: reward signal, action space, value alignment | `pillars/objective_function.md`, `presentation/eng_objective_function.md` | Quest Engine | P2 | draft | `objective-function-search-drive-renew` |
 | B71 | Anti-patterns in human-agent interaction and how to measure the interface | `pillars/objective_function.md` "Anti-Patterns in Human-Agent Interaction", "Measuring the Interface" | Software Engineering | P2 | draft | `anti-patterns-in-human-agent-interaction` |
-| B72 | Career levels depend on context: startup, enterprise, product, platform, and culture | `career.md` "Contextual Considerations", "Future Evolution" | Engineering Systems | P2 | draft | `career-levels-depend-on-context` |
-| B73 | Motivation, ability, narrative: three forces in a career and what happens when one is missing | `presentation/career_cheyo.md`, `media/synergies_narrative.md` | Human Systems | P2 | draft | `motivation-ability-narrative` |
+| B72 | Career levels depend on context: startup, enterprise, product, platform, and culture | `career.md` "Contextual Considerations", "Future Evolution" | Engineering Systems | P2 | scheduled | `career-levels-depend-on-context` |
+| B73 | Motivation, ability, narrative: three forces in a career and what happens when one is missing | `presentation/career_cheyo.md`, `media/synergies_narrative.md` | Human Systems | P2 | scheduled | `motivation-ability-narrative` |
 | B74 | Juggling projects at different stages: one person, many projects, many people | `presentation/career_behaviors.md`, `media/temporal_group_*.drawio` | Human Systems | P2 | draft | `juggling-projects-at-different-stages` |
 | B75 | Level zero is an apprenticeship, a two-sided contract between the new engineer and the team | `career.md` "Level 0: Apprentice" | Engineering Systems | P2 | draft | `level-zero-is-an-apprenticeship` |
 | B76 | Humans and agents on one team: who does what, and how roles shift | `specs/human_cognitive_career_alignment/VISION.md`, `cognitive_systems/COGNITIVE_ENGINEERING_INTEGRATION.md` | Engineering Systems | P2 | draft | `humans-and-agents-on-one-team` |
 | B77 | Career success metrics, individual and organizational, and growth strategies | `career.md` "Career Development Principles" | Engineering Systems | P2 | draft | `career-success-metrics-individual-and-organizational` |
-| B78 | The overjustification effect: when rewards crowd out the reason you did the work | `pillars/intrinsic_motivation.md` "Intrinsic vs Extrinsic Motivation" | Human Systems | P2 | draft | `overjustification-effect-at-work` |
+| B78 | The overjustification effect: when rewards crowd out the reason you did the work | `pillars/intrinsic_motivation.md` "Intrinsic vs Extrinsic Motivation" | Human Systems | P2 | scheduled | `overjustification-effect-at-work` |
 | B79 | The regulation continuum: from external pressure to work that is yours | `pillars/intrinsic_motivation.md` "The Regulation Continuum" | Human Systems | P2 | draft | `the-regulation-continuum` |
 | B80 | The progress principle: small visible wins renew purpose | `pillars/intrinsic_motivation.md` "Sub-Pillar 3: Purpose", "Progress Principle" | Human Systems | P2 | draft | `the-progress-principle` |
 | B81 | Growth mindset as the base of mastery, by IC level | `pillars/intrinsic_motivation.md` "Sub-Pillar 1: Mastery" | Human Systems | P2 | draft | `growth-mindset-and-mastery` |
-| B82 | Five levels of agent capability: reactive to cognitive, and why systems engineering changes | `cognitive_systems/README.md`, `cognitive_systems/agents/AGENT_TEMPLATE.md`, `specs/cognitive_systems_engineering/VISION.md` | Software Engineering | P2 | draft | `five-levels-of-agent-capability` |
+| B82 | Five levels of agent capability: reactive to cognitive, and why systems engineering changes | `cognitive_systems/README.md`, `cognitive_systems/agents/AGENT_TEMPLATE.md`, `specs/cognitive_systems_engineering/VISION.md` | Software Engineering | P2 | scheduled | `five-levels-of-agent-capability` |
 | B83 | Agent memory in three tiers: short-term, long-term, and memory about learning | `cognitive_systems/agents/cognitive/INGENIO-1.md` | Software Engineering | P2 | draft | `agent-memory-short-long-and-meta` |
 | B84 | Meta-learning in four levels: learning about learning up to improving the improver | `cognitive_systems/meta_systems/META_LEARNING.md`, `specs/meta_cognitive_development/VISION.md` | Software Engineering | P2 | draft | `meta-learning-four-levels` |
 | B85 | Safe self-modification for agents: sandbox, validate, check goals, roll back | `cognitive_systems/meta_systems/META_LEARNING.md`, `specs/cognitive_systems_engineering/VISION.md` | Software Engineering | P2 | draft | `safe-self-modification-for-agents` |

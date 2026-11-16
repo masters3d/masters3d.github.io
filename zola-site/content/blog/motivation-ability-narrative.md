@@ -1,13 +1,13 @@
 +++
 title = "Motivation, Ability, Narrative"
 date = "2028-05-01"
-draft = true
 description = "A career needs more than will and skill. Motivation, ability, and narrative form a triangle: why the work matters, how the work gets done, and how the path remains understandable over time."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Human Systems"]
 tags = ["career", "motivation", "narrative", "purpose", "intrinsic-motivation"]
 [extra]
+scheduled = true
 editorial_track = "human-systems"
 related = ["career-quest-engineering-2021-talk", "find-your-why-intrinsic-motivation", "story-is-engineering-memory", "pie-theory-being-seen-at-work"]
 +++

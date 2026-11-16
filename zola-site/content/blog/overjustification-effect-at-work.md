@@ -1,13 +1,13 @@
 +++
 title = "The Overjustification Effect at Work"
 date = "2028-04-01"
-draft = true
 description = "Rewards can crowd out the reason someone cared in the first place. The overjustification effect is a warning to protect work that already carries its own motivation."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Human Systems"]
 tags = ["motivation", "intrinsic-motivation", "incentives", "purpose", "work"]
 [extra]
+scheduled = true
 editorial_track = "human-systems"
 related = ["find-your-why-intrinsic-motivation", "promotion-driven-development", "the-last-twenty-percent-and-the-next-nine", "the-regulation-continuum"]
 +++

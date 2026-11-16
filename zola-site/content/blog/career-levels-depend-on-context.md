@@ -1,13 +1,13 @@
 +++
 title = "Career Levels Depend on Context"
 date = "2028-02-01"
-draft = true
 description = "Career levels are not portable labels. A level only makes sense inside a company context, where size, product shape, platform needs, and culture decide what scope actually means."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
 tags = ["career", "individual-contributor", "levels", "engineering-systems", "systems-thinking"]
 [extra]
+scheduled = true
 editorial_track = "engineering-systems"
 related = ["individual-contributor-levels-as-changing-scope", "people-systems-and-the-hiring-pipeline", "promotion-driven-development"]
 +++
