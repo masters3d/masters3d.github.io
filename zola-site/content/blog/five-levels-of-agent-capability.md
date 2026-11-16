@@ -1,13 +1,13 @@
 +++
 title = "Five Levels of Agent Capability"
 date = "2028-03-01"
-draft = true
 description = "Agent capability is not one switch from tool to teammate. A five-level ladder helps separate reactive automation from systems that would need real engineering boundaries."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Software Engineering"]
 tags = ["agents", "ai-development", "systems-thinking", "validation", "software-engineering"]
 [extra]
+scheduled = true
 editorial_track = "software-engineering"
 related = ["cognitive-continuous-integration-and-the-broken-agent-loop", "software-3-0-needs-engineering-not-magic", "agents-are-taking-the-drive"]
 +++

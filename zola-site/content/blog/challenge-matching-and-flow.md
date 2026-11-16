@@ -1,13 +1,13 @@
 +++
 title = "Challenge Matching and Flow"
 date = "2028-04-15"
-draft = true
 description = "Challenge Matching fits the work to the skill available, with enough stretch to create flow. Too much challenge creates anxiety, too little creates boredom, and the useful channel sits between them."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Quest Engine"]
 tags = ["quest-engine", "flow", "mastery", "strategy", "career-growth"]
 [extra]
+scheduled = true
 editorial_track = "quest-engine"
 related = ["quest-engine-introduction", "find-your-why-intrinsic-motivation", "ten-thousand-hours-was-never-enough", "proactive-curiosity", "deliberate-practice-for-engineers"]
 +++

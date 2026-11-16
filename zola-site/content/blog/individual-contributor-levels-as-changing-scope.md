@@ -1,13 +1,13 @@
 +++
 title = "Individual Contributor Levels as Changing Scope"
 date = "2028-01-01"
-draft = true
 description = "Individual contributor levels are easiest to understand as changes in scope. The work grows from learning and code, to components, to systems, to the systems that shape other teams."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
 tags = ["career", "individual-contributor", "levels", "scope", "engineering-systems"]
 [extra]
+scheduled = true
 editorial_track = "engineering-systems"
 related = ["level-zero-is-an-apprenticeship", "career-levels-depend-on-context", "pie-theory-being-seen-at-work", "people-systems-and-the-hiring-pipeline"]
 +++

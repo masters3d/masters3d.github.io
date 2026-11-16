@@ -1,13 +1,13 @@
 +++
 title = "Proactive Curiosity"
 date = "2028-01-15"
-draft = true
 description = "Proactive Curiosity is the habit of finding context before the work demands it. It turns scattered code, docs, logs, metrics, and people into a searchable map for better engineering decisions."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Quest Engine"]
 tags = ["quest-engine", "context", "knowledge-management", "documentation", "workflow"]
 [extra]
+scheduled = true
 editorial_track = "quest-engine"
 related = ["quest-engine-introduction", "context-hunting-vs-context-gathering", "context-as-code", "cohesive-narrative"]
 +++
