@@ -105,7 +105,10 @@ feed_limit = 0
 # that DOI.
 # oli.org (Operation Lifesaver) returns 403 to automated link checkers even though
 # the cited Georgia statistics page loads in a browser; skip only that page.
+# pmi.org returns 403 (bot protection) to automated link checkers even though the
+# cited "What is a project" page loads in a browser; skip only that page.
 skip_prefixes = [
+    "https://www.pmi.org/about/what-is-a-project",
     "https://doi.org/10.1002/(SICI)1234-981X(199707)5:3%3C305::AID-EURO184%3E3.0.CO;2-4",
     "https://press.princeton.edu/books/paperback/9780691164076/how-to-solve-it",
     "https://doi.org/10.1207/s15430421tip4104_2",
