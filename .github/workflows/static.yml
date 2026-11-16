@@ -137,6 +137,10 @@ jobs:
 
       - name: Report drafts due within 7 days (scheduled runs)
         # Runs after the deploy so the daily release still goes out, then
-        # fails the run (and notifies) if a draft needs attention.
+        # fails the run (and notifies) if a draft needs attention. Restore the
+        # posts first: `scheduled_posts.py --hide` turned future scheduled
+        # posts into drafts for the build, and they must not count as due.
         if: always() && github.event_name == 'schedule'
-        run: python3 scripts/check_upcoming_drafts.py
+        run: |
+          git checkout -- zola-site/content/blog
+          python3 scripts/check_upcoming_drafts.py

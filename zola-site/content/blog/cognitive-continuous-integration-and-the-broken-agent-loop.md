@@ -1,162 +1,177 @@
 +++
-title = "Cognitive Continuous Integration and the Broken Agent Loop"
+title = "Cognitive Continuous Integration Had a Loop but No Why"
 date = "2027-08-01"
-draft = true
-description = "INGENIO-1 was a real experiment in using GitHub Actions to turn opted-in notes issues into reviewable VISION.md specifications. The lesson was that agent output only became useful after the workflow had explicit boundaries, review seams, and failure handling."
+description = "INGENIO-1 was a GitHub Actions agent that turned my labeled notes into VISION.md specifications. I fixed its scope, its races, and its pull requests until every check was green, and it still produced nothing anyone used, because its goal was the agent itself. It was a good organizer with no Why. The goal it should have had, getting my notes into a form other people can use, is what this blog's pipeline does now."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Software Engineering"]
-tags = ["agents", "continuous-integration", "specs", "github-actions", "validation"]
+tags = ["agents", "continuous-integration", "specs", "github-actions", "quest-engine", "primary-directive"]
 [extra]
+scheduled = true
 editorial_track = "software-engineering"
 related = ["software-3-0-needs-engineering-not-magic", "five-levels-of-agent-capability", "hypothesis-driven-agent-experiments", "testing-systems-that-change-themselves"]
 +++
 
-INGENIO-1 was an experiment I ran on my own notes repository. The idea was
-simple enough to sound obvious: a GitHub Actions workflow would run on a
-schedule, read open issues, use the Three Pillars Quest Engine framework to
-analyze them, generate a `VISION.md` specification for each issue, and comment
-back on the issue with the generated artifact.
+INGENIO-1 was an agent I ran on
+[my notes repository](https://github.com/masters3d/ingenio) in 2025. A GitHub
+Actions workflow woke up every hour, read my open issues, applied the Quest
+Engine framework to each one, wrote a `VISION.md` specification, and commented
+back on the issue with what it had made. I called it cognitive continuous
+integration.
 
-The workflow ran hourly. It also had issue-event triggers. The agent announced
-when it was working, created a session record, produced a spec directory, and
-posted a completion comment. In the happy-path version, an unstructured note
-became a reviewable engineering document without me having to perform the same
-translation by hand every time.
+I spent most of my time on it fixing the pipe. It took far too long to ask what
+the pipe was for.
 
-That is the story the experiment wanted to tell. The more useful story is what
-broke.
+## The Goal Was the Agent
 
-## The First Loop Was Too Broad
+The
+[cognitive systems README](https://github.com/masters3d/ingenio/blob/main/cognitive_systems/README.md)
+states the vision in one line: "Transform the ingenio repository into a testbed
+for cognitive agent systems that autonomously improve engineering excellence."
+It names TARS and CASE from _Interstellar_ as the inspiration. It lays out five
+agent levels, from reactive to fully cognitive, and four phases ending in
+"autonomous goal generation."
 
-The first serious problem was scope. The workflow looked at open issues as if
-all of them were assignments for the agent. That made the notes repository feel
-less like a place to think and more like an accidental work queue. A reminder, a
-half-formed idea, and an actual request all looked eligible if the only rule was
-"open issue."
+Then it lists the success metrics: autonomy level, learning rate, innovation
+capacity, collaboration quality, emergent intelligence, self-improvement rate.
+Every one of them measures the agent. None of them asks whether a note became
+more useful to a person.
 
-The same boundary problem showed up with pull requests. GitHub's API can return
-pull requests through issue-shaped endpoints, so a processor that asks for
-issues has to say whether it means issues only. INGENIO-1 did not begin with
-that distinction strongly enough. The fix was not a deeper prompt. It was a
-smaller input contract: only process real issues, and exclude pull requests.
+That is the flaw underneath everything else in this post. The goal of INGENIO-1
+was INGENIO-1.
 
-The second boundary was consent. The workflow needed an explicit opt-in signal.
-The rule became: process only issues carrying the `Ingenio-1` label. The label
-turned an ordinary note into an agent assignment. Without it, the issue remained
-human context. With it, the issue entered the cognitive CI loop.
+## What It Actually Did Was Organize
 
-That one change made the system easier to reason about. The agent no longer had
-to infer whether every open issue deserved a generated spec. The human marked
-the item as ready for processing. The workflow enforced the mark.
+Strip away the vocabulary and the agent did something useful. It took a note I
+had marked as ready, gave it a folder under `specs/`, wrote a document with a
+consistent structure, and linked the result back to the original issue. A pile
+of one-line issues became a directory you could browse. In the
+[Quest Engine](/blog/quest-engine-introduction/), that is Proactive Curiosity,
+the first step of Search: systematically find and organize information. The
+agent was good at it.
 
-## The Scheduler and the Race Were Part of the System
+The trouble was what went inside each document. On December 30, 2022 I wrote
+[issue #23](https://github.com/masters3d/ingenio/issues/23), and the whole body
+was: "The act of building > than finish it." INGENIO-1 turned that into a
+[130-line specification](https://github.com/masters3d/ingenio/blob/main/specs/seeking_is_the_reward/VISION.md).
+Its mission statement reads: "Transform the engineering challenge 'Seeking is
+the reward' into a cognitive agent-enhanced system that autonomously improves
+engineering excellence through recursive meta-learning and human-cognitive
+collaboration." Its central question is "How can cognitive agents autonomously
+improve the concepts in 'Seeking is the reward'?"
 
-The next failure was less philosophical and more operational: some issues were
-not picked up by the scheduler. The system was supposed to run every hour, find
-eligible issues, and process them. When an issue with the right intent did not
-move, the question shifted from agent capability to workflow mechanics.
+That is a question about the agent, not about seeking. Twenty-eight of the 37
+specification files in the repository open with the same mission statement, with
+only the title swapped in. The one line in that spec that held any thinking was
+my own sentence, copied into the "Engineering Context" field. When I finally
+wrote [the post about that note](/blog/seeking-is-the-reward/), none of it came
+from the spec. It came from the note and from what I have learned since writing
+it.
 
-That investigation exposed ordinary continuous-integration details. Was the
-workflow file present on the default branch? Did the issue event trigger fire?
-Did the scheduled run have the right dependencies? Was the label spelled in a
-way the processor recognized? Did the code treat label matching
-case-insensitively? The agent system depended on those mundane answers.
+So the agent organized my notes and then buried each one under a template. That
+padding added length but no understanding.
 
-A later workflow fix made the dependency installation less magical. Instead of
-initializing a fresh package file inside the action run, the workflow used the
-repository's existing `package.json`. The accompanying notes also clarified that
-scheduled runs were working, while issue-event triggers had their own rules: the
-workflow had to exist on the default branch, the event had to happen after the
-workflow existed, and the issue needed the opt-in label.
+## Fixing the Pipe
 
-That is a useful lesson for agent systems. A broken scheduler and a weak prompt
-can produce the same visible symptom: nothing useful happens. The repair is
-completely different. In this case, the loop needed observable workflow
-behavior, not more abstract agent ambition.
+The engineering fixes were real, and they are still the right fixes for any
+agent that writes into a repository.
 
-Once the workflow could run from more than one trigger, the next bug was
-predictable. Two GitHub Actions runs could start almost at the same time for the
-same issue. One run might be caused by an issue event. Another might be caused
-by a label event or a nearby scheduled run. Both would decide they owned the
-same work.
+- **Explicit opt-in.** The first version treated every open issue as an
+  assignment, so a reminder and a request looked the same.
+  [Issue #36](https://github.com/masters3d/ingenio/issues/36) restricted it to
+  issues carrying an `Ingenio-1` label. Later the match was made
+  case-insensitive.
+- **Constrained input.** GitHub's issues API also returns pull requests, so the
+  processor had to filter them out explicitly
+  ([#37](https://github.com/masters3d/ingenio/pull/37)).
+- **Reviewable output.** The agent first committed specs straight to `main`.
+  After #37 every spec went through a branch and a pull request I could reject.
+- **Idempotency.** An issue event and a scheduled run could pick up the same
+  issue seconds apart. The second run failed because the pull request already
+  existed. The fix treated "already exists" as an expected state: look up the
+  existing pull request and settle.
+- **Deliverables separate from logs.** A broad `git add` once produced a pull
+  request containing only session metadata, while the spec was already on
+  `main`. The repair added only `specs/` content and skipped pull requests that
+  had nothing new to review.
+- **Observable scheduling.** When an issue was not picked up
+  ([#42](https://github.com/masters3d/ingenio/issues/42)), the answer was
+  ordinary CI mechanics: workflow on the default branch, events after the
+  workflow existed, dependencies installed from the repository's own
+  `package.json`.
 
-The visible failure was duplicate pull request creation. The first workflow run
-created the branch and pull request. The second reached the same step and failed
-because a pull request already existed for that branch. The agent did not need
-more intelligence to fix that. The processor needed idempotency.
+Each fix made the system more reliable at producing a document. None of them
+asked whether the document helped anyone.
 
-The race-condition fix handled the duplicate as an expected state. If pull
-request creation failed because one already existed, the processor looked up the
-existing pull request for the branch and returned it instead of failing the
-whole run. If it could not retrieve the pull request, it logged a warning and
-posted a generic completion comment rather than treating a harmless duplicate as
-a fatal error.
+The session logs show how that ended. The workflow recorded 33 sessions between
+August 23 and August 25, 2025, then went quiet. In January 2026 I ran a full
+end-to-end validation ([#54](https://github.com/masters3d/ingenio/issues/54)): 7
+of 7 tests passed, 20 of 20 dry-run checks passed, and the latest workflow run
+"correctly identified no issues with 'Ingenio-1' label." Every check was green,
+and the system had nothing to do. Green told me the loop could run. It could not
+tell me whether the loop was worth running, because nobody had said what
+"better" meant.
 
-That changed the meaning of repeated execution. Before the fix, running twice
-was a failure mode. After the fix, running twice was something the system could
-absorb. That is the difference between a demo workflow and an engineered loop.
+## Where the Quest Engine Would Have Started
 
-Another failure came from confusing deliverables with session metadata. A pull
-request was created by the cognitive CI system, but the useful `VISION.md`
-specification already existed on the main branch. The new pull request contained
-only session context. The description claimed a spec had been generated, but the
-diff showed metadata rather than the deliverable a reviewer needed.
+The Quest Engine opens with a Why, and
+[the Why is the Primary Directive](/blog/the-primary-directive/): the standing
+order that says what counts as better before any Search, Drive, or Renew
+happens. In [Agents Are Taking the Drive](/blog/agents-are-taking-the-drive/) I
+argue that agents now handle much of the How, and the part left for me is the
+Why and the context still trapped in people's heads.
 
-The root cause was broad git behavior. Adding everything meant adding cognitive
-session files along with real output. The repair was surgical: ignore session
-metadata, add only the `specs/` content, and skip redundant pull requests when a
-spec already exists and no new deliverable content was produced.
+INGENIO-1 got that division backwards. Its template asked the agent to supply
+the Why ("autonomously improve engineering excellence") and left the context in
+my head, where a five-word note keeps it. The agent had the Drive and a Search
+step. It had no Why to aim at and therefore no Renew, because Renew compares
+what happened with what you expected, and nothing was expected except that the
+agent run.
 
-That distinction matters because logs are still valuable. Session traces,
-validation reports, and processing records are how the system remembers what it
-tried. But they are not the same thing as the artifact under review. A human can
-review a `VISION.md` spec. A pile of session metadata is evidence for debugging,
-not the product of the loop.
+The same gap shows up in two other frames I use.
+[Rumelt's kernel of strategy](/blog/kernel-of-strategy/) starts with a
+diagnosis. INGENIO-1 never had one. "Engineering excellence could be better" is
+a wish, not a diagnosis.
+[Musk's algorithm](/blog/elons-algorithm-manual-process/) puts automation last,
+after you have questioned the requirement and done the step by hand. I put the
+cron job first. I had never turned one of my notes into something useful by
+hand, so I had no idea what the agent should be doing when it tried.
 
-## Cognitive CI Is a Product, Not a Prompt
+## The Goal It Should Have Had
 
-By the time I validated the system end to end, the checklist looked like normal
-software engineering. The tests covered label filtering, cognitive analysis,
-framework application, spec generation, meta-learning, session management, and
-pull request creation. The dry-run validation checked configuration,
-dependencies, workflow structure, historical sessions, label behavior, and
-recent workflow runs.
+Looking back, the goal was always there in the shape of the repository: get the
+thinking out of my notes and into a form other people can use. That is the
+argument of
+[Open Guides Over Closed Answers](/blog/open-guides-over-closed-answers/) and
+[Story Is Engineering Memory](/blog/story-is-engineering-memory/). A note only
+helps someone else once it has been worked into a guide or a story, and that is
+where the context starts to compound.
 
-That validation was the point. INGENIO-1 was not trustworthy because it could
-write a spec. It became more trustworthy when the surrounding system could say
-which issues were eligible, exclude pull requests, avoid redundant work, survive
-duplicate processing, separate logs from deliverables, and report what happened.
+That goal now has a working system, and it is the one producing this post.
+Agents mine the ingenio notes into a backlog of post ideas, which is Search, the
+part INGENIO-1 was already good at. The backlog carries one rule INGENIO-1
+taught me: read the original issue, not only the generated spec, because the
+author's real words are in the issue. An agent drafts the post, which is Drive.
+I review every draft, and it stays `draft = true` until I do. That review is
+where the Why lives. A post goes out on a schedule. A check fails the build if a
+draft gets close to its date without review, so the loop cannot quietly stall
+the way INGENIO-1 did. When a review finds a problem, the fix goes into the
+agents' instructions as a rule, so the next draft starts from it. That is Renew.
 
-The phrase "cognitive continuous integration" can make the experiment sound more
-mysterious than it was. The plain version is better: an agent was allowed to
-transform explicitly labeled notes into structured specifications, but only
-inside a workflow that preserved review, limited scope, and recorded the run.
+It has the same parts as INGENIO-1: an agent, a schedule, a repository, pull
+requests, and checks. The difference is that the success test is about the
+output, not the agent: is this post worth someone's time to read? The fixes from
+INGENIO-1 carried over. The goal did not, because there wasn't one.
 
-That gives the pattern a few hard requirements.
+## What I Would Keep
 
-First, the trigger must be explicit. A label, command, or queue entry tells the
-system that this item is ready for agent processing. Without that boundary, the
-agent confuses notes with assignments.
+Cognitive continuous integration was not a bad idea. An agent that organizes raw
+notes on a schedule is useful, and the engineering around it (opt-in triggers,
+constrained input, reviewable output, idempotency, logs kept apart from
+deliverables) is the minimum for any agent that writes into a repository.
 
-Second, the input type must be constrained. If the workflow is meant to process
-issues, it must exclude pull requests. Similar-looking API objects are not the
-same work.
-
-Third, the output must be reviewable. A generated `VISION.md` belongs in a
-change that a human can inspect, comment on, merge, or reject.
-
-Fourth, logs and deliverables must be separate. Session traces are memory for
-the system. They should not masquerade as the artifact the human is reviewing.
-
-Fifth, the workflow must be idempotent. If the same issue is processed twice,
-the second run should find the existing branch, spec, or pull request and settle
-cleanly. Agent systems do not get an exemption from race conditions.
-
-That is why the broken loop is the useful part of the story. A broad cognitive
-ambition became one small invariant, then another: use the explicit opt-in
-label, exclude pull requests, make scheduled processing observable, skip
-existing specs, handle duplicate pull requests, and validate the whole path. The
-agent may produce the spec, but the engineering system produces trust. Without
-that system, cognitive continuous integration is a prompt with a cron job. With
-it, it becomes a loop a human can let run again.
+What I would change is the order. Write the Why before the workflow. Measure the
+output's usefulness to a person, not the agent's autonomy. Do the transformation
+by hand a few times before automating it. And when an agent is good at
+organizing, call it an organizer. Calling it a cognitive system set it a goal it
+could not meet and left the one it could meet unnamed.
