@@ -1,13 +1,13 @@
 +++
 title = "Conversation Formats Are Engineering Tools"
 date = "2027-10-15"
-draft = true
 description = "Collaboration is shaped by the container that holds the conversation. A fishbowl, a design review, an RFC thread, and a one-on-one all produce different information, so the format should be chosen as deliberately as any other engineering tool."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
 tags = ["collaboration", "conversation", "fishbowl", "meetings", "facilitation", "shared-understanding"]
 [extra]
+scheduled = true
 editorial_track = "engineering-systems"
 related = ["shared-understanding-as-a-practice", "remote-work-needs-context-not-just-tools"]
 +++

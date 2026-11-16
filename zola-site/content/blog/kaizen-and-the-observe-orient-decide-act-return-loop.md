@@ -1,13 +1,13 @@
 +++
 title = "Kaizen and the Observe, Orient, Decide, Act Return Loop"
 date = "2027-08-15"
-draft = true
 description = "Systematic Improvement is the return path of the Quest Engine. Kaizen gives it the discipline of change for the better, and Boyd's loop shows why improvement has to feed the next observation."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Quest Engine"]
 tags = ["quest-engine", "kaizen", "ooda", "systematic-improvement", "feedback-loops"]
 [extra]
+scheduled = true
 editorial_track = "quest-engine"
 series = "quest-engine"
 related = ["action-feedback-adjustment", "sprintspective-one-loop", "iterative-integration", "the-fractal-pattern-inside-the-quest-engine"]

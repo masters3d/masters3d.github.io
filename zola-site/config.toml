@@ -103,6 +103,8 @@ feed_limit = 0
 # The Strathern (1997) DOI resolves to a Wiley Online Library article page; Wiley
 # blocks automated requests the same way the publisher DOIs above do, so skip only
 # that DOI.
+# oli.org (Operation Lifesaver) returns 403 to automated link checkers even though
+# the cited Georgia statistics page loads in a browser; skip only that page.
 skip_prefixes = [
     "https://doi.org/10.1002/(SICI)1234-981X(199707)5:3%3C305::AID-EURO184%3E3.0.CO;2-4",
     "https://press.princeton.edu/books/paperback/9780691164076/how-to-solve-it",
@@ -134,6 +136,7 @@ skip_prefixes = [
     "https://www.osha.gov/etools/computer-workstations/positions",
     "https://exercism.org/",
     "https://github.com/swiftlang/swift-evolution/blob/main/proposals/",
+    "https://oli.org/site/ga/ga-ol-statistics",
 ]
 # skip_anchor_prefixes: add URL prefixes here to skip anchor checking for specific domains
 # Note: zola check always validates external links — this is intentional.
