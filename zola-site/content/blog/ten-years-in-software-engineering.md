@@ -1,20 +1,20 @@
 +++
 title = "Ten Years in Software Engineering"
-date = "2027-10-25"
-draft = true
-description = "Ten years after entering software engineering, a reflection on moving from fear of code to senior-level judgment, ownership, and helping others grow."
+date = "2026-12-01"
+description = "From 2016 to 2026: ten years after entering software engineering, a reflection on moving from fear of code to senior-level judgment, ownership, and helping others grow."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Software Engineering"]
 tags = ["software-engineering", "career-growth", "origin-story", "senior-engineering", "reflection"]
 [extra]
+scheduled = true
 editorial_track = "software-engineering"
 +++
 
-Ten years ago, I was still explaining why I wanted to become a programmer. I had
-learned Python and Swift, built iOS apps, contributed to open source, and
-finished programs that said I was ready. I could make software, but I was still
-trying to understand whether I belonged in software engineering.
+Ten years ago, in 2016, I was still explaining why I wanted to become a
+programmer. I had learned Python and Swift, built iOS apps, and contributed to
+open source. I could make software, but I was still trying to understand whether
+I belonged in software engineering.
 
 The strange part about looking back now as a senior engineer is that code was
 never the hardest part of the transition. Code was the visible obstacle. The
@@ -22,10 +22,10 @@ deeper work was learning to trust my ability to enter an unfamiliar system,
 build a useful mental model, make a decision with incomplete information, and
 remain responsible for what happened next.
 
-My [origin story](/blog/from-creative-tools-to-software-engineering/) ends where
-this one begins. That story was about discovering that programming had been
-hiding inside my creative work all along. This story is about what happened
-after software engineering became the work.
+My [origin story](/blog/from-creative-tools-to-software-engineering/), first
+published in October 2016, ends where this one begins. That story was about
+discovering that programming had been hiding inside my creative work all along.
+This story is about what happened after software engineering became the work.
 
 ## The skills I thought would matter
 
@@ -57,11 +57,12 @@ that would constrain a system for years. It meant making the work legible so
 another person could challenge it, continue it, or operate it after I moved on.
 It meant noticing when the actual problem was not code.
 
-The title was not the destination. It was a larger radius of responsibility. My
-work was judged less by whether my part compiled and more by whether the whole
-system produced the intended result. That included the interfaces between
-software and people: plans, reviews, incidents, handoffs, mentoring, and the
-small decisions that teach a team what it values.
+The title was not the destination. It was a larger radius of responsibility, and
+each step up turned out to be a different job, not a reward for doing the old
+one well. My work was judged less by whether my part compiled and more by
+whether the whole system produced the intended result. That included the
+interfaces between software and people: plans, reviews, incidents, handoffs,
+mentoring, and the small decisions that teach a team what it values.
 
 I also had to unlearn the idea that struggling with a subject proved I lacked
 the capacity for it. My freshman-year experience had turned difficulty into a
@@ -93,7 +94,7 @@ of my interests. Software engineering became that medium.
 ## Ten years did not finish the work
 
 A decade is long enough to recognize patterns and short enough to know how many
-remain invisible. I have more judgment than I had in 2017, but judgment has made
+remain invisible. I have more judgment than I had in 2016, but judgment has made
 me less interested in pretending that any one framework, language, or process is
 the answer. Context keeps winning.
 

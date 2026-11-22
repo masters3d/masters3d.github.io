@@ -1,13 +1,13 @@
 +++
 title = "Directed Intentionality"
 date = "2028-05-15"
-draft = true
 description = "Directed Intentionality is the discipline of choosing one clear objective and protecting it. It reduces ambiguity, lowers cognitive load, and lets engineering attention flow toward a defined success state."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Quest Engine"]
 tags = ["quest-engine", "strategy", "decision-making", "focus", "alignment"]
 [extra]
+scheduled = true
 editorial_track = "quest-engine"
 related = ["quest-engine-introduction", "kernel-of-strategy", "guiding-policies-behavior-alignment", "cohesive-narrative", "adaptive-control"]
 +++

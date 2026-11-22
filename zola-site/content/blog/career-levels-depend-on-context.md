@@ -1,13 +1,13 @@
 +++
 title = "Career Levels Depend on Context"
 date = "2028-02-01"
-draft = true
 description = "Career levels are not portable labels. A level only makes sense inside a company context, where size, product shape, platform needs, and culture decide what scope actually means."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
 tags = ["career", "individual-contributor", "levels", "engineering-systems", "systems-thinking"]
 [extra]
+scheduled = true
 editorial_track = "engineering-systems"
 related = ["individual-contributor-levels-as-changing-scope", "people-systems-and-the-hiring-pipeline", "promotion-driven-development"]
 +++
@@ -24,9 +24,11 @@ platform group, an innovation culture, or a stability culture. The title travels
 more easily than the responsibility does.
 
 [Individual Contributor Levels as Changing Scope](/blog/individual-contributor-levels-as-changing-scope/)
-framed levels as widening responsibility: task, component, system, systems of
-systems. This post adds the uncomfortable qualifier. Levels still track scope,
-but the organization decides what kind of scope is available.
+framed levels as widening responsibility (task, component, system, systems of
+systems) and argued that each level is a different job, not a harder version of
+the one below it. This post adds the uncomfortable qualifier. Levels still track
+scope, but the organization decides what kind of scope is available, so the same
+level can also be a different job at two different companies.
 
 ## Startup Scope Is Wide and Thin
 
