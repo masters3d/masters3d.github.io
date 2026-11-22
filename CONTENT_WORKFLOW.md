@@ -122,13 +122,29 @@ python3 scripts/check_repeated_phrases.py --discover         # frequent phrases 
   a failure. These wait for the author's decision.
 - **enforced**: the phrase is listed under `[enforce]` with a maximum count. A
   count above that maximum fails PR Validation, with an annotation on each use.
-  "X is real" (except about real numbers) and "I keep coming back to" are
-  enforced at 0; "load-bearing" and the "I want to be careful" hedges at 3.
+  "X is real" (except about real numbers), "I keep coming back to",
+  "load-bearing", and the "I want to be careful" hedges are enforced at 0.
 - **allowed**: listed under `[allow]` with a reason; reported but never flagged.
+- **Kept**: uses the author approved one at a time under `[[keep]]`. They never
+  count toward a cap or the limit.
 
 To eradicate a phrase, add its id to `[enforce]` (usually `= 0`) and rewrite the
-uses `--show` lists. To keep one, add it to `[allow]`. Only the author edits
-those two tables. PR Validation writes the table to the job summary; the deploy
+uses `--show` lists. To accept a whole family, add it to `[allow]`. To keep one
+warranted use, add a `[[keep]]` entry with the reason and a quote copied from
+`--show`:
+
+```toml
+[[keep]]
+id = "load-bearing"
+post = "elons-algorithm-manual-process.md"
+quote = "that the order is load bearing rather than decorative"
+reason = "States the post's claim that the order of the steps holds the process up."
+```
+
+The quote holds the phrase plus at least 3 more words of its sentence and must
+match exactly one use, so rewriting that sentence fails the check until the
+entry is updated or removed. Only the author edits `[enforce]`, `[allow]`, and
+`[[keep]]`. PR Validation writes the table to the job summary; the deploy
 workflow does not run this check, so a phrase never blocks a release.
 
 ## 🔄 Deployment Process

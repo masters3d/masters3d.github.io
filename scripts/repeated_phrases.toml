@@ -5,11 +5,14 @@
 # That alone does not fail CI. A family fails CI only when it is listed under
 # [enforce] and the posts use it more often than its cap.
 #
-# Only the author (masters3d) edits [enforce] and [allow]:
+# Only the author (masters3d) edits [enforce], [allow], and [[keep]]:
 #   [enforce]  id = N      fail CI when the posts use the family more than N
-#                          times; 0 bans it.
+#                          times; 0 bans it. Kept uses do not count.
 #   [allow]    id = "why"  the author accepts the family; the report stops
 #                          flagging it.
+#   [[keep]]   one use the author accepts, with the reason (see the end of
+#              this file). Use it when a phrase is banned but one sentence
+#              has a real reason to say it.
 #
 # Each [[phrase]] has:
 #   id       kebab-case name used by --show, [enforce], and [allow]
@@ -275,14 +278,62 @@ example = "The practical caution is cost."
 why = "A stock label for a caveat."
 instead = "State the caveat."
 
-# Only the author edits the two tables below. Agents never add, raise, or remove
-# entries on their own; they rewrite the posts instead.
+# The author decides the tables below. Agents never add, raise, or loosen
+# entries; they rewrite the posts instead. The one edit an agent makes: when a
+# change removes a kept use from its post, delete that [[keep]] in the change.
 
 [enforce]
 keep-coming-back = 0
 x-is-real = 0
-load-bearing = 3      # keep only uses with a real reason
-hedge-want-to-be = 3  # keep only uses with a real reason
+load-bearing = 0
+hedge-want-to-be = 0
 
 [allow]
 # is-genuinely = "my voice; reviewed 2026-11-22"
+
+# One [[keep]] per use the author accepts. A kept use does not count toward
+# [enforce] or the report.
+#   id      the [[phrase]] id
+#   post    the post's file name in zola-site/content/blog
+#   quote   the use plus at least 3 more words of its sentence, as the post
+#           reads (case, line breaks, and markup do not matter). Copy it from
+#           --show ID; the [ ] and ... that --show adds are ignored.
+#   reason  why this sentence needs the phrase
+# CI fails when a quote matches no use or more than one, so rewriting a kept
+# sentence means updating or removing its entry.
+
+[[keep]]
+id = "load-bearing"
+post = "elons-algorithm-manual-process.md"
+quote = "that the order is load bearing rather than decorative"
+reason = "States the post's claim that the order of the steps holds the process up; decorative is the contrast."
+
+[[keep]]
+id = "load-bearing"
+post = "manual-to-self-sustaining-quest-engine.md"
+quote = "and the claim that the order is load bearing"
+reason = "Restates the claim of the Elon's algorithm post in that post's words."
+
+[[keep]]
+id = "load-bearing"
+post = "leverage-and-the-stairs-you-build.md"
+quote = "The scaffold was internalized; it became load-bearing structure"
+reason = "Finishes the scaffold metaphor: the temporary support became part of the building."
+
+[[keep]]
+id = "hedge-want-to-be"
+post = "models-are-tools-portability-watermarks.md"
+quote = "I want to be careful here, because I am reasoning about a policy from the outside"
+reason = "Flags that the premise about the policy is second-hand and may be wrong."
+
+[[keep]]
+id = "hedge-want-to-be"
+post = "seeking-is-the-reward.md"
+quote = "I am not a neuroscientist, and I do not want to pretend two lines of research"
+reason = "Discloses missing expertise before leaning on research outside the author's field."
+
+[[keep]]
+id = "hedge-want-to-be"
+post = "world-cup-2026-star-players-and-team-strategy.md"
+quote = "I want to be careful here, because I am advocating for star players"
+reason = "Discloses a personal bias in the argument for star players."

@@ -119,18 +119,22 @@
     is real", "and it is real") unless the sentence is about real numbers, and
     "I keep coming back to" or its rewordings ("I keep returning to", "I keep
     circling", "kept pulling me back to"). The author does not say them.
-  - At most 3 uses each (enforced at 3, all 3 taken): "load-bearing" and the
-    writing hedges ("I want to be careful / precise / clear / fair", "I do not
-    want to pretend"). The kept uses each have a reason: a structural claim, or
-    a disclosure of a specific limit. Do not add more; say what depends on the
-    thing, or state the limit directly.
+  - Also enforced at 0, except the uses the author kept under `[[keep]]`:
+    "load-bearing" and the writing hedges ("I want to be careful / precise /
+    clear / fair", "I do not want to pretend"). Each kept use has a reason: a
+    structural claim, or a disclosure of a specific limit. Do not add more; say
+    what depends on the thing, or state the limit directly.
   - Rewrite by stating what is actually true (it exists, it costs something,
     you feel it, it was measured), not by swapping in "genuine" or "valid".
   - Before adding prose, run `python3 scripts/check_repeated_phrases.py` and do
     not add uses of a flagged phrase. `--show ID` lists every use with its file
     and line; `--discover` lists frequent phrases no pattern covers yet.
-  - Only the author edits `[enforce]` and `[allow]`. Add a `[[phrase]]` family
-    only when asked; its `example` must match the pattern exactly once.
+  - Only the author edits `[enforce]`, `[allow]`, and `[[keep]]`. Never add a
+    `[[keep]]` to make the check pass: rewrite the sentence, or, if it has a
+    real reason to use the phrase, ask the author to keep it. Leave kept
+    sentences as they are unless asked; if a change removes a kept use, delete
+    its `[[keep]]` entry in the same change. Add a `[[phrase]]` family only when
+    asked; its `example` must match the pattern exactly once.
   - If an enforced phrase sits inside a quotation or historical wording that
     must be kept, ask the author instead of rewriting the quote.
 - **Link every citation so the author can verify it** - Whenever a post names a
