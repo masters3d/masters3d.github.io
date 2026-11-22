@@ -65,10 +65,10 @@ finishes it. That is uncommon, and it is exactly the quality worth prizing. It
 is recognizing the chance, going full
 [Quest Engine](/blog/quest-engine-introduction/) on it, and executing on the
 opportunity. It sounds like a cliché, but it really is about honoring the
-opportunity, respecting it, and acting accordingly. In the Quest Engine terms I
-keep coming back to, the star player is the one whose searching (seeing the
-chance before anyone else) and being driven (committing to it without
-hesitation) are both sharp at the same instant.
+opportunity, respecting it, and acting accordingly. In Quest Engine terms, the
+star player is the one whose searching (seeing the chance before anyone else)
+and being driven (committing to it without hesitation) are both sharp at the
+same instant.
 
 This is the same three-term dynamic I wrote about in
 [Timing, Momentum, and Resonance](/blog/quest-engine-timing-momentum-resonance/).

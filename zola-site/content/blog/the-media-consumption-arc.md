@@ -128,7 +128,7 @@ artifact. A game can provide real renewal. A
 [systematic review of commercial video games](https://mental.jmir.org/2021/8/e28150/)
 found encouraging evidence for reducing stress and anxiety, while also noting
 that the research was varied and still limited. The controlled environment
-matters: the challenge is real enough to occupy the mind, but the consequences
+matters: the challenge is hard enough to occupy the mind, but the consequences
 remain bounded.
 
 There is also a reason I may return to games later in life. Recent reviews of

@@ -93,9 +93,9 @@ the process is training engineers to neglect them.
 
 There is a measurement trap here. Once a behavior is rewarded, it can be
 performed for the metric. Documentation can become page count. Mentoring can
-become calendar theater. Reliability can become selective storytelling. That
-risk is real, but it is not a reason to reward only launches. It is a reason to
-read evidence carefully and ask whether the behavior changed the system.
+become calendar theater. Reliability can become selective storytelling. None of
+that is a reason to reward only launches. It is a reason to read evidence
+carefully and ask whether the behavior changed the system.
 
 ## Make the promotion story match the engineering story
 

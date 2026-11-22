@@ -24,13 +24,12 @@ request and have it review. That helps at the margins, and I use it, but I do
 not think it is the main move. A reviewing agent gives you an opinion, and an
 opinion (human or synthetic) is a probabilistic thing. What actually earns trust
 is proof: an environment that demonstrates the behavior of the change by running
-it. The reframe I keep coming back to is about where the engineering effort
-should go. Instead of spending it in the review cycle (making PRs move faster,
-adding another reviewer, tuning the queue), spend it ahead of time building the
-environment that validates the change. Once that full end-to-end validation
-exists, the cost flips: running it is cheap, and reviewing a change that has
-already been verified is cheap too, because the hard proof is already done by
-the time anyone looks.
+it. That changes where the engineering effort should go. Instead of spending it
+in the review cycle (making PRs move faster, adding another reviewer, tuning the
+queue), spend it ahead of time building the environment that validates the
+change. Once that full end-to-end validation exists, the cost flips: running it
+is cheap, and reviewing a change that has already been verified is cheap too,
+because the hard proof is already done by the time anyone looks.
 
 ## The review bottleneck is a trust problem
 

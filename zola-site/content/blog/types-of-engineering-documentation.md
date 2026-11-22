@@ -84,11 +84,11 @@ the medium that lets the next person act" is better.
 
 ## Documentation Is Shared Infrastructure
 
-The tragedy of the commons is the economic model I keep coming back to for
-documentation. Everyone benefits from good context. The cost of creating and
-maintaining it lands on a smaller set of people, often at the exact moment they
-are busiest. If the organization does not make documentation easy, visible,
-required where it matters, and integrated with the work, the commons will decay.
+The tragedy of the commons is the economic model that fits documentation.
+Everyone benefits from good context. The cost of creating and maintaining it
+lands on a smaller set of people, often at the exact moment they are busiest. If
+the organization does not make documentation easy, visible, required where it
+matters, and integrated with the work, the commons will decay.
 
 That decay is not moral failure. It is a system doing what it was designed to
 do. If promotion, planning, and review systems only reward shipped features,

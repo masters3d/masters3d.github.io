@@ -18,8 +18,8 @@ Pro. I wrote about
 [my first year with the 12.9-inch iPad Pro](/blog/2016-one-year-of-ipad-pro-12-9/).
 I loved the hardware, the battery life, and the speakers. I used it to watch
 movies, read books and PDFs, browse the internet, and occasionally as a mobile
-hotspot. I also kept circling the same problem: typing on glass never felt
-natural, and none of the physical keyboards felt compelling enough.
+hotspot. What it never solved was typing: the glass keyboard never felt natural,
+and none of the physical keyboards felt compelling enough.
 
 No, I did not buy the Vision Pro. I do wonder how different my reviews of these
 devices would be.

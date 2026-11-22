@@ -83,9 +83,9 @@ A sprint plan made without this scan is already stale.
 Once those facts are visible, the team can decide what to do with them
 immediately. Not someday. Not in a process improvement backlog that nobody
 opens. Immediately. The next sprint should include the adjustment: reduce
-planned feature work because operational load is real, add a quality task
-because review pain showed a deeper problem, change how discovery happens
-because late context was the repeated failure.
+planned feature work because operational load ate into the last sprint, add a
+quality task because review pain showed a deeper problem, change how discovery
+happens because late context was the repeated failure.
 
 This is the same action-feedback-adjustment rhythm that keeps showing up in
 engineering systems. Action creates evidence. Evidence changes the plan. The

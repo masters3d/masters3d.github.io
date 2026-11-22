@@ -102,6 +102,34 @@ Claude's text watermark say it is this kind of keyed statistical mark, not
 hidden Unicode, and no detector key is published. The check says that in its
 output. It does not paraphrase text to chase a signal it cannot locate.
 
+## 🔁 Repeated phrase check
+
+Phrases that read fine once turn into filler when every post leans on them ("I
+keep coming back to", "the tradeoff is real", "genuinely", "this is where").
+`scripts/check_repeated_phrases.py` counts each phrase family listed in
+`scripts/repeated_phrases.toml` across every post, drafts included, and prints
+the count, the number of posts, and a status for each.
+
+```bash
+python3 scripts/check_repeated_phrases.py --self-test        # detector fixtures
+python3 scripts/check_repeated_phrases.py                    # report and enforce
+python3 scripts/check_repeated_phrases.py --show x-is-real   # every use, file:line
+python3 scripts/check_repeated_phrases.py --discover         # frequent phrases not watched yet
+```
+
+- **over limit**: used more than `limit` (3) times. Reported as a warning, never
+  a failure. These wait for the author's decision.
+- **enforced**: the phrase is listed under `[enforce]` with a maximum count. A
+  count above that maximum fails PR Validation, with an annotation on each use.
+  "X is real" (except about real numbers) and "I keep coming back to" are
+  enforced at 0.
+- **allowed**: listed under `[allow]` with a reason; reported but never flagged.
+
+To eradicate a phrase, add its id to `[enforce]` (usually `= 0`) and rewrite the
+uses `--show` lists. To keep one, add it to `[allow]`. Only the author edits
+those two tables. PR Validation writes the table to the job summary; the deploy
+workflow does not run this check, so a phrase never blocks a release.
+
 ## 🔄 Deployment Process
 
 **Automatic via GitHub Actions:**

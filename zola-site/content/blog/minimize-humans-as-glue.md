@@ -14,11 +14,10 @@ Tanya Reilly's talk [_Being Glue_](https://www.noidea.dog/glue) is one of those
 pieces of writing that reorganizes how you see your own week. The idea is simple
 and uncomfortable: every team runs on a layer of invisible work (coordinating,
 unblocking, onboarding, documenting, smoothing over the rough edges between
-people). That work is real, the team genuinely needs it, and it is almost never
-the work that gets you promoted. Reilly calls it glue, and she points out the
-trap inside it. The people who hold the team together with glue often watch less
-helpful, more visible colleagues move up the ladder while their own careers
-quietly stall.
+people). The team needs that work, and it is almost never the work that gets you
+promoted. Reilly calls it glue, and she points out the trap inside it. The
+people who hold the team together with glue often watch less helpful, more
+visible colleagues move up the ladder while their own careers quietly stall.
 
 I lived the trap before I had a name for it. A few years back I learned about
 _Being Glue_, and it landed hard because I was exactly the person being

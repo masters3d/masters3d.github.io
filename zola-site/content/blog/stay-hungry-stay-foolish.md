@@ -117,8 +117,9 @@ you haven't opened yet. Even after you've learned something and know everything
 about it, curiosity finds the next adjacent unknown.
 
 The people who keep growing aren't the ones who know the most. They're the ones
-who keep coming back to not-knowing. Not every day. Not perfectly. But on
-aggregate, consistently enough that it becomes a force of habit.
+who keep picking problems they don't know how to solve yet. Not every day. Not
+perfectly. But on aggregate, consistently enough that it becomes a force of
+habit.
 
 ## The Quest Engine
 

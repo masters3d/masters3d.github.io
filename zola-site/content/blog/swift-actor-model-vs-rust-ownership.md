@@ -10,10 +10,10 @@ tags = ["swift", "rust", "concurrency", "actors", "memory-safety", "type-systems
 editorial_track = "software-engineering"
 +++
 
-I keep coming back to Swift's
-[actor model](https://developer.apple.com/documentation/swift/actor), and
-something small keeps nagging at me. I say this as someone who loves the
-language (I have written before about
+Something small about Swift's
+[actor model](https://developer.apple.com/documentation/swift/actor) keeps
+nagging at me. I say this as someone who loves the language (I have written
+before about
 [why Swift is my favorite language I never got paid to use](/blog/swift-journey-why-not-professional/),
 and I predicted its rise
 [back in 2014](/blog/apple-swift-apps-everywhere-prediction/)). The whole

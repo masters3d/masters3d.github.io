@@ -45,8 +45,8 @@ workouts together, consistently, and that group carried me through the mornings
 I would have skipped alone. The results showed within the first month, and by
 the end of four months I had lost 20% of my body weight.
 
-The tradeoffs were real. On the plus side, I lost the weight and I was fast. On
-the minus side, a lot of muscle went with the fat. I was small, and I was not
+That approach had tradeoffs. On the plus side, I lost the weight and I was fast.
+On the minus side, a lot of muscle went with the fat. I was small, and I was not
 very strong. Then I stopped doing six hours a week, and the weight came back.
 That was the first lesson: fitness is not something you do once and keep for the
 rest of your life. If the routine stops, the results stop with it.

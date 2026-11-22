@@ -148,12 +148,12 @@ There is a version of this argument I have had before, in a different life.
 
 When I was editing video, there were camps. Avid people, who treated Media
 Composer as the professional default. Premiere people, who thought they had the
-superior tool. Final Cut people, who thought they had the modern one. The
-arguments were real and occasionally heated, and the audience never once cared.
-Nobody walked out of a film asking which NLE cut it. The cuts, the fades, the
-pacing, the choice to hold a shot two seconds longer than comfortable: all of
-that was a person. The tool was a control surface for a decision that had
-already been made in someone's head.
+superior tool. Final Cut people, who thought they had the modern one. The camps
+argued, sometimes heatedly, and the audience never once cared. Nobody walked out
+of a film asking which NLE cut it. The cuts, the fades, the pacing, the choice
+to hold a shot two seconds longer than comfortable: all of that was a person.
+The tool was a control surface for a decision that had already been made in
+someone's head.
 
 The same was true one step down the chain. Color grading happened somewhere
 else, with people who did nothing but that. You did not hand them a project
@@ -180,13 +180,13 @@ tax, and the tax is paid in my evenings.
 
 There is one more thread, and it is the one I care about most.
 
-I have an idea I keep circling: a mode where the model guides and the human does
-the work. Not to be precious about typing, and not because more turns are
-better. Because the small amount of work I do with my own hands is where the
-comprehension gets manufactured. I made this case about validation already, and
-it applies to authoring too. Reading generated code gives me a pleasant and
-largely false sense of understanding. Typing a piece of it, even a small piece,
-does not let me fool myself.
+I want a mode where the model guides and the human does the work. Not to be
+precious about typing, and not because more turns are better. Because the small
+amount of work I do with my own hands is where the comprehension gets
+manufactured. I made this case about validation already, and it applies to
+authoring too. Reading generated code gives me a pleasant and largely false
+sense of understanding. Typing a piece of it, even a small piece, does not let
+me fool myself.
 
 This is the darkroom argument. When I was taking film classes, digital cameras
 were already mainstream and perfectly good, and some of my classmates still

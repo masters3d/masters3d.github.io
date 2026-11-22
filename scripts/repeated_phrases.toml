@@ -1,0 +1,262 @@
+# Phrase families counted by scripts/check_repeated_phrases.py across every post
+# in zola-site/content/blog (drafts and scheduled posts too, since they go live).
+#
+# The report lists every family used more than `limit` times, with each use.
+# That alone does not fail CI. A family fails CI only when it is listed under
+# [enforce] and the posts use it more often than its cap.
+#
+# Only the author (masters3d) edits [enforce] and [allow]:
+#   [enforce]  id = N      fail CI when the posts use the family more than N
+#                          times; 0 bans it.
+#   [allow]    id = "why"  the author accepts the family; the report stops
+#                          flagging it.
+#
+# Each [[phrase]] has:
+#   id       kebab-case name used by --show, [enforce], and [allow]
+#   phrase   the readable form shown in the report
+#   pattern  Python regular expression, matched without regard to case against
+#            each paragraph joined into one line with single spaces. Write it
+#            as a literal string ('...', or '''...''' when it contains an
+#            apostrophe) so backslashes reach the regex unchanged. Include the
+#            usual rewordings, so swapping in a synonym does not hide a use.
+#   unless   optional regex; a use does not count when its sentence matches it
+#   example  text the pattern must match exactly once (checked on every run)
+#   why      why the family is watched
+#   instead  what to write instead
+
+limit = 3
+
+[[phrase]]
+id = "keep-coming-back"
+phrase = "I keep coming back to"
+pattern = '\b(?:keeps?|kept|keeping) (?:coming|going) back to\b|\bI (?:also |still )?(?:keep|kept) (?:returning to|circling|turning (?:it|this|that) over)\b|\b(?:keeps?|kept) pulling me back\b'
+example = "The idea I keep coming back to is small."
+why = "The author does not say this. It announces that an idea matters instead of showing why. Covers the rewordings: returning to, circling, turning it over, pulling me back."
+instead = "State the idea and why it fits here: \"WebAssembly fits because it is the only boundary that...\"."
+
+[[phrase]]
+id = "x-is-real"
+phrase = "X is real"
+pattern = '''(?:\b(?:is|are|was|were)|(?<=\w)'(?:s|re))(?: (?:still|also|very|quite|so|just as|equally|all too|definitely|certainly|absolutely|genuinely))* real\b(?= ?(?:[.,;:!?)\]"'\u2014]|$)| (?:and|but|or|yet|so|enough|precisely|too|even|because|since|whether|if|when|while|though|although|for|in|to|at|here|now|only|again|already|regardless|either)\b)'''
+unless = '''\b(?:roots?|eigenvalues?|imaginary|integers?|polynomials?|coefficients?|real (?:numbers?|parts?|lines?|axis|values?|solutions?)|complex (?:numbers?|plane|values?))\b|\b\d+(?:\.\d+)? (?:is|are) real\b'''
+example = "The risk is real, but it is small."
+why = "The author does not say this. \"X is real, but...\" concedes a point by assertion and gives the reader nothing to check. Sentences about real numbers do not count; \"real value\" and other uses before a noun are a different phrase."
+instead = "Say what the thing costs, how often it happens, or who pays for it, or drop the concession and make the point."
+
+[[phrase]]
+id = "this-is-also-why"
+phrase = "This is also why"
+pattern = '\b(?:this|that|it) is also why\b'
+example = "This is also why the tests matter."
+why = "Bolts one more consequence onto the argument; repeated, the post reads like a list of effects."
+instead = "Give the consequence its own sentence with its cause, or cut it."
+
+[[phrase]]
+id = "same-instinct"
+phrase = "the same instinct"
+pattern = '\bthe same instinct\b'
+example = "It comes from the same instinct."
+why = "Links two ideas by assertion instead of by mechanism."
+instead = "Name what the two cases share."
+
+[[phrase]]
+id = "key-insight"
+phrase = "the key insight"
+pattern = '\bthe key insight\b'
+example = "The key insight is simple."
+why = "Labels a sentence as important instead of making it so."
+instead = "State the insight."
+
+[[phrase]]
+id = "pattern-is-clear"
+phrase = "the pattern is clear"
+pattern = '\bthe pattern is clear\b'
+example = "By now the pattern is clear."
+why = "Claims a conclusion before the reader has seen the evidence."
+instead = "Show the cases and let the reader see the pattern."
+
+[[phrase]]
+id = "is-where"
+phrase = "X is where Y"
+pattern = '\b(?:is|was) where (?:the|this|that|it|you|we|I|a|an|most|all)\b'
+example = "This is where the trouble starts."
+why = "A stock pivot that turns every point into a place."
+instead = "Say what happens and when: \"The trouble starts when...\"."
+
+[[phrase]]
+id = "genuinely"
+phrase = "genuinely"
+pattern = '\bgenuinely\b'
+example = "It is genuinely useful."
+why = "An intensifier that asks to be believed and adds no information."
+instead = "Delete it, or give the evidence that makes the claim true."
+
+[[phrase]]
+id = "quietly"
+phrase = "quietly"
+pattern = '\bquietly\b'
+example = "The test quietly passes."
+why = "A stock dramatic adverb (\"quietly decides\", \"quietly breaks\")."
+instead = "Delete it, or say how the thing goes unnoticed."
+
+[[phrase]]
+id = "not-just"
+phrase = "is not just X"
+pattern = '''\b(?:(?:is|are|was|were|it's|that's) not|isn't|aren't|wasn't|weren't) (?:just|only|merely|simply)\b'''
+example = "The tool is not just a linter."
+why = "Sets up a smaller claim to knock down (\"it is not just X, it is Y\")."
+instead = "Say what it is."
+
+[[phrase]]
+id = "is-exactly"
+phrase = "is exactly the / what"
+pattern = '\b(?:is|was|are|were) exactly (?:the|what|where|why|how|when)\b'
+example = "That is exactly the problem."
+why = "\"Exactly\" adds emphasis, not precision."
+instead = "Delete \"exactly\", or show how the two things match."
+
+[[phrase]]
+id = "stops-being"
+phrase = "stops being X"
+pattern = '\bstop(?:s|ped)? being\b'
+example = "The tool stops being a toy."
+why = "A stock transformation beat; repeated, every change sounds the same."
+instead = "Say what changed and when."
+
+[[phrase]]
+id = "asks-whether"
+phrase = "X asks whether"
+pattern = '\basks whether\b'
+example = "The test asks whether the change is safe."
+why = "Makes a framework or test ask questions instead of saying what it checks."
+instead = "Say what you check: \"Check whether...\", or state the test."
+
+[[phrase]]
+id = "the-x-is-not"
+phrase = "the point is not X"
+pattern = '\bthe (?:real )?(?:point|goal|fix|answer|question|problem|lesson|issue|trick|aim|job|test) (?:is|was) not\b'
+example = "The point is not speed."
+why = "Opens with what something is not before saying what it is."
+instead = "Lead with the claim."
+
+[[phrase]]
+id = "the-part-that"
+phrase = "is the part that"
+pattern = '\b(?:is|was) the part (?:that|I|where|which|you|we)\b|(?-i:\bHere) is the part\b'
+example = "That is the part that matters."
+why = "Points at a passage instead of saying what it shows."
+instead = "State the point directly."
+
+[[phrase]]
+id = "here-is-the"
+phrase = "Here is the X"
+pattern = '''(?-i:\bHere)(?:'s| is) the (?!part\b)'''
+example = "Here is the catch."
+why = "A drumroll before the point."
+instead = "Start with the point."
+
+[[phrase]]
+id = "the-x-part-is"
+phrase = "the interesting part is"
+pattern = '\bthe (?:interesting|hard|harder|hardest|tricky|easy|uncomfortable|important|surprising|useful|best|worst|subtle|difficult) part (?:is|was)\b'
+example = "The hard part is the data."
+why = "Tells the reader how to feel about the next sentence."
+instead = "Say the thing; let it be interesting on its own."
+
+[[phrase]]
+id = "lives-in"
+phrase = "X lives in Y"
+pattern = '\b(?:lives?|lived) in (?:the|a|an|one|its|your|their|that|this)\b'
+example = "The context lives in the ticket."
+why = "A stock metaphor for where something is stored or decided."
+instead = "Use the plain verb: \"is in\", \"is stored in\", \"is decided by\"."
+
+[[phrase]]
+id = "shape-metaphor"
+phrase = "the shape of X"
+pattern = '\bsame shape\b|\bthe shape of\b'
+example = "Both bugs have the same shape."
+why = "\"Shape\" stands in for structure, pattern, or form without saying which."
+instead = "Name the structure: the steps, the parts, the order."
+
+[[phrase]]
+id = "is-what-makes"
+phrase = "X is what makes Y"
+pattern = '\b(?:is|are|was|were) what makes\b'
+example = "That loop is what makes it work."
+why = "A cleft sentence that delays the point."
+instead = "Put the cause first: \"That loop makes it work\"."
+
+[[phrase]]
+id = "honest-x"
+phrase = "the honest answer"
+pattern = '\bthe (?:more |most )?honest (?:answer|version|caveat|finding|picture|reading|truth|move|question|thing|part|way|framing|limit|summary|reply|account)\b|\b(?:to be|being) honest\b'
+example = "The honest answer is no."
+why = "Implies the rest of the post is less than honest."
+instead = "Give the answer."
+
+[[phrase]]
+id = "worth-naming"
+phrase = "worth noting"
+pattern = '\bworth (?:noting|naming|saying|pointing out|being (?:clear|explicit|precise)|stating|admitting|spelling out|separating|pausing on|asking|remembering)\b'
+example = "It is worth noting the cost."
+why = "Announces a point instead of making it."
+instead = "Make the point."
+
+[[phrase]]
+id = "hedge-want-to-be"
+phrase = "I want to be careful"
+pattern = '''\bI want to be (?:careful|clear|precise|explicit|fair)\b|\bI (?:do not|don't) want to (?:pretend|overstate|overclaim|oversell)\b'''
+example = "I want to be careful here."
+why = "Hedges about the writing instead of stating the limit."
+instead = "State the limit: \"This held for one team over six months.\""
+
+[[phrase]]
+id = "load-bearing"
+phrase = "load-bearing"
+pattern = '\bload[- ]bearing\b'
+example = "That test is load-bearing."
+why = "A building metaphor used to mean \"important\"."
+instead = "Say what depends on it."
+
+[[phrase]]
+id = "whole-point"
+phrase = "the whole point"
+pattern = '\bthe whole point\b'
+example = "That was the whole point."
+why = "Emphasis in place of an argument."
+instead = "State the purpose."
+
+[[phrase]]
+id = "tempting"
+phrase = "it is tempting to"
+pattern = '''\b(?:is|it's) tempting to\b'''
+example = "It is tempting to skip the test."
+why = "Sets up an imagined reader to correct."
+instead = "Name who does it and why it fails."
+
+[[phrase]]
+id = "no-amount-of"
+phrase = "no amount of"
+pattern = '\bno amount of\b'
+example = "No amount of process fixes that."
+why = "A stock absolute."
+instead = "Say what does not work and why."
+
+[[phrase]]
+id = "practical-caution"
+phrase = "the practical caution"
+pattern = '\bthe practical caution\b'
+example = "The practical caution is cost."
+why = "A stock label for a caveat."
+instead = "State the caveat."
+
+# Only the author edits the two tables below. Agents never add, raise, or remove
+# entries on their own; they rewrite the posts instead.
+
+[enforce]
+keep-coming-back = 0
+x-is-real = 0
+
+[allow]
+# genuinely = "my voice; reviewed 2026-11-22"

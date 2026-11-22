@@ -34,7 +34,7 @@ it." The earliest close match
 found is from Coleman Cox, in a 1922 collection called _Listen to This_. I think
 it is true, and I think both halves are true.
 
-## Luck is real, and it is not the whole story
+## Luck matters, and it is not the whole story
 
 I do not want to pretend luck does not exist. It does, and it is a big component
 of a lot of success. Timing, the people you happen to work with, a reorg that

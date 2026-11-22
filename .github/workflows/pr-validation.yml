@@ -144,6 +144,17 @@ jobs:
           python3 scripts/check_content_marks.py --self-test
           python3 scripts/check_content_marks.py
 
+      - name: Report repeated phrases (fail only on enforced ones)
+        # Counts each phrase family in scripts/repeated_phrases.toml across
+        # every post (drafts included) and writes the table to the job summary.
+        # A phrase used more than `limit` times is flagged as a warning; only
+        # phrases the author lists under [enforce] fail the build. List the
+        # uses locally with: python3 scripts/check_repeated_phrases.py --show ID
+        # Not in the deploy workflow, so a phrase never blocks a release.
+        run: |
+          python3 scripts/check_repeated_phrases.py --self-test > /dev/null
+          python3 scripts/check_repeated_phrases.py --report "$GITHUB_STEP_SUMMARY"
+
       - name: Block deploy when a draft post is due within 7 days
         # Upcoming posts wait as drafts dated for release. A draft whose date
         # is within the next 7 days (or already past) must be published or

@@ -34,10 +34,10 @@ Every other step in the pipeline got cheaper. Drafting got cheaper. Refactoring
 got cheaper. Writing tests got cheaper. Reading a system into your own head did
 not. The input rate into a human brain is roughly what it was, and it is low.
 You can skim, you can ask an agent for a layered summary, you can get a decent
-high-level map in ninety seconds instead of an afternoon, and all of that is
-real. But assimilation is not retrieval. The summary arrives fast and then sits
-there while you do the slow part, which is building a model you can reason with
-later, under pressure, when something breaks at 2am.
+high-level map in ninety seconds instead of an afternoon, and all of that helps.
+But assimilation is not retrieval. The summary arrives fast and then sits there
+while you do the slow part, which is building a model you can reason with later,
+under pressure, when something breaks at 2am.
 
 I want to be careful with the claim. It is not literally zero. Agents genuinely
 compress the search: they tell you which of the twelve files matter, they

@@ -44,7 +44,7 @@ those photos now, but I remember the feeling of making them.
 That camera introduced me to creating with a technical tool. Computers became
 the next version of the same idea. In high school, I made a project declaring
 that I wanted to become a computer programmer (and misspelled "programmer" on
-it). The ambition was real even if the spelling was not.
+it). I got the ambition right, if not the spelling.
 
 During my freshman year of college, I became convinced that programming was not
 for me. The computer science path came bundled with chemistry, biology, and

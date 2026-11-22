@@ -18,7 +18,7 @@ software that is written as prompts and run by large models. It described a
 world where traditional software engineering, built for human-only teams writing
 deterministic code, has to make room for agents that write, test, and deploy
 code. The generated document was too confident in places, but the question under
-it was real: what changes when the thing helping build software is also a
+it was a good one: what changes when the thing helping build software is also a
 software system with its own context window, tools, and failure modes?
 
 I do not think the answer is that engineering becomes less important. The answer

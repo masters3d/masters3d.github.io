@@ -24,9 +24,9 @@ of the actual work.
 In 2017 I kept a development journal in Markdown. One file per day, sort of, at
 least once a week. The names were dated: `2018-01-08-masters3d.md`,
 `2018-01-09-masters3d.md`, on and on through the year. It was a development log,
-mostly manual, and the friction was real. You had to remember to write, create
-the file, and actually fill it in. Skip a few days and the gaps showed up right
-there in the filenames.
+mostly manual, and that made it easy to fall behind. You had to remember to
+write, create the file, and actually fill it in. Skip a few days and the gaps
+showed up right there in the filenames.
 
 Then I moved to Word, one document per month (`2024_01_masters3d.docx`,
 `2024_02_masters3d.docx`, and so on). Fewer files, less ceremony, but the same

@@ -104,9 +104,9 @@ load-bearing never get reclassified.
 The usual defense of shipping the disposable version is sound, and I have made
 it myself: you do not know what will work, so build the cheap thing, find out,
 and rewrite it once it earns the investment. Dropbox ran on Python far longer
-than anyone expected and only moved pieces to other languages when the scale
-problem was real and specific. That is the startup case, and in the startup case
-it is correct. The rewrite is paid for by the information you bought.
+than anyone expected and only moved pieces to other languages once it could name
+a specific scale problem. That is the startup case, and in the startup case it
+is correct. The rewrite is paid for by the information you bought.
 
 What I am less sure about now is the premise underneath it, which is that the
 scalable version costs meaningfully more to write than the disposable one. That
@@ -156,13 +156,13 @@ down and the organization knows it bought one.
 
 ---
 
-_What I keep returning to is that "80% done" is a measurement that hides the
-shape of the remaining work. The last 20% is not the same work at lower volume;
-it is the work of moving a system from one reliability class to the next, and
-each class is a different engineering problem with a cost that rises while the
-recognition falls. Naming the target number of nines at design time converts an
-argument about effort into an argument about architecture, where it belongs. The
-rest is placement: decide quality early and mechanically, the way
+_"80% done" is a measurement that hides the shape of the remaining work. The
+last 20% is not the same work at lower volume; it is the work of moving a system
+from one reliability class to the next, and each class is a different
+engineering problem with a cost that rises while the recognition falls. Naming
+the target number of nines at design time converts an argument about effort into
+an argument about architecture, where it belongs. The rest is placement: decide
+quality early and mechanically, the way
 [fearless engineering](/blog/fearless-engineering/) depends on rails built
 before anyone needed them, and record the decision where the next person can
 find it as [context as code](/blog/context-as-code/)._

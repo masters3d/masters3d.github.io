@@ -59,7 +59,7 @@ keyboard layout feature required updating parsers. Every firmware update could
 break the mappings. The "simple" problem of keeping keyboard configs in sync
 required maintaining a sophisticated parsing and transformation pipeline.
 
-The code existed. It technically worked. But the maintenance burden was real.
+The code existed. It technically worked. But it needed constant maintenance.
 
 After the initial burst of development, the project stalled in 2023:
 
@@ -184,10 +184,10 @@ better solution is:
 - AI assistance for contextual changes
 - Automation only for scaffolding and coordination
 
-Second, maintenance burden is real. That sophisticated parser you built? It's
-now technical debt. Every line of code is a liability that needs maintenance. AI
-agents don't accumulate technical debt (they work with whatever the current
-state is).
+Second, custom code keeps costing after it works. That sophisticated parser you
+built? It's now technical debt. Every line of code is a liability that needs
+maintenance. AI agents don't accumulate technical debt (they work with whatever
+the current state is).
 
 Third, context matters more than consistency. Traditional automation excels at
 consistency but struggles with context. AI agents are the opposite (they excel

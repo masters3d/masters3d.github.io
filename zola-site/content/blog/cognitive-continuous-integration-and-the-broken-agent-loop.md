@@ -73,7 +73,7 @@ padding added length but no understanding.
 
 ## Fixing the Pipe
 
-The engineering fixes were real, and they are still the right fixes for any
+The pipe itself did get fixed, and those fixes are still the right ones for any
 agent that writes into a repository.
 
 - **Explicit opt-in.** The first version treated every open issue as an

@@ -91,8 +91,8 @@ and dropped the consequence.
 ## Zero to one is not the only jump
 
 The obvious version of this story is that you have to stop watching and start
-doing. That is the jump from zero to one, and it is real. But it is not the only
-jump, and treating it as the finish line is its own trap.
+doing. That is the jump from zero to one, and you do have to make it. But it is
+not the only jump, and treating it as the finish line is its own trap.
 
 Going from one to ten is a different problem than going from ten to a hundred,
 and a hundred to a thousand is different again. What got you to ten will not get

@@ -161,8 +161,8 @@ measurement you were going to get.
 
 ## What I Keep
 
-The thing people are grasping at with the compliment is real, but the mechanism
-is backwards. The colleagues I would describe that way are not the ones who talk
+The compliment points at something worth keeping, but the mechanism is
+backwards. The colleagues I would describe that way are not the ones who talk
 least. They are the ones whose statements decode to the same thing every time:
 when they say they are confident they turn out to be right, and when they are
 unsure they say so, so I never have to estimate their reliability from outside

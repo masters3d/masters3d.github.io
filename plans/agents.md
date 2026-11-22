@@ -110,6 +110,24 @@
   - "impact" - see "Avoid overloaded words" above
   - When adding new posts or editing existing ones, survey the text for these words and remove them where they are not needed
 - **Phrases to avoid** - Do not use the costume metaphor for "two things are really the same thing": "wearing a costume", "wearing different clothes", "in disguise", "by another name", "dressed up as". It reads as a stock figure of speech rather than an explanation, and it hides the thing worth stating. Name the actual relationship instead: what converts into what, at what exchange rate, or which property the two share. "Distance and delay are one constraint measured in two units" says something; "distance is delay wearing a costume" does not
+- **Repeated phrases (checked in CI)** - `scripts/check_repeated_phrases.py`
+  counts each phrase family in `scripts/repeated_phrases.toml` across every
+  post, drafts included. A phrase used more than `limit` (3) times is flagged
+  in the PR Validation summary but does not fail the build; only phrases the
+  author lists under `[enforce]` fail it, when their count passes the cap.
+  - Never write these (enforced at 0): "X is real" as a claim ("the tradeoff
+    is real", "and it is real") unless the sentence is about real numbers, and
+    "I keep coming back to" or its rewordings ("I keep returning to", "I keep
+    circling", "kept pulling me back to"). The author does not say them.
+  - Rewrite by stating what is actually true (it exists, it costs something,
+    you feel it, it was measured), not by swapping in "genuine" or "valid".
+  - Before adding prose, run `python3 scripts/check_repeated_phrases.py` and do
+    not add uses of a flagged phrase. `--show ID` lists every use with its file
+    and line; `--discover` lists frequent phrases no pattern covers yet.
+  - Only the author edits `[enforce]` and `[allow]`. Add a `[[phrase]]` family
+    only when asked; its `example` must match the pattern exactly once.
+  - If an enforced phrase sits inside a quotation or historical wording that
+    must be kept, ask the author instead of rewriting the quote.
 - **Link every citation so the author can verify it** - Whenever a post names a
   scientist, researcher, study, book, paper, or historical source, or attributes
   a quote to someone, link the claim inline to a source the author can open and
@@ -201,10 +219,11 @@ a linked retrospective over silently making the old prediction sound wiser.
   detached or academically uniform.
 - **Vary the rhetorical surface** - Shared voice does not require shared
   wording. Before publishing, compare openings, transitions, section names, and
-  closings with recent posts. Phrases such as "I keep coming back to," "the key
-  insight," "the pattern is clear," "this is also why," and "the same instinct"
-  are useful once but become house-style filler when repeated across the
-  corpus. Name the actual relationship instead: something may have stayed with
+  closings with recent posts. Phrases such as "the key insight," "the pattern
+  is clear," "this is also why," and "the same instinct" are useful once but
+  become house-style filler when repeated across the corpus;
+  `scripts/check_repeated_phrases.py` counts them (see "Repeated phrases"
+  above). Name the actual relationship instead: something may have stayed with
   the author, recurred in several examples, survived testing, connected two
   ideas, or changed the conclusion. Do not mechanically rotate synonyms; make
   the sentence say which of those things happened. Also check for substantial
@@ -890,7 +909,8 @@ already states a thesis in the author's words.
    with attribution; the link may stay as a citation, but the post must make
    sense without it.
 2. Run `python3 scripts/format_markdown.py`,
-   `python3 scripts/check_content_marks.py`, and `cd zola-site && zola build`.
+   `python3 scripts/check_content_marks.py`,
+   `python3 scripts/check_repeated_phrases.py`, and `cd zola-site && zola build`.
 3. In the same PR, set the row's Status to `published` and put the post's slug
    in the Post column. Do not delete the row; it is the record of where the idea
    came from.
