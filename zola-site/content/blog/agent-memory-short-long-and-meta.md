@@ -1,13 +1,13 @@
 +++
 title = "Agent Memory: Short, Long, and Meta"
 date = "2028-06-01"
-draft = true
 description = "Agent memory is not one bucket of context. Short-term, long-term, and meta-memory each change what the system can do and what engineers must be able to inspect."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Software Engineering"]
 tags = ["agents", "memory", "context", "ai-development", "validation"]
 [extra]
+scheduled = true
 editorial_track = "software-engineering"
 related = ["five-levels-of-agent-capability", "context-as-code", "cognitive-continuous-integration-and-the-broken-agent-loop"]
 +++

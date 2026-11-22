@@ -1,13 +1,13 @@
 +++
 title = "Level Zero Is an Apprenticeship"
 date = "2028-07-01"
-draft = true
 description = "Level zero is not a lesser engineer hidden inside a full role. It is an apprenticeship, a two-sided contract where the new engineer owns learning and the team owns the conditions for learning to become productive work."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
 tags = ["career", "individual-contributor", "levels", "onboarding", "career-growth"]
 [extra]
+scheduled = true
 editorial_track = "engineering-systems"
 related = ["individual-contributor-levels-as-changing-scope", "people-systems-and-the-hiring-pipeline", "career-levels-depend-on-context"]
 +++

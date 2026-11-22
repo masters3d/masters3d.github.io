@@ -1,13 +1,13 @@
 +++
 title = "The Regulation Continuum"
 date = "2028-08-01"
-draft = true
 description = "Not all outside motivation stays outside. The regulation continuum explains how pressure can become ownership, and why internalization matters more than purity."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Human Systems"]
 tags = ["motivation", "intrinsic-motivation", "autonomy", "purpose", "work"]
 [extra]
+scheduled = true
 editorial_track = "human-systems"
 related = ["find-your-why-intrinsic-motivation", "overjustification-effect-at-work", "seeking-is-the-reward", "growth-mindset-and-mastery"]
 +++

@@ -1,13 +1,13 @@
 +++
 title = "The Progress Principle"
 date = "2028-10-01"
-draft = true
 description = "Small visible wins renew purpose because they prove meaningful work is moving. The progress principle explains why motivation depends on making that movement legible."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Human Systems"]
 tags = ["motivation", "purpose", "progress", "feedback-loops", "work"]
 [extra]
+scheduled = true
 editorial_track = "human-systems"
 related = ["find-your-why-intrinsic-motivation", "update-propagation", "leverage-and-the-stairs-you-build", "seeking-is-the-reward"]
 +++

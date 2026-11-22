@@ -1,13 +1,13 @@
 +++
 title = "Update Propagation Turns Lessons Into System Changes"
 date = "2028-09-15"
-draft = true
 description = "A lesson only counts after it reaches the places that can use it. Update propagation turns local learning into changed code, current documentation, and shared practice."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Quest Engine"]
 tags = ["quest-engine", "systematic-improvement", "documentation", "feedback-loops", "systems-thinking"]
 [extra]
+scheduled = true
 editorial_track = "quest-engine"
 related = ["iterative-integration", "deliberate-practice-for-engineers", "shared-understanding-as-a-practice", "types-of-engineering-documentation"]
 +++

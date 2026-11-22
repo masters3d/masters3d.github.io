@@ -1,13 +1,13 @@
 +++
 title = "Meta-Learning in Four Levels"
 date = "2028-09-01"
-draft = true
 description = "Meta-learning sounds abstract until it is split into levels. The useful engineering question is how far a system may go from observing learning to changing the mechanism that learns."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Software Engineering"]
 tags = ["agents", "learning", "ai-development", "systems-thinking", "validation"]
 [extra]
+scheduled = true
 editorial_track = "software-engineering"
 related = ["agent-memory-short-long-and-meta", "five-levels-of-agent-capability", "software-3-0-needs-engineering-not-magic"]
 +++
