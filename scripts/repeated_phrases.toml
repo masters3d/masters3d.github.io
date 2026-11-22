@@ -127,11 +127,19 @@ why = "Reveals a hidden premise with a stage whisper (assumes, decides, erases, 
 instead = "State the premise and who holds it: \"The metric assumes a person reviews every change.\""
 
 [[phrase]]
+id = "not-x-it-is-y"
+phrase = "X is not A. It is B."
+pattern = '''\b(?:(?:is|was|are|were) not|isn't|wasn't|aren't|weren't|(?:it|that|this|what)'s not|they're not)\b[^.;:!?]{1,80}?[.;,\u2014] (?:it|they)(?: is|'s| was| are| were|'re)\b'''
+example = "The tool is not a linter. It is a habit."
+why = "The reframe: deny a claim nobody made, then give the real one. Counts the period, comma, semicolon, and dash forms; not-just and the-x-is-not count two of its openers."
+instead = "State B. Keep the denial only when readers actually hold A, and say who does."
+
+[[phrase]]
 id = "not-just"
-phrase = "is not just X"
-pattern = '''\b(?:(?:is|are|was|were|it's|that's) not|isn't|aren't|wasn't|weren't) (?:just|only|merely|simply)\b'''
+phrase = "not just X"
+pattern = '''\bnot (?:just|only|merely|simply)\b|\b(?:isn't|aren't|wasn't|weren't|doesn't|don't|didn't|won't|can't) (?:just|only|merely|simply)\b'''
 example = "The tool is not just a linter."
-why = "Sets up a smaller claim to knock down (\"it is not just X, it is Y\")."
+why = "Sets up a smaller claim to knock down (\"it is not just X, it is Y\"). Counts \"not only\", \"not merely\", \"not simply\", and \"don't just\" too."
 instead = "Say what it is."
 
 [[phrase]]
@@ -277,6 +285,62 @@ pattern = '\bthe practical caution\b'
 example = "The practical caution is cost."
 why = "A stock label for a caveat."
 instead = "State the caveat."
+
+[[phrase]]
+id = "failure-mode"
+phrase = "the failure mode"
+pattern = '\bfailure modes?\b'
+example = "The failure mode is silence."
+why = "Reliability jargon used for anything that goes wrong."
+instead = "Say what goes wrong: \"the build passes and nobody reads the warning\"."
+
+[[phrase]]
+id = "sits-x"
+phrase = "X sits between Y"
+pattern = '\b(?:sits?|sat|sitting) (?:between|above|below|underneath|beneath|inside|alongside|on top of|next to|upstream of|downstream of|at the (?:center|centre|heart|core|top|bottom|intersection|boundary|edge|root|front|back))\b'
+example = "Review sits between the draft and the release."
+why = "Places ideas on a map (between, above, at the center of) instead of saying how they connect."
+instead = "Name the link: \"review blocks the release until a person signs off\"."
+
+[[phrase]]
+id = "not-because"
+phrase = "not because X, but because Y"
+pattern = '\bnot because\b'
+example = "I stopped, not because it failed, but because it worked."
+why = "Rules out a motive nobody suggested before giving the real one."
+instead = "Give the reason: \"I stopped because it worked.\""
+
+[[phrase]]
+id = "the-real-x"
+phrase = "the real question"
+pattern = '\bthe real (?:question|work|cost|problem|point|lesson|risk|value|test|answer|reason|job|skill|lever|win|story|signal|learning|shape|goal|issue|constraint|bottleneck|failure|danger|trap|difference|move|unlock|leverage)\b'
+example = "The real question is who reads it."
+why = "Implies the reader was looking at a fake question, cost, or problem."
+instead = "Drop \"real\" and name it: \"The cost is the review time.\""
+
+[[phrase]]
+id = "the-point-is"
+phrase = "the point is"
+pattern = '\bthe point (?:is|was)\b(?! not\b)'
+example = "The point is that review is cheap."
+why = "Announces the point before making it. \"The point is not\" counts under the-x-is-not."
+instead = "Make the point."
+
+[[phrase]]
+id = "why-it-matters"
+phrase = "why this matters"
+pattern = '\bwhy (?:this|that|it) matters\b|(?-i:\b(?:This|That|It)) matters\b'
+example = "This matters because review is cheap."
+why = "Announces importance instead of showing the consequence."
+instead = "State the consequence: \"Without review, the bug ships.\""
+
+[[phrase]]
+id = "the-better-question"
+phrase = "the better question is"
+pattern = '\bthe (?:better|right|useful|harder|deeper|more useful|more interesting|only) question (?:is|was)\b'
+example = "The better question is who reads it."
+why = "Swaps the reader's question for a staged one (better, right, harder, more interesting)."
+instead = "Ask the question."
 
 # The author decides the tables below. Agents never add, raise, or loosen
 # entries; they rewrite the posts instead. The one edit an agent makes: when a

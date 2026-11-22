@@ -129,6 +129,9 @@
   - Before adding prose, run `python3 scripts/check_repeated_phrases.py` and do
     not add uses of a flagged phrase. `--show ID` lists every use with its file
     and line; `--discover` lists frequent phrases no pattern covers yet.
+  - A flagged family is a diagnosis. Rewrite existing uses only for the
+    families under `[enforce]`; leave the other flagged families in existing
+    posts as they are unless the author asks.
   - Only the author edits `[enforce]`, `[allow]`, and `[[keep]]`. Never add a
     `[[keep]]` to make the check pass: rewrite the sentence, or, if it has a
     real reason to use the phrase, ask the author to keep it. Leave kept
@@ -196,6 +199,12 @@ Preserve the historical wording of old posts rather than rebuilding them around
 newer conventions. Correct factual errors, broken links, and clear typos in place.
 When later knowledge changes the interpretation, prefer a dated editor's note or
 a linked retrospective over silently making the old prediction sound wiser.
+
+**Sentence-level voice**: [`plans/voice.md`](./voice.md) describes how the
+older posts sound, with quoted examples, a measured comparison with newer
+posts, and a checklist. Read it before writing a new post or new paragraphs.
+Apply it to new prose only; do not restyle existing posts toward it unless the
+author asks.
 
 - **Begin with something noticed or lived** - Open on a moment, object, problem,
   or reaction that actually prompted the idea. Do not begin with an abstract
@@ -843,7 +852,7 @@ Never assert that something is or isn't live based on the source tree alone — 
    tags = ["tag1", "tag2"]
    +++
    ```
-3. **Write content**: Standard Markdown below frontmatter
+3. **Write content**: Standard Markdown below frontmatter, in the voice described in [`plans/voice.md`](./voice.md)
 4. **Format Markdown**: `python3 scripts/format_markdown.py` (required; runs Prettier + markdownlint, keeps diffs small, does not change rendered output)
 5. **Test locally**: `cd zola-site && zola serve`
 6. **Build**: `zola build` before committing
@@ -907,10 +916,10 @@ already states a thesis in the author's words.
 
 **Closing an item.**
 
-1. Read the source issue and spec, then write the post following the voice,
-   track, and writing-style rules in this file. Use the issue's `created_at`
-   for any date you mention. Do not invent personal anecdotes the sources do
-   not support.
+1. Read the source issue and spec, then write the post following
+   [`plans/voice.md`](./voice.md) and the voice, track, and writing-style rules
+   in this file. Use the issue's `created_at` for any date you mention. Do not
+   invent personal anecdotes the sources do not support.
    **Every post must stand on its own.** Do not link to the ingenio repository,
    its issues, or its files, and do not point the reader at "the issue", "the
    spec", or "the repo". State what the note said in the post itself. When the

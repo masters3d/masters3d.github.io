@@ -119,7 +119,9 @@ python3 scripts/check_repeated_phrases.py --discover         # frequent phrases 
 ```
 
 - **over limit**: used more than `limit` (3) times. Reported as a warning, never
-  a failure. These wait for the author's decision.
+  a failure. These wait for the author's decision. The report is a diagnosis.
+  Existing uses stay as they are until the author enforces the family, and new
+  prose should not add more.
 - **enforced**: the phrase is listed under `[enforce]` with a maximum count. A
   count above that maximum fails PR Validation, with an annotation on each use.
   "X is real" (except about real numbers), "I keep coming back to",
@@ -213,7 +215,9 @@ editorial_track = "engineering-systems"
    in Software Engineering. See "Placing a Post in a Track" in
    `plans/agents.md`
 4. Use tags for series and ideas that cross editorial tracks
-5. Write content in markdown below the frontmatter
+5. Write content in markdown below the frontmatter. Read `plans/voice.md` first.
+   It shows how the older posts sound and applies to new prose only (existing
+   posts are not restyled to match it)
 6. Format the Markdown: run `python3 scripts/format_markdown.py`
 7. Commit and push
 

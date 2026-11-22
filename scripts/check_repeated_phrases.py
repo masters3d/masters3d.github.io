@@ -621,6 +621,9 @@ def self_test() -> int:
     assert count("x-is-real", "There is real value in it.") == 0, "attributive real"
     assert count("x-is-real", "Every root is real. 2 is a real number.") == 0, "numbers"
     assert count("x-is-real", "The latency is real-time.") == 0, "real-time"
+    assert count("not-x-it-is-y", "It is not a linter, it is a habit.") == 1, "comma splice"
+    assert count("not-x-it-is-y", "The build is not green, and it is late.") == 0, "plain clause"
+    assert count("not-just", "Do not just watch. It isn\u2019t only that.") == 2, "not just, isn't only"
 
     with tempfile.TemporaryDirectory() as tmp:
         def post(name: str, body: str, description: str = "d") -> None:
