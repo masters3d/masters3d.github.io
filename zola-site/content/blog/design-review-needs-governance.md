@@ -35,9 +35,9 @@ is the emptiness I was pointing at.
 ## Review is feedback; governance is authority
 
 Design review is a learning mechanism. It exposes assumptions to people who hold
-different context. It asks whether the problem is real, whether the shape of the
-solution fits, and whether the system will be understandable later. That is
-valuable work, but it does not answer the authority question by itself.
+different context. It asks whether the problem is worth solving, whether the
+shape of the solution fits, and whether the system will be understandable later.
+That is valuable work, but it does not answer the authority question by itself.
 
 Governance answers a different set of questions. Who owns the decision? Who is
 allowed to say no? Which decisions require a working group, an architect, a

@@ -98,9 +98,9 @@ part of it.
 
 The ten percent heuristic is the operative part. Its stated logic is that if
 nothing ever has to be added back, the deletions were never near the boundary of
-what is actually load bearing, and the boundary is where the information is.
-Deleting something and being forced to restore it is treated as a measurement,
-not as a failure.
+what is actually needed, and the boundary is where the information is. Deleting
+something and being forced to restore it is treated as a measurement, not as a
+failure.
 
 Applied to software, the asymmetry usually noted is cost: suspending a manual
 gate for a sprint is a revert, while removing a part from a vehicle is a tooling

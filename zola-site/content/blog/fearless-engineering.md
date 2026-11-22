@@ -145,16 +145,15 @@ but far larger in degree: many independent systems checking each other, many
 batteries of validation, run longer and longer, because you never get 100
 percent certainty, only high certainty that keeps climbing. Even there, the
 useful posture is not fear but methodical risk management plus independence. The
-framework I keep returning to explains why. The
-[Quest Engine](/blog/quest-engine-the-why/) puts the WHY above the HOW, and runs
-three forces: Searching (what does better look like), being Driven (what can I
-control), and Renewal (am I still aligned). The risk matrix maps cleanly onto
-it. Searching is how you convert known unknowns into known knowns and surface
-the unknown knowns you were carrying as assumptions. Being Driven is naming what
-you actually control versus what the system controls, which is where the bias
-toward action lives. Renewal is the guardrails, rollouts, and reviews that carry
-forward, so the next change starts with a smaller unknown-unknown corner than
-the last.
+[Quest Engine](/blog/quest-engine-the-why/) explains why: it puts the WHY above
+the HOW, and runs three forces: Searching (what does better look like), being
+Driven (what can I control), and Renewal (am I still aligned). The risk matrix
+maps cleanly onto it. Searching is how you convert known unknowns into known
+knowns and surface the unknown knowns you were carrying as assumptions. Being
+Driven is naming what you actually control versus what the system controls,
+which is where the bias toward action lives. Renewal is the guardrails,
+rollouts, and reviews that carry forward, so the next change starts with a
+smaller unknown-unknown corner than the last.
 
 Read that way, hesitation is not an emotion to override. It is a risk assessment
 that has not finished running. It says "you have not yet categorized this," and

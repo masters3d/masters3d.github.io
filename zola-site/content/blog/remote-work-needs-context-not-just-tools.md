@@ -33,8 +33,9 @@ was supposed to move.
 In an office, a lot of context travels through weak channels. People overhear
 something. They see who is at a whiteboard. They ask a question while walking
 back from coffee. They notice that a decision has emotional weight because of
-the room's reaction. Those channels are uneven and exclusionary, but they are
-real. When work becomes distributed, the channels disappear or become explicit.
+the room's reaction. Those channels are uneven and exclusionary, but they carry
+information. When work becomes distributed, the channels disappear or become
+explicit.
 
 That is why remote work cannot be reduced to video calls plus chat. Video calls
 replace some synchronous conversation. Chat replaces some hallway interruption.

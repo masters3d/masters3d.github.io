@@ -65,10 +65,10 @@ finishes it. That is uncommon, and it is exactly the quality worth prizing. It
 is recognizing the chance, going full
 [Quest Engine](/blog/quest-engine-introduction/) on it, and executing on the
 opportunity. It sounds like a cliché, but it really is about honoring the
-opportunity, respecting it, and acting accordingly. In the Quest Engine terms I
-keep coming back to, the star player is the one whose searching (seeing the
-chance before anyone else) and being driven (committing to it without
-hesitation) are both sharp at the same instant.
+opportunity, respecting it, and acting accordingly. In Quest Engine terms, the
+star player is the one whose searching (seeing the chance before anyone else)
+and being driven (committing to it without hesitation) are both sharp at the
+same instant.
 
 This is the same three-term dynamic I wrote about in
 [Timing, Momentum, and Resonance](/blog/quest-engine-timing-momentum-resonance/).
@@ -107,14 +107,13 @@ structure and the scoring structure are not a one-to-one mapping, and they
 should not be. Forcing them to line up just means you are trying to make one
 routine do two jobs, and neither gets done well.
 
-I do not want to pretend there is no value here. There is real value in having a
-single point of failure who is the person that scores the most goals, for a
-short and fairly certain stretch of time. Sometimes you do need that. But it is
-not a viable long-term solution. The person leaves, and the whole thing that was
-built around them collapses. So if you are going to lean on a star player, the
-way to make it resilient is to build in a way to rotate that star-player role.
-The star-player role has to be able to move between people, or it becomes the
-exact fragility you were trying to avoid.
+Still, there is real value in having a single point of failure who is the person
+that scores the most goals, for a short and fairly certain stretch of time.
+Sometimes you do need that. But it is not a viable long-term solution. The
+person leaves, and the whole thing that was built around them collapses. So if
+you are going to lean on a star player, the way to make it resilient is to build
+in a way to rotate that star-player role. The star-player role has to be able to
+move between people, or it becomes the exact fragility you were trying to avoid.
 
 Engineering has all the same failure modes. The teammate who is the only one who
 understands the deployment pipeline, or the one service, or the one gnarly
@@ -163,9 +162,9 @@ field. A generalist is the person who can drop into the language plane today,
 the networking plane tomorrow, and the coordination-across-teams plane the day
 after, and be a real threat on each. In a one-dimensional game versatility looks
 like a compromise (a jack of all trades, master of none). In a multi-dimensional
-game it is the rarest and most load-bearing kind of star, because they are the
-ones who keep the separate fields stitched into a single team instead of a set
-of silos that happen to share a repository.
+game it is the rarest and most valuable kind of star, because they are the ones
+who keep the separate fields stitched into a single team instead of a set of
+silos that happen to share a repository.
 
 And there is one more field that never shows up on a soccer diagram: time. In
 engineering you are not only passing the ball across space to a teammate

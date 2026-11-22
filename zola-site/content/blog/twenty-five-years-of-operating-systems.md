@@ -129,8 +129,8 @@ Sure, I have a couple of chat applications, email, and a few things that are
 inherently Windows. But I do not do development in those, so there is a strong
 case that I could start using a full Linux development environment where I edit
 the code and deploy in the same place. I wonder about an environment where I run
-my agents entirely inside Linux. I am not sure that is where things land, but
-the pull is real.
+my agents entirely inside Linux. I am not sure that is where things land, but I
+feel the pull.
 
 Twenty-five years, three acts: the first five years on Windows 98, 2000, and XP;
 a decade of macOS and only macOS; and a return to Windows that is still going

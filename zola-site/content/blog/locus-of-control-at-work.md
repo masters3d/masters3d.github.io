@@ -93,8 +93,8 @@ not made controllable by wanting them badly enough. A healthy locus of control
 includes the humility to stop treating every constraint as a personal failure.
 
 So the practice is simple, even if the execution is not: sort the situation, act
-where action is real, influence where relationship and evidence can work, accept
-the constraint where neither applies, and then look for the one capability that
-would move a small piece inward next time. That is enough. Work becomes less
-mysterious when you stop asking whether you are in control and start asking
-where control actually lives.
+where you have control, influence where relationship and evidence can work,
+accept the constraint where neither applies, and then look for the one
+capability that would move a small piece inward next time. That is enough. Work
+becomes less mysterious when you stop asking whether you are in control and
+start asking where control actually lives.

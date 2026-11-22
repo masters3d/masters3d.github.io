@@ -12,8 +12,8 @@ series = "quest-engine"
 +++
 
 More than a decade ago I burned out, and burned out badly. I need to say
-something up front that I wish someone had made me believe earlier: burnout is
-real, it is terrible, and it is physical. I did not think it was a real thing
+something up front that I wish someone had made me believe earlier: burnout
+exists, it is terrible, and it is physical. I did not think it was a real thing
 until it happened to me. I assumed it was a figure of speech, a dramatic word
 for being tired, something you pushed through. It is not. It is a physical
 reaction that happens to you, and when it arrives it can become almost
@@ -37,7 +37,7 @@ Anyone can sit at a desk for sixteen hours, and I have, for long stretches, but
 I would not call all sixteen of those hours productive and I do not think anyone
 honestly would. At some point it stops being a question of hours and becomes a
 question of health: how much sleep did you trade away, how much coffee are you
-burning to hold the line the next morning, and how much of that time was real,
+burning to hold the line the next morning, and how much of that time was
 deliberate thinking versus going through the motions on autopilot. The raw hour
 count is a bad proxy for what is actually happening to you.
 

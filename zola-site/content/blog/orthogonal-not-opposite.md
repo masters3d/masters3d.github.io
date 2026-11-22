@@ -69,8 +69,8 @@ Second, **test for a real tradeoff.** Ask the only question that matters: does
 adding A physically remove B? Salt does not remove sweetness. It sits there, on
 its own axis, coexisting. If turning one dial up does not turn the other one
 down, then they were never on the same line and the tradeoff was a story.
-(Sometimes the answer is yes, the tradeoff is real, and then you have learned
-something true. The point is to check rather than assume.)
+(Sometimes the answer is yes, one dial does turn the other down, and then you
+have learned something true. The point is to check rather than assume.)
 
 Third, **go to the corner.** If the two qualities are orthogonal, there is a
 quadrant where you are high on both at once, and that corner is almost always

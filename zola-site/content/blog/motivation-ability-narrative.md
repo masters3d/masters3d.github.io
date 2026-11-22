@@ -59,12 +59,11 @@ people forward with a reward, or push them with a consequence, and then debate
 which works better. My experience is that the strongest motivation is both at
 the same time.
 
-The picture I keep coming back to is a lion chasing a gazelle. Both are running
-as hard as they can, but not for the same reason. The lion is running for food.
-If it misses, it goes hungry and tries again tomorrow. The gazelle is running
-for its life. If it misses, there is no tomorrow. The lion has the carrot. The
-gazelle has the stick. The old saying gives the edge to the gazelle, because it
-has more to lose.
+Picture a lion chasing a gazelle. Both are running as hard as they can, but not
+for the same reason. The lion is running for food. If it misses, it goes hungry
+and tries again tomorrow. The gazelle is running for its life. If it misses,
+there is no tomorrow. The lion has the carrot. The gazelle has the stick. The
+old saying gives the edge to the gazelle, because it has more to lose.
 
 If you can be the lion and the gazelle at the same time, you are running toward
 something and away from something in the same direction. In my own path, loving

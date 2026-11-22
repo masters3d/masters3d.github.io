@@ -102,6 +102,53 @@ Claude's text watermark say it is this kind of keyed statistical mark, not
 hidden Unicode, and no detector key is published. The check says that in its
 output. It does not paraphrase text to chase a signal it cannot locate.
 
+## 🔁 Repeated phrase check
+
+Phrases that read fine once turn into filler when every post leans on them ("I
+keep coming back to", "the tradeoff is real", "is genuinely useful", "this is
+where").
+`scripts/check_repeated_phrases.py` counts each phrase family listed in
+`scripts/repeated_phrases.toml` across every post, drafts included, and prints
+the count, the number of posts, and a status for each.
+
+```bash
+python3 scripts/check_repeated_phrases.py --self-test        # detector fixtures
+python3 scripts/check_repeated_phrases.py                    # report and enforce
+python3 scripts/check_repeated_phrases.py --show x-is-real   # every use, file:line
+python3 scripts/check_repeated_phrases.py --discover         # frequent phrases not watched yet
+```
+
+- **over limit**: used more than `limit` (3) times. Reported as a warning, never
+  a failure. These wait for the author's decision. The report is a diagnosis.
+  Existing uses stay as they are until the author enforces the family, and new
+  prose should not add more.
+- **enforced**: the phrase is listed under `[enforce]` with a maximum count. A
+  count above that maximum fails PR Validation, with an annotation on each use.
+  "X is real" (except about real numbers), "I keep coming back to",
+  "load-bearing", and the "I want to be careful" hedges are enforced at 0.
+- **allowed**: listed under `[allow]` with a reason; reported but never flagged.
+- **Kept**: uses the author approved one at a time under `[[keep]]`. They never
+  count toward a cap or the limit.
+
+To eradicate a phrase, add its id to `[enforce]` (usually `= 0`) and rewrite the
+uses `--show` lists. To accept a whole family, add it to `[allow]`. To keep one
+warranted use, add a `[[keep]]` entry with the reason and a quote copied from
+`--show`:
+
+```toml
+[[keep]]
+id = "load-bearing"
+post = "elons-algorithm-manual-process.md"
+quote = "that the order is load bearing rather than decorative"
+reason = "States the post's claim that the order of the steps holds the process up."
+```
+
+The quote holds the phrase plus at least 3 more words of its sentence and must
+match exactly one use, so rewriting that sentence fails the check until the
+entry is updated or removed. Only the author edits `[enforce]`, `[allow]`, and
+`[[keep]]`. PR Validation writes the table to the job summary; the deploy
+workflow does not run this check, so a phrase never blocks a release.
+
 ## 🔄 Deployment Process
 
 **Automatic via GitHub Actions:**
@@ -168,7 +215,9 @@ editorial_track = "engineering-systems"
    in Software Engineering. See "Placing a Post in a Track" in
    `plans/agents.md`
 4. Use tags for series and ideas that cross editorial tracks
-5. Write content in markdown below the frontmatter
+5. Write content in markdown below the frontmatter. Read `plans/voice.md` first.
+   It shows how the older posts sound and applies to new prose only (existing
+   posts are not restyled to match it)
 6. Format the Markdown: run `python3 scripts/format_markdown.py`
 7. Commit and push
 

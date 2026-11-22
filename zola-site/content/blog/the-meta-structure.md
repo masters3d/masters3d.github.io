@@ -95,7 +95,7 @@ the directive at the open of the next, which is the same event described from
 two sides. That single identity is what makes the whole thing compound rather
 than merely repeat.
 
-Information moves in both directions, and both directions are load-bearing:
+Information moves in both directions, and the structure needs both:
 
 - **Downward: directives.** Each level hands the level below it a rule for what
   counts as better. A structure with only this direction is a bureaucracy:

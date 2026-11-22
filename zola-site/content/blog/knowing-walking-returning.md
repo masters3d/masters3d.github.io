@@ -54,9 +54,9 @@ can see the path intellectually, but he hesitates when the moment comes. The
 problem isn't that he doesn't know enough. The problem is he hasn't made the
 transition from model to motion.
 
-That gap is real. But Morpheus was only pointing at the first transition: from
-knowing to walking. There's a second one the line doesn't address, and it's the
-one most people miss.
+Morpheus was only pointing at that first transition: from knowing to walking.
+There's a second one the line doesn't address, and it's the one most people
+miss.
 
 ## The Third Move: Returning
 

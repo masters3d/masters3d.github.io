@@ -39,8 +39,8 @@ it. The technology does not change because the letters changed.
 ## The Reason I Can Write This At All
 
 Worth saying out loud: I get to sit here and have an opinion about what to call
-this thing because freedom of speech is a load bearing part of US law. That is
-not a small thing, and it is the reason a post like this exists at all.
+this thing because US law protects freedom of speech. That is not a small thing,
+and it is the reason a post like this exists at all.
 
 It is also where my one hesitation comes from. I like persuasion. I am much less
 comfortable with anything that shades toward compelled speech. Asking me to say

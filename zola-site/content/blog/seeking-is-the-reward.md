@@ -60,10 +60,10 @@ I am not a neuroscientist, and I do not want to pretend two lines of research
 settle a question about my own motivation. But together they describe exactly
 the note I wrote. The engine that gets me to build is a wanting engine, and it
 is most alive while the goal is still ahead of me. The finish line hands the
-work over to the liking system, which is real but brief. Then SEEKING does what
-it was built to do and starts looking for the next trail. The flat feeling after
-shipping is not a failure to appreciate the result. It is the system working as
-designed.
+work over to the liking system, which is pleasant but brief. Then SEEKING does
+what it was built to do and starts looking for the next trail. The flat feeling
+after shipping is not a failure to appreciate the result. It is the system
+working as designed.
 
 Steve Jobs gave the original Macintosh team a version of this. Andy Hertzfeld
 [remembers](https://www.folklore.org/Credit_Where_Due.html) that at a September
@@ -82,9 +82,9 @@ collapsed under their own weight. A teammate sees the migration, not the private
 hour when one missing concept finally clicked.
 
 That hidden path is where the builder changes. It is where you learn which
-constraints are real and which ones you imagined. It is where the simple version
-you dismissed on Monday turns out to be the right one by Friday. It is where
-taste gets calibrated, one wrong guess at a time. None of that ships with the
+constraints hold and which ones you imagined. It is where the simple version you
+dismissed on Monday turns out to be the right one by Friday. It is where taste
+gets calibrated, one wrong guess at a time. None of that ships with the
 artifact. It ships with you.
 
 This is the part that makes building different from merely producing. Mastery,

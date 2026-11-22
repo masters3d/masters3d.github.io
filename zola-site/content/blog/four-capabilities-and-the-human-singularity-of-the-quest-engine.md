@@ -75,7 +75,7 @@ there is a coherent, examinable objective function underneath.
 
 ## The Full Mapping: One Why and Three Hows
 
-The Quest Engine has exactly four load-bearing parts: an
+The Quest Engine has exactly four core parts: an
 [Objective Function](/blog/quest-engine-the-why/) (the WHY that sits above
 everything) and three operational moves beneath it (Contextual Awareness, Clear
 Strategy, and Systematic Improvement, which the framework also names Search,

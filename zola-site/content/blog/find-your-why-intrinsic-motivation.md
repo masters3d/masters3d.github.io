@@ -63,7 +63,7 @@ Mastery is the pull to get better at something that matters to you. It is
 intrinsic by nature, because the satisfaction comes from the closing of the gap
 between what you can do today and what you could not do yesterday. You cannot
 pay someone into the state of flow that mastery produces. It only shows up when
-the challenge is real and the person genuinely wants to meet it.
+the challenge stretches the person's skill and they genuinely want to meet it.
 
 This is why interesting motivation almost always has a learning curve in it. A
 task with nothing left to learn becomes a chore no matter how well it pays. A

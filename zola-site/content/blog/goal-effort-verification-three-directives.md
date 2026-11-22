@@ -160,10 +160,10 @@ the gear you are in or downshift. Same engine. Different distribution.
 This is the same distinction I keep insisting on for humans, where
 [effort and work are different quantities](/blog/effort-tracking-vs-task-tracking/)
 that should never be tracked in the same field. A task says what. Effort says
-how much of a budget it is allowed to consume. That was already load-bearing
-when the budget was my own week. It is more load-bearing now, because the thing
-spending the budget is not me, will not ask, and whatever it assumes is a
-decision I made by staying quiet.
+how much of a budget it is allowed to consume. That split already mattered when
+the budget was my own week. It matters more now, because the thing spending the
+budget is not me, will not ask, and whatever it assumes is a decision I made by
+staying quiet.
 
 ### 3. How it should verify → Renew, pulled to the front, as a definition of done
 

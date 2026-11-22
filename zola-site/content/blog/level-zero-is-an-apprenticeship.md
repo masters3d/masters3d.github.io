@@ -35,7 +35,7 @@ team's languages, understanding version control, using the development workflow,
 completing small and well-defined tasks, participating in code reviews as a
 learner, and documenting learning progress.
 
-Those are not glamorous responsibilities, but they are real. A new engineer can
+Those are not glamorous responsibilities, but they count. A new engineer can
 control the quality of the code they touch. They can control how carefully they
 test their own changes. They can control whether they ask clarifying questions
 when the specification is unclear. They can control whether feedback from review
@@ -58,7 +58,7 @@ ambiguous, every review is rushed, and every senior engineer is too busy to
 explain the why behind the feedback, then the system is asking for independence
 without providing a path toward it.
 
-A good apprenticeship needs small tasks that are real enough to matter and
+A good apprenticeship needs small tasks that matter to the product and are
 bounded enough to learn from. It needs code review that teaches principles, not
 only preferences. It needs room for questions without making the learner feel
 like every gap is a defect. It needs documentation that a newcomer can improve

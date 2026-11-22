@@ -21,8 +21,8 @@ then carried that violation farther away from its cause. Every operation
 downstream now had to account for a value that should never have existed. When
 the failure finally became visible, it no longer pointed at the bad index.
 
-That experience kept pulling me back to a question that had always bothered me:
-if Swift is a safe language, why is it so willing to crash?
+That experience sharpened a question that had always bothered me: if Swift is a
+safe language, why is it so willing to crash?
 
 ## A Safe Stop Is Not the Same as Staying Alive
 

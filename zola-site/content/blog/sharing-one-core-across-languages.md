@@ -95,16 +95,16 @@ maintenance-and-safety trade, not a performance one.
 
 ## WebAssembly is the most versatile boundary
 
-Of the three, WebAssembly is the one I keep coming back to, because it is the
-only boundary that survives everywhere. The gRPC approach needs you to spawn a
-subprocess. FFI needs you to link native code for each target architecture.
-WebAssembly needs neither: one portable artifact runs in-process inside a
-browser tab, inside a phone app, or inside a server, without a subprocess and
-without a per-architecture native build. It is sandboxed by default (so a bug in
-the core cannot reach the rest of the host), and with the component model it
-composes across languages the way FFI does, but without hand-writing a C
-boundary for each one. That is why 1Password keeps its logic in a Rust core and
-compiles it to WASM for the web instead of re-implementing it in JavaScript
+Of the three, WebAssembly is the most versatile, because it is the only boundary
+that survives everywhere. The gRPC approach needs you to spawn a subprocess. FFI
+needs you to link native code for each target architecture. WebAssembly needs
+neither: one portable artifact runs in-process inside a browser tab, inside a
+phone app, or inside a server, without a subprocess and without a
+per-architecture native build. It is sandboxed by default (so a bug in the core
+cannot reach the rest of the host), and with the component model it composes
+across languages the way FFI does, but without hand-writing a C boundary for
+each one. That is why 1Password keeps its logic in a Rust core and compiles it
+to WASM for the web instead of re-implementing it in JavaScript
 ([Syntax podcast, episode 776, with Andrew Burkhart](https://syntax.fm/show/776/how-1password-uses-wasm-and-rust-for-local-first-dev-with-andrew-burkhart/transcript)).
 
 The most striking demonstration of that portability is how the Zig language
@@ -164,8 +164,8 @@ execution, with a small cost for the sandbox boundary and for copying data in
 and out of linear memory). Local gRPC is the slowest of the three, because every
 call serializes arguments to protobuf, crosses a socket, and deserializes on the
 other side. For the vast majority of applications that gRPC overhead is
-irrelevant next to the clarity it buys, but it is real, and it is the reason you
-would ever collapse the boundary inward.
+irrelevant next to the clarity it buys, but it is not zero, and it is the reason
+you would ever collapse the boundary inward.
 
 Portability runs in the opposite direction. FFI is the least portable: you need
 a native build per architecture, and you inherit manual memory management across
@@ -180,13 +180,13 @@ underestimate and often decides real projects. gRPC is cheapest to maintain
 across many languages, because the per-language surface is generated from the
 schema (add a language, generate a stub, write a thin wrapper). FFI is the most
 expensive, because the boundary is hand-written and unsafe in every language you
-support (libsignal maintains exactly this, and it is real, ongoing work, which
-is what UniFFI exists to reduce, and which the protobuf-over-FFI layer above
-trades a little serialization cost to shrink). WebAssembly again lands in the
-middle: the component model generates much of the cross-language glue, but the
-runtime is a dependency you carry and the toolchain is younger than protobuf's.
-The honest summary is that there is no free boundary. If you can spawn a process
-and latency is not critical, local gRPC gives you the lowest maintenance and the
+support (libsignal maintains exactly this, and it is ongoing work, which is what
+UniFFI exists to reduce, and which the protobuf-over-FFI layer above trades a
+little serialization cost to shrink). WebAssembly again lands in the middle: the
+component model generates much of the cross-language glue, but the runtime is a
+dependency you carry and the toolchain is younger than protobuf's. The honest
+summary is that there is no free boundary. If you can spawn a process and
+latency is not critical, local gRPC gives you the lowest maintenance and the
 cleanest isolation. If you need the last microsecond, FFI earns its keep. And if
 you need one core to run in a browser, a phone, and a server without rewriting
 the boundary three times, WebAssembly is the versatile default that the other

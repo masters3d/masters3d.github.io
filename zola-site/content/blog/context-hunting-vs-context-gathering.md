@@ -86,8 +86,8 @@ for someone to hand you the answer.**
 
 ## The High-Agency Version
 
-There's a broader principle here that I keep coming back to: **low-agency
-behavior waits for context to arrive, high-agency behavior goes and gets it.**
+Hunting and gathering split along agency: **low-agency behavior waits for
+context to arrive, high-agency behavior goes and gets it.**
 
 When you're stuck because you don't understand how something works, the
 low-agency move is to block yourself on the ticket and wait for someone to

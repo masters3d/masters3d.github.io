@@ -14,9 +14,8 @@ related = ["safe-self-modification-for-agents", "shift-left-synthetic-environmen
 
 The generated integration design for cognitive engineering proposes agents that
 review code, design architecture, generate testing strategy, improve
-documentation, and learn from all of it. The section on testing is the part I
-keep returning to, because it exposes the central problem: how do you test a
-system whose behavior is supposed to change?
+documentation, and learn from all of it. The section on testing exposes the
+central problem: how do you test a system whose behavior is supposed to change?
 
 Traditional testing assumes a stable target. The implementation changes, but the
 expected behavior remains fixed enough to assert. Adaptive agents challenge that

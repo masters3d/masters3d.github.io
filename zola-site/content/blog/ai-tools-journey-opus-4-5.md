@@ -183,10 +183,10 @@ things that actually matter. 🚀
 
 ---
 
-_The change I keep coming back to is not that agents made every language equal.
-They made stronger validation loops easier to use, which changed what I was
-willing to build in Rust. The human work moved upward toward taste,
-architecture, and deciding what matters (the same shift behind
+_Agents did not make every language equal. They made stronger validation loops
+easier to use, which changed what I was willing to build in Rust. The human work
+moved upward toward taste, architecture, and deciding what matters (the same
+shift behind
 [language choice in the LLM era](/blog/language-choice-in-the-llm-era/) and
 [proof-carrying work](/blog/proof-carrying-work/)). The tools will keep
 changing, and I expect my conclusions to change with them._

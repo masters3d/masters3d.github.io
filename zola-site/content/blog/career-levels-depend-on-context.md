@@ -26,9 +26,9 @@ more easily than the responsibility does.
 [Individual Contributor Levels as Changing Scope](/blog/individual-contributor-levels-as-changing-scope/)
 framed levels as widening responsibility (task, component, system, systems of
 systems) and argued that each level is a different job, not a harder version of
-the one below it. This post adds the uncomfortable qualifier. The scope is real,
-but the organization decides what kind of scope is available, so the same level
-can also be a different job at two different companies.
+the one below it. This post adds the uncomfortable qualifier. Levels still track
+scope, but the organization decides what kind of scope is available, so the same
+level can also be a different job at two different companies.
 
 ## Startup Scope Is Wide and Thin
 
@@ -40,7 +40,7 @@ the whole business.
 
 It can also blur evidence. A person may appear senior because they hold many
 threads at once, even if none of the systems have reached the complexity that an
-enterprise level guide assumes. The breadth is real. The depth may still be
+enterprise level guide assumes. The breadth is there. The depth may still be
 forming. A startup can give someone broad ownership before it can give them a
 stable platform, a mature review process, or enough peers to calibrate against.
 

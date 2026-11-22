@@ -40,12 +40,12 @@ the British and most European armies fought by, and it is well described in
 accounts of the
 [Continental soldier](https://history.army.mil/Revwar250/Continental-Soldier/).
 So whatever the exact provenance of the words, the tactic they dramatize is
-real. And the reason I keep turning it over is that it is not really about
-muskets. _Independent fire_ is a statement about where decision authority should
-live when the environment stops fitting the plan. That is the quest of this
-post: what "independent fire" actually is, why distributed authority beats
-centralized command in certain terrain, and why it is the cleanest picture I
-have found of how a high-agency engineering team should be allowed to operate.
+documented. And the idea is not really about muskets. _Independent fire_ is a
+statement about where decision authority should live when the environment stops
+fitting the plan. That is the quest of this post: what "independent fire"
+actually is, why distributed authority beats centralized command in certain
+terrain, and why it is the cleanest picture I have found of how a high-agency
+engineering team should be allowed to operate.
 
 ## The Terrain Broke the Formation
 
@@ -89,7 +89,8 @@ soldier inherited autonomy over the moment; the commander kept ownership of the
 mission. That split is the whole design. Clear intent from the top, independent
 judgment at the edge. It is the same shape as
 [being driven inside explicit boundaries](/blog/quest-engine-building-high-agency-teams/):
-the freedom is real precisely because the frame around it is clear.
+people at the edge can act freely precisely because the frame around them is
+clear.
 
 That is also why independent fire is a multiplier and not just a delegation.
 When a hundred soldiers can each act on what they see, the team effectively has
@@ -160,7 +161,7 @@ autonomous reads of the ground instead of one.
 
 ---
 
-_Independent fire is the picture I keep coming back to for
+_Independent fire is my picture of
 [high-agency teams](/blog/quest-engine-building-high-agency-teams/): set the
 mission and the boundaries at the center, then push the decision to the edge
 where the real information lives. It is the

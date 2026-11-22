@@ -10,10 +10,10 @@ tags = ["swift", "rust", "concurrency", "actors", "memory-safety", "type-systems
 editorial_track = "software-engineering"
 +++
 
-I keep coming back to Swift's
-[actor model](https://developer.apple.com/documentation/swift/actor), and
-something small keeps nagging at me. I say this as someone who loves the
-language (I have written before about
+Something small about Swift's
+[actor model](https://developer.apple.com/documentation/swift/actor) keeps
+nagging at me. I say this as someone who loves the language (I have written
+before about
 [why Swift is my favorite language I never got paid to use](/blog/swift-journey-why-not-professional/),
 and I predicted its rise
 [back in 2014](/blog/apple-swift-apps-everywhere-prediction/)). The whole
@@ -123,10 +123,9 @@ provide at runtime.
 
 ## The Monumental Task Swift Took On
 
-Here is where I want to be fair, because it is easy to critique a result without
-honoring the pursuit. Swift set out to add strict, safe concurrency to a
-language that was already mature, already shipping in billions of devices, and
-already committed to seamless
+It is easy to critique a result without honoring the pursuit. Swift set out to
+add strict, safe concurrency to a language that was already mature, already
+shipping in billions of devices, and already committed to seamless
 [interoperability with C and C++](https://www.swift.org/documentation/cxx-interop/),
 reference-semantics classes,
 [automatic reference counting](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/),

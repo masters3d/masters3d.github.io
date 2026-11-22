@@ -37,8 +37,8 @@ argument ends.
 
 Software and product work have some of that. We have tests, latency targets,
 security requirements, accessibility checks, budgets, and deployment
-constraints. Those are real. They are the civil engineering side of the work,
-and ignoring them is not taste. It is negligence.
+constraints. Each of those can end an argument the same way. They are the civil
+engineering side of the work, and ignoring them is not taste. It is negligence.
 
 But there is another side that is harder to name. Is this abstraction carrying
 its weight? Will the next engineer understand the boundary? Does the product

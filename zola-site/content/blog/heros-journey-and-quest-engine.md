@@ -52,7 +52,7 @@ the developer who reads the codebase before touching it, are all Searching.
 The [why post](/blog/quest-engine-the-why/) frames the governing question at
 this phase: "What does better look like?" The Call to Adventure is that question
 arriving as a feeling before it becomes a plan. The hero doesn't yet know what
-the journey will produce. They only know the gap is real and that something
+the journey will produce. They only know the gap exists and that something
 beyond the ordinary world is worth finding. That pull toward the edge of what
 you understand, toward what you don't yet know, is what the
 [secular meaning post](/blog/secular-meaning-of-life/) calls Discovery, and what
@@ -210,7 +210,7 @@ I control?), Renewal (am I still aligned with what matters?). The hero's journey
 is the narrative form of those three questions asked across the arc of a life.
 
 The diagnostic holds across all the framings. Refusal of the call is missing
-Searching (the gap is visible, the pull is real, and you turn away from it).
+Searching (the gap is visible, you feel the pull, and you turn away from it).
 Learned helplessness in the abyss is missing the Driven force (the trials are
 happening but the sense of ownership is gone). Staying in the special world is
 missing Renewal (the transformation happened but the return never came, and with

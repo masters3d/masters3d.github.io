@@ -65,11 +65,11 @@ without diagnosis. A team may learn that customers do not use a feature and
 respond by adding more prompts to force usage. That is action captured by the
 wrong story.
 
-Good adjustment requires judgment. It asks whether the signal is real, whether
-it matches other evidence, whether the system has enough authority to change,
-and whether the cure is cheaper than the disease. Sometimes the correct
-adjustment is to move faster. Sometimes it is to wait for more signal. Sometimes
-it is to stop measuring the thing that is distorting behavior.
+Good adjustment requires judgment. It asks whether the signal is more than
+noise, whether it matches other evidence, whether the system has enough
+authority to change, and whether the cure is cheaper than the disease. Sometimes
+the correct adjustment is to move faster. Sometimes it is to wait for more
+signal. Sometimes it is to stop measuring the thing that is distorting behavior.
 
 This is the part I meant by alignment in the original note. Adjustment aligns
 the next action with what the system has learned. Without adjustment, alignment
