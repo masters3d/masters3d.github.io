@@ -52,6 +52,34 @@ when work goes flat, the question is not only whether to try harder. It is which
 part of the why has gone quiet. Motivation is not a slogan. It is an operating
 signal.
 
+## Be the Lion and the Gazelle
+
+Motivation is usually argued as a choice between the carrot and the stick. Pull
+people forward with a reward, or push them with a consequence, and then debate
+which works better. My experience is that the strongest motivation is both at
+the same time.
+
+The picture I keep coming back to is a lion chasing a gazelle. Both are running
+as hard as they can, but not for the same reason. The lion is running for food.
+If it misses, it goes hungry and tries again tomorrow. The gazelle is running
+for its life. If it misses, there is no tomorrow. The lion has the carrot. The
+gazelle has the stick. The old saying gives the edge to the gazelle, because it
+has more to lose.
+
+If you can be the lion and the gazelle at the same time, you are running toward
+something and away from something in the same direction. In my own path, loving
+code was the carrot. Leaving a kind of work behind that had not worked for me
+was the stick. Either one alone would have been weaker. A carrot alone is easy
+to postpone, because dinner can wait until tomorrow. A stick alone is
+exhausting, because nobody can run for their life forever. Together, the pull
+gives the run a direction and the push gives it urgency.
+
+The stick matters most when it is one you chose. Fear handed to you by someone
+else is a threat, and threats fade or turn into resentment. A consequence you
+name for yourself, the thing you refuse to go back to, is part of your own why.
+That is the gazelle I mean: not panic, but a clear sense of what is behind you
+that you are not willing to let catch up.
+
 ## Ability Answers How
 
 Ability is the set of things a person can actually bring to the work. The useful

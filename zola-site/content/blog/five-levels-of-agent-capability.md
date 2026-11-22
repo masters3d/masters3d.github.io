@@ -1,7 +1,7 @@
 +++
 title = "Five Levels of Agent Capability"
 date = "2028-03-01"
-description = "Agent capability is not one switch from tool to teammate. A five-level ladder helps separate reactive automation from systems that would need real engineering boundaries."
+description = "\"Agent\" now decides what gets write access, memory, and a place in CI, yet it names almost nothing. A five-level ladder, from reactive to cognitive, turns the word back into an engineering claim about state, permissions, and how much validation a system needs."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Software Engineering"]
@@ -12,18 +12,44 @@ editorial_track = "software-engineering"
 related = ["cognitive-continuous-integration-and-the-broken-agent-loop", "software-3-0-needs-engineering-not-magic", "agents-are-taking-the-drive"]
 +++
 
-The generated design notes for a cognitive agent system use a ladder that is
-more useful than the confidence of the surrounding language. They describe
-agents moving from reactive behavior to deliberative planning, learning,
-meta-learning, and finally a cognitive system. I do not read that as a report of
-a finished platform. I read it as a proposed vocabulary for asking what kind of
-system we are actually building.
+In 2025 I ran an agent whose design notes called it cognitive. Its README placed
+it on a five-level ladder that ended in self-awareness and autonomous goal
+generation. The bugs I actually spent my time on were much lower on that ladder:
+it picked up work it should have skipped, it raced its own previous run, and it
+mixed its working notes into its deliverables. The
+[full story of that agent](/blog/cognitive-continuous-integration-and-the-broken-agent-loop/)
+is about its missing purpose. This post is about the ladder, because I think the
+ladder is the part worth keeping.
 
-That distinction matters because "agent" has become too wide. A script that
-answers one command, a coding assistant that plans across files, and a workflow
-that remembers prior runs all get called agents. The same noun hides different
-engineering obligations. The ladder is useful because it forces a narrower
-question: what is this system allowed to remember, change, and decide?
+The reason to care is simple: the word "agent" now decides what software
+engineers ship, and it tells us almost nothing. A script that answers one
+command, a coding assistant that plans across files, and a workflow that
+remembers prior runs all get called agents. The same noun hides very different
+engineering obligations. Call something an agent and someone will give it
+repository write access, a memory store, or a place in CI. Whether those are
+safe depends on which kind of agent it really is.
+
+## Why the Level Is an Engineering Decision
+
+Every older discipline in software already has this kind of vocabulary. We do
+not ask whether a database is "smart." We ask what consistency it promises, what
+state it keeps, and what happens on failure, and the answer decides how we test
+it, back it up, and operate it. Agents need the same treatment. The level of an
+agent is a claim about state and permissions, and every claim about state and
+permissions is a claim about testing, reproducibility, review, and rollback.
+
+Get the level wrong in one direction and you trust a system more than its
+validation supports: a planning assistant with production credentials, or a
+learning system tested like a pure function. Get it wrong in the other direction
+and you wrap simple automation in ceremony it does not need. Both are ordinary
+engineering mistakes with familiar costs, outages on one side and wasted effort
+on the other.
+
+The generated ladder in those design notes describes agents moving from reactive
+behavior to deliberative planning, learning, meta-learning, and finally a
+cognitive system. I do not read that as a report of a finished platform. I read
+it as a proposed vocabulary for one narrow question: what is this system allowed
+to remember, change, and decide?
 
 ## The First Two Levels Still Look Like Software
 
