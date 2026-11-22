@@ -32,7 +32,8 @@ The posts are in `zola-site/content/blog/`. Not used as evidence of his voice:
   lists, not prose.
 
 To check whether he uses a phrase at all, search what he wrote on GitHub before
-mid-2022 (about 50,000 words of issues, pull requests, and comments):
+AI writing tools: issues and pull requests created before June 2022 and comments
+before ChatGPT's release on 30 November 2022 (about 50,000 words). For example,
 `gh search issues "the real question" --author masters3d --created "<2022-06-01"`,
 then the same with `gh search prs`. `--commenter masters3d` finds threads he
 commented in; confirm the match is his. Later text may include output from AI
@@ -102,11 +103,11 @@ small sample, so read the rows as direction, not targets.
 - Short sentences changed kind. In the older posts a short sentence carries a
   fact, a feeling, or a turn ("I love my iPad.", "Back to Swift."). Newer posts
   often use abstract one-liners ("The loop compounds."). Write the first kind.
-- The formulas are new. Newer posts lean on phrase families that his GitHub
-  writing before mid-2022 almost never uses (0.2 per 1,000 words). The largest
-  is the reframe "X is not A. It is B.": 377 uses in 133 of 157 posts, and one
-  in his pre-2022 GitHub writing. `python3 scripts/check_repeated_phrases.py`
-  lists every family with its current count.
+- The formulas are new. Newer posts lean on phrase families that his pre-AI
+  GitHub writing almost never uses (0.2 per 1,000 words). The largest is the
+  reframe "X is not A. It is B.": 377 uses in 133 of 157 posts, and one in that
+  GitHub writing. `python3 scripts/check_repeated_phrases.py` lists every
+  family with its current count.
 
 ## Writing a new post
 
