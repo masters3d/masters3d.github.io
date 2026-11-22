@@ -1,13 +1,13 @@
 +++
 title = "Hypothesis-Driven Agent Experiments"
 date = "2029-02-15"
-draft = true
 description = "Agent experiments need predictions before the run, logs during the run, and skepticism afterward. Otherwise a design proposal can turn into a success story without evidence."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Software Engineering"]
 tags = ["agents", "research", "validation", "feedback-loops", "ai-development"]
 [extra]
+scheduled = true
 editorial_track = "software-engineering"
 related = ["testing-systems-that-change-themselves", "cognitive-continuous-integration-and-the-broken-agent-loop", "meta-learning-four-levels"]
 +++

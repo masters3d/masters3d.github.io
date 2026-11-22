@@ -1,13 +1,13 @@
 +++
 title = "Anti-Patterns in Human-Agent Interaction"
 date = "2028-12-15"
-draft = true
 description = "Human-agent collaboration breaks in recognizable ways. Over-delegation, under-trust, misspecified goals, reward hacking, and autonomy gaps show where the interface needs repair."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Software Engineering"]
 tags = ["agents", "collaboration", "alignment", "validation", "software-engineering"]
 [extra]
+scheduled = true
 editorial_track = "software-engineering"
 related = ["objective-function-search-drive-renew", "agents-are-taking-the-drive", "software-3-0-needs-engineering-not-magic", "cognitive-continuous-integration-and-the-broken-agent-loop"]
 +++

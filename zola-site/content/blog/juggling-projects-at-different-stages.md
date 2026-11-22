@@ -1,13 +1,13 @@
 +++
 title = "Juggling Projects at Different Stages"
 date = "2028-12-01"
-draft = true
 description = "Project load is not only the number of projects. The harder part is that each project lives at a different stage, with different people, memory, ownership, and motivation attached to it."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Human Systems"]
 tags = ["career", "motivation", "context", "systems-thinking", "team-dynamics"]
 [extra]
+scheduled = true
 editorial_track = "human-systems"
 related = ["locus-of-control-at-work", "motivation-ability-narrative", "context-hunting-vs-context-gathering", "overlapping-roles-in-tech"]
 +++

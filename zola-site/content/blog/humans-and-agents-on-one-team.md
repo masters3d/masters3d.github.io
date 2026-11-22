@@ -1,13 +1,13 @@
 +++
 title = "Humans and Agents on One Team"
 date = "2029-01-15"
-draft = true
 description = "Mixed human and agent teams need role clarity more than hype. Agents can carry speed, memory, pattern work, and execution, while humans remain responsible for values, judgment, creative constraints, and accountable direction."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Engineering Systems"]
 tags = ["agents", "collaboration", "engineering-systems", "team-dynamics", "ai-development"]
 [extra]
+scheduled = true
 editorial_track = "engineering-systems"
 related = ["no-speedup-for-shared-understanding", "quest-engine-building-high-agency-teams", "software-3-0-needs-engineering-not-magic", "cognitive-continuous-integration-and-the-broken-agent-loop"]
 +++

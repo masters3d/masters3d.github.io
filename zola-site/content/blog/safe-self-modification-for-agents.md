@@ -1,13 +1,13 @@
 +++
 title = "Safe Self-Modification for Agents"
 date = "2028-11-01"
-draft = true
 description = "An agent that can change itself needs more than ambition. Safe self-modification requires a sandbox, validation, goal checks, and rollback before any change becomes durable."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Software Engineering"]
 tags = ["agents", "ai-safety", "validation", "risk-management", "systems-thinking"]
 [extra]
+scheduled = true
 editorial_track = "software-engineering"
 related = ["meta-learning-four-levels", "software-3-0-needs-engineering-not-magic", "five-levels-of-agent-capability"]
 +++

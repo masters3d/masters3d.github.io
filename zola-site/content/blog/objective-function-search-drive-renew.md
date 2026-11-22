@@ -1,13 +1,13 @@
 +++
 title = "The Objective Function Is the Human-Agent Interface"
 date = "2028-11-15"
-draft = true
 description = "An objective function answers what better means. In human-agent work, that answer has to connect human intent to reward signals, action spaces, and value alignment."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Quest Engine"]
 tags = ["quest-engine", "objective-function", "agents", "alignment", "search-drive-renew"]
 [extra]
+scheduled = true
 editorial_track = "quest-engine"
 related = ["quest-engine-the-why", "search-mastery-drive-autonomy-renew-purpose", "agents-are-taking-the-drive", "anti-patterns-in-human-agent-interaction"]
 +++

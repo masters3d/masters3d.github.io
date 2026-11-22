@@ -1,13 +1,13 @@
 +++
 title = "Measuring an Agent Beyond Task Completion"
 date = "2029-03-15"
-draft = true
 description = "Task completion is only the first measure of an agent. Useful evaluation also asks what context it preserved, what quality gates it respected, and whether future work became safer."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Software Engineering"]
 tags = ["agents", "measurement", "validation", "quality", "ai-development"]
 [extra]
+scheduled = true
 editorial_track = "software-engineering"
 related = ["hypothesis-driven-agent-experiments", "agent-memory-short-long-and-meta", "proof-carrying-work"]
 +++

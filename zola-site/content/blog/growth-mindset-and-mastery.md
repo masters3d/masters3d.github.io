@@ -1,13 +1,13 @@
 +++
 title = "Growth Mindset and Mastery"
 date = "2029-02-01"
-draft = true
 description = "Mastery depends on a growth mindset because the work of getting better lives just beyond current ability. At each individual contributor level, the same belief shows up as different behavior."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Human Systems"]
 tags = ["mastery", "growth", "career-growth", "deliberate-practice", "motivation"]
 [extra]
+scheduled = true
 editorial_track = "human-systems"
 related = ["find-your-why-intrinsic-motivation", "ten-thousand-hours-was-never-enough", "level-zero-is-an-apprenticeship", "career-success-metrics-individual-and-organizational"]
 +++

@@ -1,13 +1,13 @@
 +++
 title = "Testing Systems That Change Themselves"
 date = "2029-01-01"
-draft = true
 description = "Adaptive agent systems break the assumption that yesterday's behavior is today's behavior. Testing them means preserving baselines while watching the system, its tests, and its goals change."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Software Engineering"]
 tags = ["testing", "agents", "validation", "quality", "ai-development"]
 [extra]
+scheduled = true
 editorial_track = "software-engineering"
 related = ["safe-self-modification-for-agents", "shift-left-synthetic-environments", "quality-engineering-vs-engineering-quality"]
 +++
