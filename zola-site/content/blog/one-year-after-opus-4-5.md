@@ -136,9 +136,9 @@ People who are not adopting AI are going to be left behind. I do not see a way
 to win this by waiting it out. The job is completely different now: an engineer
 becomes an agent manager, and an agent manager needs to understand the business
 case far better than an engineer who only had to implement a ticket. It looks a
-lot like moving up a career ladder, where each step up means doing less of the
-work with your own hands. The difference is that you are still doing a lot of
-coding; it just goes through your agents.
+lot like moving up a career ladder, where each step up is a different job, with
+less of the work done by your own hands. The difference is that you are still
+doing a lot of coding; it just goes through your agents.
 
 That changes hiring. When we talk about what to look for in new hires, agency
 and taste come up first. I wrote about

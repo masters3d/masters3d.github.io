@@ -24,9 +24,11 @@ platform group, an innovation culture, or a stability culture. The title travels
 more easily than the responsibility does.
 
 [Individual Contributor Levels as Changing Scope](/blog/individual-contributor-levels-as-changing-scope/)
-framed levels as widening responsibility: task, component, system, systems of
-systems. This post adds the uncomfortable qualifier. The scope is real, but the
-organization decides what kind of scope is available.
+framed levels as widening responsibility (task, component, system, systems of
+systems) and argued that each level is a different job, not a harder version of
+the one below it. This post adds the uncomfortable qualifier. The scope is real,
+but the organization decides what kind of scope is available, so the same level
+can also be a different job at two different companies.
 
 ## Startup Scope Is Wide and Thin
 

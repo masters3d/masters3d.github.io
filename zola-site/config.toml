@@ -112,7 +112,11 @@ feed_limit = 0
 # Rescorla-Wagner DOI returned 502, even though all three load in a browser; skip
 # only those pages. erlang.org dropped the connection and failed a daily deploy;
 # the post links only its home page, so skip that URL.
+# academic.oup.com (Oxford Academic) is a publisher article host like the DOIs
+# above, and other projects' link checkers exclude it too; skip only the cited
+# Benson, Li, and Shue (2019) QJE article so a valid citation does not fail CI.
 skip_prefixes = [
+    "https://academic.oup.com/qje/article/134/4/2085/5550760",
     "https://www.gutenberg.org/ebooks/12",
     "https://www.usgs.gov/water-science-school/science/100-year-flood",
     "https://doi.org/10.4249/scholarpedia.2237",

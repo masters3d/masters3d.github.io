@@ -57,11 +57,12 @@ that would constrain a system for years. It meant making the work legible so
 another person could challenge it, continue it, or operate it after I moved on.
 It meant noticing when the actual problem was not code.
 
-The title was not the destination. It was a larger radius of responsibility. My
-work was judged less by whether my part compiled and more by whether the whole
-system produced the intended result. That included the interfaces between
-software and people: plans, reviews, incidents, handoffs, mentoring, and the
-small decisions that teach a team what it values.
+The title was not the destination. It was a larger radius of responsibility, and
+each step up turned out to be a different job, not a reward for doing the old
+one well. My work was judged less by whether my part compiled and more by
+whether the whole system produced the intended result. That included the
+interfaces between software and people: plans, reviews, incidents, handoffs,
+mentoring, and the small decisions that teach a team what it values.
 
 I also had to unlearn the idea that struggling with a subject proved I lacked
 the capacity for it. My freshman-year experience had turned difficulty into a
