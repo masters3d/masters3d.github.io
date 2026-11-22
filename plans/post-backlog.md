@@ -42,8 +42,9 @@ which the template shows once both posts are published
 | 2 | 2026-11-15 | B03 | A Feature Needs a Life Cycle From Cradle to Grave | `feature-cradle-to-grave` |
 | 3 | 2026-11-24 | U03 | One Year After Opus 4.5: Software Engineering Moves Up the Stack | `one-year-after-opus-4-5` |
 | 4 | 2026-11-29 | U07 | A Year of Worklogs: What They Are For, Where They Stop | `a-year-of-worklogs` |
-| 5 | 2026-12-01 | B20 | PIE Theory: Being Seen Is Part of the Work | `pie-theory-being-seen-at-work` |
-| 6 | 2026-12-15 | B21 | Locus of Control at Work | `locus-of-control-at-work` |
+| 65 | 2026-12-01 | U09 | Ten Years in Software Engineering | `ten-years-in-software-engineering` |
+| 5 | 2026-12-11 | B20 | PIE Theory: Being Seen Is Part of the Work | `pie-theory-being-seen-at-work` |
+| 6 | 2026-12-21 | B21 | Locus of Control at Work | `locus-of-control-at-work` |
 | 7 | 2027-01-01 | B22 | Seeking Is the Reward | `seeking-is-the-reward` |
 | 8 | 2027-01-15 | U04 | Reward Prediction Error: Dopamine Fires on the Surprise | `reward-prediction-error` |
 | 9 | 2026-10-26 | B04 | Design Review Needs Governance | `design-review-needs-governance` |
@@ -217,6 +218,7 @@ date is a placeholder far enough out to keep the draft gate quiet.
 | U06 | If everything is a severity 2, nothing is: severity inflation when only Sev 0-2 page anyone, the missing daytime tier, the filer proposes and triage decides, tooling gaps should not become process, software engineers on infrastructure on-call and the SRE model's limits, and a 0.1-1% manual toil budget counted in nines like availability, since each nine costs more than the last (PMP: maintenance is not a project). Author approved; scheduled at the end of the queue (#64, 2029-04-15) | Author's notes, November 2026 | Engineering Systems | scheduled | `if-everything-is-a-sev-2-nothing-is` |
 | U07 | A year of worklogs: from personal "plans" in November 2025 (a little over a year for the author, about a year for the team); what worklogs are for (tracking work as you do it, filing away bugs and edge cases with context for later or for another agent), what they are not (not the ADO board, features, or epics), how metadata stretched them (task/bug and PBI roles, sub-issues, sprint-scoped PBIs vs long-lived worklogs, features and epics), growing pains with teams that track everything in ADO, the no-PM reporting gap, what other teams use, and a year-two bridge instead of more stretching. Combines the U08 draft at the author's request; kept separate from `one-year-after-opus-4-5`. Author's own experience, so it is in the Release Schedule (#4, off-cycle on the one-year mark) | Author's notes, October and November 2026 | Engineering Systems | scheduled | `a-year-of-worklogs` |
 | U08 | Reporting features and epics without a PM or Scrum Master | Author's notes, October 2026 | Engineering Systems | merged into U07 | `a-year-of-worklogs` |
+| U09 | Ten years in software engineering: from fear of code to senior-level judgment, ownership, and helping others grow; sequel to `from-creative-tools-to-software-engineering`. Author's own experience, so it is in the Release Schedule (#65, moved up to 2026-12-01; PIE theory and locus of control moved to 2026-12-11 and 2026-12-21 to spread out December) | Author's notes | Software Engineering | scheduled | `ten-years-in-software-engineering` |
 
 ## Covered by Existing Posts
 

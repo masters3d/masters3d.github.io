@@ -1,13 +1,13 @@
 +++
 title = "Ten Years in Software Engineering"
-date = "2027-10-25"
-draft = true
+date = "2026-12-01"
 description = "Ten years after entering software engineering, a reflection on moving from fear of code to senior-level judgment, ownership, and helping others grow."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Software Engineering"]
 tags = ["software-engineering", "career-growth", "origin-story", "senior-engineering", "reflection"]
 [extra]
+scheduled = true
 editorial_track = "software-engineering"
 +++
 
