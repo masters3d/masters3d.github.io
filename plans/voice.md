@@ -33,11 +33,15 @@ The posts are in `zola-site/content/blog/`. Not used as evidence of his voice:
 
 To check whether he uses a phrase at all, search what he wrote on GitHub before
 AI writing tools: issues and pull requests created before June 2022 and comments
-before ChatGPT's release on 30 November 2022 (about 50,000 words). For example,
-`gh search issues "the real question" --author masters3d --created "<2022-06-01"`,
-then the same with `gh search prs`. `--commenter masters3d` finds threads he
-commented in; confirm the match is his. Later text may include output from AI
-tools.
+before ChatGPT's release on 30 November 2022 (about 46,000 words of prose).
+
+```bash
+gh search issues "the real question" --author masters3d --created "<2022-06-01"
+gh search prs "the real question" --author masters3d --created "<2022-06-01"
+```
+
+`--commenter masters3d` finds threads he commented in; confirm the match is his.
+Later text may include output from AI tools.
 
 ## How he sounds
 
