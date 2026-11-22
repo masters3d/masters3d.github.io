@@ -15,10 +15,11 @@ related = ["find-your-why-intrinsic-motivation", "ten-thousand-hours-was-never-e
 Mastery sounds like a destination until you try to practice it. Then it becomes
 a question: what does better look like for me now?
 
-That question only works if ability is allowed to change. Carol Dweck's growth
-mindset language is useful here because mastery depends on the belief that skill
-can be developed. Without that belief, the edge of learning feels like evidence
-of inadequacy. With it, the same edge becomes the place where practice belongs.
+That question only works if ability is allowed to change. Carol Dweck's
+[growth mindset](https://hbr.org/2016/01/what-having-a-growth-mindset-actually-means)
+language is useful here because mastery depends on the belief that skill can be
+developed. Without that belief, the edge of learning feels like evidence of
+inadequacy. With it, the same edge becomes the place where practice belongs.
 
 The distinction matters in engineering because feedback is constant. Code
 review, incidents, design critique, failed tests, production surprises, and

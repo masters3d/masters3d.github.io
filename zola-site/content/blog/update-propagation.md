@@ -40,12 +40,14 @@ difference between memory as a private event and memory as a property of the
 system. A person can remember. A team only remembers when the lesson has been
 encoded into code, checks, templates, runbooks, reviews, and habits.
 
-The source idea comes from several improvement traditions. Yokoten in the Toyota
-Production System means horizontal deployment, spreading a useful change
-wherever it applies. Poka-yoke means mistake-proofing, designing the system so a
-known error is hard to repeat. Standardize-Do-Check-Act locks in a gain before
-the next improvement cycle begins. The exact terms matter less than the order:
-stabilize the improvement, make it visible, then spread it.
+The source idea comes from several improvement traditions.
+[Yokoten](https://www.lean.org/lexicon-terms/yokoten/) in the Toyota Production
+System means horizontal deployment, spreading a useful change wherever it
+applies. [Poka-yoke](https://www.lean.org/lexicon-terms/poka-yoke/) means
+mistake-proofing, designing the system so a known error is hard to repeat.
+[Standardize-Do-Check-Act](https://books.google.com/books/about/Gemba_Kaizen_A_Commonsense_Low_Cost_Appr.html?id=USZrSZXmYBkC)
+locks in a gain before the next improvement cycle begins. The exact terms matter
+less than the order: stabilize the improvement, make it visible, then spread it.
 
 ## Propagation Has Three Destinations
 
