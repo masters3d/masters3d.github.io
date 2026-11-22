@@ -50,11 +50,14 @@ and starves mastery.
 
 ## Mastery Changes by Level
 
-At early individual contributor levels, mastery looks like active feedback
-integration. The engineer asks why, applies review comments, researches
-unfamiliar problems, and documents what they learned. Level 0 and Level 1 growth
-is often visible in small deltas: fewer repeated review comments, clearer tests,
-better questions, and more reliable delivery on bounded tasks.
+Because
+[each level is a different job](/blog/individual-contributor-levels-as-changing-scope/),
+the growth edge moves with every promotion. At early individual contributor
+levels, mastery looks like active feedback integration. The engineer asks why,
+applies review comments, researches unfamiliar problems, and documents what they
+learned. Level 0 and Level 1 growth is often visible in small deltas: fewer
+repeated review comments, clearer tests, better questions, and more reliable
+delivery on bounded tasks.
 
 At mid-levels, mastery moves from implementation into design. The engineer is no
 longer only asking how to complete the task. They are asking how the component

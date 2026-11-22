@@ -1,13 +1,13 @@
 +++
 title = "Cohesive Narrative"
 date = "2028-02-15"
-draft = true
 description = "Cohesive Narrative turns found facts into an accurate story of how a system works. It is the map that lets engineers decide what matters, what depends on what, and what must change next."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Quest Engine"]
 tags = ["quest-engine", "context", "mental-models", "narrative", "systems-thinking"]
 [extra]
+scheduled = true
 editorial_track = "quest-engine"
 related = ["quest-engine-introduction", "story-is-engineering-memory", "proactive-curiosity", "shared-understanding-as-a-practice"]
 +++

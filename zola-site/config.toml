@@ -107,7 +107,20 @@ feed_limit = 0
 # the cited Georgia statistics page loads in a browser; skip only that page.
 # pmi.org returns 403 (bot protection) to automated link checkers even though the
 # cited "What is a project" page loads in a browser; skip only that page.
+# gutenberg.org (503) and usgs.gov (504) failed CI twice in a row on the cited
+# Through the Looking-Glass ebook and 100-year flood pages, and the Scholarpedia
+# Rescorla-Wagner DOI returned 502, even though all three load in a browser; skip
+# only those pages. erlang.org dropped the connection and failed a daily deploy;
+# the post links only its home page, so skip that URL.
+# academic.oup.com (Oxford Academic) is a publisher article host like the DOIs
+# above, and other projects' link checkers exclude it too; skip only the cited
+# Benson, Li, and Shue (2019) QJE article so a valid citation does not fail CI.
 skip_prefixes = [
+    "https://academic.oup.com/qje/article/134/4/2085/5550760",
+    "https://www.gutenberg.org/ebooks/12",
+    "https://www.usgs.gov/water-science-school/science/100-year-flood",
+    "https://doi.org/10.4249/scholarpedia.2237",
+    "https://www.erlang.org/",
     "https://www.pmi.org/about/what-is-a-project",
     "https://doi.org/10.1002/(SICI)1234-981X(199707)5:3%3C305::AID-EURO184%3E3.0.CO;2-4",
     "https://press.princeton.edu/books/paperback/9780691164076/how-to-solve-it",

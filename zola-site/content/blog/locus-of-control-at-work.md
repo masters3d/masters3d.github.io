@@ -1,6 +1,6 @@
 +++
 title = "Locus of Control at Work"
-date = "2026-12-15"
+date = "2026-12-21"
 description = "A useful locus of control model at work is not optimism versus pessimism. It is the repeated practice of sorting what you control, what you can influence, what you have to accept, and what you can slowly move from one circle to another."
 template = "blog-post.html"
 [taxonomies]

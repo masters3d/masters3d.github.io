@@ -17,11 +17,13 @@ Level 0 can sound like a pre-role, a waiting room, or a soft way to say not
 ready. I think it is better to name it directly: Level 0 is an apprenticeship.
 
 That word changes the contract. An apprentice is not expected to operate like an
-experienced engineer with a smaller title. The expected scope is learning
-fundamentals, building baseline productivity, and becoming reliable on
-well-defined work. At the same time, an apprenticeship is not passive. The
-person learning has real obligations: practice, questions, documentation,
-feedback, and steady movement toward independence.
+experienced engineer with a smaller title.
+[Each level is a different job](/blog/individual-contributor-levels-as-changing-scope/),
+and the Level 0 job is learning: building fundamentals, reaching baseline
+productivity, and becoming reliable on well-defined work. At the same time, an
+apprenticeship is not passive. The person learning has real obligations:
+practice, questions, documentation, feedback, and steady movement toward
+independence.
 
 The useful frame is two-sided. The new engineer owns their learning behavior.
 The team owns the learning environment.
