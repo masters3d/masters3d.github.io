@@ -58,16 +58,16 @@ would have let it walk past.
 
 ## Build the proof of concept, let the spec come out the other end
 
-What has actually worked for me is close to the opposite order, and I want to be
-precise about the vocabulary here, because I have been sloppy about it myself. I
-have been saying "demo" when I meant proof of concept, and the distinction
-matters. A demo is something you show. A proof of concept is something you build
-to find out whether an idea survives contact with real code, and that is the
-more important thing to name at this stage. The value of a proof of concept is
-not that it is presentable, it is that it validates (or kills) an approach
-before you have committed a design document to it, and that you can spin up more
-than one in parallel to explore genuinely different alternatives instead of
-committing to the first idea that sounded right in a planning conversation.
+What has actually worked for me is close to the opposite order. First, a
+correction to my own vocabulary: I have been saying "demo" when I meant proof of
+concept, and the distinction matters. A demo is something you show. A proof of
+concept is something you build to find out whether an idea survives contact with
+real code, and that is the more important thing to name at this stage. The value
+of a proof of concept is not that it is presentable, it is that it validates (or
+kills) an approach before you have committed a design document to it, and that
+you can spin up more than one in parallel to explore genuinely different
+alternatives instead of committing to the first idea that sounded right in a
+planning conversation.
 
 Talk to the agent long enough to land on a direction, not a full architecture,
 something closer to a session-scoped plan than a design document. Then let it
@@ -89,18 +89,17 @@ in some concrete way you can actually point at.
 
 Only after you have two or three of these, each an actual working solution
 instead of a description of one, does it make sense to write the design
-document. I want to be clear that I am not arguing against specifications. A
-design document is genuinely useful: it communicates intent, and it can lay out
-the different approaches you actually tried, the trade-offs between them, a
-barbell of options considered rather than a single path presented as inevitable.
-What changes is when you write it. At this point the design document is not
-speculation, it is a summary of what already ran. It also tends to reveal
-decomposition you could not have seen from the whiteboard: this is not one
-thing, it is three components, and component two is the one that needs the
-careful spec because that is where the proofs of concept actually disagreed.
-Writing the design document after the proofs of concept exist means every claim
-in it is backed by code that already executed, not by confidence about code that
-has not been written yet.
+document. I am not arguing against specifications. A design document is
+genuinely useful: it communicates intent, and it can lay out the different
+approaches you actually tried, the trade-offs between them, a barbell of options
+considered rather than a single path presented as inevitable. What changes is
+when you write it. At this point the design document is not speculation, it is a
+summary of what already ran. It also tends to reveal decomposition you could not
+have seen from the whiteboard: this is not one thing, it is three components,
+and component two is the one that needs the careful spec because that is where
+the proofs of concept actually disagreed. Writing the design document after the
+proofs of concept exist means every claim in it is backed by code that already
+executed, not by confidence about code that has not been written yet.
 
 There is a second effect worth naming, because it is not just about agent
 autonomy: a design document is nearly impossible to argue against and a working

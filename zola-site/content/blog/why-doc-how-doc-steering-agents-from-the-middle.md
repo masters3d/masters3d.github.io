@@ -96,16 +96,16 @@ gets rubber-stamped instead of genuinely reviewed. Neither document does its job
 when it is asked to do both jobs at once.
 
 Keeping them separate is not extra process. It is the same discipline that makes
-[context as code](/blog/context-as-code/) work at all: context is only
-load-bearing if it is written for the reader who actually has to act on it. The
-Why doc is context for the humans deciding whether this is worth doing. The How
-doc is context for the agent (and the engineer supervising it) deciding how to
-do it correctly. A technical program manager, working from the why outward, and
-a software engineer, working from the code inward, are writing toward the same
-overlap from opposite directions. The person steering the agent is the one
-standing in the middle of that Venn diagram, and the two documents are what keep
-that middle position from collapsing into "outward alignment with no technical
-substance" or "technical precision nobody upstream can evaluate."
+[context as code](/blog/context-as-code/) work at all: context only helps if it
+is written for the reader who actually has to act on it. The Why doc is context
+for the humans deciding whether this is worth doing. The How doc is context for
+the agent (and the engineer supervising it) deciding how to do it correctly. A
+technical program manager, working from the why outward, and a software
+engineer, working from the code inward, are writing toward the same overlap from
+opposite directions. The person steering the agent is the one standing in the
+middle of that Venn diagram, and the two documents are what keep that middle
+position from collapsing into "outward alignment with no technical substance" or
+"technical precision nobody upstream can evaluate."
 
 ## The third document the pair implies
 

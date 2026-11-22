@@ -30,8 +30,8 @@ that sits above the operational cycle.
 [Find Your Why](/blog/find-your-why-intrinsic-motivation/) calls it the thing
 your intrinsic motivation is a personal version of. The
 [Matz post](/blog/joy-freedom-motivation-matz-quest-engine/) files "the
-objective" into it and moves on. It has been load-bearing in every one of those
-arguments and has never had a page of its own.
+objective" into it and moves on. Every one of those arguments depended on it,
+yet it has never had a page of its own.
 
 This is that page, and it is the first of
 [three steps](/blog/the-meta-structure/): **Why** (here), then the

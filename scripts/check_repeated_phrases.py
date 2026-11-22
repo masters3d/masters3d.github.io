@@ -2,11 +2,11 @@
 """Report phrases repeated across blog posts and fail on the ones the author banned.
 
 Some phrases read fine once and become house style when post after post uses
-them: "I keep coming back to", "the risk is real, but", "genuinely". This
-script counts each phrase family in ``scripts/repeated_phrases.toml`` across
-every post in ``zola-site/content/blog`` (drafts and scheduled posts too,
-since they go live later) and reports every family used more than ``limit``
-times (3), with each use.
+them: "I keep coming back to", "the risk is real, but", "is genuinely useful".
+This script counts each phrase family in ``scripts/repeated_phrases.toml``
+across every post in ``zola-site/content/blog`` (drafts and scheduled posts
+too, since they go live later) and reports every family used more than
+``limit`` times (3), with each use.
 
 The report alone does not fail the check. A family fails it only when the
 author lists it under ``[enforce]`` with the most uses it may have (0 bans it)

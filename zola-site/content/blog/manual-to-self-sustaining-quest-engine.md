@@ -127,8 +127,8 @@ next section.
 
 ## Self-Sustaining Is Not the Same as Automated
 
-Here is where I want to be precise about the goal, because "automate the manual
-process" is the wrong target even when the ordering is right.
+"Automate the manual process" is the wrong target, even when the ordering is
+right.
 
 An automated process is one where the steps run without a person. A
 **self-sustaining** process is one that keeps being correct as the world around

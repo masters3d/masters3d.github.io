@@ -107,15 +107,15 @@ purely good. There are only changes and who they land on.
 
 ## Where Bad Is Still Earned
 
-I want to be careful not to over-correct into the mush of "nothing is ever
-really bad, it's all just perspective." It isn't. There is absolutely such a
-thing as a bad payload, and I'll say it plainly: if it brings down all sites, if
-it corrupts data, if it opens a security hole, if the blast radius is the whole
-population or it punches through a floor, then "bad" is not lazy shorthand, it's
-the accurate word and you should use it loudly. The point was never to retire
-"bad." The point is to _earn_ it. Reserve it for floor violations and near-total
-blast radius, and it snaps back to meaning something. Spend it on every
-one-cohort regression and it means nothing when you finally need it.
+None of this should over-correct into the mush of "nothing is ever really bad,
+it's all just perspective." It isn't. There is absolutely such a thing as a bad
+payload, and I'll say it plainly: if it brings down all sites, if it corrupts
+data, if it opens a security hole, if the blast radius is the whole population
+or it punches through a floor, then "bad" is not lazy shorthand, it's the
+accurate word and you should use it loudly. The point was never to retire "bad."
+The point is to _earn_ it. Reserve it for floor violations and near-total blast
+radius, and it snaps back to meaning something. Spend it on every one-cohort
+regression and it means nothing when you finally need it.
 
 The other reason to be careful with the word is that "bad payload" has a quiet
 gravity that pulls toward "bad author." Scope language resists that pull. "This

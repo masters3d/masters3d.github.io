@@ -42,10 +42,9 @@ have written before about how
 rather than an hours problem.
 
 The picture I have for this work is shoveling fertilizer. I am very good at
-shoveling fertilizer. I can clear a pile fast and get the path open again. And I
-want to be precise about what the shovel stands for, because the picture is not
-just a joke about unpleasant work. Shoveling is manual toil. Google's site
-reliability engineering (SRE) book has a
+shoveling fertilizer. I can clear a pile fast and get the path open again. The
+picture is not just a joke about unpleasant work: shoveling is manual toil.
+Google's site reliability engineering (SRE) book has a
 [careful definition of toil](https://sre.google/sre-book/eliminating-toil/):
 work tied to running a production service that is manual, repetitive,
 automatable, tactical, without enduring value, and that grows linearly as the

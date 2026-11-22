@@ -105,7 +105,8 @@ output. It does not paraphrase text to chase a signal it cannot locate.
 ## 🔁 Repeated phrase check
 
 Phrases that read fine once turn into filler when every post leans on them ("I
-keep coming back to", "the tradeoff is real", "genuinely", "this is where").
+keep coming back to", "the tradeoff is real", "is genuinely useful", "this is
+where").
 `scripts/check_repeated_phrases.py` counts each phrase family listed in
 `scripts/repeated_phrases.toml` across every post, drafts included, and prints
 the count, the number of posts, and a status for each.
@@ -122,7 +123,7 @@ python3 scripts/check_repeated_phrases.py --discover         # frequent phrases 
 - **enforced**: the phrase is listed under `[enforce]` with a maximum count. A
   count above that maximum fails PR Validation, with an annotation on each use.
   "X is real" (except about real numbers) and "I keep coming back to" are
-  enforced at 0.
+  enforced at 0; "load-bearing" and the "I want to be careful" hedges at 3.
 - **allowed**: listed under `[allow]` with a reason; reported but never flagged.
 
 To eradicate a phrase, add its id to `[enforce]` (usually `= 0`) and rewrite the

@@ -84,20 +84,44 @@ why = "A stock pivot that turns every point into a place."
 instead = "Say what happens and when: \"The trouble starts when...\"."
 
 [[phrase]]
-id = "genuinely"
-phrase = "genuinely"
-pattern = '\bgenuinely\b'
-example = "It is genuinely useful."
-why = "An intensifier that asks to be believed and adds no information."
-instead = "Delete it, or give the evidence that makes the claim true."
+id = "is-genuinely"
+phrase = "is genuinely useful"
+pattern = '''\b(?:is|are|was|were|be|been|being|it's|that's|they're|a|an) genuinely\b'''
+example = "The tool is genuinely useful."
+why = "\"Genuinely\" vouches for the adjective after it (useful, hard, different, good) instead of showing it; the sentence reads the same without it."
+instead = "Delete \"genuinely\", or give the evidence: \"useful: it caught two regressions last month\"."
 
 [[phrase]]
-id = "quietly"
-phrase = "quietly"
-pattern = '\bquietly\b'
-example = "The test quietly passes."
-why = "A stock dramatic adverb (\"quietly decides\", \"quietly breaks\")."
-instead = "Delete it, or say how the thing goes unnoticed."
+id = "genuinely-need-it"
+phrase = "the ones that genuinely need it"
+pattern = '\bgenuinely (?:needs?|needed|benefits?|requires?|lives)\b|\bthe genuinely (?:novel|new|first)\b'
+example = "Save people for the cases that genuinely need it."
+why = "Splits routine work from the rest with an intensifier (\"the genuinely novel case\", \"where judgment genuinely lives\") instead of a test the reader could apply."
+instead = "Name the test: \"failures no runbook covers\", \"changes with no earlier version to compare against\"."
+
+[[phrase]]
+id = "genuinely-want"
+phrase = "something you genuinely want"
+pattern = '\bgenuinely (?:wants?|wanted|enjoy\w*|interest\w*|means? something|pulls?|cares?|cared|loves?|loved|likes?|liked)\b|\bgenuinely (?:do|does|did) not (?:care|want)\b'
+example = "Find work you genuinely enjoy."
+why = "Vouches for a feeling (wants, enjoys, cares, is interested) instead of showing it."
+instead = "Show what the feeling makes the person do: \"they pick it up without being asked\"."
+
+[[phrase]]
+id = "quietly-drifts"
+phrase = "X quietly stalls"
+pattern = '''\bquietly (?:stall\w*|drift\w*|erod\w*|diverg\w*|becom\w*|became|turns? into|turned into|grows?|grew|growing|goes back|go back|went back|moves? back|moved back|fail\w*|stops?|stopped|don't|ignored|slid\w*|slips?|slipped|rots?|rotted|decay\w*|los\w*|comes? to|came to)\b'''
+example = "Then the margin quietly erodes."
+why = "A stock way to say something got worse while nobody watched (stalls, drifts, erodes, becomes a problem); it asserts the drift without saying what nobody checked."
+instead = "Say what nobody was checking: \"nobody re-measured the margin after launch\"."
+
+[[phrase]]
+id = "quietly-assumes"
+phrase = "X quietly assumes Y"
+pattern = '\bquietly (?:assum\w*|declar\w*|dictat\w*|decid\w*|eras\w*|omit\w*|leav\w* out|left out|lets? (?:you|us|them|me) assume|means?|meant|collaps\w*|fus\w*|redefin\w*|implies|implied)\b'
+example = "The metric quietly assumes a human in the loop."
+why = "Reveals a hidden premise with a stage whisper (assumes, decides, erases, leaves out); repeated, every framing the post disagrees with sounds sneaky."
+instead = "State the premise and who holds it: \"The metric assumes a person reviews every change.\""
 
 [[phrase]]
 id = "not-just"
@@ -257,6 +281,8 @@ instead = "State the caveat."
 [enforce]
 keep-coming-back = 0
 x-is-real = 0
+load-bearing = 3      # keep only uses with a real reason
+hedge-want-to-be = 3  # keep only uses with a real reason
 
 [allow]
-# genuinely = "my voice; reviewed 2026-11-22"
+# is-genuinely = "my voice; reviewed 2026-11-22"

@@ -123,10 +123,9 @@ provide at runtime.
 
 ## The Monumental Task Swift Took On
 
-Here is where I want to be fair, because it is easy to critique a result without
-honoring the pursuit. Swift set out to add strict, safe concurrency to a
-language that was already mature, already shipping in billions of devices, and
-already committed to seamless
+It is easy to critique a result without honoring the pursuit. Swift set out to
+add strict, safe concurrency to a language that was already mature, already
+shipping in billions of devices, and already committed to seamless
 [interoperability with C and C++](https://www.swift.org/documentation/cxx-interop/),
 reference-semantics classes,
 [automatic reference counting](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/),

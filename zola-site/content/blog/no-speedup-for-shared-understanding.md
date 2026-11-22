@@ -39,14 +39,14 @@ But assimilation is not retrieval. The summary arrives fast and then sits there
 while you do the slow part, which is building a model you can reason with later,
 under pressure, when something breaks at 2am.
 
-I want to be careful with the claim. It is not literally zero. Agents genuinely
-compress the search: they tell you which of the twelve files matter, they
-translate an unfamiliar subsystem into terms you already hold, they let you
-choose where to go deep. Call it a modest constant factor on comprehension. The
-trouble is what it sits next to. Production went up by something closer to an
-order of magnitude. A modest improvement in understanding against a large
-improvement in output is, in practice, a widening gap, and a gap that widens is
-the thing you feel, not the ratio you can defend on a whiteboard.
+The speedup for understanding is not literally zero. Agents genuinely compress
+the search: they tell you which of the twelve files matter, they translate an
+unfamiliar subsystem into terms you already hold, they let you choose where to
+go deep. Call it a modest constant factor on comprehension. The trouble is what
+it sits next to. Production went up by something closer to an order of
+magnitude. A modest improvement in understanding against a large improvement in
+output is, in practice, a widening gap, and a gap that widens is the thing you
+feel, not the ratio you can defend on a whiteboard.
 
 There is a corollary people skip. If you can write features faster, you can
 write bugs faster, and by the same multiple. Generation is indifferent to

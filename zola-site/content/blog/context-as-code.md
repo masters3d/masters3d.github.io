@@ -96,9 +96,9 @@ document, a context document, deliberately written and maintained.
 That corpus is the operating system for the humans on the team, and now it's the
 operating system for the agents reading alongside them. Which is why it deserves
 the full treatment. Version it. Review it. Own it. Keep it current. Hold it to a
-standard. We did all of that for configuration once we admitted it was as
-load-bearing as the code. Context is more load-bearing still, because it's the
-thing that produces both.
+standard. We did all of that for configuration once we admitted a bad config
+could break a system as badly as bad code. Context needs that treatment more,
+because it's the thing that produces both.
 
 _Configuration became code when we admitted that it determines how a system
 behaves. Context deserves the same treatment because it determines how people

@@ -66,8 +66,7 @@ So the design question is not "will this work?" It is "how many nines is this
 shape capable of?" If the answer is one and the requirement is three, the
 rewrite is not a risk; it is already scheduled, it just has not been put on the
 calendar yet. Naming that at the start is cheap. Discovering it two years in,
-after the thing is load-bearing for real customers, is the most expensive way to
-learn it.
+after real customers depend on the thing, is the most expensive way to learn it.
 
 ## The reward curve runs opposite to the cost curve
 
@@ -96,8 +95,8 @@ preserving. Not everything should reach three nines. An internal tool used by
 four people and an experiment that might be deleted next month do not deserve
 the rigor, and demanding it everywhere is its own failure mode. The problem is
 not that we ship 80% versions. It is that we ship them without ever deciding
-which ones are allowed to stay at 80%, and then the ones that quietly became
-load-bearing never get reclassified.
+which ones are allowed to stay at 80%, and then the ones people came to depend
+on never get reclassified.
 
 ## V1-then-rewrite was a cost calculation, and the cost changed
 

@@ -36,11 +36,11 @@ it is true, and I think both halves are true.
 
 ## Luck matters, and it is not the whole story
 
-I do not want to pretend luck does not exist. It does, and it is a big component
-of a lot of success. Timing, the people you happen to work with, a reorg that
-goes your way, a dependency that ships early: none of those are fully in your
-control. Pretending otherwise leads to the opposite mistake, where every success
-is proof of your own brilliance and every failure is somebody else's fault.
+Luck exists, and it is a big component of a lot of success. Timing, the people
+you happen to work with, a reorg that goes your way, a dependency that ships
+early: none of those are fully in your control. Pretending otherwise leads to
+the opposite mistake, where every success is proof of your own brilliance and
+every failure is somebody else's fault.
 
 But "we got lucky" quietly erases the part that was not luck. In engineering, a
 lot of what gets called luck is a choice that turned out right: you picked the

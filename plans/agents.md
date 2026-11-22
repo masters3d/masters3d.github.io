@@ -119,6 +119,11 @@
     is real", "and it is real") unless the sentence is about real numbers, and
     "I keep coming back to" or its rewordings ("I keep returning to", "I keep
     circling", "kept pulling me back to"). The author does not say them.
+  - At most 3 uses each (enforced at 3, all 3 taken): "load-bearing" and the
+    writing hedges ("I want to be careful / precise / clear / fair", "I do not
+    want to pretend"). The kept uses each have a reason: a structural claim, or
+    a disclosure of a specific limit. Do not add more; say what depends on the
+    thing, or state the limit directly.
   - Rewrite by stating what is actually true (it exists, it costs something,
     you feel it, it was measured), not by swapping in "genuine" or "valid".
   - Before adding prose, run `python3 scripts/check_repeated_phrases.py` and do
