@@ -1,6 +1,6 @@
 +++
 title = "PIE Theory: Being Seen Is Part of the Work"
-date = "2026-12-01"
+date = "2026-12-11"
 description = "Performance matters, but engineering careers do not move on performance alone. PIE theory names the uncomfortable system around work: what you deliver, how that delivery is understood, and whether the right people ever see it."
 template = "blog-post.html"
 [taxonomies]
