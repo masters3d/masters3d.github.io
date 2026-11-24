@@ -37,12 +37,15 @@ jobs:
       
       - name: Validate external links and internal structure
         # zola check crawls ALL external links and fails on any broken one (4xx/5xx).
-        # This is the same check that runs in the deploy workflow, so a PR that
-        # passes here will not cause a broken-link deploy failure on master.
+        # scripts/zola_check.py runs it and, before failing, rechecks with backoff
+        # only the links that got a server error (5xx), rate limit (429) or no
+        # response, so a host's brief outage does not fail the PR; any other
+        # failure stands. This is the same check that runs in the deploy workflow,
+        # so a PR that passes here will not cause a broken-link deploy failure on master.
         run: |
-          cd zola-site
           echo "Running Zola check (validates templates, internal links, AND external links)..."
-          zola check
+          python3 scripts/zola_check.py --self-test > /dev/null
+          python3 scripts/zola_check.py
           echo "✓ All links valid — no broken external or internal links found"
           
       - name: Build site

@@ -1,6 +1,6 @@
 +++
 title = "Reward Prediction Error: Dopamine Fires on the Surprise"
-date = "2027-01-15"
+date = "2027-01-23"
 description = "Reward prediction error sounds like three things, but it names two: a prediction and an outcome. When the outcome beats the prediction it lands as a reward, and when it falls short it lands as an error. That gap is the teaching signal behind learning and positive reinforcement. Prediction is Search and outcome is Renew. What the name leaves out is the action in between, which is Drive, and that hidden part is where the learning gets used."
 template = "blog-post.html"
 [taxonomies]
@@ -62,7 +62,8 @@ against the same prediction. A fully expected outcome lands as neither, and that
 is the flat fifth win.
 
 The boundary of the evidence matters here. Kent Berridge, whose wanting and
-liking research I leaned on in the earlier post, argued in
+liking research I leaned on in
+[Seeking Is the Reward](/blog/seeking-is-the-reward/), argued in
 [2007](https://doi.org/10.1007/s00213-006-0578-x) that dopamine is better
 explained as the cause of wanting than as the teaching signal itself, and that
 learning can happen without it. That debate is about what dopamine causes, and I
@@ -190,10 +191,11 @@ spends the surprise early. That is one mechanism behind the overjustification
 effect, where a promised reward crowds out the reason someone cared in the first
 place.
 
-In the earlier post I admitted that I once read the flat feeling after shipping
-as a defect in how I was wired. The flat fifth win invites the same misreading.
-The gap offers a better one: it is evidence that I learned the thing. The
-prediction caught up, the outcome stopped landing as a reward, and the
-restlessness that follows is the loop asking for an action whose outcome is
-still in doubt. The name only mentions the prediction and the outcome, but the
-action between them is the part I actually get to choose.
+In [Seeking Is the Reward](/blog/seeking-is-the-reward/) I admitted that I once
+read the flat feeling after shipping as a defect in how I was wired. The flat
+fifth win invites the same misreading. The gap offers a better one: it is
+evidence that I learned the thing. The prediction caught up, the outcome stopped
+landing as a reward, and the restlessness that follows is the loop asking for an
+action whose outcome is still in doubt. The name only mentions the prediction
+and the outcome, but the action between them is the part I actually get to
+choose.

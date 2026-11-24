@@ -1,13 +1,13 @@
 +++
 title = "Deliberate Practice for Engineers"
-date = "2028-08-15"
-draft = true
+date = "2027-12-04"
 description = "Deliberate Practice turns improvement into a repeated engineering routine. It sorts behavior into do less, keep doing, and do more, then uses patterns rather than isolated incidents to guide change."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Quest Engine"]
 tags = ["quest-engine", "deliberate-practice", "continuous-improvement", "kaizen", "systems-thinking"]
 [extra]
+scheduled = true
 editorial_track = "quest-engine"
 related = ["quest-engine-introduction", "ten-thousand-hours-was-never-enough", "kaizen-and-the-observe-orient-decide-act-return-loop", "iterative-integration", "action-feedback-adjustment"]
 +++

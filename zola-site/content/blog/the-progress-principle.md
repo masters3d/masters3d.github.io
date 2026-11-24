@@ -1,13 +1,13 @@
 +++
 title = "The Progress Principle"
-date = "2028-10-01"
-draft = true
+date = "2027-12-18"
 description = "Small visible wins renew purpose because they prove meaningful work is moving. The progress principle explains why motivation depends on making that movement legible."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Human Systems"]
 tags = ["motivation", "purpose", "progress", "feedback-loops", "work"]
 [extra]
+scheduled = true
 editorial_track = "human-systems"
 related = ["find-your-why-intrinsic-motivation", "update-propagation", "leverage-and-the-stairs-you-build", "seeking-is-the-reward"]
 +++
@@ -16,10 +16,12 @@ Some days at work feel better before anything large has changed. A test finally
 passes. A confusing failure mode gets a name. A migration moves one step without
 breaking the old path. The work is not done, but it is no longer motionless.
 
-Teresa Amabile and Steven Kramer call this the progress principle: one of the
-strongest day-to-day drivers of positive inner work life is perceived progress
-on meaningful work. The phrasing matters. It is not progress in the abstract. It
-is progress the person can see, on work the person believes matters.
+Teresa Amabile and Steven Kramer call this
+[the progress principle](https://hbr.org/2011/05/the-power-of-small-wins): one
+of the strongest day-to-day drivers of positive inner work life is perceived
+progress on meaningful work. The phrasing matters. It is not progress in the
+abstract. It is progress the person can see, on work the person believes
+matters.
 
 That makes progress a purpose problem, not only a productivity problem. Purpose
 decays when work feels disconnected from meaningful movement. Small wins renew

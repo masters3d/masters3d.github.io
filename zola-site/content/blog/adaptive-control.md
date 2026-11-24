@@ -1,13 +1,13 @@
 +++
 title = "Adaptive Control"
-date = "2028-06-15"
-draft = true
+date = "2027-11-06"
 description = "Adaptive Control keeps execution connected to feedback. It treats every result as data, shortens the distance between action and signal, and steers plans while the work is still moving."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Quest Engine"]
 tags = ["quest-engine", "feedback-loops", "observability", "strategy", "systems-thinking"]
 [extra]
+scheduled = true
 editorial_track = "quest-engine"
 related = ["quest-engine-introduction", "action-feedback-adjustment", "shift-left-synthetic-environments", "directed-intentionality", "iterative-integration"]
 +++

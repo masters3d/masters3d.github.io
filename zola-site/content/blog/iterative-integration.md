@@ -1,13 +1,13 @@
 +++
 title = "Iterative Integration"
-date = "2028-07-15"
-draft = true
+date = "2027-11-20"
 description = "Iterative Integration constantly compares expected state with actual state. It makes reality visible early, without blame, so teams can learn before drift becomes failure."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Quest Engine"]
 tags = ["quest-engine", "continuous-improvement", "feedback-loops", "retrospectives", "blameless"]
 [extra]
+scheduled = true
 editorial_track = "quest-engine"
 related = ["quest-engine-introduction", "blameless-engineering-debugging-systems-not-people", "kaizen-and-the-observe-orient-decide-act-return-loop", "adaptive-control", "deliberate-practice-for-engineers"]
 +++

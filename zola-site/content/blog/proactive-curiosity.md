@@ -1,6 +1,6 @@
 +++
 title = "Proactive Curiosity"
-date = "2028-01-15"
+date = "2027-09-11"
 description = "Proactive Curiosity is the habit of finding context before the work demands it. It turns scattered code, docs, logs, metrics, and people into a searchable map for better engineering decisions."
 template = "blog-post.html"
 [taxonomies]
@@ -35,9 +35,8 @@ what the system does, docs show intent, logs show events, metrics show shape,
 and people carry history that may never have been written down.
 
 The final component is refresh. Context decays. A document that was right six
-months before this post's January 2028 release date may now be wrong because the
-system moved. Proactive Curiosity treats staleness as a normal property of
-knowledge, not as a moral failure.
+months ago may now be wrong because the system moved. Proactive Curiosity treats
+staleness as a normal property of knowledge, not as a moral failure.
 
 The engineering behaviors change with scope. A new engineer documents questions
 before asking, writes pull request descriptions that give reviewers context, and

@@ -1,6 +1,6 @@
 +++
 title = "The Overjustification Effect at Work"
-date = "2028-04-01"
+date = "2027-10-09"
 description = "Rewards can crowd out the reason someone cared in the first place. The overjustification effect is a warning to protect work that already carries its own motivation."
 template = "blog-post.html"
 [taxonomies]

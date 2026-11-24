@@ -1,22 +1,25 @@
 +++
 title = "Meta-Learning in Four Levels"
-date = "2028-09-01"
-draft = true
+date = "2027-02-13"
 description = "Meta-learning sounds abstract until it is split into levels. The useful engineering question is how far a system may go from observing learning to changing the mechanism that learns."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Software Engineering"]
 tags = ["agents", "learning", "ai-development", "systems-thinking", "validation"]
 [extra]
+scheduled = true
 editorial_track = "software-engineering"
 related = ["agent-memory-short-long-and-meta", "five-levels-of-agent-capability", "software-3-0-needs-engineering-not-magic"]
 +++
 
-The generated meta-learning notes make an ambitious claim: an agent should not
-only learn tasks, but learn better ways to learn. The proposal then divides that
-ambition into levels, from tracking which learning strategies work to improving
-the process that improves learning. I like the structure. I trust it only as a
-design frame.
+The
+[meta-learning notes](https://github.com/masters3d/ingenio/blob/main/cognitive_systems/meta_systems/META_LEARNING.md)
+generated for INGENIO-1, an agent I ran on
+[my notes repository](https://github.com/masters3d/ingenio) in August 2025, make
+an ambitious claim: an agent should not only learn tasks, but learn better ways
+to learn. The proposal then divides that ambition into levels, from tracking
+which learning strategies work to improving the process that improves learning.
+I like the structure. I trust it only as a design frame.
 
 Meta-learning is one of those phrases that can make ordinary process improvement
 sound more advanced than it is. A test suite that tells me my last change failed
@@ -58,11 +61,14 @@ this kind of change required the link checker, so I will run it now." That is
 inspectable. A hidden policy that changes the workflow without explanation is
 harder to trust.
 
-The August 2025 GitHub Actions experiment points in the same direction. Useful
-adaptation came from specific workflow fixes: opt-in labels, pull request
-exclusion, idempotent behavior, and clearer deliverable boundaries. Those were
-not vague lessons. They were concrete strategy changes tied to observed
-failures.
+Running INGENIO-1 from a
+[GitHub Actions workflow](https://github.com/masters3d/ingenio/blob/main/.github/workflows/cognitive-issue-processor.yml)
+points in the same direction. Useful adaptation came from specific workflow
+fixes: opt-in labels
+([issue #36](https://github.com/masters3d/ingenio/issues/36)), pull request
+exclusion ([#37](https://github.com/masters3d/ingenio/pull/37)), idempotent
+behavior, and clearer deliverable boundaries. Those were not vague lessons. They
+were concrete strategy changes tied to observed failures.
 
 ## Level Three and Four: Changing the Improver
 

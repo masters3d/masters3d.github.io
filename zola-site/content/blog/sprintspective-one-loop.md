@@ -1,6 +1,6 @@
 +++
 title = "The Sprintspective: One Loop for Looking Back and Planning Next"
-date = "2027-02-01"
+date = "2027-02-20"
 description = "Retrospective and sprint planning are usually scheduled as separate ceremonies, but they are parts of one feedback loop. A team should look back, regain context, choose the next direction, and sprint again while the evidence is still fresh."
 template = "blog-post.html"
 [taxonomies]

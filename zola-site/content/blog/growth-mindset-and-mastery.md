@@ -1,13 +1,13 @@
 +++
 title = "Growth Mindset and Mastery"
-date = "2029-02-01"
-draft = true
+date = "2028-01-08"
 description = "Mastery depends on a growth mindset because the work of getting better lives just beyond current ability. At each individual contributor level, the same belief shows up as different behavior."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Human Systems"]
 tags = ["mastery", "growth", "career-growth", "deliberate-practice", "motivation"]
 [extra]
+scheduled = true
 editorial_track = "human-systems"
 related = ["find-your-why-intrinsic-motivation", "ten-thousand-hours-was-never-enough", "level-zero-is-an-apprenticeship", "career-success-metrics-individual-and-organizational"]
 +++
@@ -15,10 +15,11 @@ related = ["find-your-why-intrinsic-motivation", "ten-thousand-hours-was-never-e
 Mastery sounds like a destination until you try to practice it. Then it becomes
 a question: what does better look like for me now?
 
-That question only works if ability is allowed to change. Carol Dweck's growth
-mindset language is useful here because mastery depends on the belief that skill
-can be developed. Without that belief, the edge of learning feels like evidence
-of inadequacy. With it, the same edge becomes the place where practice belongs.
+That question only works if ability is allowed to change. Carol Dweck's
+[growth mindset](https://hbr.org/2016/01/what-having-a-growth-mindset-actually-means)
+language is useful here because mastery depends on the belief that skill can be
+developed. Without that belief, the edge of learning feels like evidence of
+inadequacy. With it, the same edge becomes the place where practice belongs.
 
 The distinction matters in engineering because feedback is constant. Code
 review, incidents, design critique, failed tests, production surprises, and

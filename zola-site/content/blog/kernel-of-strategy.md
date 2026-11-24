@@ -1,6 +1,6 @@
 +++
 title = "The Kernel of Strategy"
-date = "2027-04-15"
+date = "2027-05-01"
 description = "Rumelt's kernel of strategy is diagnosis, guiding policy, and coherent action. Run it against the Quest Engine and two parts line up cleanly, one part sits in a place the Quest Engine predicts, and two differences are worth more than the matches: the kernel has no Why and no Renew."
 template = "blog-post.html"
 [taxonomies]

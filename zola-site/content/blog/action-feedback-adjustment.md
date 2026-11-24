@@ -1,6 +1,6 @@
 +++
 title = "Action, Feedback, Adjustment"
-date = "2027-05-01"
+date = "2027-05-08"
 description = "Action and feedback are as fundamental to engineering as action and reaction are to physics, but adjustment is the human part. It is where judgment turns noisy signals into a better next move."
 template = "blog-post.html"
 [taxonomies]

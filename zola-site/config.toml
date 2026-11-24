@@ -115,7 +115,12 @@ feed_limit = 0
 # academic.oup.com (Oxford Academic) is a publisher article host like the DOIs
 # above, and other projects' link checkers exclude it too; skip only the cited
 # Benson, Li, and Shue (2019) QJE article so a valid citation does not fail CI.
+# lean.org (Lean Enterprise Institute) timed out in PR Validation on both cited
+# Lean Lexicon pages (yokoten, poka-yoke) one run after they had passed, even though
+# both load in a browser; skip only those two pages.
 skip_prefixes = [
+    "https://www.lean.org/lexicon-terms/yokoten/",
+    "https://www.lean.org/lexicon-terms/poka-yoke/",
     "https://academic.oup.com/qje/article/134/4/2085/5550760",
     "https://www.gutenberg.org/ebooks/12",
     "https://www.usgs.gov/water-science-school/science/100-year-flood",
@@ -156,4 +161,7 @@ skip_prefixes = [
 ]
 # skip_anchor_prefixes: add URL prefixes here to skip anchor checking for specific domains
 # Note: zola check always validates external links — this is intentional.
-# To skip a known-flaky domain, add its prefix to skip_prefixes above.
+# CI runs it through scripts/zola_check.py, which rechecks links that got a
+# server error (5xx), rate limit (429) or no response before failing, so a
+# one-off outage needs no entry here. Add a prefix to skip_prefixes above only
+# for a host that keeps failing or blocks automated checks.

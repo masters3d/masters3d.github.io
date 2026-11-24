@@ -1,6 +1,6 @@
 +++
 title = "Build Mode, Reflect Mode, and Quality Without a Name"
-date = "2027-06-15"
+date = "2027-06-05"
 description = "Some quality is specified before construction, and some quality only becomes visible after contact with the thing being built. Build mode and reflect mode are different cognitive states, and good work needs a loop between them."
 template = "blog-post.html"
 [taxonomies]

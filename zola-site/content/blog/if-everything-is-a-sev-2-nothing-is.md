@@ -1,6 +1,6 @@
 +++
 title = "If Everything Is a Sev 2, Nothing Is"
-date = "2029-04-15"
+date = "2028-01-29"
 description = "A phrase I picked up on a team long ago: if everything is a severity 2, nothing is. Severity is a shared signal, and once people raise it to buy attention it stops carrying information. How PagerDuty, Atlassian, Google, Microsoft, and AWS define their levels, why severity inflation is usually a tooling gap that got turned into process, and why the way out is funding the lower severities and keeping manual toil between 0.1% and 1%, counted in nines like availability, so engineers can still write the code that removes it."
 template = "blog-post.html"
 [taxonomies]

@@ -16,8 +16,8 @@ In November 2025 I started keeping a running file for each piece of work I
 handed to an agent. I called them plans. They were not the `plan.md` an agent
 writes for itself at the start of a session; they were mine, and they outlived
 the session. By the time I wrote
-[Why I Switched to Worklogs](/blog/why-i-love-worklogs/) in March, they had a
-better name and a home in GitHub Issues. I have kept them for a little over a
+[Why I Switched to Worklogs](/blog/why-i-love-worklogs/) in March 2026, they had
+a better name and a home in GitHub Issues. I have kept them for a little over a
 year now, and my team has used them for about a year.
 
 This is not a victory lap. Worklogs earned their place, and they are still the

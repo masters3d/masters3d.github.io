@@ -1,6 +1,6 @@
 +++
 title = "People Systems and the Hiring Pipeline"
-date = "2027-11-15"
+date = "2027-08-21"
 description = "Hiring is a people system before it is a recruiting funnel. College internships, bootcamps, apprenticeships, and self-taught paths all optimize for different evidence, and the pipeline a company builds decides who gets seen."
 template = "blog-post.html"
 [taxonomies]

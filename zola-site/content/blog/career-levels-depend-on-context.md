@@ -1,6 +1,6 @@
 +++
 title = "Career Levels Depend on Context"
-date = "2028-02-01"
+date = "2027-09-18"
 description = "Career levels are not portable labels. A level only makes sense inside a company context, where size, product shape, platform needs, and culture decide what scope actually means."
 template = "blog-post.html"
 [taxonomies]

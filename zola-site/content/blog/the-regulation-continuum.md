@@ -1,13 +1,13 @@
 +++
 title = "The Regulation Continuum"
-date = "2028-08-01"
-draft = true
+date = "2027-11-27"
 description = "Not all outside motivation stays outside. The regulation continuum explains how pressure can become ownership, and why internalization matters more than purity."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Human Systems"]
 tags = ["motivation", "intrinsic-motivation", "autonomy", "purpose", "work"]
 [extra]
+scheduled = true
 editorial_track = "human-systems"
 related = ["find-your-why-intrinsic-motivation", "overjustification-effect-at-work", "seeking-is-the-reward", "growth-mindset-and-mastery"]
 +++
@@ -16,11 +16,12 @@ It is tempting to divide motivation into two boxes: intrinsic is good, extrinsic
 is bad. That version is easy to remember and usually wrong.
 
 Self-Determination Theory, from Edward Deci and Richard Ryan, offers a more
-useful model: a continuum of regulation. Some motivation is fully external. Some
-starts outside us but becomes internalized. Some is so integrated with identity
-that it feels like part of who we are. The practical question is not whether
-every task is intrinsically enjoyable. The question is where the reason for
-doing it lives.
+useful model:
+[a continuum of regulation](https://pubmed.ncbi.nlm.nih.gov/11392867/). Some
+motivation is fully external. Some starts outside us but becomes internalized.
+Some is so integrated with identity that it feels like part of who we are. The
+practical question is not whether every task is intrinsically enjoyable. The
+question is where the reason for doing it lives.
 
 That distinction matters at work because many valuable tasks are not naturally
 fun. Writing tests, updating runbooks, reviewing dependency changes, and

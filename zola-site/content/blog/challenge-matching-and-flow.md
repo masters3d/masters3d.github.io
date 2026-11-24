@@ -1,6 +1,6 @@
 +++
 title = "Challenge Matching and Flow"
-date = "2028-04-15"
+date = "2027-10-16"
 description = "Challenge Matching fits the work to the skill available, with enough stretch to create flow. Too much challenge creates anxiety, too little creates boredom, and the useful channel sits between them."
 template = "blog-post.html"
 [taxonomies]

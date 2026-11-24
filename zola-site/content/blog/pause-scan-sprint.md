@@ -1,6 +1,6 @@
 +++
 title = "Pause, Scan, Sprint: The Beetle That Cannot See While It Runs"
-date = "2027-01-22"
+date = "2027-02-06"
 description = "The tiger beetle runs so fast that its eyes cannot form an image, so it chases prey in bursts: pause, scan, sprint, and loop. Work has the same trade-off between speed and sight. The pause is not lost time. It is the only part of the loop where you can see where you are going."
 template = "blog-post.html"
 [taxonomies]
