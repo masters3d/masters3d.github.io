@@ -78,10 +78,12 @@ jobs:
           tool: zola@0.19.2
       
       - name: Validate site before build
+        # Rechecks links that got a server error, rate limit or no response
+        # before failing; see scripts/zola_check.py.
         run: |
-          cd zola-site
           echo "Running Zola check to validate templates and content..."
-          zola check
+          python3 scripts/zola_check.py --self-test > /dev/null
+          python3 scripts/zola_check.py
           
       - name: Build Zola site
         run: |

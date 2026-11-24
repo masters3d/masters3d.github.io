@@ -160,9 +160,13 @@
     credited to X, but [Monticello lists it as spurious](...)").
   - In the PR description, list each citation added or changed with its link
     so the author can review them in one place.
-  - The link checker (`zola check`) must still pass; if a valid source host
-    blocks automated checks, add the narrowest URL to `skip_prefixes` in
-    `zola-site/config.toml` with a comment explaining why.
+  - The link checker must still pass. CI runs `zola check` through
+    `scripts/zola_check.py`, which rechecks links that got a server error
+    (5xx), rate limit (429) or no response, and checks a GitHub file page
+    that keeps failing on raw.githubusercontent.com. So do not skip a link
+    for a one-off failure of that kind. If a valid source host keeps failing
+    or blocks automated checks (often with a 403), add the narrowest URL to
+    `skip_prefixes` in `zola-site/config.toml` with a comment explaining why.
 - **Publish what was done, not what is planned** - A published post reports
   something the author has done, tried, or learned. Do not publish posts that
   only announce intentions ("I'm going to...", "I plan to...", "I'm starting

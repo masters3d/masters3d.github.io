@@ -161,4 +161,7 @@ skip_prefixes = [
 ]
 # skip_anchor_prefixes: add URL prefixes here to skip anchor checking for specific domains
 # Note: zola check always validates external links — this is intentional.
-# To skip a known-flaky domain, add its prefix to skip_prefixes above.
+# CI runs it through scripts/zola_check.py, which rechecks links that got a
+# server error (5xx), rate limit (429) or no response before failing, so a
+# one-off outage needs no entry here. Add a prefix to skip_prefixes above only
+# for a host that keeps failing or blocks automated checks.

@@ -30,9 +30,11 @@ jobs:
 
       - name: Check all external links
         # zola check validates every external URL in content files.
+        # scripts/zola_check.py rechecks, with backoff, the links that got a server
+        # error (5xx), rate limit (429) or no response, so only links that stay down fail.
         # A non-zero exit code means at least one link is broken — fix it in a PR.
         run: |
-          cd zola-site
           echo "Running scheduled external link check..."
-          zola check
+          python3 scripts/zola_check.py --self-test > /dev/null
+          python3 scripts/zola_check.py
           echo "✓ All external links are healthy"
