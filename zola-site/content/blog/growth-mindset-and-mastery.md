@@ -1,6 +1,6 @@
 +++
 title = "Growth Mindset and Mastery"
-date = "2028-01-15"
+date = "2028-01-08"
 description = "Mastery depends on a growth mindset because the work of getting better lives just beyond current ability. At each individual contributor level, the same belief shows up as different behavior."
 template = "blog-post.html"
 [taxonomies]

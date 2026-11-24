@@ -1,6 +1,6 @@
 +++
 title = "Update Propagation Turns Lessons Into System Changes"
-date = "2027-12-18"
+date = "2027-12-11"
 description = "A lesson only counts after it reaches the places that can use it. Update propagation turns local learning into changed code, current documentation, and shared practice."
 template = "blog-post.html"
 [taxonomies]

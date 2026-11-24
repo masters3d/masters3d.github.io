@@ -9,7 +9,7 @@ tags = ["agents", "measurement", "validation", "quality", "ai-development"]
 [extra]
 scheduled = true
 editorial_track = "software-engineering"
-related = ["hypothesis-driven-agent-experiments", "agent-memory-short-long-and-meta", "proof-carrying-work"]
+related = ["safe-self-modification-for-agents", "agent-memory-short-long-and-meta", "proof-carrying-work"]
 +++
 
 The

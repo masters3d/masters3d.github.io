@@ -1,6 +1,6 @@
 +++
 title = "Five Levels of Agent Capability"
-date = "2027-06-19"
+date = "2027-06-12"
 description = "\"Agent\" now decides what gets write access, memory, and a place in CI, yet it names almost nothing. A five-level ladder, from reactive to cognitive, turns the word back into an engineering claim about state, permissions, and how much validation a system needs."
 template = "blog-post.html"
 [taxonomies]

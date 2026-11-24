@@ -1,6 +1,6 @@
 +++
 title = "The River Will Take You"
-date = "2028-01-29"
+date = "2028-01-22"
 description = "Two Spanish warnings from childhood, \"te va a llevar el río\" and \"te va a llevar el tren,\" and what they say about time, upkeep, and building for the high water."
 template = "blog-post.html"
 [taxonomies]

@@ -1,6 +1,6 @@
 +++
 title = "The Regulation Continuum"
-date = "2027-12-04"
+date = "2027-11-27"
 description = "Not all outside motivation stays outside. The regulation continuum explains how pressure can become ownership, and why internalization matters more than purity."
 template = "blog-post.html"
 [taxonomies]

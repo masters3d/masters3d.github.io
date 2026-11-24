@@ -1,6 +1,6 @@
 +++
 title = "A Team Culture Where You Can Say \"This Sucks\""
-date = "2027-07-10"
+date = "2027-07-03"
 description = "The team culture I like is one where \"this sucks\" is a signal, not a complaint. On-call is rough, the hours are long, toil is piling up: saying so out loud, with words or a thumbs down, is a measurement the team needs. It works only if there is dedicated time to talk things through, especially when things are not going well, and a balance between celebrating what is good and naming what is not. No culture is also a culture, and it is usually the one where timelines are handed down and nobody gets to say anything."
 template = "blog-post.html"
 [taxonomies]

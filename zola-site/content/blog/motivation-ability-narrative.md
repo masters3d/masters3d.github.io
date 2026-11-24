@@ -1,6 +1,6 @@
 +++
 title = "Motivation, Ability, Narrative"
-date = "2027-10-30"
+date = "2027-10-23"
 description = "A career needs more than will and skill. Motivation, ability, and narrative form a triangle: why the work matters, how the work gets done, and how the path remains understandable over time."
 template = "blog-post.html"
 [taxonomies]

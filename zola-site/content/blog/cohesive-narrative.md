@@ -1,6 +1,6 @@
 +++
 title = "Cohesive Narrative"
-date = "2027-10-02"
+date = "2027-09-25"
 description = "Cohesive Narrative turns found facts into an accurate story of how a system works. It is the map that lets engineers decide what matters, what depends on what, and what must change next."
 template = "blog-post.html"
 [taxonomies]

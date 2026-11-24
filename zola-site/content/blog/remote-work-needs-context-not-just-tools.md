@@ -1,6 +1,6 @@
 +++
 title = "Remote Work Needs Context, Not Just Tools"
-date = "2027-08-21"
+date = "2027-08-14"
 description = "The useful lesson from remote and async work research is not that every team should be async all the time. It is that distributed work succeeds when context survives distance, meetings are intentional, and chat does not become the only memory."
 template = "blog-post.html"
 [taxonomies]

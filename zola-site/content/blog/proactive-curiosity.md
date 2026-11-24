@@ -1,6 +1,6 @@
 +++
 title = "Proactive Curiosity"
-date = "2027-09-18"
+date = "2027-09-11"
 description = "Proactive Curiosity is the habit of finding context before the work demands it. It turns scattered code, docs, logs, metrics, and people into a searchable map for better engineering decisions."
 template = "blog-post.html"
 [taxonomies]

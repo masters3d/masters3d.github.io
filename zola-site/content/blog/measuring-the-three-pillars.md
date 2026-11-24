@@ -1,6 +1,6 @@
 +++
 title = "Measuring the Three Pillars Without Flattening Them"
-date = "2028-01-01"
+date = "2027-12-25"
 description = "The three Quest Engine pillars can be measured, but not by one dashboard number. Discovery, strategy, and improvement each need signals that preserve what the pillar is for."
 template = "blog-post.html"
 [taxonomies]
