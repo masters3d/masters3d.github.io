@@ -1,6 +1,6 @@
 +++
 title = "Types of Engineering Documentation"
-date = "2027-04-01"
+date = "2027-04-17"
 description = "Documentation is not one thing. Team-private notes, organization-wide engineering docs, troubleshooting guides, onboarding material, diagrams, and recorded context all serve different jobs, and the medium should match the job."
 template = "blog-post.html"
 [taxonomies]

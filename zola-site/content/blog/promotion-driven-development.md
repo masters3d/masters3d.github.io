@@ -1,6 +1,6 @@
 +++
 title = "Promotion-Driven Development"
-date = "2027-03-01"
+date = "2027-03-20"
 description = "Promotion incentives shape engineering behavior whether a company admits it or not. If advancement rewards visible launches more than durable systems, engineers will learn to build work that reads well in a packet, even when the product needs maintenance, context, and quiet reliability."
 template = "blog-post.html"
 [taxonomies]

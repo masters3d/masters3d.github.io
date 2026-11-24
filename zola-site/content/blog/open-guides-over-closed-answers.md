@@ -1,6 +1,6 @@
 +++
 title = "Open Guides Over Closed Answers"
-date = "2027-02-15"
+date = "2027-03-06"
 description = "When someone asks for the same explanation by email, the durable answer is usually a guide that others can find, reuse, and improve. Answering once in a shared place turns private help into organizational context."
 template = "blog-post.html"
 [taxonomies]

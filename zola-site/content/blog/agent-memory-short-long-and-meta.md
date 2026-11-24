@@ -1,6 +1,6 @@
 +++
 title = "Agent Memory: Short, Long, and Meta"
-date = "2028-06-01"
+date = "2027-01-16"
 description = "Agent memory is not one bucket of context. Short-term, long-term, and meta-memory each change what the system can do and what engineers must be able to inspect."
 template = "blog-post.html"
 [taxonomies]
@@ -12,13 +12,16 @@ editorial_track = "software-engineering"
 related = ["five-levels-of-agent-capability", "context-as-code", "cognitive-continuous-integration-and-the-broken-agent-loop"]
 +++
 
-One of the cleaner ideas in the generated agent design is the split between
-short-term memory, long-term memory, and meta-memory. The proposal attaches them
-to an autonomous engineering agent, with short-term memory for active work,
-long-term memory for knowledge and episodes, and meta-memory for learning
-history and strategy effectiveness. I would not treat the document as proof that
-such a system was built. I would treat the split as a practical review
-checklist.
+One of the cleaner ideas in the
+[generated design](https://github.com/masters3d/ingenio/blob/main/cognitive_systems/agents/cognitive/INGENIO-1.md)
+for INGENIO-1, an agent I ran on
+[my notes repository](https://github.com/masters3d/ingenio) in August 2025, is
+the split between short-term memory, long-term memory, and meta-memory. The
+proposal attaches them to an autonomous engineering agent, with short-term
+memory for active work, long-term memory for knowledge and episodes, and
+meta-memory for learning history and strategy effectiveness. I would not treat
+the document as proof that such a system was built. I would treat the split as a
+practical review checklist.
 
 Memory is where agent systems stop being disposable sessions. A single prompt
 can be wrong and vanish. A stored lesson can keep steering future work after
@@ -38,11 +41,13 @@ Can the human see the plan? Can the agent correct a mistaken assumption? Does
 the session remember validation failures strongly enough to avoid repeating
 them?
 
-The August 2025 GitHub Actions experiment exposed this in a different form. A
-workflow could produce useful output, but the useful parts had to be separated
-from session metadata. The system needed records for debugging, but those
-records were not the deliverable. That is a memory boundary. Working traces help
-explain the run. They should not pretend to be the artifact under review.
+Running INGENIO-1 from a
+[GitHub Actions workflow](https://github.com/masters3d/ingenio/blob/main/.github/workflows/cognitive-issue-processor.yml)
+exposed this in a different form. The workflow could produce useful output, but
+the useful parts had to be separated from session metadata. The system needed
+records for debugging, but those records were not the deliverable. That is a
+memory boundary. Working traces help explain the run. They should not pretend to
+be the artifact under review.
 
 Short-term memory also has a natural expiration point. Once the task is done,
 most of it should die. Keeping everything is not maturity. It is hoarding

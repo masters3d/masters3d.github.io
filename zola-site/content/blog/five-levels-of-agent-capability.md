@@ -1,6 +1,6 @@
 +++
 title = "Five Levels of Agent Capability"
-date = "2028-03-01"
+date = "2027-06-19"
 description = "\"Agent\" now decides what gets write access, memory, and a place in CI, yet it names almost nothing. A five-level ladder, from reactive to cognitive, turns the word back into an engineering claim about state, permissions, and how much validation a system needs."
 template = "blog-post.html"
 [taxonomies]
@@ -12,11 +12,12 @@ editorial_track = "software-engineering"
 related = ["cognitive-continuous-integration-and-the-broken-agent-loop", "software-3-0-needs-engineering-not-magic", "agents-are-taking-the-drive"]
 +++
 
-In 2025 I ran an agent whose design notes called it cognitive. Its README placed
-it on a five-level ladder that ended in self-awareness and autonomous goal
-generation. The bugs I actually spent my time on were much lower on that ladder:
-it picked up work it should have skipped, it raced its own previous run, and it
-mixed its working notes into its deliverables. The
+In August 2025 I ran an agent whose design notes called it cognitive. Its
+[README](https://github.com/masters3d/ingenio/blob/main/cognitive_systems/README.md)
+placed it on a five-level ladder that ended in self-awareness and autonomous
+goal generation. The bugs I actually spent my time on were much lower on that
+ladder: it picked up work it should have skipped, it raced its own previous run,
+and it mixed its working notes into its deliverables. The
 [full story of that agent](/blog/cognitive-continuous-integration-and-the-broken-agent-loop/)
 is about its missing purpose. This post is about the ladder, because I think the
 ladder is the part worth keeping.
@@ -69,11 +70,13 @@ failure modes. A bad plan can touch several files before a test fails. A
 half-remembered constraint can survive long enough to guide the wrong edit. At
 Level 1, validation has to follow the plan, not just the final diff.
 
-That was one lesson from the August 2025 GitHub Actions experiment. The useful
-work did not come from declaring an agent cognitive. It came from ordinary
-boundaries: process only explicitly labeled issues, exclude pull requests,
-separate session traces from deliverables, and make repeated runs safe. The
-capability label mattered less than the guardrails around the loop.
+That was one lesson from the agent I described at the start, which ran from a
+[GitHub Actions workflow](https://github.com/masters3d/ingenio/blob/main/.github/workflows/cognitive-issue-processor.yml)
+in my notes repository. The useful work did not come from declaring an agent
+cognitive. It came from ordinary boundaries: process only explicitly labeled
+issues, exclude pull requests, separate session traces from deliverables, and
+make repeated runs safe. The capability label mattered less than the guardrails
+around the loop.
 
 ## Learning Changes the Contract
 

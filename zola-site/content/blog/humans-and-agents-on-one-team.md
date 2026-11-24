@@ -1,6 +1,6 @@
 +++
 title = "Humans and Agents on One Team"
-date = "2029-01-15"
+date = "2027-04-24"
 description = "Mixed human and agent teams need role clarity more than hype. Agents can carry speed, memory, pattern work, and execution, while humans remain responsible for values, judgment, creative constraints, and accountable direction."
 template = "blog-post.html"
 [taxonomies]
@@ -16,11 +16,15 @@ The least useful version of the human and agent conversation asks which side
 wins. That framing is too theatrical for engineering work. A more practical
 question is who should do what, under which constraints, with which review loop.
 
-A design proposal for mixed human and cognitive agent teams offers one possible
-answer. Humans bring creativity, relationship judgment, ethical responsibility,
-and strategic synthesis. Agents bring speed, pattern recognition, data
-synthesis, consistent execution, and memory across large bodies of context. The
-promise is not replacement. The promise is complementary work.
+A
+[design proposal](https://github.com/masters3d/ingenio/blob/main/specs/human_cognitive_career_alignment/VISION.md)
+for mixed human and cognitive agent teams, generated for
+[my notes repository](https://github.com/masters3d/ingenio) in August 2025,
+offers one possible answer. Humans bring creativity, relationship judgment,
+ethical responsibility, and strategic synthesis. Agents bring speed, pattern
+recognition, data synthesis, consistent execution, and memory across large
+bodies of context. The promise is not replacement. The promise is complementary
+work.
 
 I like that framing, but only if it stays disciplined. A team does not become
 better because an artificial intelligence agent is present. It becomes better if
@@ -73,7 +77,7 @@ needs the kind of human trust that cannot be synthesized from a prompt.
 
 ## Roles Shift as the System Learns
 
-The design proposal imagines levels for cognitive agents, from reactive command
+The same proposal imagines levels for cognitive agents, from reactive command
 response to task agents, collaborative agents, system agents, distributed
 agents, and collective intelligence. I would treat that as a direction of
 thought, not a proven ladder. It is useful because it forces the same question

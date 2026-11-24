@@ -1,6 +1,6 @@
 +++
 title = "Overlapping Roles in Tech"
-date = "2027-03-15"
+date = "2027-04-03"
 description = "Engineering roles overlap on purpose. A Venn diagram of writing code, stakeholder management, and people management shows which roles share which work, why the center where all three meet is a warning, what changes when software engineers start managing agents, and why every overlap needs a named owner."
 template = "blog-post.html"
 [taxonomies]

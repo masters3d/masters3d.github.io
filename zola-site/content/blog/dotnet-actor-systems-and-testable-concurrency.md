@@ -1,6 +1,6 @@
 +++
 title = ".NET Actor Systems and Testable Concurrency"
-date = "2027-07-15"
+date = "2027-07-03"
 description = "Actor systems are useful because they turn shared state into message boundaries. Coyote adds the missing engineering move: make the schedules testable before the rare interleaving becomes production behavior."
 template = "blog-post.html"
 [taxonomies]

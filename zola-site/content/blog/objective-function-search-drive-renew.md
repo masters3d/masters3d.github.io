@@ -1,6 +1,6 @@
 +++
 title = "The Objective Function Is the Human-Agent Interface"
-date = "2028-11-15"
+date = "2027-03-13"
 description = "An objective function answers what better means. In human-agent work, that answer has to connect human intent to reward signals, action spaces, and value alignment."
 template = "blog-post.html"
 [taxonomies]

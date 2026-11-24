@@ -1,6 +1,6 @@
 +++
 title = "Individual Contributor Levels as Changing Scope"
-date = "2028-01-01"
+date = "2027-09-11"
 description = "Individual contributor levels are easiest to understand as changes in scope, and each change makes a different job. The work grows from learning and code, to components, to systems, to the systems that shape other teams, which is why excellence at one level does not by itself prove readiness for the next."
 template = "blog-post.html"
 [taxonomies]

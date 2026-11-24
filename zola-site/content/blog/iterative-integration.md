@@ -1,6 +1,6 @@
 +++
 title = "Iterative Integration"
-date = "2028-07-15"
+date = "2027-11-27"
 description = "Iterative Integration constantly compares expected state with actual state. It makes reality visible early, without blame, so teams can learn before drift becomes failure."
 template = "blog-post.html"
 [taxonomies]

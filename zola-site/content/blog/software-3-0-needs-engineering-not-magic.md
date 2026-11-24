@@ -1,6 +1,6 @@
 +++
 title = "Software 3.0 Needs Engineering, Not Magic"
-date = "2027-12-15"
+date = "2027-01-30"
 description = "Software 3.0 is not a permission slip to trust agents. It is an engineering problem: define the human role, constrain the agent role, and build validation loops around the work they share."
 template = "blog-post.html"
 [taxonomies]
@@ -12,14 +12,16 @@ editorial_track = "software-engineering"
 related = ["cognitive-continuous-integration-and-the-broken-agent-loop", "humans-and-agents-on-one-team", "five-levels-of-agent-capability"]
 +++
 
-In 2025 I had an agent draft a vision document for what I was calling a
-"Software 3.0 engineering framework," borrowing Andrej Karpathy's term for
-software that is written as prompts and run by large models. It described a
-world where traditional software engineering, built for human-only teams writing
-deterministic code, has to make room for agents that write, test, and deploy
-code. The generated document was too confident in places, but the question under
-it was a good one: what changes when the thing helping build software is also a
-software system with its own context window, tools, and failure modes?
+In August 2025 I had an agent draft a
+[vision document](https://github.com/masters3d/ingenio/blob/main/specs/software_3_0_engineering_framework/VISION.md)
+for what I was calling a "Software 3.0 engineering framework," borrowing Andrej
+Karpathy's term for software that is written as prompts and run by large models.
+It described a world where traditional software engineering, built for
+human-only teams writing deterministic code, has to make room for agents that
+write, test, and deploy code. The generated document was too confident in
+places, but the question under it was a good one: what changes when the thing
+helping build software is also a software system with its own context window,
+tools, and failure modes?
 
 I do not think the answer is that engineering becomes less important. The answer
 is the opposite. Software 3.0 needs more engineering around the work, because

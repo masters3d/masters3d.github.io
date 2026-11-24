@@ -1,6 +1,6 @@
 +++
 title = "Anti-Patterns in Human-Agent Interaction"
-date = "2028-12-15"
+date = "2027-03-27"
 description = "Human-agent collaboration breaks in recognizable ways. Over-delegation, under-trust, misspecified goals, reward hacking, and autonomy gaps show where the interface needs repair."
 template = "blog-post.html"
 [taxonomies]

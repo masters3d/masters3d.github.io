@@ -1,6 +1,6 @@
 +++
 title = "The Progress Principle"
-date = "2028-10-01"
+date = "2027-12-25"
 description = "Small visible wins renew purpose because they prove meaningful work is moving. The progress principle explains why motivation depends on making that movement legible."
 template = "blog-post.html"
 [taxonomies]

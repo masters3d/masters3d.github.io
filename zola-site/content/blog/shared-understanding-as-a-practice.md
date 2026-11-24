@@ -1,6 +1,6 @@
 +++
 title = "Shared Understanding as a Practice"
-date = "2028-03-15"
+date = "2027-10-09"
 description = "Shared Understanding is the discipline of making knowledge durable, findable, and maintained. It turns private mental models into organizational memory that survives handoffs, growth, and time."
 template = "blog-post.html"
 [taxonomies]

@@ -1,6 +1,6 @@
 +++
 title = "Measuring an Agent Beyond Task Completion"
-date = "2029-03-15"
+date = "2027-01-02"
 description = "Task completion is only the first measure of an agent. Useful evaluation also asks what context it preserved, what quality gates it respected, and whether future work became safer."
 template = "blog-post.html"
 [taxonomies]
@@ -12,12 +12,16 @@ editorial_track = "software-engineering"
 related = ["hypothesis-driven-agent-experiments", "agent-memory-short-long-and-meta", "proof-carrying-work"]
 +++
 
-The generated agent profile and operating guidance include several proposed
-measures for agent effectiveness: context preservation, quality consistency,
-framework application, artifact completion, pull request quality, and redundancy
-avoidance. A separate agent template adds task completion, quality score,
-learning velocity, autonomy, collaboration, response time, and resource use.
-Some of those sound measurable. Some sound like wishes waiting for a definition.
+The
+[instructions file for agents](https://github.com/masters3d/ingenio/blob/main/AGENTS.md)
+in [my notes repository](https://github.com/masters3d/ingenio), generated in
+2025, lists several proposed measures for agent effectiveness: context
+preservation, quality consistency, framework application, spec completion, pull
+request quality, and redundancy avoidance. A separate
+[agent template](https://github.com/masters3d/ingenio/blob/main/cognitive_systems/agents/AGENT_TEMPLATE.md)
+adds task completion, quality score, learning velocity, autonomy, collaboration,
+response time, and resource use. Some of those sound measurable. Some sound like
+wishes waiting for a definition.
 
 That is normal at the design proposal stage. The useful move is not to accept
 the list as a dashboard. The useful move is to separate task completion from the
@@ -31,8 +35,10 @@ can finish by writing a document that sounds coherent but repeats unsupported
 claims. It can finish by opening a pull request that contains logs instead of
 the artifact a reviewer needed.
 
-That last failure happened in the August 2025 GitHub Actions experiment. A
-workflow could create a pull request and report completion, yet the diff did not
+That last failure happened in August 2025, when I ran an agent called INGENIO-1
+on that repository from a
+[GitHub Actions workflow](https://github.com/masters3d/ingenio/blob/main/.github/workflows/cognitive-issue-processor.yml).
+A run could create a pull request and report completion, yet the diff did not
 contain the expected deliverable. The system had done work, but the measure was
 attached to the wrong object. Completion needed to mean reviewable output, not
 merely a successful run.

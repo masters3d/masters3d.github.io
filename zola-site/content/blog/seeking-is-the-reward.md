@@ -1,6 +1,6 @@
 +++
 title = "Seeking Is the Reward"
-date = "2027-01-01"
+date = "2027-01-09"
 description = "On December 30, 2022 I wrote myself a five-word note: the act of building is greater than finishing it. Neuroscience has a name for the part of the brain that rewards the hunt rather than the catch, and it explains why the finish line feels flat. The search is where the builder changes. Finishing still matters, because it is the strongest feedback the search can earn."
 template = "blog-post.html"
 [taxonomies]

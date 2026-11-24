@@ -168,7 +168,7 @@ curl -s -o /dev/null -w "%{http_code}" https://masters3d.com
 - **Search visibility**: Ranking for relevant industry keywords
 
 ### Content Targets
-- **Blog posting frequency**: 1-2 posts per month
+- **Blog posting frequency**: weekly from 2027 (Release Schedule in `plans/post-backlog.md`)
 - **Portfolio updates**: All projects current and accurate
 - **Broken links**: 0% broken internal/external links
 - **Content quality**: Professional, informative, SEO-optimized

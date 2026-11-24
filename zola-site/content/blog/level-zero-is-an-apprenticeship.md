@@ -1,6 +1,6 @@
 +++
 title = "Level Zero Is an Apprenticeship"
-date = "2028-07-01"
+date = "2027-11-20"
 description = "Level zero is not a lesser engineer hidden inside a full role. It is an apprenticeship, a two-sided contract where the new engineer owns learning and the team owns the conditions for learning to become productive work."
 template = "blog-post.html"
 [taxonomies]

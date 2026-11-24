@@ -1,7 +1,7 @@
 +++
 title = "Safe Self-Modification for Agents"
-date = "2028-11-01"
-description = "An agent that can change itself needs more than ambition. Safe self-modification requires a sandbox, validation, goal checks, and rollback before any change becomes durable."
+date = "2027-02-27"
+description = "An agent can safely change how it works only while the goal it serves, the test that grades it, and the way to undo the change stay out of its reach. A 2025 design for self-improving agents let the goal move; the agent pipeline behind this blog keeps all three with me."
 template = "blog-post.html"
 [taxonomies]
 categories = ["Software Engineering"]
@@ -9,92 +9,109 @@ tags = ["agents", "ai-safety", "validation", "risk-management", "systems-thinkin
 [extra]
 scheduled = true
 editorial_track = "software-engineering"
-related = ["meta-learning-four-levels", "software-3-0-needs-engineering-not-magic", "five-levels-of-agent-capability"]
+related = ["meta-learning-four-levels", "testing-systems-that-change-themselves", "cognitive-continuous-integration-and-the-broken-agent-loop"]
 +++
 
-The generated cognitive systems designs repeatedly point toward
-self-modification. They imagine agents that tune their learning strategies,
-alter parts of their architecture, and improve the mechanisms that perform
-improvement. It is an attractive idea because it promises a system that gets
-better without waiting for a human to hand-edit every procedure.
+In August 2025 an agent I called INGENIO-1 wrote a design for agents that
+improve themselves. It went into
+[my notes repository](https://github.com/masters3d/ingenio) as one pull request
+of about 4,000 lines ([#33](https://github.com/masters3d/ingenio/pull/33)).
 
-It is also where the engineering burden increases sharply. A system that edits
-its own working method is not only producing output. It is changing the process
-that will produce later output. That deserves the same caution we would bring to
-a database migration, a deployment pipeline change, or a permission model
-update.
+One file in it,
+[META_LEARNING.md](https://github.com/masters3d/ingenio/blob/main/cognitive_systems/meta_systems/META_LEARNING.md),
+covers an agent that changes itself. Its protocols say to test changes in
+controlled environments, revert unsuccessful modifications, and make sure
+changes improve performance. A later section on safeguards adds "Goal
+Preservation: Ensure modifications maintain core objectives."
 
-## First, Contain the Experiment
+The same file gives the agent a long-term learning cycle, and its third step is
+"Goal Refinement: Improve understanding of objectives." The
+[vision document](https://github.com/masters3d/ingenio/blob/main/specs/cognitive_systems_engineering/VISION.md)
+goes further. At its top level the agent does "Autonomous goal-setting," and
+under motivation it lists "Emergent Purpose," the "Discovery of novel
+optimization objectives."
 
-The design notes name safe experimentation and controlled environments. That is
-the right starting point. Self-modification should not begin in the default
-path. It should begin in a sandbox where the system can try a changed strategy
-without changing production behavior.
+So which is it? An agent that can refine its own objectives can also decide what
+preserving them means. I think that contradiction teaches more than the
+safeguards do.
 
-For an agent, a sandbox might be a separate branch, a simulated task set, a
-replay of prior tasks, or a restricted workspace with no write access to durable
-memory. The point is not the word sandbox. The point is separation. The proposed
-change needs a place to fail where failure does not become policy.
+## Method, Goal, and Grade
 
-The August 2025 GitHub Actions experiment offers a smaller version of the same
-lesson. The agent workflow became more trustworthy when repeated runs could be
-absorbed, when duplicate pull requests were handled as expected states, and when
-metadata was kept separate from deliverables. Those are containment moves. They
-limit the damage from ordinary automation failure. Self-modification needs that
-discipline even more.
+In [The Primary Directive](/blog/the-primary-directive/) I described an
+objective function as the rule a system uses to decide what counts as better.
+Self-modification asks an agent to get better. The first question about any
+self-modifying agent, then, is who holds that rule.
 
-A useful rule is that the agent may propose changes to its own process before it
-may adopt them. Proposal is cheap. Adoption changes future behavior.
+[Goal, Effort, Verification](/blog/goal-effort-verification-three-directives/)
+mapped three prompting directives onto the same framework: what I want (the
+Why), how much effort to spend (the How), and how the result should be verified
+(Renew). By the time I wrote
+[Agents Are Taking the Drive](/blog/agents-are-taking-the-drive/), about 80% of
+the software I produced started as a prompt. The agents had the How.
 
-## Then Validate the Change Against the Goal
+Self-modification moves the agent one level up. It changes its own How, meaning
+its prompts, its memory rules, its tools, and its checklists. I think that can
+be safe. What has to stay out of its reach is the goal it serves, the test that
+grades it, and a way to undo what it changed.
 
-The proposal's safeguards include validation systems, goal preservation,
-stability monitoring, human oversight, and rollback. That list is sensible, but
-each item needs a concrete test.
+Why the test too? An agent that can loosen its own check will pass every time.
 
-Validation asks whether the new method is better on the thing that matters. Goal
-preservation asks whether the method still optimizes the same objective.
-Stability asks whether the change behaves consistently enough to trust. Human
-oversight asks which decisions require a person to review them before they
-become durable.
+INGENIO-1's design guards the method carefully and leaves the goal open. I would
+do it the other way around.
 
-The hard part is that the goal is often underspecified. If the agent changes its
-review process to produce more comments, did quality improve, or did noise
-increase? If it changes its implementation strategy to finish faster, did it
-skip the design question? If it changes memory retrieval to include more
-history, did it gain context, or did it inherit stale assumptions?
+## A Rules File the Agents Edit
 
-This is why self-modification needs explicit success criteria before the
-experiment starts. The agent should not be allowed to invent the grading rubric
-after seeing its own result. That is how confirmation bias becomes
-infrastructure.
+This blog has a small version of the same setup. The agents that draft and edit
+posts here follow a rules file,
+[plans/agents.md](https://github.com/masters3d/masters3d.github.io/blob/master/plans/agents.md),
+and they edit that file too. By November 2026, agents had made 22 of the 27
+commits to it.
 
-## Rollback Is a Design Feature
+Many of those commits add a rule next to a post. When I asked for every citation
+to be linked so I could check it, the agent working on that change wrote the
+request into the file as a rule, and later agents follow it. The next agent
+works differently because an earlier one changed its instructions.
 
-Rollback is not a sign that the system is immature. It is the feature that makes
-experimentation possible. If a self-modification cannot be undone, it should be
-treated as too risky for autonomous adoption.
+A few parts are mine alone. A script fails the build when a post uses phrases I
+never say, and the rules say only I edit the tables that set those limits and
+their exceptions. The
+[phrase list](https://github.com/masters3d/masters3d.github.io/blob/master/scripts/repeated_phrases.toml)
+repeats it above the tables: "Agents never add, raise, or loosen entries; they
+rewrite the posts instead."
 
-Rollback also needs a scope. Can the system undo the changed strategy while
-keeping useful logs? Can it remove a memory created during the experiment? Can
-it restore a prior prompt, tool policy, or configuration? Can it explain what
-happened well enough for a human to decide whether part of the change should
-survive?
+I think that sentence does more for safety than any other line in the setup. An
+agent facing a failing check has two ways to pass it, fix the post or loosen the
+check, and loosening is easier.
 
-A self-modifying agent should keep a change record that resembles a small
-engineering decision: what changed, why it changed, what evidence supported it,
-what validation ran, what risks remain, and how to revert it. That record
-matters more than the agent's confidence.
+The rest lines up with INGENIO-1's list. Each change arrives as a pull request,
+which is the controlled environment. CI checks the links, the formatting, the
+dates, and the phrases, and the check scripts run a `--self-test` first, so a
+check that stops catching what it should fails too. Drafts stay drafts until I
+read them. And `git revert` undoes any of it.
 
-The design proposal imagines recursive improvement. I would narrow the first
-version to reversible improvement. Recursion can come later, if ever. The first
-trustworthy version is a system that proposes a modification, tests it in
-isolation, compares it against a baseline, checks that the goal has not drifted,
-and makes rollback cheap.
+## Three Things Outside the Agent's Reach
 
-That may sound less exciting than an agent rewriting itself into a better
-engineer. Good. The safer story is also more useful. Self-modification is not
-magic self-improvement. It is a controlled change to the mechanism of work.
-Treat it like engineering, and the system may earn more autonomy. Treat it like
-inevitability, and the system will eventually change something important without
-enough evidence that better was really better.
+If I rewrote INGENIO-1's safeguards today, I would keep three things where the
+agent can read them but not change them.
+
+The goal goes in a file the agent cannot edit without my approval. "Goal
+Refinement" becomes a proposal the agent writes for me to accept or reject.
+
+The grade belongs to the person who owns the goal. The agent can propose a new
+test or add a check. It cannot weaken a check to get its own change through, and
+it does not get to pick the success criteria after it has seen its own result.
+
+The undo has to exist before the change does. Files are easy, since git keeps
+every version. Memory writes, messages sent, and deleted data are harder, and a
+change the agent cannot reverse should wait for a person.
+
+Everything else can move. I want the agent to rewrite its prompts, reorganize
+its memory, and change its checklists, because that is how the rules file here
+got better.
+
+I am not sure how far this holds. A rules file is plain text I can diff. An
+agent that changes its own model weights, or keeps memory in a form I cannot
+read, would need another way to show me what changed, and I do not have one yet.
+
+If you are about to let an agent edit its own instructions, start by writing
+down the lines it may not edit, and read every diff that touches them.

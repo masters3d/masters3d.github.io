@@ -1,6 +1,6 @@
 +++
 title = "Cognitive Continuous Integration Had a Loop but No Why"
-date = "2027-08-01"
+date = "2027-06-05"
 description = "INGENIO-1 was a GitHub Actions agent that turned my labeled notes into VISION.md specifications. I fixed its scope, its races, and its pull requests until every check was green, and it still produced nothing anyone used, because its goal was the agent itself. It was a good organizer with no Why. The goal it should have had, getting my notes into a form other people can use, is what this blog's pipeline does now."
 template = "blog-post.html"
 [taxonomies]

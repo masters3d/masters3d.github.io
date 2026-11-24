@@ -935,7 +935,7 @@ already states a thesis in the author's words.
 4. When asked to write posts without publishing them, add `draft = true` to the
    frontmatter (after `date`) and set the row's Status to `draft`. Zola skips
    drafts in `zola build` and the feed. Date each draft for its planned release:
-   new drafts join the end of the queue at two per month (the 1st and the 15th),
+   new drafts join the end of the queue at one per week (Saturdays from 2027),
    and the queue order is the author's review order. The list lives in the
    "Release Schedule" section of `plans/post-backlog.md`. To publish a draft,
    the author reviews it, removes `draft = true`, and the row moves to

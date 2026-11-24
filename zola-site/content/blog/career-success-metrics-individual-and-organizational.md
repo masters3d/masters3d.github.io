@@ -1,6 +1,6 @@
 +++
 title = "Career Success Metrics, Individual and Organizational"
-date = "2029-03-01"
+date = "2028-01-22"
 description = "Career growth has two scoreboards. Individuals need evidence of expanding capability, autonomy, purpose, and collaboration, while organizations need evidence that their systems are healthier because people are growing."
 template = "blog-post.html"
 [taxonomies]

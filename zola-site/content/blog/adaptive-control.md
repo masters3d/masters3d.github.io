@@ -1,6 +1,6 @@
 +++
 title = "Adaptive Control"
-date = "2028-06-15"
+date = "2027-11-13"
 description = "Adaptive Control keeps execution connected to feedback. It treats every result as data, shortens the distance between action and signal, and steers plans while the work is still moving."
 template = "blog-post.html"
 [taxonomies]

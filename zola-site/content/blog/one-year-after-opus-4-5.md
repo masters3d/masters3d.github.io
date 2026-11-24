@@ -18,7 +18,7 @@ written with agents over the last few months, and the Rust is being written with
 agents too. Nobody on the team typed most of either version by hand. What
 changed between the two is not who writes the code. It is what checks it.
 
-In February I wrote about
+In February 2026 I wrote about
 [my AI tools journey since Opus 4.5](/blog/ai-tools-journey-opus-4-5/), and the
 claim in that post was that capable agents make compiled languages practical for
 work I used to reserve for scripts. Later I turned that into a
@@ -88,7 +88,7 @@ make it dependable.
 
 ## Where the Other 80% of My Time Went
 
-In October I wrote that
+In October 2026 I wrote that
 [roughly 80% of my software now starts as a prompt](/blog/agents-are-taking-the-drive/).
 Looking at where my time went this year instead of where the code came from
 gives a matching number from the other side: about 20% of my time was coding,

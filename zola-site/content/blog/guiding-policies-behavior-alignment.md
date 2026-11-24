@@ -1,6 +1,6 @@
 +++
 title = "Guiding Policies and Behavior Alignment"
-date = "2027-05-15"
+date = "2027-05-22"
 description = "Guiding policies are useful only when they align behavior. They should help people make local decisions that fit organizational goals without turning every choice into permission seeking or compliance theater."
 template = "blog-post.html"
 [taxonomies]

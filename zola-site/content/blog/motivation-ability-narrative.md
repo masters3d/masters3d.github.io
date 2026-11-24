@@ -1,6 +1,6 @@
 +++
 title = "Motivation, Ability, Narrative"
-date = "2028-05-01"
+date = "2027-10-30"
 description = "A career needs more than will and skill. Motivation, ability, and narrative form a triangle: why the work matters, how the work gets done, and how the path remains understandable over time."
 template = "blog-post.html"
 [taxonomies]
@@ -12,9 +12,10 @@ editorial_track = "human-systems"
 related = ["career-quest-engineering-2021-talk", "find-your-why-intrinsic-motivation", "story-is-engineering-memory", "pie-theory-being-seen-at-work"]
 +++
 
-In the 2021 Career Quest Engineering talk, I used a small diagram that started
-with only two words: will and way. Then it became motivation and ability. Then a
-third point appeared: narrative.
+In the
+[2021 Career Quest Engineering talk](/blog/career-quest-engineering-2021-talk/),
+I used a small diagram that started with only two words: will and way. Then it
+became motivation and ability. Then a third point appeared: narrative.
 
 That third point is the one that still interests me. Motivation and ability are
 easy to treat as the whole career system. Do I want to do the work? Can I do the

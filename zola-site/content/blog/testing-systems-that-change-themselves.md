@@ -1,6 +1,6 @@
 +++
 title = "Testing Systems That Change Themselves"
-date = "2029-01-01"
+date = "2027-04-10"
 description = "Adaptive agent systems break the assumption that yesterday's behavior is today's behavior. Testing them means preserving baselines while watching the system, its tests, and its goals change."
 template = "blog-post.html"
 [taxonomies]
@@ -12,10 +12,13 @@ editorial_track = "software-engineering"
 related = ["safe-self-modification-for-agents", "shift-left-synthetic-environments", "quality-engineering-vs-engineering-quality"]
 +++
 
-The generated integration design for cognitive engineering proposes agents that
-review code, design architecture, generate testing strategy, improve
-documentation, and learn from all of it. The section on testing exposes the
-central problem: how do you test a system whose behavior is supposed to change?
+The
+[integration design for cognitive engineering](https://github.com/masters3d/ingenio/blob/main/cognitive_systems/COGNITIVE_ENGINEERING_INTEGRATION.md)
+generated for [my notes repository](https://github.com/masters3d/ingenio) in
+August 2025 proposes agents that review code, design architecture, generate
+testing strategy, improve documentation, and learn from all of it. The section
+on testing exposes the central problem: how do you test a system whose behavior
+is supposed to change?
 
 Traditional testing assumes a stable target. The implementation changes, but the
 expected behavior remains fixed enough to assert. Adaptive agents challenge that
@@ -38,12 +41,13 @@ it should not lose data. It may adapt its communication, but it should not
 invent unsupported results. It may generate tests, but it should not mark its
 own unreviewed assertions as truth.
 
-The August 2025 GitHub Actions experiment is a useful reminder. The agent
-workflow did not become more credible because it had a grand theory of
-cognition. It became more credible when specific failure modes were checked:
-wrong issue selection, duplicate pull requests, scheduled trigger behavior, and
-metadata pollution. Those checks were not glamorous. They made the loop
-understandable.
+INGENIO-1, an agent I ran on that repository the same month from a
+[GitHub Actions workflow](https://github.com/masters3d/ingenio/blob/main/.github/workflows/cognitive-issue-processor.yml),
+is a useful reminder. The agent workflow did not become more credible because it
+had a grand theory of cognition. It became more credible when specific failure
+modes were checked: wrong issue selection, duplicate pull requests, scheduled
+trigger behavior, and metadata pollution. Those checks were not glamorous. They
+made the loop understandable.
 
 For adaptive systems, the baseline should answer one question: what must remain
 true no matter how the agent changes its approach?

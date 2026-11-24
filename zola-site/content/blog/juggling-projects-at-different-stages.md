@@ -1,6 +1,6 @@
 +++
 title = "Juggling Projects at Different Stages"
-date = "2028-12-01"
+date = "2028-01-08"
 description = "Project load is not only the number of projects. The harder part is that each project lives at a different stage, with different people, memory, ownership, and motivation attached to it."
 template = "blog-post.html"
 [taxonomies]

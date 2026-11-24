@@ -1,6 +1,6 @@
 +++
 title = "Directed Intentionality"
-date = "2028-05-15"
+date = "2027-11-06"
 description = "Directed Intentionality is the discipline of choosing one clear objective and protecting it. It reduces ambiguity, lowers cognitive load, and lets engineering attention flow toward a defined success state."
 template = "blog-post.html"
 [taxonomies]

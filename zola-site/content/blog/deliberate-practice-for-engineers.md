@@ -1,6 +1,6 @@
 +++
 title = "Deliberate Practice for Engineers"
-date = "2028-08-15"
+date = "2027-12-11"
 description = "Deliberate Practice turns improvement into a repeated engineering routine. It sorts behavior into do less, keep doing, and do more, then uses patterns rather than isolated incidents to guide change."
 template = "blog-post.html"
 [taxonomies]
