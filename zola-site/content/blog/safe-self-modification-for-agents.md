@@ -93,8 +93,7 @@ will pass every time.
 This blog runs a small version of the same setup. The agents that draft and edit
 posts here follow a rules file,
 [plans/agents.md](https://github.com/masters3d/masters3d.github.io/blob/master/plans/agents.md),
-and they edit that file too. By November 2026, agents had made 22 of its 27
-commits.
+and they edit that file too. Agents made at least 23 of its first 27 commits.
 
 When I asked for every citation to be linked so I could check it, the agent
 working on that change wrote the request into the file as a rule, and later
